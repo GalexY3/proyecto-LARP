@@ -1,0 +1,242 @@
+[
+  {
+    "seed": 5201,
+    "name": "initial",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.7388457109959701,
+    "spectral_gap": 0.026920250008290368,
+    "seconds": 0.07159199099987745
+  },
+  {
+    "seed": 5201,
+    "name": "local",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8575226353303795,
+    "spectral_gap": 0.033834373119298926,
+    "seconds": 0.07576625000001513
+  },
+  {
+    "seed": 5201,
+    "name": "mhu",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8488987798327067,
+    "spectral_gap": 0.03418546951045313,
+    "seconds": 0.06515333499987719
+  },
+  {
+    "seed": 5201,
+    "name": "cvt_refined_1701",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.835695107398568,
+    "spectral_gap": 0.033402416851407844,
+    "seconds": 0.05983059899995169
+  },
+  {
+    "seed": 5201,
+    "name": "cvt_refined_1702",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8331725059382423,
+    "spectral_gap": 0.033631621376267254,
+    "seconds": 0.07341151500008891
+  },
+  {
+    "seed": 5201,
+    "name": "cvt_refined_1703",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8354976744186047,
+    "spectral_gap": 0.03352697960831681,
+    "seconds": 0.068342672999961
+  },
+  {
+    "seed": 5202,
+    "name": "initial",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.7341040462427746,
+    "spectral_gap": 0.026838594453064357,
+    "seconds": 0.07471128199995292
+  },
+  {
+    "seed": 5202,
+    "name": "local",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8546679499518768,
+    "spectral_gap": 0.03373850559647136,
+    "seconds": 0.07678993799981981
+  },
+  {
+    "seed": 5202,
+    "name": "mhu",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8467803903488551,
+    "spectral_gap": 0.03398578436272507,
+    "seconds": 0.06625280000002931
+  },
+  {
+    "seed": 5202,
+    "name": "cvt_refined_1701",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.835695107398568,
+    "spectral_gap": 0.03340241685136989,
+    "seconds": 0.06541673499987155
+  },
+  {
+    "seed": 5202,
+    "name": "cvt_refined_1702",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8331725059382423,
+    "spectral_gap": 0.03363162137625432,
+    "seconds": 0.07241144099998564
+  },
+  {
+    "seed": 5202,
+    "name": "cvt_refined_1703",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8354976744186047,
+    "spectral_gap": 0.03352697960889207,
+    "seconds": 0.06398182299994915
+  },
+  {
+    "seed": 5203,
+    "name": "initial",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.738683718925133,
+    "spectral_gap": 0.026890771343727377,
+    "seconds": 0.06690263400014373
+  },
+  {
+    "seed": 5203,
+    "name": "local",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8550986652306035,
+    "spectral_gap": 0.033949434086824166,
+    "seconds": 0.053664725999851726
+  },
+  {
+    "seed": 5203,
+    "name": "mhu",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8491901665833109,
+    "spectral_gap": 0.03414276195889251,
+    "seconds": 0.061921484000095006
+  },
+  {
+    "seed": 5203,
+    "name": "cvt_refined_1701",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.835695107398568,
+    "spectral_gap": 0.03340241685137621,
+    "seconds": 0.06220222899992223
+  },
+  {
+    "seed": 5203,
+    "name": "cvt_refined_1702",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8331725059382423,
+    "spectral_gap": 0.0336316213762638,
+    "seconds": 0.07284581900012199
+  },
+  {
+    "seed": 5203,
+    "name": "cvt_refined_1703",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8354976744186047,
+    "spectral_gap": 0.03352697960721266,
+    "seconds": 0.06947613800002728
+  },
+  {
+    "seed": 5204,
+    "name": "initial",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.7360597465082044,
+    "spectral_gap": 0.026461535392563615,
+    "seconds": 0.07585820799999965
+  },
+  {
+    "seed": 5204,
+    "name": "local",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.855216520265064,
+    "spectral_gap": 0.033876582378232274,
+    "seconds": 0.06379251499993188
+  },
+  {
+    "seed": 5204,
+    "name": "mhu",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.84776176753122,
+    "spectral_gap": 0.03433250034445785,
+    "seconds": 0.058470850999810864
+  },
+  {
+    "seed": 5204,
+    "name": "cvt_refined_1701",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.835695107398568,
+    "spectral_gap": 0.033402416851485824,
+    "seconds": 0.057738562999929854
+  },
+  {
+    "seed": 5204,
+    "name": "cvt_refined_1702",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8331725059382423,
+    "spectral_gap": 0.033631621376254396,
+    "seconds": 0.07500596199997744
+  },
+  {
+    "seed": 5204,
+    "name": "cvt_refined_1703",
+    "k": 12,
+    "components": 1,
+    "largest_fraction": 1.0,
+    "cross_type_edges": 0.8354976744186047,
+    "spectral_gap": 0.03352697960750967,
+    "seconds": 0.07284557799994218
+  }
+]
