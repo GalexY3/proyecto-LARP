@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "C01",
+    "phase": "audit",
+    "question": "Procedencia y cuotas de las cuatro geometrías originales",
+    "hypothesis": "No leakage por reetiquetado o fallo de distribución",
+    "rivals": "Etiquetas erróneas, fuga de observaciones, fuentes duplicadas",
+    "observation": {
+      "sha256": {
+        "5201": "9c6e0acd290f9abc7acc07faadb6ddef59f27d27647cdd151be1fc77ad4dc3a9",
+        "5202": "0439af12807bad16bc68c49eb2031bce8f454a12727eeb7699b351323c327001",
+        "5203": "762eec73cb3288fe4b77be334959229f791eac983a5a520a4e0496ec28a6af11",
+        "5204": "2f40541325e9b846a7dfba522f905d0060b3ce953448c2fc5e998990a7ff833e"
+      },
+      "counts": [
+        1669,
+        871,
+        696,
+        512,
+        348
+      ],
+      "unique_samples": 4
+    },
+    "falsifier": "Identidad de archivos repetidos o cuotas inválidas",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿La penalización MHU reduce amplitudes bajas por tipo?",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C02",
+    "phase": "experimental",
+    "question": "Varianza espectral baja de población total",
+    "hypothesis": "MHU suprime amplitud de modos bajos",
+    "rivals": "CVT, Sobol, retícula, azar",
+    "observation": {
+      "mean_sq_complex": {
+        "initial": 0.00022511097337112252,
+        "local": 9.722236799222556e-07,
+        "mhu": 1.2457102061499781e-09,
+        "cvt": 1.4891307705765067e-05,
+        "sobol": 1.8108962004313944e-05,
+        "lattice": 5.5736194714763984e-33,
+        "lhs": 0.0001987101602650991
+      }
+    },
+    "falsifier": "MHU no inferior a LOCAL",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿La supresión afecta a cada especie?",
+    "interpretation_limit": "Exact Fourier sum, not claim asymptotic hyperuniformity."
+  },
+  {
+    "id": "C03",
+    "phase": "experimental",
+    "question": "Especies individuales y la peor clase",
+    "hypothesis": "MHU suprime amplitud en las cinco especies",
+    "rivals": "Supresión sólo en población global; tipo raro deteriorado",
+    "observation": {
+      "per_type_powers": {
+        "initial": {
+          "0": 0.0005644689445280289,
+          "1": 0.001162954041261161,
+          "2": 0.001276232226518918,
+          "3": 0.001939766132689133,
+          "4": 0.002662330397017543
+        },
+        "local": {
+          "0": 4.006493428167573e-05,
+          "1": 4.913372087066416e-05,
+          "2": 4.031246448790897e-05,
+          "3": 2.9304331348577268e-05,
+          "4": 2.4458647975614156e-05
+        },
+        "mhu": {
+          "0": 6.641916826117994e-08,
+          "1": 1.4565078462850487e-07,
+          "2": 1.4939896872604254e-07,
+          "3": 2.0378158726911746e-07,
+          "4": 2.614897108003247e-07
+        },
+        "cvt": {
+          "0": 4.972438342799166e-05,
+          "1": 2.8161147787156753e-05,
+          "2": 3.853320491692339e-05,
+          "3": 3.621478999154942e-05,
+          "4": 4.212240609641107e-05
+        },
+        "sobol": {
+          "0": 2.3068407656342734e-05,
+          "1": 7.62184947758675e-05,
+          "2": 0.0001308929183967189,
+          "3": 0.00010699491863808396,
+          "4": 0.0005056514554826832
+        },
+        "lattice": {
+          "0": 5.927042105756416e-33,
+          "1": 3.6321464785288113e-33,
+          "2": 3.069338544322392e-33,
+          "3": 4.637179682233837e-33,
+          "4": 6.358845565142063e-33
+        },
+        "lhs": {
+          "0": 0.00048639411979774314,
+          "1": 0.0009401365032339732,
+          "2": 0.0011772209139166744,
+          "3": 0.0017172384114707707,
+          "4": 0.00208358675201498
+        }
+      },
+      "worst_per_type": {
+        "initial": 0.002662330397017543,
+        "local": 4.913372087066416e-05,
+        "mhu": 2.614897108003247e-07,
+        "cvt": 4.972438342799166e-05,
+        "sobol": 0.0005056514554826832,
+        "lattice": 6.358845565142063e-33,
+        "lhs": 0.00208358675201498
+      }
+    },
+    "falsifier": "MHU no mejora peor especie frente a LOCAL",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿La varianza de integración se deduce de estas amplitudes?",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C04",
+    "phase": "analytic + numeric",
+    "question": "Identidad exacta: error de un seno aleatorizado",
+    "hypothesis": "E_phi error cuadrático=S(k)/(2n)",
+    "rivals": "Efecto distinto a la optimización espectral",
+    "observation": {
+      "observed_MC": 2.948694605526126e-09,
+      "analytic": 2.9509114784719365e-09,
+      "relative_deviation": 0.0007512502364044124
+    },
+    "falsifier": "Relación falla por fórmula o normalización",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿Cómo compite MHU con muestreadores QMC especializados?",
+    "interpretation_limit": "La identidad es álgebra conocida, no novedad."
+  },
+  {
+    "id": "C05",
+    "phase": "experimental",
+    "question": "Comparador Sobol por especie menos abundante",
+    "hypothesis": "MHU aventaja a Sobol aleatorizado en error medio Fourier",
+    "rivals": "Sobol QMC gana sin hiperuniformidad construida",
+    "observation": {
+      "low_power_rare": {
+        "initial": 0.002662330397017543,
+        "local": 2.4458647975614156e-05,
+        "mhu": 2.614897108003247e-07,
+        "cvt": 4.212240609641107e-05,
+        "sobol": 0.0005056514554826832,
+        "lattice": 6.358845565142063e-33,
+        "lhs": 0.00208358675201498
+      },
+      "ratio_MHU_to_Sobol": 0.0005171342986656938
+    },
+    "falsifier": "Sobol iguala/supera la supresión MHU",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿Una retícula de rango uno domina ambas?",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C06",
+    "phase": "experimental",
+    "question": "Regla reticular trasladada como comparador fuerte",
+    "hypothesis": "MHU sigue competitiva en integrales periódicas suaves",
+    "rivals": "Regla de retícula anula modos no resonantes exactamente",
+    "observation": {
+      "low_total_power": {
+        "initial": 0.00022511097337112252,
+        "local": 9.722236799222556e-07,
+        "mhu": 1.2457102061499781e-09,
+        "cvt": 1.4891307705765067e-05,
+        "sobol": 1.8108962004313944e-05,
+        "lattice": 5.5736194714763984e-33,
+        "lhs": 0.0001987101602650991
+      },
+      "ratio_MHU_to_lattice": 1.245710206149978e+21
+    },
+    "falsifier": "Retícula mejora drásticamente modo de integración elegido",
+    "AB_DECIDE": "PIVOT",
+    "next_question_selected_after_observation": "¿Hay trade-off de cobertura de tipos entre retícula y MHU?",
+    "interpretation_limit": "Rank-1 lattice no equivale a Wei; baseline construido y declarado. Puede tener resonancias a frecuencias altas."
+  },
+  {
+    "id": "C07",
+    "phase": "experimental",
+    "question": "Compromiso entre cobertura local y supresión espectral",
+    "hypothesis": "Retícula óptima Fourier también cubre tipos localmente",
+    "rivals": "Cobertura y S(k) no cooptimizan",
+    "observation": {
+      "coverage16": {
+        "initial": 0.61125,
+        "local": 0.956875,
+        "mhu": 0.950625,
+        "cvt": 0.9762500000000001,
+        "sobol": 0.8190624999999999,
+        "lattice": 0.745,
+        "lhs": 0.6115625
+      },
+      "low_spectral": {
+        "initial": 0.00022511097337112252,
+        "local": 9.722236799222556e-07,
+        "mhu": 1.2457102061499781e-09,
+        "cvt": 1.4891307705765067e-05,
+        "sobol": 1.8108962004313944e-05,
+        "lattice": 5.5736194714763984e-33,
+        "lhs": 0.0001987101602650991
+      }
+    },
+    "falsifier": "Método domina en ambas sin coste",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿CVT ofrece un compromiso mejor que las dos?",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C08",
+    "phase": "experimental",
+    "question": "Frontera de Pareto para cobertura y cuadratura",
+    "hypothesis": "MHU exhibe intercambio defendible frente a CVT/Lattice",
+    "rivals": "Dominancia completa por un método clásico",
+    "observation": {
+      "pareto_methods": [
+        "local",
+        "mhu",
+        "cvt",
+        "lattice"
+      ],
+      "comparators": {
+        "initial": {
+          "coverage": 0.61125,
+          "spectral_power": 0.00022511097337112252
+        },
+        "local": {
+          "coverage": 0.956875,
+          "spectral_power": 9.722236799222556e-07
+        },
+        "mhu": {
+          "coverage": 0.950625,
+          "spectral_power": 1.2457102061499781e-09
+        },
+        "cvt": {
+          "coverage": 0.9762500000000001,
+          "spectral_power": 1.4891307705765067e-05
+        },
+        "sobol": {
+          "coverage": 0.8190624999999999,
+          "spectral_power": 1.8108962004313944e-05
+        },
+        "lattice": {
+          "coverage": 0.745,
+          "spectral_power": 5.5736194714763984e-33
+        },
+        "lhs": {
+          "coverage": 0.6115625,
+          "spectral_power": 0.0001987101602650991
+        }
+      }
+    },
+    "falsifier": "MHU dominada en las dos métricas",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿Se mantiene fuera de modos optimizados?",
+    "interpretation_limit": "Pareto de dos métricas y métodos finitos, no teorema de optimalidad."
+  },
+  {
+    "id": "C09",
+    "phase": "experimental",
+    "question": "Generalización fuera de la banda Fourier baja",
+    "hypothesis": "Ventaja espectral MHU persiste a frecuencias medias",
+    "rivals": "Sobreajuste al espectro de la pérdida",
+    "observation": {
+      "medium_spectral": {
+        "initial": 0.00024894589879140234,
+        "local": 4.641203009730048e-07,
+        "mhu": 4.4192090960104605e-08,
+        "cvt": 1.2223526767736618e-05,
+        "sobol": 7.2419038092666e-05,
+        "lattice": 1.0420433078283275e-33,
+        "lhs": 0.00025256022381367325
+      },
+      "ratio_MHU_to_LOCAL": 0.09521688852536318
+    },
+    "falsifier": "La supresión se pierde o invierte",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿Cuál es el riesgo en frecuencias altas?",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C10",
+    "phase": "experimental",
+    "question": "Riesgo de amplitudes altas y aliasing",
+    "hypothesis": "Suprimir modos bajos no aumenta modos altos",
+    "rivals": "Desplazamiento de energía espectral al exterior",
+    "observation": {
+      "high_spectral": {
+        "initial": 0.0002480518378166145,
+        "local": 2.291900223978914e-06,
+        "mhu": 1.0558176052177324e-07,
+        "cvt": 0.00012864248541130728,
+        "sobol": 0.0001974625530515523,
+        "lattice": 0.00032552083333333304,
+        "lhs": 0.00025036295602758887
+      },
+      "ratio_MHU_to_LOCAL": 0.04606734595909905,
+      "ratio_MHU_to_Sobol": 0.0005346925727948459
+    },
+    "falsifier": "Potencia MHU supera claramente LOCAL/Sobol en banda alta",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿Existe orientación direccional privilegiada?",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C11",
+    "phase": "audit",
+    "question": "Auditoría de fuga: frecuencia alta realmente fuera del objetivo",
+    "hypothesis": "La banda high verifica generalización espectral fuera de train",
+    "rivals": "Corte union k²=78 y tipos menores, banda high parcialmente dentro",
+    "observation": {
+      "cutoff_k2": {
+        "4096": 78,
+        "1669": 42,
+        "871": 27,
+        "696": 24,
+        "512": 19,
+        "348": 13
+      },
+      "high_inside_union_fraction": 1.0
+    },
+    "falsifier": "Toda o parte de high estaba entrenada",
+    "AB_DECIDE": "REPAIR",
+    "next_question_selected_after_observation": "Redefinir una banda estrictamente exterior y repetir diagnóstico",
+    "interpretation_limit": "Corrección obligatoria: las anteriores medidas medium/high NO eran un holdout seguro del objetivo espectral de unión."
+  },
+  {
+    "id": "C12",
+    "phase": "experimental",
+    "question": "Extrapolación a modos fuera del corte spectral del conjunto",
+    "hypothesis": "MHU reduce amplitudes también fuera de modos optimizados",
+    "rivals": "S(k) se desplaza a modos vecinos; CVT/QMC mejora",
+    "observation": {
+      "outside_k2_range": [
+        101,
+        134
+      ],
+      "power": {
+        "initial": 0.00023412035335818797,
+        "local": 1.4550051386069703e-05,
+        "mhu": 2.1301544970619262e-05,
+        "cvt": 0.00028344598363493084,
+        "sobol": 0.0002960847322855787,
+        "lattice": 5.5546930441673634e-33,
+        "lhs": 0.00023849247274228838
+      },
+      "ratio_mhu_local": 1.4640185388632698
+    },
+    "falsifier": "MHU pierde la supresión fuera de banda",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Aislar si la especie escasa, cuya banda es menor, mantiene la ganancia",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C13",
+    "phase": "experimental",
+    "question": "Cambio de banda por especie escasa",
+    "hypothesis": "Especie rara retiene regularidad espectral aun superando su k²=13",
+    "rivals": "Cae la protección fuera de su propia penalización",
+    "observation": {
+      "rare_type_cutoff_k2": 13,
+      "powers_seed5201": {
+        "initial": {
+          "low": 0.0033673182082885715,
+          "medium": 0.002919215347505097,
+          "outside": 0.003230917999628723
+        },
+        "local": {
+          "low": 2.1275474816754496e-05,
+          "medium": 7.312944950879206e-05,
+          "outside": 0.0019192139960806664
+        },
+        "mhu": {
+          "low": 2.3025233604583368e-07,
+          "medium": 9.322089781098622e-05,
+          "outside": 0.0030003824780963184
+        },
+        "cvt": {
+          "low": 4.149882423657945e-05,
+          "medium": 6.738603240973257e-05,
+          "outside": 0.0011942083074337063
+        },
+        "sobol": {
+          "low": 0.000669198045929191,
+          "medium": 0.0014781640745077146,
+          "outside": 0.003147205678226508
+        },
+        "lattice": {
+          "low": 7.03268811515888e-33,
+          "medium": 8.139372290807223e-33,
+          "outside": 1.3559846347128345e-31
+        },
+        "lhs": {
+          "low": 0.0018604449381647945,
+          "medium": 0.0034044847561348437,
+          "outside": 0.0029926419773352955
+        }
+      }
+    },
+    "falsifier": "Fuera del corte raro MHU se comporta como CVT",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Comprobar anisotropía direccional y coste de regularidad",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C14",
+    "phase": "experimental",
+    "question": "Isotropía del error espectral: ejes frente a diagonales",
+    "hypothesis": "MHU mantiene baja potencia en múltiples orientaciones",
+    "rivals": "FFT/CIC introduce artefactos de ejes",
+    "observation": {
+      "power_axis_vs_mixed": {
+        "initial": [
+          0.000293723614028786,
+          0.0002130028603138878
+        ],
+        "local": [
+          3.1274746772487474e-06,
+          5.918852686293452e-07
+        ],
+        "mhu": [
+          9.508062781172885e-10,
+          1.297752075802806e-09
+        ],
+        "cvt": [
+          5.478694113965709e-05,
+          7.850901805666478e-06
+        ],
+        "sobol": [
+          3.9395421015276036e-07,
+          2.1235139850342386e-05
+        ],
+        "lattice": [
+          3.546570656029197e-32,
+          2.9854527933247373e-34
+        ],
+        "lhs": [
+          3.896950456077549e-09,
+          0.0002337759714382714
+        ]
+      },
+      "mhu_axis_to_mixed": 0.7326563338603082
+    },
+    "falsifier": "MHU favorece sustancialmente ejes",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Buscar fallo adversarial de la retícula, comparador dominante low",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C15",
+    "phase": "experimental",
+    "question": "Modo resonante adversarial para retículas exactas",
+    "hypothesis": "Retícula es óptima universalmente porque anula 40 modos bajos",
+    "rivals": "Resonancias producen S(k) grande cuando k·g=0 mod n",
+    "observation": {
+      "adversarial_k": [
+        -25,
+        1,
+        0
+      ],
+      "power": {
+        "initial": 0.0014580702319674133,
+        "local": 0.001571686005576654,
+        "mhu": 0.002971830805153841,
+        "cvt": 0.0008976787317252427,
+        "sobol": 0.0004939573645976338,
+        "lattice": 0.9999999999999999,
+        "lhs": 0.0015667686437419062
+      }
+    },
+    "falsifier": "La retícula tiene error extremo en un modo permitido",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Comparar riesgo máximo, no solo media espectral",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C16",
+    "phase": "experimental",
+    "question": "Riesgo máximo de error por modo",
+    "hypothesis": "MHU controla tanto la media como el peor modo",
+    "rivals": "Un modo mal protegido domina bajo estímulo adversarial",
+    "observation": {
+      "max_mode_sq_mean": {
+        "initial": {
+          "low": 0.0011395049968972526,
+          "outside": 0.0011661383714733162
+        },
+        "local": {
+          "low": 9.205448615924151e-06,
+          "outside": 7.686957429602622e-05
+        },
+        "mhu": {
+          "low": 6.913775127873612e-09,
+          "outside": 8.72850812960827e-05
+        },
+        "cvt": {
+          "low": 0.00020353918563206569,
+          "outside": 0.0013627566673913144
+        },
+        "sobol": {
+          "low": 0.00014659255874395293,
+          "outside": 0.0015900274067392902
+        },
+        "lattice": {
+          "low": 1.6853076042282368e-31,
+          "outside": 3.2230124545226327e-32
+        },
+        "lhs": {
+          "low": 0.0012938749314236123,
+          "outside": 0.0012677641991339372
+        }
+      }
+    },
+    "falsifier": "MHU peor que CVT en peor modo de interés",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Auditar invariancia geométrica para descartar artefactos",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C17",
+    "phase": "audit",
+    "question": "Invariancia de traslación del toro",
+    "hypothesis": "Potencia S(k) es invariante bajo traslación periódica común",
+    "rivals": "Error de implementación FFT, redondeo o máscara",
+    "observation": {
+      "max_abs_difference": 2.0363945910136712e-20,
+      "passed": true
+    },
+    "falsifier": "El desplazamiento cambia S(k) fuera de tolerancia",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Examinar perturbación de coordenadas a pequeña escala",
+    "interpretation_limit": "Control exacto, no hallazgo científico de originalidad."
+  },
+  {
+    "id": "C18",
+    "phase": "experimental",
+    "question": "Estabilidad ante desplazamientos independientes de sensores",
+    "hypothesis": "MHU conserva supresión bajo ruido de coordenadas",
+    "rivals": "Penalización hipersensible a posiciones exactas",
+    "observation": {
+      "jitter_sigma_unit_box": 0.006,
+      "new_low_power": {
+        "local": 2.7060867150078524e-06,
+        "mhu": 1.7268369616819736e-06,
+        "cvt": 1.6412873140938706e-05,
+        "sobol": 1.952495582176953e-05,
+        "lattice": 1.4151346216827288e-06
+      },
+      "before": {
+        "local": 9.722236799222556e-07,
+        "mhu": 1.2457102061499781e-09,
+        "cvt": 1.4891307705765067e-05,
+        "sobol": 1.8108962004313944e-05,
+        "lattice": 5.5736194714763984e-33
+      }
+    },
+    "falsifier": "Jitter anula ganancia MHU",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Ensayar fallos de disponibilidad en vez de movimiento",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C19",
+    "phase": "experimental",
+    "question": "Pérdida aleatoria del 20 % de sensores raros",
+    "hypothesis": "MHU conserva ventaja espectral relativa tras dropout",
+    "rivals": "El muestreo Bernoulli destruye el cero espectral con piso ≈p/((1-p)n)",
+    "observation": {
+      "rare_type_low_power_after_dropout": {
+        "local": 0.0007818194771130077,
+        "mhu": 0.0007187732777415499,
+        "cvt": 0.0007910249419227121,
+        "sobol": 0.0011907421202536903,
+        "lattice": 0.0007238067684768954
+      },
+      "before": {
+        "local": 2.4458647975614156e-05,
+        "mhu": 2.614897108003247e-07,
+        "cvt": 4.212240609641107e-05,
+        "sobol": 0.0005056514554826832,
+        "lattice": 6.358845565142063e-33
+      }
+    },
+    "falsifier": "El dropout borra la relación de orden original",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Probar agujero espacial, menos benigno que dropout",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C20",
+    "phase": "experimental",
+    "question": "Fallos espaciales correlacionados de tipo raro",
+    "hypothesis": "MHU conserva utilidad espectral cuando se vacía una región",
+    "rivals": "Todos los diseños quedan dominados por el hueco y sesgo de cobertura",
+    "observation": {
+      "hole_radius": 0.26,
+      "outcomes": {
+        "local": {
+          "spectral_power": 0.0007570418635919135,
+          "deleted_rare_fraction": 0.06896551724137931
+        },
+        "mhu": {
+          "spectral_power": 0.0007826246081517572,
+          "deleted_rare_fraction": 0.07255747126436782
+        },
+        "cvt": {
+          "spectral_power": 0.0008119296946757959,
+          "deleted_rare_fraction": 0.07040229885057475
+        },
+        "sobol": {
+          "spectral_power": 0.0013586801322447136,
+          "deleted_rare_fraction": 0.0761494252873563
+        },
+        "lattice": {
+          "spectral_power": 0.0008344346901856134,
+          "deleted_rare_fraction": 0.076867816091954
+        }
+      }
+    },
+    "falsifier": "Sin ventaja MHU frente a controles después del agujero",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Usar inversión causal de etiquetas para aislar origen del espectro",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C21",
+    "phase": "experimental",
+    "question": "Ablación causal: permutar marcas de tipo manteniendo todas las posiciones",
+    "hypothesis": "MHU precisa asignación geométrica coordinada de clases",
+    "rivals": "Supresión por sola unión de puntos o etiqueta sin efecto",
+    "observation": {
+      "rare_type_after_shuffle": {
+        "initial": 0.003102359306552404,
+        "local": 0.002964629137415073,
+        "mhu": 0.003048076965569903,
+        "cvt": 0.0028914363708051143,
+        "sobol": 0.0025232101506516874,
+        "lattice": 0.00268993422955494
+      },
+      "rare_type_before": {
+        "initial": 0.002662330397017543,
+        "local": 2.4458647975614156e-05,
+        "mhu": 2.614897108003247e-07,
+        "cvt": 4.212240609641107e-05,
+        "sobol": 0.0005056514554826832,
+        "lattice": 6.358845565142063e-33
+      },
+      "union_unchanged": true
+    },
+    "falsifier": "Barajar tipos no altera espectro por clase",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Demostrar relación exacta entre espectro de subtipos y el de la unión",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C22",
+    "phase": "analytic+numeric",
+    "question": "Teorema elemental: la unión de clases HU también es HU bajo fracciones estables",
+    "hypothesis": "Es posible mantener S_i(k)→0 en todas las especies y S_total(k) distinto de cero",
+    "rivals": "La desigualdad triangular obliga S_total(k)≤(Σ sqrt(f_i S_i(k)))²",
+    "observation": {
+      "bound_validation": {
+        "initial": {
+          "ratio_actual_to_bound": 0.2534114432216116,
+          "max_residual_aliased": 1.1525227184004595e-16
+        },
+        "local": {
+          "ratio_actual_to_bound": 0.029245824182244088,
+          "max_residual_aliased": 7.646348792667166e-17
+        },
+        "mhu": {
+          "ratio_actual_to_bound": 0.01201335126993848,
+          "max_residual_aliased": 5.8349331893108e-17
+        },
+        "cvt": {
+          "ratio_actual_to_bound": 0.43381212981645695,
+          "max_residual_aliased": 6.42272435610749e-17
+        },
+        "sobol": {
+          "ratio_actual_to_bound": 0.29345417347471714,
+          "max_residual_aliased": 5.355212468067087e-17
+        },
+        "lattice": {
+          "ratio_actual_to_bound": 5.573619471476399e-05,
+          "max_residual_aliased": 5.808965333250771e-16
+        },
+        "lhs": {
+          "ratio_actual_to_bound": 0.25754846367951895,
+          "max_residual_aliased": 1.4637612725888055e-16
+        }
+      },
+      "derivation": "A_union=Σ f_i A_i; S_total=N|A_union|² ≤ (Σ sqrt(f_i S_i))²; para fracciones f_i estables y finitas, todos S_i→0 implica S_total→0."
+    },
+    "falsifier": "La desigualdad algebraica falla o límites sin fracciones estables",
+    "AB_DECIDE": "REPAIR",
+    "next_question_selected_after_observation": "Estudiar papel real de correlaciones intertipo sin repetir la premisa falsa",
+    "interpretation_limit": "No es una demostración novedosa. Bajo hipótesis regulares cada especie asintóticamente HU implica unión HU; la afirmación de que mezclarlas destruye necesariamente HU es falsa."
+  },
+  {
+    "id": "C23",
+    "phase": "experimental",
+    "question": "Correlación cruzada: trasladar cada clase independientemente",
+    "hypothesis": "Correlación entre tipos reduce S_total más que composición por tipo",
+    "rivals": "La fase relativa puede aumentar o disminuir union S sin alterar S_i",
+    "observation": {
+      "union_spectral_by_shift": {
+        "local": {
+          "original_union": 9.722236799222556e-07,
+          "independently_shifted_union": 1.0944562642310757e-05,
+          "expected_from_no_cross": 1.067222184398744e-05
+        },
+        "mhu": {
+          "original_union": 1.2457102061499781e-09,
+          "independently_shifted_union": 2.6681026710046316e-08,
+          "expected_from_no_cross": 2.6999123266122756e-08
+        },
+        "cvt": {
+          "original_union": 1.4891307705765067e-05,
+          "independently_shifted_union": 1.1269369797039944e-05,
+          "expected_from_no_cross": 1.1511760193880625e-05
+        },
+        "sobol": {
+          "original_union": 1.8108962004313944e-05,
+          "independently_shifted_union": 1.605862586717243e-05,
+          "expected_from_no_cross": 1.6377690170357845e-05
+        },
+        "lattice": {
+          "original_union": 5.5736194714763984e-33,
+          "independently_shifted_union": 1.3425110741222093e-33,
+          "expected_from_no_cross": 1.3552999339102191e-33
+        }
+      }
+    },
+    "falsifier": "Unión no cambia nunca tras traslaciones independientes",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Comprobar integración conjunta ponderada de funciones distintas por tipo",
+    "interpretation_limit": "Contraste de correlaciones de fase a N finito; no implica que suma de HU deje de ser HU."
+  },
+  {
+    "id": "C24",
+    "phase": "experimental",
+    "question": "Cuadratura multi-canal: una función Fourier desconocida distinta por tipo",
+    "hypothesis": "MHU reduce error de agregación de cinco especializaciones",
+    "rivals": "Rank-one lattice puede integrar mejor señales periódicas compatibles",
+    "observation": {
+      "mse_1000_fourier_coeff_draws_per_geometry": {
+        "initial": 0.0003097323913387489,
+        "local": 7.2479267705484725e-06,
+        "mhu": 3.252051497359709e-08,
+        "cvt": 7.767344273298755e-06,
+        "sobol": 3.373240578269293e-05,
+        "lattice": 9.365237822799931e-34,
+        "lhs": 0.00025077257248306537
+      },
+      "weight_per_type": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "falsifier": "MHU no mejora a retícula o Sobol",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿La ventaja está limitada por ruido de medida independiente?",
+    "interpretation_limit": "Estímulos sintéticos periódicos y regla de promedio conocida; no modelo neuronal ni test externo."
+  },
+  {
+    "id": "C25",
+    "phase": "analytic+numeric",
+    "question": "Límite por ruido independiente de sensor",
+    "hypothesis": "Geometría espectral también suprime ruido blanco de lectura",
+    "rivals": "La varianza iid del promedio queda fijada por n y pesos",
+    "observation": {
+      "sigma_noise": 0.1,
+      "variance_floor": 3.204294651063871e-06,
+      "noiseless_mse": {
+        "initial": 0.0003097323913387489,
+        "local": 7.2479267705484725e-06,
+        "mhu": 3.252051497359709e-08,
+        "cvt": 7.767344273298755e-06,
+        "sobol": 3.373240578269293e-05,
+        "lattice": 9.365237822799931e-34,
+        "lhs": 0.00025077257248306537
+      }
+    },
+    "falsifier": "Una geometría mejora el término blanco iid en igualdad de número de lecturas",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿Las clases raras dominan la pérdida aunque el conjunto esté muy regular?",
+    "interpretation_limit": "Var[Σ w_t mean(noise_t)] = σ²Σ w_t²/n_t si lecturas iid sin correlación; es un piso independiente de posición."
+  },
+  {
+    "id": "C26",
+    "phase": "experimental",
+    "question": "Funciones asimétricas y el cuello de botella de la especie rara",
+    "hypothesis": "El orden de algoritmos depende del peso de la clase minoritaria",
+    "rivals": "El resultado es idéntico si todas las especies se comportan igual",
+    "observation": {
+      "expected_weighted_error": {
+        "equal": {
+          "initial": 0.0003042300696805914,
+          "local": 7.330963958577613e-06,
+          "mhu": 3.306960878740678e-08,
+          "cvt": 7.790237288801294e-06,
+          "sobol": 3.3713047797987865e-05,
+          "lattice": 9.44982095039341e-34,
+          "lhs": 0.0002561830680173657
+        },
+        "population": {
+          "initial": 0.00023268291462268288,
+          "local": 1.067222184398744e-05,
+          "mhu": 2.6999123266122752e-08,
+          "cvt": 1.1511760193880627e-05,
+          "sobol": 1.6377690170357845e-05,
+          "lattice": 1.3552999339102193e-33,
+          "lhs": 0.00019913111150719653
+        },
+        "rare_priority": {
+          "initial": 0.0010078731563762876,
+          "local": 1.0393267781109358e-05,
+          "mhu": 9.978880097696534e-08,
+          "cvt": 1.66904014559442e-05,
+          "sobol": 0.00018540627136843612,
+          "lattice": 2.4618414715595573e-33,
+          "lhs": 0.0007933011302095845
+        }
+      }
+    },
+    "falsifier": "Todas las ponderaciones producen la misma jerarquía",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "¿La ventaja spectral resiste reducción global a mitad de sensores?",
+    "interpretation_limit": "Exploratory, n=4 original geometries; tasks synthetic and adaptively selected."
+  },
+  {
+    "id": "C27",
+    "phase": "experimental",
+    "question": "Presupuesto de 50 % de sensores por especialidad",
+    "hypothesis": "MHU mantiene ventaja relevante al reducir coste de muestreo",
+    "rivals": "El submuestreo destruye orden y favorece diseños ya baratos",
+    "observation": {
+      "weighted_error_half_sample": {
+        "local": 0.0003276019249408332,
+        "mhu": 0.0003226765554461728,
+        "cvt": 0.0003322675104313471,
+        "sobol": 0.0003539464317660896,
+        "lattice": 0.0003327044778815027
+      },
+      "full_sample": {
+        "initial": 0.0003042300696805914,
+        "local": 7.330963958577613e-06,
+        "mhu": 3.306960878740678e-08,
+        "cvt": 7.790237288801294e-06,
+        "sobol": 3.3713047797987865e-05,
+        "lattice": 9.44982095039341e-34,
+        "lhs": 0.0002561830680173657
+      }
+    },
+    "falsifier": "La ventaja desaparece a media densidad",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Buscar funciones no periódicas donde un diseño QMC tenga ventaja",
+    "interpretation_limit": "Pérdida real por reconstrucción del patrón tras reducir n, no escalamiento optimizador a n/2 ni coste total de generación."
+  },
+  {
+    "id": "C28",
+    "phase": "experimental",
+    "question": "Transferencia a integración no periódica y función localizada",
+    "hypothesis": "MHU mantiene ventaja en funciones suaves sin estructura Fourier toroidal",
+    "rivals": "Sobol/retículas o CVT más apropiados para frontera real",
+    "observation": {
+      "nonperiodic_integral_mse_type_averaged": {
+        "initial": {
+          "x": 0.00014560242527719713,
+          "xy": 6.266419967027414e-05,
+          "bump": 2.9513655528895265e-05
+        },
+        "local": {
+          "x": 2.9165485595946025e-05,
+          "xy": 1.0615382928176065e-05,
+          "bump": 2.585661698024592e-06
+        },
+        "mhu": {
+          "x": 1.0679618469913985e-05,
+          "xy": 6.417956690659178e-06,
+          "bump": 9.883785513291587e-10
+        },
+        "cvt": {
+          "x": 2.5089748442439975e-05,
+          "xy": 8.578266468415782e-06,
+          "bump": 1.1564470221089458e-06
+        },
+        "sobol": {
+          "x": 4.954009141829296e-08,
+          "xy": 5.270385554594234e-08,
+          "bump": 6.278352894485941e-07
+        },
+        "lattice": {
+          "x": 3.4786728414773324e-07,
+          "xy": 4.821028753352463e-06,
+          "bump": 1.0615290900645443e-10
+        },
+        "lhs": {
+          "x": 9.720918334901585e-10,
+          "xy": 4.5001960890305265e-06,
+          "bump": 1.5933635461281863e-05
+        }
+      }
+    },
+    "falsifier": "MHU deja de ser competitivo cuando cambia espacio funcional",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Valorar si existe una ventaja de Pareto real y si es original",
+    "interpretation_limit": "x,xy y bump gaussiana tienen integrales analíticas en [0,1]^3; los resultados describen estos tres integrandos, no una población universal."
+  },
+  {
+    "id": "C29",
+    "phase": "synthesis+literature",
+    "question": "Frontera multivariable y prueba de originalidad frente a muestreo conocido",
+    "hypothesis": "MHU aporta beneficio no reproducible por multi-class blue noise, QMC, retículas",
+    "rivals": "Pareto en estos indicadores no acredita novedad ni utilidad neuronal",
+    "observation": {
+      "four_metrics": {
+        "initial": {
+          "coverage16": 0.61125,
+          "low_power": 0.00022511097337112252,
+          "outside_power": 0.00023412035335818797,
+          "nonperiodic_mse": 7.926009349212218e-05
+        },
+        "local": {
+          "coverage16": 0.956875,
+          "low_power": 9.722236799222556e-07,
+          "outside_power": 1.4550051386069703e-05,
+          "nonperiodic_mse": 1.412217674071556e-05
+        },
+        "mhu": {
+          "coverage16": 0.950625,
+          "low_power": 1.2457102061499781e-09,
+          "outside_power": 2.1301544970619262e-05,
+          "nonperiodic_mse": 5.699521179708164e-06
+        },
+        "cvt": {
+          "coverage16": 0.9762500000000001,
+          "low_power": 1.4891307705765067e-05,
+          "outside_power": 0.00028344598363493084,
+          "nonperiodic_mse": 1.16081539776549e-05
+        },
+        "sobol": {
+          "coverage16": 0.8190624999999999,
+          "low_power": 1.8108962004313944e-05,
+          "outside_power": 0.0002960847322855787,
+          "nonperiodic_mse": 2.433597454709431e-07
+        },
+        "lattice": {
+          "coverage16": 0.745,
+          "low_power": 5.5736194714763984e-33,
+          "outside_power": 5.5546930441673634e-33,
+          "nonperiodic_mse": 1.723000730136401e-06
+        },
+        "lhs": {
+          "coverage16": 0.6115625,
+          "low_power": 0.0001987101602650991,
+          "outside_power": 0.00023849247274228838,
+          "nonperiodic_mse": 6.811601214048627e-06
+        }
+      },
+      "non_dominated": [
+        "local",
+        "mhu",
+        "cvt",
+        "sobol",
+        "lattice"
+      ],
+      "prior_art": "Wei multi-class blue noise 2010; randomized low discrepancy sampling; rank-1 lattice; variance error related to power spectrum"
+    },
+    "falsifier": "Alguna comparación fuerte elimina o explica la ventaja específica",
+    "AB_DECIDE": "CONTINUE",
+    "next_question_selected_after_observation": "Auditoría final de resultados e independencia: AB-DECIDE",
+    "interpretation_limit": "La frontera depende de pesos y métricas elegidos tras exploración; comparación con Wei original NO ejecutada."
+  },
+  {
+    "id": "C30",
+    "phase": "audit+decision",
+    "question": "Auditoría de cierre y decisión sobre extensión",
+    "hypothesis": "Existe novedad arquitectónica 2/3 o 3/3 después de 30 ciclos",
+    "rivals": "Propiedad geométrica conocida, sin generalización externa ni ventaja sobre baselines mejores",
+    "observation": {
+      "previous_cycles": 29,
+      "sequential_ids": true,
+      "original_geometry_seeds": [
+        5201,
+        5202,
+        5203,
+        5204
+      ],
+      "comparator_names": [
+        "initial",
+        "local",
+        "mhu",
+        "cvt",
+        "sobol",
+        "lattice",
+        "lhs"
+      ],
+      "new_geometries_from_original_this_block": 0,
+      "all_numeric_exploratory": true,
+      "strongest_spectral_mhu_low_ratio_to_local": 0.0012813000052103154,
+      "high_outside_mhu_ratio_to_local": 1.4640185388632698,
+      "lattice_aliasing_peak": 0.9999999999999999,
+      "MHU_in_4metric_pareto": true,
+      "external_semantic_or_GPT_benchmark_done": false,
+      "Wei_original_executed": false
+    },
+    "falsifier": "Hallazgos positivos exclusivos se sostienen bajo todos los controles fuertes",
+    "AB_DECIDE": "STOP_NOVELTY_CLAIM",
+    "next_question_selected_after_observation": "Solicitar 8 ciclos focalizados, condicionados a experimento comparador Wei original y datos/sistemas neuronales fuera de Fourier",
+    "interpretation_limit": "Treinta decisiones científicas correlacionadas, NO treinta ensayos independientes; ningún 2/3 o 3/3 acreditado. Recomendar máximo 8 nuevos ciclos solo si se obtienen controles externos y recursos suficientes."
+  }
+]
