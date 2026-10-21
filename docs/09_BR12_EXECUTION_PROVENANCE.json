@@ -1,0 +1,17 @@
+{
+  "original_source_sha256_before_relocatable_path_repair": {
+    "dynamic_research.py": "a2b8ee1a63aaae6545a9a01cd2f24acc1cf45a708ce934c3d3f4549c0414f78b",
+    "compare_4096.py": "6604e5bcc3ec9d37dc0b5c40c7fc2a54bd14cbb9655355c8d4b63336359ba01b",
+    "access_controls.py": "bc75a39c9bd8eacbe77acad80d187a9e1349869a035b7d1fb95d934ef2d2add6",
+    "bandwidth_budget.py": "8052141fa09b64da6c1c37f2d9ad0bbe27ee2102c9840f391393a719ed149389",
+    "refine_cvt.py": "5d5c1af3f2711017029ef08498e9292111e8b946c0e8b79affc03c920bbd4f2b",
+    "build_dossier.py": "d162034c0a44588d9c6c601aab5736f7201a0aef5946138487d7e9e2481b9e93",
+    "learned_specialists.py": "09bfda4c56905d36ec36b251e2c6d0b55d81f3472eb0e32a2c7d2296a50dc019",
+    "spectrum_control.py": "6cb86c3fc332bd44e311a52eab19169053c12d56a1c6ae342d53875c59266513",
+    "original_4096_control.py": "201499a31167ad32e1163262f0231da63a8bcaf1688ba3f265ac00d0af06dec4",
+    "dropout_4096.py": "fc552eaeea2a8da99b14561b49d118e1684dc1c92b40dbf7ccabdff7a0ed33c9",
+    "br30_previous.py": "6ba3d7347c087bdf71c7de800312866c4f10dbf0f9da5ba26b499a33957284c5",
+    "fast_4096.py": "4b005e8d6903add539ef875ce416298114740860655250efbbc0f0700b07b4d2"
+  },
+  "note": "Post-test only paths and import statements were adapted for standalone ZIP; audit original run logs and pre-registered dynamic_research.py commit; no numerical algorithms changed."
+}
