@@ -1,0 +1,191 @@
+[
+  {
+    "freq": 1,
+    "name": "local",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.11623325114638605,
+    "heldout_mse": 0.10735192930390154
+  },
+  {
+    "freq": 1,
+    "name": "mhu",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.11946460365230183,
+    "heldout_mse": 0.11805922036057574
+  },
+  {
+    "freq": 1,
+    "name": "random",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.3641958656871444,
+    "heldout_mse": 0.35064541358930296
+  },
+  {
+    "freq": 1,
+    "name": "cvt_refined_1701",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.09803104052927647,
+    "heldout_mse": 0.09216191054397149
+  },
+  {
+    "freq": 1,
+    "name": "cvt_refined_1702",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.10341586253602016,
+    "heldout_mse": 0.09194031445670098
+  },
+  {
+    "freq": 1,
+    "name": "cvt_refined_1703",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.10340703096149166,
+    "heldout_mse": 0.0892702090939458
+  },
+  {
+    "freq": 1,
+    "name": "cvt_base_1704",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.11002931956803763,
+    "heldout_mse": 0.11319026584752227
+  },
+  {
+    "freq": 1,
+    "name": "cvt_base_1705",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.11687306906356155,
+    "heldout_mse": 0.10153673849557603
+  },
+  {
+    "freq": 1,
+    "name": "cvt_base_1706",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 0.12108241146252322,
+    "heldout_mse": 0.10724865521557274
+  },
+  {
+    "freq": 2,
+    "name": "local",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.7300256916428312,
+    "heldout_mse": 0.7273732145789467
+  },
+  {
+    "freq": 2,
+    "name": "mhu",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.7390806939682704,
+    "heldout_mse": 0.754434405132489
+  },
+  {
+    "freq": 2,
+    "name": "random",
+    "chosen_band_dev": 0.05,
+    "dev_mse": 1.2947258101303651,
+    "heldout_mse": 1.2072995505253143
+  },
+  {
+    "freq": 2,
+    "name": "cvt_refined_1701",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.7146916806777973,
+    "heldout_mse": 0.7104328017487703
+  },
+  {
+    "freq": 2,
+    "name": "cvt_refined_1702",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.6623122160578947,
+    "heldout_mse": 0.7166522185054119
+  },
+  {
+    "freq": 2,
+    "name": "cvt_refined_1703",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.6794961131469206,
+    "heldout_mse": 0.6945388436836083
+  },
+  {
+    "freq": 2,
+    "name": "cvt_base_1704",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.7274378258075763,
+    "heldout_mse": 0.7518035841736145
+  },
+  {
+    "freq": 2,
+    "name": "cvt_base_1705",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.7608700977605909,
+    "heldout_mse": 0.7327973680716032
+  },
+  {
+    "freq": 2,
+    "name": "cvt_base_1706",
+    "chosen_band_dev": 0.035,
+    "dev_mse": 0.752086921974628,
+    "heldout_mse": 0.7605312295970396
+  },
+  {
+    "freq": 5,
+    "name": "local",
+    "chosen_band_dev": 0.075,
+    "dev_mse": 2.5539735431571113,
+    "heldout_mse": 2.6144422346342435
+  },
+  {
+    "freq": 5,
+    "name": "mhu",
+    "chosen_band_dev": 0.16,
+    "dev_mse": 2.574560258176505,
+    "heldout_mse": 2.627014361565503
+  },
+  {
+    "freq": 5,
+    "name": "random",
+    "chosen_band_dev": 0.16,
+    "dev_mse": 2.6327663350888626,
+    "heldout_mse": 2.693836013678041
+  },
+  {
+    "freq": 5,
+    "name": "cvt_refined_1701",
+    "chosen_band_dev": 0.075,
+    "dev_mse": 2.5406529563989086,
+    "heldout_mse": 2.6249172609686204
+  },
+  {
+    "freq": 5,
+    "name": "cvt_refined_1702",
+    "chosen_band_dev": 0.075,
+    "dev_mse": 2.583163267988407,
+    "heldout_mse": 2.587822513577438
+  },
+  {
+    "freq": 5,
+    "name": "cvt_refined_1703",
+    "chosen_band_dev": 0.075,
+    "dev_mse": 2.562573284798466,
+    "heldout_mse": 2.5889259217725114
+  },
+  {
+    "freq": 5,
+    "name": "cvt_base_1704",
+    "chosen_band_dev": 0.075,
+    "dev_mse": 2.5752403383916613,
+    "heldout_mse": 2.5735869542391008
+  },
+  {
+    "freq": 5,
+    "name": "cvt_base_1705",
+    "chosen_band_dev": 0.11,
+    "dev_mse": 2.5642779716773965,
+    "heldout_mse": 2.6152993314710797
+  },
+  {
+    "freq": 5,
+    "name": "cvt_base_1706",
+    "chosen_band_dev": 0.075,
+    "dev_mse": 2.5747573383580935,
+    "heldout_mse": 2.5861912030597383
+  }
+]
