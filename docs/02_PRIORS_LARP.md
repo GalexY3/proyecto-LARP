@@ -29,3 +29,21 @@ Se conserva la procedencia histórica documentada; **no se inventa un ledger his
 | BR12-L13 | El acceso oracular de un punto por tipo es más eficiente para composición que los 16 vecinos globales. | Garantiza cinco tipos con solo 5 lecturas de sensores. | LOCAL MSE .316 vs .114 con 16 vecinos; ruido de interpolación mayor; búsqueda de 5 árboles tiene coste extra. | Otras funciones/tareas y costes totales muestran superioridad reproducible. | NO_VALIDADO |
 | BR12-L14 | CVT mantiene ventaja bajo perturbaciones por sensores perdidos. | A 0% CVT ~.10 vs LOCAL .129. | A 60% MHU .474 < CVT ~.499 y LOCAL .531, todo muy degradado. | Ensayos independientes con fallos correlacionados/ruido real. | SINTÉTICO condicionado |
 | BR12-L15 | La diferencia original Scale3D/N4096 puede inferirse a partir de LOCAL_derived/N512. | Ninguna. | El derivado N512 tiene peor cobertura que estratificado; no comparte optimizador/escala. | Reimplementación matemáticamente equivalente con tests de gradiente e inicialización. | RECHAZADO como equivalencia |
+
+
+---
+## Actualización acumulativa BR30 dinámico (22-10-2026)
+Procedencia: `docs/BR30_DYNAMIC_C01_C08_LEDGER.md`, commit `135c4a1575addef794eee69b6b0052e011ea415d`. Las entradas BR30-D16–D21 NO sustituyen ni borran hipótesis históricas; todos los contrastes funcionales son exploratorios.
+
+# Anexo acumulativo de priors LARP (BR30 dinámico)
+
+**Priors nuevos BR30-D16–D21**. Son actualizaciones cualitativas, no probabilidades bayesianas calibradas; la fuente es el estudio exploratorio C01–C08. Integrar al ledger maestro conservando priors anteriores BR12/BR30 sin borrar contradicciones.
+
+| ID | Procedencia / proposición | Favorable | Contraria / incertidumbre | Falsador / siguiente prueba | Estado |
+|---|---|---|---|---|---|
+| BR30-D16 | C01/C02: el generador original Scale3D v1/v2 es recuperable y ejecutable en CPU. | Exact hash y cuatro seeds x 600 iteraciones. | No se cotejó bitwise con todos los checkpoints históricos. | Comparación contra archivos históricos en mismo hardware/software. | TECNICO_VERIFICADO limitadamente |
+| BR30-D17 | C03/C04: MHU mejora sistemáticamente la reconstrucción bajo agujeros espaciales. | Seed 5201 MHU .147 vs LOCAL .166; seed 5204 MHU .184 vs LOCAL .205. | Seeds 5202/5203 invierten; media −.00253, IC descriptivo cruza cero. | Nuevas geometrías y perturbaciones de naturaleza distinta fijadas antes de test. | NO_VALIDADO |
+| BR30-D18 | C05: la supresión espectral finita MHU crea una topología kNN mejor para aprendizaje. | Brecha Laplaciana .03416 MHU vs .03385 LOCAL. | CVT .0334–.0336; efecto pequeño; no mide aprendizaje. | Mostrar mejora de aprendizaje con mediación topológica y recursos iguales. | SINTETICO_EXPLORATORIO |
+| BR30-D19 | C06/C07: LOCAL ofrece ventaja neuronal reproducible vs MHU/CVT. | LOCAL gana por .0027–.0042 en una seed. | Orden cambia en otra seed y entrenamiento incompleto; CVT reusable. | Convergencia/replicaciones verdaderas/benchmarks no construidos para suavidad. | NO_VALIDADO |
+| BR30-D20 | C08: presupuestos breves de aprendizaje pueden invertir rankings prematuramente. | Todos los mejores checkpoints al final y MSE mejora solo 7% vs cero. | No prueba que el ranking convergido difiera realmente. | Seguimiento de pérdidas hasta meseta por varias seeds con mismo compute. | PRIOR_METODOLOGICO_CONTEXTUAL |
+| BR30-D21 | Validación: cuatro muestras MHU original reproducen supresión de banda finita para union y tipos. | Auditoría exacta FP64, todas superan criterio finito; S_union .00044–.00046. | No prueba HU asintótica, novedad ni valor para arquitectura. | Repetición en tamaños crecientes y medición función/coste. | SINTETICO_VERIFICADO_FINITO |
