@@ -1,0 +1,45 @@
+{
+  "estimand": "MSE_LOCAL-MSE_STRATIFIED at frequency 1, 24 nearest fixed, Gaussian bandwidth 0.11",
+  "seeds": [
+    901,
+    902,
+    903,
+    904,
+    905,
+    906,
+    907,
+    908,
+    909,
+    910,
+    911,
+    912,
+    913,
+    914,
+    915,
+    916,
+    917,
+    918,
+    919,
+    920
+  ],
+  "n_worlds": 20,
+  "queries_per_world": 512,
+  "n_unique_geometries_per_algorithm": 1,
+  "means": {
+    "local": 0.12581194998789172,
+    "stratified": 0.2008379313017517,
+    "random": 0.319896997920874,
+    "mhu": 0.13230639770242908
+  },
+  "diff_mean": -0.07502598131386001,
+  "diff_sd": 0.03455014204819388,
+  "ci_95_two_sided_t": [
+    -0.09119594553626938,
+    -0.05885601709145065
+  ],
+  "t_statistic": -9.711288252442356,
+  "p_two_sided": 8.419180408235057e-09,
+  "within_model_confirmatory": true,
+  "external_replication": false,
+  "elapsed_seconds": 4.139241695404053
+}

@@ -1,0 +1,32 @@
+{
+  "phase": "pilot",
+  "world_seeds": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "query_seed": 774411,
+  "n_world": 512,
+  "n_queries_geom": 8192,
+  "original_geometries": true,
+  "elapsed_seconds": 26.77,
+  "checks": {
+    "permutation_invariance_max_abs": 0.0,
+    "counts": [
+      1669,
+      871,
+      696,
+      512,
+      348
+    ],
+    "finite_preds": true
+  },
+  "n_rows": 880
+}

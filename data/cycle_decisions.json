@@ -1,0 +1,272 @@
+[
+  {
+    "cycle": 1,
+    "branch": "A",
+    "condition": "k=8",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.5057373046875,
+    "stratified": 0.29736328125,
+    "delta_local_minus_stratified": 0.2083740234375
+  },
+  {
+    "cycle": 2,
+    "branch": "A",
+    "condition": "k=12",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.84814453125,
+    "stratified": 0.6236572265625,
+    "delta_local_minus_stratified": 0.2244873046875
+  },
+  {
+    "cycle": 3,
+    "branch": "A",
+    "condition": "k=16",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.9620361328125,
+    "stratified": 0.808837890625,
+    "delta_local_minus_stratified": 0.1531982421875
+  },
+  {
+    "cycle": 4,
+    "branch": "A",
+    "condition": "k=24",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.998291015625,
+    "stratified": 0.947509765625,
+    "delta_local_minus_stratified": 0.05078125
+  },
+  {
+    "cycle": 5,
+    "branch": "A",
+    "condition": "k=32",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 1.0,
+    "stratified": 0.9835205078125,
+    "delta_local_minus_stratified": 0.0164794921875
+  },
+  {
+    "cycle": 6,
+    "branch": "B",
+    "condition": "q=0.50",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.0774236307736499,
+    "stratified": 0.0848968546056069,
+    "delta_local_minus_stratified": -0.007473223831957004
+  },
+  {
+    "cycle": 7,
+    "branch": "B",
+    "condition": "q=0.75",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.0849438081468404,
+    "stratified": 0.0958434623058678,
+    "delta_local_minus_stratified": -0.010899654159027397
+  },
+  {
+    "cycle": 8,
+    "branch": "B",
+    "condition": "q=0.90",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.0920505780858448,
+    "stratified": 0.1066392989175668,
+    "delta_local_minus_stratified": -0.014588720831721996
+  },
+  {
+    "cycle": 9,
+    "branch": "B",
+    "condition": "q=0.95",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.0964628091549493,
+    "stratified": 0.113983147415737,
+    "delta_local_minus_stratified": -0.017520338260787693
+  },
+  {
+    "cycle": 10,
+    "branch": "B",
+    "condition": "q=0.99",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.105177546456864,
+    "stratified": 0.1305330748847767,
+    "delta_local_minus_stratified": -0.025355528427912694
+  },
+  {
+    "cycle": 11,
+    "branch": "C",
+    "condition": "freq=1",
+    "decision": "CONTINUE → prueba confirmatoria única preregistrada (realizada después de seleccionar C11)",
+    "local": 0.1339752454720137,
+    "stratified": 0.2077711875162992,
+    "delta_local_minus_stratified": -0.0737959420442855
+  },
+  {
+    "cycle": 12,
+    "branch": "C",
+    "condition": "freq=2",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.8116113905541139,
+    "stratified": 0.9091676099619664,
+    "delta_local_minus_stratified": -0.09755621940785253
+  },
+  {
+    "cycle": 13,
+    "branch": "C",
+    "condition": "freq=3",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 1.5902640334468647,
+    "stratified": 1.7106082643044125,
+    "delta_local_minus_stratified": -0.12034423085754775
+  },
+  {
+    "cycle": 14,
+    "branch": "C",
+    "condition": "freq=4",
+    "decision": "STOP para altas frecuencias: ventaja decrece y error absoluto aumenta",
+    "local": 1.982369802461647,
+    "stratified": 2.0743924810304453,
+    "delta_local_minus_stratified": -0.09202267856879831
+  },
+  {
+    "cycle": 15,
+    "branch": "C",
+    "condition": "freq=6",
+    "decision": "STOP para altas frecuencias: ventaja decrece y error absoluto aumenta",
+    "local": 2.10587162996898,
+    "stratified": 2.1489116244128583,
+    "delta_local_minus_stratified": -0.04303999444387818
+  },
+  {
+    "cycle": 16,
+    "branch": "D",
+    "condition": "drop=0",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.8116113905541139,
+    "stratified": 0.9091676099619664,
+    "delta_local_minus_stratified": -0.09755621940785253
+  },
+  {
+    "cycle": 17,
+    "branch": "D",
+    "condition": "drop=0.1",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.8939060334878304,
+    "stratified": 0.9784463046731584,
+    "delta_local_minus_stratified": -0.08454027118532803
+  },
+  {
+    "cycle": 18,
+    "branch": "D",
+    "condition": "drop=0.25",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 1.0537736439812493,
+    "stratified": 1.120196459100157,
+    "delta_local_minus_stratified": -0.06642281511890769
+  },
+  {
+    "cycle": 19,
+    "branch": "D",
+    "condition": "drop=0.4",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 1.2178487420231925,
+    "stratified": 1.3348826679130406,
+    "delta_local_minus_stratified": -0.11703392588984807
+  },
+  {
+    "cycle": 20,
+    "branch": "D",
+    "condition": "drop=0.6",
+    "decision": "STOP por degradación notable a dropout=.60",
+    "local": 1.5363402422702588,
+    "stratified": 1.5243744437749325,
+    "delta_local_minus_stratified": 0.011965798495326307
+  },
+  {
+    "cycle": 21,
+    "branch": "E",
+    "condition": "bw_k24=0.3",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.6079149235028707,
+    "stratified": 0.7618110582816888,
+    "delta_local_minus_stratified": -0.15389613477881814
+  },
+  {
+    "cycle": 22,
+    "branch": "E",
+    "condition": "bw_k24=0.6",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.7095733578431763,
+    "stratified": 0.827053687293958,
+    "delta_local_minus_stratified": -0.11748032945078168
+  },
+  {
+    "cycle": 23,
+    "branch": "E",
+    "condition": "bw_k24=1",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.8128999645809106,
+    "stratified": 0.9102553738275292,
+    "delta_local_minus_stratified": -0.09735540924661856
+  },
+  {
+    "cycle": 24,
+    "branch": "E",
+    "condition": "bw_k24=2",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.8633444212543322,
+    "stratified": 0.9519813450732308,
+    "delta_local_minus_stratified": -0.08863692381889865
+  },
+  {
+    "cycle": 25,
+    "branch": "E",
+    "condition": "bw_k24=4",
+    "decision": "CONTINUE sólo con control externo/no simulado",
+    "local": 0.8763963980941545,
+    "stratified": 0.962887099470454,
+    "delta_local_minus_stratified": -0.08649070137629955
+  },
+  {
+    "cycle": 26,
+    "branch": "F",
+    "condition": "labels_shuffled",
+    "decision": "STOP en esta ablación: mecanismo conocido, no original",
+    "local": 1.1041151250577186,
+    "stratified": 1.067732620790552,
+    "delta_local_minus_stratified": 0.036382504267166604
+  },
+  {
+    "cycle": 27,
+    "branch": "F",
+    "condition": "positions_shuffled_per_type",
+    "decision": "REPAIR (control de identidad, no intervención sustantiva)",
+    "local": 0.8116113905541139,
+    "stratified": 0.9091676099619664,
+    "delta_local_minus_stratified": -0.09755621940785253
+  },
+  {
+    "cycle": 28,
+    "branch": "F",
+    "condition": "only_dominant",
+    "decision": "STOP en esta ablación: mecanismo conocido, no original",
+    "local": 2.036358548766335,
+    "stratified": 2.036358548766335,
+    "delta_local_minus_stratified": 0.0
+  },
+  {
+    "cycle": 29,
+    "branch": "F",
+    "condition": "signals_scrambled_per_type",
+    "decision": "STOP en esta ablación: mecanismo conocido, no original",
+    "local": 2.162112671872519,
+    "stratified": 2.132753807041408,
+    "delta_local_minus_stratified": 0.029358864831110942
+  },
+  {
+    "cycle": 30,
+    "branch": "F",
+    "condition": "positions_labels_permuted",
+    "decision": "REPAIR (control de identidad, no intervención sustantiva)",
+    "local": 0.8116113905541139,
+    "stratified": 0.9091676099619664,
+    "delta_local_minus_stratified": -0.09755621940785253
+  }
+]

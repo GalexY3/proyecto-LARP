@@ -1,0 +1,20 @@
+{
+  "README.md": "753f30c3ec06157161f17e8e6d6e26abb56ba588690bb2dca2cb0c0f7c05075d",
+  "data/confirm_focus_raw.csv": "675685d88c02ea0f28a4ea2f465e67eb52641ff2b8eec907aa1221f2f6b3168b",
+  "data/confirm_focus_summary.json": "998e0f606c27df59dff1c92061828db310c866504c0b378f7a9aa9f34822cb3a",
+  "data/cycle_decisions.json": "e6e024825428d16055e54c8d157a2a95c56dd8daf461509630705ec4f16d9224",
+  "data/geometrias/local_geometry.npz": "b4edafca9fee46aa9372940e14e494e1ca3fcd5c6182f99452518d21a23fa4a6",
+  "data/geometrias/mhu_geometry.npz": "eb87754a98b6b1d175bd08da6f01bac2f59624e06e948bc0a7c94df3611399eb",
+  "data/geometrias/random_geometry.npz": "11618964dc2743dcdbe0864dd6b418e51f1c680f08cee9384cda0f6b976c564f",
+  "data/pilot_metadata.json": "6718ad4cc4700b009b7d328e36eb3cdb86a2fb2c114d2e3caf11e6d366cedca3",
+  "data/pilot_raw.csv": "5854fd07d92f55a79e80e73b314f0511a2f90df2715a1578b35564026b5f0da3",
+  "data/pilot_summary.csv": "762ad3f4766580dd1bcd8323b150d58d985460265fdd554857d7415716185d4b",
+  "docs/00_DICTAMEN.md": "8045d2593648dff8d5e2ee34f31ed1985c29d67bf669229471310193aea8e586",
+  "docs/01_LEDGER_30_CICLOS.md": "6959e27f3713b4bcfbf69af8b9ef21f6f567d97e1acc93dbdf7e584c02c8b464",
+  "docs/02_PRIORS_LARP.md": "98d256a15b75d94ba38d31c6708f45e757662f844f6cd9bc79d6feb1f0076ab2",
+  "figures/cobertura_k16.png": "d41197b1199bebf5fe2358408fbf0c5fdf01726896bcaf2225fbfe1acfddd6c8",
+  "figures/mse_frecuencia_1.png": "311b66e5a4a5292587158a1d116a4128ef17cc00119e19a993813bfc22d9c6b1",
+  "src/build_report.py": "ee10141b353de9d7281798c5f43167f7cbf42c2d3fdae9a5078678c8aec8c847",
+  "src/confirm_focus.py": "3625c93ef9e39d1c6574732264ec40a5f36f36c8bbe954c25f99200107dc075c",
+  "src/run_br30.py": "6ba3d7347c087bdf71c7de800312866c4f10dbf0f9da5ba26b499a33957284c5"
+}
