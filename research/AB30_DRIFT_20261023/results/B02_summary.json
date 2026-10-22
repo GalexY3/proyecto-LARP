@@ -1,0 +1,46 @@
+{
+  "block": "B02",
+  "prereg_commit": "397d60d67bbb271ddecc11d2f50d5d5eb83c3982",
+  "source_sha256": "867e75309dfa81c8568bb2360d4cb4909560a338d7f16a587d03bba877f1deb6",
+  "n_worlds": 24,
+  "deltas": [
+    [
+      "T07",
+      0.0106381,
+      -0.030359,
+      0.051636
+    ],
+    [
+      "T08",
+      -0.0242201,
+      -0.056521,
+      0.008081
+    ],
+    [
+      "T09",
+      0,
+      0,
+      0
+    ],
+    [
+      "T10",
+      0.0069143,
+      -0.039291,
+      0.053119
+    ],
+    [
+      "T11",
+      0.0024874,
+      -0.002658,
+      0.007633
+    ],
+    [
+      "T12",
+      0.0794871,
+      0.009569,
+      0.149406
+    ]
+  ],
+  "audit": "T09 exact tie, methods pick same or observationally equivalent subset; not a statistical discovery. T12 ignoring signed correlations materially harmful. No consistent robust gain.",
+  "decision": "PIVOT to stress-testing stationary/misspecified dependence and then leave synthetic simulations for two real public datasets."
+}
