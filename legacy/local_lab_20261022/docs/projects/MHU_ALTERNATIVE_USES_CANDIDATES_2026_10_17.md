@@ -1,0 +1,31 @@
+# Oportunidades de reutilización tras la revisión MHU/HU
+
+Fecha: 17 de octubre de 2026. Estado de todos los candidatos: **PROPOSED_NOT_RUN**. Este documento orienta una elección futura; no es un preregistro ni inicia experimentos. Marco: [AB 2.1](../charter/LARP_RESEARCH_CHARTER_AB_2_1.md). Evidencia: [recopilación y límites de 31 trabajos](../literature/MHU_HU_APPLICATIONS_2026_10_17.md). [Decisión de incorporación](../decisions/ADR_2026_10_17_APPLICATIONS_LITERATURE_INCORPORATION.md).
+
+**Prioridad recomendada:** adquisición multicanal por reutilización y coste bajo; arrays compartidos por mecanismo físico directo; diseño de ondas como alternativa más especializada. Esta prioridad es cualitativa y revisable, sin probabilidades o puntuaciones inventadas. La novedad de repetir los ejemplos publicados sería baja: hace falta una pregunta más estrecha.
+
+**Candidato A — Adquisición multicanal con presupuestos heterogéneos.** Hipótesis provisional **H-ALT-A**: distribuir las clases para controlar una banda espectral relevante mejora reconstrucción o reduce aliasing frente a controles con la misma información disponible. Motivación: LED RGB de Zhao 2021, blue noise multiclase de Wei 2010 y diagnósticos locales de LARP. Mecanismo: operador de adquisición y correlaciones por canal; posible interacción con el decoder.
+
+Reutilizables: `src/larp/sampling_probe.py`, `sampling_grid.py`, `sampling_oracle.py`, `sampling_information.py` y generadores, previa revisión de sus interfaces. Alternativa independiente: los proyectos hermanos `avian-patterns-lab` y `sampling-audit-lab`, sin modificar sus repositorios publicados durante esta tarea.
+
+Comparadores necesarios: estratificación/jitter, blue noise multiclase, organización local sin objetivo espectral y diseño adaptado al modelo de señal. Mismos conteos por canal, ruido, mundos, resolución efectiva y presupuesto de búsqueda; reconstrucción fuerte y queries fuera de rejilla. Separar rendimiento del procedimiento completo y atribución específica al espectro. S₂ o distancias parecidas no fijan toda la geometría local.
+
+Prueba mínima futura: un piloto congelado con banda de señal relevante y otra desplazada, y decoders local y fuerte; mostrar si el efecto sigue al espectro predicho. No basta volver a mejorar un interpolador débil. Métrica: error integrado y aliasing, además de rango, condicionamiento y coste de generación. Continuar si una mejora reproducible frente al rival fuerte tiene utilidad al contar costes; pivotar si depende solo del decoder; cerrar el contraste MHU si no existe beneficio útil y el intervalo de incertidumbre excluye la mejora mínima que se haya fijado antes de ver resultados. Si falla la construcción del control, declarar **NOT_IDENTIFIED**.
+
+Coste preliminar para un protocolo futuro: CPU, sin entrenamiento, techo de 10 minutos y 2 GB de RAM para el piloto inicial. Ajustar antes de ejecutar, no después de abrir resultados. Importancia e información esperadas medias-altas; reutilización alta; confianza en que habrá ventaja MHU baja/no establecida.
+
+**Candidato B — Apertura compartida para varios tipos de emisores.** Hipótesis provisional **H-ALT-B**: controlar espectros por clase permite un compromiso favorable entre área, lóbulos secundarios y pérdidas al intercalar subarrays. Motivación: EPJ e IEEE TAP 2024; no reivindicar novedad del concepto. Mecanismo inicial explícito: suma de fases en el factor de array de cada clase y banda.
+
+Piloto futuro: empezar con emisores ideales y un modelo de elemento declarado. Comparar con diseños aperiódicos optimizados directamente y subarrays aislados, igualando apertura, conteos, tamaños mínimos, potencia, barrido angular y presupuesto de optimización. Evaluar fuera de las frecuencias y direcciones usadas para diseñar. Medir lóbulos, ancho de haz, ganancia normalizada y penalización por compartir apertura.
+
+El factor de array no modela por sí solo el acoplamiento electromagnético mutuo. Un resultado favorable solo justificaría ampliar el modelo; no permitiría afirmar mejores antenas físicas. Continuar si hay una mejora del frente de compromisos frente al rival optimizado en datos nuevos; pivotar si solo importa no solapar elementos; cerrar si el rival logra lo mismo con menos coste. Techo preliminar CPU de 10 minutos/2 GB, sin Maxwell 3D ni hardware. Factibilidad alta para el modelo ideal; alcance físico y novedad inicial limitados.
+
+**Candidato C — Diseñar el espectro para una respuesta de ondas concreta.** Hipótesis provisional **H-ALT-C**: restricciones espectrales elegidas por función superan perseguir HU como etiqueta. Motivación: generador de Shih 2024; Froufe-Pérez 2016; pérdidas residuales medidas por Barsukova 2026; controversia de gyromorphs 2025/2026. Estos trabajos no confirman la hipótesis nueva.
+
+Antes de implementar: contrastar licencias, requisitos y formulación del generador NUFFT; su escalabilidad no resuelve automáticamente nuestras restricciones locales incompatibles. Piloto futuro: un único modelo de ondas validado, un observable de transmisión o densidad de estados y comparación con cristal, patrón local y optimización directa. Igualar material, densidad, excitación y fronteras; comprobar dependencia de tamaño y distinguir gap de pseudogap. Continuar por una predicción discriminante reproducida; cerrar si solo hay ventaja del simulador o del modelo aproximado.
+
+Coste y presupuesto pendientes de elegir el solver. No lanzar trabajo de ondas completo con un techo ficticio. Factibilidad media, riesgo técnico mayor y novedad pendiente de revisión específica; candidato condicionado a disponer de un modelo fiable.
+
+**En reserva.** Aleaciones, MXenes y compuestos multifuncionales requieren experiencia material y validación adicionales; la evidencia atomística no se convierte en mejores dispositivos sin más. La cobertura de especialistas en espacios abstractos tiene interés, pero necesitaría definir métrica y objetivo; no se plantea como LLM MHU sin pérdida de información.
+
+**Regla común.** Registrar coste de generación además de evaluación, separar señales seleccionadas de confirmación nueva y aceptar un óptimo no MHU. Mantener resultados, configuraciones e hipótesis antiguas intactos. No crear una biblioteca o infraestructura nueva antes de que un candidato la necesite.

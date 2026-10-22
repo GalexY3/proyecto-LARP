@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-17",
+  "status": "PASS",
+  "authorization": "Incorpora al laboratorio lo que necesites",
+  "scope": "documentation_and_candidate_hypotheses_only",
+  "sources_status": "reported_not_locally_reproduced",
+  "imports": [
+    {
+      "source": "C:\\Programación\\MHU_usos_alternativos\\RECOPILACION_MHU_HU_2026-10-17.md",
+      "destination": "docs/literature/MHU_HU_APPLICATIONS_2026_10_17.md",
+      "sha256": "40f7c6d65cdd4e83500ea937e6259c92bbfca98cb40f8ac77db7888c77c82b31",
+      "copy_matches_source": true
+    },
+    {
+      "source": "C:\\Programación\\MHU_usos_alternativos\\notas_hu_muestreo_limites.md",
+      "destination": "docs/literature/MHU_HU_SAMPLING_AND_ARRAYS_NOTES_2026_10_17.md",
+      "sha256": "2487f22ed6041d75d80ff9e0d630291edb8ff424efc8506318758037ef7dd1b7",
+      "copy_matches_source": true
+    }
+  ],
+  "registry": {
+    "path": "docs/literature/MHU_HU_APPLICATIONS_2026_10_17.sources.json",
+    "sources": 32,
+    "fields_validated": [
+      "DOI_or_URL",
+      "citation",
+      "claims_supported",
+      "date_accessed",
+      "entry_number",
+      "evidence_type",
+      "id",
+      "implementation_relevance",
+      "limitations",
+      "peer_review_status",
+      "scope",
+      "source_type"
+    ],
+    "source_urls_present_in_report": true
+  },
+  "local_links_checked": 19,
+  "documents": [
+    {
+      "path": "docs/literature/MHU_HU_APPLICATIONS_2026_10_17.md",
+      "sha256": "40f7c6d65cdd4e83500ea937e6259c92bbfca98cb40f8ac77db7888c77c82b31"
+    },
+    {
+      "path": "docs/literature/MHU_HU_SAMPLING_AND_ARRAYS_NOTES_2026_10_17.md",
+      "sha256": "2487f22ed6041d75d80ff9e0d630291edb8ff424efc8506318758037ef7dd1b7"
+    },
+    {
+      "path": "docs/literature/MHU_HU_APPLICATIONS_2026_10_17.sources.json",
+      "sha256": "d69cd1f9b0ce94771202fc13f5028535ef7bb67953379694bb987b1cb27bd929"
+    },
+    {
+      "path": "docs/decisions/ADR_2026_10_17_APPLICATIONS_LITERATURE_INCORPORATION.md",
+      "sha256": "c0b2108802fcefe08bdaa391d8f11db93c956879cd07202a39bb458b4b00ed34"
+    },
+    {
+      "path": "docs/projects/MHU_ALTERNATIVE_USES_CANDIDATES_2026_10_17.md",
+      "sha256": "342d8d95ea29f0776e770610504802cbbf0ba9e29c279da7648b0f38285dc055"
+    }
+  ],
+  "indexes_updated": [
+    "README.md",
+    "docs/ARCHIVE_AND_REUSE_2026_10_17.md"
+  ],
+  "experiment_status": "NOT_RUN",
+  "new_training_or_scientific_benchmarks": false,
+  "software_tests_run": false,
+  "historical_priors_reclassified": false,
+  "archive_status": "ARCHIVED",
+  "remote_publication_performed": false,
+  "validation_limits": "Se comprobaron copias, JSON y enlaces locales incorporados; no se repitieron resultados externos ni se verificaron de nuevo todos los enlaces web."
+}

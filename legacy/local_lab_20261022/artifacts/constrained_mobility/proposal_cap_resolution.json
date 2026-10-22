@@ -1,0 +1,12 @@
+{
+  "status": "CAP_RESOLVED_ONCE",
+  "UTC": "2026-10-09T14:23:30.012633+00:00",
+  "calibration_sha256": "d306f16e84133ceba3e296d5109d091f9853d42ab742c7cbec98d83e7f51ff99",
+  "previous_config_sha256": "dea91920e03cabf11d58a0a7b4cc8f4a173ade0a4546d358057d92e949439694",
+  "resolved_config_sha256": "a4873dc457e2943bc019fd036dd52b0270925d08c1ab1d69f663c9e9f9083087",
+  "only_change": "chain.proposals from null to common calibrated cap",
+  "maximum_proposal_seconds": 0.0497815,
+  "common_cap": 190,
+  "calibration_wall_seconds": 2.4167939,
+  "no_additional_measurements": true
+}

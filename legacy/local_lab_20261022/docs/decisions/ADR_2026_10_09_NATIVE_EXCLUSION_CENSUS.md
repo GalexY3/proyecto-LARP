@@ -1,0 +1,13 @@
+# Censo algebraico de exclusión nativa, posterior al diagnóstico
+
+Se adopta antes de calcular el censo, después de observar cinco aceptados swap2 y cero cycle3, y fallos de mínimo NN en1130/1140 y1140/1140 propuestas. Es una desviación informativa dentro del permiso del investigador para explorar estructuras mejores; no se inicia un tercer optimizador. Las hipótesis sugeridas por estos datos siguen siendo posteriores a la observación.
+
+Máximo20 s adicionales, descontados del presupuesto original360 s; gasto previo110,6623657 s. Un solo cálculo sobre las tres referencias históricas, sin semillas nuevas, cambios de guardas, labels candidatos completos, tareas ni adquisición. Un corte conserva el fallo, sin repetir.
+
+Para cada tipo c, G_c marca pares cuya distancia viola `max(0,m_c−d)/a_c≤.05`. El grafo dirigido D permite trasladar la marca de i a j, de otro tipo, cuando j no tiene vecinos prohibidos del tipo de i exceptuando i, que se retira. Como cada movimiento considerado cambia sólo un sitio por tipo, los pares restantes son nativos y válidos. Un swap pasa esta familia iff D_ij·D_ji; un ciclo de tres iff D_ij·D_jk·D_ki. D sólo conecta tipos distintos; `tr(D³)/3` cuenta ciclos orientados, y `sum(D·Dᵀ)/2` cuenta swaps.
+
+Registrar conteos exactos en enteros, denominadores de todos los swaps/ciclos con tipos distintos y hash del grafo. La guarda se calcula con la misma desigualdad float64, evitando sustituirla silenciosamente por un umbral con redondeo distinto. Auditar por otra construcción de distancias y conteo mediante bitsets; esto es verificación matemática sobre referencias observadas, no réplica independiente ni confirmación empírica de una hipótesis posterior.
+
+También calcular la probabilidad nativa de superar **sólo esta familia** bajo el kernel congelado: subconjuntos/orden/ancla uniformes,80%near4/20%global, dos orientaciones equiprobables. Global se cuenta por bloques de tipos; near enumera únicamente las combinaciones de4×4 vecinos de cada ancla y orden de tipos. No se forma ni puntúa un control completo. Esa probabilidad es una propiedad del muestreador condicional a la nativa, una cota superior de admisibilidad completa; no es likelihood, Bayes factor ni evidencia neuronal.
+
+Cero ciclos contados demostraría ausencia de ciclos de tres admisibles para esta familia en la nativa específica. Un conteo positivo refutaría esa ausencia, aunque las otras129 guardas podrían invalidarlos y el kernel podría darles masa mínima. No demuestra conectividad global, utilidad MHU ni accesibilidad de q=.25. Conservar el cierre de la secuencia de buscadores y la propuesta de compromisos; cualquier intervención posterior requeriría otro protocolo.

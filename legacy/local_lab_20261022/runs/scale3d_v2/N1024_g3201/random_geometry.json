@@ -1,0 +1,610 @@
+{
+  "box_length": 10.079368399158984,
+  "validation": {
+    "version": "scale3d_cic_multicomponent_inverse_k2_v2",
+    "N": 1024,
+    "counts": [
+      417,
+      218,
+      174,
+      128,
+      87
+    ],
+    "physical_box_length": 10.079368399158984,
+    "periodic_3d": true,
+    "asymptotic_HU_established": false,
+    "finite_low_k_pass": false,
+    "finite_mean_threshold": 0.2,
+    "exact_audit_float64": true,
+    "subsampled_bands": true,
+    "components": [
+      {
+        "component": "union",
+        "n": 1024,
+        "cutoff_integer_norm_squared": 29,
+        "physical_cutoff": 3.3569552230823665,
+        "full_band_halfspace_modes": 345,
+        "tested_modes": 128,
+        "chi_realized": 0.11241446725317693,
+        "exact_low_k_mean": 0.9768369462244588,
+        "exact_low_k_max": 6.098705941936432,
+        "first_shell_mean": 0.9439489522328749,
+        "first_shell_max": 1.5408165684524087,
+        "outside_band_mean": 1.1625183877037553,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.0096406112269374,
+          0.7423066493474082,
+          1.1776437760222966
+        ],
+        "exact_full_band_mean": 1.0080240505526574,
+        "exact_full_band_max": 6.098705941936432,
+        "exact_full_band_modes": 345,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 0.9439489522328751,
+            "max": 1.540816568452409
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 0.48795777922103606,
+            "max": 1.7736030211537634
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 0.15514861842802968,
+            "max": 0.29978278861898877
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 1.8857159847110623,
+            "max": 2.7319490029887428
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 1.0751863170222034,
+            "max": 2.7470996224095927
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 1.2580882475684307,
+            "max": 2.439390613710628
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 1.3604465992623946,
+            "max": 4.102632520043551
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 1.033439804241926,
+            "max": 3.0602906790431033
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 0.6717336769145787,
+            "max": 1.6793744563827904
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 1.2592835553034716,
+            "max": 2.619107857995552
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.8130240615809892,
+            "max": 1.313874962531844
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 1.290463920471945,
+            "max": 3.8114758998113207
+          },
+          {
+            "norm_squared": 14,
+            "modes": 24,
+            "mean": 0.7188476623290546,
+            "max": 2.6012656998987627
+          },
+          {
+            "norm_squared": 16,
+            "modes": 3,
+            "mean": 1.157707551419772,
+            "max": 1.980717861851926
+          },
+          {
+            "norm_squared": 17,
+            "modes": 24,
+            "mean": 0.8268498375742306,
+            "max": 2.836707710776021
+          },
+          {
+            "norm_squared": 18,
+            "modes": 18,
+            "mean": 1.0291756654574051,
+            "max": 3.3695174368452467
+          },
+          {
+            "norm_squared": 19,
+            "modes": 12,
+            "mean": 0.8501966253880616,
+            "max": 2.400044553362693
+          },
+          {
+            "norm_squared": 20,
+            "modes": 12,
+            "mean": 0.7736033598065863,
+            "max": 2.2746728608166458
+          },
+          {
+            "norm_squared": 21,
+            "modes": 24,
+            "mean": 1.5422286489471695,
+            "max": 6.069180793319333
+          },
+          {
+            "norm_squared": 22,
+            "modes": 12,
+            "mean": 0.776845142746163,
+            "max": 1.573712566700771
+          },
+          {
+            "norm_squared": 24,
+            "modes": 12,
+            "mean": 1.174957652832972,
+            "max": 2.4948574478028083
+          },
+          {
+            "norm_squared": 25,
+            "modes": 15,
+            "mean": 0.6753881035921427,
+            "max": 1.3704438829745764
+          },
+          {
+            "norm_squared": 26,
+            "modes": 36,
+            "mean": 1.1231219677841833,
+            "max": 6.098705941936432
+          },
+          {
+            "norm_squared": 27,
+            "modes": 16,
+            "mean": 0.9696513234171337,
+            "max": 2.5482440517119382
+          },
+          {
+            "norm_squared": 29,
+            "modes": 36,
+            "mean": 1.0295594673590576,
+            "max": 3.374782933295161
+          }
+        ]
+      },
+      {
+        "component": "type_0",
+        "n": 417,
+        "cutoff_integer_norm_squared": 16,
+        "physical_cutoff": 2.493483741582003,
+        "full_band_halfspace_modes": 128,
+        "tested_modes": 128,
+        "chi_realized": 0.10256410256410256,
+        "exact_low_k_mean": 1.0635506046898409,
+        "exact_low_k_max": 5.974630880534997,
+        "first_shell_mean": 1.3091266749294197,
+        "first_shell_max": 1.4889898918305582,
+        "outside_band_mean": 1.0857744255131223,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.115983164531442,
+          1.2142574936419324,
+          0.8632881165993671
+        ],
+        "exact_full_band_mean": 1.0635506046898409,
+        "exact_full_band_max": 5.974630880534997,
+        "exact_full_band_modes": 128,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 1.3091266749294197,
+            "max": 1.4889898918305582
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 1.306566019366929,
+            "max": 2.922456741736929
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 0.5871999788525404,
+            "max": 1.1161784108674906
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 1.0527574289592467,
+            "max": 2.8653013114551187
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 1.0402931033432556,
+            "max": 3.23027388851656
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 1.0023064462449573,
+            "max": 3.2141574088268516
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 1.709838519426974,
+            "max": 3.2326936030171645
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 1.123798088142376,
+            "max": 5.974630880534997
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 0.5587989459273079,
+            "max": 1.90566108761476
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 1.2319827924719917,
+            "max": 2.2223935943349358
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.6300043026342966,
+            "max": 1.4311165512871884
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 1.3291553851056959,
+            "max": 3.839966245547908
+          },
+          {
+            "norm_squared": 14,
+            "modes": 24,
+            "mean": 0.8413986146182907,
+            "max": 3.312410282403088
+          },
+          {
+            "norm_squared": 16,
+            "modes": 3,
+            "mean": 2.3602008599432476,
+            "max": 4.121072261688857
+          }
+        ]
+      },
+      {
+        "component": "type_1",
+        "n": 218,
+        "cutoff_integer_norm_squared": 10,
+        "physical_cutoff": 1.971271982999458,
+        "full_band_halfspace_modes": 73,
+        "tested_modes": 73,
+        "chi_realized": 0.11213517665130568,
+        "exact_low_k_mean": 0.9524186279112505,
+        "exact_low_k_max": 3.340541122224442,
+        "first_shell_mean": 0.6032836391937181,
+        "first_shell_max": 1.503083305594694,
+        "outside_band_mean": 0.9826441088956988,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          0.9465969635599882,
+          0.9006565780595612,
+          0.8873849452383227
+        ],
+        "exact_full_band_mean": 0.9524186279112505,
+        "exact_full_band_max": 3.340541122224442,
+        "exact_full_band_modes": 73,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 0.6032836391937177,
+            "max": 1.5030833055946933
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 1.412177973362282,
+            "max": 2.6610352349353565
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 0.40876894647451745,
+            "max": 0.7062811399326308
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 1.4398410126722334,
+            "max": 2.1852755419511034
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 1.2192102960648046,
+            "max": 3.340541122224442
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 0.9063287247853608,
+            "max": 3.1993169284013714
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.6994826565587989,
+            "max": 2.6427914275337065
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 0.7834347480077367,
+            "max": 2.942179302323834
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 0.9861797371817378,
+            "max": 2.323115788096886
+          }
+        ]
+      },
+      {
+        "component": "type_2",
+        "n": 174,
+        "cutoff_integer_norm_squared": 9,
+        "physical_cutoff": 1.8701128061865022,
+        "full_band_halfspace_modes": 61,
+        "tested_modes": 61,
+        "chi_realized": 0.11753371868978806,
+        "exact_low_k_mean": 0.9571374102966136,
+        "exact_low_k_max": 3.139264033572324,
+        "first_shell_mean": 0.7589388999476107,
+        "first_shell_max": 1.0651102027134982,
+        "outside_band_mean": 1.012801460339437,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.1357857626912904,
+          0.8343345417646651,
+          0.9987232107045891
+        ],
+        "exact_full_band_mean": 0.9571374102966136,
+        "exact_full_band_max": 3.139264033572324,
+        "exact_full_band_modes": 61,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 0.7589388999476107,
+            "max": 1.0651102027134982
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 0.8980222027173791,
+            "max": 2.825499728079292
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 1.3164193942685274,
+            "max": 2.2599487105377034
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 0.7202894376467119,
+            "max": 1.23508648080822
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 0.8359330374881218,
+            "max": 2.410040553972788
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 0.9979081281743843,
+            "max": 2.2705404983695554
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.9420762345532102,
+            "max": 1.1264631874580946
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 1.0423556551108493,
+            "max": 3.139264033572324
+          }
+        ]
+      },
+      {
+        "component": "type_3",
+        "n": 128,
+        "cutoff_integer_norm_squared": 6,
+        "physical_cutoff": 1.526940712200434,
+        "full_band_halfspace_modes": 40,
+        "tested_modes": 40,
+        "chi_realized": 0.10498687664041995,
+        "exact_low_k_mean": 0.9415486478259719,
+        "exact_low_k_max": 5.060908671757837,
+        "first_shell_mean": 1.635664742699019,
+        "first_shell_max": 2.4402179029272792,
+        "outside_band_mean": 0.9370830021416775,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          0.9384784543276213,
+          0.7679990440795822,
+          0.7782902379074763
+        ],
+        "exact_full_band_mean": 0.9415486478259719,
+        "exact_full_band_max": 5.060908671757837,
+        "exact_full_band_modes": 40,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 1.635664742699019,
+            "max": 2.4402179029272792
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 0.5094769262371132,
+            "max": 1.1194374433992524
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 0.5008764729003347,
+            "max": 1.0165919790017
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 0.6406488482670953,
+            "max": 1.0118582646087464
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 0.5094202232914137,
+            "max": 1.9010535841699787
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 1.6382995843016295,
+            "max": 5.060908671757837
+          }
+        ]
+      },
+      {
+        "component": "type_4",
+        "n": 87,
+        "cutoff_integer_norm_squared": 5,
+        "physical_cutoff": 1.3938997867419693,
+        "full_band_halfspace_modes": 28,
+        "tested_modes": 28,
+        "chi_realized": 0.10852713178294573,
+        "exact_low_k_mean": 1.44003004423468,
+        "exact_low_k_max": 5.448421307157768,
+        "first_shell_mean": 1.1175338833551323,
+        "first_shell_max": 1.6702142482267512,
+        "outside_band_mean": 0.962114331132563,
+        "outside_band_tested": 73,
+        "dominant_axis_means": [
+          1.3976850759711947,
+          1.273781096922306,
+          1.3505728410865239
+        ],
+        "exact_full_band_mean": 1.44003004423468,
+        "exact_full_band_max": 5.448421307157768,
+        "exact_full_band_modes": 28,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 1.1175338833551323,
+            "max": 1.6702142482267512
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 1.5901231868434997,
+            "max": 4.902013248049337
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 0.8058707295110371,
+            "max": 2.617370071220781
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 0.9058346555158892,
+            "max": 1.235838360038271
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 1.7905427985710698,
+            "max": 5.448421307157768
+          }
+        ]
+      }
+    ],
+    "nearest_neighbor_p05_physical": 0.2715891511001714,
+    "nearest_neighbor_cv": 0.330221641966449,
+    "homotypic_nearest_p05_physical": [
+      0.3446239837694058,
+      0.5202197559919227,
+      0.5275638664498037,
+      0.4586686624954311,
+      0.5066317209062694
+    ],
+    "CIC_grid_axis_coherent_power_fraction": [
+      0.0023158267604049794,
+      0.0003980341964862716,
+      0.00010270809352299189
+    ],
+    "interpretation": "Finite low-k proxy audit; no thermodynamic-limit, isotropy, or avian-retina equivalence certificate.",
+    "audit_implementation_version": "scale3d_cic_multicomponent_v1",
+    "full_band_audit_float64": true,
+    "original_sampled_gate_retained": true
+  },
+  "history": [],
+  "construction": {
+    "version": "scale3d_cic_multicomponent_inverse_k2_v2",
+    "seed": 3201,
+    "N": 1024,
+    "iterations": 0,
+    "spectral": false,
+    "chi_requested": 0.12,
+    "local_weight": 0.15,
+    "grid_size": 32,
+    "device": "cuda",
+    "dtype": "float32",
+    "spectral_weighting": "inverse integer norm squared, separately normalized",
+    "initialization": "numpy PCG64 uniform plus Hamilton-label permutation",
+    "cuda_scatter_nondeterminism": true,
+    "elapsed_seconds_including_exact_validation": 0.04155760000139708
+  }
+}

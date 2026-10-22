@@ -1,0 +1,27 @@
+{
+  "phase": 4,
+  "stage": "smoke",
+  "task": "xor",
+  "N": 400,
+  "variant": "G",
+  "geometries": [
+    "grid",
+    "mhu"
+  ],
+  "geometry_seeds": [
+    1101
+  ],
+  "training_seeds": [
+    2101,
+    2102
+  ],
+  "train_size": 2048,
+  "validation_size": 512,
+  "test_size": 2048,
+  "updates": 250,
+  "batch_size": 4,
+  "lr": 0.003,
+  "steps": 16,
+  "gate_accessible_accuracy": 0.98,
+  "open_test_for_smoke": false
+}

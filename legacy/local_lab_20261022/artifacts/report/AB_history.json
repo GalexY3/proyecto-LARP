@@ -1,0 +1,56 @@
+{
+  "status": "UNUPDATED",
+  "architecture_evidence": [],
+  "mutually_exclusive": false,
+  "hypotheses": {
+    "H1": {
+      "prior": 0.7,
+      "posterior": 0.7,
+      "status": "UNUPDATED"
+    },
+    "H2": {
+      "prior": 0.35,
+      "posterior": 0.35,
+      "status": "UNUPDATED"
+    },
+    "H3": {
+      "prior": 0.25,
+      "posterior": 0.25,
+      "status": "UNUPDATED"
+    },
+    "H4": {
+      "prior": 0.75,
+      "posterior": 0.75,
+      "status": "UNUPDATED"
+    },
+    "H5": {
+      "prior": 0.2,
+      "posterior": 0.2,
+      "status": "UNUPDATED"
+    },
+    "H6": {
+      "prior": 0.3,
+      "posterior": 0.3,
+      "status": "UNUPDATED"
+    }
+  },
+  "architecture_effect_prior": {
+    "distribution": "Normal",
+    "mean": 0.0,
+    "std": 0.05
+  },
+  "sigma_priors": {
+    "distribution": "HalfNormal",
+    "std": 0.05
+  },
+  "mechanism_prior": 0.25,
+  "rope": [
+    -0.02,
+    0.02
+  ],
+  "note": "Technical tests, certificates, calibration and smoke do not update architecture beliefs.",
+  "created_UTC": "2026-10-08T05:41:54.515131+00:00",
+  "created_by": "reporting.summarize",
+  "updates": [],
+  "reporting_changes_architecture_beliefs": false
+}

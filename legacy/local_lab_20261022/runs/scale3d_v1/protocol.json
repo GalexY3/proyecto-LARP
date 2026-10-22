@@ -1,0 +1,83 @@
+{
+  "config": {
+    "version": "scale3d_v1",
+    "date": "2026-10-10",
+    "user_authorization": "Large MHU 3D multilayer training on local PC versus conventional network; progressively difficult tasks",
+    "sizes": [
+      1024,
+      4096,
+      16384,
+      32768
+    ],
+    "geometry_seeds": [
+      3101,
+      3102
+    ],
+    "arms": [
+      "mhu",
+      "local",
+      "random"
+    ],
+    "geometry_iterations": 600,
+    "chi": 0.12,
+    "local_weight": 0.15,
+    "degree": 16,
+    "layers": 8,
+    "width": 256,
+    "batch": 2,
+    "updates": 1800,
+    "checkpoints": [
+      300,
+      600,
+      1200,
+      1800
+    ],
+    "learning_rate": 0.0003,
+    "queries": 256,
+    "modes_per_task": 512,
+    "bands": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "evaluation_worlds": 64,
+    "master_seed": 20261010,
+    "query_seed": 47201,
+    "mode_seed": 47202,
+    "evaluation_seed": 47203,
+    "test_query_seed": 47204,
+    "VRAM_fraction": 0.8,
+    "maximum_job_seconds": 21600,
+    "maximum_triplet_seconds": 2700,
+    "require_finite_MHU_pass": true,
+    "no_retries_or_test_hpo": true,
+    "field_domain": "fixed unit 3D torus; density increases with N; graph reach shrinks with N",
+    "interpretation": "End-to-end sensor-density scaling; geometry and wiring jointly change; not isolated neural MHU causality",
+    "numeric_historical_priors_updated": false
+  },
+  "files": {
+    "src\\larp\\scale3d_train.py": "ac4bc98794dc17da65c2a5ef019a47a64c1e274bbbf532b9aa7c3c53205ad980",
+    "src\\larp\\scale3d_geometry.py": "220096b284fa928a8090cb73abb1fafb71c40a753614491feb5a3b26f0e98cf2",
+    "src\\larp\\scale3d_runner.py": "9f6e47853b766836de6d5eed9e4513efa2aa9821b9d45d2c2fe1a3f10590bc6e",
+    "src\\larp\\scale3d_report.py": "9a9c8f482de7373eb23597d1dc7e86862563dd6145ecc4c6412be608bc2519e6",
+    "docs\\experiments\\SCALE3D_V1_PROTOCOL.md": "91b5fb69979c9e2d6f1480fb3094424fd3262de4dc2ed056cd84029d3252e692",
+    "configs\\scale3d_v1.json": "72828dd7777117e8da86fb7df598be025380590321faf18d35d51b00c29bab9c"
+  },
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "GPU": "NVIDIA GeForce RTX 4070 SUPER",
+  "pid": 22364,
+  "ppid": 25624,
+  "precision": "FP32 with TF32 permitted; geometry audit FP64",
+  "status": "FROZEN_BEFORE_GENERATION_AND_TRAINING",
+  "historical_priors_updated": false
+}

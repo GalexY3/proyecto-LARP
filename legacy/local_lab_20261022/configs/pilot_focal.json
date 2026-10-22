@@ -1,0 +1,36 @@
+{
+  "phase": 4,
+  "stage": "pilot",
+  "task": "copy",
+  "N": 400,
+  "variant": "T",
+  "conditions": [
+    "native",
+    "shuffle"
+  ],
+  "geometry_seeds": [
+    1101,
+    1102,
+    1103
+  ],
+  "training_seeds": [
+    2101,
+    2102
+  ],
+  "train_size": 8192,
+  "validation_size": 1024,
+  "test_size": 4096,
+  "updates": 1000,
+  "reduced_updates": 500,
+  "batch_size": 4,
+  "lr": 0.003,
+  "steps": 16,
+  "total_hours_target": 8,
+  "requires": [
+    "scientific_tests",
+    "geometry",
+    "calibration",
+    "smoke"
+  ],
+  "automatic_after_gates": true
+}

@@ -1,0 +1,108 @@
+{
+  "created_UTC": "2026-10-08T05:47:36.910699+00:00",
+  "run_root": "C:\\Programación\\LARP\\runs\\series_cli_exitfix",
+  "output": "C:\\Programación\\LARP\\artifacts\\report_current",
+  "result_files_found": 7,
+  "result_records_loaded": 5,
+  "curve_events_loaded": 15,
+  "status_counts": {
+    "COMPLETE": 5
+  },
+  "stage_counts": {
+    "calibration": 1,
+    "smoke": 4
+  },
+  "figures": [
+    {
+      "path": "C:\\Programación\\LARP\\artifacts\\report_current\\scores__copy__calibration__T__validation_bdaf8bd5.png",
+      "table": "results.csv",
+      "facet": [
+        "copy",
+        "calibration",
+        "T",
+        "validation"
+      ],
+      "records": 1,
+      "inference": "none"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\artifacts\\report_current\\scores__xor__smoke__G__validation_5220f3f1.png",
+      "table": "results.csv",
+      "facet": [
+        "xor",
+        "smoke",
+        "G",
+        "validation"
+      ],
+      "records": 4,
+      "inference": "none"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\artifacts\\report_current\\curves__copy__calibration__T_ba0efb64.png",
+      "table": "curves.csv",
+      "facet": [
+        "copy",
+        "calibration",
+        "T"
+      ],
+      "runs": 1,
+      "events": 3,
+      "nonfinite_coordinates_omitted": 0,
+      "inference": "none"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\artifacts\\report_current\\curves__xor__smoke__G_7448423d.png",
+      "table": "curves.csv",
+      "facet": [
+        "xor",
+        "smoke",
+        "G"
+      ],
+      "runs": 4,
+      "events": 12,
+      "nonfinite_coordinates_omitted": 0,
+      "inference": "none"
+    }
+  ],
+  "warnings": [],
+  "source_results": [
+    {
+      "path": "C:\\Programación\\LARP\\runs\\series_cli_exitfix\\calibration\\copy_native_T_g9001_s9002_u205_lr0.003_causal\\results.json",
+      "sha256": "7007eca2e1d488157d2fe0e19846965618661f4a8e1dfe443c24269a8a9f627d"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\runs\\series_cli_exitfix\\smoke\\xor_grid_G_g1101_s2101_u250_lr0.003_causal\\results.json",
+      "sha256": "e7beca7056ec9ef1668e07aa36618f134deba47d6e610a3f978a31220d163543"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\runs\\series_cli_exitfix\\smoke\\xor_grid_G_g1101_s2102_u250_lr0.003_causal\\results.json",
+      "sha256": "3c6c5413b5e524d2b85690a9085e2c14fa43b2ada39c204f48c74f02b935ac6a"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\runs\\series_cli_exitfix\\smoke\\xor_mhu_G_g1101_s2101_u250_lr0.003_causal\\results.json",
+      "sha256": "f3f7e8da5628e4b90641e607be3f336eaf459dbcef5eec8f4b77ef6bcc76305a"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\runs\\series_cli_exitfix\\smoke\\xor_mhu_G_g1101_s2102_u250_lr0.003_causal\\results.json",
+      "sha256": "208942015db221796fda5f187a6466c919d99c4e4b262d20b3fc0b4366e2b5f9"
+    }
+  ],
+  "aggregate_indexes": [
+    {
+      "path": "C:\\Programación\\LARP\\runs\\series_cli_exitfix\\calibration\\results.json",
+      "sha256": "a623c04b00c29635613def68a949858cc00f10407a81dbe7e18d7340c159794f",
+      "entries": 1,
+      "role": "suite_index_only"
+    },
+    {
+      "path": "C:\\Programación\\LARP\\runs\\series_cli_exitfix\\smoke\\results.json",
+      "sha256": "8838a79550211a5cbb0a7adffef19d372dd5f94b6549d8300a47bba8653c1971",
+      "entries": 4,
+      "role": "suite_index_only"
+    }
+  ],
+  "AB_history": "C:\\Programación\\LARP\\artifacts\\report_current\\AB_history.json",
+  "AB_history_sha256": "9ae26d5856e584d4f42134b3b4b5f05aeb0de2800e7c9f1daa2c0f3bd2cec1dc",
+  "architecture_beliefs_updated_by_reporting": false,
+  "note": "Descriptive tables and figures from recorded files; failures retained, no architecture conclusion."
+}

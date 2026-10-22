@@ -1,0 +1,17 @@
+{
+  "eligible": false,
+  "registered_hypotheses": "role_orientation_diagnostic_beliefs_v1",
+  "numerical_posteriors": false,
+  "Bayes_factors": false,
+  "H1_H6": "unchanged",
+  "architecture_C": "unchanged",
+  "H_R1_H_R3": "unchanged",
+  "updates": {
+    "H-R4": {
+      "prior_ordinal": "moderately_plausible",
+      "direction": "no_update_ineligible",
+      "limitation": "Orientation changes source-role support and marked-context diversity (12 vs 11 unique oriented triples). Train failure does not isolate transfer. Two initializations share one skeleton/geometry. A ceiling does not exclude loss, speed or other-task effects.",
+      "primary_effect_endpoint": "UU"
+    }
+  }
+}

@@ -1,0 +1,829 @@
+{
+  "larp_v0_1_decisions": {
+    "review_date": "2026-10-08",
+    "authoritative_brief": "LARP_ASTRA_ARCHITECTURE_REVIEW_v2.md",
+    "status": "pre_experiment_specification",
+    "implementer": "SOL 6.1 UltraCode",
+    "production_code_requested": false,
+    "primary_estimand": "native_minus_shuffled_marks_retrained_on_identical_points_edges_and_ports",
+    "primary_tasks": [
+      "addressed_copy_5x8_persistent",
+      "flood_fill_8"
+    ],
+    "smoke_task": "remote_xor",
+    "spatial_dimension": 2,
+    "N_train": 400,
+    "N_inference_scale": 1600,
+    "N_geometry_validation": [
+      400,
+      1600,
+      6400
+    ],
+    "density": 1.0,
+    "domain": {
+      "boundary": "periodic_torus",
+      "L": "sqrt(N)",
+      "L_train": 20.0
+    },
+    "types": {
+      "names": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "biological_reference": [
+        "double_cone_unit",
+        "green",
+        "red",
+        "blue",
+        "violet"
+      ],
+      "computational_roles": "not_assigned_by_biology",
+      "weights_integer": [
+        407,
+        211,
+        171,
+        126,
+        85
+      ],
+      "denominator": 1000,
+      "rounding": "Hamilton_largest_remainder_ties_in_A_to_E_order",
+      "counts_400": [
+        163,
+        85,
+        68,
+        50,
+        34
+      ],
+      "counts_1600": [
+        651,
+        338,
+        274,
+        201,
+        136
+      ],
+      "counts_6400": [
+        2605,
+        1351,
+        1094,
+        806,
+        544
+      ],
+      "equal_counts_400": [
+        80,
+        80,
+        80,
+        80,
+        80
+      ]
+    },
+    "geometry": {
+      "method": "joint_multicomponent_collective_coordinate_optimization",
+      "claim_scope": "finite_low_frequency_suppression_not_asymptotic_proof",
+      "initial_positions": "iid_uniform",
+      "initial_marks": "independent_permutation_with_exact_counts",
+      "marks_during_optimization": "fixed",
+      "dtype": "float64",
+      "wavevectors": "k=2*pi*n/L; 0<norm(n)<=L/10; nx>0 or nx=0 and ny>0",
+      "modes_400": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "K_physical": "pi/5",
+      "objective": "mean_S_union+mean_over_5_components_and_modes_S+10/N*sum_pairs_relu(1-r/0.30)^2",
+      "repulsion_radius": 0.3,
+      "periodic_pairs": "cKDTree_query_pairs_recomputed_each_objective_evaluation",
+      "adam": {
+        "steps": 6000,
+        "lr_start": 0.025,
+        "lr_end": 0.0001,
+        "schedule": "cosine",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.0
+      },
+      "lbfgs": {
+        "max_iterations": 250,
+        "max_evaluations": 1000,
+        "history": 20,
+        "line_search": "strong_wolfe",
+        "gradient_tolerance": 1e-08,
+        "change_tolerance": 1e-12
+      },
+      "max_restarts_per_seed": 4,
+      "selection": "first_pattern_passing_certificate",
+      "certificate": {
+        "apply_to": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "union"
+        ],
+        "restricted_mean_S_max": 0.05,
+        "restricted_max_S_max": 0.1,
+        "minimum_union_distance": 0.299,
+        "window_centers": 10000,
+        "window_radii": [
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "variance_reference": "N_a*p*(1-p); p=pi*R^2/L^2",
+        "mean_variance_ratio_R4_R5_max": 0.65,
+        "nonoptimized_spectrum_range": "K<norm(k)<=pi",
+        "max_S_over_N_in_that_range": 0.5,
+        "anisotropy_quadrupole_flag": 0.3,
+        "anisotropy_flag_is_exclusion": false,
+        "heldout_spectrum_suppression_required": false,
+        "descriptive_metrics": [
+          "directional_and_radial_S",
+          "all_window_variances",
+          "g2_same_cross_union",
+          "nearest_neighbor_CDF",
+          "toroidal_Voronoi_area",
+          "q4_q6",
+          "empty_windows",
+          "nearest_type_p50_p90_p95",
+          "type_counts_in_1_2_4_8_hop_balls"
+        ]
+      },
+      "sentinel_seeds_per_size": 3,
+      "generator_review_if_failed_seed_fraction_exceeds": 0.25
+    },
+    "graphs": {
+      "causal": {
+        "rule": "directed_incoming_knn",
+        "k": 6,
+        "edges_400": 2400,
+        "distance": "minimum_image",
+        "symmetrize": false,
+        "self_loops": false,
+        "tie_break": "class_independent_ID_hash",
+        "connectivity_repair": false,
+        "residual_confound": "out_degree_reciprocity_lengths_components_and_spectrum"
+      },
+      "ecological_MHU_HU": {
+        "rule": "periodic_Delaunay_via_3x3_tiling",
+        "triangle_selection": "circumcenter_in_fundamental_domain_then_extract_edges_deduplicate_original_IDs",
+        "large_circumradius_policy": "repeat_5x5_only_if_radius>=L/2;fail_only_if_noninvariant_or_still_ambiguous",
+        "direction": "bidirectional",
+        "edges": "measure; generic_torus_approximately_6N",
+        "prune_to_match_edges": false
+      },
+      "conditional_degree_preserving_control": {
+        "method": "directed_double_edge_swaps",
+        "proposals": "100*E",
+        "preserve": [
+          "in_degree_per_node",
+          "out_degree_per_node"
+        ],
+        "reject": [
+          "self_loop",
+          "duplicate"
+        ]
+      }
+    },
+    "neural_block": {
+      "d": 32,
+      "input_channels": 25,
+      "update_hidden_width": 64,
+      "input_encoder": "Linear(25,32); cache_u; h0=u",
+      "persistent_input": true,
+      "normalization": "shared_affine_LayerNorm(32,eps=1e-5)_before_message_and_update",
+      "edge_features": [
+        "log1p_minimum_image_distance_in_density_units"
+      ],
+      "message": "tanh(Wm*LN(hj)+wr*log1p(rij)+bm)",
+      "apply_Wm": "once_per_node_per_time_step",
+      "aggregation": "mean_over_alive_incoming_neighbors; zero_if_empty",
+      "update": "h_next=h+0.1*(W2*SiLU(W1*[z;m;u;q]+b1)+b2+adapter(z))",
+      "update_input_dimension": 100,
+      "adapter": "U*tanh(V*z)/sqrt(rank); no_bias",
+      "recurrence": "synchronous_tied_weights",
+      "T_train": 16,
+      "T_test": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "learned_gates": false,
+      "attention": false,
+      "stacked_untied_layers": false,
+      "plasticity_v0_1": false,
+      "network_dtype": "float32",
+      "readout": "shared_Linear(32,32)_SiLU_Linear(32,o)_on_designated_ports",
+      "global_pooling": false,
+      "initialization": {
+        "main_linears": "Xavier_uniform_gain1_bias0",
+        "LN": "gamma1_beta0",
+        "G_q": "zero",
+        "T_F_embeddings": "Normal(0,0.02),center_rows",
+        "adapter_factors": "Normal(0,1/sqrt(32)),independent",
+        "shared_weights_across_families": "identical_training_seed_streams_per_named_module"
+      }
+    },
+    "variants": {
+      "G": {
+        "q": "one_shared_trainable_4vector",
+        "adapter": "shared_rank10",
+        "marks_visible": false
+      },
+      "T": {
+        "q": "embedding_5x4",
+        "adapter": "shared_rank10",
+        "marks_visible": true
+      },
+      "F": {
+        "q": "embedding_5x4",
+        "adapter": "five_rank2_selected_by_type",
+        "marks_visible": true
+      },
+      "parameter_formulas": {
+        "G": "12228+33*o",
+        "T": "12244+33*o",
+        "F": "12244+33*o"
+      },
+      "parameters_o1": {
+        "G": 12261,
+        "T": 12277,
+        "F": 12277
+      },
+      "parameters_o8": {
+        "G": 12492,
+        "T": 12508,
+        "F": 12508
+      },
+      "adapter_parameters_each_variant": 640,
+      "T_F_exact_parameter_match": true,
+      "G_T_residual_parameter_difference": 16,
+      "active_adapter_MAC_per_node": {
+        "G": 640,
+        "T": 640,
+        "F": 128
+      }
+    },
+    "baselines": {
+      "grid_causal": "20x20_half_integer_positions; directed_knn6",
+      "grid_ecological": "four_cardinal_neighbors",
+      "grid_types_strong": "minimize_mean_component_S_via100000_Metropolis_swaps_temperature0.1_to0.0001_ten_restarts; equal_case_(a+2b)%5",
+      "grid_balance_failure": "minimum_energy_pattern_named_approximate_with_residuals_not_MHU_certified",
+      "HU_IBM_inspired": "same_generator_without_component_terms; causal_knn6_ecological_Delaunay",
+      "IBM_source": "US20240202508A1; not_exact_reproduction_not_independent_validation",
+      "random_regular": "simple_undirected_degree6_on_same_MHU_coordinates; bidirectional; first_connected_of_20",
+      "small_world_causal": "grid_knn6_each_incoming_slot_rewired_with_probability0.10",
+      "small_world_ecological": "four_grid_cardinal_plus_two_remote_incoming; r>=L/4",
+      "Poisson": "iid_positions; knn6_causal_Delaunay_ecological",
+      "grid_task_ecological": "N100_10x10_direct_interface_four_cardinal_same_G_block_T16",
+      "mark_controls": [
+        "native",
+        "shuffle_exact_counts",
+        "matched_local_statistics",
+        "clustered_stripes"
+      ],
+      "matched_local_statistics": {
+        "swap_proposals": 100000,
+        "restarts": 10,
+        "temperature": [
+          0.1,
+          0.0001
+        ],
+        "schedule": "logarithmic",
+        "match": [
+          "directed_type_edge_matrix",
+          "homotypic_pair_bins"
+        ],
+        "distance_bin_edges": [
+          0,
+          0.5,
+          1,
+          2,
+          3
+        ],
+        "count_ge20_relative_tolerance": 0.05,
+        "small_count_absolute_tolerance": 2,
+        "class_mean_degree_tolerance": 0.1,
+        "degree_kind": "out_degree",
+        "each_component_mean_low_k_S_min": 0.5,
+        "energy": "sum_squared_normalized_hinge_tolerance_violations_of_counts_outdegree_and_low_k_S",
+        "energy_weights": "all_one",
+        "zero_energy_tolerance": 1e-10,
+        "acceptance": "descent_or_probability_exp(-energy_increase/temperature)",
+        "failure_policy": "declare_long_wave_mechanism_not_identified"
+      },
+      "clustered": "periodically_shifted_x_order_then_consecutive_exact_count_blocks",
+      "excluded_initially": [
+        "global_attention",
+        "learned_topology",
+        "extra_expander",
+        "edge_states"
+      ]
+    },
+    "interface": {
+      "world_sites_train": "10x10;(2*a+0.5,2*b+0.5)",
+      "port_assignment": "injective_Hungarian_periodic_squared_distance",
+      "tie_perturbation_max": 1e-10,
+      "type_dependent_assignment": false,
+      "report": [
+        "RMS_port_displacement",
+        "maximum_port_displacement"
+      ],
+      "channel_layout": [
+        "0:port_mask",
+        "1..8:payload",
+        "9..13:source_ID",
+        "14..18:query",
+        "19:seed",
+        "20:free",
+        "21..24:sin_cos_coordinates"
+      ],
+      "coordinates": "physical_at_internal_nodes; logical_site_at_ports; normalized_by_L",
+      "source_query_IDs_independent_of_type": true
+    },
+    "tasks": {
+      "remote_xor": {
+        "sources": 2,
+        "output_bits": 1,
+        "minimum_source_output_distance": "L/4",
+        "train": 2048,
+        "validation": 512,
+        "test": 2048,
+        "updates": 250,
+        "geometries": 1,
+        "initializations": 2,
+        "architectures": [
+          "Grid_G",
+          "MHU_G"
+        ],
+        "smoke_pass_accessible_accuracy": 0.98,
+        "superiority_evidence": false
+      },
+      "addressed_copy_5x8_persistent": {
+        "sources": 5,
+        "payload_bits": 8,
+        "query": "uniform_onehot",
+        "minimum_each_source_output_distance": "L/4",
+        "pilot_train": 8192,
+        "pilot_validation": 1024,
+        "pilot_test": 4096,
+        "primary_score": "bit_accuracy",
+        "secondary": [
+          "exact_vector_accuracy",
+          "BCE"
+        ],
+        "threshold_metric": 0.95,
+        "memory_claim": false
+      },
+      "flood_fill_8": {
+        "world": "10x10_periodic_four_cardinal",
+        "free_probability_factor": [
+          0.45,
+          0.55,
+          0.65
+        ],
+        "factor_distribution": "equal",
+        "seed": "uniform_site_forced_free",
+        "target": "BFS_distance<=8_in_external_world",
+        "neuronal_edges_pruned_by_obstacles": false,
+        "pilot_train": 8192,
+        "pilot_validation": 1024,
+        "pilot_test": 4096,
+        "primary_score": "BA_per_map_on_free_cells_then_mean_within_p_then_uniform_mean_over_three_p",
+        "degenerate_map_score": "accuracy; report_frequency",
+        "binary_threshold": 0.5,
+        "secondary": [
+          "IoU",
+          "exact_map",
+          "BCE",
+          "error_by_BFS_distance",
+          "obstacle_error"
+        ],
+        "trivial_baselines": [
+          "all_free",
+          "seed_only"
+        ],
+        "positive_BCE_weight": "train_negative_positive_ratio_clipped_to_1_5"
+      },
+      "resource_positive_control_conditional": {
+        "purpose": "assay_sensitivity_only_not_free_network_evidence",
+        "channels": 5,
+        "field_modes": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "field_coefficients": "8_independent_Normal_coefficients_per_channel_divide_by_sqrt(sum_squares/2)",
+        "access": "type_c_sees_only_channel_c",
+        "injection_sites": "all_N_nodes_at_physical_coordinates",
+        "destinations": "5x5;(4*a+0.5,4*b+0.5),a_b_in0_to4;Hungarian_registration",
+        "target": "mean_of_five_channels_at_query_coordinate",
+        "input_storage": "only_selected_channel_value_in_its_payload_slot; others_zero",
+        "input_channels": 29,
+        "extra_channels": "four_query_sin_cos_at_destinations; physical_coordinates_preserved_everywhere",
+        "zero_channels": "source_query_IDs_free_seed",
+        "port_mask": "destinations_only",
+        "T_F_parameters": 12405,
+        "head": "same_shared_readout_32_to32_to1_without_sigmoid",
+        "loss": "MSE",
+        "score": "MSE_divided_by_train_target_variance_frozen",
+        "family": "T",
+        "train": 4096,
+        "validation": 512,
+        "test": 2048,
+        "geometries": 3,
+        "initializations": 2,
+        "updates": 1000
+      }
+    },
+    "training": {
+      "batch_size": 4,
+      "optimizer": "AdamW",
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay": 0.0001,
+      "global_gradient_clip": 1.0,
+      "pilot_lr": 0.003,
+      "pilot_updates": 1000,
+      "screen_updates": 500,
+      "screen_geometries": 1,
+      "screen_initializations": 2,
+      "pilot_focal_geometries": 3,
+      "pilot_initializations": 2,
+      "confirm_geometries_initial": 8,
+      "confirm_geometries_max": 16,
+      "confirm_initializations": 2,
+      "confirm_updates": 3000,
+      "confirm_train": 32768,
+      "confirm_validation": 2048,
+      "confirm_test": 4096,
+      "confirm_lr_candidates": [
+        0.001,
+        0.003,
+        0.01
+      ],
+      "confirm_HPO_updates_per_candidate": 300,
+      "confirm_HPO_geometries": 1,
+      "confirm_HPO_initializations": 2,
+      "causal_lr_selection": "one_common_lr_per_task_pooled_calibration_scores_equal_weight_per_geometry_group_native_shuffle_pooled",
+      "ecological_lr_selection": "individual_best_lr_equal_HPO_budget_separate_estimand",
+      "lr_schedule": "constant",
+      "weight_decay_parameter_groups": "all_trainable_parameters",
+      "HPO_tie_break": "smaller_lr",
+      "checkpoint_primary": "final_budget",
+      "data_order": "seeded_no_replacement_per_epoch",
+      "dropout": false,
+      "AMP": false,
+      "damage_training": false,
+      "replay": false,
+      "budget_policy": {
+        "calibration_updates": 200,
+        "CPU_threads": 4,
+        "pilot_run_max_minutes": 30,
+        "pilot_target_total_hours": 8,
+        "if_exceeded_before_test": "all_conditions_pilot_updates500; fill_separate_tandem",
+        "if_still_infeasible": "certificate_smoke_two_focal_conditions_only; broad_comparison_pending"
+      },
+      "baseline_selection": "strongest_per_task_mean_validation_score_of_two_screen_initializations; Grid_balanced_nominal; ties_within0.005_by_MAC_then_Grid_HU_SW_RR_Poisson",
+      "confirm_minimum": "native_vs_shuffle_both_tasks_and_strongest_baseline_per_task",
+      "F_G_extra_confirmation": "conditional_on_pilot_diagnostics_not_test_selection"
+    },
+    "mechanism_interventions": {
+      "collapse": "evaluate_all_five_complete_increment_functions_at_same_state_then_interpolate_to_count_weighted_mean",
+      "lambda": [
+        0,
+        0.5,
+        1
+      ],
+      "factor_average_allowed": false,
+      "interaction": "D=(native0-shuffle0)-(native1-shuffle1)",
+      "auxiliary_dependence_probability": "P(D>0.01)>=0.90",
+      "floor_control": "both_scores_under_intervention_above_chance_or_trivial_by0.10",
+      "relocate_functions": "20_exact_count_assignments_with_weights_fixed; move_q_and_adapter_together",
+      "relocation_seed_key": 7201,
+      "matched_assignment_included_if_available": true,
+      "interpretation": "OOD_auxiliary; re-trained_matched_control_required_for_clean_organization_claim"
+    },
+    "robustness": {
+      "test_examples": 512,
+      "random_masks_per_level": 10,
+      "lesion_centers": 20,
+      "primary_protect_active_ports": true,
+      "node_removal_fraction": [
+        0,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "localized_primary": "nearest_eligible_exact_round(q*N)_nodes",
+      "localized_radius_secondary": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "subtype_absolute_n_400": [
+        4,
+        8,
+        16
+      ],
+      "subtype_n_1600_multiplier": 4,
+      "insufficient_eligible_policy": "log_unavailable_not_replace",
+      "subtype_fraction_secondary": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "edge_removal_fraction": [
+        0,
+        0.05,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "bidirectional_edge_modes": [
+        "independent_arcs",
+        "paired_undirected_edges"
+      ],
+      "reconnect": false,
+      "renormalize_neighbor_mean": true,
+      "relocation": [
+        [
+          0.5,
+          0
+        ],
+        [
+          0,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ],
+      "separate_end_to_end_unprotected": true,
+      "primary_AUC": "trapezoidal_score_integral_q0_to0.20_divided_by0.20"
+    },
+    "scale_evaluation": {
+      "N": 1600,
+      "geometries": 3,
+      "fine_tuning": false,
+      "T": [
+        16,
+        32,
+        64
+      ],
+      "copy": "same5sources8bits_minimum_distanceL/4",
+      "fill_primary": "20x20_world400ports_fill8",
+      "fill_exploratory": "fill16_at_T32"
+    },
+    "metrics": [
+      "task_score_loss",
+      "steps_samples_to_threshold",
+      "failure_rate",
+      "training_inference_wallclock",
+      "parameters_active_edges_MAC",
+      "RSS_device_peak_memory",
+      "geometry_init_variance",
+      "in_out_degree_mean_variance",
+      "reciprocity",
+      "undirected_clustering",
+      "directed_shortest_paths_inaccessible_fraction",
+      "finite_diameter",
+      "SCC",
+      "symmetrized_algebraic_connectivity",
+      "edge_lengths",
+      "coverage_functional_counterfactuals_Jacobians",
+      "robustness_AUC",
+      "relocation",
+      "scale",
+      "extra_steps_stability"
+    ],
+    "belief_update": {
+      "H_marginal_priors": {
+        "H1": 0.7,
+        "H2": 0.35,
+        "H3": 0.25,
+        "H4": 0.75,
+        "H5": 0.2,
+        "H6": 0.3
+      },
+      "mutually_exclusive": false,
+      "architecture_model": "paired_delta_g_s=mu+b_g+epsilon_g_s",
+      "mu_prior": {
+        "distribution": "Normal",
+        "mean": 0.0,
+        "std": 0.05
+      },
+      "sigma_priors": {
+        "distribution": "HalfNormal",
+        "std": 0.05
+      },
+      "ROPE": [
+        -0.02,
+        0.02
+      ],
+      "quadrature": {
+        "sigma_range": [
+          1e-06,
+          0.25
+        ],
+        "nodes_per_sigma": 96,
+        "validation_nodes": 192
+      },
+      "mu_prior_sensitivity_std": [
+        0.02,
+        0.1
+      ],
+      "bootstrap_unit": "geometry",
+      "mechanism_prior": 0.25,
+      "qualitative_grades": [
+        "strong_against",
+        "weak_against",
+        "neutral",
+        "weak_for",
+        "strong_for"
+      ],
+      "optional_subjective_LR": [
+        0.2,
+        0.5,
+        1,
+        2,
+        5
+      ],
+      "LR_sensitivity": [
+        0.3333333333,
+        0.6666666667,
+        1,
+        1.5,
+        3
+      ],
+      "LR_is_estimated_Bayes_factor": false
+    },
+    "failure_analysis": {
+      "reproducible_training_divergence_system_score": 0.0,
+      "divergence_loss": "positive_infinity",
+      "include_in_primary_posterior": true,
+      "conditional_valid_run_scores_also_reported": true,
+      "infrastructure_failure": "resume_same_seed_checkpoint",
+      "implementation_invalidity": "stop_repair_not_evidence_against_MHU"
+    },
+    "decision_rules": {
+      "invalid": "stop_without_evidence_against_MHU; repair_and_version",
+      "continue_architecture": "P(mu>0.02)>=0.95_on_a_primary_task; no_confirmed_harm_other; noninferiority_to_strong_baseline_with_margin0.02_probability>=0.95",
+      "continue_robustness": "P(AUC_difference>0.02)>=0.95; clean_noninferior_margin0.02; equal_damage_ports_protected",
+      "equivalence_stop": "P(abs(mu)<=0.02)>=0.90_on_both_tasks_and_no_other_confirmed_value",
+      "harm_pivot": "P(mu<-0.02)>=0.95_on_both_tasks",
+      "routing_pivot": "SW_RR_gap>=0.05_tracks_accessibility_and_marks_effect_in_ROPE",
+      "inconclusive": "after_max16_geometries_or_model_sensitivity; do_not_claim_equivalence",
+      "mechanism_support": [
+        "coverage_changes_at_used_scales",
+        "functional_specialization_is_causal",
+        "native_shuffle_replicated",
+        "persists_against_local_mixing_control",
+        "functional_availability_intervention_reduces_gain_with_X_edges_ports_fixed"
+      ],
+      "failed_learning_revision": "v0.1b_shared_GRU_if_local_optimization_fails_or_T32_if_accessibility_fails; do_not_change_both_together"
+    },
+    "future_gates": {
+      "v0_2_hybrid": "functional_coverage_supported_and_global_routing_better",
+      "plasticity": "v0.2_after_frozen_results; gates_then_degree_preserving_rewiring_then_positions",
+      "3D": "after_replicated_2D_value_in_two_sizes",
+      "sequence": "after_general_algorithmic_and_memory_evidence",
+      "LM": "after_sequence_advantage_against_strong_RNN_transformer_cost_controls",
+      "edge_computation": "separate_future_branch",
+      "edge_MHU": "define_weighted_midpoint_or_incidence_capacity_field_and_control_node_statistics"
+    },
+    "seeds": {
+      "master": 20261008,
+      "pilot_geometry": [
+        1101,
+        1102,
+        1103
+      ],
+      "pilot_training": [
+        2101,
+        2102
+      ],
+      "confirm_geometry": [
+        3101,
+        3102,
+        3103,
+        3104,
+        3105,
+        3106,
+        3107,
+        3108
+      ],
+      "confirm_extension_geometry": [
+        3109,
+        3110,
+        3111,
+        3112,
+        3113,
+        3114,
+        3115,
+        3116
+      ],
+      "confirm_training": [
+        4101,
+        4102
+      ],
+      "train_val_test": [
+        5001,
+        5002,
+        5003
+      ],
+      "sentinel": [
+        6101,
+        6102,
+        6103
+      ],
+      "mark_control_key": 7101,
+      "calibration": [
+        9001,
+        9002
+      ],
+      "derivation": "SeedSequence_with_documented_numeric_keys"
+    },
+    "stack": [
+      "Python",
+      "PyTorch",
+      "NumPy",
+      "SciPy",
+      "Matplotlib"
+    ],
+    "optional_stack": [
+      "NetworkX_for_small_graph_metrics"
+    ],
+    "PyG_required": false,
+    "expected_compute": {
+      "MAC_per_example_step_order": 4200000,
+      "MAC_per_example_forward_T16_order": 67000000,
+      "training_MAC_per_update_B4_order": 800000000,
+      "activation_memory_GB_order": [
+        0.1,
+        0.5
+      ],
+      "process_RSS_target_GB": 2,
+      "runtime_verified": false
+    },
+    "mandatory_artifacts": [
+      "resolved_preregistration",
+      "code_commit_dependency_lock",
+      "geometry_hashes_certificates",
+      "task_hashes_splits",
+      "graph_metrics",
+      "all_run_logs_and_failures",
+      "final_checkpoints",
+      "scientific_figures_and_underlying_tables",
+      "AB_history"
+    ]
+  }
+}

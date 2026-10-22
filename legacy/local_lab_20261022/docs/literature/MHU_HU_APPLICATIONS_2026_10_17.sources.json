@@ -1,0 +1,748 @@
+{
+  "schema_version": 1,
+  "status": "literature_reported_not_locally_reproduced",
+  "source_document": "docs/literature/MHU_HU_APPLICATIONS_2026_10_17.md",
+  "compilation_date": "2026-10-17",
+  "verification_note": "Registro derivado exclusivamente de la recopilación incorporada. No se realizó nueva búsqueda ni reproducción local. El estado peer_reviewed describe la publicación citada; las limitaciones indican cuando se consultó un preprint o solo un abstract.",
+  "sources": [
+    {
+      "id": "APP-000",
+      "entry_number": 0,
+      "citation": "Torquato y Stillinger (2003). Local density fluctuations, hyperuniformity, and order metrics. Physical Review E 68, 041113.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.68.041113",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "teoría",
+        "definiciones"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Define HU mediante supresión de fluctuaciones de número a gran escala.",
+        "Relaciona fluctuaciones locales y métricas de orden."
+      ],
+      "limitations": [
+        "Una muestra finita solo cubre escalas limitadas.",
+        "HU de número no equivale automáticamente a HU de volumen, carga o composición."
+      ],
+      "implementation_relevance": "Fijar observable, normalización y escala de cada diagnóstico; no certificar HU por apariencia."
+    },
+    {
+      "id": "APP-001",
+      "entry_number": 1,
+      "citation": "Jiao et al. (2014). Avian photoreceptor patterns represent a disordered hyperuniform solution to a multiscale packing problem. Physical Review E 89, 022721.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.89.022721",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "observación_biológica",
+        "modelo"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Cinco poblaciones de conos y su unión muestran supresión de fluctuaciones.",
+        "Un modelo combina exclusión global y repulsión homotípica."
+      ],
+      "limitations": [
+        "No demuestra causalmente mejor visión por MHU.",
+        "No identifica ventaja frente a cobertura local comparable."
+      ],
+      "implementation_relevance": "Referencia del generador aviar; separar geometría observada y beneficio funcional."
+    },
+    {
+      "id": "APP-002",
+      "entry_number": 2,
+      "citation": "Lomba, Weis y Torquato (2018). Disordered multihyperuniformity derived from binary plasmas. Physical Review E 97, 010102.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.97.010102",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "teoría",
+        "simulación_estadística"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Interacciones ajustadas generan supresión de fluctuaciones en ambas especies.",
+        "HU global puede coexistir con fluctuaciones composicionales."
+      ],
+      "limitations": [
+        "Es generación y clasificación de patrones.",
+        "No presenta un dispositivo ni una mejora funcional medida."
+      ],
+      "implementation_relevance": "Comparar espectros globales y por especie; evitar inferir MHU desde HU de la unión."
+    },
+    {
+      "id": "APP-003",
+      "entry_number": 3,
+      "citation": "Lomba et al. (2020). Minimal statistical-mechanical model for multihyperuniform patterns in avian retina. Physical Review E 102, 012134.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.102.012134",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "modelo_estadístico",
+        "simulación"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Una mezcla ternaria distingue interacciones homotípicas y heterotípicas.",
+        "MHU puede coexistir con agrupamiento local."
+      ],
+      "limitations": [
+        "MHU no implica separación uniforme de todos los pares.",
+        "El texto completo consultado corresponde al preprint; publicación verificada."
+      ],
+      "implementation_relevance": "Incluir agrupamiento y separación como observables distintos de la supresión espectral."
+    },
+    {
+      "id": "APP-004",
+      "entry_number": 4,
+      "citation": "Zhao et al. (2021). Bionic Birdlike Imaging Using a Multi-Hyperuniform LED Array. Sensors 21, 4084.",
+      "DOI_or_URL": "https://doi.org/10.3390/s21124084",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "prototipo_fabricado",
+        "medición_imagen"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Matriz de 1.024 chips RGB y 3.072 emisores para imagen de un solo píxel.",
+        "Reporta 208 fps a 32 × 32 y menos moiré cromático y errores de registro."
+      ],
+      "limitations": [
+        "No aísla MHU de aperiodicidad ni reconstrucción.",
+        "No demuestra recuperación sin pérdida ni mejora universal.",
+        "Los controles emplean interpolación básica común."
+      ],
+      "implementation_relevance": "Antecedente físico para adquisición multicanal; exigir controles geométricos y decoders fuertes."
+    },
+    {
+      "id": "APP-005",
+      "entry_number": 5,
+      "citation": "Chen et al. (2023). Multihyperuniform long-range order in medium-entropy alloys. Acta Materialia 246, 118678.",
+      "DOI_or_URL": "https://doi.org/10.1016/j.actamat.2023.118678",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "modelo_atomístico",
+        "cálculo_físico"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Ocupaciones SiGeSn sobre red cristalina con orden composicional MHU.",
+        "Calcula menor energía y cambios electrónicos y térmicos frente a random/SQS."
+      ],
+      "limitations": [
+        "También cambia el orden químico local.",
+        "No presenta fabricación industrial con beneficio atribuido causalmente a MHU."
+      ],
+      "implementation_relevance": "Referencia de composición multicanal; requiere control del orden local y validación material especializada."
+    },
+    {
+      "id": "APP-006",
+      "entry_number": 6,
+      "citation": "Christogeorgos, Okon y Hao (2024). A computational model for generating multihyperuniform distributions for realistic antenna array and metasurface designs. EPJ Applied Metamaterials 11, 5.",
+      "DOI_or_URL": "https://doi.org/10.1051/epjam/2024003",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "generador_computacional",
+        "simulación_electromagnética"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Genera subpoblaciones de elementos finitos sin solapamiento.",
+        "Presenta array pentabanda y metasuperficie de cinco clases.",
+        "CST predice reducción de sección radar de 14 dB frente a placa a 10,5 GHz."
+      ],
+      "limitations": [
+        "La comparación es simulada y usa un referente sencillo.",
+        "No acredita superioridad frente a metasuperficies igualmente optimizadas."
+      ],
+      "implementation_relevance": "Consultar restricciones de tamaño y solapamiento para arrays compartidos; comparar con optimización directa."
+    },
+    {
+      "id": "APP-007",
+      "entry_number": 7,
+      "citation": "Christogeorgos, Okon y Hao (2024). An Ultrawideband (35:1) Shared-Aperture Antenna Array With Multihyperuniform Disorder. IEEE Transactions on Antennas and Propagation 72, 5794–5809.",
+      "DOI_or_URL": "https://doi.org/10.1109/TAP.2024.3406040",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "prototipo_fabricado",
+        "medición_electromagnética"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Ochenta hélices y siete subarrays entrelazados cubren 0,4–14 GHz.",
+        "Demuestra viabilidad de una apertura física compartida."
+      ],
+      "limitations": [
+        "La razón 35:1 no es una ganancia causada por MHU.",
+        "Acoplamiento y soporte penalizan prestaciones frente a subarrays aislados.",
+        "Falta ablación con idéntica electrónica y otra distribución optimizada."
+      ],
+      "implementation_relevance": "Referencia física prioritaria; incorporar acoplamiento y soporte antes de extrapolar el factor de array."
+    },
+    {
+      "id": "APP-008",
+      "entry_number": 8,
+      "citation": "Hong et al. (2024). Nanowire-based artificial photoreceptors with multi-hyperuniformity inspired by chicken retina. Optics Express 32, 35331–35344.",
+      "DOI_or_URL": "https://doi.org/10.1364/OE.537955",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "simulación_FDTD"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Nanohilos de distintos diámetros producen selectividad RGB e infrarrojo cercano sin filtros adicionales."
+      ],
+      "limitations": [
+        "No presenta prototipo medido.",
+        "Poisson-disc packing no certifica por sí solo MHU asintótica.",
+        "Resonancias, separación y sustrato contribuyen al resultado."
+      ],
+      "implementation_relevance": "Ejemplo de optimización espectral multicomponente; verificar estructura y separar resonancias de geometría."
+    },
+    {
+      "id": "APP-009",
+      "entry_number": 9,
+      "citation": "Liu y Chen (2025). Multihyperuniformity in high-entropy MXenes. Applied Physics Letters 126, 013101.",
+      "DOI_or_URL": "https://doi.org/10.1063/5.0246719",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "reanálisis_imágenes_experimentales",
+        "modelo_atomístico",
+        "DFT"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Mapas elementales son compatibles con MHU efectiva.",
+        "Modelos atomísticos muestran menor distorsión y energía calculadas."
+      ],
+      "limitations": [
+        "Tamaño, imagen y proyección limitan la certificación.",
+        "El modelo calculado no coincide exactamente con la muestra observada.",
+        "No demuestra mejores baterías, catálisis o dispositivos por MHU.",
+        "Texto consultado del preprint; publicación verificada."
+      ],
+      "implementation_relevance": "Conservar como aplicación composicional; evitar trasladar predicciones atomísticas a prestaciones de dispositivos."
+    },
+    {
+      "id": "APP-010",
+      "entry_number": 10,
+      "citation": "Keeney et al. (2026). Multihyperuniform Particle Composites Inspired by Avian Photoreceptor Patterns for Multifunctional Optical Applications. Advanced Optical Materials 14, e03139.",
+      "DOI_or_URL": "https://doi.org/10.1002/adom.202503139",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "diseño_teórico",
+        "modelos",
+        "proxies_ópticos_preprint"
+      ],
+      "scope": "MHU",
+      "claims_supported": [
+        "Estudia mezclas y correlaciones cruzadas para respuestas ópticas múltiples."
+      ],
+      "limitations": [
+        "Acceso al abstract final y al preprint completo.",
+        "Un indicador basado en 1−S no equivale a absorptancia medida.",
+        "No afirmar fabricación ni eficiencia física sin verificar la versión final.",
+        "El DOI adom.71483 es una portada, no otro estudio."
+      ],
+      "implementation_relevance": "Priorizar matrices espectrales por componente y respuesta física explícita; no usar proxies como eficiencia electromagnética."
+    },
+    {
+      "id": "APP-011",
+      "entry_number": 11,
+      "citation": "Florescu, Torquato y Steinhardt (2009). Designer disordered materials with large, complete photonic band gaps. PNAS 106, 20658–20663.",
+      "DOI_or_URL": "https://doi.org/10.1073/pnas.0907744106",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "diseño_numérico"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Redes dieléctricas 2D muestran bandas prohibidas para ambas polarizaciones y todas las direcciones."
+      ],
+      "limitations": [
+        "El diseño combina HU, topología uniforme y orden local.",
+        "No demuestra suficiencia universal de HU."
+      ],
+      "implementation_relevance": "Separar patrón de puntos, decoración y conectividad en modelos de ondas."
+    },
+    {
+      "id": "APP-012",
+      "entry_number": 12,
+      "citation": "Man et al. (2013). Isotropic band gaps and freeform waveguides observed in hyperuniform disordered photonic solids. PNAS 110, 15886–15891.",
+      "DOI_or_URL": "https://doi.org/10.1073/pnas.1307879110",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "estructura_fabricada",
+        "medición_microondas"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Estructuras de alúmina presentan bandas isotrópicas y guías con curvas libres."
+      ],
+      "limitations": [
+        "El cristal comparado no tenía necesariamente una banda menor.",
+        "La ventaja observada es libertad angular, no superioridad universal de bloqueo."
+      ],
+      "implementation_relevance": "Definir métricas de isotropía y flexibilidad de guiado por separado de anchura de banda."
+    },
+    {
+      "id": "APP-013",
+      "entry_number": 13,
+      "citation": "Degl’Innocenti et al. (2016). Hyperuniform disordered terahertz quantum cascade laser. Scientific Reports 6, 19325.",
+      "DOI_or_URL": "https://doi.org/10.1038/srep19325",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "dispositivo_fabricado",
+        "medición_emisión_láser"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Pilares sobre región activa de aproximadamente 3,2 THz producen emisión asociada a modos localizados."
+      ],
+      "limitations": [
+        "Demuestra viabilidad de ingeniería modal.",
+        "No acredita superioridad universal de umbral o eficiencia frente a láseres convencionales."
+      ],
+      "implementation_relevance": "Referencia de dispositivo funcional; separar control modal y rendimiento energético."
+    },
+    {
+      "id": "APP-014",
+      "entry_number": 14,
+      "citation": "Milošević et al. (2019). Hyperuniform disordered waveguides and devices for near infrared silicon photonics. Scientific Reports 9, 20338.",
+      "DOI_or_URL": "https://doi.org/10.1038/s41598-019-56692-5",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "fabricación",
+        "medición_transmisión",
+        "simulación_modulador"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Guías pasivas de silicio a 1550 nm se fabrican y miden.",
+        "Optimizar interfaces y canales reduce pérdidas respecto al diseño HU inicial."
+      ],
+      "limitations": [
+        "Las prestaciones sub-fJ del modulador son simuladas.",
+        "Mejorar la guía HU inicial no demuestra superar la mejor guía convencional."
+      ],
+      "implementation_relevance": "Incluir pérdidas de interfaz y comparación con guías convencionales optimizadas."
+    },
+    {
+      "id": "APP-015",
+      "entry_number": 15,
+      "citation": "Tavakoli et al. (2022). Over 65% Sunlight Absorption in a 1 μm Si Slab with Hyperuniform Texture. ACS Photonics 9, 1206–1217.",
+      "DOI_or_URL": "https://doi.org/10.1021/acsphotonics.1c01668",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "textura_fabricada",
+        "medición_absorción_óptica"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Texturas en silicio de 1 µm elevan absorción de 25,5% a 66,5% en la banda estudiada.",
+        "El espectro de difracción acopla luz a modos guiados."
+      ],
+      "limitations": [
+        "La absorción no equivale a eficiencia eléctrica fotovoltaica.",
+        "La extracción eléctrica y pasivación condicionan las estimaciones de célula."
+      ],
+      "implementation_relevance": "Referencia de respuesta en banda finita; medir absorción y eficiencia eléctrica como objetivos distintos."
+    },
+    {
+      "id": "APP-016",
+      "entry_number": 16,
+      "citation": "Alhaïtz, Conoir y Valier-Brasier (2023). Experimental evidence of isotropic transparency and complete band gap formation for ultrasound propagation in stealthy hyperuniform media. Physical Review E 108, 065001.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.108.065001",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "experimento_ultrasonido"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Varillas de acero en agua presentan ventanas transparentes y bandas prohibidas isotrópicas."
+      ],
+      "limitations": [
+        "Resultados limitados a frecuencia, geometría y régimen medidos.",
+        "No implican transparencia universal ni ausencia de absorción material."
+      ],
+      "implementation_relevance": "Referencia acústica para elegir ventanas de frecuencia y distinguir scattering de absorción."
+    },
+    {
+      "id": "APP-017",
+      "entry_number": 17,
+      "citation": "Merkel et al. (2024). Stealthy Hyperuniform Surface Structures for Efficiency Enhancement of Organic Solar Cells. Advanced Photonics Research.",
+      "DOI_or_URL": "https://doi.org/10.1002/adpr.202300256",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "textura_replicada",
+        "medición_eléctrica"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Reporta mejora relativa de eficiencia de 61±8% en una célula orgánica."
+      ],
+      "limitations": [
+        "La célula base es poco eficiente.",
+        "Medidas repetidas de una célula no son dispositivos independientes.",
+        "El porcentaje no debe extrapolarse a células competitivas."
+      ],
+      "implementation_relevance": "Exigir replicación entre dispositivos y referencia competitiva; conservar magnitudes absolutas y relativas."
+    },
+    {
+      "id": "APP-018",
+      "entry_number": 18,
+      "citation": "Siedentop et al. (2024). Stealthy and hyperuniform isotropic photonic band gap structure in 3D. PNAS Nexus 3, pgae383.",
+      "DOI_or_URL": "https://doi.org/10.1093/pnasnexus/pgae383",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "impresión_3D",
+        "medición_microondas"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Red SHU tridimensional muestra bloqueo isotrópico frente a diamante y amorfo de densidad nodal similar."
+      ],
+      "limitations": [
+        "Decoración y conectividad acompañan a la geometría.",
+        "No implica ventaja neuronal ni fabricación óptica industrial."
+      ],
+      "implementation_relevance": "Referencia 3D de ondas; comparar densidad, decoración y conectividad además del espectro."
+    },
+    {
+      "id": "APP-019",
+      "entry_number": 19,
+      "citation": "Diego et al. (2025). Hypersonic acoustic wave control via stealthy hyperuniform phononic nanostructures. Science Advances 11, eadw7205.",
+      "DOI_or_URL": "https://doi.org/10.1126/sciadv.adw7205",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "nanodispositivo_fabricado",
+        "medición_transmisión",
+        "guías_acústicas"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Nanopilares de oro sobre niobato de litio controlan ondas acústicas en GHz."
+      ],
+      "limitations": [
+        "La banda ancha depende de tamaños y formas generados mediante Voronoi.",
+        "Pilares idénticos no darían el mismo mecanismo.",
+        "El beneficio corresponde al diseño compuesto, no a HU aislada."
+      ],
+      "implementation_relevance": "Registrar decoración Voronoi como factor y separar control espectral de distribución de resonancias."
+    },
+    {
+      "id": "APP-020",
+      "entry_number": 20,
+      "citation": "Torquato y Chen (2018). Multifunctional hyperuniform cellular networks: Optimality, anisotropy and disorder. Multifunctional Materials 1, 015001.",
+      "DOI_or_URL": "https://doi.org/10.1088/2399-7532/aaca91",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "teoría",
+        "cotas",
+        "modelos_redes"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Redes celulares 2D de baja densidad alcanzan o aproximan cotas bajo restricciones concretas.",
+        "Relaciona conducción y respuesta mecánica."
+      ],
+      "limitations": [
+        "No presenta un disipador medido.",
+        "Importan conectividad, canales y fracción de material.",
+        "Estructuras ordenadas también pueden ser óptimas."
+      ],
+      "implementation_relevance": "Referencia de optimización multifuncional con presupuestos de material explícitos."
+    },
+    {
+      "id": "APP-021",
+      "entry_number": 21,
+      "citation": "Le Thien et al. (2017). Enhanced pinning for vortices in hyperuniform pinning arrays and emergent hyperuniform vortex configurations with quenched disorder. Physical Review B 96, 094516.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevB.96.094516",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "simulación_vórtices"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Con igual número de anclajes, arrays HU muestran más ocupación y menos canales débiles que arrays aleatorios."
+      ],
+      "limitations": [
+        "No son mediciones de superconductores fabricados.",
+        "Falta comparación exhaustiva con arrays optimizados.",
+        "La reducción de grandes vacíos es un mecanismo rival."
+      ],
+      "implementation_relevance": "Usar vacíos y cobertura como controles explícitos en diseños de anclaje o cobertura."
+    },
+    {
+      "id": "APP-022",
+      "entry_number": 22,
+      "citation": "Mayer et al. (2015). How a well-adapted immune system is organized. PNAS 112, 5950–5955.",
+      "DOI_or_URL": "https://doi.org/10.1073/pnas.1421827112",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "modelo_teórico",
+        "optimización_cobertura"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Recursos finitos y reactividad cruzada producen repertorios con organización HU en espacio antigénico."
+      ],
+      "limitations": [
+        "El espacio es abstracto, no un mosaico físico de células.",
+        "No demuestra MHU de especies ni tratamiento validado."
+      ],
+      "implementation_relevance": "Referencia de cobertura de especialistas con función objetivo explícita; no transferir propiedades por analogía visual."
+    },
+    {
+      "id": "APP-023",
+      "entry_number": 23,
+      "citation": "Wei (2010). Multi-Class Blue Noise Sampling. ACM Transactions on Graphics / SIGGRAPH.",
+      "DOI_or_URL": "https://www.liyiwei.org/papers/noise-sig10/",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "método_muestreo",
+        "aplicaciones_gráficos"
+      ],
+      "scope": "adjacent",
+      "claims_supported": [
+        "Diseña varias clases y sus uniones para mantener distribuciones espaciales útiles.",
+        "Es prior art directo para reparto de canales."
+      ],
+      "limitations": [
+        "Blue noise, Poisson-disc y multiclase no certifican HU asintótica."
+      ],
+      "implementation_relevance": "Baseline obligatorio para adquisición multicanal y generación de patrones tipados."
+    },
+    {
+      "id": "APP-024",
+      "entry_number": 24,
+      "citation": "Bardenet y Hardy (2020). Monte Carlo with determinantal point processes. Annals of Applied Probability 30, 368–417.",
+      "DOI_or_URL": "https://doi.org/10.1214/19-AAP1504",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "teoría_cuadratura",
+        "garantías_convergencia"
+      ],
+      "scope": "adjacent",
+      "claims_supported": [
+        "Obtiene mejores tasas de error para una construcción de cuadratura bajo regularidad concreta."
+      ],
+      "limitations": [
+        "No todo DPP es HU.",
+        "Pesos, dimensión y coste de generación condicionan la comparación.",
+        "No garantiza que MHU mejore cualquier integral."
+      ],
+      "implementation_relevance": "Baseline de muestreo correlacionado con costes y supuestos igualados."
+    },
+    {
+      "id": "APP-025",
+      "entry_number": 25,
+      "citation": "Hawat et al. (2026). Repelled Point Processes With Application to Numerical Integration. Scandinavian Journal of Statistics 53, 1101–1133.",
+      "DOI_or_URL": "https://doi.org/10.1111/sjos.70073",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "teoría",
+        "integración_numérica",
+        "diagnóstico_HU"
+      ],
+      "scope": "adjacent",
+      "claims_supported": [
+        "La repulsión reduce varianza bajo condiciones.",
+        "Los autores no encuentran evidencia numérica HU para Poisson repelido."
+      ],
+      "limitations": [
+        "El operador estudiado tiene coste cuadrático.",
+        "La falta de evidencia numérica no demuestra no-HU asintótica."
+      ],
+      "implementation_relevance": "Control rival de repulsión local; no deducir HU a partir de mejor integración."
+    },
+    {
+      "id": "APP-026",
+      "entry_number": 26,
+      "citation": "Shih, Casiulis y Martiniani (2024). Fast generation of spectrally shaped disorder. Physical Review E 110, 034122.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.110.034122",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "método_computacional",
+        "generación_espectral"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "NUFFT permite cálculo espectral de coste declarado O(N log N).",
+        "Admite interacciones reales y diseños 2D/3D."
+      ],
+      "limitations": [
+        "No garantiza coste total, convergencia ni factibilidad de restricciones arbitrarias.",
+        "No produce MHU multicomponente automáticamente."
+      ],
+      "implementation_relevance": "Candidato a motor escalable; medir coste total y validar cada restricción y componente."
+    },
+    {
+      "id": "APP-027",
+      "entry_number": 27,
+      "citation": "Froufe-Pérez et al. (2016). Role of Short-Range Order and Hyperuniformity in the Formation of Band Gaps in Disordered Photonic Materials. Physical Review Letters 117, 053902.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevLett.117.053902",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "comparación_numérica",
+        "análisis_orden_local"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Empaquetados en espacio real y recíproco pueden generar bandas completas.",
+        "El orden local y las escalas relevantes para scattering son importantes."
+      ],
+      "limitations": [
+        "Correlacionar una banda con menor S cerca de cero no identifica causalidad HU."
+      ],
+      "implementation_relevance": "Referencia adversarial para ablaciones de orden local, espectro y respuesta en frecuencia."
+    },
+    {
+      "id": "APP-028",
+      "entry_number": 28,
+      "citation": "Barsukova et al. (2026). Stealthy-Hyperuniform Wave Dynamics in Two-Dimensional Photonic Crystals. Physical Review X 16, 021028.",
+      "DOI_or_URL": "https://doi.org/10.1103/8bz9-5g8s",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "experimento_fotónico",
+        "medición_linewidth"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Mide transición al salir del intervalo stealth.",
+        "Dentro persisten scattering múltiple y contribuciones radiativas fuera del plano."
+      ],
+      "limitations": [
+        "No extrapolar cancelación al primer orden a transparencia perfecta de dispositivos.",
+        "Apertura y absorción requieren observables separados."
+      ],
+      "implementation_relevance": "Introducir pérdidas fuera de plano y scattering múltiple antes de afirmar transparencia."
+    },
+    {
+      "id": "APP-029",
+      "entry_number": 29,
+      "citation": "Casiulis, Shih y Martiniani (2025). Gyromorphs: A New Class of Functional Disordered Materials. Physical Review Letters 135, 196101.",
+      "DOI_or_URL": "https://doi.org/10.1103/gqrx-7mn2",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "diseño_espectral",
+        "simulación_dipolos_acoplados"
+      ],
+      "scope": "disputed",
+      "claims_supported": [
+        "Patrones con anillos de picos y orden rotacional reportan bandas favorables frente a varios patrones."
+      ],
+      "limitations": [
+        "No presenta prototipo.",
+        "La clasificación HU y la interpretación de bandas se cuestionan posteriormente.",
+        "No establece superioridad definitiva ni condición no-HU."
+      ],
+      "implementation_relevance": "Candidato de estructura alternativa; leer junto a APP-030 y comparar modelos y tamaño."
+    },
+    {
+      "id": "APP-030",
+      "entry_number": 30,
+      "citation": "Skolnick et al. (2026). Structural and physical properties of gyromorphs and disordered stealthy hyperuniform media. Physical Review B 114, 084202.",
+      "DOI_or_URL": "https://doi.org/10.1103/wpsj-rqsl",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "reevaluación_numérica",
+        "análisis_espectral"
+      ],
+      "scope": "disputed",
+      "claims_supported": [
+        "Encuentra HU débil de clase III y pseudogaps con estados localizados.",
+        "Reporta dependencia del tamaño y cuestiona ventajas generales previas."
+      ],
+      "limitations": [
+        "La controversia exige igualar modelos, tamaños y definiciones.",
+        "No establece superioridad para tareas distintas.",
+        "Las afirmaciones de optimalidad quedan limitadas por sus supuestos."
+      ],
+      "implementation_relevance": "Posible réplica de APP-029/030; distinguir banda real, pseudogap y efectos finitos."
+    },
+    {
+      "id": "APP-031",
+      "entry_number": 31,
+      "citation": "Xu et al. (2017). Microstructure and mechanical properties of hyperuniform heterogeneous materials. Physical Review E 96, 043301.",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.96.043301",
+      "date_accessed": "2026-10-17",
+      "source_type": "primary_research",
+      "peer_review_status": "peer_reviewed",
+      "evidence_type": [
+        "simulación_materiales_bifásicos",
+        "control_correlación_local"
+      ],
+      "scope": "HU",
+      "claims_supported": [
+        "Iguala S₂(r) hasta un corte entre materiales HU y no-HU.",
+        "Dos familias HU muestran mayor resistencia a fractura frágil y menor rigidez."
+      ],
+      "limitations": [
+        "Igualar una función de dos puntos no fija toda la microestructura local.",
+        "Es HU de volumen, no MHU por especie.",
+        "El beneficio implica un compromiso entre propiedades."
+      ],
+      "implementation_relevance": "Referencia de controles locales más fuertes y objetivos mecánicos múltiples."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "progress": {
+    "status": "TRAINING",
+    "N": 1024,
+    "seed": 3101,
+    "paired_step": 1040,
+    "curriculum_task": 1,
+    "loss": {
+      "mhu": 0.6205265522003174,
+      "local": 0.6646324396133423,
+      "random": 0.670102596282959
+    },
+    "pid": 22364,
+    "allocated_VRAM_GiB": 0.45418787002563477,
+    "elapsed_seconds": 59.60952620000171
+  },
+  "worker_pid_matches_protocol": true,
+  "source_hashes_match": {
+    "src\\larp\\scale3d_train.py": true,
+    "src\\larp\\scale3d_geometry.py": true,
+    "src\\larp\\scale3d_runner.py": true,
+    "src\\larp\\scale3d_report.py": true,
+    "docs\\experiments\\SCALE3D_V1_PROTOCOL.md": true,
+    "configs\\scale3d_v1.json": true
+  },
+  "torch": "2.11.0+cu128",
+  "GPU": "NVIDIA GeForce RTX 4070 SUPER"
+}

@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "version": "v1",
+      "N": 16384,
+      "seed": 9107,
+      "pass": true,
+      "max_component_first_shell_mean": 0.11977654654831098,
+      "max_component_full_band_mean": 0.0019225826973644985,
+      "grid_imprint": [
+        0.07895243862232791,
+        0.07516178143075251,
+        0.07501814815126187
+      ]
+    },
+    {
+      "version": "v2",
+      "N": 16384,
+      "seed": 9107,
+      "pass": true,
+      "max_component_first_shell_mean": 2.458246666103906e-05,
+      "max_component_full_band_mean": 0.0018977211879112716,
+      "grid_imprint": [
+        0.08062028274255822,
+        0.08317154225296436,
+        0.08061126951161778
+      ]
+    },
+    {
+      "version": "v2",
+      "N": 16384,
+      "seed": 9108,
+      "pass": true,
+      "max_component_first_shell_mean": 3.543933641858202e-05,
+      "max_component_full_band_mean": 0.0018974115376353526,
+      "grid_imprint": [
+        0.08238191378259938,
+        0.0758938662614319,
+        0.08004049701271579
+      ]
+    },
+    {
+      "version": "v1",
+      "N": 32768,
+      "seed": 9107,
+      "pass": false,
+      "max_component_first_shell_mean": 0.27490714814139056,
+      "max_component_full_band_mean": 0.0013658324701485865,
+      "grid_imprint": [
+        0.08275127893737981,
+        0.0841795555893156,
+        0.08173900694382502
+      ]
+    },
+    {
+      "version": "v2",
+      "N": 32768,
+      "seed": 9107,
+      "pass": true,
+      "max_component_first_shell_mean": 1.693428286113107e-05,
+      "max_component_full_band_mean": 0.0022246417677565327,
+      "grid_imprint": [
+        0.0897502644150211,
+        0.08750743104341233,
+        0.08807701584370654
+      ]
+    },
+    {
+      "version": "v2",
+      "N": 32768,
+      "seed": 9108,
+      "pass": true,
+      "max_component_first_shell_mean": 1.090094469751756e-05,
+      "max_component_full_band_mean": 0.002235503852201425,
+      "grid_imprint": [
+        0.0871310244459853,
+        0.0908420082083335,
+        0.08980200412193766
+      ]
+    }
+  ],
+  "seconds": 78.56525999999576,
+  "historical_priors_updated": false
+}

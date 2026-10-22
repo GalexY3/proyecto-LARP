@@ -1,0 +1,151 @@
+{
+  "protocol": "spectral_local_variance_control_v2",
+  "stage": "geometry_only_feasibility",
+  "decision_file": "docs/decisions/ADR_2026_10_09_SPECTRAL_LOCAL_VARIANCE_V2.md",
+  "parent_spec": "docs/INDEPENDENT_SPECTRAL_MATCHING_NEXT.md",
+  "bound_evidence": "artifacts/spectral_matching/window_spectral_bound_independent.json",
+  "N": 400,
+  "L": 20.0,
+  "counts": [
+    163,
+    85,
+    68,
+    50,
+    34
+  ],
+  "incoming_degree": 6,
+  "center_count": 10000,
+  "center_seed_keys": [
+    20261008,
+    8841
+  ],
+  "pair_bins": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "local_radii": [
+    1.25,
+    2.5
+  ],
+  "spectral_target": 0.25,
+  "variance_guard_relative": 0.05,
+  "native_certificate_mean_max": 0.05,
+  "native_certificate_mode_max": 0.1,
+  "tolerances": {
+    "coverage_cdf": 0.02,
+    "coverage_quantile_over_a": 0.03,
+    "window_cdf": 0.02,
+    "window_void": 0.02,
+    "homotypic_cdf_floor": 0.05,
+    "homotypic_cdf_count_numerator": 2.0,
+    "homotypic_quantile_over_a": 0.05,
+    "homotypic_minimum_slack_over_a": 0.05,
+    "integer_count_absolute_floor": 2,
+    "integer_count_relative": 0.05,
+    "integer_count_relative_minimum": 20,
+    "outdegree_difference_over_incoming_degree": 0.02
+  },
+  "calibration": {
+    "seed_keys": [
+      20261009,
+      8842
+    ],
+    "maximum_seconds": 60,
+    "reset_to_native_per_proposal": true,
+    "candidates_discarded": true,
+    "task_scores_allowed": false,
+    "evaluations": 20,
+    "minimum_informative_cap": 500,
+    "fixed_plan": "index0 native(g1101), index1 discarded shuffle(g1102), index2..19 alternating near/global swaps; geometry=index modulo3, pair=floor((index-2)/2) across first9 sorted type pairs"
+  },
+  "search": {
+    "seed_keys": [
+      20261009,
+      8843
+    ],
+    "starts": [
+      "native",
+      "native"
+    ],
+    "proposals_per_start": 502,
+    "proposal_cap_maximum": 5000,
+    "minimum_informative_cap": 500,
+    "maximum_seconds_per_start": 50,
+    "near_probability": 0.8,
+    "nearest_destination_count": 4,
+    "initial_temperature": 0.1,
+    "final_temperature": 0.001,
+    "local_weight": 100.0,
+    "spectral_weight": 1.0,
+    "history_stride": 50,
+    "first_admitted_per_reference": true,
+    "transfer_unused_budget": false
+  },
+  "budget": {
+    "global_seconds": 360,
+    "calibration_seconds": 60,
+    "maximum_starts": 6,
+    "retries": 0,
+    "per_start_seconds": 50,
+    "prepare_seconds": 30
+  },
+  "cpu_threads": 4,
+  "dtype": "float64",
+  "output_dir": "artifacts/spectral_matching/v2",
+  "mark_semantics": "functional channels; physical radii remain tied to original nodes",
+  "estimand": "spectral redistribution conditioned on near-fixed local count variance and other matched local summaries",
+  "field_or_neural_scores_allowed": false,
+  "architecture_priors_updated": false,
+  "old_role_hypotheses_updated": false,
+  "automatic_acquisition_or_neural_extension": false,
+  "references": [
+    {
+      "id": "g1101",
+      "seed": 1101,
+      "npz": "artifacts/avian_v1/avian_full_spectral_N400_g1101.npz",
+      "manifest": "artifacts/avian_v1/avian_full_spectral_N400_g1101_manifest.json"
+    },
+    {
+      "id": "g1102",
+      "seed": 1102,
+      "npz": "artifacts/avian_v1/avian_full_spectral_N400_g1102.npz",
+      "manifest": "artifacts/avian_v1/avian_full_spectral_N400_g1102_manifest.json"
+    },
+    {
+      "id": "g1103",
+      "seed": 1103,
+      "npz": "artifacts/avian_v1/avian_full_spectral_N400_g1103.npz",
+      "manifest": "artifacts/avian_v1/avian_full_spectral_N400_g1103_manifest.json"
+    }
+  ],
+  "optimized_modes": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      2
+    ]
+  ]
+}

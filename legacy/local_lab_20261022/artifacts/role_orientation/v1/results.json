@@ -1,0 +1,113 @@
+{
+  "status": "INVALID_EXPERIMENT",
+  "reason": "worker failed after single-attempt launch; inspect execution.stdout.log",
+  "records": [
+    {
+      "condition": "D8",
+      "training_seed": 2103,
+      "status": "NOT_RUN",
+      "finite": false,
+      "updates_completed": 0,
+      "supervisor_failure_reason": "worker failed after single-attempt launch; inspect execution.stdout.log"
+    },
+    {
+      "condition": "B",
+      "training_seed": 2103,
+      "status": "NOT_RUN",
+      "finite": false,
+      "updates_completed": 0,
+      "supervisor_failure_reason": "worker failed after single-attempt launch; inspect execution.stdout.log"
+    },
+    {
+      "condition": "B",
+      "training_seed": 2104,
+      "status": "NOT_RUN",
+      "finite": false,
+      "updates_completed": 0,
+      "supervisor_failure_reason": "worker failed after single-attempt launch; inspect execution.stdout.log"
+    },
+    {
+      "condition": "D8",
+      "training_seed": 2104,
+      "status": "NOT_RUN",
+      "finite": false,
+      "updates_completed": 0,
+      "supervisor_failure_reason": "worker failed after single-attempt launch; inspect execution.stdout.log"
+    }
+  ],
+  "identity": {
+    "files": {
+      "src/larp/role_orientation.py": "c6c15ddd4a7f4ca03cdd14ffd3109d761d2de734b550cb1603f9b6102c405901",
+      "src/larp/role_coverage.py": "a9600f53ec9271b7c59f56e9f8de9867938af5117ff9f192767c8cbf7c14128e",
+      "src/larp/role_generalization.py": "5a26ca9d01e91aa9f9a19dca386a49e5a4c16026746f116a2a06ec1ce5fe1689",
+      "src/larp/gru_baseline.py": "29a7facf5491c2dcadb5acc330f3facd17d1315e2875a6a42f64e755f1524a67",
+      "src/larp/transmission_probe.py": "407ed374b3a6110112955d07ee72a9dd7b8d50ae49d3ba49b565d14fa0f0c311",
+      "src/larp/learning_diagnostics.py": "3e3fa34ec9d1728892357a891a4b4ceafa9d50bab4a7c7faf250228a63ab4b95",
+      "src/larp/model.py": "c2f6692dd6ef78800411ed0c01be9abf21aa0f28a076dbfff0fbc18e48b55c7c",
+      "src/larp/data.py": "f77e30eb63fae5c3a11c586f5f4b0a2b3bfb2e4e248900694ea31d0d8f0456c9",
+      "src/larp/graphs.py": "d18d7d37e8136fdd063dbd048022413b5d75f38d6b72ed675168a9a9a1adf0af",
+      "src/larp/geometry.py": "c895f2f56946e59c5af7988b7bd7435b3d0967045f23dbf74a75cc468d2455d6",
+      "src/larp/artifacts.py": "2b39af74cefa36f7936e5f38f494dc4a38f488d8341a91a2cd8b14f27f2bfa0b",
+      "configs/role_orientation_v1.json": "5dab040e8a5847ecd2d4bf429d3d070828efc50ae6917cc6e396307abe5c9ef8",
+      "tests/test_role_orientation.py": "271e91714a78d7a9a28ede6687aaf7960c6e283ea1f22b1e1a620b2193b0b04b",
+      "docs/ROLE_ORIENTATION_PROTOCOL.md": "4458b7786cd58e6f4a5aac8e1f35ffaa37bd9d2e27d4a0fb5737cc906faaf799",
+      "docs/projects/ROLE_ORIENTATION_PHASE4_DRAFT.md": "96b2726a967d7f7214ae221eb1401c5a80d421dc1cf8c39f219be8d4b04e0685",
+      "AGENTS.md": "9cde01c9a7a4f0cf329d11ddc444f4ba06e474dec8bbe5e30aea1fc82446a37a",
+      "docs/charter/LARP_RESEARCH_CHARTER_AB_2_1.md": "182f6710d47516dfd6c6408c98eef3a827e236a36d0d2e6ad751c6e191e96e1c",
+      "configs/role_orientation_hypotheses_v1.json": "d246fd5877f530021a761ef74a8678977d4b4ce4adbcda61ee1c08ce41896a56",
+      "docs/decisions/ADR_2026_10_08_ROLE_ORIENTATION_EXECUTION.md": "ea9e7154854ce0ee2bdd4dd18418e407a395033c96bba3c9a55b10c60ec46a5a",
+      "artifacts/role_orientation/run_supervised.py": "5edf45c7dd371043013d736e5179cfbd9b59c592fa65d369a91f1c1879d557f3",
+      "artifacts/role_coverage/v1/preregistration.json": "8d1efef602a207850832b10ff4be833df7bda0a6b74f392df1e588e1668ee0ae",
+      "artifacts/balanced_batch_probe/v1/preregistration.json": "2991dd66b1278c902c74db227e86e52e58a83cdaf844ef94ac87f6624471ee8c",
+      "artifacts/learning_diagnostics/v1/preregistration.json": "5effa7a6015fe8c43e6d4a79efa61c59029a0634226f4d75f9bfd0feebf059a2",
+      "artifacts/geometry/grid_N400_g1101.npz": "c0bc44d060704d9cba20f76b7a7b1a6665b1722a0d5f2ba1fe48d3b9bcd53220",
+      "requirements-lock.txt": "13b63736315fe7679c04ee0fd21685e14e4d3025c6c32c049d01a5e03bbba9a3",
+      "pyproject.toml": "fce85edcfd7ea0abefed16512c26c041a9f96a3e2de39c3ccf06bb29d5d7156f"
+    },
+    "runtime": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "torch": "2.14.1+cpu",
+      "psutil": "7.2.2",
+      "python": "3.13.4",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "device": "cpu",
+      "threads": 4,
+      "dtype": "float32",
+      "deterministic_algorithms": true
+    },
+    "hash": "519fa71fe689bf7a533535fcb3aa4a9ddf7413dba45a04903392d262462153ee"
+  },
+  "primary_condition": "B",
+  "gates": {
+    "B": false,
+    "D8": false
+  },
+  "XOR_readiness": false,
+  "H_R4_ordinal_updates": {
+    "eligible": false,
+    "registered_hypotheses": "role_orientation_diagnostic_beliefs_v1",
+    "numerical_posteriors": false,
+    "Bayes_factors": false,
+    "H1_H6": "unchanged",
+    "architecture_C": "unchanged",
+    "H_R1_H_R3": "unchanged",
+    "updates": {
+      "H-R4": {
+        "prior_ordinal": "moderately_plausible",
+        "direction": "no_update_ineligible",
+        "limitation": "Orientation changes source-role support and marked-context diversity (12 vs 11 unique oriented triples). Train failure does not isolate transfer. Two initializations share one skeleton/geometry. A ceiling does not exclude loss, speed or other-task effects.",
+        "primary_effect_endpoint": "UU"
+      }
+    }
+  },
+  "seconds_actual_from_supervisor_entry": 2.962308299999677,
+  "architecture_evidence": false,
+  "test_opened": false,
+  "H1_H6_updated": false,
+  "architecture_C_updated": false,
+  "historical_H_R_updated": false,
+  "XOR_MHU_remote": {
+    "status": "NOT_RUN"
+  }
+}

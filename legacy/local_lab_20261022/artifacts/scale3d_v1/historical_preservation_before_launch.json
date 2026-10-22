@@ -1,0 +1,12 @@
+{
+  "historical_files_checked": 993,
+  "changed": [],
+  "status": "PASS",
+  "excluded_mutable": [
+    "README.md",
+    ".gitattributes",
+    ".gitignore",
+    "sols_corner/"
+  ],
+  "scientific_runs_started": false
+}

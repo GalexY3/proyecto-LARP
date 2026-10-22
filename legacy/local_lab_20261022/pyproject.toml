@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "larp-research"
+version = "0.1.0"
+description = "Preregistered finite multihyperuniform neural-computation experiment"
+requires-python = ">=3.13"
+dependencies = ["numpy", "scipy", "torch", "matplotlib", "networkx", "psutil"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+larp = "larp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["integration: bounded cross-module tests", "slow: full geometry or capacity experiment"]
+addopts = "-ra"

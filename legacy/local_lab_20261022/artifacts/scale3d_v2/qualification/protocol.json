@@ -1,0 +1,24 @@
+{
+  "purpose": "technical generator qualification; not neural evidence",
+  "sizes": [
+    16384,
+    32768
+  ],
+  "seeds": [
+    9107,
+    9108
+  ],
+  "paired_v1_reference_seed": 9107,
+  "iterations": 600,
+  "chi": 0.12,
+  "local_weight": 0.15,
+  "fixed_threshold": 0.2,
+  "maximum_seconds": 600,
+  "torch": "2.11.0+cu128",
+  "GPU": "NVIDIA GeForce RTX 4070 SUPER",
+  "source_sha256": {
+    "src/larp/scale3d_geometry.py": "220096b284fa928a8090cb73abb1fafb71c40a753614491feb5a3b26f0e98cf2",
+    "src/larp/scale3d_geometry_v2.py": "5f2bec63ae2e6b05e528af89173ca1975fd82d3422b15773cbade82636822d7c",
+    "artifacts/scale3d_v2/repair_qualification.py": "c1554129189d14fc05a8229474d1b2f37fc9cdedc8be687f35a01bfd40f7d8ee"
+  }
+}

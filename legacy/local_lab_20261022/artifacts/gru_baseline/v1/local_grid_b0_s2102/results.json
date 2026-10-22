@@ -1,0 +1,2676 @@
+{
+  "name": "local_grid_b0_s2102",
+  "geometry": "grid",
+  "mode": "local",
+  "target": "b0",
+  "training_seed": 2102,
+  "status": "COMPLETE",
+  "finite": true,
+  "initial_state_hash": "6b8d3b91f18123f701a7d6a0f2b484d25d963d8333ca8a56316135b4e4f67ff3",
+  "parameters": 12481,
+  "train_input_hash": "2883fb8acf3201d547994483bc7218274f8f4f46c6d5dcfb584bd510570ed562",
+  "validation_input_hash": "6dc073f03ce3cf42bf6d68856b46d1a96588f9ea2208ef01b782f5a27e83de53",
+  "train_target_hash": "1964f593a70bcefbb7d30ee35699f41c0e13b0f4ae96153aecca25c04f070428",
+  "validation_target_hash": "8b28deff73ccfaeef598b312d76721c016926957e915208093dd1daee4a0d03e",
+  "updates_completed": 250,
+  "optimization_curve": [
+    {
+      "update": 1,
+      "optimization_loss": 0.6937170028686523,
+      "preclip_gradient_norm": 0.09702268242835999
+    },
+    {
+      "update": 25,
+      "optimization_loss": 0.6908096671104431,
+      "preclip_gradient_norm": 0.14840075373649597
+    },
+    {
+      "update": 50,
+      "optimization_loss": 0.6286717653274536,
+      "preclip_gradient_norm": 1.078717827796936
+    },
+    {
+      "update": 75,
+      "optimization_loss": 0.7692890763282776,
+      "preclip_gradient_norm": 4.587092399597168
+    },
+    {
+      "update": 100,
+      "optimization_loss": 0.26928213238716125,
+      "preclip_gradient_norm": 4.013677597045898
+    },
+    {
+      "update": 125,
+      "optimization_loss": 0.7087893486022949,
+      "preclip_gradient_norm": 30.169984817504883
+    },
+    {
+      "update": 150,
+      "optimization_loss": 0.00493389368057251,
+      "preclip_gradient_norm": 0.04481783136725426
+    },
+    {
+      "update": 175,
+      "optimization_loss": 0.0043612029403448105,
+      "preclip_gradient_norm": 0.03960945084691048
+    },
+    {
+      "update": 200,
+      "optimization_loss": 0.0032911202870309353,
+      "preclip_gradient_norm": 0.036369167268276215
+    },
+    {
+      "update": 225,
+      "optimization_loss": 0.001258979900740087,
+      "preclip_gradient_norm": 0.011919558979570866
+    },
+    {
+      "update": 250,
+      "optimization_loss": 0.002389550907537341,
+      "preclip_gradient_norm": 0.17656093835830688
+    }
+  ],
+  "final_state_hash": "3a40c1b2b975ec4d4bc1376d72cbe4ee5b61ddf0df04743243e0025c67b242a5",
+  "median_update_seconds": 0.03113129999837838,
+  "train": {
+    "accuracy": 0.9375,
+    "loss": 0.2860358953475952,
+    "source_gradient_abs_median_by_role": [
+      0.5266558527946472,
+      0.20548128336668015
+    ],
+    "source_flip_correct_fraction_by_role": [
+      0.9375,
+      0.9375
+    ],
+    "source_flip_class_change_fraction_by_role": [
+      0.875,
+      0.041666666666666664
+    ],
+    "finite": true,
+    "cases": [
+      {
+        "case": [
+          63,
+          53,
+          62,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": 4.794095516204834,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.9604507684707642,
+          7.744149684906006
+        ],
+        "source_flipped_logits": [
+          9.073418617248535,
+          5.354956150054932
+        ],
+        "source_flip_abs_logit_changes": [
+          4.279323101043701,
+          0.5608606338500977
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          false
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          63,
+          53,
+          62,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": 5.354956150054932,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.7439438700675964,
+          -0.3210594058036804
+        ],
+        "source_flipped_logits": [
+          8.952898979187012,
+          4.794095516204834
+        ],
+        "source_flip_abs_logit_changes": [
+          3.59794282913208,
+          0.5608606338500977
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          false
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          63,
+          53,
+          62,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 9.073418617248535,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.004424204118549824,
+          0.5868401527404785
+        ],
+        "source_flipped_logits": [
+          4.794095516204834,
+          8.952898979187012
+        ],
+        "source_flip_abs_logit_changes": [
+          4.279323101043701,
+          0.12051963806152344
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          false,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          63,
+          53,
+          62,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.952898979187012,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.15768550336360931,
+          -0.1143927201628685
+        ],
+        "source_flipped_logits": [
+          5.354956150054932,
+          9.073418617248535
+        ],
+        "source_flip_abs_logit_changes": [
+          3.59794282913208,
+          0.12051963806152344
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          false,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          24,
+          25,
+          14,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -6.688969612121582,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          1.4927208423614502,
+          2.2256743907928467
+        ],
+        "source_flipped_logits": [
+          8.426750183105469,
+          -6.487918376922607
+        ],
+        "source_flip_abs_logit_changes": [
+          15.11571979522705,
+          0.2010512351989746
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          24,
+          25,
+          14,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -6.487918376922607,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          2.1027865409851074,
+          -0.4399853050708771
+        ],
+        "source_flipped_logits": [
+          8.315149307250977,
+          -6.688969612121582
+        ],
+        "source_flip_abs_logit_changes": [
+          14.803068161010742,
+          0.2010512351989746
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          24,
+          25,
+          14,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.426750183105469,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.1847454011440277,
+          -0.06019167602062225
+        ],
+        "source_flipped_logits": [
+          -6.688969612121582,
+          8.315149307250977
+        ],
+        "source_flip_abs_logit_changes": [
+          15.11571979522705,
+          0.11160087585449219
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          24,
+          25,
+          14,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.315149307250977,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.09466875344514847,
+          -0.02893124334514141
+        ],
+        "source_flipped_logits": [
+          -6.487918376922607,
+          8.426750183105469
+        ],
+        "source_flip_abs_logit_changes": [
+          14.803068161010742,
+          0.11160087585449219
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          57,
+          58,
+          56,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -5.915672779083252,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.12244349718093872,
+          0.4413016438484192
+        ],
+        "source_flipped_logits": [
+          8.685029983520508,
+          -6.3429412841796875
+        ],
+        "source_flip_abs_logit_changes": [
+          14.600702285766602,
+          0.42726850509643555
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          57,
+          58,
+          56,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -6.3429412841796875,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.09755798429250717,
+          -0.2306756228208542
+        ],
+        "source_flipped_logits": [
+          8.643954277038574,
+          -5.915672779083252
+        ],
+        "source_flip_abs_logit_changes": [
+          14.986895561218262,
+          0.42726850509643555
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          57,
+          58,
+          56,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.685029983520508,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.04965358227491379,
+          0.1666182279586792
+        ],
+        "source_flipped_logits": [
+          -5.915672779083252,
+          8.643954277038574
+        ],
+        "source_flip_abs_logit_changes": [
+          14.600702285766602,
+          0.041075706481933594
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          57,
+          58,
+          56,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.643954277038574,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -2.1351499526645057e-05,
+          -0.019810810685157776
+        ],
+        "source_flipped_logits": [
+          -6.3429412841796875,
+          8.685029983520508
+        ],
+        "source_flip_abs_logit_changes": [
+          14.986895561218262,
+          0.041075706481933594
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          54,
+          55,
+          64,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -2.5988383293151855,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          10.520870208740234,
+          32.55900955200195
+        ],
+        "source_flipped_logits": [
+          9.611004829406738,
+          2.855898857116699
+        ],
+        "source_flip_abs_logit_changes": [
+          12.209842681884766,
+          5.454737186431885
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          false
+        ],
+        "source_flip_class_changes": [
+          true,
+          true
+        ]
+      },
+      {
+        "case": [
+          54,
+          55,
+          64,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": 2.855898857116699,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          19.527463912963867,
+          -3.189422845840454
+        ],
+        "source_flipped_logits": [
+          9.660284042358398,
+          -2.5988383293151855
+        ],
+        "source_flip_abs_logit_changes": [
+          6.804385185241699,
+          5.454737186431885
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          true
+        ]
+      },
+      {
+        "case": [
+          54,
+          55,
+          64,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 9.611004829406738,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.15701793134212494,
+          0.5831981897354126
+        ],
+        "source_flipped_logits": [
+          -2.5988383293151855,
+          9.660284042358398
+        ],
+        "source_flip_abs_logit_changes": [
+          12.209842681884766,
+          0.049279212951660156
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          54,
+          55,
+          64,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 9.660284042358398,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.1175074353814125,
+          -0.012264732271432877
+        ],
+        "source_flipped_logits": [
+          2.855898857116699,
+          9.611004829406738
+        ],
+        "source_flip_abs_logit_changes": [
+          6.804385185241699,
+          0.049279212951660156
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          false,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          25,
+          15,
+          35,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -5.651282787322998,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          4.655733108520508,
+          1.3151581287384033
+        ],
+        "source_flipped_logits": [
+          8.923847198486328,
+          -5.534735202789307
+        ],
+        "source_flip_abs_logit_changes": [
+          14.575130462646484,
+          0.1165475845336914
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          25,
+          15,
+          35,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -5.534735202789307,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          5.004563331604004,
+          -0.1802869439125061
+        ],
+        "source_flipped_logits": [
+          8.872535705566406,
+          -5.651282787322998
+        ],
+        "source_flip_abs_logit_changes": [
+          14.407270431518555,
+          0.1165475845336914
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          25,
+          15,
+          35,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.923847198486328,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.4282900094985962,
+          0.11756536364555359
+        ],
+        "source_flipped_logits": [
+          -5.651282787322998,
+          8.872535705566406
+        ],
+        "source_flip_abs_logit_changes": [
+          14.575130462646484,
+          0.051311492919921875
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          25,
+          15,
+          35,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.872535705566406,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.4637553095817566,
+          -0.04751216992735863
+        ],
+        "source_flipped_logits": [
+          -5.534735202789307,
+          8.923847198486328
+        ],
+        "source_flip_abs_logit_changes": [
+          14.407270431518555,
+          0.051311492919921875
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          36,
+          46,
+          26,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -6.254415988922119,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          1.3554564714431763,
+          0.2878701090812683
+        ],
+        "source_flipped_logits": [
+          8.074115753173828,
+          -6.081103324890137
+        ],
+        "source_flip_abs_logit_changes": [
+          14.328531265258789,
+          0.17331266403198242
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          36,
+          46,
+          26,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -6.081103324890137,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          1.3559167385101318,
+          0.0574965700507164
+        ],
+        "source_flipped_logits": [
+          7.8695855140686035,
+          -6.254415988922119
+        ],
+        "source_flip_abs_logit_changes": [
+          13.950689315795898,
+          0.17331266403198242
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          36,
+          46,
+          26,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.074115753173828,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.42098087072372437,
+          -1.046711802482605
+        ],
+        "source_flipped_logits": [
+          -6.254415988922119,
+          7.8695855140686035
+        ],
+        "source_flip_abs_logit_changes": [
+          14.328531265258789,
+          0.2045302391052246
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          36,
+          46,
+          26,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 7.8695855140686035,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.46783092617988586,
+          0.04866626113653183
+        ],
+        "source_flipped_logits": [
+          -6.081103324890137,
+          8.074115753173828
+        ],
+        "source_flip_abs_logit_changes": [
+          13.950689315795898,
+          0.2045302391052246
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          62,
+          63,
+          52,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -4.4380717277526855,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          2.615891456604004,
+          3.7789359092712402
+        ],
+        "source_flipped_logits": [
+          9.242326736450195,
+          -4.8232502937316895
+        ],
+        "source_flip_abs_logit_changes": [
+          13.680398941040039,
+          0.3851785659790039
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          62,
+          63,
+          52,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -4.8232502937316895,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          2.2444138526916504,
+          -0.43824782967567444
+        ],
+        "source_flipped_logits": [
+          9.174642562866211,
+          -4.4380717277526855
+        ],
+        "source_flip_abs_logit_changes": [
+          13.997892379760742,
+          0.3851785659790039
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          62,
+          63,
+          52,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 9.242326736450195,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.6394492983818054,
+          -0.04356623440980911
+        ],
+        "source_flipped_logits": [
+          -4.4380717277526855,
+          9.174642562866211
+        ],
+        "source_flip_abs_logit_changes": [
+          13.680398941040039,
+          0.06768417358398438
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          62,
+          63,
+          52,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 9.174642562866211,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.3083752691745758,
+          -0.03996025770902634
+        ],
+        "source_flipped_logits": [
+          -4.8232502937316895,
+          9.242326736450195
+        ],
+        "source_flip_abs_logit_changes": [
+          13.997892379760742,
+          0.06768417358398438
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          29,
+          39,
+          28,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -5.407251834869385,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          1.2139836549758911,
+          3.6038339138031006
+        ],
+        "source_flipped_logits": [
+          8.106884956359863,
+          -4.686750888824463
+        ],
+        "source_flip_abs_logit_changes": [
+          13.514137268066406,
+          0.7205009460449219
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          29,
+          39,
+          28,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -4.686750888824463,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          2.228757381439209,
+          -0.13028979301452637
+        ],
+        "source_flipped_logits": [
+          8.141911506652832,
+          -5.407251834869385
+        ],
+        "source_flip_abs_logit_changes": [
+          12.828662872314453,
+          0.7205009460449219
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          29,
+          39,
+          28,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.106884956359863,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.5153411626815796,
+          0.04581603407859802
+        ],
+        "source_flipped_logits": [
+          -5.407251834869385,
+          8.141911506652832
+        ],
+        "source_flip_abs_logit_changes": [
+          13.514137268066406,
+          0.03502655029296875
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          29,
+          39,
+          28,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.141911506652832,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.5379705429077148,
+          0.013868509791791439
+        ],
+        "source_flipped_logits": [
+          -4.686750888824463,
+          8.106884956359863
+        ],
+        "source_flip_abs_logit_changes": [
+          12.828662872314453,
+          0.03502655029296875
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          5,
+          6,
+          4,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -5.815749645233154,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.35302743315696716,
+          0.7242204546928406
+        ],
+        "source_flipped_logits": [
+          7.769688606262207,
+          -5.724298000335693
+        ],
+        "source_flip_abs_logit_changes": [
+          13.585437774658203,
+          0.09145164489746094
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          5,
+          6,
+          4,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -5.724298000335693,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.34214070439338684,
+          -0.13858413696289062
+        ],
+        "source_flipped_logits": [
+          7.807006359100342,
+          -5.815749645233154
+        ],
+        "source_flip_abs_logit_changes": [
+          13.531304359436035,
+          0.09145164489746094
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          5,
+          6,
+          4,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 7.769688606262207,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.4854115843772888,
+          0.9313523769378662
+        ],
+        "source_flipped_logits": [
+          -5.815749645233154,
+          7.807006359100342
+        ],
+        "source_flip_abs_logit_changes": [
+          13.585437774658203,
+          0.037317752838134766
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          5,
+          6,
+          4,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 7.807006359100342,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.4014819860458374,
+          -0.1470949500799179
+        ],
+        "source_flipped_logits": [
+          -5.724298000335693,
+          7.769688606262207
+        ],
+        "source_flip_abs_logit_changes": [
+          13.531304359436035,
+          0.037317752838134766
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          35,
+          26,
+          25,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -0.4546034336090088,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          9.81751537322998,
+          -16.236452102661133
+        ],
+        "source_flipped_logits": [
+          8.613283157348633,
+          -3.7166738510131836
+        ],
+        "source_flip_abs_logit_changes": [
+          9.067886352539062,
+          3.262070417404175
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          35,
+          26,
+          25,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -3.7166738510131836,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          7.219089031219482,
+          -0.6010787487030029
+        ],
+        "source_flipped_logits": [
+          8.747507095336914,
+          -0.4546034336090088
+        ],
+        "source_flip_abs_logit_changes": [
+          12.464180946350098,
+          3.262070417404175
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          35,
+          26,
+          25,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.613283157348633,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.08641942590475082,
+          1.6466124057769775
+        ],
+        "source_flipped_logits": [
+          -0.4546034336090088,
+          8.747507095336914
+        ],
+        "source_flip_abs_logit_changes": [
+          9.067886352539062,
+          0.13422393798828125
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          35,
+          26,
+          25,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.747507095336914,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.11372904479503632,
+          -0.13000233471393585
+        ],
+        "source_flipped_logits": [
+          -3.7166738510131836,
+          8.613283157348633
+        ],
+        "source_flip_abs_logit_changes": [
+          12.464180946350098,
+          0.13422393798828125
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          77,
+          78,
+          76,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -6.582092761993408,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          2.456650972366333,
+          0.33223360776901245
+        ],
+        "source_flipped_logits": [
+          9.1398286819458,
+          -6.555404186248779
+        ],
+        "source_flip_abs_logit_changes": [
+          15.721921920776367,
+          0.026688575744628906
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          77,
+          78,
+          76,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -6.555404186248779,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          2.480477809906006,
+          -0.04329056665301323
+        ],
+        "source_flipped_logits": [
+          9.13226318359375,
+          -6.582092761993408
+        ],
+        "source_flip_abs_logit_changes": [
+          15.687667846679688,
+          0.026688575744628906
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          77,
+          78,
+          76,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 9.1398286819458,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.4100531339645386,
+          0.11085961014032364
+        ],
+        "source_flipped_logits": [
+          -6.582092761993408,
+          9.13226318359375
+        ],
+        "source_flip_abs_logit_changes": [
+          15.721921920776367,
+          0.007565498352050781
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          77,
+          78,
+          76,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 9.13226318359375,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.3874162435531616,
+          -0.02027077041566372
+        ],
+        "source_flipped_logits": [
+          -6.555404186248779,
+          9.1398286819458
+        ],
+        "source_flip_abs_logit_changes": [
+          15.687667846679688,
+          0.007565498352050781
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          32,
+          22,
+          31,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -6.676706790924072,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.8337271809577942,
+          1.7384896278381348
+        ],
+        "source_flipped_logits": [
+          8.472615242004395,
+          -6.533604621887207
+        ],
+        "source_flip_abs_logit_changes": [
+          15.149322509765625,
+          0.14310216903686523
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          32,
+          22,
+          31,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -6.533604621887207,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          1.0728733539581299,
+          -0.17159266769886017
+        ],
+        "source_flipped_logits": [
+          8.912408828735352,
+          -6.676706790924072
+        ],
+        "source_flip_abs_logit_changes": [
+          15.446013450622559,
+          0.14310216903686523
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          32,
+          22,
+          31,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.472615242004395,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          3.4384968280792236,
+          4.806798934936523
+        ],
+        "source_flipped_logits": [
+          -6.676706790924072,
+          8.912408828735352
+        ],
+        "source_flip_abs_logit_changes": [
+          15.149322509765625,
+          0.43979358673095703
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          32,
+          22,
+          31,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.912408828735352,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          3.38256573677063,
+          -0.08909919112920761
+        ],
+        "source_flipped_logits": [
+          -6.533604621887207,
+          8.472615242004395
+        ],
+        "source_flip_abs_logit_changes": [
+          15.446013450622559,
+          0.43979358673095703
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "accuracy": 0.75,
+    "loss": 1.6708979606628418,
+    "source_gradient_abs_median_by_role": [
+      0.3511075973510742,
+      0.4679625630378723
+    ],
+    "source_flip_correct_fraction_by_role": [
+      0.75,
+      0.75
+    ],
+    "source_flip_class_change_fraction_by_role": [
+      0.5,
+      0.0
+    ],
+    "finite": true,
+    "cases": [
+      {
+        "case": [
+          20,
+          11,
+          30,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -2.0842533111572266,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -1.307915210723877,
+          -1.1525726318359375
+        ],
+        "source_flipped_logits": [
+          -6.4781317710876465,
+          -1.1887218952178955
+        ],
+        "source_flip_abs_logit_changes": [
+          4.39387845993042,
+          0.895531415939331
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          false,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          20,
+          11,
+          30,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -1.1887218952178955,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -2.9600884914398193,
+          0.6050122976303101
+        ],
+        "source_flipped_logits": [
+          -6.4050679206848145,
+          -2.0842533111572266
+        ],
+        "source_flip_abs_logit_changes": [
+          5.21634578704834,
+          0.895531415939331
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          false,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          20,
+          11,
+          30,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": -6.4781317710876465,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.13170930743217468,
+          0.1630483716726303
+        ],
+        "source_flipped_logits": [
+          -2.0842533111572266,
+          -6.4050679206848145
+        ],
+        "source_flip_abs_logit_changes": [
+          4.39387845993042,
+          0.07306385040283203
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          false
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          20,
+          11,
+          30,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": -6.4050679206848145,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.12265276908874512,
+          0.02401403896510601
+        ],
+        "source_flipped_logits": [
+          -1.1887218952178955,
+          -6.4781317710876465
+        ],
+        "source_flip_abs_logit_changes": [
+          5.21634578704834,
+          0.07306385040283203
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          false
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          26,
+          16,
+          25,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -3.5014235973358154,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          5.24603796005249,
+          7.672908306121826
+        ],
+        "source_flipped_logits": [
+          8.22469711303711,
+          -2.8983798027038574
+        ],
+        "source_flip_abs_logit_changes": [
+          11.726120948791504,
+          0.603043794631958
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          26,
+          16,
+          25,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -2.8983798027038574,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          6.6616740226745605,
+          -1.1102913618087769
+        ],
+        "source_flipped_logits": [
+          8.252985000610352,
+          -3.5014235973358154
+        ],
+        "source_flip_abs_logit_changes": [
+          11.151365280151367,
+          0.603043794631958
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          26,
+          16,
+          25,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.22469711303711,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.35121676325798035,
+          0.35856199264526367
+        ],
+        "source_flipped_logits": [
+          -3.5014235973358154,
+          8.252985000610352
+        ],
+        "source_flip_abs_logit_changes": [
+          11.726120948791504,
+          0.028287887573242188
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          26,
+          16,
+          25,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.252985000610352,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.33281925320625305,
+          -0.07619240880012512
+        ],
+        "source_flipped_logits": [
+          -2.8983798027038574,
+          8.22469711303711
+        ],
+        "source_flip_abs_logit_changes": [
+          11.151365280151367,
+          0.028287887573242188
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          61,
+          62,
+          60,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": -6.445297718048096,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.23913869261741638,
+          0.577363133430481
+        ],
+        "source_flipped_logits": [
+          8.209156036376953,
+          -6.456832408905029
+        ],
+        "source_flip_abs_logit_changes": [
+          14.65445327758789,
+          0.011534690856933594
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          61,
+          62,
+          60,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": -6.456832408905029,
+        "prediction": 0,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          0.23746472597122192,
+          -0.02023020200431347
+        ],
+        "source_flipped_logits": [
+          8.28601360321045,
+          -6.445297718048096
+        ],
+        "source_flip_abs_logit_changes": [
+          14.74284553527832,
+          0.011534690856933594
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          61,
+          62,
+          60,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 8.209156036376953,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.3509984314441681,
+          0.8403393030166626
+        ],
+        "source_flipped_logits": [
+          -6.445297718048096,
+          8.28601360321045
+        ],
+        "source_flip_abs_logit_changes": [
+          14.65445327758789,
+          0.0768575668334961
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          61,
+          62,
+          60,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 8.28601360321045,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.266866534948349,
+          -0.019343413412570953
+        ],
+        "source_flipped_logits": [
+          -6.456832408905029,
+          8.209156036376953
+        ],
+        "source_flip_abs_logit_changes": [
+          14.74284553527832,
+          0.0768575668334961
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          true
+        ],
+        "source_flip_class_changes": [
+          true,
+          false
+        ]
+      },
+      {
+        "case": [
+          21,
+          11,
+          22,
+          0,
+          0
+        ],
+        "target": 0.0,
+        "logit": 6.4610772132873535,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          3.9401333332061768,
+          3.4278228282928467
+        ],
+        "source_flipped_logits": [
+          9.051939010620117,
+          6.913412570953369
+        ],
+        "source_flip_abs_logit_changes": [
+          2.5908617973327637,
+          0.4523353576660156
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          false
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          21,
+          11,
+          22,
+          0,
+          1
+        ],
+        "target": 0.0,
+        "logit": 6.913412570953369,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          3.6565680503845215,
+          -0.23266945779323578
+        ],
+        "source_flipped_logits": [
+          9.217809677124023,
+          6.4610772132873535
+        ],
+        "source_flip_abs_logit_changes": [
+          2.3043971061706543,
+          0.4523353576660156
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          true,
+          false
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          21,
+          11,
+          22,
+          1,
+          0
+        ],
+        "target": 1.0,
+        "logit": 9.051939010620117,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.4102731943130493,
+          2.963376998901367
+        ],
+        "source_flipped_logits": [
+          6.4610772132873535,
+          9.217809677124023
+        ],
+        "source_flip_abs_logit_changes": [
+          2.5908617973327637,
+          0.16587066650390625
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          false,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      },
+      {
+        "case": [
+          21,
+          11,
+          22,
+          1,
+          1
+        ],
+        "target": 1.0,
+        "logit": 9.217809677124023,
+        "prediction": 1,
+        "hops": [
+          2.0,
+          2.0
+        ],
+        "source_gradients": [
+          -0.28954845666885376,
+          -0.14065097272396088
+        ],
+        "source_flipped_logits": [
+          6.913412570953369,
+          9.051939010620117
+        ],
+        "source_flip_abs_logit_changes": [
+          2.3043971061706543,
+          0.16587066650390625
+        ],
+        "source_flip_should_change_target": [
+          true,
+          false
+        ],
+        "source_flip_correct_predictions": [
+          false,
+          true
+        ],
+        "source_flip_class_changes": [
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  "seconds_including_measurement": 8.762329400000453,
+  "RSS_peak_bytes_sampled": 429379584,
+  "checkpoint_sha256": "3d71a1d8f3df280a58836e009dfc8825b70fd4db5a18695d965ed0b2117ebd0d"
+}

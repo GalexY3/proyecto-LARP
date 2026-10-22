@@ -1,0 +1,66 @@
+{
+  "version": "multichannel_information_followup_2026_10_09",
+  "scope": "Prospective additions; frozen hypothesis batch is unchanged",
+  "sources": [
+    {
+      "id": "F01",
+      "citation": "Krause, Guestrin, Gupta, Kleinberg. Near-optimal sensor placements: maximizing information while minimizing communication cost. IPSN 2006, 2–10.",
+      "DOI_or_URL": "10.1145/1127777.1127782",
+      "URL": "https://www.cs.cornell.edu/home/kleinber/ipsn06-placement.pdf",
+      "metadata_URL": "https://doi.org/10.1145/1127777.1127782",
+      "date_accessed": "2026-10-09",
+      "source_type": "conference",
+      "peer_review_status": "Peer reviewed conference; companion 2005 CMU technical report is a different version",
+      "claims_supported": ["Sensor placement jointly conditioned on information and communication cost is prior art", "GP models of sensing and links, algorithm and physical sensor evaluation"],
+      "limitations": ["Does not establish a five-channel MHU benefit", "Specific approximation assumptions do not transfer to LARP"],
+      "implementation_relevance": "Strong novelty limit; do not claim adding communication budgets as a new principle",
+      "access_scope": "Publisher metadata and author conference manuscript indexed; author-hosted longer 2005 report opened at https://las.inf.ethz.ch/files/krause06near-long.pdf"
+    },
+    {
+      "id": "F02",
+      "citation": "Liu, Chepuri, Leus, Hero. Distributed sensor selection for field estimation. ICASSP 2017, 4257–4261.",
+      "DOI_or_URL": "10.1109/ICASSP.2017.7952959",
+      "URL": "https://sps.ewi.tudelft.nl/pubs/leus17icassp4.pdf",
+      "metadata_URL": "https://repository.tudelft.nl/record/uuid%3Aef925e27-beca-4451-9167-b7aa992f7222",
+      "date_accessed": "2026-10-09",
+      "source_type": "conference",
+      "peer_review_status": "Peer reviewed conference, verified institutional metadata",
+      "claims_supported": ["Distributed sensor selection for spatially correlated fields with local information", "Joint selection and estimator gain optimization"],
+      "limitations": ["No isolated MHU ablation", "Full PDF open failed in this root session; claims restricted to primary indexed abstract/introduction and institutional metadata"],
+      "implementation_relevance": "A local correlation-aware estimator and distributed selection are established antecedents",
+      "access_scope": "Primary author/institutional indexed text and TU Delft repository; attempted PDF opens failed"
+    },
+    {
+      "id": "F03",
+      "citation": "Chen, Kim, Tait, Verstraete. On coupon colorings of graphs. Discrete Applied Mathematics 193, 94–101, 2015.",
+      "DOI_or_URL": "10.1016/j.dam.2015.04.026",
+      "URL": "https://mathweb.ucsd.edu/~jverstra/PAPERS/coupon.pdf",
+      "metadata_URL": "https://www.sciencedirect.com/science/article/pii/S0166218X1500219X",
+      "date_accessed": "2026-10-09",
+      "source_type": "journal",
+      "peer_review_status": "Peer reviewed journal; author manuscript opened is 2014 preprint version",
+      "claims_supported": ["Assigning types so every neighborhood contains all types is known coupon coloring", "Motivation already includes distributed networks with complementary sensor/resource types"],
+      "limitations": ["Availability alone does not establish ordered nonlinear computation", "Directed time-limited cones require an explicit adaptation"],
+      "implementation_relevance": "Strong rival and novelty constraint for secondary functional-placement preflight",
+      "access_scope": "Author PDF abstract/introduction and publisher metadata inspected"
+    },
+    {
+      "id": "F04",
+      "citation": "Hara, Ono, Higashi, Tanaka. Sensor Placement Problem on Networks for Sensors with Multiple Specifications. EUSIPCO 2024, 2327–2331.",
+      "DOI_or_URL": "https://eurasip.org/Proceedings/Eusipco/Eusipco2024/pdfs/0002327.pdf",
+      "URL": "https://eurasip.org/Proceedings/Eusipco/Eusipco2024/pdfs/0002327.pdf",
+      "date_accessed": "2026-10-09",
+      "source_type": "conference",
+      "peer_review_status": "Peer reviewed conference proceedings",
+      "claims_supported": ["Multi-specification graph sensor placement with coverage and sensing budget is prior art"],
+      "limitations": ["Paper's theoretical optimality claims not independently audited here", "No causal evidence for MHU or a neural architecture"],
+      "implementation_relevance": "Do not claim heterogeneity plus coverage/budget as novel on its own",
+      "access_scope": "Official proceedings PDF abstract, introduction and formulation inspected"
+    }
+  ],
+  "own_inferences": [
+    "True risk of a mismatched decoder must use generating covariance, not its model posterior variance",
+    "Changing the smooth/shared mixture weight also changes the marginal spectrum; use a separate panel",
+    "Innovation score remains1/3 for this historical algebraic diagnostic; two proposed routes may reach2/3 only with transfer and strong controls"
+  ]
+}

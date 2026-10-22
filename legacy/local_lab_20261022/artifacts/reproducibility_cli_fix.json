@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "purpose": "reproduction after exit-status fix, not extra architectural replicates",
+  "architecture_evidence": false,
+  "independent_geometries_added": 0,
+  "runs_checked": 5,
+  "records": [
+    {
+      "run": "copy_native_T_g9001_s9002_u205_lr0.003_causal",
+      "checks": {
+        "config_exact": true,
+        "pair_hashes_exact": true,
+        "labels_exact": true,
+        "model_weights_exact": true,
+        "validation_score_exact": true,
+        "validation_loss_exact": true,
+        "only_cli_wrapper_and_its_test_changed": true
+      },
+      "changed_source_files": [
+        "src/larp/__main__.py",
+        "tests/test_cli.py"
+      ],
+      "old_result_sha256": "1e7dacea1ac4d172f160b891a1f47f4752c2eb6f52f3fff6bd5a92231a2ba9ec",
+      "current_result_sha256": "7007eca2e1d488157d2fe0e19846965618661f4a8e1dfe443c24269a8a9f627d"
+    },
+    {
+      "run": "xor_grid_G_g1101_s2101_u250_lr0.003_causal",
+      "checks": {
+        "config_exact": true,
+        "pair_hashes_exact": true,
+        "labels_exact": true,
+        "model_weights_exact": true,
+        "validation_score_exact": true,
+        "validation_loss_exact": true,
+        "only_cli_wrapper_and_its_test_changed": true
+      },
+      "changed_source_files": [
+        "src/larp/__main__.py",
+        "tests/test_cli.py"
+      ],
+      "old_result_sha256": "f44930038b513fa0fb170b836898d6d62f253b4b3e414b5912c36218501f8e93",
+      "current_result_sha256": "e7beca7056ec9ef1668e07aa36618f134deba47d6e610a3f978a31220d163543"
+    },
+    {
+      "run": "xor_grid_G_g1101_s2102_u250_lr0.003_causal",
+      "checks": {
+        "config_exact": true,
+        "pair_hashes_exact": true,
+        "labels_exact": true,
+        "model_weights_exact": true,
+        "validation_score_exact": true,
+        "validation_loss_exact": true,
+        "only_cli_wrapper_and_its_test_changed": true
+      },
+      "changed_source_files": [
+        "src/larp/__main__.py",
+        "tests/test_cli.py"
+      ],
+      "old_result_sha256": "eb1ed6d366de8d6a4c9552e0dda9ddfc717bc592d93bf90d89d4d01f4934d1f8",
+      "current_result_sha256": "3c6c5413b5e524d2b85690a9085e2c14fa43b2ada39c204f48c74f02b935ac6a"
+    },
+    {
+      "run": "xor_mhu_G_g1101_s2101_u250_lr0.003_causal",
+      "checks": {
+        "config_exact": true,
+        "pair_hashes_exact": true,
+        "labels_exact": true,
+        "model_weights_exact": true,
+        "validation_score_exact": true,
+        "validation_loss_exact": true,
+        "only_cli_wrapper_and_its_test_changed": true
+      },
+      "changed_source_files": [
+        "src/larp/__main__.py",
+        "tests/test_cli.py"
+      ],
+      "old_result_sha256": "16d3fff93bcb49a55fd8c4432a34e30bcde271ff009937613edc565412c1eef4",
+      "current_result_sha256": "f3f7e8da5628e4b90641e607be3f336eaf459dbcef5eec8f4b77ef6bcc76305a"
+    },
+    {
+      "run": "xor_mhu_G_g1101_s2102_u250_lr0.003_causal",
+      "checks": {
+        "config_exact": true,
+        "pair_hashes_exact": true,
+        "labels_exact": true,
+        "model_weights_exact": true,
+        "validation_score_exact": true,
+        "validation_loss_exact": true,
+        "only_cli_wrapper_and_its_test_changed": true
+      },
+      "changed_source_files": [
+        "src/larp/__main__.py",
+        "tests/test_cli.py"
+      ],
+      "old_result_sha256": "dd033303f544a4155155ef55216d05863b042559bcc5ead22d6d73d385f49152",
+      "current_result_sha256": "208942015db221796fda5f187a6466c919d99c4e4b262d20b3fc0b4366e2b5f9"
+    }
+  ]
+}

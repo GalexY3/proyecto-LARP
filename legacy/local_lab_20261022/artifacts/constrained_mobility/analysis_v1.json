@@ -1,0 +1,791 @@
+{
+  "status": "COMPLETE",
+  "UTC": "2026-10-09T14:43:51.874598+00:00",
+  "decision": "CLOSE_OPERATOR_SEQUENCE_PREPARE_TRADEOFF_DRAFT",
+  "rows": [
+    {
+      "reference_id": "g1101",
+      "seed_index": 0,
+      "operator": "swap2",
+      "proposals": 190,
+      "accepted": 1,
+      "acceptance_fraction": 0.005263157894736842,
+      "final_hamming": 2,
+      "maximum_hamming": 2,
+      "unique_visited_states": 2,
+      "complete_chain_wall_seconds": 8.6978849,
+      "final_hamming_per_second": 0.22994095955443145,
+      "accepted_changed_sites": 2,
+      "proposed_changed_sites": 380,
+      "accepted_sites_per_proposed_site": 0.005263157894736842,
+      "proposed_transport_sum": 1245.9298492010926,
+      "accepted_transport_sum": 1.806751669685587,
+      "initial_component_means": [
+        0.0011550569521305701,
+        0.0009427008532458641,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "final_component_means": [
+        0.0016168544072518434,
+        0.0015820770481272466,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "spectral_signed_change_per_second": [
+        5.309307497519003e-05,
+        7.350938788364312e-05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 27,
+        "coverage_quantile": 2,
+        "window_count_cdf": 18,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 151,
+        "homotypic_nearest_cdf": 138,
+        "homotypic_quantile": 10,
+        "homotypic_minimum_deficit": 188,
+        "homotypic_unordered_pair_bin": 13,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 40
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 25,
+        "homotypic_nearest_cdf": 1
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1101",
+      "seed_index": 0,
+      "operator": "cycle3",
+      "proposals": 190,
+      "accepted": 0,
+      "acceptance_fraction": 0.0,
+      "final_hamming": 0,
+      "maximum_hamming": 0,
+      "unique_visited_states": 1,
+      "complete_chain_wall_seconds": 9.0061287,
+      "final_hamming_per_second": 0.0,
+      "accepted_changed_sites": 0,
+      "proposed_changed_sites": 570,
+      "accepted_sites_per_proposed_site": 0.0,
+      "proposed_transport_sum": 1884.7601205996004,
+      "accepted_transport_sum": 0.0,
+      "initial_component_means": [
+        0.0011550569521305701,
+        0.0009427008532458641,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "final_component_means": [
+        0.0011550569521305701,
+        0.0009427008532458641,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 57,
+        "coverage_quantile": 2,
+        "window_count_cdf": 25,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 180,
+        "homotypic_nearest_cdf": 167,
+        "homotypic_quantile": 21,
+        "homotypic_minimum_deficit": 190,
+        "homotypic_unordered_pair_bin": 20,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 61
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 6
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1101",
+      "seed_index": 1,
+      "operator": "cycle3",
+      "proposals": 190,
+      "accepted": 0,
+      "acceptance_fraction": 0.0,
+      "final_hamming": 0,
+      "maximum_hamming": 0,
+      "unique_visited_states": 1,
+      "complete_chain_wall_seconds": 8.6229528,
+      "final_hamming_per_second": 0.0,
+      "accepted_changed_sites": 0,
+      "proposed_changed_sites": 570,
+      "accepted_sites_per_proposed_site": 0.0,
+      "proposed_transport_sum": 1788.1627625314638,
+      "accepted_transport_sum": 0.0,
+      "initial_component_means": [
+        0.0011550569521305701,
+        0.0009427008532458641,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "final_component_means": [
+        0.0011550569521305701,
+        0.0009427008532458641,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 39,
+        "coverage_quantile": 3,
+        "window_count_cdf": 20,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 174,
+        "homotypic_nearest_cdf": 161,
+        "homotypic_quantile": 18,
+        "homotypic_minimum_deficit": 190,
+        "homotypic_unordered_pair_bin": 28,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 62
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 3
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1101",
+      "seed_index": 1,
+      "operator": "swap2",
+      "proposals": 190,
+      "accepted": 0,
+      "acceptance_fraction": 0.0,
+      "final_hamming": 0,
+      "maximum_hamming": 0,
+      "unique_visited_states": 1,
+      "complete_chain_wall_seconds": 8.5300361,
+      "final_hamming_per_second": 0.0,
+      "accepted_changed_sites": 0,
+      "proposed_changed_sites": 380,
+      "accepted_sites_per_proposed_site": 0.0,
+      "proposed_transport_sum": 1314.144786566539,
+      "accepted_transport_sum": 0.0,
+      "initial_component_means": [
+        0.0011550569521305701,
+        0.0009427008532458641,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "final_component_means": [
+        0.0011550569521305701,
+        0.0009427008532458641,
+        0.0010108684712150672,
+        0.0023924250998146853,
+        0.0017202865044714454
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 32,
+        "coverage_quantile": 0,
+        "window_count_cdf": 23,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 148,
+        "homotypic_nearest_cdf": 128,
+        "homotypic_quantile": 12,
+        "homotypic_minimum_deficit": 189,
+        "homotypic_unordered_pair_bin": 13,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 43
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 24,
+        "homotypic_nearest_cdf": 1
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1102",
+      "seed_index": 0,
+      "operator": "swap2",
+      "proposals": 190,
+      "accepted": 1,
+      "acceptance_fraction": 0.005263157894736842,
+      "final_hamming": 2,
+      "maximum_hamming": 2,
+      "unique_visited_states": 2,
+      "complete_chain_wall_seconds": 8.4479491,
+      "final_hamming_per_second": 0.2367438506465433,
+      "accepted_changed_sites": 2,
+      "proposed_changed_sites": 380,
+      "accepted_sites_per_proposed_site": 0.005263157894736842,
+      "proposed_transport_sum": 1200.345733174161,
+      "accepted_transport_sum": 1.7171076545132165,
+      "initial_component_means": [
+        0.0027003716430327985,
+        0.0021501582072354247,
+        0.0009492157982459052,
+        0.0038706863511006177,
+        0.0017420213231506291
+      ],
+      "final_component_means": [
+        0.0025963559288096644,
+        0.0021501582072354247,
+        0.001477996999372586,
+        0.0038706863511006177,
+        0.0017420213231506291
+      ],
+      "spectral_signed_change_per_second": [
+        -1.2312540356467586e-05,
+        0.0,
+        6.259284885211735e-05,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 24,
+        "coverage_quantile": 4,
+        "window_count_cdf": 22,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 158,
+        "homotypic_nearest_cdf": 157,
+        "homotypic_quantile": 78,
+        "homotypic_minimum_deficit": 188,
+        "homotypic_unordered_pair_bin": 23,
+        "outdegree_mean_difference": 1,
+        "directed_type_arc_count": 50
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 8
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1102",
+      "seed_index": 0,
+      "operator": "cycle3",
+      "proposals": 190,
+      "accepted": 0,
+      "acceptance_fraction": 0.0,
+      "final_hamming": 0,
+      "maximum_hamming": 0,
+      "unique_visited_states": 1,
+      "complete_chain_wall_seconds": 8.6651535,
+      "final_hamming_per_second": 0.0,
+      "accepted_changed_sites": 0,
+      "proposed_changed_sites": 570,
+      "accepted_sites_per_proposed_site": 0.0,
+      "proposed_transport_sum": 1652.1249443998975,
+      "accepted_transport_sum": 0.0,
+      "initial_component_means": [
+        0.0027003716430327985,
+        0.0021501582072354247,
+        0.0009492157982459052,
+        0.0038706863511006177,
+        0.0017420213231506291
+      ],
+      "final_component_means": [
+        0.0027003716430327985,
+        0.0021501582072354247,
+        0.0009492157982459052,
+        0.0038706863511006177,
+        0.0017420213231506291
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 33,
+        "coverage_quantile": 1,
+        "window_count_cdf": 23,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 178,
+        "homotypic_nearest_cdf": 162,
+        "homotypic_quantile": 94,
+        "homotypic_minimum_deficit": 190,
+        "homotypic_unordered_pair_bin": 20,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 64
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 4
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1102",
+      "seed_index": 1,
+      "operator": "cycle3",
+      "proposals": 190,
+      "accepted": 0,
+      "acceptance_fraction": 0.0,
+      "final_hamming": 0,
+      "maximum_hamming": 0,
+      "unique_visited_states": 1,
+      "complete_chain_wall_seconds": 8.643587,
+      "final_hamming_per_second": 0.0,
+      "accepted_changed_sites": 0,
+      "proposed_changed_sites": 570,
+      "accepted_sites_per_proposed_site": 0.0,
+      "proposed_transport_sum": 1731.6856109066503,
+      "accepted_transport_sum": 0.0,
+      "initial_component_means": [
+        0.0027003716430327985,
+        0.0021501582072354247,
+        0.0009492157982459052,
+        0.0038706863511006177,
+        0.0017420213231506291
+      ],
+      "final_component_means": [
+        0.0027003716430327985,
+        0.0021501582072354247,
+        0.0009492157982459052,
+        0.0038706863511006177,
+        0.0017420213231506291
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 44,
+        "coverage_quantile": 8,
+        "window_count_cdf": 28,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 174,
+        "homotypic_nearest_cdf": 161,
+        "homotypic_quantile": 99,
+        "homotypic_minimum_deficit": 190,
+        "homotypic_unordered_pair_bin": 30,
+        "outdegree_mean_difference": 1,
+        "directed_type_arc_count": 58
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 2
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1102",
+      "seed_index": 1,
+      "operator": "swap2",
+      "proposals": 190,
+      "accepted": 1,
+      "acceptance_fraction": 0.005263157894736842,
+      "final_hamming": 2,
+      "maximum_hamming": 2,
+      "unique_visited_states": 2,
+      "complete_chain_wall_seconds": 8.5765509,
+      "final_hamming_per_second": 0.23319397544763593,
+      "accepted_changed_sites": 2,
+      "proposed_changed_sites": 380,
+      "accepted_sites_per_proposed_site": 0.005263157894736842,
+      "proposed_transport_sum": 994.4904332634705,
+      "accepted_transport_sum": 1.5092304716749991,
+      "initial_component_means": [
+        0.0027003716430327985,
+        0.0021501582072354247,
+        0.0009492157982459052,
+        0.0038706863511006177,
+        0.0017420213231506291
+      ],
+      "final_component_means": [
+        0.0027003716430327985,
+        0.0021501582072354247,
+        0.0015343776941996016,
+        0.003924229482672788,
+        0.0017420213231506291
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        6.822811439895918e-05,
+        6.242967854615064e-06,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 15,
+        "coverage_quantile": 1,
+        "window_count_cdf": 12,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 138,
+        "homotypic_nearest_cdf": 135,
+        "homotypic_quantile": 69,
+        "homotypic_minimum_deficit": 189,
+        "homotypic_unordered_pair_bin": 24,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 36
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 17
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1103",
+      "seed_index": 0,
+      "operator": "swap2",
+      "proposals": 190,
+      "accepted": 1,
+      "acceptance_fraction": 0.005263157894736842,
+      "final_hamming": 2,
+      "maximum_hamming": 2,
+      "unique_visited_states": 2,
+      "complete_chain_wall_seconds": 8.7228304,
+      "final_hamming_per_second": 0.22928337572630098,
+      "accepted_changed_sites": 2,
+      "proposed_changed_sites": 380,
+      "accepted_sites_per_proposed_site": 0.005263157894736842,
+      "proposed_transport_sum": 1198.4592796566658,
+      "accepted_transport_sum": 1.4821231132787112,
+      "initial_component_means": [
+        0.000616947601568134,
+        0.001451144908174681,
+        0.0008460793916870938,
+        0.003982479484350959,
+        0.002411238938036441
+      ],
+      "final_component_means": [
+        0.000616947601568134,
+        0.0018821814401119112,
+        0.0017028060377243957,
+        0.003982479484350959,
+        0.002411238938036441
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        4.9414755551962844e-05,
+        9.821658873905218e-05,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 26,
+        "coverage_quantile": 5,
+        "window_count_cdf": 17,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 140,
+        "homotypic_nearest_cdf": 122,
+        "homotypic_quantile": 9,
+        "homotypic_minimum_deficit": 188,
+        "homotypic_unordered_pair_bin": 15,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 40
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 31,
+        "homotypic_nearest_cdf": 1
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1103",
+      "seed_index": 0,
+      "operator": "cycle3",
+      "proposals": 190,
+      "accepted": 0,
+      "acceptance_fraction": 0.0,
+      "final_hamming": 0,
+      "maximum_hamming": 0,
+      "unique_visited_states": 1,
+      "complete_chain_wall_seconds": 8.6381121,
+      "final_hamming_per_second": 0.0,
+      "accepted_changed_sites": 0,
+      "proposed_changed_sites": 570,
+      "accepted_sites_per_proposed_site": 0.0,
+      "proposed_transport_sum": 1835.1835135766016,
+      "accepted_transport_sum": 0.0,
+      "initial_component_means": [
+        0.000616947601568134,
+        0.001451144908174681,
+        0.0008460793916870938,
+        0.003982479484350959,
+        0.002411238938036441
+      ],
+      "final_component_means": [
+        0.000616947601568134,
+        0.001451144908174681,
+        0.0008460793916870938,
+        0.003982479484350959,
+        0.002411238938036441
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 30,
+        "coverage_quantile": 4,
+        "window_count_cdf": 23,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 174,
+        "homotypic_nearest_cdf": 159,
+        "homotypic_quantile": 15,
+        "homotypic_minimum_deficit": 190,
+        "homotypic_unordered_pair_bin": 20,
+        "outdegree_mean_difference": 1,
+        "directed_type_arc_count": 60
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 4
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1103",
+      "seed_index": 1,
+      "operator": "cycle3",
+      "proposals": 190,
+      "accepted": 0,
+      "acceptance_fraction": 0.0,
+      "final_hamming": 0,
+      "maximum_hamming": 0,
+      "unique_visited_states": 1,
+      "complete_chain_wall_seconds": 8.7751622,
+      "final_hamming_per_second": 0.0,
+      "accepted_changed_sites": 0,
+      "proposed_changed_sites": 570,
+      "accepted_sites_per_proposed_site": 0.0,
+      "proposed_transport_sum": 2045.2872900498319,
+      "accepted_transport_sum": 0.0,
+      "initial_component_means": [
+        0.000616947601568134,
+        0.001451144908174681,
+        0.0008460793916870938,
+        0.003982479484350959,
+        0.002411238938036441
+      ],
+      "final_component_means": [
+        0.000616947601568134,
+        0.001451144908174681,
+        0.0008460793916870938,
+        0.003982479484350959,
+        0.002411238938036441
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 48,
+        "coverage_quantile": 15,
+        "window_count_cdf": 41,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 184,
+        "homotypic_nearest_cdf": 161,
+        "homotypic_quantile": 16,
+        "homotypic_minimum_deficit": 190,
+        "homotypic_unordered_pair_bin": 15,
+        "outdegree_mean_difference": 0,
+        "directed_type_arc_count": 74
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 3
+      },
+      "chain_viable": false
+    },
+    {
+      "reference_id": "g1103",
+      "seed_index": 1,
+      "operator": "swap2",
+      "proposals": 190,
+      "accepted": 1,
+      "acceptance_fraction": 0.005263157894736842,
+      "final_hamming": 2,
+      "maximum_hamming": 2,
+      "unique_visited_states": 2,
+      "complete_chain_wall_seconds": 8.5381164,
+      "final_hamming_per_second": 0.23424370274455383,
+      "accepted_changed_sites": 2,
+      "proposed_changed_sites": 380,
+      "accepted_sites_per_proposed_site": 0.005263157894736842,
+      "proposed_transport_sum": 1223.0251961353113,
+      "accepted_transport_sum": 1.5567530258097837,
+      "initial_component_means": [
+        0.000616947601568134,
+        0.001451144908174681,
+        0.0008460793916870938,
+        0.003982479484350959,
+        0.002411238938036441
+      ],
+      "final_component_means": [
+        0.000616947601568134,
+        0.0027271382861914985,
+        0.0008460793916870938,
+        0.007058480677200993,
+        0.002411238938036441
+      ],
+      "spectral_signed_change_per_second": [
+        0.0,
+        0.00014944670677209524,
+        0.0,
+        0.00036026695452992817,
+        0.0
+      ],
+      "rejection_counts_by_family": {
+        "coverage_cdf": 23,
+        "coverage_quantile": 6,
+        "window_count_cdf": 20,
+        "window_void_fraction": 0,
+        "exact_window_variance_relative_difference": 157,
+        "homotypic_nearest_cdf": 142,
+        "homotypic_quantile": 8,
+        "homotypic_minimum_deficit": 188,
+        "homotypic_unordered_pair_bin": 39,
+        "outdegree_mean_difference": 1,
+        "directed_type_arc_count": 36
+      },
+      "proposals_failing_only_this_family": {
+        "homotypic_minimum_deficit": 11,
+        "homotypic_quantile": 1
+      },
+      "chain_viable": false
+    }
+  ],
+  "operator_viable": {
+    "swap2": false,
+    "cycle3": false
+  },
+  "viable_geometries": {
+    "swap2": [],
+    "cycle3": []
+  },
+  "cycle3_considerable_gain": false,
+  "superior_geometries": [],
+  "paired_comparisons": [
+    {
+      "reference_id": "g1101",
+      "seed_index": 0,
+      "B_over_A_final_hamming_per_second": 0.0,
+      "B_minus_A_final_hamming_per_second": -0.22994095955443145,
+      "ratio_defined": true,
+      "at_least_twofold": false
+    },
+    {
+      "reference_id": "g1101",
+      "seed_index": 1,
+      "B_over_A_final_hamming_per_second": null,
+      "B_minus_A_final_hamming_per_second": 0.0,
+      "ratio_defined": false,
+      "at_least_twofold": false
+    },
+    {
+      "reference_id": "g1102",
+      "seed_index": 0,
+      "B_over_A_final_hamming_per_second": 0.0,
+      "B_minus_A_final_hamming_per_second": -0.2367438506465433,
+      "ratio_defined": true,
+      "at_least_twofold": false
+    },
+    {
+      "reference_id": "g1102",
+      "seed_index": 1,
+      "B_over_A_final_hamming_per_second": 0.0,
+      "B_minus_A_final_hamming_per_second": -0.23319397544763593,
+      "ratio_defined": true,
+      "at_least_twofold": false
+    },
+    {
+      "reference_id": "g1103",
+      "seed_index": 0,
+      "B_over_A_final_hamming_per_second": 0.0,
+      "B_minus_A_final_hamming_per_second": -0.22928337572630098,
+      "ratio_defined": true,
+      "at_least_twofold": false
+    },
+    {
+      "reference_id": "g1103",
+      "seed_index": 1,
+      "B_over_A_final_hamming_per_second": 0.0,
+      "B_minus_A_final_hamming_per_second": -0.23424370274455383,
+      "ratio_defined": true,
+      "at_least_twofold": false
+    }
+  ],
+  "rejection_counts_by_family": {
+    "swap2": {
+      "coverage_cdf": 147,
+      "coverage_quantile": 18,
+      "window_count_cdf": 112,
+      "window_void_fraction": 0,
+      "exact_window_variance_relative_difference": 892,
+      "homotypic_nearest_cdf": 822,
+      "homotypic_quantile": 186,
+      "homotypic_minimum_deficit": 1130,
+      "homotypic_unordered_pair_bin": 127,
+      "outdegree_mean_difference": 2,
+      "directed_type_arc_count": 245
+    },
+    "cycle3": {
+      "coverage_cdf": 251,
+      "coverage_quantile": 33,
+      "window_count_cdf": 160,
+      "window_void_fraction": 0,
+      "exact_window_variance_relative_difference": 1064,
+      "homotypic_nearest_cdf": 971,
+      "homotypic_quantile": 263,
+      "homotypic_minimum_deficit": 1140,
+      "homotypic_unordered_pair_bin": 133,
+      "outdegree_mean_difference": 2,
+      "directed_type_arc_count": 379
+    }
+  },
+  "proposals_failing_only_this_family": {
+    "swap2": {
+      "homotypic_minimum_deficit": 116,
+      "homotypic_nearest_cdf": 3,
+      "homotypic_quantile": 1
+    },
+    "cycle3": {
+      "homotypic_minimum_deficit": 22
+    }
+  },
+  "total_proposals": 2280,
+  "total_accepted": 5,
+  "source_sha256": {
+    "config": "a4873dc457e2943bc019fd036dd52b0270925d08c1ab1d69f663c9e9f9083087",
+    "results": "55768e23a41f8d2f54bef7e6c66d9c5e70dec5194102d30872e5e9b0facc5485",
+    "analysis_script": "da4ba990fc33dccd2a62dc976db41f82665ede566f1c02868bc54e055e7ecdda"
+  },
+  "architecture_priors_updated": false,
+  "utility_evidence": false,
+  "scope": "Operator+kernel diagnostics only; family deletion arithmetic at observed states is not a relaxed trajectory or natural mediation"
+}

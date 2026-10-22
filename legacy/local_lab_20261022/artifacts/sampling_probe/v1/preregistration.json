@@ -1,0 +1,106 @@
+{
+  "version": "spatial_sampling_probe_v1",
+  "created": "2026-10-08T12:15:58.375125+00:00",
+  "config": {
+    "version": "spatial_sampling_probe_v1",
+    "stage": "exploratory_observability_no_neural_training",
+    "master_seed": 20261008,
+    "N": 400,
+    "L": 20.0,
+    "counts_A_to_E": [
+      163,
+      85,
+      68,
+      50,
+      34
+    ],
+    "geometry_seeds": [
+      1101,
+      1102,
+      1103
+    ],
+    "families": [
+      "nominal_mhu",
+      "avian_full_spectral",
+      "avian_local_only"
+    ],
+    "mark_conditions": [
+      "native",
+      "shuffle"
+    ],
+    "worlds_per_band": 128,
+    "field_bands": {
+      "smooth": [
+        1.0,
+        2.0
+      ],
+      "fine": [
+        3.0,
+        5.0
+      ]
+    },
+    "field_normalization": "zero_spatial_mean_and_unit_analytic_continuous_torus_variance_per_world_channel",
+    "channels": 5,
+    "query_world_side": 10,
+    "query_site_rule": "[(2*a+0.5,2*b+0.5) for a,b in 0..9]",
+    "estimators": [
+      "nearest_neighbor",
+      "local_gaussian"
+    ],
+    "kernel_length_scale": 1.25,
+    "kernel_cutoff_in_length_scales": 2.0,
+    "empty_kernel_rule": "nearest_neighbor_fallback",
+    "noise_sigma": [
+      0.0,
+      0.1
+    ],
+    "field_namespace": 7811,
+    "shuffle_namespace": 7812,
+    "noise_namespace": 7813,
+    "seed_keys": {
+      "fields": "[master_seed,field_namespace,band_index_zero_based]",
+      "shuffle": "[master_seed,shuffle_namespace,geometry_seed]",
+      "noise": "[master_seed,noise_namespace,geometry_seed]"
+    },
+    "primary_metric": "MSE_macro_equal_weight_channels_normalized_by_unit_analytic_field_variance",
+    "coverage_metric": "query_to_nearest_sample_distance_per_channel_and_query_void_fraction_at_kernel_cutoff",
+    "summary": "descriptive_geometry_mean_sd_and_paired_native_minus_shuffle_no_p_values_or_architecture_posterior",
+    "threads": 4,
+    "maximum_seconds": 60.0,
+    "generate_missing_nominal": true,
+    "generate_missing_avian": false,
+    "require_complete_matrix_for_positive_interpretation": true,
+    "do_not_drop_failed_or_missing_seeds": true,
+    "no_hpo": true,
+    "neural_training": false,
+    "architecture_evidence": false,
+    "beliefs_updated": false
+  },
+  "config_hash": "8456858c73122c19db3cf846ab7913820e064388d4b04644d5fd58124df98de2",
+  "local_identity": {
+    "files": {
+      "src/larp/sampling_probe.py": "5689c4c8ec7bbee3cbb20df5feb4b266e86a44d6019b3ec7b52b77cc1a3c823f",
+      "configs/sampling_probe_v1.json": "598fceef0d15cf30fb9e934a8b272169ecd272f349283e27dbe704ab5f96e5ee",
+      "src/larp/artifacts.py": "2b39af74cefa36f7936e5f38f494dc4a38f488d8341a91a2cd8b14f27f2bfa0b",
+      "src/larp/geometry.py": "c895f2f56946e59c5af7988b7bd7435b3d0967045f23dbf74a75cc468d2455d6",
+      "src/larp/avian.py": "08dc1a3a45195963cab81a910cbed589e73d8460a4d46a5fa7736cc563e6edfd",
+      "configs/avian_v1.json": "776ec2dc19c005213e3f558d458038ef5fed2d7ae4331eeb25230536318311bb"
+    },
+    "runtime": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "python": "3.13.4",
+      "thread_environment": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4"
+      }
+    },
+    "hash": "fbba01df2cc16e661631c1362236518a30e24ff964680f77c0fbb879b2e697fe"
+  },
+  "no_hpo": true,
+  "neural_training": false,
+  "architecture_evidence": false,
+  "beliefs_updated": false
+}

@@ -1,0 +1,34 @@
+{
+  "progress": {
+    "status": "TRAINING",
+    "N": 32768,
+    "seed": 3201,
+    "paired_step": 80,
+    "curriculum_task": 0,
+    "loss": {
+      "mhu": 0.14612430334091187,
+      "local": 0.13334234058856964,
+      "random": 0.2894833981990814
+    },
+    "pid": 16548,
+    "allocated_VRAM_GiB": 7.644828796386719,
+    "elapsed_seconds": 111.04373950000445
+  },
+  "worker_pid_matches_protocol": true,
+  "frozen_hashes_match": {
+    "src\\larp\\scale3d_train.py": true,
+    "src\\larp\\scale3d_geometry.py": true,
+    "src\\larp\\scale3d_report.py": true,
+    "src\\larp\\scale3d_train_v2.py": true,
+    "src\\larp\\scale3d_geometry_v2.py": true,
+    "src\\larp\\scale3d_runner_v2.py": true,
+    "src\\larp\\scale3d_report_v2.py": true,
+    "docs\\experiments\\SCALE3D_V2_PROTOCOL.md": true,
+    "docs\\experiments\\SCALE3D_V2_REPAIR_REVIEW.md": true,
+    "artifacts\\scale3d_v2\\repair_qualification.py": true,
+    "artifacts\\scale3d_v2\\qualification\\protocol.json": true,
+    "artifacts\\scale3d_v2\\qualification\\result.json": true,
+    "configs\\scale3d_v2.json": true
+  },
+  "qualification": "4/4 fixed large candidates passed with unchanged threshold and full-band audit"
+}

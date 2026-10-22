@@ -1,0 +1,27 @@
+{
+  "phase": 5,
+  "ROPE": [
+    -0.02,
+    0.02
+  ],
+  "mu_prior_std": 0.05,
+  "sigma_prior_std": 0.05,
+  "quadrature_nodes": 96,
+  "validation_nodes": 192,
+  "sigma_range": [
+    1e-06,
+    0.25
+  ],
+  "mu_prior_sensitivity": [
+    0.02,
+    0.1
+  ],
+  "bootstrap_unit": "geometry",
+  "excluded_evidence_stages": [
+    "smoke",
+    "calibration",
+    "integration",
+    "tests"
+  ],
+  "auto_update_mechanisms": false
+}

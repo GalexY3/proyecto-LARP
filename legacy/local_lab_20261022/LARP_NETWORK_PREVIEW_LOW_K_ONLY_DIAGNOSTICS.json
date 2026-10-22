@@ -1,0 +1,53 @@
+{
+  "N": 400,
+  "L": 20.0,
+  "counts": [
+    163,
+    85,
+    68,
+    50,
+    34
+  ],
+  "attempt": 1,
+  "training": false,
+  "scope": "finite_low_k_and_number_variance_checked; not_asymptotic_proof",
+  "preview_optimizer": "analytic_gradient_Adam_then_SciPy_LBFGSB",
+  "restricted_structure_factor_mean_A_to_E_union": [
+    1.9863072573677193e-31,
+    1.3623917260786016e-30,
+    3.542955831027657e-31,
+    1.9556207223865577e-30,
+    7.618346324180838e-31,
+    1.0895948660370789e-32
+  ],
+  "restricted_structure_factor_max_A_to_E_union": [
+    5.87184138136614e-31,
+    3.421062355926595e-30,
+    1.3504167610056384e-30,
+    4.354758715852867e-30,
+    2.9763547940553807e-30,
+    2.4282124738834272e-32
+  ],
+  "variance_ratio_A_to_E_union": {
+    "4": [
+      0.28918759763508894,
+      0.36061923560620435,
+      0.31908362783036615,
+      0.3030851847900784,
+      0.2810419289337678,
+      0.4280374947820414
+    ],
+    "5": [
+      0.18284800575469187,
+      0.2324346642458266,
+      0.21561570047763215,
+      0.25344901746952553,
+      0.2735915045268117,
+      0.29058399488250003
+    ]
+  },
+  "minimum_distance": 0.30000000027753193,
+  "finite_preview_checks_passed": true,
+  "directed_edges": 2400,
+  "incoming_degree": 6
+}

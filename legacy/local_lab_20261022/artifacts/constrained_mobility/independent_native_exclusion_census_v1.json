@@ -1,0 +1,817 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_three_frozen_references_exact": true,
+    "all_independent_graph_and_bitset_audits_pass": true,
+    "homotypic_minimum_slack_unchanged": true,
+    "kernel_near4_mixture_frozen": true,
+    "root_explicit_posthoc_not_new_empirical_confirmation": true,
+    "root_generates_no_controls_or_task_scores": true,
+    "no_larp_import": true
+  },
+  "entries": [
+    {
+      "reference_id": "g1101",
+      "status": "PASS",
+      "checks": {
+        "diagonal_false": true,
+        "only_cross_type_edges": true,
+        "all_origin_destination_scalar_predicates_match": true,
+        "frozen_five_counts": true,
+        "transition_graph_uint8_sha256_matches_root": true,
+        "allowed_directed_edges_matches_root": true,
+        "valid_swap_pairs_matches_root": true,
+        "valid_oriented_three_cycles_matches_root": true,
+        "native_minimums_match_root": true,
+        "native_counts_match_root": true,
+        "source_npz_hash_matches_root": true,
+        "pair_blocks_matches_root": true,
+        "triple_blocks_matches_root": true,
+        "all_distinct_type_swaps_matches_root": true,
+        "all_distinct_type_oriented_three_cycles_matches_root": true,
+        "valid_move_enumeration_matches_bitset_counts": true,
+        "proposal_probability_matches_root": true
+      },
+      "independent": {
+        "checks": {
+          "diagonal_false": true,
+          "only_cross_type_edges": true,
+          "all_origin_destination_scalar_predicates_match": true,
+          "frozen_five_counts": true
+        },
+        "native_minimums_A_to_E": [
+          1.0975841225824832,
+          1.8493149247543526,
+          2.095962659743368,
+          2.314711606794752,
+          3.122834980061477
+        ],
+        "scales_A_to_E": [
+          1.5665208999759148,
+          2.1693045781865616,
+          2.42535625036333,
+          2.82842712474619,
+          3.4299717028501764
+        ],
+        "D_hash": "91c8e7846adfbee0c1e3cccf56c6841c95a33958c95b648518f9b594cab4ce52",
+        "transition_graph_uint8_sha256": "8e9ebb72291b6dfd69807b081b1595de552bd33b0d7793c1845673d9ed04a778",
+        "forbidden_graph_hashes_A_to_E": [
+          "8010595ba88299e9326b795ff1ab9bc317c49137c96b4154071addd02c8ff6c1",
+          "d9358c4332e7098091c2b03dbe844c42b6dad80da4c7be156a832971d256ef27",
+          "acfcc326d3285257e5517cd69dc4962682475ba435585d542dd20ab5c6312244",
+          "5a6c688e0caa255f4b1c2475a4297ade07019845f732e1d4bff6222c6254b2f2",
+          "ec136ac5ca27a402a94f8791b0bff5f9084aaf4e0cf114e5afc146d9b2be883e"
+        ],
+        "allowed_directed_edges": 1607,
+        "valid_swap_pairs": 24,
+        "valid_oriented_three_cycles": 13,
+        "trace_D_cubed": 39
+      },
+      "independent_probability": {
+        "valid_swaps_enumerated": 24,
+        "valid_oriented_cycles_enumerated": 13,
+        "pair_blocks": [
+          {
+            "types": [
+              0,
+              1
+            ],
+            "minimum_guard_swaps": 4
+          },
+          {
+            "types": [
+              0,
+              2
+            ],
+            "minimum_guard_swaps": 2
+          },
+          {
+            "types": [
+              0,
+              3
+            ],
+            "minimum_guard_swaps": 4
+          },
+          {
+            "types": [
+              0,
+              4
+            ],
+            "minimum_guard_swaps": 1
+          },
+          {
+            "types": [
+              1,
+              2
+            ],
+            "minimum_guard_swaps": 1
+          },
+          {
+            "types": [
+              1,
+              3
+            ],
+            "minimum_guard_swaps": 3
+          },
+          {
+            "types": [
+              1,
+              4
+            ],
+            "minimum_guard_swaps": 2
+          },
+          {
+            "types": [
+              2,
+              3
+            ],
+            "minimum_guard_swaps": 1
+          },
+          {
+            "types": [
+              2,
+              4
+            ],
+            "minimum_guard_swaps": 3
+          },
+          {
+            "types": [
+              3,
+              4
+            ],
+            "minimum_guard_swaps": 3
+          }
+        ],
+        "triple_blocks": [
+          {
+            "types": [
+              0,
+              1,
+              2
+            ],
+            "minimum_guard_oriented_cycles": 2
+          },
+          {
+            "types": [
+              0,
+              1,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 3
+          },
+          {
+            "types": [
+              0,
+              1,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 1
+          },
+          {
+            "types": [
+              0,
+              2,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              0,
+              2,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              0,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 3
+          },
+          {
+            "types": [
+              1,
+              2,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 2
+          },
+          {
+            "types": [
+              1,
+              2,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              1,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 1
+          },
+          {
+            "types": [
+              2,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 1
+          }
+        ],
+        "native_minimum_guard_proposal_probability": {
+          "swap2": {
+            "near": 0.009659734752796825,
+            "global": 0.0006067718173519859,
+            "mixture": 0.007849142165707857
+          },
+          "cycle3": {
+            "near": 0.0005786982737880428,
+            "global": 2.0946993015899973e-06,
+            "mixture": 0.00046337755889075226
+          }
+        },
+        "exact_probability_fractions": {
+          "swap2": {
+            "near": [
+              214137,
+              22168000
+            ],
+            "global": [
+              35729,
+              58883750
+            ],
+            "mixture": [
+              18487477,
+              2355350000
+            ]
+          },
+          "cycle3": {
+            "near": [
+              153943,
+              266016000
+            ],
+            "global": [
+              3947,
+              1884280000
+            ],
+            "mixture": [
+              3274249,
+              7066050000
+            ]
+          }
+        },
+        "all_distinct_type_swaps": 58963,
+        "all_distinct_type_oriented_three_cycles": 8119472
+      },
+      "original_npz_sha256": "427e9e7ddfb7cbfeea6d53a5ffd25465f90c788f5ce2cfaa41a421a95bb29680"
+    },
+    {
+      "reference_id": "g1102",
+      "status": "PASS",
+      "checks": {
+        "diagonal_false": true,
+        "only_cross_type_edges": true,
+        "all_origin_destination_scalar_predicates_match": true,
+        "frozen_five_counts": true,
+        "transition_graph_uint8_sha256_matches_root": true,
+        "allowed_directed_edges_matches_root": true,
+        "valid_swap_pairs_matches_root": true,
+        "valid_oriented_three_cycles_matches_root": true,
+        "native_minimums_match_root": true,
+        "native_counts_match_root": true,
+        "source_npz_hash_matches_root": true,
+        "pair_blocks_matches_root": true,
+        "triple_blocks_matches_root": true,
+        "all_distinct_type_swaps_matches_root": true,
+        "all_distinct_type_oriented_three_cycles_matches_root": true,
+        "valid_move_enumeration_matches_bitset_counts": true,
+        "proposal_probability_matches_root": true
+      },
+      "independent": {
+        "checks": {
+          "diagonal_false": true,
+          "only_cross_type_edges": true,
+          "all_origin_destination_scalar_predicates_match": true,
+          "frozen_five_counts": true
+        },
+        "native_minimums_A_to_E": [
+          1.1812558745463677,
+          1.6470003611087636,
+          1.94508852852549,
+          2.475530402621567,
+          2.9200985801966133
+        ],
+        "scales_A_to_E": [
+          1.5665208999759148,
+          2.1693045781865616,
+          2.42535625036333,
+          2.82842712474619,
+          3.4299717028501764
+        ],
+        "D_hash": "283b1446cc49eae66386976386ec832750da6509c060cdf8d7c7d00efa5ef3fa",
+        "transition_graph_uint8_sha256": "bcd8b56d1f8bc14aec6b2e82514f5245f5419696e88deebe70247fa963a2508b",
+        "forbidden_graph_hashes_A_to_E": [
+          "6705a0cd2fcc149fb0dd0eecefd4a13154693a7cf5869262386bcdce44d733fd",
+          "1f7b1e11860d1891a889da17c094c30410347340b4c92ebcae187cf07022a43d",
+          "4351231d81f561ee76a6e998eb47040c8db058e43d40b124fcbcf68a001dd3c8",
+          "98e65522d354e9ced5294b3d7c7ae74c8732787bda2d2993c6ab97332951115c",
+          "95e76a780570a391fe818c472b69a185e51c859fe705e565be0332a0162dfd9c"
+        ],
+        "allowed_directed_edges": 601,
+        "valid_swap_pairs": 53,
+        "valid_oriented_three_cycles": 10,
+        "trace_D_cubed": 30
+      },
+      "independent_probability": {
+        "valid_swaps_enumerated": 53,
+        "valid_oriented_cycles_enumerated": 10,
+        "pair_blocks": [
+          {
+            "types": [
+              0,
+              1
+            ],
+            "minimum_guard_swaps": 7
+          },
+          {
+            "types": [
+              0,
+              2
+            ],
+            "minimum_guard_swaps": 5
+          },
+          {
+            "types": [
+              0,
+              3
+            ],
+            "minimum_guard_swaps": 2
+          },
+          {
+            "types": [
+              0,
+              4
+            ],
+            "minimum_guard_swaps": 4
+          },
+          {
+            "types": [
+              1,
+              2
+            ],
+            "minimum_guard_swaps": 11
+          },
+          {
+            "types": [
+              1,
+              3
+            ],
+            "minimum_guard_swaps": 5
+          },
+          {
+            "types": [
+              1,
+              4
+            ],
+            "minimum_guard_swaps": 8
+          },
+          {
+            "types": [
+              2,
+              3
+            ],
+            "minimum_guard_swaps": 3
+          },
+          {
+            "types": [
+              2,
+              4
+            ],
+            "minimum_guard_swaps": 6
+          },
+          {
+            "types": [
+              3,
+              4
+            ],
+            "minimum_guard_swaps": 2
+          }
+        ],
+        "triple_blocks": [
+          {
+            "types": [
+              0,
+              1,
+              2
+            ],
+            "minimum_guard_oriented_cycles": 2
+          },
+          {
+            "types": [
+              0,
+              1,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 2
+          },
+          {
+            "types": [
+              0,
+              1,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              0,
+              2,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 1
+          },
+          {
+            "types": [
+              0,
+              2,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 2
+          },
+          {
+            "types": [
+              0,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              1,
+              2,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 1
+          },
+          {
+            "types": [
+              1,
+              2,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 1
+          },
+          {
+            "types": [
+              1,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              2,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 1
+          }
+        ],
+        "native_minimum_guard_proposal_probability": {
+          "swap2": {
+            "near": 0.02088772103933598,
+            "global": 0.001242522342751608,
+            "mixture": 0.016958681300019107
+          },
+          "cycle3": {
+            "near": 0.00046752826897630216,
+            "global": 1.4660304013765907e-06,
+            "mixture": 0.00037431582126131705
+          }
+        },
+        "exact_probability_fractions": {
+          "swap2": {
+            "near": [
+              463039,
+              22168000
+            ],
+            "global": [
+              117063,
+              94214000
+            ],
+            "mixture": [
+              3994363,
+              235535000
+            ]
+          },
+          "cycle3": {
+            "near": [
+              12437,
+              26601600
+            ],
+            "global": [
+              46961,
+              32032760000
+            ],
+            "mixture": [
+              179855533,
+              480491400000
+            ]
+          }
+        },
+        "all_distinct_type_swaps": 58963,
+        "all_distinct_type_oriented_three_cycles": 8119472
+      },
+      "original_npz_sha256": "009acff5a4b0fd5baecf2817b9bd4cdf9b9bcda900b9d603c79f2413c6b7485f"
+    },
+    {
+      "reference_id": "g1103",
+      "status": "PASS",
+      "checks": {
+        "diagonal_false": true,
+        "only_cross_type_edges": true,
+        "all_origin_destination_scalar_predicates_match": true,
+        "frozen_five_counts": true,
+        "transition_graph_uint8_sha256_matches_root": true,
+        "allowed_directed_edges_matches_root": true,
+        "valid_swap_pairs_matches_root": true,
+        "valid_oriented_three_cycles_matches_root": true,
+        "native_minimums_match_root": true,
+        "native_counts_match_root": true,
+        "source_npz_hash_matches_root": true,
+        "pair_blocks_matches_root": true,
+        "triple_blocks_matches_root": true,
+        "all_distinct_type_swaps_matches_root": true,
+        "all_distinct_type_oriented_three_cycles_matches_root": true,
+        "valid_move_enumeration_matches_bitset_counts": true,
+        "proposal_probability_matches_root": true
+      },
+      "independent": {
+        "checks": {
+          "diagonal_false": true,
+          "only_cross_type_edges": true,
+          "all_origin_destination_scalar_predicates_match": true,
+          "frozen_five_counts": true
+        },
+        "native_minimums_A_to_E": [
+          1.1412996584127375,
+          1.7790388356110602,
+          2.096237469922195,
+          2.3335714000409884,
+          3.0173754069195713
+        ],
+        "scales_A_to_E": [
+          1.5665208999759148,
+          2.1693045781865616,
+          2.42535625036333,
+          2.82842712474619,
+          3.4299717028501764
+        ],
+        "D_hash": "d73d15c35336403d44b712a67ce1bfa86fdbfe511b4595daee0abff501ccffa4",
+        "transition_graph_uint8_sha256": "24d5a0005d0498dad07f6c300c14cc4451a90fb7416d5a897b2e174879d9cab1",
+        "forbidden_graph_hashes_A_to_E": [
+          "f3805ecd0e9c5e51124399a7fc5fbfdb5320ca6896514934d17818dfaea5f54a",
+          "b31c81598c45fd3e4dc6cf4179cdc61dd5a870c8871b7d376c36d09731ce709c",
+          "0e41f8835e8240deb1ad3293f204b118f93ef28a696f55da89e85aae6c6c179c",
+          "849658d3199a6d42262ab78471ee6291bee3008a296a75fb04bfb00e89b19b07",
+          "012a5779f45f02321f2474bc71d0cb5b9145b9b174af63f5b493f6876e1b845d"
+        ],
+        "allowed_directed_edges": 535,
+        "valid_swap_pairs": 34,
+        "valid_oriented_three_cycles": 2,
+        "trace_D_cubed": 6
+      },
+      "independent_probability": {
+        "valid_swaps_enumerated": 34,
+        "valid_oriented_cycles_enumerated": 2,
+        "pair_blocks": [
+          {
+            "types": [
+              0,
+              1
+            ],
+            "minimum_guard_swaps": 2
+          },
+          {
+            "types": [
+              0,
+              2
+            ],
+            "minimum_guard_swaps": 6
+          },
+          {
+            "types": [
+              0,
+              3
+            ],
+            "minimum_guard_swaps": 3
+          },
+          {
+            "types": [
+              0,
+              4
+            ],
+            "minimum_guard_swaps": 2
+          },
+          {
+            "types": [
+              1,
+              2
+            ],
+            "minimum_guard_swaps": 3
+          },
+          {
+            "types": [
+              1,
+              3
+            ],
+            "minimum_guard_swaps": 6
+          },
+          {
+            "types": [
+              1,
+              4
+            ],
+            "minimum_guard_swaps": 3
+          },
+          {
+            "types": [
+              2,
+              3
+            ],
+            "minimum_guard_swaps": 6
+          },
+          {
+            "types": [
+              2,
+              4
+            ],
+            "minimum_guard_swaps": 2
+          },
+          {
+            "types": [
+              3,
+              4
+            ],
+            "minimum_guard_swaps": 1
+          }
+        ],
+        "triple_blocks": [
+          {
+            "types": [
+              0,
+              1,
+              2
+            ],
+            "minimum_guard_oriented_cycles": 1
+          },
+          {
+            "types": [
+              0,
+              1,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              0,
+              1,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              0,
+              2,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              0,
+              2,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 1
+          },
+          {
+            "types": [
+              0,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              1,
+              2,
+              3
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              1,
+              2,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              1,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          },
+          {
+            "types": [
+              2,
+              3,
+              4
+            ],
+            "minimum_guard_oriented_cycles": 0
+          }
+        ],
+        "native_minimum_guard_proposal_probability": {
+          "swap2": {
+            "near": 0.013121932515337423,
+            "global": 0.0007601502961343325,
+            "mixture": 0.010649576071496806
+          },
+          "cycle3": {
+            "near": 8.631059785877542e-05,
+            "global": 1.8574734115948796e-07,
+            "mixture": 6.908562775525223e-05
+          }
+        },
+        "exact_probability_fractions": {
+          "swap2": {
+            "near": [
+              17111,
+              1304000
+            ],
+            "global": [
+              89521,
+              117767500
+            ],
+            "mixture": [
+              25083479,
+              2355350000
+            ]
+          },
+          "cycle3": {
+            "near": [
+              287,
+              3325200
+            ],
+            "global": [
+              7,
+              37685600
+            ],
+            "mixture": [
+              39053,
+              565284000
+            ]
+          }
+        },
+        "all_distinct_type_swaps": 58963,
+        "all_distinct_type_oriented_three_cycles": 8119472
+      },
+      "original_npz_sha256": "de129159097d2e1307c1167e4b2c9d0111fcdac57f6217dd8c57331ab1a203b5"
+    }
+  ],
+  "hashes": {
+    "auditor": "f46f63dba286c477ce08950c5cea7f1c7004c4580265a467b790593cd029bf14",
+    "independent_formulas": "93ec4d0c7b6e6a795e1ebc1d91f026409b94f9d95a469de245daedec5c7568cd",
+    "config": "a4873dc457e2943bc019fd036dd52b0270925d08c1ab1d69f663c9e9f9083087",
+    "root_results": "67aa1ecb72efadb07f259e93fd1de50b4aeef67855d1db68be2c6532daad6a18"
+  },
+  "claim_scope": "Exact finite native census for the homotypic-minimum guard only, for distinct native types.",
+  "interpretation_limits": [
+    "Passing this guard does not certify the other 125 local inequalities or an admissible spectral control.",
+    "The native graph is not a graph for configurations reached after swaps.",
+    "A post-hoc mathematical census is not independent empirical confirmation of a hypothesis formulated from the mobility results.",
+    "Proposal mass is conditional on native labels and only this guard family; it is not a hypothesis likelihood or neural evidence.",
+    "The root and auditor share the historical distance helper; independent additions are scalar exclusions, bitset counts and mass summed over valid moves."
+  ],
+  "count_definition": "D counts origin-to-destination moves. A directed triangle represents one orientation; its three rotations are identified.",
+  "labels_or_proposals_constructed": false,
+  "created_UTC": "2026-10-09T14:56:52.775332+00:00",
+  "scientific_chains_run": 0,
+  "scientific_controls_generated": 0,
+  "scientific_scores_computed": 0
+}

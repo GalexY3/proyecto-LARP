@@ -1,0 +1,380 @@
+{
+  "status": "PASS",
+  "entries": [
+    {
+      "id": "g1101",
+      "seed": 0,
+      "lambda": 0.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.5543122344752192e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1101",
+      "seed": 0,
+      "lambda": 0.5,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 8.881784197001252e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1101",
+      "seed": 0,
+      "lambda": 1.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 8.881784197001252e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1101",
+      "seed": 1,
+      "lambda": 0.5,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 9.992007221626409e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1101",
+      "seed": 1,
+      "lambda": 1.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 7.771561172376096e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1101",
+      "seed": 1,
+      "lambda": 0.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 8.881784197001252e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1102",
+      "seed": 0,
+      "lambda": 0.5,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.7763568394002505e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1102",
+      "seed": 0,
+      "lambda": 1.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.7763568394002505e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1102",
+      "seed": 0,
+      "lambda": 0.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.9984014443252818e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1102",
+      "seed": 1,
+      "lambda": 1.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.3322676295501878e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1102",
+      "seed": 1,
+      "lambda": 0.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.5543122344752192e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1102",
+      "seed": 1,
+      "lambda": 0.5,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.3322676295501878e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1103",
+      "seed": 0,
+      "lambda": 1.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 8.881784197001252e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1103",
+      "seed": 0,
+      "lambda": 0.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 8.881784197001252e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1103",
+      "seed": 0,
+      "lambda": 0.5,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 8.881784197001252e-16,
+      "discrepancies": []
+    },
+    {
+      "id": "g1103",
+      "seed": 1,
+      "lambda": 0.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.7763568394002505e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1103",
+      "seed": 1,
+      "lambda": 0.5,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.7763568394002505e-15,
+      "discrepancies": []
+    },
+    {
+      "id": "g1103",
+      "seed": 1,
+      "lambda": 1.0,
+      "checks": {
+        "every_proposal_replayed": true,
+        "all_130_final_metrics": true,
+        "best_labels_and_index": true,
+        "accepted_count": true,
+        "best_objective": true,
+        "final_C_W_Q": true,
+        "optimized_modes": true,
+        "external_modes": true,
+        "cross_spectrum": true,
+        "counts": true
+      },
+      "replayed": 130,
+      "maximum_scalar_difference": 1.3322676295501878e-15,
+      "discrepancies": []
+    }
+  ],
+  "baseline_objective_checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "all_proposals_replayed": 2340,
+  "final_inequalities": 2340,
+  "wall_seconds": 43.0472698,
+  "scope": "Same agent, alternative code; direct Fourier recomputation on all proposals; no independent empirical replication"
+}

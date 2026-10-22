@@ -1,0 +1,42 @@
+{
+  "event_id": "AB_SCALE3D_V2_CLOSURE_20261010",
+  "date_local": "2026-10-10",
+  "timezone": "Europe/Madrid",
+  "recorded_utc": "2026-10-10T17:41:44.798175+00:00",
+  "source": "runs/scale3d_v2/results.json",
+  "source_sha256": "f701ed8f4e0cbf96788bea80dd31024c4e380df29384e85ab22256d79f7de50f",
+  "scope": "Exploratory descriptive comparison, arithmetic audited, not mechanistic confirmation",
+  "belief_revision": {
+    "competence_at_high_density": "supported within observed regime; no new competence threshold declared",
+    "consistent_MHU_extra_benefit_over_LOCAL": "not supported as general rule within this protocol",
+    "relaxed_geometry_package_vs_RANDOM": "preferred working explanation; mediation not identified",
+    "finite_gate_generator_repair": "technically supported in eight retained MHU realizations"
+  },
+  "hypothesis_generation": [
+    {
+      "id": "H-SCALE-INFORMATION-THRESHOLD",
+      "status": "AUDITED_MOTIVATING_OBSERVATION_NOT_CONFIRMED",
+      "prediction": "At fixed spectral dimension, the oracle acquisition risk tracks per-channel effective information; changing bandwidth shifts the transition",
+      "not_yet_measured": [
+        "effective rank",
+        "conditioning",
+        "global and local product Bayes risk"
+      ]
+    },
+    {
+      "id": "H-SCALE-CURRICULUM-INTERFERENCE",
+      "status": "AUDITED_MOTIVATING_OBSERVATION_NOT_CONFIRMED",
+      "prediction": "A single prospective curriculum intervention changes T0 retention relative to a matched control while preserving access and geometry"
+    }
+  ],
+  "objective_revision": "No mission change or automatic promotion of MHU",
+  "decision": "Close v2; commission external derivations and design next discriminating protocol; no new training launched",
+  "historical_numeric_priors_updated": false,
+  "protected_files_sha256": {
+    "artifacts/AB_initial.json": "9a0b5c8ff8043bf1395459e1dc2a4adcdaf5fe9b31d4e57d00e0182533386e1f",
+    "artifacts/report_current/AB_history.json": "9ae26d5856e584d4f42134b3b4b5f05aeb0de2800e7c9f1daa2c0f3bd2cec1dc",
+    "docs/hypotheses/AB_PORTFOLIO_2026_10_09.json": "2493289d2df5762de75cb818aff5c3a166b60317fc35d18489bcf08db4a649ad"
+  },
+  "external_CIC_source": "docs/external_research/chatgpt_cic_2026_10_10/REVIEW.md",
+  "no_likelihoods_or_Bayes_factors_assigned": true
+}

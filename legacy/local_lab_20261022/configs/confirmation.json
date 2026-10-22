@@ -1,0 +1,59 @@
+{
+  "phase": 5,
+  "stage": "confirmation",
+  "tasks": [
+    "copy",
+    "fill"
+  ],
+  "N": 400,
+  "variant": "T",
+  "conditions": [
+    "native",
+    "shuffle",
+    "strongest_baseline"
+  ],
+  "geometry_seeds": [
+    3101,
+    3102,
+    3103,
+    3104,
+    3105,
+    3106,
+    3107,
+    3108
+  ],
+  "extension_seeds": [
+    3109,
+    3110,
+    3111,
+    3112,
+    3113,
+    3114,
+    3115,
+    3116
+  ],
+  "training_seeds": [
+    4101,
+    4102
+  ],
+  "updates": 3000,
+  "batch_size": 4,
+  "steps": 16,
+  "train_size": 32768,
+  "validation_size": 2048,
+  "test_size": 4096,
+  "lr_candidates": [
+    0.001,
+    0.003,
+    0.01
+  ],
+  "hpo_updates": 300,
+  "hpo_training_seeds": [
+    2101,
+    2102
+  ],
+  "hpo_geometry_seed": 9001,
+  "common_lr_per_task": true,
+  "requires_frozen_preregistration": true,
+  "auto_run": false
+}
