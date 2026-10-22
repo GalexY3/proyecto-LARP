@@ -1,0 +1,33 @@
+{
+  "id": "C05",
+  "parent_id": "C04",
+  "short_name": "exact_linear_encoder_information",
+  "date": "2026-10-22",
+  "A": "¿Las 80featureshomogéneas constituyen nueva información o una transformación lineal delos64píxeles, yquécondicionamientoimponen?",
+  "B": [
+    "H_linear: F=XMexactamente",
+    "H_newinfo: frontend añade observaciones independientes",
+    "H_other: nonlinear clipping o bordes"
+  ],
+  "C": "Construir M aplicando encoder a64bases; verificar residual enDigits, SVD/rango, traza y normadefilas para20patrones.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "Residual numérico≈0; rango≤64; contracción ycondicionamiento varían sinprivilegioMHU.",
+  "falsification_rule": "Residual significativorefutatransformaciónlineal; rango>64seríabugdelinstrumento.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "src/AB06_REALDATA_20261022/cycle3_digits.py",
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}

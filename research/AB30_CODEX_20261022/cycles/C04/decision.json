@@ -1,0 +1,15 @@
+{
+  "id": "C04",
+  "E": "Con escala global, pixels ruido92.67%/oclusión86.56%; MHU90.81/81.22. Rotación pixels60.67%, MHU72.81%, CVT74.14%, LOCAL72.11. 13/42bestcheckpointalcap.",
+  "F": "Sensores no tienen ventaja general; rotación puede ser filtrado espacial común y n4noestablece diferenciaespecífica.",
+  "G": "Mismo testhistórico; semillasmodelocruzadasnoconfirmaciónexterna.",
+  "H": "MHUespecialnoapoyado; filtrado/invariancia sigueplausible.",
+  "I": "Pipelinecomparison noigualacosteencoding; controlnormalizaciónsíconsistente.",
+  "J": "CONTINUE con matrizexacta para distinguir información de filtrado",
+  "options_rejected": [
+    "Cambiar tareas aFourier",
+    "Afirmar superioridadMHUpor0.7ppderotaciónfrenteLOCAL"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C05"
+}
