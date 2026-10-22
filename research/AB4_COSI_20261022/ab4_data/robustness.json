@@ -1,0 +1,394 @@
+[
+  {
+    "seed": 801,
+    "method": "IID",
+    "test_risk": 0.0035968271956053426,
+    "shift_risk": 0.004559732853551074,
+    "drop_risk": 0.0036518060446521367
+  },
+  {
+    "seed": 801,
+    "method": "SOBOL",
+    "test_risk": 0.0030857222909982363,
+    "shift_risk": 0.0040793820641550635,
+    "drop_risk": 0.0031501778832989675
+  },
+  {
+    "seed": 801,
+    "method": "FPS",
+    "test_risk": 0.0013043017004968239,
+    "shift_risk": 0.0018764547189545856,
+    "drop_risk": 0.0013853895518552903
+  },
+  {
+    "seed": 801,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.0022723560712936937,
+    "shift_risk": 0.0030756062403742316,
+    "drop_risk": 0.0023591541986521256
+  },
+  {
+    "seed": 801,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.000346269393995635,
+    "shift_risk": 0.0005907343280970895,
+    "drop_risk": 0.0004140182062766085
+  },
+  {
+    "seed": 801,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.0001752801862741267,
+    "shift_risk": 0.001006644866791071,
+    "drop_risk": 0.0002536681381931837
+  },
+  {
+    "seed": 801,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.0001702365620102368,
+    "shift_risk": 0.0006050902484017728,
+    "drop_risk": 0.00024159668813508462
+  },
+  {
+    "seed": 802,
+    "method": "IID",
+    "test_risk": 0.003402726997475301,
+    "shift_risk": 0.00540545474476,
+    "drop_risk": 0.0035017142614710275
+  },
+  {
+    "seed": 802,
+    "method": "SOBOL",
+    "test_risk": 0.002451221916131537,
+    "shift_risk": 0.0032890724640934296,
+    "drop_risk": 0.0025122413142007536
+  },
+  {
+    "seed": 802,
+    "method": "FPS",
+    "test_risk": 0.001754835971446964,
+    "shift_risk": 0.0025716248236768305,
+    "drop_risk": 0.0018431815864715095
+  },
+  {
+    "seed": 802,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.002037098375132991,
+    "shift_risk": 0.0033252845618349522,
+    "drop_risk": 0.0021117561609664817
+  },
+  {
+    "seed": 802,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.00032686348450327874,
+    "shift_risk": 0.0007029455157874462,
+    "drop_risk": 0.00039318476208869297
+  },
+  {
+    "seed": 802,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.00017718231955700896,
+    "shift_risk": 0.0009728777477120772,
+    "drop_risk": 0.00024572500004223745
+  },
+  {
+    "seed": 802,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.0001533048143101329,
+    "shift_risk": 0.0007340708253752822,
+    "drop_risk": 0.00021958327655002718
+  },
+  {
+    "seed": 803,
+    "method": "IID",
+    "test_risk": 0.00293975053946038,
+    "shift_risk": 0.0047836501482885554,
+    "drop_risk": 0.0030473016252017707
+  },
+  {
+    "seed": 803,
+    "method": "SOBOL",
+    "test_risk": 0.002369240927811702,
+    "shift_risk": 0.003535631976881003,
+    "drop_risk": 0.0024280609649715255
+  },
+  {
+    "seed": 803,
+    "method": "FPS",
+    "test_risk": 0.0020168265636218035,
+    "shift_risk": 0.0031042706666060075,
+    "drop_risk": 0.0020683328349574413
+  },
+  {
+    "seed": 803,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.0017716343770886186,
+    "shift_risk": 0.0027145223430692675,
+    "drop_risk": 0.0018614866918324753
+  },
+  {
+    "seed": 803,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.00033184140338629023,
+    "shift_risk": 0.0005708916761354375,
+    "drop_risk": 0.000406280820251811
+  },
+  {
+    "seed": 803,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.00019928575199533463,
+    "shift_risk": 0.0009889724135766168,
+    "drop_risk": 0.00028271598049389463
+  },
+  {
+    "seed": 803,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.00018605210786227638,
+    "shift_risk": 0.0006351142419574106,
+    "drop_risk": 0.00026006655897666794
+  },
+  {
+    "seed": 804,
+    "method": "IID",
+    "test_risk": 0.0034329421684989743,
+    "shift_risk": 0.00438906552164719,
+    "drop_risk": 0.0035177665332487094
+  },
+  {
+    "seed": 804,
+    "method": "SOBOL",
+    "test_risk": 0.002599944136318437,
+    "shift_risk": 0.004001812451593489,
+    "drop_risk": 0.002709453992446531
+  },
+  {
+    "seed": 804,
+    "method": "FPS",
+    "test_risk": 0.0016996454708872323,
+    "shift_risk": 0.0025877606636040885,
+    "drop_risk": 0.001779316383103442
+  },
+  {
+    "seed": 804,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.001907531131392749,
+    "shift_risk": 0.0026522972765221056,
+    "drop_risk": 0.001982859246715587
+  },
+  {
+    "seed": 804,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.0002931015969174959,
+    "shift_risk": 0.0004907318144744289,
+    "drop_risk": 0.0003685193762450807
+  },
+  {
+    "seed": 804,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.00016202840917136228,
+    "shift_risk": 0.0007785829521268305,
+    "drop_risk": 0.0002403951229058875
+  },
+  {
+    "seed": 804,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.00013993236964967152,
+    "shift_risk": 0.0005154095671047627,
+    "drop_risk": 0.00021853362535702775
+  },
+  {
+    "seed": 805,
+    "method": "IID",
+    "test_risk": 0.0032321739471696522,
+    "shift_risk": 0.004874399351196201,
+    "drop_risk": 0.0032975762111981002
+  },
+  {
+    "seed": 805,
+    "method": "SOBOL",
+    "test_risk": 0.0030502851189774523,
+    "shift_risk": 0.004112032420603597,
+    "drop_risk": 0.003111177322772889
+  },
+  {
+    "seed": 805,
+    "method": "FPS",
+    "test_risk": 0.0014604488150300962,
+    "shift_risk": 0.0023420298224359685,
+    "drop_risk": 0.0015178439759081452
+  },
+  {
+    "seed": 805,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.0021128975829368796,
+    "shift_risk": 0.003001133138984032,
+    "drop_risk": 0.002181588239790791
+  },
+  {
+    "seed": 805,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.00031055644901239614,
+    "shift_risk": 0.0005819445629179305,
+    "drop_risk": 0.0003805083512771964
+  },
+  {
+    "seed": 805,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.00018128059047369525,
+    "shift_risk": 0.0010212073753661862,
+    "drop_risk": 0.00025559651618295627
+  },
+  {
+    "seed": 805,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.0001538614665887,
+    "shift_risk": 0.0005850112826138202,
+    "drop_risk": 0.00022590013339434504
+  },
+  {
+    "seed": 806,
+    "method": "IID",
+    "test_risk": 0.0031158513347271806,
+    "shift_risk": 0.004336092416000475,
+    "drop_risk": 0.0032334488436794005
+  },
+  {
+    "seed": 806,
+    "method": "SOBOL",
+    "test_risk": 0.0023532586115148054,
+    "shift_risk": 0.003830558604589851,
+    "drop_risk": 0.0024532797267933226
+  },
+  {
+    "seed": 806,
+    "method": "FPS",
+    "test_risk": 0.0021052628713413694,
+    "shift_risk": 0.0027607358266824923,
+    "drop_risk": 0.002176784846521741
+  },
+  {
+    "seed": 806,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.0018300370401221333,
+    "shift_risk": 0.0031289768846082845,
+    "drop_risk": 0.001920307337327212
+  },
+  {
+    "seed": 806,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.0002864597945591454,
+    "shift_risk": 0.0006450746462997284,
+    "drop_risk": 0.0003704453184762788
+  },
+  {
+    "seed": 806,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.00017833327297166657,
+    "shift_risk": 0.001217147192888778,
+    "drop_risk": 0.00026333976452014264
+  },
+  {
+    "seed": 806,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.0001577403808484065,
+    "shift_risk": 0.0007779228660931705,
+    "drop_risk": 0.00024867795234325053
+  },
+  {
+    "seed": 807,
+    "method": "IID",
+    "test_risk": 0.002600457572799874,
+    "shift_risk": 0.0046687225927446955,
+    "drop_risk": 0.0026892711994978852
+  },
+  {
+    "seed": 807,
+    "method": "SOBOL",
+    "test_risk": 0.0028650677955180445,
+    "shift_risk": 0.003911754718189116,
+    "drop_risk": 0.0029725437517375856
+  },
+  {
+    "seed": 807,
+    "method": "FPS",
+    "test_risk": 0.0013854595377674884,
+    "shift_risk": 0.002119407211370441,
+    "drop_risk": 0.0014633387757301377
+  },
+  {
+    "seed": 807,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.001663119270954988,
+    "shift_risk": 0.0029900343781376244,
+    "drop_risk": 0.001741118378921124
+  },
+  {
+    "seed": 807,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.00029546130508856054,
+    "shift_risk": 0.0006093457127380705,
+    "drop_risk": 0.00039700598694907127
+  },
+  {
+    "seed": 807,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.0001603923268937968,
+    "shift_risk": 0.001137485555580288,
+    "drop_risk": 0.00025144637796545657
+  },
+  {
+    "seed": 807,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.0001421940132153488,
+    "shift_risk": 0.0007141510625736874,
+    "drop_risk": 0.00024249248759282836
+  },
+  {
+    "seed": 808,
+    "method": "IID",
+    "test_risk": 0.0025457707469628437,
+    "shift_risk": 0.004092935863626127,
+    "drop_risk": 0.002656102782219131
+  },
+  {
+    "seed": 808,
+    "method": "SOBOL",
+    "test_risk": 0.002919440358591749,
+    "shift_risk": 0.004380661010623296,
+    "drop_risk": 0.0029820529813317995
+  },
+  {
+    "seed": 808,
+    "method": "FPS",
+    "test_risk": 0.0019958998662259132,
+    "shift_risk": 0.002415399849453125,
+    "drop_risk": 0.0020687960848743076
+  },
+  {
+    "seed": 808,
+    "method": "LOCAL-proxy",
+    "test_risk": 0.001739351711984226,
+    "shift_risk": 0.0029550743447802137,
+    "drop_risk": 0.0018267504204477784
+  },
+  {
+    "seed": 808,
+    "method": "MHU-wide-proxy",
+    "test_risk": 0.00031825460842430965,
+    "shift_risk": 0.0008368035776026481,
+    "drop_risk": 0.0004052455997538049
+  },
+  {
+    "seed": 808,
+    "method": "COSI-pilot-proxy",
+    "test_risk": 0.0002001868084718332,
+    "shift_risk": 0.0014098212646808561,
+    "drop_risk": 0.00028042130802779396
+  },
+  {
+    "seed": 808,
+    "method": "COSI-shrink50-proxy",
+    "test_risk": 0.0001791413592408926,
+    "shift_risk": 0.0009471182453173,
+    "drop_risk": 0.0002677872674258493
+  }
+]
