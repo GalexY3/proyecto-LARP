@@ -1,0 +1,15 @@
+{
+  "id": "C22",
+  "E": "Con mitad de sensores, lector congelado da MSE≈.0553, media adaptada≈.0115 y GLSadaptado≈2.38e-5 enMHU/LOCAL; CVT≈2.42e-5. El mayor daño era sesgo de imputar0 y desconocer fallo.",
+  "F": "GLS adaptado recibe máscara/posiciones; su ventaja no se atribuye a geometría. Se separó sesgo² de varianza; offsetsN0,1 explícitos fijan sentido del MSE de sistemas sesgados.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "Robustez depende de información y adaptación. Nueva hipótesis: desconocer posiciones reales puede degradar aunque no se pierda ningún sensor ni se introduzca sesgo de offsets.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: incertidumbre geométrica independiente con lector ciego, consciente de distribución y recalibrado.",
+  "options_rejected": [
+    "Atribuir recuperación al espectro remanente",
+    "Comparar sistema consciente de fallos solo enMHU con rivales ciegos"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C23"
+}

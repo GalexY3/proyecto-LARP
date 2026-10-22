@@ -1,0 +1,35 @@
+{
+  "id": "C23",
+  "parent_id": "C22",
+  "short_name": "position_uncertainty_information",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿El valor de recalibrar posiciones supera diferencias entre geometrías cuando los sensores se desplazan sin perderse?",
+  "B": [
+    "H_calibration: conocer incertidumbre o posiciones reales domina etiquetaMHU",
+    "H_robust: nominal es suficiente",
+    "H_other: cambio de varianza o sesgo del offset"
+  ],
+  "C": "3D bajo, rho0/1, sigma lectura.03; jitter gaussianoindependiente posiciónstd.02 en toro. Lector nominal, GLScon covarianza integrada exacta y GLSrecalibrado.24jitter porseed emparejados entre métodos. Expectativa kernel por modo multiplicada exp(-4pi²std²|q|²) fuera de diagonal; diagonal señal1.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿El valor de recalibrar posiciones supera diferencias entre geometrías cuando los sensores se desplazan sin perderse?",
+  "null": "H_other: cambio de varianza o sesgo del offset",
+  "predicted_discriminant": "Incertidumbre añade suelo de varianza; lector consciente mejora nominal y posiciones reales permiten un valor de información mayor.",
+  "falsification_rule": "Lectores conscientes no peores que nominal en su riesgo esperado correspondiente; recalibrado no peor que los otros en cada matriz real. MCcontrasta promedio, no confirma nueva población.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    60223,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}
