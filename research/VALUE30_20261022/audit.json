@@ -1,0 +1,84 @@
+{
+  "status": "ADVERSARIAL_POSTHOC_NOT_31ST_CYCLE",
+  "total_original_records": 145,
+  "mean_development_ridge_unpaired": {
+    "SOBOL": 0.013181638622728746,
+    "DIRECT": 0.011598325557861661,
+    "GP": 0.01777980659357759,
+    "POWER_DIAG": 0.013326778639389188,
+    "COSI_SHRINK": 0.012501748620975792
+  },
+  "new_full_candidate_gp_controls": [
+    {
+      "pilot_n": 28,
+      "method": "GP_FULL",
+      "layout_seconds": 0.057302236557006836,
+      "development_fixed": 0.015772220321113594,
+      "development_ridge": 0.016802609156300313,
+      "development_GP_readout": 0.015390366898173477,
+      "retina_posthoc_fixed": 0.00512029386235752,
+      "retina_posthoc_GP_readout": 0.008098820591880818,
+      "count": 24
+    },
+    {
+      "pilot_n": 28,
+      "method": "COSI_SHRINK",
+      "layout_seconds": 0.015889883041381836,
+      "development_fixed": 0.0077524997531762405,
+      "development_ridge": 0.0083914528688819,
+      "development_GP_readout": 0.01432455728734616,
+      "retina_posthoc_fixed": 0.001669169039051018,
+      "retina_posthoc_GP_readout": 0.006104285766019282,
+      "count": 24
+    },
+    {
+      "pilot_n": 28,
+      "method": "POWER_DIAG",
+      "layout_seconds": 0.010402917861938477,
+      "development_fixed": 0.008771343866393258,
+      "development_ridge": 0.008948690265218657,
+      "development_GP_readout": 0.015085998457328971,
+      "retina_posthoc_fixed": 0.0018612932211405408,
+      "retina_posthoc_GP_readout": 0.008583579586729414,
+      "count": 24
+    },
+    {
+      "pilot_n": 180,
+      "method": "GP_FULL",
+      "layout_seconds": 0.06639838218688965,
+      "development_fixed": 0.01026671894392015,
+      "development_ridge": 0.01088645317209565,
+      "development_GP_readout": 0.010771341660180431,
+      "retina_posthoc_fixed": 0.0022577724697004243,
+      "retina_posthoc_GP_readout": 0.004793657004325621,
+      "count": 24
+    },
+    {
+      "pilot_n": 180,
+      "method": "COSI_SHRINK",
+      "layout_seconds": 0.01658320426940918,
+      "development_fixed": 0.009423782873648838,
+      "development_ridge": 0.009426954032810601,
+      "development_GP_readout": 0.009416663678883894,
+      "retina_posthoc_fixed": 0.002214130568637457,
+      "retina_posthoc_GP_readout": 0.002817778971948262,
+      "count": 24
+    },
+    {
+      "pilot_n": 180,
+      "method": "POWER_DIAG",
+      "layout_seconds": 0.01593804359436035,
+      "development_fixed": 0.01023142309450984,
+      "development_ridge": 0.010339702920167107,
+      "development_GP_readout": 0.010319075983463545,
+      "retina_posthoc_fixed": 0.002305363342292908,
+      "retina_posthoc_GP_readout": 0.00378080088606014,
+      "count": 24
+    }
+  ],
+  "limits": [
+    "GP_FULL covariance has 1728 candidate inputs; matches cost/reading, not construction CPU",
+    "New GP readout evaluated after revealing retina in original C30: contamination; report posthoc",
+    "Only one new external image: cannot infer transfer"
+  ]
+}

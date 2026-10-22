@@ -1,0 +1,228 @@
+{
+  "n_cycles": 30,
+  "c1_to_c29_dev_win_counts": {
+    "SOBOL": 1,
+    "DIRECT": 7,
+    "GP": 0,
+    "POWER_DIAG": 6,
+    "COSI_SHRINK": 15
+  },
+  "eligible_dev_means": {
+    "SOBOL": 0.010359227508637884,
+    "DIRECT": 0.01038711109492339,
+    "GP": 0.012697262721655111,
+    "POWER_DIAG": 0.009806143655031307,
+    "COSI_SHRINK": 0.009259561317813702
+  },
+  "champion_selected_before_holdout": "COSI_SHRINK",
+  "holdout_retina": [
+    {
+      "method": "SOBOL",
+      "retina_fixed_RMSE": 0.0018501071258688001,
+      "development_fixed_RMSE": 0.009286980284852784,
+      "ratio_holdout_over_development": 0.19921514519486544,
+      "ids": [
+        [
+          512,
+          167,
+          325,
+          100,
+          410,
+          65
+        ],
+        [
+          323,
+          115,
+          492,
+          269,
+          554,
+          183,
+          405,
+          31,
+          438,
+          239,
+          353,
+          121,
+          411,
+          61,
+          524,
+          153
+        ],
+        [
+          396,
+          27
+        ]
+      ]
+    },
+    {
+      "method": "DIRECT",
+      "retina_fixed_RMSE": 0.0018307629860652382,
+      "development_fixed_RMSE": 0.008869801293336895,
+      "ratio_holdout_over_development": 0.20640405861634467,
+      "ids": [
+        [
+          561,
+          167,
+          398,
+          100,
+          225,
+          87
+        ],
+        [
+          369,
+          20,
+          469,
+          290,
+          554,
+          256,
+          405,
+          32,
+          439,
+          237,
+          333,
+          169,
+          411,
+          61,
+          524,
+          180
+        ],
+        [
+          348,
+          73
+        ]
+      ]
+    },
+    {
+      "method": "GP",
+      "retina_fixed_RMSE": 0.003039413883506339,
+      "development_fixed_RMSE": 0.010829194701658903,
+      "ratio_holdout_over_development": 0.2806685046525886,
+      "ids": [
+        [
+          443,
+          512,
+          561,
+          449,
+          355,
+          459
+        ],
+        [
+          350,
+          242,
+          189,
+          110,
+          490,
+          130,
+          424,
+          222,
+          20,
+          310,
+          35,
+          249,
+          435,
+          323,
+          34,
+          526
+        ],
+        [
+          339,
+          269
+        ]
+      ]
+    },
+    {
+      "method": "POWER_DIAG",
+      "retina_fixed_RMSE": 0.001728713207654368,
+      "development_fixed_RMSE": 0.00884610949541615,
+      "ratio_holdout_over_development": 0.19542073366265106,
+      "ids": [
+        [
+          513,
+          237,
+          325,
+          126,
+          409,
+          41
+        ],
+        [
+          346,
+          116,
+          446,
+          245,
+          529,
+          207,
+          429,
+          30,
+          488,
+          263,
+          329,
+          121,
+          387,
+          36,
+          570,
+          178
+        ],
+        [
+          348,
+          52
+        ]
+      ]
+    },
+    {
+      "method": "COSI_SHRINK",
+      "retina_fixed_RMSE": 0.001677324502547804,
+      "development_fixed_RMSE": 0.00831039337911009,
+      "ratio_holdout_over_development": 0.20183454934445216,
+      "ids": [
+        [
+          514,
+          237,
+          301,
+          126,
+          432,
+          41
+        ],
+        [
+          322,
+          116,
+          446,
+          221,
+          529,
+          207,
+          429,
+          31,
+          487,
+          287,
+          329,
+          121,
+          363,
+          37,
+          546,
+          154
+        ],
+        [
+          396,
+          51
+        ]
+      ]
+    }
+  ],
+  "runtime_sec": 2.96341872215271,
+  "source_images": [
+    "astronaut",
+    "coffee",
+    "chelsea",
+    "immunohistochemistry",
+    "rocket",
+    "hubble_deep_field",
+    "retina"
+  ],
+  "limits": [
+    "No independent 3D physical sensors",
+    "Only one new heldout scene",
+    "Patches within scenes dependent",
+    "Previous research already selected quota/target",
+    "No honest SOTA GP optimized implementation",
+    "Proxies not actual MHU/Local SI Scale3D"
+  ]
+}

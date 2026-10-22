@@ -1,0 +1,44 @@
+{
+  "champion": "COSI_SHRINK",
+  "candidate_dev_means": {
+    "SOBOL": 0.010359227508637884,
+    "DIRECT": 0.01038711109492339,
+    "GP": 0.012697262721655111,
+    "POWER_DIAG": 0.009806143655031307,
+    "COSI_SHRINK": 0.009259561317813702
+  },
+  "selection_records": [
+    1,
+    2,
+    3,
+    4,
+    11,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "all_methods": [
+    "SOBOL",
+    "DIRECT",
+    "GP",
+    "POWER_DIAG",
+    "COSI_SHRINK"
+  ],
+  "retina_test_seed": 97773,
+  "test_patches": 1100,
+  "retina_crop": [
+    300,
+    1100,
+    300,
+    1100
+  ],
+  "protocol": "Same sample layout as C29, evaluate all methods (NOT multiple confirmatory claims) on retina once; no retuning."
+}

@@ -1,0 +1,31 @@
+C01 BASELINE pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00975 GP=0.01194
+C02 LOW_PILOT_FOCUS pilot=12 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00925 GP=0.01603
+C03 LOW_PILOT_FOCUS pilot=28 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00864 GP=0.01252
+C04 LOW_PILOT_FOCUS pilot=64 budget=24 shrink=0.5 -> SOBOL cosi=0.01012 GP=0.01193
+C05 LOW_PILOT_ADVERSARIAL pilot=128 budget=24 shrink=0.5 -> DIRECT cosi=0.00917 GP=0.01063
+C06 LOW_PILOT_ADVERSARIAL pilot=256 budget=24 shrink=0.5 -> DIRECT cosi=0.00996 GP=0.01113
+C07 LOW_PILOT_ADVERSARIAL pilot=600 budget=24 shrink=0.5 -> DIRECT cosi=0.00883 GP=0.00935
+C08 SENSOR_BUDGET pilot=64 budget=8 shrink=0.5 -> DIRECT cosi=0.02655 GP=0.02606
+C09 COVERAGE_PIVOT pilot=64 budget=12 shrink=0.5 -> COSI_SHRINK cosi=0.01453 GP=0.01762
+C10 SENSOR_BUDGET pilot=64 budget=16 shrink=0.5 -> DIRECT cosi=0.01295 GP=0.01328
+C11 SENSOR_BUDGET pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00896 GP=0.01071
+C12 SENSOR_BUDGET pilot=64 budget=36 shrink=0.5 -> COSI_SHRINK cosi=0.00720 GP=0.00873
+C13 SENSOR_BUDGET pilot=64 budget=48 shrink=0.5 -> COSI_SHRINK cosi=0.00550 GP=0.00673
+C14 ESTIMAND_SENSITIVITY pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.01085 GP=0.01743
+C15 ESTIMAND_SENSITIVITY pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00918 GP=0.01254
+C16 ESTIMAND_SENSITIVITY pilot=64 budget=24 shrink=0.5 -> POWER_DIAG cosi=0.01519 GP=0.02010
+C17 ESTIMAND_SENSITIVITY pilot=64 budget=24 shrink=0.5 -> POWER_DIAG cosi=0.01658 GP=0.02046
+C18 ESTIMAND_SENSITIVITY pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.01100 GP=0.01632
+C19 CROSS_CHANNEL_ABLATION pilot=64 budget=24 shrink=0 -> POWER_DIAG cosi=0.00889 GP=0.01210
+C20 CROSS_CHANNEL_ABLATION pilot=64 budget=24 shrink=0.25 -> COSI_SHRINK cosi=0.00893 GP=0.01041
+C21 CROSS_CHANNEL_ABLATION pilot=64 budget=24 shrink=0.5 -> POWER_DIAG cosi=0.00840 GP=0.01120
+C22 DIAGONAL_NULL_FOCUS pilot=64 budget=24 shrink=0.75 -> POWER_DIAG cosi=0.00982 GP=0.01313
+C23 DIAGONAL_NULL_FOCUS pilot=64 budget=24 shrink=1 -> DIRECT cosi=0.01018 GP=0.01258
+C24 GP_ROBUSTNESS pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00860 GP=0.00978
+C25 GP_ROBUSTNESS pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00840 GP=0.01096
+C26 GP_ROBUSTNESS pilot=64 budget=24 shrink=0.5 -> POWER_DIAG cosi=0.01087 GP=0.01258
+C27 GP_ROBUSTNESS pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00980 GP=0.01584
+C28 GP_ROBUSTNESS pilot=64 budget=24 shrink=0.5 -> DIRECT cosi=0.00921 GP=0.02061
+C29 MODEL_SELECTION_LOCK pilot=64 budget=24 shrink=0.5 -> COSI_SHRINK cosi=0.00831 GP=0.01083
+C30 holdout {"SOBOL": 0.00185, "DIRECT": 0.001831, "GP": 0.003039, "POWER_DIAG": 0.001729, "COSI_SHRINK": 0.001677}
+Summary {"n_cycles": 30, "c1_to_c29_dev_win_counts": {"SOBOL": 1, "DIRECT": 7, "GP": 0, "POWER_DIAG": 6, "COSI_SHRINK": 15}, "eligible_dev_means": {"SOBOL": 0.010359227508637884, "DIRECT": 0.01038711109492339, "GP": 0.012697262721655111, "POWER_DIAG": 0.009806143655031307, "COSI_SHRINK": 0.009259561317813702}, "champion_selected_before_holdout": "COSI_SHRINK", "runtime_sec": 2.96341872215271, "source_images": ["astronaut", "coffee", "chelsea", "immunohistochemistry", "rocket", "hubble_deep_field", "retina"], "limits": ["No independent 3D physical sensors", "Only one new heldout scene", "Patches within scenes dependent", "Previous research already selected quota/target", "No honest SOTA GP optimized implementation", "Proxies not actual MHU/Local SI Scale3D"]}

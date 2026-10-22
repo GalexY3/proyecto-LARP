@@ -1,0 +1,11 @@
+test_channels_and_cov (__main__.Audit.test_channels_and_cov) ... ok
+test_fixed_readout (__main__.Audit.test_fixed_readout) ... ok
+test_frozen_holdout (__main__.Audit.test_frozen_holdout) ... ok
+test_grad_quadratic (__main__.Audit.test_grad_quadratic) ... ok
+test_layout_counts (__main__.Audit.test_layout_counts) ... ok
+test_mean_exact (__main__.Audit.test_mean_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.039s
+
+OK
