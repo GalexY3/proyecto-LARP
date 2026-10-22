@@ -1,0 +1,15 @@
+{
+  "id": "C18",
+  "E": "Con32pilotos/rho0, Ridge raw MHU=.01760 pierde frente media=.00948; con256pilotos baja a.00635. Con rho1, Ridge convencional se acerca a oracle (MHU1.15e-5 frente9.73e-6). LOCAL/CVT comparables; azar puede ganar fuera de banda.",
+  "F": "Se usaron pilotos/validación distintos, pero del mismo modelo; evidencia no externa. Rejilla lambda acotada, no un benchmark exhaustivo. Riesgo exacto evaluado solo después de selección.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "Complejidad de calibración y conocimiento de tipos son hipótesis alternativas. La derrota de un Ridge raw con pocos datos no debe favorecer artificialmente otro diseño.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: comparar agregación por tipo y selector convencional que puede elegir media o Ridge con la misma validación.",
+  "options_rejected": [
+    "Usar Ridge128 débil como único baseline",
+    "Elegir lectores mirando su riesgo poblacional evaluado"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C19"
+}

@@ -1,0 +1,1093 @@
+{
+  "id": "C18",
+  "started_utc": "2026-10-22T14:44:56.660653+00:00",
+  "status": "COMPLETED",
+  "inference": "exploratory",
+  "result": {
+    "rows": [
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.016805319783238595,
+        "oracle_bayes_risk": 0.004562842515696629,
+        "mean_risk": 0.010533899657147704,
+        "validation_mse": 0.016237510803317045,
+        "lambda": 0.1,
+        "intercept": 0.0019218905680935781
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.007724552949757917,
+        "oracle_bayes_risk": 0.004562842515696629,
+        "mean_risk": 0.010533899657147704,
+        "validation_mse": 0.007439590737363789,
+        "lambda": 0.1,
+        "intercept": 0.010659421578949325
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.013706083192464472,
+        "oracle_bayes_risk": 0.003372027281277046,
+        "mean_risk": 0.009039201685559713,
+        "validation_mse": 0.013388257170288466,
+        "lambda": 0.1,
+        "intercept": 0.030657416827829652
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.005135143187910018,
+        "oracle_bayes_risk": 0.003372027281277046,
+        "mean_risk": 0.009039201685559713,
+        "validation_mse": 0.0055464665247455846,
+        "lambda": 0.001,
+        "intercept": 0.00995078122617472
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.01679874612082923,
+        "oracle_bayes_risk": 0.0034332636546025156,
+        "mean_risk": 0.007630219190622163,
+        "validation_mse": 0.01573776987750696,
+        "lambda": 0.1,
+        "intercept": -0.009878140998473305
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.005736993671620133,
+        "oracle_bayes_risk": 0.0034332636546025156,
+        "mean_risk": 0.007630219190622163,
+        "validation_mse": 0.005735354058196262,
+        "lambda": 0.001,
+        "intercept": 0.0009994829834949447
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.010855030574699682,
+        "oracle_bayes_risk": 0.001526332921481722,
+        "mean_risk": 0.004680919537187843,
+        "validation_mse": 0.01020727129591495,
+        "lambda": 1e-05,
+        "intercept": 0.006774119332872028
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.0024736996720208116,
+        "oracle_bayes_risk": 0.001526332921481722,
+        "mean_risk": 0.004680919537187843,
+        "validation_mse": 0.0022462484068386467,
+        "lambda": 0.001,
+        "intercept": 0.0012577073657756115
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.012341885049026906,
+        "oracle_bayes_risk": 0.002917822145444924,
+        "mean_risk": 0.009373885402394037,
+        "validation_mse": 0.010832548138147175,
+        "lambda": 0.1,
+        "intercept": 6.296493768687865e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.004733822879186473,
+        "oracle_bayes_risk": 0.002917822145444924,
+        "mean_risk": 0.009373885402394037,
+        "validation_mse": 0.004620519423278966,
+        "lambda": 0.001,
+        "intercept": -0.0007474685598515968
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.01734156571670503,
+        "oracle_bayes_risk": 0.0038715035747379613,
+        "mean_risk": 0.00965279138000618,
+        "validation_mse": 0.01682568525485434,
+        "lambda": 0.1,
+        "intercept": 0.016933449528208626
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.006054772069287177,
+        "oracle_bayes_risk": 0.0038715035747379613,
+        "mean_risk": 0.00965279138000618,
+        "validation_mse": 0.005742087551494331,
+        "lambda": 0.001,
+        "intercept": 0.0036318909112934457
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.018661319587076286,
+        "oracle_bayes_risk": 0.004759379526958705,
+        "mean_risk": 0.011062017286302456,
+        "validation_mse": 0.018142511919113685,
+        "lambda": 0.1,
+        "intercept": 0.047437281373767994
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.007207858861570043,
+        "oracle_bayes_risk": 0.004759379526958705,
+        "mean_risk": 0.011062017286302456,
+        "validation_mse": 0.006985572653889509,
+        "lambda": 0.001,
+        "intercept": 0.012219489353570031
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.019985896655249188,
+        "oracle_bayes_risk": 0.00563954491200115,
+        "mean_risk": 0.011195663782045378,
+        "validation_mse": 0.018140165296193,
+        "lambda": 0.1,
+        "intercept": 0.03876209358612942
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.00906160006489207,
+        "oracle_bayes_risk": 0.00563954491200115,
+        "mean_risk": 0.011195663782045378,
+        "validation_mse": 0.008291753427833021,
+        "lambda": 0.1,
+        "intercept": 0.00572949162149361
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.013454453511805398,
+        "oracle_bayes_risk": 0.0033001657436270257,
+        "mean_risk": 0.005881537367160766,
+        "validation_mse": 0.013035435075330896,
+        "lambda": 0.1,
+        "intercept": 0.04634398351053898
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.004724420881924185,
+        "oracle_bayes_risk": 0.0033001657436270257,
+        "mean_risk": 0.005881537367160766,
+        "validation_mse": 0.0041899753856012275,
+        "lambda": 0.1,
+        "intercept": 0.0062690044770445895
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.015273818068791923,
+        "oracle_bayes_risk": 0.002514211417239412,
+        "mean_risk": 0.009307709447821833,
+        "validation_mse": 0.014717079125022669,
+        "lambda": 1e-05,
+        "intercept": 0.02284375680605324
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.004363125401198775,
+        "oracle_bayes_risk": 0.002514211417239412,
+        "mean_risk": 0.009307709447821833,
+        "validation_mse": 0.0039073092859342184,
+        "lambda": 0.001,
+        "intercept": 0.0010132745203592607
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.01655876866155484,
+        "oracle_bayes_risk": 0.005717559141558088,
+        "mean_risk": 0.010537568187183185,
+        "validation_mse": 0.01614573506798805,
+        "lambda": 0.1,
+        "intercept": -0.005675184769720551
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.008517158340770593,
+        "oracle_bayes_risk": 0.005717559141558088,
+        "mean_risk": 0.010537568187183185,
+        "validation_mse": 0.007772286252071718,
+        "lambda": 0.001,
+        "intercept": 0.005675066670822397
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.021235453973154614,
+        "oracle_bayes_risk": 0.0038888319439388456,
+        "mean_risk": 0.008681508713877666,
+        "validation_mse": 0.020107565693374355,
+        "lambda": 0.1,
+        "intercept": 0.01572532297587418
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.005706695390434461,
+        "oracle_bayes_risk": 0.0038888319439388456,
+        "mean_risk": 0.008681508713877666,
+        "validation_mse": 0.006083790988618132,
+        "lambda": 0.1,
+        "intercept": 0.004052126122668188
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.018329340525749298,
+        "oracle_bayes_risk": 0.0047028583064511265,
+        "mean_risk": 0.009634835864156028,
+        "validation_mse": 0.018372443244088762,
+        "lambda": 0.1,
+        "intercept": 0.037901567480428444
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.007168810975672058,
+        "oracle_bayes_risk": 0.0047028583064511265,
+        "mean_risk": 0.009634835864156028,
+        "validation_mse": 0.007409130721769789,
+        "lambda": 0.001,
+        "intercept": 0.00790185990333302
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.013909674409404955,
+        "oracle_bayes_risk": 0.004523483571906959,
+        "mean_risk": 0.008676816363269092,
+        "validation_mse": 0.01406540136072867,
+        "lambda": 0.1,
+        "intercept": 0.010532531099619456
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.006522326881835614,
+        "oracle_bayes_risk": 0.004523483571906959,
+        "mean_risk": 0.008676816363269092,
+        "validation_mse": 0.006322899080286971,
+        "lambda": 0.1,
+        "intercept": 0.0022093601248760787
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.012958157880107325,
+        "oracle_bayes_risk": 0.0028088013610799937,
+        "mean_risk": 0.008142194749263764,
+        "validation_mse": 0.011335761434155198,
+        "lambda": 1e-05,
+        "intercept": 0.02030766941745921
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.004172356585252187,
+        "oracle_bayes_risk": 0.0028088013610799937,
+        "mean_risk": 0.008142194749263764,
+        "validation_mse": 0.004517096860268714,
+        "lambda": 0.001,
+        "intercept": 0.00096757993783117
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.015232297845003401,
+        "oracle_bayes_risk": 0.0032411296342890173,
+        "mean_risk": 0.006626763898583146,
+        "validation_mse": 0.013547229395476774,
+        "lambda": 0.1,
+        "intercept": 0.01796274243079805
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.004423362084418672,
+        "oracle_bayes_risk": 0.0032411296342890173,
+        "mean_risk": 0.006626763898583146,
+        "validation_mse": 0.004376270176901161,
+        "lambda": 0.1,
+        "intercept": -0.002656374949942657
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.016810917013329735,
+        "oracle_bayes_risk": 0.004598755677191859,
+        "mean_risk": 0.009136738271981098,
+        "validation_mse": 0.017557159537541178,
+        "lambda": 0.1,
+        "intercept": 0.023890589564730322
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.007343636591835015,
+        "oracle_bayes_risk": 0.004598755677191859,
+        "mean_risk": 0.009136738271981098,
+        "validation_mse": 0.007826553557716557,
+        "lambda": 0.001,
+        "intercept": 0.0033086641447419296
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.011804865559698039,
+        "oracle_bayes_risk": 0.003120941985808333,
+        "mean_risk": 0.007203146990735328,
+        "validation_mse": 0.011835583261146842,
+        "lambda": 0.1,
+        "intercept": 0.022633684366759735
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.004804757869272043,
+        "oracle_bayes_risk": 0.003120941985808333,
+        "mean_risk": 0.007203146990735328,
+        "validation_mse": 0.004080398071049797,
+        "lambda": 0.1,
+        "intercept": 0.0030039934340731628
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.008404980249076408,
+        "oracle_bayes_risk": 0.0016109806611955444,
+        "mean_risk": 0.004396448123826179,
+        "validation_mse": 0.007174184719494149,
+        "lambda": 1e-05,
+        "intercept": 0.005053245438225813
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.0023467600049703764,
+        "oracle_bayes_risk": 0.0016109806611955444,
+        "mean_risk": 0.004396448123826179,
+        "validation_mse": 0.0023187516232482876,
+        "lambda": 0.1,
+        "intercept": 1.382810827811956e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "ridge_risk": 0.015565182845469162,
+        "oracle_bayes_risk": 0.0016075943177676587,
+        "mean_risk": 0.007902940987881869,
+        "validation_mse": 0.013681586605358603,
+        "lambda": 0.1,
+        "intercept": 0.028492326167324025
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "ridge_risk": 0.002823863939927893,
+        "oracle_bayes_risk": 0.0016075943177676587,
+        "mean_risk": 0.007902940987881869,
+        "validation_mse": 0.002995201868414902,
+        "lambda": 0.001,
+        "intercept": 0.0025925211362519927
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 2.6754736152579103e-05,
+        "oracle_bayes_risk": 9.583972651239288e-06,
+        "mean_risk": 0.002288694681979635,
+        "validation_mse": 2.7217349314221985e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0011027252958520362
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1158314865788706e-05,
+        "oracle_bayes_risk": 9.583972651239288e-06,
+        "mean_risk": 0.002288694681979635,
+        "validation_mse": 1.1658862135203372e-05,
+        "lambda": 0.001,
+        "intercept": 7.931122441271615e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 2.135970554835784e-05,
+        "oracle_bayes_risk": 9.765403356297007e-06,
+        "mean_risk": 0.0033516261903141333,
+        "validation_mse": 2.1567633624121055e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0005008155093228425
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1064084225299593e-05,
+        "oracle_bayes_risk": 9.765403356297007e-06,
+        "mean_risk": 0.0033516261903141333,
+        "validation_mse": 1.1521172300450792e-05,
+        "lambda": 0.001,
+        "intercept": 3.2460566874004115e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 2.1099444909943362e-05,
+        "oracle_bayes_risk": 1.0128286390478539e-05,
+        "mean_risk": 0.0068146658122726035,
+        "validation_mse": 2.3186175973881135e-05,
+        "lambda": 1e-05,
+        "intercept": -0.00041238045857585476
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.184107351334671e-05,
+        "oracle_bayes_risk": 1.0128286390478539e-05,
+        "mean_risk": 0.0068146658122726035,
+        "validation_mse": 1.1541560181074899e-05,
+        "lambda": 0.001,
+        "intercept": -9.122619508456636e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 3.0090570882126157e-05,
+        "oracle_bayes_risk": 1.0052678967685609e-05,
+        "mean_risk": 0.005040785316077521,
+        "validation_mse": 2.9590461260394307e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0015409435081940475
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1618013640250323e-05,
+        "oracle_bayes_risk": 1.0052678967685609e-05,
+        "mean_risk": 0.005040785316077521,
+        "validation_mse": 1.1784049760539096e-05,
+        "lambda": 0.001,
+        "intercept": 9.35745446128261e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 4.4895165620160344e-05,
+        "oracle_bayes_risk": 1.1045566419169211e-05,
+        "mean_risk": 0.011735708568802988,
+        "validation_mse": 4.892374989425503e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0002197681081984055
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.3117548760025417e-05,
+        "oracle_bayes_risk": 1.1045566419169211e-05,
+        "mean_risk": 0.011735708568802988,
+        "validation_mse": 1.2534519430794081e-05,
+        "lambda": 0.001,
+        "intercept": 2.3360362196606088e-05
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 3.8940575706565356e-05,
+        "oracle_bayes_risk": 9.561894977448851e-06,
+        "mean_risk": 0.002218134174120666,
+        "validation_mse": 4.004500494191156e-05,
+        "lambda": 1e-05,
+        "intercept": -0.001070672805495253
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.163596287243902e-05,
+        "oracle_bayes_risk": 9.561894977448851e-06,
+        "mean_risk": 0.002218134174120666,
+        "validation_mse": 1.19200170500602e-05,
+        "lambda": 0.001,
+        "intercept": -0.00013055714614062033
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 4.125958784540798e-05,
+        "oracle_bayes_risk": 9.673722972602745e-06,
+        "mean_risk": 0.0029490286648499076,
+        "validation_mse": 4.2805607867769474e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0014233322879319832
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1942233314090069e-05,
+        "oracle_bayes_risk": 9.673722972602745e-06,
+        "mean_risk": 0.0029490286648499076,
+        "validation_mse": 1.2189154251492396e-05,
+        "lambda": 0.001,
+        "intercept": -0.0001953682676878385
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 4.9898173003092086e-05,
+        "oracle_bayes_risk": 1.139988531895716e-05,
+        "mean_risk": 0.010547281330605535,
+        "validation_mse": 5.150597193718224e-05,
+        "lambda": 0.001,
+        "intercept": -0.0005420444093753637
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.4393246324463156e-05,
+        "oracle_bayes_risk": 1.139988531895716e-05,
+        "mean_risk": 0.010547281330605535,
+        "validation_mse": 1.5083896370503475e-05,
+        "lambda": 0.001,
+        "intercept": -0.0002937094268150413
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 4.4498025766530877e-05,
+        "oracle_bayes_risk": 9.93547163572756e-06,
+        "mean_risk": 0.004022895602359111,
+        "validation_mse": 4.458876370677354e-05,
+        "lambda": 1e-05,
+        "intercept": -0.001665996519144678
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.2255784706357268e-05,
+        "oracle_bayes_risk": 9.93547163572756e-06,
+        "mean_risk": 0.004022895602359111,
+        "validation_mse": 1.2275763309199971e-05,
+        "lambda": 0.001,
+        "intercept": -0.00019162503791966476
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 6.11022744017391e-05,
+        "oracle_bayes_risk": 1.1191775583848775e-05,
+        "mean_risk": 0.0104769611371116,
+        "validation_mse": 5.883152172111154e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0006083582964216093
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.3414320100735303e-05,
+        "oracle_bayes_risk": 1.1191775583848775e-05,
+        "mean_risk": 0.0104769611371116,
+        "validation_mse": 1.452529041343578e-05,
+        "lambda": 0.001,
+        "intercept": -8.91641089039441e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 4.558680058891753e-05,
+        "oracle_bayes_risk": 9.85088124781118e-06,
+        "mean_risk": 0.0032876276170459235,
+        "validation_mse": 4.971891547821765e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0016791925083084
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1215410962909467e-05,
+        "oracle_bayes_risk": 9.85088124781118e-06,
+        "mean_risk": 0.0032876276170459235,
+        "validation_mse": 1.1981938181395082e-05,
+        "lambda": 0.001,
+        "intercept": -5.07497169130941e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 5.210484586041885e-05,
+        "oracle_bayes_risk": 9.713180186916704e-06,
+        "mean_risk": 0.0030010750666786684,
+        "validation_mse": 5.571515528776572e-05,
+        "lambda": 1e-05,
+        "intercept": -0.002164057084328465
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1089153069406503e-05,
+        "oracle_bayes_risk": 9.713180186916704e-06,
+        "mean_risk": 0.0030010750666786684,
+        "validation_mse": 1.1317191083697685e-05,
+        "lambda": 0.001,
+        "intercept": -0.000163904637274441
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 6.884044250646776e-05,
+        "oracle_bayes_risk": 1.0210315958700139e-05,
+        "mean_risk": 0.007343835912354454,
+        "validation_mse": 7.421828864705881e-05,
+        "lambda": 1e-05,
+        "intercept": -0.002677729931396913
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1589786920600365e-05,
+        "oracle_bayes_risk": 1.0210315958700139e-05,
+        "mean_risk": 0.007343835912354454,
+        "validation_mse": 1.2431753732622652e-05,
+        "lambda": 0.001,
+        "intercept": -6.6100711018105e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 6.192303077151088e-05,
+        "oracle_bayes_risk": 9.67933659470088e-06,
+        "mean_risk": 0.0034413982415460974,
+        "validation_mse": 6.514585603012045e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0024732771521102648
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1102899391118164e-05,
+        "oracle_bayes_risk": 9.67933659470088e-06,
+        "mean_risk": 0.0034413982415460974,
+        "validation_mse": 1.147744499871652e-05,
+        "lambda": 0.001,
+        "intercept": -0.00021239636100158638
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 7.892818520407403e-05,
+        "oracle_bayes_risk": 1.1680738578834571e-05,
+        "mean_risk": 0.010833909511655049,
+        "validation_mse": 8.271491411056739e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0028539712764992743
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.3837854399250072e-05,
+        "oracle_bayes_risk": 1.1680738578834571e-05,
+        "mean_risk": 0.010833909511655049,
+        "validation_mse": 1.2809434519683549e-05,
+        "lambda": 0.001,
+        "intercept": -0.00012117896070044237
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 3.1284365590188765e-05,
+        "oracle_bayes_risk": 9.533599327414863e-06,
+        "mean_risk": 0.0020875208974334095,
+        "validation_mse": 3.196482739300993e-05,
+        "lambda": 1e-05,
+        "intercept": 0.00010261093434278841
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1353522554673616e-05,
+        "oracle_bayes_risk": 9.533599327414863e-06,
+        "mean_risk": 0.0020875208974334095,
+        "validation_mse": 1.1921835576439045e-05,
+        "lambda": 0.001,
+        "intercept": -4.970604114743968e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 4.821311698421782e-05,
+        "oracle_bayes_risk": 9.77507233646483e-06,
+        "mean_risk": 0.0034601418859479516,
+        "validation_mse": 5.200773337990011e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0016811183556676356
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.1882297468271069e-05,
+        "oracle_bayes_risk": 9.77507233646483e-06,
+        "mean_risk": 0.0034601418859479516,
+        "validation_mse": 1.2207405658051133e-05,
+        "lambda": 0.001,
+        "intercept": -7.430891392772032e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 4.562855800291147e-05,
+        "oracle_bayes_risk": 1.0172815629307253e-05,
+        "mean_risk": 0.006287777455833922,
+        "validation_mse": 4.899012597289481e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0010527592392127506
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.2153571787786756e-05,
+        "oracle_bayes_risk": 1.0172815629307253e-05,
+        "mean_risk": 0.006287777455833922,
+        "validation_mse": 1.173428237037861e-05,
+        "lambda": 0.001,
+        "intercept": -9.37290604052371e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 5.984222928036639e-05,
+        "oracle_bayes_risk": 9.883135062838785e-06,
+        "mean_risk": 0.00504346386667475,
+        "validation_mse": 6.411888515877318e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0013460425999286402
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.195000414551078e-05,
+        "oracle_bayes_risk": 9.883135062838785e-06,
+        "mean_risk": 0.00504346386667475,
+        "validation_mse": 1.2224229956751334e-05,
+        "lambda": 0.001,
+        "intercept": -6.4816064050819e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "ridge_risk": 6.459676250282057e-05,
+        "oracle_bayes_risk": 1.016228923601583e-05,
+        "mean_risk": 0.0056562191616014255,
+        "validation_mse": 7.14815629588798e-05,
+        "lambda": 1e-05,
+        "intercept": -0.0019063639560396714
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "ridge_risk": 1.2190224582960695e-05,
+        "oracle_bayes_risk": 1.016228923601583e-05,
+        "mean_risk": 0.0056562191616014255,
+        "validation_mse": 1.288471350263438e-05,
+        "lambda": 0.001,
+        "intercept": -3.28490677354229e-05
+      }
+    ],
+    "summary": {
+      "rho0_pilots32": {
+        "local": {
+          "ridge_risk": 0.016484488001625466,
+          "oracle_bayes_risk": 0.0043482587165704235,
+          "mean_risk": 0.009337755780730053
+        },
+        "mhu": {
+          "ridge_risk": 0.017603443441506276,
+          "oracle_bayes_risk": 0.004154748607341614,
+          "mean_risk": 0.009479866489430234
+        },
+        "cvt": {
+          "ridge_risk": 0.01672971221538144,
+          "oracle_bayes_risk": 0.004224152214715781,
+          "mean_risk": 0.008915966456889723
+        },
+        "random": {
+          "ridge_risk": 0.01403476096084883,
+          "oracle_bayes_risk": 0.002462107310382997,
+          "mean_risk": 0.008681682646840376
+        }
+      },
+      "rho0_pilots256": {
+        "local": {
+          "ridge_risk": 0.006679961361058589,
+          "oracle_bayes_risk": 0.0043482587165704235,
+          "mean_risk": 0.009337755780730053
+        },
+        "mhu": {
+          "ridge_risk": 0.006348333507937384,
+          "oracle_bayes_risk": 0.004154748607341614,
+          "mean_risk": 0.009479866489430234
+        },
+        "cvt": {
+          "ridge_risk": 0.006693040645364076,
+          "oracle_bayes_risk": 0.004224152214715781,
+          "mean_risk": 0.008915966456889723
+        },
+        "random": {
+          "ridge_risk": 0.004023292201391332,
+          "oracle_bayes_risk": 0.002462107310382997,
+          "mean_risk": 0.008681682646840376
+        }
+      },
+      "rho1_pilots32": {
+        "local": {
+          "ridge_risk": 3.564161950956269e-05,
+          "oracle_bayes_risk": 9.632587050978547e-06,
+          "mean_risk": 0.0024704943426449083
+        },
+        "mhu": {
+          "ridge_risk": 4.0734314059600625e-05,
+          "oracle_bayes_risk": 9.731844713070322e-06,
+          "mean_risk": 0.0031904679519476654
+        },
+        "cvt": {
+          "ridge_risk": 4.6366654605603673e-05,
+          "oracle_bayes_risk": 1.0477825824360774e-05,
+          "mean_risk": 0.007748390127766628
+        },
+        "random": {
+          "ridge_risk": 6.23805969321985e-05,
+          "oracle_bayes_risk": 1.1020092454467096e-05,
+          "mean_risk": 0.009675699594792765
+        }
+      },
+      "rho1_pilots256": {
+        "local": {
+          "ridge_risk": 1.1340802813952703e-05,
+          "oracle_bayes_risk": 9.632587050978547e-06,
+          "mean_risk": 0.0024704943426449083
+        },
+        "mhu": {
+          "ridge_risk": 1.1494442019266809e-05,
+          "oracle_bayes_risk": 9.731844713070322e-06,
+          "mean_risk": 0.0031904679519476654
+        },
+        "cvt": {
+          "ridge_risk": 1.2494419636549246e-05,
+          "oracle_bayes_risk": 1.0477825824360774e-05,
+          "mean_risk": 0.007748390127766628
+        },
+        "random": {
+          "ridge_risk": 1.3139986960742873e-05,
+          "oracle_bayes_risk": 1.1020092454467096e-05,
+          "mean_risk": 0.009675699594792765
+        }
+      }
+    },
+    "world_arrays_sha256": {
+      "mu": "4185b3e28bad8e725a28e723b6a681d36c270d0ecb37810d077851c989114c00",
+      "normal_coefficients": "7e92a3f4e974757cb97521ab99df9f539bd51ac963da82a090fbaf917face74a",
+      "read_noise": "a05d9eb7f59546d15953488c4e7a3ca9ebc0ee5e5529c0fb2f4c6dcb96762d86"
+    }
+  },
+  "freeze_commit": "05c52f1c843e5379b2fb92f8a74f2f94f398adf8",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C17/decision.json",
+    "sha256": "73d6d22e1bc3e22fdfb10504147882257dacc966d6456eecda22dfae2471e54f"
+  },
+  "protocol_sha256": "843a0b0a5bcc285bf8413621d1ebed0371dcd607aa45f65cf6ad07131b235d7b",
+  "source_sha256": "c07a98292d4269a2a61b6d12e1afc9f8cd88757c5e4b9d51ac7cc64bb10bc24b",
+  "common_sha256": "d2df25d6f40ab89912261d44a9a44d0000b079460aa2b04b0b65a219ece46a8f",
+  "inputs": {
+    "geometry_sha256": {
+      "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+      "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+      "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+      "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+    },
+    "datasets": []
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "worker_returncode": 0,
+  "elapsed_seconds": 3.3343632000032812,
+  "finished_utc": "2026-10-22T14:44:59.995017+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "C19",
+  "parent_id": "C18",
+  "short_name": "competent_validation_selector",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿La elección convencional entre media, Ridge de5medias por tipo y Ridge128 evita la aparente desventaja con pocos pilotos?",
+  "B": [
+    "H_complexity: agregación y selección de complejidad explican diferencias",
+    "H_raw: rawRidge es siempre el baseline adecuado",
+    "H_other: selección por riesgo futuro o desigualdad de candidatas"
+  ],
+  "C": "Reutilizar mundos C18 (expuestos, exploratorios), mismos32/256pilotos y256validación. Nueve candidatas únicas: media fija, cuatro lambda Ridge5 y cuatro Ridge128; elegir únicamente MSE de validación. Reportar riesgo poblacional después y selección por método.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿La elección convencional entre media, Ridge de5medias por tipo y Ridge128 evita la aparente desventaja con pocos pilotos?",
+  "null": "H_other: selección por riesgo futuro o desigualdad de candidatas",
+  "predicted_discriminant": "Con pocos pilotos el selector usará medias o agrupación; con más datos raw podrá recuperar ventaja. No elegir geometría por test.",
+  "falsification_rule": "No introducir oracle de riesgo al selector. El conteo de candidatas debe ser9 para todos los métodos y regímenes.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    60218,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}
