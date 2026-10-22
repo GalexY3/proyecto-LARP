@@ -1,0 +1,47 @@
+{
+  "block": "B01",
+  "prereg_commit": "4aa480ca4a6cc65043daf85e55a8a8e0d4ece429",
+  "source_sha256": "867e75309dfa81c8568bb2360d4cb4909560a338d7f16a587d03bba877f1deb6",
+  "n_worlds": 24,
+  "results": [
+    [
+      "T01",
+      -0.0109647,
+      -0.02211,
+      0.00018
+    ],
+    [
+      "T02",
+      0.0326724,
+      -0.01315,
+      0.0785
+    ],
+    [
+      "T03",
+      0.0095896,
+      -0.04296,
+      0.06214
+    ],
+    [
+      "T04",
+      -0.0165002,
+      -0.06263,
+      0.02963
+    ],
+    [
+      "T05",
+      -0.2021038,
+      -0.32637,
+      -0.07783
+    ],
+    [
+      "T06",
+      0.0007382,
+      -0.0317,
+      0.03317
+    ]
+  ],
+  "verdict": "Nominal correlated-noise selection reliably beats random, but no robust design has proven advantage over competent nominal/shrinkage. Pivot to tail-risk objectives and different covariance families.",
+  "raw": "Source JSON per seed retained locally, not in this summary file.",
+  "holdout": "same synthetic DGP; exploratory"
+}
