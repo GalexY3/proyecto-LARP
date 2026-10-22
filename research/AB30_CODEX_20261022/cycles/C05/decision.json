@@ -1,0 +1,15 @@
+{
+  "id": "C05",
+  "E": "Residualmáximolineal8.88e-16;17/20operadoresrango64. TodosMHU64;condiciónMHU423–25789,Sobol435–1166. Traza9.92–12.16.",
+  "F": "Másfeatures noañaden información. Invertibilidadformal no implica estabilidad ni invariancia. Auditorindependiente adviertefixed vs global cambiacentrado yescala.",
+  "G": "Identidad instrumentalaudita20patronesexistentes; no originalidad nireplicaciónexterna.",
+  "H": "Bajaexplicación nueva información; sube filtrado/condición. Separarcentradoyescalaantesatribución.",
+  "I": "Exactitudlinealverificada; n4geom, costebajo.",
+  "J": "REPAIR deatribuciónaislando centrado yescala enunfactorial",
+  "options_rejected": [
+    "Llamar ventaja exclusiva de escala aintervención compuesta",
+    "Entrenar redmayorantescontrolesconvencionales"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C06"
+}
