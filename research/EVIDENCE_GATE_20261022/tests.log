@@ -1,0 +1,11 @@
+test_deterministic_patches (__main__.TestEvidenceGate.test_deterministic_patches) ... ok
+test_estimator_exact_for_full_grid (__main__.TestEvidenceGate.test_estimator_exact_for_full_grid) ... ok
+test_full_gp_quota_and_bounds (__main__.TestEvidenceGate.test_full_gp_quota_and_bounds) ... ok
+test_holdout_freeze_link (__main__.TestEvidenceGate.test_holdout_freeze_link) ... ok
+test_no_source_overwriting (__main__.TestEvidenceGate.test_no_source_overwriting) ... ok
+test_sources_shapes (__main__.TestEvidenceGate.test_sources_shapes) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.471s
+
+OK

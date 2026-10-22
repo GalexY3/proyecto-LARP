@@ -1,0 +1,2165 @@
+{
+  "freeze_sha256": "c686157283f0d617cf05b55d02e69ee2e481b945045fbfadc2371d57b8185a22",
+  "results": [
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03586933899063207,
+      "mae": 0.028352970529813327
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.030873484325745822,
+      "mae": 0.024943173239007594
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.016550693674641848,
+      "mae": 0.012446434859302826
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.014881254547164924,
+      "mae": 0.011085350218054374
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.004981536165235764,
+      "mae": 0.0021921383601875267
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.005792569539667563,
+      "mae": 0.002536046937457283
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007736454311604767,
+      "mae": 0.0060347199934767575
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.00618301644318596,
+      "mae": 0.004781365339877082
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.038553781934244837,
+      "mae": 0.02991037222440355
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03243061678228329,
+      "mae": 0.025156040415167814
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.029580439527020788,
+      "mae": 0.022286409104563056
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.022833567643107115,
+      "mae": 0.018499952007841786
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.009672894162678265,
+      "mae": 0.0037323821427708015
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.008016998087856164,
+      "mae": 0.003354133517132139
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.00810567147314179,
+      "mae": 0.0063882218021899416
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.0058828501385831365,
+      "mae": 0.0044763623212929786
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03840879239093581,
+      "mae": 0.030072594245430084
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03631314089295181,
+      "mae": 0.029270894806832082
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.021099899399371073,
+      "mae": 0.01666824518200883
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.02086487021616354,
+      "mae": 0.016729417558817662
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.008662174509011073,
+      "mae": 0.004445265609756463
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.007725682028709222,
+      "mae": 0.0073122230847366115
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.009133945104742951,
+      "mae": 0.0070892562606604745
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.008215098174654979,
+      "mae": 0.006153727163327853
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03810505885872507,
+      "mae": 0.029076545345596966
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.026307110601431687,
+      "mae": 0.02090164295397699
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.023901509023833006,
+      "mae": 0.017818447105382794
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.013993502561811194,
+      "mae": 0.011567857781483327
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.004086077652817065,
+      "mae": 0.0021526912695844663
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.004587220861104004,
+      "mae": 0.0030483718041796194
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007088661797030009,
+      "mae": 0.005555470402177886
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004792138183952524,
+      "mae": 0.003626173177035524
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.0374705246966925,
+      "mae": 0.030254499418660995
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.028828891624536272,
+      "mae": 0.023489074734970927
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.02062976136282721,
+      "mae": 0.015385104913657415
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01994216896823903,
+      "mae": 0.015882072664389856
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.004417049065125026,
+      "mae": 0.00224330510289292
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.003811067117184315,
+      "mae": 0.0022142593175522047
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.006356829109165059,
+      "mae": 0.004949165611469655
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4001,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004437964821764628,
+      "mae": 0.003471975118154662
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.036249319494448116,
+      "mae": 0.029333887631073592
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03247684899217121,
+      "mae": 0.026768897762522104
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.019303842880705253,
+      "mae": 0.014832135720862422
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01351535277650404,
+      "mae": 0.010466986651590562
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0033236905182253544,
+      "mae": 0.0023282199628738448
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.003300598789407987,
+      "mae": 0.0025723392755025954
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.008089947782742093,
+      "mae": 0.0059124623675597815
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.0044327323900838714,
+      "mae": 0.0029166466044262046
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03640861313878492,
+      "mae": 0.029622846471611407
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.030946099074358194,
+      "mae": 0.025927728405222294
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.018965016106263048,
+      "mae": 0.014352536879669059
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01692169867112444,
+      "mae": 0.013070516703010075
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.005022595634442208,
+      "mae": 0.002892980875039939
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.003679353898976074,
+      "mae": 0.002117207399569449
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.00988742816924043,
+      "mae": 0.007100104302808175
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.007446654267369019,
+      "mae": 0.0052990360173862435
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.041599094037404374,
+      "mae": 0.03330477867159061
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.04386758300371115,
+      "mae": 0.037157889725640415
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.024795386528235715,
+      "mae": 0.018822784457806847
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.020065758365074307,
+      "mae": 0.015280185282754249
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.007497975219965396,
+      "mae": 0.004291244645137342
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.006000358234282382,
+      "mae": 0.0049071730277501
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.008490813952297078,
+      "mae": 0.006598443438997494
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.007071731378273847,
+      "mae": 0.0050651996745727955
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03411552267339242,
+      "mae": 0.026805903955828398
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.0316691798748717,
+      "mae": 0.0272880996670574
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.02168246152790231,
+      "mae": 0.017457519882882484
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.015693785360706272,
+      "mae": 0.01276679250207963
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0031044785872783305,
+      "mae": 0.0018479963636491444
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.003393012106088915,
+      "mae": 0.0027670870325528043
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.005640692766393676,
+      "mae": 0.004492911023553459
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004111971227814569,
+      "mae": 0.003039626972749833
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.030901459105682573,
+      "mae": 0.023639175442513073
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.030025634026346178,
+      "mae": 0.025100338244810706
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.020394343163636558,
+      "mae": 0.01565116182973724
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.016803298834494572,
+      "mae": 0.01307928653230192
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.002915610491850452,
+      "mae": 0.0020062060603231657
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.003675601682085586,
+      "mae": 0.0031534065620508005
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.006848706679370268,
+      "mae": 0.005248659760400188
+    },
+    {
+      "pilot_n": 16,
+      "seed": 4002,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.0041815581620462195,
+      "mae": 0.003113364748423921
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.0386267641742185,
+      "mae": 0.03087394414469599
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03804813188811435,
+      "mae": 0.0312901241146028
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.017653371975024958,
+      "mae": 0.013476908859302056
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.019670691748763524,
+      "mae": 0.015090314870758448
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.00463995239912223,
+      "mae": 0.0027947501807648214
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.008354721653086853,
+      "mae": 0.0034519568138057346
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.0069217844883196055,
+      "mae": 0.00539066349127097
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.007998674274155458,
+      "mae": 0.006071665202034638
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03644424059424239,
+      "mae": 0.029223569544265048
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03550472838604521,
+      "mae": 0.028270282670855525
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.022310287549025885,
+      "mae": 0.01766748992871726
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01893409450468342,
+      "mae": 0.014514067677373533
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0042311037902406715,
+      "mae": 0.0027335906862572304
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.003188246716587259,
+      "mae": 0.0022542687790701155
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.009659796379843566,
+      "mae": 0.0068051076243864405
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.008266678335553914,
+      "mae": 0.005778045597253366
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.039164287061666095,
+      "mae": 0.030830871650250634
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03842121713608662,
+      "mae": 0.030542138740420343
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.02716306224808084,
+      "mae": 0.021126928807789228
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01887214699517034,
+      "mae": 0.014394600676896518
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.01030741803466793,
+      "mae": 0.0045322837732965126
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.006762643782034543,
+      "mae": 0.0031497693384881136
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007937328624774432,
+      "mae": 0.006045025158964562
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.007246170661199504,
+      "mae": 0.005200419503962624
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03784283429945701,
+      "mae": 0.030138570861890913
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.033835337195420895,
+      "mae": 0.027011322788894176
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.022388793859086476,
+      "mae": 0.01705575271000271
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.02179818269109785,
+      "mae": 0.017164735875849147
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0045971658014894905,
+      "mae": 0.0027110383010585807
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.00585203164922004,
+      "mae": 0.0029831304238177843
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007326501911167675,
+      "mae": 0.005476952916069418
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.007032738626038675,
+      "mae": 0.00526468447642401
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.038998129908878604,
+      "mae": 0.031690073464997116
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.029159029716008256,
+      "mae": 0.023861172841861848
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.023203670381892336,
+      "mae": 0.01756372100477165
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.015584001121309808,
+      "mae": 0.012399503762426323
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0037145428914187187,
+      "mae": 0.002385949453746434
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.004257663162967528,
+      "mae": 0.002247933697944971
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.0070768655353692905,
+      "mae": 0.005385898749518675
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4003,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.005109466216526614,
+      "mae": 0.003939930635970085
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03290790165245217,
+      "mae": 0.027146875986363738
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03368238509517609,
+      "mae": 0.028495828658342364
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.022236952313305827,
+      "mae": 0.016656286260185876
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.015609446199385719,
+      "mae": 0.012250204730371483
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.004674070199385652,
+      "mae": 0.002378415791172301
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.0027799666642268086,
+      "mae": 0.002255502553307447
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.0065439790319633895,
+      "mae": 0.0052081852502306025
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004404381072158106,
+      "mae": 0.00323974048951641
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.0381210128304771,
+      "mae": 0.029780589102301747
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.03592946765688676,
+      "mae": 0.029452514871954917
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.022170698569118786,
+      "mae": 0.01683108823111979
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01917467508721177,
+      "mae": 0.014027849618287295
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.005824543210447754,
+      "mae": 0.00283359133580234
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.004490236309458685,
+      "mae": 0.0022542854573111967
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.009964594629401689,
+      "mae": 0.0069749249954475095
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.006528495858770172,
+      "mae": 0.004712292085168886
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.04353713406842494,
+      "mae": 0.035630033507477496
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.04489388289482584,
+      "mae": 0.03671167161315679
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.026895446800433195,
+      "mae": 0.020727876038145042
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.020193801008119253,
+      "mae": 0.015812555755546787
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.010613576801198477,
+      "mae": 0.004966953577095409
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.0068112900772294,
+      "mae": 0.004227331645088268
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.008685461883664744,
+      "mae": 0.0066780705371638745
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.006349782261215781,
+      "mae": 0.004555625458015132
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.028782642872798043,
+      "mae": 0.022519640232203528
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.029848908458882707,
+      "mae": 0.02352874449454248
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.019455230058436402,
+      "mae": 0.014911280662927306
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.015068342910091114,
+      "mae": 0.0121395485373796
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.004739521226884811,
+      "mae": 0.0024847820828290427
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.0030289993822798,
+      "mae": 0.001984824057435614
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.008936052350718367,
+      "mae": 0.006802532767760569
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.00555042056464968,
+      "mae": 0.00395680150948465
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03131274647396555,
+      "mae": 0.025433688336052
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.023495835120278488,
+      "mae": 0.018554255468770865
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.022778329053712958,
+      "mae": 0.017845674717391378
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.013532611487066535,
+      "mae": 0.010804702807508879
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.005906778994574728,
+      "mae": 0.002906042463728229
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.002752669253069468,
+      "mae": 0.001641511655761858
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.00725439208359259,
+      "mae": 0.005573163250810467
+    },
+    {
+      "pilot_n": 32,
+      "seed": 4004,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004265905609760718,
+      "mae": 0.003193315963726494
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.036157923418873285,
+      "mae": 0.028089086490217595
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.027811022122454954,
+      "mae": 0.023442973913624886
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.018758427580029317,
+      "mae": 0.01401854777112021
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.016016494412912165,
+      "mae": 0.013048648695985324
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.004688805609557359,
+      "mae": 0.002412583266341243
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.0026656210791281974,
+      "mae": 0.0018954839999787468
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.006425038182507932,
+      "mae": 0.004755228965077554
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004675311050244762,
+      "mae": 0.0034513980033807484
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03349234469611991,
+      "mae": 0.025887005324475465
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.028390994026014218,
+      "mae": 0.02247636175714433
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.017964070348501265,
+      "mae": 0.013903048867214237
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.014887408256173972,
+      "mae": 0.011029212666035163
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0048226942778981825,
+      "mae": 0.002571806627747719
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.004010246450394808,
+      "mae": 0.002325500543811359
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.008136210907137216,
+      "mae": 0.005972841349721421
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.007404420847030641,
+      "mae": 0.0052097384899389
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03601920430009505,
+      "mae": 0.0284865195886232
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.029356272347165004,
+      "mae": 0.024282166566699744
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.024336009144495123,
+      "mae": 0.018308628723316362
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01591064729811146,
+      "mae": 0.01297220779961208
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0030419180158139138,
+      "mae": 0.0021447051449649764
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.00395524409564463,
+      "mae": 0.002613951941020783
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007811521815876124,
+      "mae": 0.00618768713145982
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.005525909239243907,
+      "mae": 0.004202784927329045
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03372131491245151,
+      "mae": 0.02658902248949744
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.02227752324023784,
+      "mae": 0.01752071501687169
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.017614079585557586,
+      "mae": 0.013239750886859835
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.01370192274308268,
+      "mae": 0.010110924488690219
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.004518429909232864,
+      "mae": 0.0023263707870501108
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.002768983609619258,
+      "mae": 0.0017546200440847295
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.0064234599544176025,
+      "mae": 0.004909314183460087
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.0062417945197081265,
+      "mae": 0.004424995213048533
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.036390366718038,
+      "mae": 0.0287674453179352
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.023520068499742017,
+      "mae": 0.018341109817847607
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.016976949146739074,
+      "mae": 0.012746452234569005
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.014300214630823063,
+      "mae": 0.011207922870817127
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.005913309569064614,
+      "mae": 0.002587528731237399
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.002537433409169839,
+      "mae": 0.0017552666147821563
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007264616730111735,
+      "mae": 0.005477008866728284
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4005,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004672397409922731,
+      "mae": 0.003547256995225327
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03596367976833377,
+      "mae": 0.027233312835451218
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.023667282964878633,
+      "mae": 0.01817565767094493
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.021967179239886146,
+      "mae": 0.017796391048177613
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.013247684853085464,
+      "mae": 0.010604060393816329
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.005387361778698463,
+      "mae": 0.0030151758642750783
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.0029862461849473167,
+      "mae": 0.0026288814772851723
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007981444102389074,
+      "mae": 0.006169958847749507
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "SOBOL",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.004391257970274155,
+      "mae": 0.003352516149170694
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03589571828404008,
+      "mae": 0.028694614926353102
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.02976927188010377,
+      "mae": 0.02337053847499192
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.017334317092198775,
+      "mae": 0.013571718377788783
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.015348433332743465,
+      "mae": 0.011460593745869118
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.0033274387124688997,
+      "mae": 0.0024786669535387766
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.004104909753757253,
+      "mae": 0.002645611741463652
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.010101222436107697,
+      "mae": 0.007631176437716924
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "DIRECT",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.009309215548814668,
+      "mae": 0.007103004516102368
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03533934258820348,
+      "mae": 0.027733311217743906
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.027226994599171744,
+      "mae": 0.02147668234072626
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.026319362889461254,
+      "mae": 0.02006508381164167
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.025162005388642418,
+      "mae": 0.01891644207556965
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.005414262917724891,
+      "mae": 0.0027986176415288368
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.0046349643154614375,
+      "mae": 0.0027654125919798376
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007950009066595836,
+      "mae": 0.0063852629382745345
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "GP",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.009071795649635776,
+      "mae": 0.006161094834096731
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03639136341114166,
+      "mae": 0.02852409470826387
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.02473944418348017,
+      "mae": 0.020149100916460154
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.0204255179504157,
+      "mae": 0.015856839641637636
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.0142629711758375,
+      "mae": 0.01121682023542235
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.003491773254616414,
+      "mae": 0.002359781972336351
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.002127611321214017,
+      "mae": 0.0015857034921646085
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.006797738023559581,
+      "mae": 0.005456679242197422
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "POWER_DIAG",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.005757967867876687,
+      "mae": 0.004329042464960365
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "fixed",
+      "rmse": 0.03420381961026361,
+      "mae": 0.026788760058116166
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "gravel",
+      "estimator": "ridge",
+      "rmse": 0.02357658215363804,
+      "mae": 0.01978071254678071
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "fixed",
+      "rmse": 0.019655906235945077,
+      "mae": 0.015116923587484052
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "brick",
+      "estimator": "ridge",
+      "rmse": 0.012510906207460626,
+      "mae": 0.010094909727631603
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "fixed",
+      "rmse": 0.006008691180445844,
+      "mae": 0.002838701015425612
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "cell",
+      "estimator": "ridge",
+      "rmse": 0.002857377082821404,
+      "mae": 0.0021067069249693267
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "fixed",
+      "rmse": 0.007106215893593725,
+      "mae": 0.005508500795112922
+    },
+    {
+      "pilot_n": 96,
+      "seed": 4006,
+      "method": "COSI",
+      "test_scene": "microaneurysms",
+      "estimator": "ridge",
+      "rmse": 0.003987187706661246,
+      "mae": 0.0030244103877339517
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+A01 16 SOBOL:0.0330/0.0276 DIRECT:0.0395/0.0327 GP:0.0435/0.0396 POWER_DIAG:0.0387/0.0282 COSI:0.0365/0.0333
+A02 16 SOBOL:0.0385/0.0349 DIRECT:0.0416/0.0365 GP:0.0408/0.0491 POWER_DIAG:0.0386/0.0385 COSI:0.0347/0.0297
+A03 32 SOBOL:0.0407/0.0431 DIRECT:0.0397/0.0407 GP:0.0412/0.0440 POWER_DIAG:0.0376/0.0392 COSI:0.0384/0.0319
+A04 32 SOBOL:0.0360/0.0362 DIRECT:0.0386/0.0378 GP:0.0387/0.0468 POWER_DIAG:0.0380/0.0313 COSI:0.0356/0.0266
+A05 96 SOBOL:0.0387/0.0292 DIRECT:0.0378/0.0296 GP:0.0392/0.0374 POWER_DIAG:0.0392/0.0237 COSI:0.0372/0.0225
+A06 96 SOBOL:0.0376/0.0229 DIRECT:0.0345/0.0293 GP:0.0374/0.0302 POWER_DIAG:0.0376/0.0193 COSI:0.0339/0.0241
+FREEZE c686157283f0d617cf05b55d02e69ee2e481b945045fbfadc2371d57b8185a22
+SUMMARY {
+  "fixed": {
+    "SOBOL": {
+      "unweighted_scene_macro_rmse": 0.016818310822179286,
+      "by_scene": {
+        "gravel": 0.03596248791649298,
+        "brick": 0.01941174461059889,
+        "cell": 0.004615902778370804,
+        "microaneurysms": 0.0072831079832544774
+      }
+    },
+    "DIRECT": {
+      "unweighted_scene_macro_rmse": 0.018166530602211926,
+      "by_scene": {
+        "gravel": 0.03648595191298488,
+        "brick": 0.02138747153202142,
+        "cell": 0.005483544964695997,
+        "microaneurysms": 0.009309153999145399
+      }
+    },
+    "GP": {
+      "unweighted_scene_macro_rmse": 0.020009309475130823,
+      "by_scene": {
+        "gravel": 0.03901130907445496,
+        "brick": 0.025101527835012866,
+        "cell": 0.00758955424973028,
+        "microaneurysms": 0.008334846741325194
+      }
+    },
+    "POWER_DIAG": {
+      "unweighted_scene_macro_rmse": 0.016715703427866793,
+      "by_scene": {
+        "gravel": 0.03482645617132762,
+        "brick": 0.020911265334205245,
+        "cell": 0.0040895744053864955,
+        "microaneurysms": 0.007035517800547818
+      }
+    },
+    "COSI": {
+      "unweighted_scene_macro_rmse": 0.01682081725341484,
+      "by_scene": {
+        "gravel": 0.03487950775225348,
+        "brick": 0.020606493224125538,
+        "cell": 0.004812663698746563,
+        "microaneurysms": 0.006984604338533778
+      }
+    }
+  },
+  "ridge": {
+    "SOBOL": {
+      "unweighted_scene_macro_rmse": 0.014061049043205164,
+      "by_scene": {
+        "gravel": 0.031093192564756844,
+        "brick": 0.015490154089635971,
+        "cell": 0.004313287318410787,
+        "microaneurysms": 0.005347562200017052
+      }
+    },
+    "DIRECT": {
+      "unweighted_scene_macro_rmse": 0.01555830672974531,
+      "by_scene": {
+        "gravel": 0.032161862967615244,
+        "brick": 0.01801664624917403,
+        "cell": 0.004581665202838373,
+        "microaneurysms": 0.0074730524993535915
+      }
+    },
+    "GP": {
+      "unweighted_scene_macro_rmse": 0.01752162458511579,
+      "by_scene": {
+        "gravel": 0.03667984847898536,
+        "brick": 0.020178204878546883,
+        "cell": 0.005981697088893603,
+        "microaneurysms": 0.0072467478940372995
+      }
+    },
+    "POWER_DIAG": {
+      "unweighted_scene_macro_rmse": 0.013268379204854913,
+      "by_scene": {
+        "gravel": 0.028112917259054168,
+        "brick": 0.015753117907104434,
+        "cell": 0.003626309821587672,
+        "microaneurysms": 0.005581171831673378
+      }
+    },
+    "COSI": {
+      "unweighted_scene_macro_rmse": 0.012409397250996799,
+      "by_scene": {
+        "gravel": 0.02643434019009154,
+        "brick": 0.015445533541565607,
+        "cell": 0.0033153019512163566,
+        "microaneurysms": 0.004442413321113693
+      }
+    }
+  }
+}

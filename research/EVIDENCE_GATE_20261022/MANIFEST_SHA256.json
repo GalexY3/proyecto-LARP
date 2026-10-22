@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-22",
+  "files": {
+    "DICTAMEN_EVIDENCE_GATE.md": "36972765af9c71a6c5b0e940ed59d69408bcaf6f009467aad9f784e0bd6418fc",
+    "ERRATA_INSTRUMENTACION.md": "2192ea92a6cf52e7b2383ea9948763c9bf63c27a09b15aae673073ca577ad705",
+    "GP_ALL_POSTHOC.json": "a764dd71bd5560d3685c6a765afc22a6e09865a00172a01f3806924d37a594fb",
+    "HOLDOUT_FREEZE.json": "c686157283f0d617cf05b55d02e69ee2e481b945045fbfadc2371d57b8185a22",
+    "NOTA_AB_METHOD.md": "0460727aa10355cfc15d24d43a5e055839da07238a9f3efd3e45af115a019b48",
+    "PRIORS_APPENDIX.md": "5ab16360639c866569cdbbd23e997c4e37109120e8214eb13e50b295f24d2e0b",
+    "README.md": "d85b653393cecaf1cce8577812b198e31e7d73c0777349cbe6e0fc2b1397ef77",
+    "SOURCE_ACQUISITION_GATE.md": "05ec3706d3342447881c3e29c38f5b51bb5217c10376fe35a6ea813309c028e0",
+    "SUMMARY.json": "8f2ee32e418ff1724c474f8f5b215f058904db26f068d1913a83248d8a44a78a",
+    "TEST_RESULTS.json": "27f0024f882ffefadbaa2f170d16231d0f9e0a87bc5db202951693559969b509",
+    "bench.py": "83ccc7b612b400b314be25f32ce168a334c89cd5ed1d57f9c571e978a33348cf",
+    "dev_ledger.json": "09915149c673d897175d4368c4fe14ac525068b8f61b788e9d169e47466e6eb2",
+    "fig_fixed.png": "324733a05012e7264b6e72f9179d33ebbceef57b368fba516c0cf3582c8e8390",
+    "fig_ridge.png": "0e27dca80440bb830c5e94d31fc3d7fe1198fbfee5f8cf9142f8300a1463a399",
+    "reference/value30_spectral.py": "718301ad29b745052b34f674f5f42105c2ea0aaf9123aaf798151cfb567f63e3",
+    "repair_gp.log": "3b2d591d539082bb11f89200cfef8629869d9e43f0cc619ea13d72aa3af3e982",
+    "repair_gp.py": "141d543fe7e24d517ae2618bdd4ae24782218b253097653ca0c18510d2770143",
+    "run.log": "036d735165f33375990c54014e25de97b46eb42dab044fe1261d536d49872f44",
+    "tests.log": "2705d7e68e90fdc9fe7c885bdd3d115641090eeaa454c0fa3dddf9e85380f807",
+    "tests.py": "e0072e542f59ed60eb41f0d03973a093f849f8f3c1683b3c4c4cd32b725e7d1a"
+  },
+  "freeze_sha256": "c686157283f0d617cf05b55d02e69ee2e481b945045fbfadc2371d57b8185a22",
+  "tests": "6/6 PASS",
+  "replication": "local clean directory replay SHA256 identical for freeze, summary and all test results. CLEAN_CLONE_NOT_VERIFIED for another machine."
+}
