@@ -8,7 +8,14 @@ def digest(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def write_new(p,obj):
     text=json.dumps(obj,ensure_ascii=False,indent=2,allow_nan=False)+'\n'
     with p.open('x',encoding='utf-8') as f:f.write(text)
-def sources(folder):return [folder/'source.py',folder/'protocol.json',BASE/'common.py',BASE/'manage.py']
+def sources(folder):
+    paths=[folder/'source.py',folder/'protocol.json',BASE/'common.py',BASE/'manage.py']
+    protocol=json.loads((folder/'protocol.json').read_text(encoding='utf-8'))
+    for rel in protocol.get('additional_sources',[]):
+        p=(ROOT/rel).resolve()
+        if not p.is_relative_to(ROOT.resolve()) or not p.is_file():raise ValueError(f'Invalid additional source: {rel}')
+        if p not in paths:paths.append(p)
+    return paths
 def geohashes():return {p.relative_to(ROOT).as_posix():digest(p) for p in sorted((ROOT/'data/AB06_REALDATA_20261022').glob('geo_*.npz'))}
 def verify(folder):
     lock=json.loads((folder/'freeze.json').read_text(encoding='utf-8'))

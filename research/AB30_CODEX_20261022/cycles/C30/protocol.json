@@ -1,0 +1,39 @@
+{
+  "id": "C30",
+  "parent_id": "C29",
+  "short_name": "fresh-geometry-replication",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Se mantienen cuatro direcciones de efecto preespecificadas en dos realizaciones nuevas, sin filtrar por resultados espectrales?",
+  "B": [
+    "El patrón común/contraste y el déficit nativo 3D se transportan dentro del mismo generador",
+    "Los cuatro patrones históricos son específicos de cuatro realizaciones"
+  ],
+  "C": "Generar dos semillas nuevas N128 con receta original MHU/LOCAL (600 pasos) y CVT, Sobol, random; retener todos los fallos de predicción. Sin entrenamiento ni selección de geometría.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Se mantienen cuatro direcciones de efecto preespecificadas en dos realizaciones nuevas, sin filtrar por resultados espectrales?",
+  "null": "Los cuatro patrones históricos son específicos de cuatro realizaciones",
+  "predicted_discriminant": "Por semilla: S_xy unión MHU<CVT; riesgo XY balanced/rho0 mean MHU>CVT; XY counts/rho1 mean MHU<CVT; riesgo GLS 3D balanced/rho0/sigma=.03 MHU>CVT.",
+  "falsification_rule": "Cualquier signo invertido refuta la correspondiente predicción en esa realización. No descartar, resembrar ni aumentar iteraciones. No p-valor con n=2.",
+  "budget": {
+    "wall_seconds": 300,
+    "threads": 2
+  },
+  "rng_seeds": [
+    6023001,
+    6023002
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py",
+    "src/AB06_REALDATA_20261022/scale3d_geometry_v2.py",
+    "src/AB06_REALDATA_20261022/scale3d_geometry.py",
+    "src/AB06_REALDATA_20261022/cycle2_geometry.py"
+  ],
+  "holdout_status": "Two new uninspected geometric seeds selected before generation, same historically selected recipe; within-generator replication, not external confirmation.",
+  "selection_exposure": "Question and task family selected using C11-C29; new geometries have not been generated or inspected before this freeze. Four correlated directional checks, not four independent studies.",
+  "additional_sources": [
+    "src/AB06_REALDATA_20261022/scale3d_geometry_v2.py",
+    "src/AB06_REALDATA_20261022/scale3d_geometry.py",
+    "src/AB06_REALDATA_20261022/cycle2_geometry.py"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C29",
+  "E": "Eliminar un tipo entero deja una cota irreducible: con medias independientes, riesgo óptimo ~0.040007 frente a ~9.19e-6 con todos los tipos. La cota informativa es 0.04; con correlación 0.5, es 0.024. Si las medias son idénticas, desaparece esta cota.",
+  "F": "La correlación de fluctuaciones espaciales no permite recuperar medias independientes ausentes. La correlación entre medias es un supuesto separado. No es un ensayo de lenguas ni de redes neuronales.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La geometría no crea información ausente; no hay fundamento para prometer MHU multilingüe sin pérdida. Las conclusiones dependen de covarianza, tarea y lector.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE una sola réplica prospectiva en dos geometrías nuevas del mismo generador; después cerrar los treinta ciclos.",
+  "options_rejected": [
+    "Escalar una red por analogía con esta cuadratura",
+    "Contar nuevas realizaciones gaussianas sobre las mismas cuatro geometrías como validación externa"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C30"
+}
