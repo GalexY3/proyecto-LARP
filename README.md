@@ -15,3 +15,11 @@ Se usa un solo patrón geométrico original por algoritmo y nuevos mundos sinté
 
 AB: https://github.com/GalexY3/Metodologia-AB
 LARP privado: https://github.com/GalexY3/proyecto-LARP
+
+## Investigaciones añadidas el 22-10-2026 (rama de auditoría)
+
+- [AB4 — MHU/LOCAL/COSI, cuatro ciclos exploratorios](research/AB4_COSI_20261022/LARP_AB4_DICTAMEN_20261022.md): scripts, JSON y manifiesto de integridad. COSI es cuadratura por kernels matriciales; no hay ventaja neural ni originalidad 2/3 demostrada.
+- [BR30-A — 30 decisiones con branching sintético acotado](research/AB30_ADAPTIVE_20261022/DICTAMEN.md): `run_ab30.py`, ledger secuencial original, 30 comparaciones y auditoría posterior de optimización. El `repair_optim.json` NO añade otros 30 ciclos, y no constituye confirmación.
+- [Priors acumulativos nuevos](docs/02_PRIORS_LARP.md): BR30-A01..A05; hipótesis previas no eliminadas.
+
+**Alcance:** proxies 3D periódicos, N=60 en BR30, no Scale3D original ni dataset 3D real; comparadores/kernel con presupuesto total no igualado; ningún modelo neuronal nuevo entrenado. Esta rama no altera la implementación estable ni los datos históricos.
