@@ -1,0 +1,3748 @@
+{
+  "id": "C15",
+  "started_utc": "2026-10-22T14:36:44.010433+00:00",
+  "status": "COMPLETED",
+  "inference": "exploratory",
+  "result": {
+    "rows": [
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0002238050751030162,
+          "band": 1.0365233500073179e-06,
+          "gls": 1.0365213875433315e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.01567389818026821,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00013032250885030308,
+          "band": 7.870721036921567e-07,
+          "gls": 7.870715370477135e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.007451567421073335,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0003248371263850673,
+          "band": 0.00010365233500076753,
+          "gls": 0.00010363306671232471
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.015487013707976782,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00020766625885030313,
+          "band": 7.870721036924087e-05,
+          "gls": 7.87016445606891e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.007381050376820353,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0011412577428056843,
+          "band": 0.0009328710150069103,
+          "gls": 0.0009315023738434805
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.014185694762649748,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008326662588503035,
+          "band": 0.0007083648933231698,
+          "gls": 0.0007079681284271025
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.00688800487410135,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 8.278466879870091e-05,
+          "band": 1.0365233500063184e-06,
+          "gls": 1.0210367988817633e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0005007500748650529,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 9.483322873734751e-06,
+          "band": 7.870721036915249e-07,
+          "gls": 7.813045337624625e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 6.980321595184691e-05,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.000183816720080752,
+          "band": 0.00010365233500076614,
+          "gls": 0.00010210364827628553
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.000500440314036732,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 8.68270728737348e-05,
+          "band": 7.870721036924027e-05,
+          "gls": 7.813044999414322e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 6.975992503299722e-05,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.001000237336501369,
+          "band": 0.0009328710150069096,
+          "gls": 0.0009189305482943717
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0004979511916385349,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007118270728737352,
+          "band": 0.0007083648933231689,
+          "gls": 0.0007031738053539504
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 6.941205895172331e-05,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00043303622565193597,
+          "band": 1.0603435642961544e-06,
+          "gls": 1.0603361501983896e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.03900967601446137,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00012469482180054597,
+          "band": 7.907410572508114e-07,
+          "gls": 7.907395664844859e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.012146645100141962,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0005340682769339874,
+          "band": 0.00010603435642958995,
+          "gls": 0.00010596242646201436
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.0383121085459992,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.000202038571800546,
+          "band": 7.907410572509418e-05,
+          "gls": 7.905961397183144e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.011963058839442153,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0013504888933546044,
+          "band": 0.000954309207866308,
+          "gls": 0.0009495691218423502
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.03385610880113732,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008270385718005466,
+          "band": 0.0007116669515258472,
+          "gls": 0.0007106984082303835
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.010771069483212159,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 9.558423129039082e-05,
+          "band": 1.0603435642956379e-06,
+          "gls": 1.0211195681279148e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0005818545883833348,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 1.686145485308632e-06,
+          "band": 7.907410572512496e-07,
+          "gls": 7.812556451110069e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 7.22574208888993e-06,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00019661628257244265,
+          "band": 0.00010603435642958994,
+          "gls": 0.00010211191988635753
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.0005814927510343626,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 7.90298954853087e-05,
+          "band": 7.907410572509453e-05,
+          "gls": 7.812556416245865e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 7.221279470615016e-06,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0010130368989930596,
+          "band": 0.0009543092078663075,
+          "gls": 0.0009190046085168163
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0005785852514794687,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007040298954853093,
+          "band": 0.000711666951525848,
+          "gls": 0.0007031300522483726
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 7.1854199077403536e-06,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00012957139522172284,
+          "band": 1.026657540685519e-06,
+          "gls": 1.0266571829722343e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.006008091734228893,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 9.960094401005857e-05,
+          "band": 7.845888803420816e-07,
+          "gls": 7.845887316575208e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.004273576521626632,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00023060344650377402,
+          "band": 0.00010266575406858948,
+          "gls": 0.00010266220117853308
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.005973627943191673,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00017694469401005857,
+          "band": 7.845888803421051e-05,
+          "gls": 7.845740951617672e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0042548418070618155,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.001047024062924391,
+          "band": 0.0009239917866173078,
+          "gls": 0.0009237188138525564
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.005711239496850817,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008019446940100592,
+          "band": 0.0007061299923078971,
+          "gls": 0.0007060153647351361
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.004110740956638104,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00022247789238310036,
+          "band": 1.0266575406850995e-06,
+          "gls": 1.0219550318817324e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0014005147123576922,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00018331821767500185,
+          "band": 7.845888803416284e-07,
+          "gls": 7.824425928193715e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.0015265188087956183,
+        "unbiased_residual": 1.3877787807814457e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00032350994366515143,
+          "band": 0.0001026657540685889,
+          "gls": 0.00010219541108526089
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.0013996122078350215,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00026066196767500174,
+          "band": 7.84588880342103e-05,
+          "gls": 7.824418136711411e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0015255214990603783,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0011399305600857687,
+          "band": 0.000923991786617307,
+          "gls": 0.0009197520407119684
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0013923620720370788,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008856619676750025,
+          "band": 0.0007061299923078969,
+          "gls": 0.0007041919995549306
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.0015175104781235405,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.002567850982668532,
+          "band": 1.5647139750268747e-06,
+          "gls": 1.5641757375959349e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.5327155695343957,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0015218428151697844,
+          "band": 9.116035614081701e-07,
+          "gls": 9.11503099459657e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.16672396730836092,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.002668883033950583,
+          "band": 0.00015647139750270473,
+          "gls": 0.00015170712042899843
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.4865584467390718,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.001599186565169784,
+          "band": 9.116035614078973e-05,
+          "gls": 9.026990782546923e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.15545482016600598,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.003485303650371201,
+          "band": 0.0014082425775243453,
+          "gls": 0.0012058964674905664
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.31293594201751906,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0022241865651697846,
+          "band": 0.0008204432052671068,
+          "gls": 0.0007822396013949008
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.1125185442060812,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.001782181528909182,
+          "band": 1.5647139750277247e-06,
+          "gls": 1.0332335988378425e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.01245223656187,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0011201114352212998,
+          "band": 9.116035614084313e-07,
+          "gls": 7.892383930580788e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.010225143114340751,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0018832135801912333,
+          "band": 0.0001564713975027053,
+          "gls": 0.00010332246040753128
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.012443422710432417,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0011974551852212997,
+          "band": 9.116035614078987e-05,
+          "gls": 7.89232686361143e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.01021783854226288,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0026996341966118503,
+          "band": 0.0014082425775243457,
+          "gls": 0.0009298371464462759
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.012372656114338687,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0018224551852213003,
+          "band": 0.0008204432052671068,
+          "gls": 0.0007102681849804554
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.010159196416647864,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.010371067508322661,
+          "band": 4.340095645076895e-06,
+          "gls": 4.337036578177637e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 3.2498060347297386,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.008897762910756682,
+          "band": 2.066590726591484e-06,
+          "gls": 2.065711752445271e-06
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 1.6441110431299468,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.010472099559604712,
+          "band": 0.0004340095645075268,
+          "gls": 0.0004065010662102873
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 2.983251358766369,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.008975106660756682,
+          "band": 0.00020665907265919674,
+          "gls": 0.00019865354145235615
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 1.542765330590158,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.01128852017602533,
+          "band": 0.003906086080567729,
+          "gls": 0.0026515002094425946
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 1.8868563919824197,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.009600106660756683,
+          "band": 0.0018599316539327762,
+          "gls": 0.00147300748533563
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 1.094943979144007,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00518717669286857,
+          "band": 4.340095645079501e-06,
+          "gls": 1.0619330952875137e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.040574501847621125,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0021897494834240685,
+          "band": 2.0665907265924795e-06,
+          "gls": 7.97067220312539e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.02024604200004987,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.005288208744150621,
+          "band": 0.0004340095645075289,
+          "gls": 0.00010618999696958672
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.040542042508912246,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0022670932334240687,
+          "band": 0.00020665907265919766,
+          "gls": 7.970557824031464e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0202314014760272,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.006104629360571238,
+          "band": 0.003906086080567731,
+          "gls": 0.0009554708149573949
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.04028165628252611,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0028920932334240692,
+          "band": 0.001859931653932778,
+          "gls": 0.000717267567998536
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.020113874486806793,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.000137707049584841,
+          "band": 1.0261725532332935e-06,
+          "gls": 1.0261720448390764e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.005532711153777736,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00014475094556875125,
+          "band": 7.85216639295183e-07,
+          "gls": 7.852164464936566e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.005077051511880315,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00023873910086689222,
+          "band": 0.00010261725532333964,
+          "gls": 0.00010261247182133866
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.005486336405528647,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0002220946955687512,
+          "band": 7.852166392949221e-05,
+          "gls": 7.851979602790125e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.005053389157135824,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0010551597172875093,
+          "band": 0.0009235552979100586,
+          "gls": 0.0009232585336241864
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.005210103228921792,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008470946955687519,
+          "band": 0.0007066949753654287,
+          "gls": 0.0007065632972417768
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.004890022743860412,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 6.235718696213672e-05,
+          "band": 1.0261725532333223e-06,
+          "gls": 1.020914547317929e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.00038095734903187406,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 2.277432701080609e-05,
+          "band": 7.852166392952622e-07,
+          "gls": 7.813883062349798e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.00017703198077412274,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00016338923824418813,
+          "band": 0.00010261725532333975,
+          "gls": 0.0001020914303421022
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.00038071835760788986,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00010011807701080613,
+          "band": 7.852166392949247e-05,
+          "gls": 7.813882201398673e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0001769217790299482,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0009798098546648054,
+          "band": 0.0009235552979100588,
+          "gls": 0.0009188211093479016
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.00037879807182217284,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007251180770108069,
+          "band": 0.000706694975365429,
+          "gls": 0.0007032487755076768
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.00017603627758489004,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00042856595202408034,
+          "band": 1.065947281761543e-06,
+          "gls": 1.0659353819148135e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.044496290736144584,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00011790248702783624,
+          "band": 7.912595619568742e-07,
+          "gls": 7.912572815569695e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.012809320392920931,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0005295980033061315,
+          "band": 0.00010659472817617901,
+          "gls": 0.0001064810231543352
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.043393770443215685,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00019524623702783624,
+          "band": 7.912595619567406e-05,
+          "gls": 7.910413452431002e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.01253292191116806,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0013460186197267487,
+          "band": 0.0009593525535856143,
+          "gls": 0.0009522442259171235
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.036768664217869285,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008202462370278368,
+          "band": 0.0007121336057610674,
+          "gls": 0.0007107571792163729
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.010854654885508186,
+        "unbiased_residual": 2.7755575615628914e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 4.652586732287092e-05,
+          "band": 1.0659472817631211e-06,
+          "gls": 1.0208117166634226e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.00028019492100095356,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 1.6707494792898983e-06,
+          "band": 7.912595619569821e-07,
+          "gls": 7.812555788267399e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 7.140898226953851e-06,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00014755791860492188,
+          "band": 0.00010659472817618035,
+          "gls": 0.00010208115388425858
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.0002800206766633284,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 7.901449947928989e-05,
+          "band": 7.912595619567448e-05,
+          "gls": 7.812555753644118e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 7.136466446899803e-06,
+        "unbiased_residual": 2.7755575615628914e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0009639785350255387,
+          "band": 0.0009593525535856159,
+          "gls": 0.0009187290989882499
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0002786205595055602,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007040144994792904,
+          "band": 0.0007121336057610678,
+          "gls": 0.0007031299927895561
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 7.100856257657995e-06,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00013162572666640545,
+          "band": 1.0305723911802124e-06,
+          "gls": 1.0305681867753358e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.009840433764245926,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00014016002253037526,
+          "band": 7.858441481668361e-07,
+          "gls": 7.858432826668017e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.005879401813506213,
+        "unbiased_residual": 2.220446049250313e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00023265777794845668,
+          "band": 0.00010305723911809036,
+          "gls": 0.00010301819084567823
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.009461924637176544,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0002175037725303753,
+          "band": 7.858441481673298e-05,
+          "gls": 7.857631703033108e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0057768579882375715,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0010490783943690738,
+          "band": 0.0009275151520628206,
+          "gls": 0.0009254754692294956
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.007623821583538026,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008425037725303758,
+          "band": 0.0007072597333506009,
+          "gls": 0.000706813738412887
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.0052462057427726805,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 5.176650332274329e-05,
+          "band": 1.0305723911802084e-06,
+          "gls": 1.0208503127398363e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0003180147169612457,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 3.6016486389992534e-05,
+          "band": 7.858441481670491e-07,
+          "gls": 7.81456927117369e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.00026486671023229214,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0001527985546047944,
+          "band": 0.00010305723911809044,
+          "gls": 0.00010208501066431573
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.00031781276549169846,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00011336023638999257,
+          "band": 7.858441481673315e-05,
+          "gls": 7.81456805465603e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.00026471099597169534,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.000969219171025411,
+          "band": 0.000927515152062821,
+          "gls": 0.0009187636057207444
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.00031619022701434574,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007383602363899928,
+          "band": 0.0007072597333506011,
+          "gls": 0.0007033102449388428
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.00026345946857642133,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0017682684021831166,
+          "band": 1.5199348289990607e-06,
+          "gls": 1.5195839126305981e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.48902061713514056,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0010630795974588608,
+          "band": 8.934034590022416e-07,
+          "gls": 8.933379134990282e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.14347252927875598,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0018693004534651673,
+          "band": 0.00015199348289992613,
+          "gls": 0.00014874274033137538
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.4575108696642096,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0011404233474588605,
+          "band": 8.934034590026027e-05,
+          "gls": 8.873264810695897e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.13577789576907473,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0026857210698857845,
+          "band": 0.001367941346099336,
+          "gls": 0.0012021160528272513
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.3088199648826617,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0017654233474588609,
+          "band": 0.0008040631131023457,
+          "gls": 0.0007728653656782257
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.09918629785347655,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0030477199531075035,
+          "band": 1.519934828999009e-06,
+          "gls": 1.0406538579754697e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.019723252494965315,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0011582463153175012,
+          "band": 8.934034590023111e-07,
+          "gls": 7.885802014232654e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.009382657821779494,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.003148752004389554,
+          "band": 0.0001519934828999261,
+          "gls": 0.00010406406090869345
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.019710270080490533,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0012355900653175011,
+          "band": 8.934034590026028e-05,
+          "gls": 7.885755657680108e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.009376724183053575,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.003965172620810172,
+          "band": 0.0013679413460993357,
+          "gls": 0.0009364807693920225
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.019605989643239896,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0018605900653175015,
+          "band": 0.0008040631131023457,
+          "gls": 0.000709684489705612
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.009329052025759399,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.009892721073507353,
+          "band": 2.8488581789999894e-06,
+          "gls": 2.847575352349166e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 1.7903022486949118,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00799304183021985,
+          "band": 1.4294402214804186e-06,
+          "gls": 1.429150238509475e-06
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.8293123052921278,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.009993753124789404,
+          "band": 0.00028488581789999206,
+          "gls": 0.0002732888367815308
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 1.6779219562552883,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00807038558021985,
+          "band": 0.00014294402214800936,
+          "gls": 0.00014028769806951718
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.7956825352898196,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.01081017374121002,
+          "band": 0.0025639723610999445,
+          "gls": 0.002016105519388309
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 1.1950619067764343,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.008695385580219851,
+          "band": 0.001286496199332084,
+          "gls": 0.0011515299815685357
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.6377315293419175,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.014083238970425642,
+          "band": 2.848858178999364e-06,
+          "gls": 1.1356709253874704e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.11282924761652735,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.011101736221699215,
+          "band": 1.4294402214793113e-06,
+          "gls": 8.64020708928727e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.10594650742877043,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.014184271021707693,
+          "band": 0.0002848858178999918,
+          "gls": 0.00011355735843011976
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.1127338643453899,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.011179079971699216,
+          "band": 0.00014294402214800835,
+          "gls": 8.639548061045352e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.10586215181380498,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.015000691638128309,
+          "band": 0.002563972361099943,
+          "gls": 0.001021313870631133
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.11196916566399584,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.011804079971699216,
+          "band": 0.0012864961993320828,
+          "gls": 0.0007770836845619525
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.10518568471033252,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00013580177290185445,
+          "band": 1.029985691893845e-06,
+          "gls": 1.029981940540543e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.009265978663038021,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00013040251339178007,
+          "band": 7.853114031001653e-07,
+          "gls": 7.853106508781131e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.005197633123984691,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00023683382418390595,
+          "band": 0.00010299856918937451,
+          "gls": 0.00010296350891238876
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.008926103447072897,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0002077462633917801,
+          "band": 7.853114031003811e-05,
+          "gls": 7.852407284825516e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.005108132457665837,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.001053254440604523,
+          "band": 0.0009269871227043687,
+          "gls": 0.000925100543438541
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.007215616103379396,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008327462633917807,
+          "band": 0.0007067802627903454,
+          "gls": 0.0007063849544546794
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.004636379668877311,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 6.098044627655746e-05,
+          "band": 1.0299856918947575e-06,
+          "gls": 1.020893136446033e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.00035997711265345345,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 1.5421762460694242e-05,
+          "band": 7.853114031010283e-07,
+          "gls": 7.813401178107237e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.00011535079772628798,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00016201249755860912,
+          "band": 0.00010299856918937531,
+          "gls": 0.00010208929137137367
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.0003597588601575996,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 9.276551246069441e-05,
+          "band": 7.853114031003914e-05,
+          "gls": 7.813400629066294e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.00011528052048559445,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0009784331139792264,
+          "band": 0.0009269871227043694,
+          "gls": 0.000918802011350349
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0003580048710098982,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007177655124606948,
+          "band": 0.0007067802627903465,
+          "gls": 0.0007032056595138892
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.00011471575308696913,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0002606808465857901,
+          "band": 1.0426337881737003e-06,
+          "gls": 1.042608765890306e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.021638841470076997,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 9.44837192603453e-05,
+          "band": 7.873851745838584e-07,
+          "gls": 7.873804465199514e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.007846971545537595,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0003617128978678414,
+          "band": 0.00010426337881738183,
+          "gls": 0.00010406531350530174
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.019722544112606766,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00017182746926034536,
+          "band": 7.873851745839694e-05,
+          "gls": 7.870087350043801e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.007371180805606281,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0011781335142884582,
+          "band": 0.0009383704093564366,
+          "gls": 0.0009321264640633375
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.01486518135441095,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007968274692603459,
+          "band": 0.0007086466571255732,
+          "gls": 0.0007074109078697328
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.006095513414731135,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 3.412900822020881e-05,
+          "band": 1.0426337881739244e-06,
+          "gls": 1.0207335564796392e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.00020360676806951972,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 3.540884851238149e-06,
+          "band": 7.873851745844033e-07,
+          "gls": 7.81267251259117e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 2.208161166961098e-05,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00013516105950226001,
+          "band": 0.00010426337881738192,
+          "gls": 0.0001020733427437186
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.00020348032103911784,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 8.088463485123817e-05,
+          "band": 7.873851745839733e-05,
+          "gls": 7.812672405877757e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 2.2067952352600173e-05,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.000951581675922877,
+          "band": 0.0009383704093564364,
+          "gls": 0.0009186591514698093
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.00020246426127323858,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007058846348512386,
+          "band": 0.0007086466571255736,
+          "gls": 0.0007031404393530475
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 2.195819100103691e-05,
+        "unbiased_residual": 2.220446049250313e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0001398846944937564,
+          "band": 1.0559892442554275e-06,
+          "gls": 1.0558856436106763e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.03464868218534867,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00011989618205339435,
+          "band": 7.898542219053782e-07,
+          "gls": 7.898350382081985e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.010988848906493986,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00024091674577580774,
+          "band": 0.00010559892442554562,
+          "gls": 0.00010483676408811798
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.02728188857108904,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00019723993205339436,
+          "band": 7.898542219053869e-05,
+          "gls": 7.884414768244663e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.00920509033531669,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0010573373621964248,
+          "band": 0.0009503903198299103,
+          "gls": 0.0009304012274398714
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.01298680685668363,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.000822239932053395,
+          "band": 0.0007108687997148492,
+          "gls": 0.000707134355230643
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.005702194105803304,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0001546716132079357,
+          "band": 1.0559892442549432e-06,
+          "gls": 1.0214532603706118e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0009088353000268334,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00015010687207480977,
+          "band": 7.898542219050076e-07,
+          "gls": 7.821710786277543e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.0011789806435256178,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0002557036644899866,
+          "band": 0.00010559892442554483,
+          "gls": 0.00010214527012382326
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.000908287413442066,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00022745062207481004,
+          "band": 7.89854221905384e-05,
+          "gls": 7.821705098351986e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0011782525890540185,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.001072124280910604,
+          "band": 0.0009503903198299101,
+          "gls": 0.0009193033870582584
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0009038843931039597,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008524506220748109,
+          "band": 0.0007108687997148487,
+          "gls": 0.000703949345529944
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.0011724025314758801,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00160049449143632,
+          "band": 1.134156371062606e-06,
+          "gls": 1.1341366387199534e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.11132581996008861,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0014044673384691303,
+          "band": 8.360116036740047e-07,
+          "gls": 8.360065347950259e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.07008836453763312,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0017015265427183714,
+          "band": 0.00011341563710627755,
+          "gls": 0.00011322533520990419
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.10948041176432954,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00148181108846913,
+          "band": 8.360116036739414e-05,
+          "gls": 8.355185153328011e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0694636996259852,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.002517947159138988,
+          "band": 0.0010207407339564998,
+          "gls": 0.0010085025940106823
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.09802071652961786,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0021068110884691306,
+          "band": 0.0007524104433065486,
+          "gls": 0.0007490538125493868
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.06532097784801683,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0017217438514581383,
+          "band": 1.1341563710639848e-06,
+          "gls": 1.032143782080198e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.011384339220009698,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0013632278455212113,
+          "band": 8.360116036747086e-07,
+          "gls": 7.904369382818454e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.011759281000762067,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0018227759027401901,
+          "band": 0.00011341563710627871,
+          "gls": 0.00010321359711659486
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.011376685406186526,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0014405715955212112,
+          "band": 8.360116036739483e-05,
+          "gls": 7.90430772064072e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.01175138824201194,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0026391965191608067,
+          "band": 0.0010207407339565015,
+          "gls": 0.0009288659144598132
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.011315214271327534,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0020655715955212118,
+          "band": 0.0007524104433065491,
+          "gls": 0.0007113431230614885
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.011687997243005954,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.012467645212140503,
+          "band": 7.973597711494768e-06,
+          "gls": 7.953671687976466e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 6.793699990426274,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.010530372868247206,
+          "band": 2.7771712325908285e-06,
+          "gls": 2.7728993346230466e-06
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 2.5493111483174995,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.012568677263422555,
+          "band": 0.0007973597711497026,
+          "gls": 0.0006502142501960411
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 5.371365319476971,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.010607716618247207,
+          "band": 0.0002777171232590629,
+          "gls": 0.00024534538955611166
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 2.1404209863182286,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.013385097879843173,
+          "band": 0.007176237940347331,
+          "gls": 0.003119896897277797
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 2.3968295639418176,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.011232716618247207,
+          "band": 0.002499454109331568,
+          "gls": 0.0015337338294212958
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 1.181310335176954,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.011052908811344513,
+          "band": 7.973597711494646e-06,
+          "gls": 1.1022426745150113e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.08007333704776531,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.009057075451749979,
+          "band": 2.7771712325896197e-06,
+          "gls": 8.447916052917461e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.0813332547734349,
+        "unbiased_residual": 1.3877787807814457e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.011153940862626562,
+          "band": 0.0007973597711497033,
+          "gls": 0.00011021813869689718
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.08001328217427806,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.009134419201749979,
+          "band": 0.0002777171232590611,
+          "gls": 8.447465061115157e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.08127552782273995,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.01197036147904718,
+          "band": 0.00717623794034733,
+          "gls": 0.0009915206037168116
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0795313469818213,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00975941920174998,
+          "band": 0.0024994541093315676,
+          "gls": 0.0007599460122117073
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.08081210625665047,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0002170943888184507,
+          "band": 1.0701733477159285e-06,
+          "gls": 1.0700610248470446e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0485389548720101,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0001329135117389652,
+          "band": 7.927733990573691e-07,
+          "gls": 7.927525736285584e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.014723294244554763,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00031812644010050173,
+          "band": 0.00010701733477161311,
+          "gls": 0.00010614236975892671
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.040075349633185375,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00021025726173896513,
+          "band": 7.927733990576106e-05,
+          "gls": 7.911492768279397e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.012671074339762667,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0011345470565211186,
+          "band": 0.0009631560129445213,
+          "gls": 0.0009374828671530856
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.02069703701205161,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0008352572617389657,
+          "band": 0.0007134960591518534,
+          "gls": 0.0007086887749075362
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.007912924312940328,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00010063657010541308,
+          "band": 1.0701733477155759e-06,
+          "gls": 1.021154599461076e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0006161813385479054,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 1.2767062822161598e-05,
+          "band": 7.927733990574907e-07,
+          "gls": 7.813251644828557e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 9.621053805530799e-05,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00020166862138746428,
+          "band": 0.0001070173347716128,
+          "gls": 0.00010211542065971884
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.0006157963763069318,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 9.011081282216137e-05,
+          "band": 7.927733990576122e-05,
+          "gls": 7.81325117834497e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 9.61508281560608e-05,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0010180892378080816,
+          "band": 0.0009631560129445207,
+          "gls": 0.0009190359448739693
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0006127031303415631,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007151108128221621,
+          "band": 0.0007134960591518534,
+          "gls": 0.0007031922686945226
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 9.56710322099763e-05,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00019420448772427564,
+          "band": 1.0427866209971684e-06,
+          "gls": 1.0427826047769655e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.02180918394616138,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 4.91071574610736e-05,
+          "band": 7.866784486722132e-07,
+          "gls": 7.866773944132858e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.006947064849005757,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0002952365390063267,
+          "band": 0.00010427866209976024,
+          "gls": 0.00010423942949042283
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.021428684125429642,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.00012645090746107355,
+          "band": 7.866784486723563e-05,
+          "gls": 7.865756835579276e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0068168749541470675,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0011116571554269437,
+          "band": 0.000938507958897847,
+          "gls": 0.0009358164465407438
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.018882699234767042,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007514509074610741,
+          "band": 0.0007080106038051227,
+          "gls": 0.0007073155484806826
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.005959891172526266,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 3.461198831557107e-05,
+          "band": 1.0427866209963832e-06,
+          "gls": 1.0207374125917088e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.00020738532240005547,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 1.113291773199719e-06,
+          "band": 7.866784486718993e-07,
+          "gls": 7.812520972085977e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 2.6844270049064534e-06,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00013564403959762225,
+          "band": 0.00010427866209975949,
+          "gls": 0.00010207372806485066
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.00020725603296312123,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 7.845704177319975e-05,
+          "band": 7.866784486723529e-05,
+          "gls": 7.812520958978841e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 2.682749291382791e-06,
+        "unbiased_residual": 1.3877787807814457e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0009520646560182398,
+          "band": 0.000938507958897846,
+          "gls": 0.0009186625983968486
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.00020621714928736878,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007034570417732003,
+          "band": 0.0007080106038051225,
+          "gls": 0.0007031268768262799
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 2.669264042465258e-06,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0001048125933438219,
+          "band": 1.0265008942510643e-06,
+          "gls": 1.0265003737121673e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.005854436368930127,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 7.635915768459263e-05,
+          "band": 7.838069933785155e-07,
+          "gls": 7.83806832624225e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.0032727457590078224,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00020584464462587325,
+          "band": 0.0001026500894251415,
+          "gls": 0.00010264494787579407
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.00580456506171112,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0001537029076845926,
+          "band": 7.8380699337863e-05,
+          "gls": 7.837910859807914e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.003252590055412785,
+        "unbiased_residual": 1.6653345369377348e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0010222652610464905,
+          "band": 0.0009238508048262792,
+          "gls": 0.0009234707775231047
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.005441186618645677,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007787029076845931,
+          "band": 0.0007054262940407699,
+          "gls": 0.0007053071596345528
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.0031035159246974864,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00012898920355532156,
+          "band": 1.0265008942502892e-06,
+          "gls": 1.0213117684903791e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0007701892370668428,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 9.241008199918944e-05,
+          "band": 7.838069933775586e-07,
+          "gls": 7.818296136082109e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.0007419054185098251,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.00023002125483737298,
+          "band": 0.0001026500894251408,
+          "gls": 0.00010213112861135619
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.000769716562263989,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0001697538319991894,
+          "band": 7.838069933786253e-05,
+          "gls": 7.818292476948212e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0007414370493710187,
+        "unbiased_residual": 2.220446049250313e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0010464418712579898,
+          "band": 0.0009238508048262777,
+          "gls": 0.0009191766689544971
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.0007659183591883778,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0007947538319991901,
+          "band": 0.000705426294040769,
+          "gls": 0.0007036436770414675
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.0007376740145315086,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.002733442112003206,
+          "band": 1.2203378057782825e-06,
+          "gls": 1.220316146115453e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.19577200435296316,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0012312146360410235,
+          "band": 8.403881114633905e-07,
+          "gls": 8.403832019731395e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.0756904985256186,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.002834474163285257,
+          "band": 0.00012203378057783639,
+          "gls": 0.00012182034155313362
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.19370176698597485,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0013085583860410234,
+          "band": 8.40388111463452e-05,
+          "gls": 8.399034493517928e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.07507641517029451,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0036508947797058745,
+          "band": 0.0010983040252005303,
+          "gls": 0.0010827983152931243
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.17891117888649277,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.001933558386041024,
+          "band": 0.000756349300317107,
+          "gls": 0.0007527811336912899
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.07062205680539013,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0019303311463602167,
+          "band": 1.2203378057783039e-06,
+          "gls": 1.0338735396031692e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.0130793062389023,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0005295179980049186,
+          "band": 8.403881114622633e-07,
+          "gls": 7.848138997017982e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.004561791618301614,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0020313631976422676,
+          "band": 0.00012203378057783649,
+          "gls": 0.00010338642469870471
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.013070200524582853,
+        "unbiased_residual": 8.326672684688674e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0006068617480049186,
+          "band": 8.403881114634391e-05,
+          "gls": 7.848114885677551e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.004558705366726201,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.0028477838140628852,
+          "band": 0.001098304025200531,
+          "gls": 0.0009304106713743708
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.012997089066950185,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.0012318617480049194,
+          "band": 0.0007563493003171057,
+          "gls": 0.0007063129128026524
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.004533920430439098,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.013135260823786113,
+          "band": 2.9406080731035297e-06,
+          "gls": 2.9395687373486495e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 1.8804453765378168,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.008621172293336268,
+          "band": 1.6074663260356668e-06,
+          "gls": 1.6072041297047938e-06
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 1.057221286022136,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.013236292875068166,
+          "band": 0.0002940608073102427,
+          "gls": 0.00028754800181920743
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 1.8176456697518164,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.008698516043336268,
+          "band": 0.00016074663260357507,
+          "gls": 0.00015885420804030899
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 1.0333338629159545,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.014052713491488782,
+          "band": 0.0026465472657921877,
+          "gls": 0.002306600115389194
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 1.5113417917694667,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.009323516043336267,
+          "band": 0.0014467196934321793,
+          "gls": 0.0013351693772436102
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.8989075587464679,
+        "unbiased_residual": 2.220446049250313e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.01134043058387605,
+          "band": 2.9406080731046325e-06,
+          "gls": 1.1068303346833386e-06
+        },
+        "noise_bound": 1.0205257705257708e-06,
+        "gls_excess_over_bound": 0.08456872589616626,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.01,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.006818303385643893,
+          "band": 1.6074663260375334e-06,
+          "gls": 8.315894177417532e-07
+        },
+        "noise_bound": 7.8125e-07,
+        "gls_excess_over_bound": 0.06443445470944398,
+        "unbiased_residual": 5.551115123125783e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.011441462635158101,
+          "band": 0.0002940608073102461,
+          "gls": 0.00011067636823991546
+        },
+        "noise_bound": 0.00010205257705257709,
+        "gls_excess_over_bound": 0.0845034141851746,
+        "unbiased_residual": 0.0
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.1,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.006895647135643893,
+          "band": 0.00016074663260357702,
+          "gls": 8.315514296594327e-05
+        },
+        "noise_bound": 7.812500000000002e-05,
+        "gls_excess_over_bound": 0.0643858299640736,
+        "unbiased_residual": 1.1102230246251565e-16
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "balanced",
+        "risk": {
+          "mean": 0.012257883251578719,
+          "band": 0.0026465472657921886,
+          "gls": 0.0009956060300452436
+        },
+        "noise_bound": 0.0009184731934731936,
+        "gls_excess_over_bound": 0.08397940965524908,
+        "unbiased_residual": 2.7755575615628914e-17
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "noise": 0.3,
+        "weights": "counts",
+        "risk": {
+          "mean": 0.007520647135643894,
+          "band": 0.0014467196934321812,
+          "gls": 0.000748121950934221
+        },
+        "noise_bound": 0.000703125,
+        "gls_excess_over_bound": 0.06399566355089226,
+        "unbiased_residual": 2.7755575615628914e-17
+      }
+    ],
+    "summary": {
+      "rho0_sigma0.01": {
+        "local": {
+          "balanced_gls": 1.040684099442499e-06,
+          "counts_gls": 7.875878020120104e-07
+        },
+        "mhu": {
+          "balanced_gls": 1.0529157256951187e-06,
+          "counts_gls": 7.890136722436732e-07
+        },
+        "cvt": {
+          "balanced_gls": 1.0349028467676035e-06,
+          "counts_gls": 7.860184712891865e-07
+        },
+        "random": {
+          "balanced_gls": 4.5194630889629795e-06,
+          "counts_gls": 1.9687413638206467e-06
+        }
+      },
+      "rho0_sigma0.1": {
+        "local": {
+          "balanced_gls": 0.00010383785430124471,
+          "counts_gls": 7.871511027990987e-05
+        },
+        "mhu": {
+          "balanced_gls": 0.00010518704815301854,
+          "counts_gls": 7.888054758809306e-05
+        },
+        "cvt": {
+          "balanced_gls": 0.00010329052599703084,
+          "counts_gls": 7.85642457067584e-05
+        },
+        "random": {
+          "balanced_gls": 0.00040438803875176665,
+          "counts_gls": 0.00018578520927957349
+        }
+      },
+      "rho0_sigma0.3": {
+        "local": {
+          "balanced_gls": 0.0009293360795148233,
+          "counts_gls": 0.0007074012887577736
+        },
+        "mhu": {
+          "balanced_gls": 0.0009424390645908887,
+          "counts_gls": 0.000709045510949293
+        },
+        "cvt": {
+          "balanced_gls": 0.0009257665720112571,
+          "counts_gls": 0.0007063176545033048
+        },
+        "random": {
+          "balanced_gls": 0.0025235256853744737,
+          "counts_gls": 0.001373360168392268
+        }
+      },
+      "rho1_sigma0.01": {
+        "local": {
+          "balanced_gls": 1.0209997705267004e-06,
+          "counts_gls": 7.813395305727554e-07
+        },
+        "mhu": {
+          "balanced_gls": 1.0208505634656714e-06,
+          "counts_gls": 7.812576431013654e-07
+        },
+        "cvt": {
+          "balanced_gls": 1.02139259337064e-06,
+          "counts_gls": 7.819750530431764e-07
+        },
+        "random": {
+          "balanced_gls": 1.1016692574683336e-06,
+          "counts_gls": 8.343672380686914e-07
+        }
+      },
+      "rho1_sigma0.1": {
+        "local": {
+          "balanced_gls": 0.00010209994766237007,
+          "counts_gls": 7.813394752056065e-05
+        },
+        "mhu": {
+          "balanced_gls": 0.00010208503614479634,
+          "counts_gls": 7.812576383686645e-05
+        },
+        "cvt": {
+          "balanced_gls": 0.00010213920512118902,
+          "counts_gls": 7.819745941666909e-05
+        },
+        "random": {
+          "balanced_gls": 0.00011016046558412978,
+          "counts_gls": 8.343271310696574e-05
+        }
+      },
+      "rho1_sigma0.3": {
+        "local": {
+          "balanced_gls": 0.0009188974034666479,
+          "counts_gls": 0.0007032051272675096
+        },
+        "mhu": {
+          "balanced_gls": 0.000918763864342931,
+          "counts_gls": 0.000703131840304314
+        },
+        "cvt": {
+          "balanced_gls": 0.0009192489256113671,
+          "counts_gls": 0.0007037738167662963
+        },
+        "random": {
+          "balanced_gls": 0.0009909778298376457,
+          "counts_gls": 0.0007506048039266042
+        }
+      }
+    }
+  },
+  "freeze_commit": "a2d5b59e79e6951fea04f1c015043d7400f7d648",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C14/decision.json",
+    "sha256": "1582fc2d1c710f4a2f04c0936449844b2b7a09dcd5833eb621f840c09e909e04"
+  },
+  "protocol_sha256": "01c166c1ff514d535126dca8548912470854b25116134869eede4c9f5aa8a6ae",
+  "source_sha256": "19b3435d379c3a1c154a106a5bd0ca22b391bcda8a8dcb6a430e6b91e91d4b9c",
+  "common_sha256": "d2df25d6f40ab89912261d44a9a44d0000b079460aa2b04b0b65a219ece46a8f",
+  "inputs": {
+    "geometry_sha256": {
+      "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+      "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+      "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+      "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+    },
+    "datasets": []
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "worker_returncode": 0,
+  "elapsed_seconds": 3.0734563000005437,
+  "finished_utc": "2026-10-22T14:36:47.083889+00:00"
+}

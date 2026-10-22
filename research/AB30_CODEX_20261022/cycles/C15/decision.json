@@ -1,0 +1,15 @@
+{
+  "id": "C15",
+  "E": "GLS vence o iguala todos los comparadores insesgados y se aproxima al límite de ruido. Con rho0/sigma.1, balanced: MHU1.05187e-4 vs CVT1.03291e-4; con rho1 MHU1.02085e-4 vs CVT1.02139e-4. Diferencias estructuradas pequeñas; azar peor.",
+  "F": "Se concede covarianza exacta a todos los readouts. El resultado es un benchmark de diseño con oracle estadístico, no aplicabilidad práctica si distribución desconocida.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La ventaja muy grande de medias desaparece frente a lector competente. Queda pregunta de robustez a especificación equivocada de espectro, no arquitectura neuronal.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: cambiar soporte espectral manteniendo varianza puntual y ruido, comparar lector congelado, medias y oracle correcto.",
+  "options_rejected": [
+    "Declarar MHU universalmente superior por vencer azar",
+    "Ocultar GLS y presentar solo una media favorecida"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C16"
+}
