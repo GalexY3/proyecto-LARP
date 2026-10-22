@@ -1,0 +1,44 @@
+{
+  "block": "B04",
+  "prereg_commit": "64e6a7c8a1dc8590c19b1e566318a8a82fe1ed5e",
+  "n_layout_seeds": 8,
+  "decision": "PIVOT to graph transport after mixed Digits results. CVT does not consistently exceed full pixels, despite some beneficial shifts.",
+  "results": [
+    {
+      "id": "N19",
+      "delta_a_minus_b_balanced_accuracy": 0.001740196078431372,
+      "supports_direction": true,
+      "local_result_sha256": "938fbb24d9398b476f5f5ee194484a2266dc92ee449734abff3597b9bf7acf54"
+    },
+    {
+      "id": "N20",
+      "delta_a_minus_b_balanced_accuracy": -0.009644357743097312,
+      "supports_direction": false,
+      "local_result_sha256": "c8b6ada4a27307b9c22de4f51444346d53ee2cd8157975a1742ec4158be77b2a"
+    },
+    {
+      "id": "N21",
+      "delta_a_minus_b_balanced_accuracy": 0.02232513005202076,
+      "supports_direction": true,
+      "local_result_sha256": "90cd0f1bd14e82abffb218ba22baf5b768c4dc93a4a20fc790aa497824818cfc"
+    },
+    {
+      "id": "N22",
+      "delta_a_minus_b_balanced_accuracy": -0.017205682272909167,
+      "supports_direction": false,
+      "local_result_sha256": "97b0788a8ffbb9cc8873f5ed279baae94fdd5125de43e9957ca701d1996ce480"
+    },
+    {
+      "id": "N23",
+      "delta_a_minus_b_balanced_accuracy": 0.030387254901960745,
+      "supports_direction": true,
+      "local_result_sha256": "23ba857eecb83542544b75a8f4654db874ef18d207528f304f719d50f8b3de56"
+    },
+    {
+      "id": "N24",
+      "delta_a_minus_b_balanced_accuracy": 0.034889455782312874,
+      "supports_direction": true,
+      "local_result_sha256": "e76c9d9d9485060b60ecba3565f671b968a3fc5cc816cf8bab14857ad35aecc0"
+    }
+  ]
+}
