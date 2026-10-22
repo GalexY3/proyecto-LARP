@@ -1,0 +1,34 @@
+{
+  "id": "C03",
+  "parent_id": "C02",
+  "short_name": "conventional_scaling_controls",
+  "date": "2026-10-22",
+  "A": "¿Un escalado convencional con piso de varianza o escala global elimina la aparente necesidad del frontend sensorial robusto?",
+  "B": [
+    "H_scale: piso train-only mejora ruido/rotación sin cambiar arquitectura",
+    "H_sensor: hace falta organización sensorial",
+    "H_otras: underfitting y regularización"
+  ],
+  "C": "MLP píxeles, misma semilla/split, modos guard/fixed/global y pisos .05/.1/.2. Son condiciones de una sola pregunta; no selección confirmatoria del mejor.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "Acotar inversa de desviaciones pequeñas aumentará robustez; evaluar también clean y oclusión para ver coste.",
+  "falsification_rule": "Si todos los escalados convencionales fallan, el filtrado queda como siguiente explicación.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [
+    "Optimizar MHU antes de reconstruir un rival competente"
+  ],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}

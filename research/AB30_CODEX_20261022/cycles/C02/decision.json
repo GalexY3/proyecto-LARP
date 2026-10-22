@@ -1,0 +1,15 @@
+{
+  "id": "C02",
+  "E": "Con guard, 99.52% de energía de ruido normalizado viene de std positiva<.05; ruidoenergía total5982 frente1.17enescala fija. Rotación:92.35% en esasdimensiones.",
+  "F": "Energía medida antes de clipping no equivale al impacto causal del clasificador; hace falta intervención de escala acotada.",
+  "G": "Diagnóstico determinista condicionado a imágenes/corrupciones ya abiertas.",
+  "H": "Amplificación de casi-constantes es mecanismo plausible; ceros solos no bastan.",
+  "I": "Medición exacta de transformación, sin nueva evidencia MHU.",
+  "J": "CONTINUE con controles convencionales de escalado acotado",
+  "options_rejected": [
+    "Eliminar solo ceros ya refutado como suficiente",
+    "Culpar a la falta de convergencia sin intervenir el input"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C03"
+}
