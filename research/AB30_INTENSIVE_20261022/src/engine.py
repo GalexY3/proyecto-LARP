@@ -12,7 +12,7 @@ from scipy.ndimage import rotate, shift, gaussian_filter
 
 ROOT=Path(__file__).resolve().parents[1]
 TYPES=5; PER=20; N=TYPES*PER
-GENERATORS=('iid','sobol_global','sobol_types','cvt_global','cvt_types','shift_types','jitter_lattice','type_lattice')
+GENERATORS=('iid','sobol_global','sobol_types','cvt_global','cvt_types','shift_types','jitter_lattice','type_lattice','raw_pixels')
 
 def stamp(d):
     return hashlib.sha256(json.dumps(d,sort_keys=True,separators=(',',':')).encode()).hexdigest()
@@ -129,6 +129,14 @@ def classification(pos,typ,case,seed,base='same'):
     model.fit(X,y[train]);pred=model.predict(Xt)
     return float(balanced_accuracy_score(y[test],pred))
 
+def classification_raw(case,seed):
+    x,tx,y=digits_data(case)
+    split=StratifiedShuffleSplit(n_splits=1,test_size=.28,random_state=seed+42)
+    train,test=next(split.split(x,y))
+    model=RidgeClassifier(alpha=10.)
+    model.fit(x[train].reshape(-1,64),y[train])
+    return float(balanced_accuracy_score(y[test],model.predict(tx[test].reshape(-1,64))))
+
 def graph_stat(pos,seed,mode='gap',dropout=0,rewire=0):
     rg=np.random.default_rng(seed)
     if dropout:
@@ -155,8 +163,11 @@ def graph_stat(pos,seed,mode='gap',dropout=0,rewire=0):
     return float((degree.std()/degree.mean()) if degree.mean() else np.nan)
 
 def observation(spec,which,seed):
-    p,t=samples(spec[which],seed)
     kind=spec['kind']
+    if spec[which]=='raw_pixels':
+        if kind != 'classify': raise ValueError('raw_pixels only classify')
+        return classification_raw(spec['case'],seed)
+    p,t=samples(spec[which],seed)
     if kind=='cover':return coverage(p,t,seed+900,spec.get('quantile',.95))
     if kind=='spectral':return spectral(p,t,spec.get('band','low'),spec.get('mode','union'))
     if kind=='integrate':
