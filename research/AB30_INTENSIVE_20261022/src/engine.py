@@ -71,9 +71,10 @@ def spectral(pos,typ,band,mode):
 def field(pos,kind,freq,seed,types):
     # shared smooth or independent components, all periodic; zero analytic mean
     rg=np.random.default_rng(seed); y=np.zeros(len(pos));
+    shared_phase=rg.uniform(0,2*np.pi,2) if kind=='shared' else None
     for t in range(TYPES):
         ii=np.where(types==t)[0]
-        if kind=='shared': ph0=0.7; ph1=1.2
+        if kind=='shared': ph0,ph1=shared_phase
         else: ph0,ph1=rg.uniform(0,2*np.pi,2)
         y[ii]=np.sin(2*np.pi*freq*pos[ii,0]+ph0)+.7*np.cos(2*np.pi*freq*pos[ii,1]+ph1)
     return y
