@@ -1,0 +1,35 @@
+{
+  "id": "C06",
+  "parent_id": "C05",
+  "short_name": "centering_scaling_factorial",
+  "date": "2026-10-22",
+  "A": "¿Qué parte del cambio de robustez proviene de centrar por píxel y qué parte de la escala, manteniendo red y clipping?",
+  "B": [
+    "H_scale: desviacionespequeñas dominan",
+    "H_center: centrado espurio domina",
+    "H_interaction: ambos interaccionan",
+    "H_otras: optimizador/regularización"
+  ],
+  "C": "Factorial centrado{ninguno,porfeature}×escala{unidad,global,guard,piso.2},2inicializaciones, 240steps. Todos son condiciones de este ciclo.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "Efectos de escalado grandes dentro de cada condición de centrado sostendrían mecanismo propio de escala; interacción se reportará.",
+  "falsification_rule": "Si efecto depende delcentrado, retiraratribución exclusiva aescala.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2,
+    "max_training_runs": 16,
+    "steps_per_run": 240
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}

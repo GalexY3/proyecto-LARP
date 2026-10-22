@@ -78,10 +78,13 @@ def train(X,y,tr,va,te,ext=None,seed=991,steps=240,mode='guard',hidden=None,clip
         net.train();opt.zero_grad();loss=criterion(net(tx[tr]),ty[tr]);loss.backward();opt.step()
         net.eval()
         with torch.no_grad(): vl=float(criterion(net(tx[va]),ty[va]))
+        if not np.isfinite(float(loss.detach())) or not np.isfinite(vl):
+            raise FloatingPointError('Nonfinite train/validation loss; no score is valid.')
         history.append(vl)
         if vl<best-1e-5:best=vl;bad=0;state={k:v.detach().clone() for k,v in net.state_dict().items()};bestep=ep+1
         else:bad+=1
         if patience is not None and bad>=patience:break
+    if not np.isfinite(best): raise RuntimeError('No finite validation checkpoint.')
     net.load_state_dict(state); net.eval()
     scores={};pred={}
     with torch.no_grad():
