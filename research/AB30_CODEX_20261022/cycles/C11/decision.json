@@ -1,0 +1,15 @@
+{
+  "id": "C11",
+  "E": "La proyección conserva amplitudes exactamente (residuo0). MHU suprime fuertemente tipos0/1, pero tipos2/3/4 tienen S baja .0153/.0327/.0597, frente CVT .00965/.01378/.01051; la unión MHU .000156 es mucho menor que CVT .01468.",
+  "F": "No es ausencia de supresión: todos los componentes están por debajo de azar. La intensidad no es homogénea ni MHU domina por tipo; LOCAL también suprime. Cuatro realizaciones y pocos modos no certifican asintótica.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "Se debilita la narrativa de ventaja uniforme multicomponente; se abre hipótesis de cancelación entre canales y dependencia del contraste leído.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: distinguir modo común de los contrastes entre tipos mediante matriz espectral cruzada.",
+  "options_rejected": [
+    "Declarar que la proyección destruyó HU",
+    "Tratar S de unión como certificado de todos los componentes"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C12"
+}

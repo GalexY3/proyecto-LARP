@@ -1,0 +1,34 @@
+{
+  "id": "C12",
+  "parent_id": "C11",
+  "short_name": "cross_type_spectral_eigenmodes",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿La pequeña potencia de unión MHU esconde contrastes entre tipos poco suprimidos, frente a CVT/LOCAL?",
+  "B": [
+    "H_common: supresión concentrada en dirección de unión",
+    "H_all: reducción espectral en todas las direcciones de tipo",
+    "H_other: diferencia de normalización por conteos"
+  ],
+  "C": "Matriz C=Re(mean rho_c rho_d*) con rho_c=sum(exp)/sqrt(nc), cinco tipos. Obtener autovalores, traza y potencia del modo común w=sqrt(nc/N); mismo conjunto planar bajo q²1..2 que C11. Sin tareas o labels de Digits.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿La pequeña potencia de unión MHU esconde contrastes entre tipos poco suprimidos, frente a CVT/LOCAL?",
+  "null": "H_other: diferencia de normalización por conteos",
+  "predicted_discriminant": "MHU tiene wTCw muy inferior a sus autovalores de contraste; CVT puede reducir peor dirección más que MHU pese a peor unión.",
+  "falsification_rule": "Si MHU domina autovalores y traza, no sostener que únicamente mejora modo común. Si wTCw difiere de S_union>1e-10 invalidar.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}
