@@ -1,0 +1,29 @@
+# Dictamen · AB08 · Coordinación entre tipos en LARP/MHU
+**Fecha:** 22 de octubre de 2026  ·  **Estado:** C08/08 ejecutado; exploratorio. **2/3:** no acreditado. **3/3:** no acreditado.
+
+## Hipótesis sometida a prueba
+Que la coordinación intertipo, separada de la regularidad *dentro* de cada clase, reduzca el error al combinar información **funcionalmente compartida**. En el experimento, cinco sensores de tipo distinto recogen campos Fourier con una parte gaussiana compartida y otra independiente. El objetivo del readout es el promedio ponderado de cinco offsets DC desconocidos; la perturbación tiene integral verdadera cero. Es una tarea no trivial al variar el DC, pero sintética, diseñada en banda periódica afín al objetivo de MHU.
+
+## Qué hemos demostrado y cómo
+1. **Identidad (C01):** potencia conjunta P=diag+cross, donde diag=Σ f_a² ⟨|A_a|²⟩ y cross son los términos cruzados. Para las cuatro geometrías originales MHU, el término diagonal era 2.69991e-08, el conjunto 1.24571e-09, y la cancelación cruzada -2.57534e-08. LOCAL: diag 1.06722e-05, conjunto 9.72224e-07. Una identidad algebraica no es novedad.
+2. **Control pareado (C02):** trasladar cada tipo independientemente conserva todos los espectros individuales |A_a(k)|². El P conjunto de MHU pasa de 1.24571e-09 a 2.68339e-08, multiplicador 21.54; LOCAL: 11.07; CVT multiplica por 0.78. Es evidencia causal geométrica del término cruzado, **no** de nueva funcionalidad neural.
+3. **Covarianza entre funciones (C03):** con correlación de campos rho, varianza del error gaussiano = rho·P_total+(1-rho)·P_diagonal para pesos de población f. En MHU, rho=0 predice 2.69991e-08 y rho=1 1.24571e-09; en LOCAL 1.06722e-05 y 9.72224e-07. Monte Carlo de 7000 campos se aproxima a la fórmula (datos originales `results/C03.json`). La geometría MHU también suprime el diagonal, de modo que no toda su mejora se puede atribuir al cross.
+4. **Frontera de generalización (C04):** MHU gana frente LOCAL en banda optimizada, pero en banda fuera del corte MHU P=3.07939e-05 y LOCAL P=1.65332e-05. No extrapolar ventajas baja frecuencia a OOD general.
+5. **Control generativo por traslaciones (C05):** optimizar 12 coordenadas de traslaciones relativas de CVT sobre 20 modos puede reducir error de entrenamiento, pero no reproduce la baja potencia espectral MHU y empeora el conjunto de 20 modos de evaluación en parte de las semillas; el resultado depende de inicialización, optimizer y banda. **No se ejecutó el algoritmo auténtico Wei 2010** ni se igualaron presupuestos de generación.
+6. **Pérdida de recursos (C06):** tras pérdida iid del 50%, potencias de los estimadores de unión MHU=0.000241307, LOCAL=0.000242063, retícula=0.000241675. La ventaja enorme en sin pérdida es vulnerable al fallo de sensores y se reduce drásticamente.
+7. **Lectura aprendida (C07):** Ridge (cinco entradas, regularización 1e-4) entrenada en 250 mundos nuevos para estimar offsets DC agregados y evaluada en 2000 test. MHU MSE=1.28359e-09, LOCAL=9.69974e-07, CVT=1.46626e-05, retícula=8.94345e-12. Todos comparten pesos objetivo y mundos. La retícula casi anula la perturbación periódica; MHU no es el mejor comparador. Un modelo Ridge **no equivale** a GNN/Transformer.
+8. **Cambio espectral con modelo aprendido (C08):** congelar readout Ridge aprendido en banda baja y evaluarlo en 42 frecuencias exteriores (k² entre 101 y 140). MHU MSE=3.16482e-05, LOCAL=1.70888e-05, CVT=0.00030478, retícula=0.000172132. LOCAL reduce MSE en 46.0% respecto a MHU. El beneficio del mecanismo es específico de clase de señales, no general.
+
+## Estado de originalidad
+**Ningún 2/3 ni 3/3**. Relación cruzada de amplitudes conocida, Fourier sampling y selección multiclase con antecedentes. Se ha encontrado una **operación funcional concreta** que usa la coordinación (agregación de una señal latente compartida), pero coincide con el propio objetivo espectral de MHU; una retícula conocida lo iguala/supera en los modos no resonantes. Se requiere una ventaja empírica de aprendizaje en una tarea externa y baseline auténtico para elevar la originalidad.
+
+## Riesgos metodológicos decisivos
+- n=4 geometrías originales; el experimento no añade geom seeds independientes, CVT se reutiliza y es no pareado. No tratar mundos o traslaciones como réplicas entre generadores.
+- Sin igualación del coste de generación, ninguna superioridad de eficiencia.
+- Fuentes de entrada son campos Fourier en toro; el test exterior no es datos reales ni independencia confirmatoria; las decisiones fueron parcialmente adaptativas.
+- C07–C08 prueban regresión regularizada de 5 variables, no un modelo de lenguaje.
+- Las señales compartidas son una condición favorable **derivada directamente del objetivo espectral**; no interpretar como descubrimiento nuevo.
+- La comparación con Wei (*Multi-Class Blue Noise Sampling*, SIGGRAPH 2010) sigue pendiente: https://www.liyiwei.org/papers/noise-sig10/ y código https://github.com/1iyiwei/noise/tree/master/RainbowNoise . Fuente localizada, **no ejecutada ni validada a escala 3D N4096**.
+
+## AB-DECIDE
+El bloque autorizado C01–C08 está completo. PIVOT: dejar de intentar probar arquitectura GPT en el mismo generador Fourier. **Solicito autorización para 6 ciclos sustantivos adicionales y condicionados al acceso a benchmark externo o implementación de Wei y un entrenamiento neuronal convergido**, con gasto cero en barridos adicionales de los mismos cuatro patrones. Diseño sugerido: C01 acceso/comparabilidad técnica de Wei; C02 nuevas geometrías por generador e independencia; C03 crear señal compartida no-Fourier sobre datos externos o DGP distinto; C04 GNN/Transformer de igual presupuesto y convergencia; C05 ablación de tipos/fases/semántica; C06 holdout externo y auditoría novedad. Si no se reúnen las condiciones, documentar BARRERA_DE_ACCESO y no consumir el bloque como seis estudios inexistentes.
