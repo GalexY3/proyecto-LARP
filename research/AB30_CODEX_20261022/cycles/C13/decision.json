@@ -1,0 +1,15 @@
+{
+  "id": "C13",
+  "E": "Pesos equilibrados: riesgo MHU .000328 vs CVT .000125 con rho0; con rho1 MHU .0000517 vs CVT .000138. Cruce medio rho=.7002. Con pesos proporcionales a conteos MHU gana para rho>=0.",
+  "F": "Resultado exacto condicionado a banda finita y lectura de medias. Cambiar tarea cambia estimando; no significa una propiedad universal favorable. No se ha comparado aún un lector que conozca esa banda.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "Se rechaza dominancia universal en este conjunto de tareas; hipótesis útil restringida a covarianza y objetivo alineados con modos suprimidos.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: introducir offset desconocido y baseline de reconstrucción espectral, validando directamente con mundos nuevos.",
+  "options_rejected": [
+    "Presentar el campo de media conocida cero como benchmark",
+    "Prometer ventaja frente a estimadores informados usando solo medias"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C14"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "C14",
+  "parent_id": "C13",
+  "short_name": "known_band_readout_counterexample",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Sobrevive la ventaja geométrica de medias a una reconstrucción convencional competente con offset desconocido por mundo?",
+  "B": [
+    "H_readout: banda conocida permite recuperar offset con cualquier geometría de rango suficiente",
+    "H_geometry: MHU conserva una ventaja irreducible",
+    "H_other: MC o normalización mal implementados"
+  ],
+  "C": "4096 mundos gaussianos nuevos, offsets5 desconocidos y cos/sin de cuatro modos bajos; rho0 y1, pesos equilibrados y proporcionales. Comparar medias por tipo y OLS de intercepto con banda conocida. Medir MSE, discrepancia con predicción C13 y ranks. Misma información de banda para ambos métodos.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Sobrevive la ventaja geométrica de medias a una reconstrucción convencional competente con offset desconocido por mundo?",
+  "null": "H_other: MC o normalización mal implementados",
+  "predicted_discriminant": "MonteCarlo reproduce riesgo de medias y OLS anula el error en todas las geometrías si cada diseño tiene rango9; offsets evitan solución constante cero.",
+  "falsification_rule": "Máximo z de MSE respecto riesgo exacto >6 o error OLS>1e-12 exige investigar instrumento antes de conclusión. 4096 mundos no son nuevas geometrías.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    60214,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

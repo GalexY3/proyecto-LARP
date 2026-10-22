@@ -114,3 +114,24 @@ def amplitudes(p,labels,q):
 def finite_spectrum(p,labels,q):
     a,u=amplitudes(p,labels,q)
     return np.concatenate([np.mean(abs(a)**2,axis=1),[np.mean(abs(u)**2)]]).tolist()
+
+def mean_weights(labels,alpha):
+    n=np.bincount(labels);return np.asarray(alpha)[labels]/n[labels]
+
+def band_weights(p,labels,q,alpha):
+    w=np.zeros(len(p));ranks=[]
+    for c in range(5):
+        loc=labels==c;t=2*np.pi*np.asarray(p)[loc,:q.shape[1]]@q.T
+        D=np.column_stack([np.ones(np.sum(loc)),np.cos(t)/np.sqrt(len(q)),np.sin(t)/np.sqrt(len(q))])
+        ranks.append(int(np.linalg.matrix_rank(D)));w[loc]=alpha[c]*np.linalg.pinv(D)[0]
+    return w,ranks
+
+def node_covariance(p,labels,q,rho,noise=0):
+    t=2*np.pi*np.asarray(p)[:,:q.shape[1]]@q.T
+    K=(np.cos(t)@np.cos(t).T+np.sin(t)@np.sin(t).T)/len(q)
+    return K*((1-rho)*(labels[:,None]==labels[None,:])+rho)+noise**2*np.eye(len(p))
+
+def gls_weights(R,labels,alpha):
+    from scipy.linalg import cho_factor,cho_solve
+    H=np.eye(5)[labels];A=cho_solve(cho_factor(R,lower=True),H)
+    return A@np.linalg.solve(H.T@A,alpha)
