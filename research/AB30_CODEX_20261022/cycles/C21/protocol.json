@@ -1,0 +1,35 @@
+{
+  "id": "C21",
+  "parent_id": "C20",
+  "short_name": "sensor_thinning_spectral_floor",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿La supresión espectral de MHU sobrevive a perder aleatoriamente la mitad de los sensores por tipo?",
+  "B": [
+    "H_floor: thinning independiente introduce suelo de potencia",
+    "H_robust: MHU mantiene gran ventaja finita bajo pérdida",
+    "H_other: conteos desiguales o modelo Bernoulli equivocado"
+  ],
+  "C": "Retener mc=floor(nc/2) por tipo, sin reemplazo, mismos conteos para métodos.200 máscaras por realización. Predecir diagonal E Sret=1+(mc-1)/(nc-1)(Sfull-1) y crossc,d escalado sqrt(mc/nc*md/nd). Validar contra selección física directa en3D, sin campos ni readouts.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿La supresión espectral de MHU sobrevive a perder aleatoriamente la mitad de los sensores por tipo?",
+  "null": "H_other: conteos desiguales o modelo Bernoulli equivocado",
+  "predicted_discriminant": "Unión MHU vsCVT muy diferente al inicio pero mucho más próxima al aparecer suelo de dropout; potencia por tipo deja de ser casi cero.",
+  "falsification_rule": "ErrorMonteCarlo relativo>25% exige revisar instrumentos; fórmula fija-tamaño no se confunde con Bernoulli de conteos aleatorios.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    60221,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

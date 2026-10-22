@@ -1,0 +1,15 @@
+{
+  "id": "C20",
+  "E": "Campo3D nativo con rho0: riesgo GLS MHU1.115e-4, CVT2.270e-5; con rho1 todos LOCAL/MHU/CVT≈9.20e-6. Las medias favorecen MHU solo con coherencia. No hubo entrenamiento neuronal.",
+  "F": "Cambiar2D a3D cambia número/dirección de modos, por eso no es un efecto dimensional aislado. Fueron mismos puntos físicos y lecturas totales por método.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "3D por sí solo no aporta ventajaMHU. Nueva cuestión útil de ingeniería: qué queda de supresión multicomponente tras fallos de sensores.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: fallo de mitad de sensores por tipo, fórmula espectral exacta y muestras de dropout.",
+  "options_rejected": [
+    "Extrapolar que escalado3D mejora unLLM",
+    "Usar task3D para afirmar redmulticapa implementada"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C21"
+}
