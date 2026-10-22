@@ -1,0 +1,15 @@
+{
+  "id": "C25",
+  "E": "Trasladar patrón sin cambiar espectro alteraaccuracy rotación por rango medio6.97ppMHU/7.94ppCVT; limpio1.25ppambos. ResiduoS6.66e-16.64fits,23seleccionesalcapan240pasos.",
+  "F": "La fase modifica interfaz, operador y ajuste estadístico; no es efecto de cambiarHU. Todas las fases fueron reportadas, sin escoger mejor. TestDigits yaexpuesto, convergencia no establecida.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "El espectro periódico no caracteriza rendimiento de este pipeline. Nueva cuestión: ni siquiera una métrica linealK fija garantiza comportamiento cuando el optimizador depende de coordenadas.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: rotación ortogonal de features con K/funcióninicial/parámetros idénticos, compararSGD yAdamW.",
+  "options_rejected": [
+    "Publicar faseganadora como mejora",
+    "Suponer que cambiaS cuando cambiaaccuracy"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C26"
+}
