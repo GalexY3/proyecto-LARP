@@ -1,0 +1,34 @@
+{
+  "id": "C15",
+  "parent_id": "C14",
+  "short_name": "read_noise_optimal_gls",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿El ruido de lectura restaura diferencias útiles entre geometrías frente a un estimador GLS competente con igual información?",
+  "B": [
+    "H_noise_floor: GLS lleva todos los diseños cerca del mismo límite de ruido",
+    "H_geometry: la estabilidad de diseño deja diferencias frente a GLS",
+    "H_other: optimización deficiente del readout"
+  ],
+  "C": "Covarianza nodal exacta de campos bajos, rho0/1, sigma de lectura .01/.1/.3, pesos balanced/counts. Medias, OLS banda y GLS de mínima varianza insesgado para offsets por tipo desconocidos. Evaluar riesgo analítico y distancia al bound sigma²sum(alpha²/nc).",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿El ruido de lectura restaura diferencias útiles entre geometrías frente a un estimador GLS competente con igual información?",
+  "null": "H_other: optimización deficiente del readout",
+  "predicted_discriminant": "GLS nunca empeora comparadores insesgados; la ventaja de espectro puede hacerse pequeña frente al ruido y al lector óptimo.",
+  "falsification_rule": "GLS peor que un comparador en >1e-6 relativo+1e-12 o violación de insesgadez>1e-8 invalida el cómputo. No extrapolar al caso de covarianza desconocida.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

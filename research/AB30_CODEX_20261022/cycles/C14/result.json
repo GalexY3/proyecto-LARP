@@ -1,0 +1,1572 @@
+{
+  "id": "C14",
+  "started_utc": "2026-10-22T14:35:25.612141+00:00",
+  "status": "COMPLETED",
+  "inference": "exploratory",
+  "result": {
+    "rows": [
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00022278454933249024,
+        "mean_mse": 0.0002272574221189072,
+        "mc_z": 0.9085868658340234,
+        "band_mse": 1.1782836725541953e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10180979078692175,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00012954125885030328,
+        "mean_mse": 0.00013266968626566786,
+        "mc_z": 1.092906342019363,
+        "band_mse": 2.471704408442094e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08871708424494182,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.0004320156998814101,
+        "mean_mse": 0.0004293647014397846,
+        "mc_z": -0.27769938553665063,
+        "band_mse": 3.889909701390595e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10297298501528916,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00012391357180054606,
+        "mean_mse": 0.00012346069522387856,
+        "mc_z": -0.16539636457841556,
+        "band_mse": 2.079906629897559e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08892362212882135,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00012855086945119692,
+        "mean_mse": 0.00012737409700787876,
+        "mc_z": -0.41426901117597165,
+        "band_mse": 2.5118816136644125e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10132411068871501,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 9.881969401005875e-05,
+        "mean_mse": 9.702237091264277e-05,
+        "mc_z": -0.8230905714234227,
+        "band_mse": 2.08655715141474e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08857702187035345,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.0025668304568980064,
+        "mean_mse": 0.002546826558247996,
+        "mc_z": -0.35268130399692854,
+        "band_mse": 3.159240227708539e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.12508852765250095,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.0015210615651697842,
+        "mean_mse": 0.001503865712145112,
+        "mc_z": -0.5116133967682239,
+        "band_mse": 2.1724810854722556e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.09547793260266456,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.010370046982552136,
+        "mean_mse": 0.010533878405519202,
+        "mc_z": 0.7149595235361599,
+        "band_mse": 7.554158046544198e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.20832896210261426,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.008896981660756684,
+        "mean_mse": 0.008798290116626731,
+        "mc_z": -0.501998274999707,
+        "band_mse": 1.2312569684684968e-29,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.14375641643390996,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.0001366865238143149,
+        "mean_mse": 0.00013252059148475125,
+        "mc_z": -1.3792769817515473,
+        "band_mse": 2.6512131399833056e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10130017538155586,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00014396969556875142,
+        "mean_mse": 0.00013709081540882518,
+        "mc_z": -2.1622785162226075,
+        "band_mse": 1.3511045934921171e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08861245055266895,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.0004275454262535544,
+        "mean_mse": 0.00042594309035481193,
+        "mc_z": -0.16960407163921074,
+        "band_mse": 3.0639899166617157e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10324472295288477,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00011712123702783595,
+        "mean_mse": 0.00011701028798237077,
+        "mc_z": -0.04286994196740883,
+        "band_mse": 3.7359276220226706e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.088952771848703,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00013060520089587958,
+        "mean_mse": 0.00013174445462803497,
+        "mc_z": 0.39475256861362173,
+        "band_mse": 6.122253639010767e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10151711142368622,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00013937877253037523,
+        "mean_mse": 0.00014222037629157725,
+        "mc_z": 0.9226391089604948,
+        "band_mse": 5.025669936132206e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08864785097041743,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00176724787641259,
+        "mean_mse": 0.00177878549274739,
+        "mc_z": 0.29544973226964344,
+        "band_mse": 4.7190513941316214e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.12328563699795937,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.0010622983474588607,
+        "mean_mse": 0.0010623097660142178,
+        "mc_z": 0.00048644039445253274,
+        "band_mse": 4.32781178551931e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.09452002216475652,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.009891700547736824,
+        "mean_mse": 0.009974770554005325,
+        "mc_z": 0.38004783157156297,
+        "band_mse": 8.851343314841603e-31,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.1687856089540793,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00799226058021985,
+        "mean_mse": 0.007873986495003718,
+        "mc_z": -0.6697071546596651,
+        "band_mse": 3.4777184793465144e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.1195591996242904,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.0001347812471313287,
+        "mean_mse": 0.00013431613996401726,
+        "mc_z": -0.15616673754688606,
+        "band_mse": 4.980590299422746e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10148821073867356,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00012962126339178019,
+        "mean_mse": 0.00012788299645678596,
+        "mc_z": -0.6068833116217088,
+        "band_mse": 6.658622713372288e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08861779748449988,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.0002596603208152641,
+        "mean_mse": 0.000256454345476642,
+        "mc_z": -0.5587526091352181,
+        "band_mse": 9.96379903521971e-31,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10210944070818415,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 9.370246926034546e-05,
+        "mean_mse": 9.241575308205566e-05,
+        "mc_z": -0.6214364200649358,
+        "band_mse": 1.3082428871545648e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08873472683138038,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.0001388641687232304,
+        "mean_mse": 0.0001357551495387537,
+        "mc_z": -1.0132069948447728,
+        "band_mse": 1.3980971117629886e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10276133729450271,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00011911493205339456,
+        "mean_mse": 0.00011700891848766821,
+        "mc_z": -0.8001288559474576,
+        "band_mse": 1.6503646145116715e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08887374313628221,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.001599473965665794,
+        "mean_mse": 0.0015966492059971854,
+        "mc_z": -0.07992254492750973,
+        "band_mse": 2.1148728201276227e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10649677793542754,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.0014036860884691302,
+        "mean_mse": 0.0014109676512262617,
+        "mc_z": 0.23475755477806257,
+        "band_mse": 4.752262685510207e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.09143367014803366,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.012466624686369977,
+        "mean_mse": 0.012826574774934532,
+        "mc_z": 1.3066473014642135,
+        "band_mse": 7.374052174264709e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.2823755958204786,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.010529591618247205,
+        "mean_mse": 0.010482542333715737,
+        "mc_z": -0.20221178924066902,
+        "band_mse": 1.5542811506756207e-29,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.16664846931762167,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00021607386304792447,
+        "mean_mse": 0.0002174193292293565,
+        "mc_z": 0.2817964552906229,
+        "band_mse": 2.038459787765983e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10344918306666971,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.00013213226173896514,
+        "mean_mse": 0.00013231145574276698,
+        "mc_z": 0.06137331480135676,
+        "band_mse": 1.4967087729179216e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08903782337061113,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00019318396195374958,
+        "mean_mse": 0.00019206789564418173,
+        "mc_z": -0.26144714632183036,
+        "band_mse": 7.157541213976344e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10211692420933992,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 4.8325907461073627e-05,
+        "mean_mse": 4.799110500473876e-05,
+        "mc_z": -0.3135260231806599,
+        "band_mse": 1.7652831687457093e-29,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08869489549418039,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00010379206757329597,
+        "mean_mse": 0.00010576424246693943,
+        "mc_z": 0.8598966135804844,
+        "band_mse": 2.6996549093142776e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10131638042544854,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 7.557790768459266e-05,
+        "mean_mse": 7.583253952877722e-05,
+        "mc_z": 0.1524694476425802,
+        "band_mse": 1.4169391110651324e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08853287487586928,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.00273242158623268,
+        "mean_mse": 0.002783549405938953,
+        "mc_z": 0.8467877010779294,
+        "band_mse": 1.9264480968588744e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.11046890086256707,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.0012304333860410233,
+        "mean_mse": 0.0012403175636770914,
+        "mc_z": 0.3635359891735918,
+        "band_mse": 2.4225690664611363e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.0916726846701596,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "weights": "balanced",
+        "theory": 0.013134240298015586,
+        "mean_mse": 0.013189886399794133,
+        "mc_z": 0.1917320713927963,
+        "band_mse": 4.9040367494765995e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.17148201284981546,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "weights": "counts",
+        "theory": 0.008620391043336268,
+        "mean_mse": 0.008754136044907431,
+        "mc_z": 0.7021268308435268,
+        "band_mse": 9.820405599700851e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.12678589535258858,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 8.176414302817467e-05,
+        "mean_mse": 7.725238189180403e-05,
+        "mc_z": -2.4971704428605808,
+        "band_mse": 9.822919416819917e-31,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10180979078692175,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 8.70207287373439e-06,
+        "mean_mse": 8.728035399044537e-06,
+        "mc_z": 0.1350172298111165,
+        "band_mse": 1.4113590548101423e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08871708424494182,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 9.45637055198652e-05,
+        "mean_mse": 9.300439395299743e-05,
+        "mc_z": -0.7462311858297922,
+        "band_mse": 2.6254687078172528e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10297298501528916,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 9.048954853087859e-07,
+        "mean_mse": 8.545214502386974e-07,
+        "mc_z": -2.519261762063662,
+        "band_mse": 1.0486214081278692e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08892362212882135,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.00022145736661257468,
+        "mean_mse": 0.00022084451141866936,
+        "mc_z": -0.1252370173454397,
+        "band_mse": 5.6828898489940285e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10132411068871501,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.0001825369676750016,
+        "mean_mse": 0.00018080234623023874,
+        "mc_z": -0.43004990456675884,
+        "band_mse": 4.2340286227815106e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08857702187035345,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.0017811610031386565,
+        "mean_mse": 0.0017540409613875153,
+        "mc_z": -0.6890522447146187,
+        "band_mse": 3.315891390022083e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.12508852765250095,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.0011193301852212996,
+        "mean_mse": 0.0011072386694663749,
+        "mc_z": -0.48886338050484596,
+        "band_mse": 2.5967348496881433e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.09547793260266456,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.0051861561670980445,
+        "mean_mse": 0.005441813424213151,
+        "mc_z": 2.2308866832822676,
+        "band_mse": 7.894049959829474e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.20832896210261426,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.0021889682334240695,
+        "mean_mse": 0.0022422041609692052,
+        "mc_z": 1.1006021133099864,
+        "band_mse": 1.2337095254840176e-29,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.14375641643390996,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 6.13366611916107e-05,
+        "mean_mse": 6.468819109186752e-05,
+        "mc_z": 2.4727940243557645,
+        "band_mse": 2.735763057428586e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10130017538155586,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 2.19930770108059e-05,
+        "mean_mse": 2.273033314975665e-05,
+        "mc_z": 1.5170412109369813,
+        "band_mse": 1.230550438671446e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08861245055266895,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 4.5505341552344654e-05,
+        "mean_mse": 4.45996456216418e-05,
+        "mc_z": -0.9007100616442542,
+        "band_mse": 2.5824649471888775e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10324472295288477,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 8.894994792897471e-07,
+        "mean_mse": 8.767358954068385e-07,
+        "mc_z": -0.6493695423807219,
+        "band_mse": 3.938046835548907e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.088952771848703,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 5.074597755221744e-05,
+        "mean_mse": 5.024437543768501e-05,
+        "mc_z": -0.447324527383849,
+        "band_mse": 1.1102039321133945e-29,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10151711142368622,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 3.5235236389992796e-05,
+        "mean_mse": 3.538810287354829e-05,
+        "mc_z": 0.1963360557675042,
+        "band_mse": 9.60891416541072e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08864785097041743,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.0030466994273369774,
+        "mean_mse": 0.0030798778988234046,
+        "mc_z": 0.49282387553066015,
+        "band_mse": 4.405298091257553e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.12328563699795937,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.001157465065317501,
+        "mean_mse": 0.0011656134865361055,
+        "mc_z": 0.3185888374745682,
+        "band_mse": 3.8462542690415384e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.09452002216475652,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.014082218444655115,
+        "mean_mse": 0.014540641435208945,
+        "mc_z": 1.4731951800754495,
+        "band_mse": 7.945089096443034e-31,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.1687856089540793,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.011100954971699217,
+        "mean_mse": 0.011354503136131674,
+        "mc_z": 1.0336300003574814,
+        "band_mse": 3.388882905337331e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.1195591996242904,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 5.9959920506032075e-05,
+        "mean_mse": 6.216157361680505e-05,
+        "mc_z": 1.6617007695106978,
+        "band_mse": 4.734905822726021e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10148821073867356,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 1.4640512460694199e-05,
+        "mean_mse": 1.5053544880267667e-05,
+        "mc_z": 1.2767117020610093,
+        "band_mse": 5.304983627234978e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08861779748449988,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 3.310848244968267e-05,
+        "mean_mse": 3.274095037618327e-05,
+        "mc_z": -0.5023668179197421,
+        "band_mse": 8.309427856590626e-31,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10210944070818415,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 2.7596348512381807e-06,
+        "mean_mse": 2.804636168896077e-06,
+        "mc_z": 0.7379697931024775,
+        "band_mse": 1.539151986713233e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08873472683138038,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.00015365108743740978,
+        "mean_mse": 0.00014720702282333188,
+        "mc_z": -1.8979694789859203,
+        "band_mse": 1.6446220192694085e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10276133729450271,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.0001493256220748098,
+        "mean_mse": 0.00014540675848824421,
+        "mc_z": -1.1876563351861182,
+        "band_mse": 1.8732078770935623e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08887374313628221,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.0017207233256876125,
+        "mean_mse": 0.001717144106012554,
+        "mc_z": -0.09413308334449504,
+        "band_mse": 2.034279206024789e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10649677793542754,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.0013624465955212111,
+        "mean_mse": 0.0013371975004164093,
+        "mc_z": -0.8386703825835895,
+        "band_mse": 3.95133210468886e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.09143367014803366,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.011051888285573984,
+        "mean_mse": 0.01162822644252514,
+        "mc_z": 2.359966635963465,
+        "band_mse": 8.042650515773333e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.2823755958204786,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.009056294201749979,
+        "mean_mse": 0.009555105993413224,
+        "mc_z": 2.4925918178072335,
+        "band_mse": 2.0699721890980383e-29,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.16664846931762167,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 9.961604433488731e-05,
+        "mean_mse": 0.0001013375992700794,
+        "mc_z": 0.782089705801765,
+        "band_mse": 2.5533459075623996e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10344918306666971,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 1.1985812822161101e-05,
+        "mean_mse": 1.233964396715663e-05,
+        "mc_z": 1.3359602696080255,
+        "band_mse": 1.9339142470784182e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08903782337061113,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 3.3591462545045476e-05,
+        "mean_mse": 3.450525357029704e-05,
+        "mc_z": 1.2310705763193364,
+        "band_mse": 7.65366225423759e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10211692420933992,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 3.3204177319956115e-07,
+        "mean_mse": 3.429392891480973e-07,
+        "mc_z": 1.485250697425661,
+        "band_mse": 2.0231087660396886e-29,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08869489549418039,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.0001279686777847959,
+        "mean_mse": 0.00012573211276971577,
+        "mc_z": -0.7909386908630052,
+        "band_mse": 2.623992330855905e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.10131638042544854,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 9.162883199918909e-05,
+        "mean_mse": 9.121161737572108e-05,
+        "mc_z": -0.20605936050663898,
+        "band_mse": 1.3264611970063257e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.08853287487586928,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.0019293106205896908,
+        "mean_mse": 0.0019247535878515374,
+        "mc_z": -0.10689194258214446,
+        "band_mse": 1.9247779803254388e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.11046890086256707,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.000528736748004919,
+        "mean_mse": 0.0005329791158349322,
+        "mc_z": 0.3631063144776447,
+        "band_mse": 2.3228280989607966e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.0916726846701596,
+        "zero_estimator_mse": 0.26905901896712103
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "weights": "balanced",
+        "theory": 0.011339410058105525,
+        "mean_mse": 0.011537235458888153,
+        "mc_z": 0.7895080631816916,
+        "band_mse": 3.2087729257527635e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.17148201284981546,
+        "zero_estimator_mse": 0.2031688362945918
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "weights": "counts",
+        "theory": 0.006817522135643893,
+        "mean_mse": 0.007095352629521222,
+        "mc_z": 1.844243792578574,
+        "band_mse": 6.22314518858644e-30,
+        "rank": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "band_weight_norm": 0.12678589535258858,
+        "zero_estimator_mse": 0.26905901896712103
+      }
+    ],
+    "summary": {
+      "max_abs_mc_z": 2.519261762063662,
+      "max_band_mse": 2.0699721890980383e-29,
+      "minimum_type_design_rank": 9,
+      "mean_weight_norms": {
+        "local": 0.09537906445331783,
+        "mhu": 0.09571876114859788,
+        "cvt": 0.09519380383565935,
+        "sobol": 0.10480551912925866,
+        "random": 0.17346527005692478
+      },
+      "worlds": 4096,
+      "world_seed": 60214
+    }
+  },
+  "freeze_commit": "e702ec1b03331044045eb52da0a97027a35009e6",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C13/decision.json",
+    "sha256": "dc841aaa203ca66c5e01e7eacdba23b545222d7bef3261bf4e523e054c7a4045"
+  },
+  "protocol_sha256": "f17eb334744302d741a255e16129dadc110e252a0421cf15d607f18004dddd43",
+  "source_sha256": "ce44eabd445519f9f606903ed192e29e767e5fb8098f374ea80df5c3598aca5f",
+  "common_sha256": "d2df25d6f40ab89912261d44a9a44d0000b079460aa2b04b0b65a219ece46a8f",
+  "inputs": {
+    "geometry_sha256": {
+      "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+      "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+      "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+      "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+    },
+    "datasets": []
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "worker_returncode": 0,
+  "elapsed_seconds": 3.702709799996228,
+  "finished_utc": "2026-10-22T14:35:29.314852+00:00"
+}

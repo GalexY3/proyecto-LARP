@@ -1,0 +1,15 @@
+{
+  "id": "C14",
+  "E": "4096 mundos con offsets desconocidos validan riesgos de medias (máximo z=2.52). OLS de banda conocida obtiene MSE<=2.07e-29 para todos los métodos; todos los diseños por tipo tienen rango9.",
+  "F": "La familia finita conocida permite recuperar el intercepto exactamente; una victoria contra medias sería dependiente de un readout restringido, no ventaja informativa irreducible. MC no es réplica externa.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "Se cierra la ventaja práctica irreducible en el modelo sin ruido con banda conocida; se abre la cuestión de estabilidad frente a ruido de lectura.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: comparar medias, OLS y GLS óptimo insesgado con ruido y mismo conocimiento de covarianza.",
+  "options_rejected": [
+    "Declarar nueva arquitectura desde reducción de error de medias",
+    "Usar constantes cero como comparador competente"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C15"
+}
