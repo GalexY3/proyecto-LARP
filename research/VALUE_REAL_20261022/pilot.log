@@ -1,0 +1,118 @@
+Fourier modes 40
+done pilots 12
+done pilots 30
+done pilots 90
+done pilots 300
+done pilots 1800
+{
+  "12": {
+    "POWER-DIAG": {
+      "rocket": 0.011324176564807267,
+      "hubble": 0.01594279511440325,
+      "mean_two_scenes": 0.013633485839605258
+    },
+    "COSI-FULL": {
+      "rocket": 0.010779979812970618,
+      "hubble": 0.015082292168954995,
+      "mean_two_scenes": 0.012931135990962806
+    },
+    "COSI-SHRINK": {
+      "rocket": 0.010874202326322762,
+      "hubble": 0.015320415500557882,
+      "mean_two_scenes": 0.013097308913440322
+    },
+    "DIRECT-EMPIRICAL": {
+      "rocket": 0.013160250888364302,
+      "hubble": 0.01904710357814696,
+      "mean_two_scenes": 0.01610367723325563
+    }
+  },
+  "28": {
+    "POWER-DIAG": {
+      "rocket": 0.011522533012563594,
+      "hubble": 0.01648163412974254,
+      "mean_two_scenes": 0.014002083571153066
+    },
+    "COSI-FULL": {
+      "rocket": 0.010664809564701004,
+      "hubble": 0.014935582290906146,
+      "mean_two_scenes": 0.012800195927803574
+    },
+    "COSI-SHRINK": {
+      "rocket": 0.011027288178494833,
+      "hubble": 0.01501777133330309,
+      "mean_two_scenes": 0.01302252975589896
+    },
+    "DIRECT-EMPIRICAL": {
+      "rocket": 0.012240510529213466,
+      "hubble": 0.016786156823517216,
+      "mean_two_scenes": 0.014513333676365344
+    }
+  },
+  "88": {
+    "POWER-DIAG": {
+      "rocket": 0.011339757337768671,
+      "hubble": 0.016101861676013938,
+      "mean_two_scenes": 0.013720809506891304
+    },
+    "COSI-FULL": {
+      "rocket": 0.010526016842901074,
+      "hubble": 0.014719779304984618,
+      "mean_two_scenes": 0.012622898073942845
+    },
+    "COSI-SHRINK": {
+      "rocket": 0.010507498199001567,
+      "hubble": 0.014777794699314678,
+      "mean_two_scenes": 0.012642646449158119
+    },
+    "DIRECT-EMPIRICAL": {
+      "rocket": 0.011664467949804002,
+      "hubble": 0.015673753906702958,
+      "mean_two_scenes": 0.01366911092825348
+    }
+  },
+  "300": {
+    "POWER-DIAG": {
+      "rocket": 0.011250762576051027,
+      "hubble": 0.015762643173191333,
+      "mean_two_scenes": 0.013506702874621182
+    },
+    "COSI-FULL": {
+      "rocket": 0.010541592383541198,
+      "hubble": 0.014385350582064494,
+      "mean_two_scenes": 0.012463471482802847
+    },
+    "COSI-SHRINK": {
+      "rocket": 0.010275348573002654,
+      "hubble": 0.014593002649107902,
+      "mean_two_scenes": 0.012434175611055278
+    },
+    "DIRECT-EMPIRICAL": {
+      "rocket": 0.011167917357302094,
+      "hubble": 0.014396545872520138,
+      "mean_two_scenes": 0.012782231614911117
+    }
+  },
+  "1800": {
+    "POWER-DIAG": {
+      "rocket": 0.011327007422121149,
+      "hubble": 0.015503947770476938,
+      "mean_two_scenes": 0.013415477596299045
+    },
+    "COSI-FULL": {
+      "rocket": 0.010560874937224485,
+      "hubble": 0.014416240473315025,
+      "mean_two_scenes": 0.012488557705269753
+    },
+    "COSI-SHRINK": {
+      "rocket": 0.009905245939043277,
+      "hubble": 0.014641328216744983,
+      "mean_two_scenes": 0.01227328707789413
+    },
+    "DIRECT-EMPIRICAL": {
+      "rocket": 0.010455469672986384,
+      "hubble": 0.014172965138502117,
+      "mean_two_scenes": 0.012314217405744253
+    }
+  }
+}

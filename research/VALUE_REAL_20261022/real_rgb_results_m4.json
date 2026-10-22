@@ -1,0 +1,2272 @@
+{
+  "scope": "native 2D real images; exploratory, 7 layout seeds, no independent 3D data",
+  "train_scene_names": [
+    "astronaut",
+    "coffee",
+    "chelsea",
+    "immunohistochemistry"
+  ],
+  "ood_scenes": [
+    "rocket",
+    "hubble_deep_field"
+  ],
+  "input_data": "scikit-image example imagery; native RGB; patch size 24, 8 sensors per R,G,B",
+  "train_patches": 1800,
+  "val_patches": 600,
+  "heldout_patches_each": 800,
+  "modes": 40,
+  "estimand": "RMSE of equal-weight within-role sparse sample mean to full-image weighted RGB mean; luma proxy WT=(.2126,.7152,.0722)",
+  "limitations": [
+    "Images are not physical multisensor fields; do not infer performance on air quality or 3D microscopy",
+    "The heldout scenes are only two scene-level units; patches overlap and are not independent external replicates",
+    "COSI uses train covariance; compare with POWER-DIAG and DIRECT-EMPIRICAL, not only MHU",
+    "Selection/adaptation to these results is exploratory and cannot be promoted to blinded confirmation",
+    "Mismatched generation/runtime across techniques are explicitly reported"
+  ],
+  "summary": {
+    "IID": {
+      "runtime_s_per_layout": 0.00011055810110909598,
+      "train_fixed_RMSE": 0.05382966204115712,
+      "same_scene_new_crops_RMSE": 0.05793653955522928,
+      "rocket_RMSE": 0.02349009663195704,
+      "hubble_RMSE": 0.03902910455027429,
+      "rocket_dropout2_RMSE": 0.03131087760986007,
+      "ridge_rocket_RMSE": 0.02947841447853931,
+      "ridge_hubble_RMSE": 0.02623410554322476
+    },
+    "STRAT": {
+      "runtime_s_per_layout": 6.743839808872767e-05,
+      "train_fixed_RMSE": 0.03436163259913982,
+      "same_scene_new_crops_RMSE": 0.03530979897013027,
+      "rocket_RMSE": 0.01787229153629264,
+      "hubble_RMSE": 0.028138054104883004,
+      "rocket_dropout2_RMSE": 0.02936148654062991,
+      "ridge_rocket_RMSE": 0.02027354585017374,
+      "ridge_hubble_RMSE": 0.02341458138319027
+    },
+    "FPS": {
+      "runtime_s_per_layout": 0.0003102166312081473,
+      "train_fixed_RMSE": 0.052551577252626665,
+      "same_scene_new_crops_RMSE": 0.050763747875696916,
+      "rocket_RMSE": 0.030273363839386228,
+      "hubble_RMSE": 0.041452759976988364,
+      "rocket_dropout2_RMSE": 0.03844880008544562,
+      "ridge_rocket_RMSE": 0.02711001898519291,
+      "ridge_hubble_RMSE": 0.03453859792857591
+    },
+    "SOBOL": {
+      "runtime_s_per_layout": 0.004935639245169503,
+      "train_fixed_RMSE": 0.030643472633614676,
+      "same_scene_new_crops_RMSE": 0.03197811040408684,
+      "rocket_RMSE": 0.017842910175664885,
+      "hubble_RMSE": 0.02550506259357618,
+      "rocket_dropout2_RMSE": 0.02969270150674689,
+      "ridge_rocket_RMSE": 0.021884057615724425,
+      "ridge_hubble_RMSE": 0.02202159229134997
+    },
+    "MHU-plain": {
+      "runtime_s_per_layout": 0.008258819580078125,
+      "train_fixed_RMSE": 0.03175415242875235,
+      "same_scene_new_crops_RMSE": 0.03304108639975828,
+      "rocket_RMSE": 0.017708467043163013,
+      "hubble_RMSE": 0.026797777331220386,
+      "rocket_dropout2_RMSE": 0.030763598288528538,
+      "ridge_rocket_RMSE": 0.020970245128135973,
+      "ridge_hubble_RMSE": 0.0209232943413554
+    },
+    "POWER-DIAG": {
+      "runtime_s_per_layout": 0.006686619349888393,
+      "train_fixed_RMSE": 0.029287429565659804,
+      "same_scene_new_crops_RMSE": 0.030727662134681862,
+      "rocket_RMSE": 0.015906404346395096,
+      "hubble_RMSE": 0.025043700473613328,
+      "rocket_dropout2_RMSE": 0.029153306133830836,
+      "ridge_rocket_RMSE": 0.021140628201157717,
+      "ridge_hubble_RMSE": 0.021307867992165087
+    },
+    "COSI-FULL": {
+      "runtime_s_per_layout": 0.009297370910644531,
+      "train_fixed_RMSE": 0.028741653241307456,
+      "same_scene_new_crops_RMSE": 0.028541137903401514,
+      "rocket_RMSE": 0.016102945251511697,
+      "hubble_RMSE": 0.024280407543683265,
+      "rocket_dropout2_RMSE": 0.02962014639722582,
+      "ridge_rocket_RMSE": 0.0203153396046566,
+      "ridge_hubble_RMSE": 0.01954300276868165
+    },
+    "COSI-SHRINK": {
+      "runtime_s_per_layout": 0.00816239629473005,
+      "train_fixed_RMSE": 0.02740475154446208,
+      "same_scene_new_crops_RMSE": 0.02744818068998141,
+      "rocket_RMSE": 0.015963221975844117,
+      "hubble_RMSE": 0.024034623764408954,
+      "rocket_dropout2_RMSE": 0.02900022646443048,
+      "ridge_rocket_RMSE": 0.0195982033673187,
+      "ridge_hubble_RMSE": 0.019515744105883862
+    },
+    "DIRECT-EMPIRICAL": {
+      "runtime_s_per_layout": 0.1437478746686663,
+      "train_fixed_RMSE": 0.022797009668608054,
+      "same_scene_new_crops_RMSE": 0.027661514493181834,
+      "rocket_RMSE": 0.016695222538742716,
+      "hubble_RMSE": 0.023125948537062135,
+      "rocket_dropout2_RMSE": 0.02914127192314708,
+      "ridge_rocket_RMSE": 0.017501407179015587,
+      "ridge_hubble_RMSE": 0.019594276213746674
+    }
+  },
+  "results": [
+    {
+      "method": "IID",
+      "seed": 0,
+      "ids": [
+        [
+          29,
+          423,
+          302,
+          139
+        ],
+        [
+          161,
+          163,
+          36,
+          346
+        ],
+        [
+          237,
+          260,
+          556,
+          422
+        ]
+      ],
+      "train_fixed_RMSE": 0.05632992234163166,
+      "same_scene_new_crops_RMSE": 0.05859455449279653,
+      "rocket_RMSE": 0.024472862621190007,
+      "hubble_RMSE": 0.042751267355154395,
+      "ridge_rocket_RMSE": 0.028647587905557048,
+      "ridge_hubble_RMSE": 0.02836112161388318,
+      "rocket_dropout2_RMSE": 0.03149648868306141
+    },
+    {
+      "method": "IID",
+      "seed": 1,
+      "ids": [
+        [
+          112,
+          290,
+          78,
+          166
+        ],
+        [
+          129,
+          37,
+          67,
+          38
+        ],
+        [
+          236,
+          510,
+          149,
+          424
+        ]
+      ],
+      "train_fixed_RMSE": 0.07095946493103188,
+      "same_scene_new_crops_RMSE": 0.08321604457673158,
+      "rocket_RMSE": 0.02730409849944855,
+      "hubble_RMSE": 0.04962640381842215,
+      "ridge_rocket_RMSE": 0.04036399116171858,
+      "ridge_hubble_RMSE": 0.023507454997520893,
+      "rocket_dropout2_RMSE": 0.03234043508658678
+    },
+    {
+      "method": "IID",
+      "seed": 2,
+      "ids": [
+        [
+          512,
+          31,
+          180,
+          53
+        ],
+        [
+          91,
+          154,
+          281,
+          285
+        ],
+        [
+          303,
+          341,
+          424,
+          323
+        ]
+      ],
+      "train_fixed_RMSE": 0.05288756952784766,
+      "same_scene_new_crops_RMSE": 0.061593048844280775,
+      "rocket_RMSE": 0.020286068812812873,
+      "hubble_RMSE": 0.037346958449924625,
+      "ridge_rocket_RMSE": 0.028148281567657973,
+      "ridge_hubble_RMSE": 0.023383587688312824,
+      "rocket_dropout2_RMSE": 0.02979452951033624
+    },
+    {
+      "method": "IID",
+      "seed": 3,
+      "ids": [
+        [
+          372,
+          277,
+          122,
+          253
+        ],
+        [
+          134,
+          378,
+          261,
+          35
+        ],
+        [
+          4,
+          528,
+          236,
+          248
+        ]
+      ],
+      "train_fixed_RMSE": 0.05402689269053305,
+      "same_scene_new_crops_RMSE": 0.057597352901048025,
+      "rocket_RMSE": 0.02134556312589862,
+      "hubble_RMSE": 0.033824724398690185,
+      "ridge_rocket_RMSE": 0.025206864047007876,
+      "ridge_hubble_RMSE": 0.024931105545598364,
+      "rocket_dropout2_RMSE": 0.02985124008983165
+    },
+    {
+      "method": "IID",
+      "seed": 4,
+      "ids": [
+        [
+          253,
+          185,
+          237,
+          24
+        ],
+        [
+          425,
+          375,
+          44,
+          66
+        ],
+        [
+          146,
+          72,
+          429,
+          224
+        ]
+      ],
+      "train_fixed_RMSE": 0.05950487828024648,
+      "same_scene_new_crops_RMSE": 0.061197235959922644,
+      "rocket_RMSE": 0.028928978030627987,
+      "hubble_RMSE": 0.0411076607232205,
+      "ridge_rocket_RMSE": 0.03685670764006298,
+      "ridge_hubble_RMSE": 0.03229915520156914,
+      "rocket_dropout2_RMSE": 0.035110186346607355
+    },
+    {
+      "method": "IID",
+      "seed": 5,
+      "ids": [
+        [
+          198,
+          2,
+          94,
+          126
+        ],
+        [
+          406,
+          344,
+          315,
+          337
+        ],
+        [
+          507,
+          215,
+          546,
+          476
+        ]
+      ],
+      "train_fixed_RMSE": 0.04978713894242493,
+      "same_scene_new_crops_RMSE": 0.04859891167717684,
+      "rocket_RMSE": 0.02296043432859146,
+      "hubble_RMSE": 0.03869587991946234,
+      "ridge_rocket_RMSE": 0.024241223288317727,
+      "ridge_hubble_RMSE": 0.02545628960546224,
+      "rocket_dropout2_RMSE": 0.03145268984997084
+    },
+    {
+      "method": "IID",
+      "seed": 6,
+      "ids": [
+        [
+          558,
+          45,
+          538,
+          297
+        ],
+        [
+          400,
+          556,
+          42,
+          178
+        ],
+        [
+          296,
+          120,
+          366,
+          24
+        ]
+      ],
+      "train_fixed_RMSE": 0.03331176757438422,
+      "same_scene_new_crops_RMSE": 0.034758628434648615,
+      "rocket_RMSE": 0.019132671005129793,
+      "hubble_RMSE": 0.02985083718704586,
+      "ridge_rocket_RMSE": 0.022884245739453003,
+      "ridge_hubble_RMSE": 0.02570002415022672,
+      "rocket_dropout2_RMSE": 0.029130573702626204
+    },
+    {
+      "method": "STRAT",
+      "seed": 0,
+      "ids": [
+        [
+          8,
+          66,
+          489,
+          471
+        ],
+        [
+          131,
+          43,
+          296,
+          501
+        ],
+        [
+          198,
+          215,
+          392,
+          526
+        ]
+      ],
+      "train_fixed_RMSE": 0.03931735716018737,
+      "same_scene_new_crops_RMSE": 0.04238280133285772,
+      "rocket_RMSE": 0.01875092044639463,
+      "hubble_RMSE": 0.029241884112215212,
+      "ridge_rocket_RMSE": 0.022766764519812677,
+      "ridge_hubble_RMSE": 0.02449030683839281,
+      "rocket_dropout2_RMSE": 0.029404985646077634
+    },
+    {
+      "method": "STRAT",
+      "seed": 1,
+      "ids": [
+        [
+          74,
+          157,
+          291,
+          334
+        ],
+        [
+          197,
+          89,
+          486,
+          567
+        ],
+        [
+          264,
+          184,
+          417,
+          430
+        ]
+      ],
+      "train_fixed_RMSE": 0.03201567066908497,
+      "same_scene_new_crops_RMSE": 0.03079205105277326,
+      "rocket_RMSE": 0.01853878077552901,
+      "hubble_RMSE": 0.0251770431215288,
+      "ridge_rocket_RMSE": 0.02180413378897256,
+      "ridge_hubble_RMSE": 0.021678896006504935,
+      "rocket_dropout2_RMSE": 0.029662258405461002
+    },
+    {
+      "method": "STRAT",
+      "seed": 2,
+      "ids": [
+        [
+          27,
+          252,
+          292,
+          331
+        ],
+        [
+          267,
+          42,
+          414,
+          375
+        ],
+        [
+          102,
+          228,
+          461,
+          376
+        ]
+      ],
+      "train_fixed_RMSE": 0.03502512861303125,
+      "same_scene_new_crops_RMSE": 0.03299372139414477,
+      "rocket_RMSE": 0.018245141097862887,
+      "hubble_RMSE": 0.02942806432169481,
+      "ridge_rocket_RMSE": 0.022833255074875092,
+      "ridge_hubble_RMSE": 0.025243448917908088,
+      "rocket_dropout2_RMSE": 0.0300538096358141
+    },
+    {
+      "method": "STRAT",
+      "seed": 3,
+      "ids": [
+        [
+          53,
+          185,
+          505,
+          517
+        ],
+        [
+          82,
+          19,
+          369,
+          574
+        ],
+        [
+          80,
+          21,
+          432,
+          520
+        ]
+      ],
+      "train_fixed_RMSE": 0.03765054524701445,
+      "same_scene_new_crops_RMSE": 0.03738162463605393,
+      "rocket_RMSE": 0.01788133528831568,
+      "hubble_RMSE": 0.02919725313658507,
+      "ridge_rocket_RMSE": 0.017437018004624917,
+      "ridge_hubble_RMSE": 0.02385846322990702,
+      "rocket_dropout2_RMSE": 0.02960411241752929
+    },
+    {
+      "method": "STRAT",
+      "seed": 4,
+      "ids": [
+        [
+          76,
+          17,
+          463,
+          403
+        ],
+        [
+          169,
+          236,
+          388,
+          376
+        ],
+        [
+          72,
+          261,
+          315,
+          404
+        ]
+      ],
+      "train_fixed_RMSE": 0.03319591541041047,
+      "same_scene_new_crops_RMSE": 0.03366910436143584,
+      "rocket_RMSE": 0.019193469441090308,
+      "hubble_RMSE": 0.027230789820641445,
+      "ridge_rocket_RMSE": 0.019074299454952048,
+      "ridge_hubble_RMSE": 0.024035397355875867,
+      "rocket_dropout2_RMSE": 0.02961857284334028
+    },
+    {
+      "method": "STRAT",
+      "seed": 5,
+      "ids": [
+        [
+          1,
+          64,
+          438,
+          421
+        ],
+        [
+          217,
+          47,
+          295,
+          400
+        ],
+        [
+          247,
+          140,
+          515,
+          402
+        ]
+      ],
+      "train_fixed_RMSE": 0.033085991033543816,
+      "same_scene_new_crops_RMSE": 0.03671557749202089,
+      "rocket_RMSE": 0.017425582801006912,
+      "hubble_RMSE": 0.028901901787211276,
+      "ridge_rocket_RMSE": 0.018538302875036303,
+      "ridge_hubble_RMSE": 0.022498562790695228,
+      "rocket_dropout2_RMSE": 0.029907779917137674
+    },
+    {
+      "method": "STRAT",
+      "seed": 6,
+      "ids": [
+        [
+          11,
+          167,
+          438,
+          333
+        ],
+        [
+          170,
+          40,
+          368,
+          329
+        ],
+        [
+          179,
+          132,
+          295,
+          571
+        ]
+      ],
+      "train_fixed_RMSE": 0.03024082006070641,
+      "same_scene_new_crops_RMSE": 0.03323371252162547,
+      "rocket_RMSE": 0.015070810903849078,
+      "hubble_RMSE": 0.027789442434304406,
+      "ridge_rocket_RMSE": 0.019461047232942567,
+      "ridge_hubble_RMSE": 0.02209699454304794,
+      "rocket_dropout2_RMSE": 0.02727888691904939
+    },
+    {
+      "method": "FPS",
+      "seed": 0,
+      "ids": [
+        [
+          29,
+          575,
+          552,
+          119
+        ],
+        [
+          266,
+          575,
+          23,
+          561
+        ],
+        [
+          431,
+          0,
+          552,
+          18
+        ]
+      ],
+      "train_fixed_RMSE": 0.051271373889275156,
+      "same_scene_new_crops_RMSE": 0.05224720129381247,
+      "rocket_RMSE": 0.029862542775359463,
+      "hubble_RMSE": 0.03851192266796977,
+      "ridge_rocket_RMSE": 0.028378474937628816,
+      "ridge_hubble_RMSE": 0.03135894642166634,
+      "rocket_dropout2_RMSE": 0.037559800988438634
+    },
+    {
+      "method": "FPS",
+      "seed": 1,
+      "ids": [
+        [
+          167,
+          552,
+          0,
+          570
+        ],
+        [
+          425,
+          0,
+          23,
+          552
+        ],
+        [
+          548,
+          0,
+          23,
+          504
+        ]
+      ],
+      "train_fixed_RMSE": 0.05328067974717922,
+      "same_scene_new_crops_RMSE": 0.04962687559843736,
+      "rocket_RMSE": 0.030167968796554305,
+      "hubble_RMSE": 0.04252610965432669,
+      "ridge_rocket_RMSE": 0.027652922283475673,
+      "ridge_hubble_RMSE": 0.037544408837199096,
+      "rocket_dropout2_RMSE": 0.03855433740964742
+    },
+    {
+      "method": "FPS",
+      "seed": 2,
+      "ids": [
+        [
+          53,
+          575,
+          552,
+          23
+        ],
+        [
+          542,
+          0,
+          23,
+          384
+        ],
+        [
+          193,
+          575,
+          23,
+          559
+        ]
+      ],
+      "train_fixed_RMSE": 0.05260083994071783,
+      "same_scene_new_crops_RMSE": 0.05200119099009616,
+      "rocket_RMSE": 0.028115869110022743,
+      "hubble_RMSE": 0.04150941300758471,
+      "ridge_rocket_RMSE": 0.024689345253283333,
+      "ridge_hubble_RMSE": 0.03598711537582029,
+      "rocket_dropout2_RMSE": 0.036606856405681724
+    },
+    {
+      "method": "FPS",
+      "seed": 3,
+      "ids": [
+        [
+          123,
+          575,
+          23,
+          552
+        ],
+        [
+          166,
+          552,
+          0,
+          570
+        ],
+        [
+          151,
+          575,
+          552,
+          23
+        ]
+      ],
+      "train_fixed_RMSE": 0.05229968499724565,
+      "same_scene_new_crops_RMSE": 0.05093024367666904,
+      "rocket_RMSE": 0.029933629620809483,
+      "hubble_RMSE": 0.03936133868736176,
+      "ridge_rocket_RMSE": 0.028953135144832498,
+      "ridge_hubble_RMSE": 0.03477263371589576,
+      "rocket_dropout2_RMSE": 0.039247665010309636
+    },
+    {
+      "method": "FPS",
+      "seed": 4,
+      "ids": [
+        [
+          186,
+          552,
+          0,
+          575
+        ],
+        [
+          344,
+          23,
+          575,
+          0
+        ],
+        [
+          176,
+          575,
+          552,
+          23
+        ]
+      ],
+      "train_fixed_RMSE": 0.048595826599203876,
+      "same_scene_new_crops_RMSE": 0.047028813350118236,
+      "rocket_RMSE": 0.030462026776562564,
+      "hubble_RMSE": 0.039604085534620304,
+      "ridge_rocket_RMSE": 0.024809260482658333,
+      "ridge_hubble_RMSE": 0.029025913290967355,
+      "rocket_dropout2_RMSE": 0.037985519464803406
+    },
+    {
+      "method": "FPS",
+      "seed": 5,
+      "ids": [
+        [
+          2,
+          575,
+          552,
+          47
+        ],
+        [
+          477,
+          0,
+          552,
+          23
+        ],
+        [
+          484,
+          23,
+          0,
+          575
+        ]
+      ],
+      "train_fixed_RMSE": 0.05789052510369435,
+      "same_scene_new_crops_RMSE": 0.05419335184549191,
+      "rocket_RMSE": 0.03276443161636463,
+      "hubble_RMSE": 0.04665438019048498,
+      "ridge_rocket_RMSE": 0.030764733630017083,
+      "ridge_hubble_RMSE": 0.040569286386025506,
+      "rocket_dropout2_RMSE": 0.042300668425680206
+    },
+    {
+      "method": "FPS",
+      "seed": 6,
+      "ids": [
+        [
+          45,
+          552,
+          575,
+          0
+        ],
+        [
+          346,
+          23,
+          0,
+          575
+        ],
+        [
+          376,
+          0,
+          552,
+          23
+        ]
+      ],
+      "train_fixed_RMSE": 0.05192211049107053,
+      "same_scene_new_crops_RMSE": 0.049318558375253216,
+      "rocket_RMSE": 0.03060707818003042,
+      "hubble_RMSE": 0.042002070096570344,
+      "ridge_rocket_RMSE": 0.024522261164454634,
+      "ridge_hubble_RMSE": 0.03251188147245705,
+      "rocket_dropout2_RMSE": 0.03688675289355831
+    },
+    {
+      "method": "SOBOL",
+      "seed": 0,
+      "ids": [
+        [
+          294,
+          84,
+          454,
+          221
+        ],
+        [
+          165,
+          298,
+          48,
+          470
+        ],
+        [
+          32,
+          517,
+          210,
+          361
+        ]
+      ],
+      "train_fixed_RMSE": 0.029989741580082295,
+      "same_scene_new_crops_RMSE": 0.03306234275261413,
+      "rocket_RMSE": 0.01745489364023798,
+      "hubble_RMSE": 0.02468860670574554,
+      "ridge_rocket_RMSE": 0.02058529919998488,
+      "ridge_hubble_RMSE": 0.02060171207601444,
+      "rocket_dropout2_RMSE": 0.028533724822147635
+    },
+    {
+      "method": "SOBOL",
+      "seed": 1,
+      "ids": [
+        [
+          516,
+          50,
+          394,
+          191
+        ],
+        [
+          433,
+          44,
+          401,
+          227
+        ],
+        [
+          347,
+          93,
+          496,
+          221
+        ]
+      ],
+      "train_fixed_RMSE": 0.03080324416324261,
+      "same_scene_new_crops_RMSE": 0.03156149238117507,
+      "rocket_RMSE": 0.018568305807574934,
+      "hubble_RMSE": 0.02382816375868182,
+      "ridge_rocket_RMSE": 0.02015869337436927,
+      "ridge_hubble_RMSE": 0.020097190113380323,
+      "rocket_dropout2_RMSE": 0.029642764977958883
+    },
+    {
+      "method": "SOBOL",
+      "seed": 2,
+      "ids": [
+        [
+          332,
+          98,
+          488,
+          253
+        ],
+        [
+          145,
+          308,
+          63,
+          490
+        ],
+        [
+          267,
+          448,
+          68,
+          391
+        ]
+      ],
+      "train_fixed_RMSE": 0.0317508286670033,
+      "same_scene_new_crops_RMSE": 0.030341783702324286,
+      "rocket_RMSE": 0.017654258290556762,
+      "hubble_RMSE": 0.027111149033951315,
+      "ridge_rocket_RMSE": 0.026116606911830976,
+      "ridge_hubble_RMSE": 0.02259597162395499,
+      "rocket_dropout2_RMSE": 0.0289726344736435
+    },
+    {
+      "method": "SOBOL",
+      "seed": 3,
+      "ids": [
+        [
+          457,
+          236,
+          326,
+          128
+        ],
+        [
+          453,
+          58,
+          412,
+          231
+        ],
+        [
+          108,
+          465,
+          194,
+          382
+        ]
+      ],
+      "train_fixed_RMSE": 0.03051274226343719,
+      "same_scene_new_crops_RMSE": 0.034182458205606316,
+      "rocket_RMSE": 0.018107844942711754,
+      "hubble_RMSE": 0.02415251143560346,
+      "ridge_rocket_RMSE": 0.022459444592029493,
+      "ridge_hubble_RMSE": 0.020425395065889213,
+      "rocket_dropout2_RMSE": 0.030695843652203857
+    },
+    {
+      "method": "SOBOL",
+      "seed": 4,
+      "ids": [
+        [
+          158,
+          418,
+          49,
+          527
+        ],
+        [
+          238,
+          439,
+          122,
+          327
+        ],
+        [
+          210,
+          416,
+          50,
+          564
+        ]
+      ],
+      "train_fixed_RMSE": 0.03152171583748825,
+      "same_scene_new_crops_RMSE": 0.030835604628216256,
+      "rocket_RMSE": 0.01713286975338839,
+      "hubble_RMSE": 0.025851575301400594,
+      "ridge_rocket_RMSE": 0.021105851405840027,
+      "ridge_hubble_RMSE": 0.024803321121523118,
+      "rocket_dropout2_RMSE": 0.03042040348244014
+    },
+    {
+      "method": "SOBOL",
+      "seed": 5,
+      "ids": [
+        [
+          40,
+          409,
+          274,
+          499
+        ],
+        [
+          518,
+          202,
+          340,
+          90
+        ],
+        [
+          497,
+          11,
+          412,
+          238
+        ]
+      ],
+      "train_fixed_RMSE": 0.027721970312864195,
+      "same_scene_new_crops_RMSE": 0.03424543758294216,
+      "rocket_RMSE": 0.01956692814197638,
+      "hubble_RMSE": 0.027841448299197484,
+      "ridge_rocket_RMSE": 0.02083113318183069,
+      "ridge_hubble_RMSE": 0.024325739130090555,
+      "rocket_dropout2_RMSE": 0.030387766821691715
+    },
+    {
+      "method": "SOBOL",
+      "seed": 6,
+      "ids": [
+        [
+          437,
+          110,
+          357,
+          247
+        ],
+        [
+          45,
+          482,
+          200,
+          351
+        ],
+        [
+          334,
+          121,
+          534,
+          160
+        ]
+      ],
+      "train_fixed_RMSE": 0.03220406561118489,
+      "same_scene_new_crops_RMSE": 0.029617653575729642,
+      "rocket_RMSE": 0.016415270653208008,
+      "hubble_RMSE": 0.025061983620453036,
+      "ridge_rocket_RMSE": 0.02193137464418562,
+      "ridge_hubble_RMSE": 0.021301816908597157,
+      "rocket_dropout2_RMSE": 0.029195772317142484
+    },
+    {
+      "method": "MHU-plain",
+      "seed": 0,
+      "ids": [
+        [
+          366,
+          85,
+          453,
+          148
+        ],
+        [
+          432,
+          239,
+          399,
+          31
+        ],
+        [
+          450,
+          1,
+          416,
+          233
+        ]
+      ],
+      "train_fixed_RMSE": 0.03011891205755034,
+      "same_scene_new_crops_RMSE": 0.03022418575884075,
+      "rocket_RMSE": 0.01798259957196162,
+      "hubble_RMSE": 0.0254508569516505,
+      "ridge_rocket_RMSE": 0.01853945357748822,
+      "ridge_hubble_RMSE": 0.019408349172986394,
+      "rocket_dropout2_RMSE": 0.0326104468131034
+    },
+    {
+      "method": "MHU-plain",
+      "seed": 1,
+      "ids": [
+        [
+          563,
+          26,
+          320,
+          287
+        ],
+        [
+          449,
+          230,
+          506,
+          11
+        ],
+        [
+          460,
+          64,
+          427,
+          247
+        ]
+      ],
+      "train_fixed_RMSE": 0.0302199731555418,
+      "same_scene_new_crops_RMSE": 0.028897061780194497,
+      "rocket_RMSE": 0.016153754103054162,
+      "hubble_RMSE": 0.02401811702974804,
+      "ridge_rocket_RMSE": 0.018987393867821882,
+      "ridge_hubble_RMSE": 0.018964038609241837,
+      "rocket_dropout2_RMSE": 0.029553119438728064
+    },
+    {
+      "method": "MHU-plain",
+      "seed": 2,
+      "ids": [
+        [
+          380,
+          74,
+          488,
+          206
+        ],
+        [
+          84,
+          341,
+          221,
+          527
+        ],
+        [
+          291,
+          14,
+          575,
+          252
+        ]
+      ],
+      "train_fixed_RMSE": 0.03308579494779779,
+      "same_scene_new_crops_RMSE": 0.03482765475375662,
+      "rocket_RMSE": 0.01804710792560797,
+      "hubble_RMSE": 0.02806671318240104,
+      "ridge_rocket_RMSE": 0.01835110723177534,
+      "ridge_hubble_RMSE": 0.022451667999228934,
+      "rocket_dropout2_RMSE": 0.03026071985748617
+    },
+    {
+      "method": "MHU-plain",
+      "seed": 3,
+      "ids": [
+        [
+          458,
+          189,
+          350,
+          175
+        ],
+        [
+          132,
+          265,
+          128,
+          571
+        ],
+        [
+          350,
+          50,
+          563,
+          212
+        ]
+      ],
+      "train_fixed_RMSE": 0.03344106800133445,
+      "same_scene_new_crops_RMSE": 0.03584067609328494,
+      "rocket_RMSE": 0.018308143229724228,
+      "hubble_RMSE": 0.0274902024781204,
+      "ridge_rocket_RMSE": 0.022502868207156385,
+      "ridge_hubble_RMSE": 0.01999487214518689,
+      "rocket_dropout2_RMSE": 0.029691003839428683
+    },
+    {
+      "method": "MHU-plain",
+      "seed": 4,
+      "ids": [
+        [
+          184,
+          392,
+          97,
+          479
+        ],
+        [
+          193,
+          379,
+          67,
+          487
+        ],
+        [
+          205,
+          390,
+          26,
+          499
+        ]
+      ],
+      "train_fixed_RMSE": 0.030526583581717125,
+      "same_scene_new_crops_RMSE": 0.03253083279312746,
+      "rocket_RMSE": 0.01783805922817986,
+      "hubble_RMSE": 0.026421323548906802,
+      "ridge_rocket_RMSE": 0.022190596547786184,
+      "ridge_hubble_RMSE": 0.021714754971548754,
+      "rocket_dropout2_RMSE": 0.029818649249687603
+    },
+    {
+      "method": "MHU-plain",
+      "seed": 5,
+      "ids": [
+        [
+          69,
+          408,
+          252,
+          471
+        ],
+        [
+          360,
+          160,
+          479,
+          79
+        ],
+        [
+          149,
+          449,
+          115,
+          391
+        ]
+      ],
+      "train_fixed_RMSE": 0.03271677789072757,
+      "same_scene_new_crops_RMSE": 0.035417404643492516,
+      "rocket_RMSE": 0.017580978110088203,
+      "hubble_RMSE": 0.027660346122454004,
+      "ridge_rocket_RMSE": 0.023559813613884276,
+      "ridge_hubble_RMSE": 0.022029244230703498,
+      "rocket_dropout2_RMSE": 0.03151571075995711
+    },
+    {
+      "method": "MHU-plain",
+      "seed": 6,
+      "ids": [
+        [
+          484,
+          64,
+          358,
+          271
+        ],
+        [
+          227,
+          533,
+          53,
+          383
+        ],
+        [
+          363,
+          118,
+          519,
+          151
+        ]
+      ],
+      "train_fixed_RMSE": 0.032169957366597356,
+      "same_scene_new_crops_RMSE": 0.033549788975611165,
+      "rocket_RMSE": 0.018048627133525084,
+      "hubble_RMSE": 0.028476882005261932,
+      "ridge_rocket_RMSE": 0.022660482851039512,
+      "ridge_hubble_RMSE": 0.021900133260591505,
+      "rocket_dropout2_RMSE": 0.03189553806130875
+    },
+    {
+      "method": "POWER-DIAG",
+      "seed": 0,
+      "ids": [
+        [
+          345,
+          61,
+          477,
+          169
+        ],
+        [
+          458,
+          189,
+          374,
+          81
+        ],
+        [
+          474,
+          51,
+          367,
+          208
+        ]
+      ],
+      "train_fixed_RMSE": 0.025873816774725222,
+      "same_scene_new_crops_RMSE": 0.028260191007231393,
+      "rocket_RMSE": 0.01598700616681901,
+      "hubble_RMSE": 0.02204475125494206,
+      "ridge_rocket_RMSE": 0.019030609128334458,
+      "ridge_hubble_RMSE": 0.017790131605307707,
+      "rocket_dropout2_RMSE": 0.030692430188172463
+    },
+    {
+      "method": "POWER-DIAG",
+      "seed": 1,
+      "ids": [
+        [
+          520,
+          52,
+          344,
+          236
+        ],
+        [
+          501,
+          201,
+          289,
+          13
+        ],
+        [
+          508,
+          88,
+          379,
+          223
+        ]
+      ],
+      "train_fixed_RMSE": 0.030873474391057913,
+      "same_scene_new_crops_RMSE": 0.03165539172283443,
+      "rocket_RMSE": 0.015460347855216187,
+      "hubble_RMSE": 0.026258699601100385,
+      "ridge_rocket_RMSE": 0.020159056027195834,
+      "ridge_hubble_RMSE": 0.019512871636598036,
+      "rocket_dropout2_RMSE": 0.03010897849780312
+    },
+    {
+      "method": "POWER-DIAG",
+      "seed": 2,
+      "ids": [
+        [
+          381,
+          73,
+          489,
+          205
+        ],
+        [
+          111,
+          387,
+          199,
+          499
+        ],
+        [
+          315,
+          38,
+          551,
+          252
+        ]
+      ],
+      "train_fixed_RMSE": 0.02681662481250589,
+      "same_scene_new_crops_RMSE": 0.027970125339373764,
+      "rocket_RMSE": 0.015584291486322323,
+      "hubble_RMSE": 0.024322945001228783,
+      "ridge_rocket_RMSE": 0.017072359118766207,
+      "ridge_hubble_RMSE": 0.020693250709237842,
+      "rocket_dropout2_RMSE": 0.029076772277967358
+    },
+    {
+      "method": "POWER-DIAG",
+      "seed": 3,
+      "ids": [
+        [
+          481,
+          213,
+          373,
+          105
+        ],
+        [
+          230,
+          338,
+          54,
+          522
+        ],
+        [
+          349,
+          26,
+          563,
+          237
+        ]
+      ],
+      "train_fixed_RMSE": 0.02884028445400547,
+      "same_scene_new_crops_RMSE": 0.028636597925202352,
+      "rocket_RMSE": 0.01716760128775782,
+      "hubble_RMSE": 0.02365964343937554,
+      "ridge_rocket_RMSE": 0.020016114614601482,
+      "ridge_hubble_RMSE": 0.01973532270269056,
+      "rocket_dropout2_RMSE": 0.029158349432493222
+    },
+    {
+      "method": "POWER-DIAG",
+      "seed": 4,
+      "ids": [
+        [
+          208,
+          368,
+          76,
+          500
+        ],
+        [
+          195,
+          380,
+          87,
+          487
+        ],
+        [
+          206,
+          390,
+          74,
+          498
+        ]
+      ],
+      "train_fixed_RMSE": 0.026432416335232207,
+      "same_scene_new_crops_RMSE": 0.027376763296467682,
+      "rocket_RMSE": 0.014424269602144718,
+      "hubble_RMSE": 0.024203094513693537,
+      "ridge_rocket_RMSE": 0.021550301093413677,
+      "ridge_hubble_RMSE": 0.022832960708542592,
+      "rocket_dropout2_RMSE": 0.027999892353826564
+    },
+    {
+      "method": "POWER-DIAG",
+      "seed": 5,
+      "ids": [
+        [
+          112,
+          388,
+          200,
+          499
+        ],
+        [
+          315,
+          207,
+          500,
+          32
+        ],
+        [
+          173,
+          473,
+          115,
+          391
+        ]
+      ],
+      "train_fixed_RMSE": 0.032321163682985404,
+      "same_scene_new_crops_RMSE": 0.03254404071438195,
+      "rocket_RMSE": 0.015718492253473954,
+      "hubble_RMSE": 0.025319267065832714,
+      "ridge_rocket_RMSE": 0.023952735950192656,
+      "ridge_hubble_RMSE": 0.023220887716081495,
+      "rocket_dropout2_RMSE": 0.029095184149321773
+    },
+    {
+      "method": "POWER-DIAG",
+      "seed": 6,
+      "ids": [
+        [
+          508,
+          64,
+          356,
+          224
+        ],
+        [
+          225,
+          41,
+          485,
+          333
+        ],
+        [
+          363,
+          118,
+          495,
+          176
+        ]
+      ],
+      "train_fixed_RMSE": 0.033854226509106515,
+      "same_scene_new_crops_RMSE": 0.03865052493728146,
+      "rocket_RMSE": 0.017002821773031675,
+      "hubble_RMSE": 0.02949750243912028,
+      "ridge_rocket_RMSE": 0.026203221475599687,
+      "ridge_hubble_RMSE": 0.025369650866697367,
+      "rocket_dropout2_RMSE": 0.027941536037231342
+    },
+    {
+      "method": "COSI-FULL",
+      "seed": 0,
+      "ids": [
+        [
+          268,
+          89,
+          426,
+          127
+        ],
+        [
+          481,
+          190,
+          349,
+          10
+        ],
+        [
+          545,
+          100,
+          389,
+          257
+        ]
+      ],
+      "train_fixed_RMSE": 0.030218629027911854,
+      "same_scene_new_crops_RMSE": 0.031260162938534945,
+      "rocket_RMSE": 0.017811828766796597,
+      "hubble_RMSE": 0.02412459839716313,
+      "ridge_rocket_RMSE": 0.021179593135054523,
+      "ridge_hubble_RMSE": 0.016937945872458015,
+      "rocket_dropout2_RMSE": 0.031588236508854554
+    },
+    {
+      "method": "COSI-FULL",
+      "seed": 1,
+      "ids": [
+        [
+          352,
+          76,
+          415,
+          139
+        ],
+        [
+          502,
+          202,
+          265,
+          13
+        ],
+        [
+          557,
+          114,
+          376,
+          391
+        ]
+      ],
+      "train_fixed_RMSE": 0.031633975564198974,
+      "same_scene_new_crops_RMSE": 0.031405003554455725,
+      "rocket_RMSE": 0.01562116158802492,
+      "hubble_RMSE": 0.025960773253366983,
+      "ridge_rocket_RMSE": 0.019728151464282057,
+      "ridge_hubble_RMSE": 0.020581201878324917,
+      "rocket_dropout2_RMSE": 0.029622880574774565
+    },
+    {
+      "method": "COSI-FULL",
+      "seed": 2,
+      "ids": [
+        [
+          262,
+          25,
+          538,
+          325
+        ],
+        [
+          112,
+          388,
+          175,
+          475
+        ],
+        [
+          264,
+          11,
+          575,
+          300
+        ]
+      ],
+      "train_fixed_RMSE": 0.026349820064827383,
+      "same_scene_new_crops_RMSE": 0.02523010990477532,
+      "rocket_RMSE": 0.01425214509208022,
+      "hubble_RMSE": 0.021444963552416357,
+      "ridge_rocket_RMSE": 0.01703964279240414,
+      "ridge_hubble_RMSE": 0.017774219375179423,
+      "rocket_dropout2_RMSE": 0.027912432227604367
+    },
+    {
+      "method": "COSI-FULL",
+      "seed": 3,
+      "ids": [
+        [
+          432,
+          167,
+          442,
+          156
+        ],
+        [
+          256,
+          340,
+          55,
+          547
+        ],
+        [
+          396,
+          1,
+          564,
+          189
+        ]
+      ],
+      "train_fixed_RMSE": 0.027131266756671515,
+      "same_scene_new_crops_RMSE": 0.02645571526585503,
+      "rocket_RMSE": 0.016477016871589013,
+      "hubble_RMSE": 0.025188687242854727,
+      "ridge_rocket_RMSE": 0.018455351130392716,
+      "ridge_hubble_RMSE": 0.02135293875170168,
+      "rocket_dropout2_RMSE": 0.030133362782455243
+    },
+    {
+      "method": "COSI-FULL",
+      "seed": 4,
+      "ids": [
+        [
+          156,
+          397,
+          96,
+          479
+        ],
+        [
+          220,
+          356,
+          64,
+          512
+        ],
+        [
+          276,
+          413,
+          0,
+          449
+        ]
+      ],
+      "train_fixed_RMSE": 0.02614846982336686,
+      "same_scene_new_crops_RMSE": 0.0257158564321115,
+      "rocket_RMSE": 0.015381127761694735,
+      "hubble_RMSE": 0.02414766124846394,
+      "ridge_rocket_RMSE": 0.020275410907819105,
+      "ridge_hubble_RMSE": 0.02054029724844222,
+      "rocket_dropout2_RMSE": 0.027625904448516682
+    },
+    {
+      "method": "COSI-FULL",
+      "seed": 5,
+      "ids": [
+        [
+          14,
+          461,
+          371,
+          403
+        ],
+        [
+          290,
+          232,
+          550,
+          56
+        ],
+        [
+          148,
+          469,
+          139,
+          391
+        ]
+      ],
+      "train_fixed_RMSE": 0.03043320002159448,
+      "same_scene_new_crops_RMSE": 0.02782220664620149,
+      "rocket_RMSE": 0.016526968186021437,
+      "hubble_RMSE": 0.0239466736046944,
+      "ridge_rocket_RMSE": 0.02237293107281864,
+      "ridge_hubble_RMSE": 0.019611021645258197,
+      "rocket_dropout2_RMSE": 0.030442642348864117
+    },
+    {
+      "method": "COSI-FULL",
+      "seed": 6,
+      "ids": [
+        [
+          439,
+          138,
+          353,
+          245
+        ],
+        [
+          229,
+          538,
+          49,
+          406
+        ],
+        [
+          316,
+          165,
+          472,
+          151
+        ]
+      ],
+      "train_fixed_RMSE": 0.02927621143058115,
+      "same_scene_new_crops_RMSE": 0.03189891058187657,
+      "rocket_RMSE": 0.01665036849437496,
+      "hubble_RMSE": 0.02514949550682332,
+      "ridge_rocket_RMSE": 0.023156296729825037,
+      "ridge_hubble_RMSE": 0.020003394609407085,
+      "rocket_dropout2_RMSE": 0.03001556588951124
+    },
+    {
+      "method": "COSI-SHRINK",
+      "seed": 0,
+      "ids": [
+        [
+          295,
+          17,
+          428,
+          124
+        ],
+        [
+          482,
+          214,
+          374,
+          82
+        ],
+        [
+          544,
+          24,
+          390,
+          281
+        ]
+      ],
+      "train_fixed_RMSE": 0.026315003995030836,
+      "same_scene_new_crops_RMSE": 0.02676796806417745,
+      "rocket_RMSE": 0.017828678809502604,
+      "hubble_RMSE": 0.021458090964663484,
+      "ridge_rocket_RMSE": 0.020531955692421933,
+      "ridge_hubble_RMSE": 0.017446389345168803,
+      "rocket_dropout2_RMSE": 0.03130990248449841
+    },
+    {
+      "method": "COSI-SHRINK",
+      "seed": 1,
+      "ids": [
+        [
+          352,
+          52,
+          415,
+          139
+        ],
+        [
+          501,
+          201,
+          265,
+          13
+        ],
+        [
+          557,
+          139,
+          400,
+          366
+        ]
+      ],
+      "train_fixed_RMSE": 0.030318297167575194,
+      "same_scene_new_crops_RMSE": 0.030113848709173694,
+      "rocket_RMSE": 0.014958493407223794,
+      "hubble_RMSE": 0.025438093787538998,
+      "ridge_rocket_RMSE": 0.01877562117319631,
+      "ridge_hubble_RMSE": 0.020065278941759173,
+      "rocket_dropout2_RMSE": 0.029193792669171402
+    },
+    {
+      "method": "COSI-SHRINK",
+      "seed": 2,
+      "ids": [
+        [
+          262,
+          25,
+          538,
+          325
+        ],
+        [
+          112,
+          388,
+          199,
+          499
+        ],
+        [
+          264,
+          10,
+          575,
+          326
+        ]
+      ],
+      "train_fixed_RMSE": 0.026165083319307232,
+      "same_scene_new_crops_RMSE": 0.025855596760188008,
+      "rocket_RMSE": 0.015060953405539871,
+      "hubble_RMSE": 0.022391471387422413,
+      "ridge_rocket_RMSE": 0.017493333861936262,
+      "ridge_hubble_RMSE": 0.018779430782871753,
+      "rocket_dropout2_RMSE": 0.028146204513608167
+    },
+    {
+      "method": "COSI-SHRINK",
+      "seed": 3,
+      "ids": [
+        [
+          432,
+          191,
+          443,
+          132
+        ],
+        [
+          255,
+          339,
+          79,
+          547
+        ],
+        [
+          322,
+          1,
+          515,
+          188
+        ]
+      ],
+      "train_fixed_RMSE": 0.027019545314378068,
+      "same_scene_new_crops_RMSE": 0.02647047242099639,
+      "rocket_RMSE": 0.015641272727629517,
+      "hubble_RMSE": 0.02452831504887965,
+      "ridge_rocket_RMSE": 0.01853392242868524,
+      "ridge_hubble_RMSE": 0.02006034013396993,
+      "rocket_dropout2_RMSE": 0.028487960341490284
+    },
+    {
+      "method": "COSI-SHRINK",
+      "seed": 4,
+      "ids": [
+        [
+          181,
+          395,
+          97,
+          479
+        ],
+        [
+          220,
+          356,
+          64,
+          512
+        ],
+        [
+          277,
+          389,
+          1,
+          473
+        ]
+      ],
+      "train_fixed_RMSE": 0.02625041551138699,
+      "same_scene_new_crops_RMSE": 0.025605780619861216,
+      "rocket_RMSE": 0.015282789389089101,
+      "hubble_RMSE": 0.024020190979066245,
+      "ridge_rocket_RMSE": 0.020517311305778666,
+      "ridge_hubble_RMSE": 0.020898198845633244,
+      "rocket_dropout2_RMSE": 0.027419387475504677
+    },
+    {
+      "method": "COSI-SHRINK",
+      "seed": 5,
+      "ids": [
+        [
+          91,
+          385,
+          148,
+          445
+        ],
+        [
+          318,
+          233,
+          526,
+          58
+        ],
+        [
+          171,
+          424,
+          140,
+          488
+        ]
+      ],
+      "train_fixed_RMSE": 0.028776673054484628,
+      "same_scene_new_crops_RMSE": 0.029353749776122918,
+      "rocket_RMSE": 0.017172784362017336,
+      "hubble_RMSE": 0.025654522367835983,
+      "ridge_rocket_RMSE": 0.020799613130447547,
+      "ridge_hubble_RMSE": 0.020765922936610996,
+      "rocket_dropout2_RMSE": 0.02950620982672237
+    },
+    {
+      "method": "COSI-SHRINK",
+      "seed": 6,
+      "ids": [
+        [
+          484,
+          42,
+          352,
+          270
+        ],
+        [
+          230,
+          514,
+          122,
+          406
+        ],
+        [
+          342,
+          162,
+          547,
+          31
+        ]
+      ],
+      "train_fixed_RMSE": 0.026988242449071578,
+      "same_scene_new_crops_RMSE": 0.027969848479350197,
+      "rocket_RMSE": 0.015797581729906578,
+      "hubble_RMSE": 0.024751681815455916,
+      "ridge_rocket_RMSE": 0.020535665978764956,
+      "ridge_hubble_RMSE": 0.018594647755173145,
+      "rocket_dropout2_RMSE": 0.028938127940018064
+    },
+    {
+      "method": "DIRECT-EMPIRICAL",
+      "seed": 0,
+      "ids": [
+        [
+          274,
+          264,
+          320,
+          548
+        ],
+        [
+          76,
+          163,
+          511,
+          329
+        ],
+        [
+          361,
+          11,
+          518,
+          479
+        ]
+      ],
+      "train_fixed_RMSE": 0.02294603355385304,
+      "same_scene_new_crops_RMSE": 0.027571095746499116,
+      "rocket_RMSE": 0.016162369602382726,
+      "hubble_RMSE": 0.026120386481383286,
+      "ridge_rocket_RMSE": 0.018576843511157237,
+      "ridge_hubble_RMSE": 0.02121707910932599,
+      "rocket_dropout2_RMSE": 0.029223302377947954
+    },
+    {
+      "method": "DIRECT-EMPIRICAL",
+      "seed": 1,
+      "ids": [
+        [
+          29,
+          173,
+          111,
+          92
+        ],
+        [
+          483,
+          471,
+          321,
+          284
+        ],
+        [
+          24,
+          16,
+          81,
+          58
+        ]
+      ],
+      "train_fixed_RMSE": 0.02397772502333208,
+      "same_scene_new_crops_RMSE": 0.030216076137041383,
+      "rocket_RMSE": 0.017987243978135496,
+      "hubble_RMSE": 0.022102703143545573,
+      "ridge_rocket_RMSE": 0.018983415968163348,
+      "ridge_hubble_RMSE": 0.020181999672632678,
+      "rocket_dropout2_RMSE": 0.029131653930317733
+    },
+    {
+      "method": "DIRECT-EMPIRICAL",
+      "seed": 2,
+      "ids": [
+        [
+          443,
+          279,
+          194,
+          357
+        ],
+        [
+          177,
+          65,
+          412,
+          523
+        ],
+        [
+          2,
+          97,
+          243,
+          262
+        ]
+      ],
+      "train_fixed_RMSE": 0.022553027915996147,
+      "same_scene_new_crops_RMSE": 0.025722930214625205,
+      "rocket_RMSE": 0.017680725242851122,
+      "hubble_RMSE": 0.023592906101055022,
+      "ridge_rocket_RMSE": 0.01950910745925969,
+      "ridge_hubble_RMSE": 0.020015276092733434,
+      "rocket_dropout2_RMSE": 0.02949210129017082
+    },
+    {
+      "method": "DIRECT-EMPIRICAL",
+      "seed": 3,
+      "ids": [
+        [
+          78,
+          214,
+          409,
+          559
+        ],
+        [
+          194,
+          135,
+          371,
+          476
+        ],
+        [
+          8,
+          47,
+          485,
+          19
+        ]
+      ],
+      "train_fixed_RMSE": 0.021927426326930857,
+      "same_scene_new_crops_RMSE": 0.025223717163880655,
+      "rocket_RMSE": 0.01593617920259113,
+      "hubble_RMSE": 0.021658295357199434,
+      "ridge_rocket_RMSE": 0.01670237649192727,
+      "ridge_hubble_RMSE": 0.01834424092012699,
+      "rocket_dropout2_RMSE": 0.028930312384552802
+    },
+    {
+      "method": "DIRECT-EMPIRICAL",
+      "seed": 4,
+      "ids": [
+        [
+          242,
+          43,
+          535,
+          424
+        ],
+        [
+          52,
+          183,
+          368,
+          382
+        ],
+        [
+          483,
+          542,
+          529,
+          504
+        ]
+      ],
+      "train_fixed_RMSE": 0.022367775713028407,
+      "same_scene_new_crops_RMSE": 0.031772764458697686,
+      "rocket_RMSE": 0.017454424993260335,
+      "hubble_RMSE": 0.0240670021448687,
+      "ridge_rocket_RMSE": 0.015540399845575373,
+      "ridge_hubble_RMSE": 0.020609884651010917,
+      "rocket_dropout2_RMSE": 0.032047291009916955
+    },
+    {
+      "method": "DIRECT-EMPIRICAL",
+      "seed": 5,
+      "ids": [
+        [
+          316,
+          36,
+          458,
+          479
+        ],
+        [
+          124,
+          115,
+          442,
+          377
+        ],
+        [
+          203,
+          264,
+          552,
+          224
+        ]
+      ],
+      "train_fixed_RMSE": 0.02273923546752339,
+      "same_scene_new_crops_RMSE": 0.02451072558778738,
+      "rocket_RMSE": 0.017153766759817807,
+      "hubble_RMSE": 0.02151833432990893,
+      "ridge_rocket_RMSE": 0.017126577827166933,
+      "ridge_hubble_RMSE": 0.017538085326167463,
+      "rocket_dropout2_RMSE": 0.028667231239779434
+    },
+    {
+      "method": "DIRECT-EMPIRICAL",
+      "seed": 6,
+      "ids": [
+        [
+          66,
+          484,
+          539,
+          575
+        ],
+        [
+          170,
+          159,
+          344,
+          401
+        ],
+        [
+          119,
+          71,
+          5,
+          528
+        ]
+      ],
+      "train_fixed_RMSE": 0.023067843679592435,
+      "same_scene_new_crops_RMSE": 0.028613292143741417,
+      "rocket_RMSE": 0.0144918479921604,
+      "hubble_RMSE": 0.022822012201474014,
+      "ridge_rocket_RMSE": 0.016071129149859253,
+      "ridge_hubble_RMSE": 0.019253367724229233,
+      "rocket_dropout2_RMSE": 0.026497011229343843
+    }
+  ],
+  "metadata": {
+    "IID:0": {},
+    "IID:1": {},
+    "IID:2": {},
+    "IID:3": {},
+    "IID:4": {},
+    "IID:5": {},
+    "IID:6": {},
+    "STRAT:0": {},
+    "STRAT:1": {},
+    "STRAT:2": {},
+    "STRAT:3": {},
+    "STRAT:4": {},
+    "STRAT:5": {},
+    "STRAT:6": {},
+    "FPS:0": {},
+    "FPS:1": {},
+    "FPS:2": {},
+    "FPS:3": {},
+    "FPS:4": {},
+    "FPS:5": {},
+    "FPS:6": {},
+    "SOBOL:0": {},
+    "SOBOL:1": {},
+    "SOBOL:2": {},
+    "SOBOL:3": {},
+    "SOBOL:4": {},
+    "SOBOL:5": {},
+    "SOBOL:6": {},
+    "MHU-plain:0": {
+      "nit": 30,
+      "success": true,
+      "loss": 0.000779548569059346
+    },
+    "MHU-plain:1": {
+      "nit": 29,
+      "success": true,
+      "loss": 0.0007757436656411907
+    },
+    "MHU-plain:2": {
+      "nit": 28,
+      "success": true,
+      "loss": 0.000750957197264287
+    },
+    "MHU-plain:3": {
+      "nit": 36,
+      "success": true,
+      "loss": 0.0007549946324207949
+    },
+    "MHU-plain:4": {
+      "nit": 32,
+      "success": true,
+      "loss": 0.0008032324841077995
+    },
+    "MHU-plain:5": {
+      "nit": 51,
+      "success": true,
+      "loss": 0.0007563210317538988
+    },
+    "MHU-plain:6": {
+      "nit": 30,
+      "success": true,
+      "loss": 0.0007528096368393104
+    },
+    "POWER-DIAG:0": {
+      "nit": 16,
+      "success": true,
+      "loss": 0.000397370303061392
+    },
+    "POWER-DIAG:1": {
+      "nit": 20,
+      "success": true,
+      "loss": 0.0004292858334818977
+    },
+    "POWER-DIAG:2": {
+      "nit": 18,
+      "success": true,
+      "loss": 0.00042990652450482046
+    },
+    "POWER-DIAG:3": {
+      "nit": 12,
+      "success": true,
+      "loss": 0.0003981855117424323
+    },
+    "POWER-DIAG:4": {
+      "nit": 12,
+      "success": true,
+      "loss": 0.00039736662800437844
+    },
+    "POWER-DIAG:5": {
+      "nit": 24,
+      "success": true,
+      "loss": 0.00040300262624742026
+    },
+    "POWER-DIAG:6": {
+      "nit": 15,
+      "success": true,
+      "loss": 0.0003975842761052294
+    },
+    "COSI-FULL:0": {
+      "nit": 25,
+      "success": true,
+      "loss": 0.0002998095248309016
+    },
+    "COSI-FULL:1": {
+      "nit": 28,
+      "success": true,
+      "loss": 0.00028922539475132337
+    },
+    "COSI-FULL:2": {
+      "nit": 31,
+      "success": true,
+      "loss": 0.00028822224599357954
+    },
+    "COSI-FULL:3": {
+      "nit": 30,
+      "success": true,
+      "loss": 0.0002998188856272364
+    },
+    "COSI-FULL:4": {
+      "nit": 14,
+      "success": true,
+      "loss": 0.00030172668272470364
+    },
+    "COSI-FULL:5": {
+      "nit": 20,
+      "success": true,
+      "loss": 0.0003121261841196459
+    },
+    "COSI-FULL:6": {
+      "nit": 15,
+      "success": true,
+      "loss": 0.0003178802635661158
+    },
+    "COSI-SHRINK:0": {
+      "nit": 22,
+      "success": true,
+      "loss": 0.0003566178766724678
+    },
+    "COSI-SHRINK:1": {
+      "nit": 28,
+      "success": true,
+      "loss": 0.00036391286627539813
+    },
+    "COSI-SHRINK:2": {
+      "nit": 24,
+      "success": true,
+      "loss": 0.000363415120878644
+    },
+    "COSI-SHRINK:3": {
+      "nit": 22,
+      "success": true,
+      "loss": 0.0003572672695540899
+    },
+    "COSI-SHRINK:4": {
+      "nit": 15,
+      "success": true,
+      "loss": 0.0003613879568773112
+    },
+    "COSI-SHRINK:5": {
+      "nit": 35,
+      "success": true,
+      "loss": 0.000357638027798585
+    },
+    "COSI-SHRINK:6": {
+      "nit": 31,
+      "success": true,
+      "loss": 0.0003575600568935514
+    },
+    "DIRECT-EMPIRICAL:0": {
+      "train_rmse": 0.02294603355074287,
+      "passes": 3
+    },
+    "DIRECT-EMPIRICAL:1": {
+      "train_rmse": 0.023977725660112276,
+      "passes": 3
+    },
+    "DIRECT-EMPIRICAL:2": {
+      "train_rmse": 0.02255302813020101,
+      "passes": 3
+    },
+    "DIRECT-EMPIRICAL:3": {
+      "train_rmse": 0.021927426628712197,
+      "passes": 3
+    },
+    "DIRECT-EMPIRICAL:4": {
+      "train_rmse": 0.022367775336287754,
+      "passes": 3
+    },
+    "DIRECT-EMPIRICAL:5": {
+      "train_rmse": 0.022739235786407512,
+      "passes": 3
+    },
+    "DIRECT-EMPIRICAL:6": {
+      "train_rmse": 0.02306784386072979,
+      "passes": 3
+    }
+  },
+  "elapsed_seconds": 7.88756537437439
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "skimage.data, RGB imagery packaged with scikit-image",
+  "study": "value-real-rgb-2026-10-22",
+  "files": {
+    "DICTAMEN_VALUE_REAL.md": "6c5e862939f11b8ac67ab82940c225d240e2b624ccfbc77f45e87a1276e2ce6b",
+    "NOTA_AB_M029.md": "278b516487e0eaf98cbf880b702d4be549caffac78d125e80c3391594ee58224",
+    "PRIORS_VALUE_REAL.md": "48e2e7ada066c603ba80604d761618a0e12e857d4dea7174a1874c54091bacf8",
+    "direct_quota.log": "434c30f5f1577158e227424ae221f81c681f845699ac7a44b907145db0350944",
+    "direct_quota_control.py": "b274396c793a014699ea5bb23f2d282edd7e7e9b459056040fb5ef1e0082dd34",
+    "direct_quota_results.json": "6fe2ff0c66bc9062a925ebb420192df3267b42020688879ecd4a61d4e64dd2e0",
+    "fig_pilot_scarcity.png": "e7fba9e38d4bfbacad44afe37731fdb83cdb9720b724c977a5ecd2aae773733a",
+    "fig_quotas.png": "6e7b7a9c74c0cbd76dae7364765a06631b29e9a6e16a12e74f5a4ad9de1df852",
+    "pilot.log": "6218b45d8151db441f9f40608b21ee384c7978e810c83b8505babd8bc824d8d1",
+    "pilot_quota.log": "1bbacbf05266ccc89eec38f123737d21005f2607801afd7fc94a7677959671bf",
+    "pilot_quota.py": "7081931c8240275f633092829a3854981653b464ec4460db48103ecc7ea94a3c",
+    "pilot_quota_results.json": "37ffd32d9aead53f1cff1cdbdf938a7467430481669add97b1a3175a1b121f1c",
+    "pilot_scarcity.py": "37f9b2a10bea81cc98bda86f4bb4101d0e35252ffbe07e636616f76d02e5a7ef",
+    "pilot_scarcity_results.json": "39e25557726ef51d51eb9a63e37894fb7f691d3573ed09419ace73405a94e608",
+    "plot_results.py": "623764cc3b3ca70e41a642f58c5cf55e4f155431de73bb55adbcc677b29ed00f",
+    "quota.log": "8959997f73a19a5794fc4017c915598e02c383c6985d2f34665ef7f5076c18e1",
+    "quota_ablations.py": "191a363256ece94c5ef99d7de535a0eeaabba214aba25d9c498df9285c228ea8",
+    "quota_ablations_results.json": "144fbd7e10e9c9bc2018557e8589d38e8d32e9107857ce771c544cf725b9d9c7",
+    "real_rgb_results.json": "b8ca719097a1e814f4a2a89bfc6aa737307729e107f27e8c1a550db5cc22ab8b",
+    "real_rgb_results_m4.json": "16d3206dae895d6083de7c94dfd4c3874061a1b8c2e6f8d65ee51eda21432d65",
+    "real_rgb_sensors.py": "8c4abd800eb0c6b375f5b2f5c0baf4cb8f2d29ddd1af58b70760c10300e4f0ee",
+    "real_rgb_sensors_m4.py": "bdd962a01d3ebe156b594a4fefa1c8b4245db187459d4e276abc276c6976422c",
+    "requirements.txt": "a7f6f78e41ff86e5d07d1f6e257b03bd5dd9c018c53453ff7e2da0f3d5c8c2ca",
+    "runner.log": "1525f74ed9339ae45d658de6d4e3fd64cbf4aafb0171bd5f270a47934a55ba67",
+    "runner_m4.log": "6c0c7ce2bbfebe1ee6309f17a5e396b6317d2337fed6887f64eaaeaf5564cdbb",
+    "test_value_real.py": "77d90724c6d45693b314fb3bc75ea4eb45d63774356d05a6fb2cffa0744c6aef"
+  },
+  "scope": "exploratory, 2 independent heldout image scenes; post hoc quota selection"
+}

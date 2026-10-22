@@ -1,0 +1,2817 @@
+{
+  "scope": "Exploratory, quota [6,16,2] chosen after inspecting previous runs, not new confirmation",
+  "summary": {
+    "12": {
+      "COSI-SHRINK": {
+        "train": 0.011835452243108693,
+        "rocket": 0.008287877361512616,
+        "hubble": 0.010023513983329327
+      },
+      "POWER-DIAG": {
+        "train": 0.012867746417076333,
+        "rocket": 0.008413065552814918,
+        "hubble": 0.011229331942275166
+      },
+      "SOBOL": {
+        "train": 0.013953544098784652,
+        "rocket": 0.008802800160642998,
+        "hubble": 0.011798374974833936
+      },
+      "DIRECT-EMPIRICAL": {
+        "train": 0.0008828784768534009,
+        "rocket": 0.009811951192514623,
+        "hubble": 0.01371744556119397
+      }
+    },
+    "28": {
+      "COSI-SHRINK": {
+        "train": 0.012018603450945287,
+        "rocket": 0.008205694141850588,
+        "hubble": 0.010465506489917304
+      },
+      "POWER-DIAG": {
+        "train": 0.013404001291536955,
+        "rocket": 0.00837337284901531,
+        "hubble": 0.011156884026462623
+      },
+      "SOBOL": {
+        "train": 0.013923075227105113,
+        "rocket": 0.008802800160642998,
+        "hubble": 0.011798374974833936
+      },
+      "DIRECT-EMPIRICAL": {
+        "train": 0.0021515742427926456,
+        "rocket": 0.009488767810231455,
+        "hubble": 0.01283219436368432
+      }
+    },
+    "88": {
+      "COSI-SHRINK": {
+        "train": 0.010616879223763368,
+        "rocket": 0.008298799568614412,
+        "hubble": 0.010042042843367932
+      },
+      "POWER-DIAG": {
+        "train": 0.010985523672051386,
+        "rocket": 0.008215320263719142,
+        "hubble": 0.010708926465343837
+      },
+      "SOBOL": {
+        "train": 0.012364513692183974,
+        "rocket": 0.008802800160642998,
+        "hubble": 0.011798374974833936
+      },
+      "DIRECT-EMPIRICAL": {
+        "train": 0.004060640541933124,
+        "rocket": 0.008680684884904965,
+        "hubble": 0.010926533949651212
+      }
+    },
+    "300": {
+      "COSI-SHRINK": {
+        "train": 0.011719186147886642,
+        "rocket": 0.008219396822043848,
+        "hubble": 0.010126485260966206
+      },
+      "POWER-DIAG": {
+        "train": 0.012287126177480658,
+        "rocket": 0.008291261395689914,
+        "hubble": 0.010749720853975317
+      },
+      "SOBOL": {
+        "train": 0.013775251459876712,
+        "rocket": 0.008802800160642998,
+        "hubble": 0.011798374974833936
+      },
+      "DIRECT-EMPIRICAL": {
+        "train": 0.006384030992400715,
+        "rocket": 0.008502425988329307,
+        "hubble": 0.010134546293626921
+      }
+    },
+    "1800": {
+      "COSI-SHRINK": {
+        "train": 0.011748411612492887,
+        "rocket": 0.008245351633617337,
+        "hubble": 0.010243668511707786
+      },
+      "POWER-DIAG": {
+        "train": 0.011973292699290657,
+        "rocket": 0.007988306529861875,
+        "hubble": 0.010535713355886782
+      },
+      "SOBOL": {
+        "train": 0.013389210018699508,
+        "rocket": 0.008802800160642998,
+        "hubble": 0.011798374974833936
+      },
+      "DIRECT-EMPIRICAL": {
+        "train": 0.008546239266749366,
+        "rocket": 0.008481574547085343,
+        "hubble": 0.009263032683413528
+      }
+    }
+  },
+  "rows": [
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.00873040654608135,
+      "rocket": 0.00852951371293087,
+      "hubble": 0.01042984430442287
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.00870711289039429,
+      "rocket": 0.008320942245410808,
+      "hubble": 0.010769923226551063
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.014360844863517755,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.001042219949045484,
+      "rocket": 0.008954230644495208,
+      "hubble": 0.014290779207662845
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.009900169745552332,
+      "rocket": 0.00873979965837218,
+      "hubble": 0.010052403175388483
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.012099749700963839,
+      "rocket": 0.009270266753511846,
+      "hubble": 0.010417446799168426
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014188061125488082,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0010155174344269253,
+      "rocket": 0.009792225509012367,
+      "hubble": 0.014610270419070747
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.013307511992529369,
+      "rocket": 0.009365594638590394,
+      "hubble": 0.010864564873625252
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.010760928010953887,
+      "rocket": 0.010797982625921238,
+      "hubble": 0.01174760142530814
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01133027455309907,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0009047740375229252,
+      "rocket": 0.011326040133143821,
+      "hubble": 0.017279552524091017
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012389026774515385,
+      "rocket": 0.008189724275135535,
+      "hubble": 0.01013967742468315
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.013329600114445525,
+      "rocket": 0.00806682543408222,
+      "hubble": 0.011351092988829973
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.010990538865867039,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0007862479862790586,
+      "rocket": 0.008821023245894247,
+      "hubble": 0.010017865997237118
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.014190410578367578,
+      "rocket": 0.007392999470737954,
+      "hubble": 0.010116350856237263
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.015016109657267863,
+      "rocket": 0.007421864474444628,
+      "hubble": 0.00993153458521262
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.023073360395052474,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0009546259395859063,
+      "rocket": 0.008839949304940092,
+      "hubble": 0.01258482572633242
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.009857674835300834,
+      "rocket": 0.0068977493297855625,
+      "hubble": 0.008998955090943216
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.009596059700792307,
+      "rocket": 0.007515842273787613,
+      "hubble": 0.01142161550764221
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.013139025020376028,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0008207824380231021,
+      "rocket": 0.009455184455823124,
+      "hubble": 0.014713897051427149
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.013191619265308577,
+      "rocket": 0.008520233400713518,
+      "hubble": 0.009722381259511319
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.013891047162725741,
+      "rocket": 0.008192237514839973,
+      "hubble": 0.01128086415047921
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.01755256494759245,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0012666162608123161,
+      "rocket": 0.00867091880578777,
+      "hubble": 0.011834476513539449
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.020510570390027495,
+      "rocket": 0.009260794033426934,
+      "hubble": 0.009568472877420246
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.014239837644912112,
+      "rocket": 0.008753330712461697,
+      "hubble": 0.012426855184091735
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.018511125508177635,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0008516673096664006,
+      "rocket": 0.01065927218452445,
+      "hubble": 0.014321893388869541
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.012882659452446855,
+      "rocket": 0.008125683467169116,
+      "hubble": 0.010201653111319108
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.014347806250119374,
+      "rocket": 0.008494832646151312,
+      "hubble": 0.011544803626254627
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.015062935333845737,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0010357767322366949,
+      "rocket": 0.009875935510628287,
+      "hubble": 0.012950836063025105
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.011127949056234541,
+      "rocket": 0.008357054941394906,
+      "hubble": 0.009909354140249403
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.01726221147916407,
+      "rocket": 0.0088183952441633,
+      "hubble": 0.011838892442450599
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.010251845528763388,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.000881849452890456,
+      "rocket": 0.008833783023408327,
+      "hubble": 0.012700262520468686
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011072850005508911,
+      "rocket": 0.008376501763335117,
+      "hubble": 0.009779573110951796
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011608906560850563,
+      "rocket": 0.007950855064608763,
+      "hubble": 0.010768318943076886
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.021930224192274465,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.001105714554166529,
+      "rocket": 0.008671881461767944,
+      "hubble": 0.01439842957175392
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.015642243673634752,
+      "rocket": 0.00892651455551886,
+      "hubble": 0.010086436927925903
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.021387076553276835,
+      "rocket": 0.0072713499258505905,
+      "hubble": 0.012354666051711852
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.010293472776742616,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0007276137870377402,
+      "rocket": 0.01008233517304178,
+      "hubble": 0.012899939332506577
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.009762397604796422,
+      "rocket": 0.008097984474804355,
+      "hubble": 0.009897185477982766
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.008650039584679073,
+      "rocket": 0.008451755484682888,
+      "hubble": 0.010401493564434093
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.01000380257981546,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0005791446999769101,
+      "rocket": 0.010011244274593791,
+      "hubble": 0.013333634573560368
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.009232041283089343,
+      "rocket": 0.008078454674132853,
+      "hubble": 0.01044308140178756
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.010834217918734675,
+      "rocket": 0.008646385993548741,
+      "hubble": 0.010328914480349014
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.00852402615842939,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0008040077250405756,
+      "rocket": 0.014481738082556282,
+      "hubble": 0.017463300167537756
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.005734252443236603,
+      "rocket": 0.0074595580266410815,
+      "hubble": 0.010142775717491562
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.011285493026864829,
+      "rocket": 0.008223116898758143,
+      "hubble": 0.011855956158567082
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.010091059632728223,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.000466618846089988,
+      "rocket": 0.008703506078101836,
+      "hubble": 0.012361720360826832
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.01494972290232602,
+      "rocket": 0.008129003661878641,
+      "hubble": 0.010668117478864115
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.00950790470206015,
+      "rocket": 0.008124556482738132,
+      "hubble": 0.01018319736855223
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.015339905666977795,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0019541958531230016,
+      "rocket": 0.009081113743828237,
+      "hubble": 0.010159259387082556
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.018564728556352817,
+      "rocket": 0.008189908721199199,
+      "hubble": 0.010299466986695892
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.017687161054656984,
+      "rocket": 0.008613970327115524,
+      "hubble": 0.011944249229011298
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.013938597439237112,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0021821414143807323,
+      "rocket": 0.01001457350670861,
+      "hubble": 0.013548054571675232
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.009844969800300477,
+      "rocket": 0.007112417016604431,
+      "hubble": 0.010193919226525433
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.010540158584967933,
+      "rocket": 0.008530052613658549,
+      "hubble": 0.011371594648220587
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.011455971109613626,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0026387494729663394,
+      "rocket": 0.009179852246883207,
+      "hubble": 0.013372044101939354
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.014806165839707104,
+      "rocket": 0.00883818401939468,
+      "hubble": 0.010422780720906036
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.018132461168872665,
+      "rocket": 0.008992676041528569,
+      "hubble": 0.011131142839602409
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.021501489703379447,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0026916856054236267,
+      "rocket": 0.009123797764977038,
+      "hubble": 0.012282947969928447
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.014111499133056225,
+      "rocket": 0.008716123722279605,
+      "hubble": 0.009918542960438982
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.01992508409888246,
+      "rocket": 0.008939609372051918,
+      "hubble": 0.011214427280575963
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.012575743310474627,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0028174206298631505,
+      "rocket": 0.008828093394068792,
+      "hubble": 0.01251446139265155
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.012143541366085522,
+      "rocket": 0.007784629982219023,
+      "hubble": 0.009697177679276124
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.012405852855563455,
+      "rocket": 0.008488447209588919,
+      "hubble": 0.01114627740774116
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01211270599755201,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.002235860874158465,
+      "rocket": 0.010123810082621499,
+      "hubble": 0.012864130308183388
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012123502079232592,
+      "rocket": 0.008675484283081748,
+      "hubble": 0.01068534634357371
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012089694102291883,
+      "rocket": 0.008758932135327194,
+      "hubble": 0.010667481949839264
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.010817276550645393,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0018686968685429843,
+      "rocket": 0.010733777211634635,
+      "hubble": 0.013306486318952645
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.007375243034522257,
+      "rocket": 0.008790376083815384,
+      "hubble": 0.01021622702685894
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.008527937468963012,
+      "rocket": 0.00834249681681457,
+      "hubble": 0.010705129767837785
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.011012557865803501,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0018423846762404437,
+      "rocket": 0.010636561533671766,
+      "hubble": 0.013902654878920015
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.007913047048527279,
+      "rocket": 0.008286300644454724,
+      "hubble": 0.010761132472671457
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.010568650709793856,
+      "rocket": 0.00805752439980667,
+      "hubble": 0.011208045841452314
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.011331976014145954,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0021116325741038964,
+      "rocket": 0.008792495648137779,
+      "hubble": 0.013108174494488627
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.011977016410508112,
+      "rocket": 0.007465526917001782,
+      "hubble": 0.010740755430798415
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.021314506151105864,
+      "rocket": 0.008068334850793652,
+      "hubble": 0.010865788715534007
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.016639614898631448,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.002260287093460521,
+      "rocket": 0.008455292784563976,
+      "hubble": 0.01424192575609991
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.01551343432312537,
+      "rocket": 0.0077793936383813034,
+      "hubble": 0.010895551427258994
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.014342681588293564,
+      "rocket": 0.007113328620125863,
+      "hubble": 0.010915174245705369
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.019730351077467113,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0028523411400752327,
+      "rocket": 0.00898223741290628,
+      "hubble": 0.01200661915684079
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.01243746411028504,
+      "rocket": 0.007668873704677224,
+      "hubble": 0.010167289757577623
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.017296734561271055,
+      "rocket": 0.007974796210281404,
+      "hubble": 0.01146479294829537
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01427233301514835,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.002090903163208195,
+      "rocket": 0.01010987362594291,
+      "hubble": 0.012790537192040834
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.010918125746755249,
+      "rocket": 0.008475697445066153,
+      "hubble": 0.01123175274062325
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.01042118253939767,
+      "rocket": 0.008694309195512685,
+      "hubble": 0.01172392945879756
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.0108339233969319,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0016646892597356635,
+      "rocket": 0.009194348295417485,
+      "hubble": 0.0115530582361584
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.010337140349740669,
+      "rocket": 0.008688538021762848,
+      "hubble": 0.009809319390483713
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.010926139981176742,
+      "rocket": 0.008301286287126109,
+      "hubble": 0.011283314840569585
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014504382691941193,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0018259957238657342,
+      "rocket": 0.009463645879567844,
+      "hubble": 0.013343392121951528
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.0072634510636545606,
+      "rocket": 0.008484954265942077,
+      "hubble": 0.01127521770620687
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.007373869805756974,
+      "rocket": 0.008600272172759878,
+      "hubble": 0.011528713855204457
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.012779299668627214,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0012366292927416952,
+      "rocket": 0.009612044022541772,
+      "hubble": 0.013489169568351495
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.011236268176878976,
+      "rocket": 0.0086457156134144,
+      "hubble": 0.010064322722487128
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012371687219078038,
+      "rocket": 0.00810737801964817,
+      "hubble": 0.010796554496625758
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.013282636731769373,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.004209706375610263,
+      "rocket": 0.008837903894797374,
+      "hubble": 0.010595455045680716
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011573521966206353,
+      "rocket": 0.008388073507106358,
+      "hubble": 0.009226342554563156
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.010814061714487946,
+      "rocket": 0.008243767929161497,
+      "hubble": 0.010038559376818313
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.013261274948992067,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0041623153264483655,
+      "rocket": 0.009747937089729453,
+      "hubble": 0.011169411259167792
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.011163153044178817,
+      "rocket": 0.007867996070749478,
+      "hubble": 0.0107324774885612
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.009805651845199981,
+      "rocket": 0.008203721845309944,
+      "hubble": 0.012113746924960731
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01481160595583654,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.003778118759511921,
+      "rocket": 0.00925942234893494,
+      "hubble": 0.011460528933753144
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.00871779384403175,
+      "rocket": 0.008773744428433875,
+      "hubble": 0.009408901569833225
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.011953287833853304,
+      "rocket": 0.00872327787295768,
+      "hubble": 0.010698836418970285
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.010620834528195225,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.004205551441681268,
+      "rocket": 0.008077040925669167,
+      "hubble": 0.010852148753925435
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.007831660447250815,
+      "rocket": 0.008681079294735035,
+      "hubble": 0.009334237549512712
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.00923267332602765,
+      "rocket": 0.008481064204610506,
+      "hubble": 0.010483156667007332
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.013953834938725403,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.004253615401602667,
+      "rocket": 0.009187424513591391,
+      "hubble": 0.010290139926185134
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.009127349227583459,
+      "rocket": 0.007436907082329856,
+      "hubble": 0.010554417099095811
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.011845056347564269,
+      "rocket": 0.007570040735004856,
+      "hubble": 0.01117215440718852
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.009962123568755038,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.004059311263409834,
+      "rocket": 0.008353442528503964,
+      "hubble": 0.010749164102748144
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.010020715345085847,
+      "rocket": 0.008553619740072065,
+      "hubble": 0.009499461783961329
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.010633762757653875,
+      "rocket": 0.007468027857776433,
+      "hubble": 0.009979838683748089
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.013136208645822154,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0037688607076716727,
+      "rocket": 0.007978243443057677,
+      "hubble": 0.011209292765160903
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.009889289618573157,
+      "rocket": 0.008773792390874325,
+      "hubble": 0.009550163703253078
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.00995645720228848,
+      "rocket": 0.00843946246720533,
+      "hubble": 0.010106842026601096
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.01246162430146113,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.004575353032860007,
+      "rocket": 0.008756397641718582,
+      "hubble": 0.012157227541308872
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.011764761700565231,
+      "rocket": 0.007276351574542942,
+      "hubble": 0.010447949180138342
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.012023523126178942,
+      "rocket": 0.009159803062192776,
+      "hubble": 0.011927591711138406
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.011511664079681135,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.00394456222567486,
+      "rocket": 0.00843009635294364,
+      "hubble": 0.012212424904195524
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.013746290929396852,
+      "rocket": 0.008843122735681897,
+      "hubble": 0.010203957223961313
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.011970065015830972,
+      "rocket": 0.008771862852274864,
+      "hubble": 0.01068444925475718
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.01116830042666724,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.004272849061145953,
+      "rocket": 0.008325843191506947,
+      "hubble": 0.011469326108405505
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.009214550396230122,
+      "rocket": 0.008150632251711486,
+      "hubble": 0.009664984697820607
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.009922045485823488,
+      "rocket": 0.007497017905095723,
+      "hubble": 0.010065832990431208
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014530344735298375,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.004312408650136094,
+      "rocket": 0.008517484616977851,
+      "hubble": 0.010499626872630119
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.014699840639655527,
+      "rocket": 0.007883563582718293,
+      "hubble": 0.010975814455278324
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.013213657113736154,
+      "rocket": 0.007715253784814487,
+      "hubble": 0.011099127155117145
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.013228328232041833,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0045336041314985144,
+      "rocket": 0.007967972956621078,
+      "hubble": 0.011032697620430774
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.010917734537510939,
+      "rocket": 0.00895214390305349,
+      "hubble": 0.010489267334144793
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.010740043308696677,
+      "rocket": 0.008608792131804887,
+      "hubble": 0.010326477860760073
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.009329693662372815,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.00346425346423507,
+      "rocket": 0.00809475409193673,
+      "hubble": 0.009734495610060413
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.010675192179850926,
+      "rocket": 0.00860453281272854,
+      "hubble": 0.01003859088087156
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.009707416358773776,
+      "rocket": 0.008624953604652827,
+      "hubble": 0.009965563871508532
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.012395980808851063,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0037005954027727957,
+      "rocket": 0.008802354133129235,
+      "hubble": 0.010234763441629569
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.008675066303451776,
+      "rocket": 0.007650718541064159,
+      "hubble": 0.010439754407036393
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.010593466425577212,
+      "rocket": 0.007615379683277131,
+      "hubble": 0.011175165134524883
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.011813249818290211,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0036685028847375806,
+      "rocket": 0.009873955544456418,
+      "hubble": 0.010231306359486148
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012693337916738103,
+      "rocket": 0.00817970142442954,
+      "hubble": 0.009994665053504267
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.0105795796438391,
+      "rocket": 0.008668086347893096,
+      "hubble": 0.010369203186534764
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012926297371956524,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006740508523416795,
+      "rocket": 0.007978717965345853,
+      "hubble": 0.010452543194182245
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.01057387651343865,
+      "rocket": 0.00857853890127033,
+      "hubble": 0.01008125371896878
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011084428845007377,
+      "rocket": 0.008783061344379225,
+      "hubble": 0.010234100160575507
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014769896276868347,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.005893952924347733,
+      "rocket": 0.008396153236989116,
+      "hubble": 0.009307364100553
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.010737231446056683,
+      "rocket": 0.0071863492137424325,
+      "hubble": 0.010540537274640622
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.010963911079891142,
+      "rocket": 0.008124990329458608,
+      "hubble": 0.011699607948981677
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.011060666734550539,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.005988421608499757,
+      "rocket": 0.009325533021654038,
+      "hubble": 0.01020140085283496
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.011492283111909795,
+      "rocket": 0.008785130723805256,
+      "hubble": 0.009915427134386012
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.013736406138692404,
+      "rocket": 0.008396337479016521,
+      "hubble": 0.01062353391033932
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012564097444338703,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006745981580881538,
+      "rocket": 0.00903220712380453,
+      "hubble": 0.009835234975313937
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.010936224619145903,
+      "rocket": 0.008545794757192608,
+      "hubble": 0.009552404607104926
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.012975810483519442,
+      "rocket": 0.008289607868718614,
+      "hubble": 0.009995232563303137
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.01612932599152819,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.00587359482627514,
+      "rocket": 0.008724670940247151,
+      "hubble": 0.010590684164843538
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.012454359232647035,
+      "rocket": 0.0074032985258241,
+      "hubble": 0.010673800427886203
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.012157107330480617,
+      "rocket": 0.008239020539375426,
+      "hubble": 0.011109760539955086
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.013181616797737827,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.007239621793257264,
+      "rocket": 0.008721025968504508,
+      "hubble": 0.010665211719227073
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.01145855239410965,
+      "rocket": 0.008535341461434694,
+      "hubble": 0.010032387551065242
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.01097198797118701,
+      "rocket": 0.008934497349741471,
+      "hubble": 0.010773087817834976
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012073555607909375,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006515043765196625,
+      "rocket": 0.008516801349827859,
+      "hubble": 0.00981453716570756
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011348271046395006,
+      "rocket": 0.008310556288322168,
+      "hubble": 0.010272017365934253
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011663804725217542,
+      "rocket": 0.008330502305459205,
+      "hubble": 0.010605281674655718
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.015363494728406948,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006106977913046317,
+      "rocket": 0.008760271776166074,
+      "hubble": 0.009700753263481313
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.01119376609812953,
+      "rocket": 0.007742879059736486,
+      "hubble": 0.010749576286353577
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.012743913808483283,
+      "rocket": 0.007245494491519919,
+      "hubble": 0.011158102967199221
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.012663014642492311,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0059983944588783205,
+      "rocket": 0.007818519650219923,
+      "hubble": 0.009649038826810508
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012332875159746556,
+      "rocket": 0.008846526369457779,
+      "hubble": 0.009888592890561236
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012844642018491793,
+      "rocket": 0.008545549694226202,
+      "hubble": 0.010557785433224392
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012138506910606622,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006483640808235457,
+      "rocket": 0.007650089101116239,
+      "hubble": 0.010847961535769867
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011287324931790521,
+      "rocket": 0.00900822730707066,
+      "hubble": 0.010271379295460127
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.010122189968246879,
+      "rocket": 0.007872961749238324,
+      "hubble": 0.009976863238390608
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.01510672152072682,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.0065205602436892544,
+      "rocket": 0.00848311026698398,
+      "hubble": 0.010362176864471901
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.011867826092529345,
+      "rocket": 0.007689244403027922,
+      "hubble": 0.010430847796944476
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.012760244640088863,
+      "rocket": 0.007379130778076068,
+      "hubble": 0.01130911630322627
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.013311706454420607,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006152332817699562,
+      "rocket": 0.008604769266032883,
+      "hubble": 0.01017510889166124
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012711535189347239,
+      "rocket": 0.008670043137621049,
+      "hubble": 0.009915965839815702
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.014656929296487708,
+      "rocket": 0.009051768671961818,
+      "hubble": 0.010618893534014434
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.014135148528765592,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006876303806401647,
+      "rocket": 0.008579153936275834,
+      "hubble": 0.0098606673566181
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.012503072659101161,
+      "rocket": 0.008070075489187187,
+      "hubble": 0.009183995630631873
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.012590235792115606,
+      "rocket": 0.008456277759446485,
+      "hubble": 0.010359000794286635
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.01715341798678846,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006306168452177448,
+      "rocket": 0.008397039691483059,
+      "hubble": 0.009886917415880651
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.012197255807214463,
+      "rocket": 0.007739245268535511,
+      "hubble": 0.010394428041235788
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.014455700920461093,
+      "rocket": 0.008051634226837731,
+      "hubble": 0.011856242737108004
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.014051304901053809,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.006318961364007881,
+      "rocket": 0.008548326530288527,
+      "hubble": 0.010668594077047917
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012151532671321501,
+      "rocket": 0.008382128217929356,
+      "hubble": 0.0098495540474049
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012343907814413194,
+      "rocket": 0.008680449414708353,
+      "hubble": 0.01081437772192107
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012751042599899435,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008463426873952781,
+      "rocket": 0.007859837817224873,
+      "hubble": 0.009448482186554485
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011462087170933652,
+      "rocket": 0.008665019270752345,
+      "hubble": 0.010286202230361863
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011348544960862978,
+      "rocket": 0.007937842668653555,
+      "hubble": 0.009862708194863932
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014504068936687275,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008628260261126777,
+      "rocket": 0.009259470453162253,
+      "hubble": 0.00941811265796797
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.01163161499522351,
+      "rocket": 0.0076889074121703135,
+      "hubble": 0.010595249257356595
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.0122274253225958,
+      "rocket": 0.007346627506223718,
+      "hubble": 0.010930054150875348
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01291251851951182,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008547030665168548,
+      "rocket": 0.008325415370868908,
+      "hubble": 0.00892250320571813
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012151532671321501,
+      "rocket": 0.008382128217929356,
+      "hubble": 0.0098495540474049
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012343907814413194,
+      "rocket": 0.008680449414708353,
+      "hubble": 0.01081437772192107
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012751042599899435,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008463426873952781,
+      "rocket": 0.007859837817224873,
+      "hubble": 0.009448482186554485
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011462087170933652,
+      "rocket": 0.008665019270752345,
+      "hubble": 0.010286202230361863
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011348544960862978,
+      "rocket": 0.007937842668653555,
+      "hubble": 0.009862708194863932
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014504068936687275,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008628260261126777,
+      "rocket": 0.009259470453162253,
+      "hubble": 0.00941811265796797
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.01163161499522351,
+      "rocket": 0.0076889074121703135,
+      "hubble": 0.010595249257356595
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.0122274253225958,
+      "rocket": 0.007346627506223718,
+      "hubble": 0.010930054150875348
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01291251851951182,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008547030665168548,
+      "rocket": 0.008325415370868908,
+      "hubble": 0.00892250320571813
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012151532671321501,
+      "rocket": 0.008382128217929356,
+      "hubble": 0.0098495540474049
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012343907814413194,
+      "rocket": 0.008680449414708353,
+      "hubble": 0.01081437772192107
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012751042599899435,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008463426873952781,
+      "rocket": 0.007859837817224873,
+      "hubble": 0.009448482186554485
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011462087170933652,
+      "rocket": 0.008665019270752345,
+      "hubble": 0.010286202230361863
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011348544960862978,
+      "rocket": 0.007937842668653555,
+      "hubble": 0.009862708194863932
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014504068936687275,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008628260261126777,
+      "rocket": 0.009259470453162253,
+      "hubble": 0.00941811265796797
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.01163161499522351,
+      "rocket": 0.0076889074121703135,
+      "hubble": 0.010595249257356595
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.0122274253225958,
+      "rocket": 0.007346627506223718,
+      "hubble": 0.010930054150875348
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01291251851951182,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008547030665168548,
+      "rocket": 0.008325415370868908,
+      "hubble": 0.00892250320571813
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012151532671321501,
+      "rocket": 0.008382128217929356,
+      "hubble": 0.0098495540474049
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012343907814413194,
+      "rocket": 0.008680449414708353,
+      "hubble": 0.01081437772192107
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012751042599899435,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008463426873952781,
+      "rocket": 0.007859837817224873,
+      "hubble": 0.009448482186554485
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011462087170933652,
+      "rocket": 0.008665019270752345,
+      "hubble": 0.010286202230361863
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011348544960862978,
+      "rocket": 0.007937842668653555,
+      "hubble": 0.009862708194863932
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014504068936687275,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008628260261126777,
+      "rocket": 0.009259470453162253,
+      "hubble": 0.00941811265796797
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.01163161499522351,
+      "rocket": 0.0076889074121703135,
+      "hubble": 0.010595249257356595
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.0122274253225958,
+      "rocket": 0.007346627506223718,
+      "hubble": 0.010930054150875348
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01291251851951182,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008547030665168548,
+      "rocket": 0.008325415370868908,
+      "hubble": 0.00892250320571813
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "train": 0.012151532671321501,
+      "rocket": 0.008382128217929356,
+      "hubble": 0.0098495540474049
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "train": 0.012343907814413194,
+      "rocket": 0.008680449414708353,
+      "hubble": 0.01081437772192107
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "SOBOL",
+      "train": 0.012751042599899435,
+      "rocket": 0.008774502207542768,
+      "hubble": 0.010489810103961114
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008463426873952781,
+      "rocket": 0.007859837817224873,
+      "hubble": 0.009448482186554485
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "train": 0.011462087170933652,
+      "rocket": 0.008665019270752345,
+      "hubble": 0.010286202230361863
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "train": 0.011348544960862978,
+      "rocket": 0.007937842668653555,
+      "hubble": 0.009862708194863932
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "SOBOL",
+      "train": 0.014504068936687275,
+      "rocket": 0.009276139233618669,
+      "hubble": 0.012241017310290581
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008628260261126777,
+      "rocket": 0.009259470453162253,
+      "hubble": 0.00941811265796797
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "train": 0.01163161499522351,
+      "rocket": 0.0076889074121703135,
+      "hubble": 0.010595249257356595
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "train": 0.0122274253225958,
+      "rocket": 0.007346627506223718,
+      "hubble": 0.010930054150875348
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "SOBOL",
+      "train": 0.01291251851951182,
+      "rocket": 0.008357759040767562,
+      "hubble": 0.012664297510250113
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "train": 0.008547030665168548,
+      "rocket": 0.008325415370868908,
+      "hubble": 0.00892250320571813
+    }
+  ]
+}

@@ -1,0 +1,2517 @@
+{
+  "notice": "Exploratory; independent pilot seeds/layout seeds but only two external scenes",
+  "all": [
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010622553571038485,
+      "hubble": 0.015559632216530794
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010961401060656463,
+      "hubble": 0.014478168731517893
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.011883016773648943,
+      "hubble": 0.01580356397215829
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.011025465294596574,
+      "hubble": 0.01555839949875556
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.01039095799178236,
+      "hubble": 0.014419985839754875
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011138743086907734,
+      "hubble": 0.01611003081896081
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010706279142940783,
+      "hubble": 0.015609333754099498
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.01094502597189816,
+      "hubble": 0.014629293229043511
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011011979412918125,
+      "hubble": 0.01623317737897835
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01300294514626225,
+      "hubble": 0.01847457018991831
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012292082587945116,
+      "hubble": 0.022685995158737707
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.016993189067673914,
+      "hubble": 0.022788713214229827
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.011178233070880918,
+      "hubble": 0.017436637603521675
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011875663193121415,
+      "hubble": 0.017515644508472133
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012103919189425069,
+      "hubble": 0.015387190617748663
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.009993254726679592,
+      "hubble": 0.015714969337441546
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.01142133913640859,
+      "hubble": 0.015822657398428298
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.01072083765168415,
+      "hubble": 0.013782050380088295
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010692478956270535,
+      "hubble": 0.015423408947240163
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011373495103987748,
+      "hubble": 0.014937493875770513
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010938515646221947,
+      "hubble": 0.014312699964152114
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010477142061454833,
+      "hubble": 0.015395599485317739
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.013874720583977842,
+      "hubble": 0.0203603892129735
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012444475015472486,
+      "hubble": 0.017443605661585253
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010432760112858475,
+      "hubble": 0.015018616064945112
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010118179006177501,
+      "hubble": 0.015811592356368573
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.010932610601191465,
+      "hubble": 0.016258181080102255
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010635228668876909,
+      "hubble": 0.014006776726283034
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010427020700058284,
+      "hubble": 0.016733556293287315
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.010634420019120901,
+      "hubble": 0.01602519851864027
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009477311521606054,
+      "hubble": 0.015425082936900047
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010607719309023598,
+      "hubble": 0.01691396028343912
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010769543245712446,
+      "hubble": 0.016196356028881004
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01299661223694399,
+      "hubble": 0.01805653054356789
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011586906620296393,
+      "hubble": 0.019761732094140935
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.015242462027831248,
+      "hubble": 0.018892664238487185
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.013041224645956685,
+      "hubble": 0.01878552967704504
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.01124380919301503,
+      "hubble": 0.015310697244490894
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.011608567277898886,
+      "hubble": 0.015759738609218768
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.009207053021662418,
+      "hubble": 0.014304836920224053
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010445800435384027,
+      "hubble": 0.014222330746891814
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011208968155037118,
+      "hubble": 0.013901249439818462
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010994964518555837,
+      "hubble": 0.015563971625933629
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010907829025043576,
+      "hubble": 0.01483566149730676
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011088126464444556,
+      "hubble": 0.014952910671028236
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01260560174997504,
+      "hubble": 0.016609551125137886
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01193279128394624,
+      "hubble": 0.020210141858066924
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.014889010568622393,
+      "hubble": 0.01929204541054233
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010430455501277806,
+      "hubble": 0.014892273671125847
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011137831142702332,
+      "hubble": 0.015596682339130079
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012292424132259543,
+      "hubble": 0.015527778023672731
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.012105804346966549,
+      "hubble": 0.014683826251985579
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.01095698526293385,
+      "hubble": 0.015340798259485249
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011387818696460217,
+      "hubble": 0.015607716104279759
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011434353725224378,
+      "hubble": 0.014703786226192443
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.01093613191343299,
+      "hubble": 0.01548406831578607
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011229280937560678,
+      "hubble": 0.014585027773616761
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01202773448092061,
+      "hubble": 0.01653530867095846
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012073779561976465,
+      "hubble": 0.019647362088977445
+    },
+    {
+      "pilot": 12,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.014964310332165677,
+      "hubble": 0.019552344719563033
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.012782646891570793,
+      "hubble": 0.01797864636245205
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011206637561059316,
+      "hubble": 0.015691301889253242
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012198367816161949,
+      "hubble": 0.015676783319271772
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010176379858772833,
+      "hubble": 0.014551300445617114
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010960873975263866,
+      "hubble": 0.01607920609055021
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.01103396554046235,
+      "hubble": 0.014543796338546942
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.01270553265679527,
+      "hubble": 0.015325744503226178
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010867665848649769,
+      "hubble": 0.014259296105167888
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011038115241548805,
+      "hubble": 0.01448920939177826
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012546055990871132,
+      "hubble": 0.01656999006561084
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011927351451489253,
+      "hubble": 0.018739644039293187
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.013939630879280475,
+      "hubble": 0.01604179575052405
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010448051898769994,
+      "hubble": 0.015118974482731369
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010874740221618533,
+      "hubble": 0.01664988374318883
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.010768811932853449,
+      "hubble": 0.01590616591879279
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.009626078956519016,
+      "hubble": 0.014472197486649204
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010362139603395342,
+      "hubble": 0.015438798333263094
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.01113582810565025,
+      "hubble": 0.016135079869118656
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010344120289550358,
+      "hubble": 0.014181894952081926
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010660954038164229,
+      "hubble": 0.017117092665926415
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.01161535847868373,
+      "hubble": 0.016068476555275824
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01237317886421766,
+      "hubble": 0.016720258044154224
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01098723507165599,
+      "hubble": 0.01704821579128481
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011305796913643673,
+      "hubble": 0.01598842240810878
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.012799755513018837,
+      "hubble": 0.019952696520212983
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.0112512437629979,
+      "hubble": 0.016037175604356208
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.011059245518557876,
+      "hubble": 0.015181588481956448
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.011393519104474895,
+      "hubble": 0.014834356033585992
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.0100530832327366,
+      "hubble": 0.014303556516135444
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.009694180335849015,
+      "hubble": 0.013960989276941891
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011180222710789823,
+      "hubble": 0.014868757135360048
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011731655245335277,
+      "hubble": 0.015248356530942347
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.01090623117564228,
+      "hubble": 0.013620562574130423
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01211183465979068,
+      "hubble": 0.01705954333838578
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012120366187311046,
+      "hubble": 0.0148265277535755
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011796360208360206,
+      "hubble": 0.01683425876407744
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.013041224645956685,
+      "hubble": 0.01878552967704504
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010740919856806287,
+      "hubble": 0.016016048916033407
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012183403365672857,
+      "hubble": 0.01571260168903037
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.011547429023121898,
+      "hubble": 0.014937238509910675
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.01067681755983254,
+      "hubble": 0.01461294936416465
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011097864593542697,
+      "hubble": 0.014641039524704955
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010142056783215983,
+      "hubble": 0.015029495778138627
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010825544488112127,
+      "hubble": 0.01462964042171202
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011735921997893363,
+      "hubble": 0.014355727152367168
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012637454404186427,
+      "hubble": 0.015555651506055328
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011300071359042,
+      "hubble": 0.017404883199082267
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011562063450791141,
+      "hubble": 0.016473758145393994
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.011451180131404965,
+      "hubble": 0.016995503596586976
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.01149181487413864,
+      "hubble": 0.01694959346713865
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.010539951197865818,
+      "hubble": 0.01457201827808798
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010864316841331465,
+      "hubble": 0.015678344622588346
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010492735332518278,
+      "hubble": 0.01518110715300442
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.010856931407044012,
+      "hubble": 0.014663774798810609
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010364384173786862,
+      "hubble": 0.016235013368925938
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011296618788532583,
+      "hubble": 0.01562331532364627
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009994940760722045,
+      "hubble": 0.014213987540867007
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012649457481120181,
+      "hubble": 0.01595798500941496
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011351741520917308,
+      "hubble": 0.016817372254721515
+    },
+    {
+      "pilot": 28,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01499905949552486,
+      "hubble": 0.01975404628307564
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.012089668484647315,
+      "hubble": 0.016687773556598378
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011427088117745898,
+      "hubble": 0.016451427988446954
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.011652080499504936,
+      "hubble": 0.016114653696921815
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.00993985207294855,
+      "hubble": 0.015130262563153312
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.01034043578197709,
+      "hubble": 0.014804431610761023
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011798651688402164,
+      "hubble": 0.01515932097294418
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010183153991299758,
+      "hubble": 0.0155234644763393
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.012165498142989156,
+      "hubble": 0.014114927263658834
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010523546480802237,
+      "hubble": 0.014164390133888888
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01147667233301513,
+      "hubble": 0.014758156081051686
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011868271253131196,
+      "hubble": 0.01644785836297738
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012133368611799608,
+      "hubble": 0.015465013197139733
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.011829572803401018,
+      "hubble": 0.0163692657046902
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010817517374562118,
+      "hubble": 0.017486538945774788
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012183403365672857,
+      "hubble": 0.01571260168903037
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.00975185927614477,
+      "hubble": 0.014204783971291789
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.009468683703368343,
+      "hubble": 0.014417014992139173
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011689073106882695,
+      "hubble": 0.014976516650963528
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.00980394916649936,
+      "hubble": 0.015331798774761908
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010902291670976418,
+      "hubble": 0.014612141208654601
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.0098979853688372,
+      "hubble": 0.014416568682666038
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01302381174703338,
+      "hubble": 0.01563277081825407
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010002841391619138,
+      "hubble": 0.017887077804784456
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012418366096868895,
+      "hubble": 0.016949052431542887
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.011591704250980835,
+      "hubble": 0.016295498494318616
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010515785089669922,
+      "hubble": 0.015999023323171113
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.011445183256431667,
+      "hubble": 0.015721721726097506
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010286117561557775,
+      "hubble": 0.01564897670305847
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010917743185391016,
+      "hubble": 0.015358557732883
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.01142129927716835,
+      "hubble": 0.014257571846867803
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010190261303745009,
+      "hubble": 0.017023258931594218
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009849825244395502,
+      "hubble": 0.014949823519934865
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011063326854919526,
+      "hubble": 0.014718103961104394
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011317934445674657,
+      "hubble": 0.014479376908170027
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011682194818986621,
+      "hubble": 0.01680910691348325
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012646845105504326,
+      "hubble": 0.014923514621494955
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010566106521932107,
+      "hubble": 0.015219207195539285
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011278251264365236,
+      "hubble": 0.016028683062612094
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012183403365672857,
+      "hubble": 0.01571260168903037
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010346196693693261,
+      "hubble": 0.014039002059352514
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.009968796794827636,
+      "hubble": 0.015044555594167798
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011512433521752335,
+      "hubble": 0.015094587425960645
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010274886916429676,
+      "hubble": 0.013762994122283684
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010878190253120491,
+      "hubble": 0.015236373385751225
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011193640971624768,
+      "hubble": 0.014524014289006402
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011737249197811928,
+      "hubble": 0.015300568034273118
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010294490725143088,
+      "hubble": 0.01610952126334993
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012143722040503855,
+      "hubble": 0.014358807010469054
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010549042623561227,
+      "hubble": 0.015144717292564757
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010529808390904,
+      "hubble": 0.016223274182049593
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.01143774465747803,
+      "hubble": 0.01636093659336319
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.01010229027136264,
+      "hubble": 0.01355937203705911
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010021579956868363,
+      "hubble": 0.015108569311269691
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.010325239751171108,
+      "hubble": 0.01399316610289721
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010194574060852836,
+      "hubble": 0.013644188852044572
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009956400476765529,
+      "hubble": 0.01489347583129962
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010534942081766046,
+      "hubble": 0.0147513970567316
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011840982147382507,
+      "hubble": 0.014593916985039323
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011530998628805564,
+      "hubble": 0.015549643470525553
+    },
+    {
+      "pilot": 88,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010849270703780165,
+      "hubble": 0.015841924697988903
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010513083098392407,
+      "hubble": 0.015201635995372562
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011456908652650045,
+      "hubble": 0.015188829893428296
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.011365078708782266,
+      "hubble": 0.015702928918092534
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.009947776234570603,
+      "hubble": 0.013554804545763407
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010655910690170951,
+      "hubble": 0.01408301477921407
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011992269383251212,
+      "hubble": 0.014393940312436706
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009988632944202843,
+      "hubble": 0.013638421871203746
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009831886319352376,
+      "hubble": 0.015197675534415016
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010728525418348107,
+      "hubble": 0.014433511184078762
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011541912423308029,
+      "hubble": 0.014069284490585686
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011077629986405534,
+      "hubble": 0.015109936113070469
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011743898687440501,
+      "hubble": 0.015464049535691953
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010513083098392407,
+      "hubble": 0.015201635995372562
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011174732618640354,
+      "hubble": 0.015423008903842433
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012183403365672857,
+      "hubble": 0.01571260168903037
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.01005846508096718,
+      "hubble": 0.014572599307711103
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.01028057855260077,
+      "hubble": 0.014710078022942932
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011763948769198495,
+      "hubble": 0.014263736789505098
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009665497963606705,
+      "hubble": 0.014618545310580894
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009982171124405997,
+      "hubble": 0.015080933911921026
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010761093943408878,
+      "hubble": 0.014886907303548656
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010240916516347388,
+      "hubble": 0.013656690639328999
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010933008218501563,
+      "hubble": 0.0147243655736609
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01111552929074234,
+      "hubble": 0.014519457412454563
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.013157250631043534,
+      "hubble": 0.01895762757755931
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011206448783811102,
+      "hubble": 0.015743146203209366
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012268506248652883,
+      "hubble": 0.015507912118428594
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.009864840182185487,
+      "hubble": 0.01435489844182996
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.009713184794058773,
+      "hubble": 0.014664994412432759
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011682496009060395,
+      "hubble": 0.014412810618769827
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009631775270485875,
+      "hubble": 0.014649067929911958
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010949774532547949,
+      "hubble": 0.014640042472825668
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.011079339896613916,
+      "hubble": 0.01488836520293785
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.01129257991196454,
+      "hubble": 0.014079046397707812
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012019361615396261,
+      "hubble": 0.013381931311350634
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010742760069798338,
+      "hubble": 0.014143437392073922
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010677204537739295,
+      "hubble": 0.015197742807106143
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.011045133148500547,
+      "hubble": 0.01573038201365346
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.011326246020346039,
+      "hubble": 0.015559193141764474
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.009496816841970025,
+      "hubble": 0.014652557451509304
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.01006924661260118,
+      "hubble": 0.014931711273966008
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011309195615669461,
+      "hubble": 0.014562381720877085
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009826368351592995,
+      "hubble": 0.014595294128607522
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010133792369150922,
+      "hubble": 0.014045420522795697
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010973425627642794,
+      "hubble": 0.014790412319673743
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.009979505762766475,
+      "hubble": 0.014043072013875687
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011065960829748213,
+      "hubble": 0.014068645602322516
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011421811326094971,
+      "hubble": 0.01523699214803969
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010671039751880381,
+      "hubble": 0.015213571261223417
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.010270709375069804,
+      "hubble": 0.015841249999684275
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.010932610601191465,
+      "hubble": 0.016258181080102255
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.009833184896655994,
+      "hubble": 0.01375229265050215
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.009593629339287492,
+      "hubble": 0.014534541724207452
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011862342750869989,
+      "hubble": 0.014335896679299527
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009696807136631201,
+      "hubble": 0.01452277143775337
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010206934292329939,
+      "hubble": 0.014812421723582212
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010674203404719319,
+      "hubble": 0.014095248882782399
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.011340592409580245,
+      "hubble": 0.01384960431503582
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010927481961887666,
+      "hubble": 0.015630474107720397
+    },
+    {
+      "pilot": 300,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.012075811349549328,
+      "hubble": 0.013971201034883012
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010544214140185307,
+      "hubble": 0.015083922978155681
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.01123844031001619,
+      "hubble": 0.015751137014003363
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012198367816161949,
+      "hubble": 0.015676783319271772
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010034670799386892,
+      "hubble": 0.014579214456470565
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010011637701328187,
+      "hubble": 0.014532673540719198
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011636316310958376,
+      "hubble": 0.014136833422755317
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009605175816367325,
+      "hubble": 0.014563562127133785
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010129377168962513,
+      "hubble": 0.014945010885827949
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009981184831799994,
+      "hubble": 0.01441541163727321
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010516646023983077,
+      "hubble": 0.013977494788650544
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010527506400048571,
+      "hubble": 0.013328144667812254
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 0,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010322256594927512,
+      "hubble": 0.01521325595904356
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010544214140185307,
+      "hubble": 0.015083922978155681
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.01123844031001619,
+      "hubble": 0.015751137014003363
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012198367816161949,
+      "hubble": 0.015676783319271772
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010034670799386892,
+      "hubble": 0.014579214456470565
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010011637701328187,
+      "hubble": 0.014532673540719198
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011636316310958376,
+      "hubble": 0.014136833422755317
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009605175816367325,
+      "hubble": 0.014563562127133785
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010129377168962513,
+      "hubble": 0.014945010885827949
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009981184831799994,
+      "hubble": 0.01441541163727321
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010516646023983077,
+      "hubble": 0.013977494788650544
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010527506400048571,
+      "hubble": 0.013328144667812254
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 1,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010322256594927512,
+      "hubble": 0.01521325595904356
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010544214140185307,
+      "hubble": 0.015083922978155681
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.01123844031001619,
+      "hubble": 0.015751137014003363
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012198367816161949,
+      "hubble": 0.015676783319271772
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010034670799386892,
+      "hubble": 0.014579214456470565
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010011637701328187,
+      "hubble": 0.014532673540719198
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011636316310958376,
+      "hubble": 0.014136833422755317
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009605175816367325,
+      "hubble": 0.014563562127133785
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010129377168962513,
+      "hubble": 0.014945010885827949
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009981184831799994,
+      "hubble": 0.01441541163727321
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010516646023983077,
+      "hubble": 0.013977494788650544
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010527506400048571,
+      "hubble": 0.013328144667812254
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 2,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010322256594927512,
+      "hubble": 0.01521325595904356
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010544214140185307,
+      "hubble": 0.015083922978155681
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.01123844031001619,
+      "hubble": 0.015751137014003363
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012198367816161949,
+      "hubble": 0.015676783319271772
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010034670799386892,
+      "hubble": 0.014579214456470565
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010011637701328187,
+      "hubble": 0.014532673540719198
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011636316310958376,
+      "hubble": 0.014136833422755317
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009605175816367325,
+      "hubble": 0.014563562127133785
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010129377168962513,
+      "hubble": 0.014945010885827949
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009981184831799994,
+      "hubble": 0.01441541163727321
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010516646023983077,
+      "hubble": 0.013977494788650544
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010527506400048571,
+      "hubble": 0.013328144667812254
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 3,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010322256594927512,
+      "hubble": 0.01521325595904356
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "POWER-DIAG",
+      "rocket": 0.010544214140185307,
+      "hubble": 0.015083922978155681
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "POWER-DIAG",
+      "rocket": 0.01123844031001619,
+      "hubble": 0.015751137014003363
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "POWER-DIAG",
+      "rocket": 0.012198367816161949,
+      "hubble": 0.015676783319271772
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-FULL",
+      "rocket": 0.010034670799386892,
+      "hubble": 0.014579214456470565
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-FULL",
+      "rocket": 0.010011637701328187,
+      "hubble": 0.014532673540719198
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-FULL",
+      "rocket": 0.011636316310958376,
+      "hubble": 0.014136833422755317
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009605175816367325,
+      "hubble": 0.014563562127133785
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "COSI-SHRINK",
+      "rocket": 0.010129377168962513,
+      "hubble": 0.014945010885827949
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "COSI-SHRINK",
+      "rocket": 0.009981184831799994,
+      "hubble": 0.01441541163727321
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 0,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010516646023983077,
+      "hubble": 0.013977494788650544
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 1,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010527506400048571,
+      "hubble": 0.013328144667812254
+    },
+    {
+      "pilot": 1800,
+      "pilot_seed": 4,
+      "layout_seed": 2,
+      "method": "DIRECT-EMPIRICAL",
+      "rocket": 0.010322256594927512,
+      "hubble": 0.01521325595904356
+    }
+  ],
+  "summary": {
+    "12": {
+      "POWER-DIAG": {
+        "rocket": 0.011324176564807267,
+        "hubble": 0.01594279511440325,
+        "mean_two_scenes": 0.013633485839605258
+      },
+      "COSI-FULL": {
+        "rocket": 0.010779979812970618,
+        "hubble": 0.015082292168954995,
+        "mean_two_scenes": 0.012931135990962806
+      },
+      "COSI-SHRINK": {
+        "rocket": 0.010874202326322762,
+        "hubble": 0.015320415500557882,
+        "mean_two_scenes": 0.013097308913440322
+      },
+      "DIRECT-EMPIRICAL": {
+        "rocket": 0.013160250888364302,
+        "hubble": 0.01904710357814696,
+        "mean_two_scenes": 0.01610367723325563
+      }
+    },
+    "28": {
+      "POWER-DIAG": {
+        "rocket": 0.011522533012563594,
+        "hubble": 0.01648163412974254,
+        "mean_two_scenes": 0.014002083571153066
+      },
+      "COSI-FULL": {
+        "rocket": 0.010664809564701004,
+        "hubble": 0.014935582290906146,
+        "mean_two_scenes": 0.012800195927803574
+      },
+      "COSI-SHRINK": {
+        "rocket": 0.011027288178494833,
+        "hubble": 0.01501777133330309,
+        "mean_two_scenes": 0.01302252975589896
+      },
+      "DIRECT-EMPIRICAL": {
+        "rocket": 0.012240510529213466,
+        "hubble": 0.016786156823517216,
+        "mean_two_scenes": 0.014513333676365344
+      }
+    },
+    "88": {
+      "POWER-DIAG": {
+        "rocket": 0.011339757337768671,
+        "hubble": 0.016101861676013938,
+        "mean_two_scenes": 0.013720809506891304
+      },
+      "COSI-FULL": {
+        "rocket": 0.010526016842901074,
+        "hubble": 0.014719779304984618,
+        "mean_two_scenes": 0.012622898073942845
+      },
+      "COSI-SHRINK": {
+        "rocket": 0.010507498199001567,
+        "hubble": 0.014777794699314678,
+        "mean_two_scenes": 0.012642646449158119
+      },
+      "DIRECT-EMPIRICAL": {
+        "rocket": 0.011664467949804002,
+        "hubble": 0.015673753906702958,
+        "mean_two_scenes": 0.01366911092825348
+      }
+    },
+    "300": {
+      "POWER-DIAG": {
+        "rocket": 0.011250762576051027,
+        "hubble": 0.015762643173191333,
+        "mean_two_scenes": 0.013506702874621182
+      },
+      "COSI-FULL": {
+        "rocket": 0.010541592383541198,
+        "hubble": 0.014385350582064494,
+        "mean_two_scenes": 0.012463471482802847
+      },
+      "COSI-SHRINK": {
+        "rocket": 0.010275348573002654,
+        "hubble": 0.014593002649107902,
+        "mean_two_scenes": 0.012434175611055278
+      },
+      "DIRECT-EMPIRICAL": {
+        "rocket": 0.011167917357302094,
+        "hubble": 0.014396545872520138,
+        "mean_two_scenes": 0.012782231614911117
+      }
+    },
+    "1800": {
+      "POWER-DIAG": {
+        "rocket": 0.011327007422121149,
+        "hubble": 0.015503947770476938,
+        "mean_two_scenes": 0.013415477596299045
+      },
+      "COSI-FULL": {
+        "rocket": 0.010560874937224485,
+        "hubble": 0.014416240473315025,
+        "mean_two_scenes": 0.012488557705269753
+      },
+      "COSI-SHRINK": {
+        "rocket": 0.009905245939043277,
+        "hubble": 0.014641328216744983,
+        "mean_two_scenes": 0.01227328707789413
+      },
+      "DIRECT-EMPIRICAL": {
+        "rocket": 0.010455469672986384,
+        "hubble": 0.014172965138502117,
+        "mean_two_scenes": 0.012314217405744253
+      }
+    }
+  }
+}

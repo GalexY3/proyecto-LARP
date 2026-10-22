@@ -1,0 +1,106 @@
+Fourier modes 40
+data (1800, 3, 24, 24) (600, 3, 24, 24) [('rocket', (800, 3, 24, 24)), ('hubble_deep_field', (800, 3, 24, 24))]
+completed IID 0.0 seconds/layout
+completed STRAT 0.0 seconds/layout
+completed FPS 0.0 seconds/layout
+completed SOBOL 0.01 seconds/layout
+completed MHU-plain 0.01 seconds/layout
+completed POWER-DIAG 0.01 seconds/layout
+completed COSI-FULL 0.01 seconds/layout
+completed COSI-SHRINK 0.01 seconds/layout
+completed DIRECT-EMPIRICAL 0.24 seconds/layout
+{
+  "elapsed": 8.896088123321533,
+  "summary": {
+    "IID": {
+      "runtime_s_per_layout": 0.00011593954903738839,
+      "train_fixed_RMSE": 0.033315844248888005,
+      "same_scene_new_crops_RMSE": 0.03485157160768878,
+      "rocket_RMSE": 0.016153619298736266,
+      "hubble_RMSE": 0.023892601439046476,
+      "rocket_dropout2_RMSE": 0.01867813377759326,
+      "ridge_rocket_RMSE": 0.01587174078741865,
+      "ridge_hubble_RMSE": 0.017374457033571718
+    },
+    "STRAT": {
+      "runtime_s_per_layout": 0.0001254762922014509,
+      "train_fixed_RMSE": 0.023475946007276555,
+      "same_scene_new_crops_RMSE": 0.023725068533216622,
+      "rocket_RMSE": 0.012573583125720402,
+      "hubble_RMSE": 0.019191849507615672,
+      "rocket_dropout2_RMSE": 0.015694212699366893,
+      "ridge_rocket_RMSE": 0.014506537298551945,
+      "ridge_hubble_RMSE": 0.014980704722553499
+    },
+    "FPS": {
+      "runtime_s_per_layout": 0.0006002358027866908,
+      "train_fixed_RMSE": 0.03133229014597112,
+      "same_scene_new_crops_RMSE": 0.03147089893136312,
+      "rocket_RMSE": 0.019613688037097905,
+      "hubble_RMSE": 0.025517290419241136,
+      "rocket_dropout2_RMSE": 0.02209543609472837,
+      "ridge_rocket_RMSE": 0.014485396709066576,
+      "ridge_hubble_RMSE": 0.017977307687743638
+    },
+    "SOBOL": {
+      "runtime_s_per_layout": 0.005339350019182477,
+      "train_fixed_RMSE": 0.019668601870112015,
+      "same_scene_new_crops_RMSE": 0.019774354771227347,
+      "rocket_RMSE": 0.011687400920684732,
+      "hubble_RMSE": 0.01686639140229501,
+      "rocket_dropout2_RMSE": 0.015300726164883349,
+      "ridge_rocket_RMSE": 0.01423175915248444,
+      "ridge_hubble_RMSE": 0.01431558717824526
+    },
+    "MHU-plain": {
+      "runtime_s_per_layout": 0.011072499411446708,
+      "train_fixed_RMSE": 0.0202527556703023,
+      "same_scene_new_crops_RMSE": 0.021284153717331413,
+      "rocket_RMSE": 0.011606962092426938,
+      "hubble_RMSE": 0.017574695774711803,
+      "rocket_dropout2_RMSE": 0.0151175889187629,
+      "ridge_rocket_RMSE": 0.014213379677592387,
+      "ridge_hubble_RMSE": 0.014442497257272313
+    },
+    "POWER-DIAG": {
+      "runtime_s_per_layout": 0.008309125900268555,
+      "train_fixed_RMSE": 0.017666687929455784,
+      "same_scene_new_crops_RMSE": 0.01766756338918239,
+      "rocket_RMSE": 0.010753379449664329,
+      "hubble_RMSE": 0.015526559161250245,
+      "rocket_dropout2_RMSE": 0.014656320662515624,
+      "ridge_rocket_RMSE": 0.012115652445956445,
+      "ridge_hubble_RMSE": 0.013577673224276342
+    },
+    "COSI-FULL": {
+      "runtime_s_per_layout": 0.009648323059082031,
+      "train_fixed_RMSE": 0.017120881369220325,
+      "same_scene_new_crops_RMSE": 0.01744637829765795,
+      "rocket_RMSE": 0.010668542583726116,
+      "hubble_RMSE": 0.015056554791618005,
+      "rocket_dropout2_RMSE": 0.01462486552547536,
+      "ridge_rocket_RMSE": 0.012920448210210312,
+      "ridge_hubble_RMSE": 0.012410010970728403
+    },
+    "COSI-SHRINK": {
+      "runtime_s_per_layout": 0.008158581597464425,
+      "train_fixed_RMSE": 0.016936182008818784,
+      "same_scene_new_crops_RMSE": 0.017407687526305275,
+      "rocket_RMSE": 0.010593729970220714,
+      "hubble_RMSE": 0.014956462212716352,
+      "rocket_dropout2_RMSE": 0.014663799900938159,
+      "ridge_rocket_RMSE": 0.01264581278043855,
+      "ridge_hubble_RMSE": 0.012409957522446599
+    },
+    "DIRECT-EMPIRICAL": {
+      "runtime_s_per_layout": 0.23778843879699707,
+      "train_fixed_RMSE": 0.012991681465376815,
+      "same_scene_new_crops_RMSE": 0.015571591444093437,
+      "rocket_RMSE": 0.011342111953497177,
+      "hubble_RMSE": 0.01378516511655197,
+      "rocket_dropout2_RMSE": 0.014653798999257155,
+      "ridge_rocket_RMSE": 0.01226685291257717,
+      "ridge_hubble_RMSE": 0.012202678333536925
+    }
+  }
+}

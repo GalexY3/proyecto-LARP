@@ -1,0 +1,275 @@
+Fourier modes 40
+quota [8, 8, 8]
+quota [6, 12, 6]
+quota [4, 16, 4]
+quota [4, 12, 8]
+quota [10, 12, 2]
+quota [6, 16, 2]
+quota [4, 18, 2]
+quota [2, 20, 2]
+[
+  {
+    "quotas": [
+      6,
+      16,
+      2
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.00809092607395175,
+    "hubble": 0.010450845061510951,
+    "mean_of_two_scenes": 0.009270885567731351
+  },
+  {
+    "quotas": [
+      4,
+      18,
+      2
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.008881599261550561,
+    "hubble": 0.010856112770009172,
+    "mean_of_two_scenes": 0.009868856015779867
+  },
+  {
+    "quotas": [
+      4,
+      16,
+      4
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.008481199438121206,
+    "hubble": 0.011454509164212137,
+    "mean_of_two_scenes": 0.009967854301166671
+  },
+  {
+    "quotas": [
+      6,
+      16,
+      2
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.008613402691369043,
+    "hubble": 0.011511443972691405,
+    "mean_of_two_scenes": 0.010062423332030224
+  },
+  {
+    "quotas": [
+      4,
+      16,
+      4
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.008680495402601025,
+    "hubble": 0.0118682039289677,
+    "mean_of_two_scenes": 0.010274349665784362
+  },
+  {
+    "quotas": [
+      4,
+      18,
+      2
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.008787875235995347,
+    "hubble": 0.011835014001945404,
+    "mean_of_two_scenes": 0.010311444618970376
+  },
+  {
+    "quotas": [
+      6,
+      16,
+      2
+    ],
+    "method": "SOBOL",
+    "rocket": 0.008504870110456225,
+    "hubble": 0.012283342056289876,
+    "mean_of_two_scenes": 0.01039410608337305
+  },
+  {
+    "quotas": [
+      6,
+      12,
+      6
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.00942547702449752,
+    "hubble": 0.011661656519466048,
+    "mean_of_two_scenes": 0.010543566771981785
+  },
+  {
+    "quotas": [
+      10,
+      12,
+      2
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.00928916689577974,
+    "hubble": 0.012169753222024068,
+    "mean_of_two_scenes": 0.010729460058901902
+  },
+  {
+    "quotas": [
+      4,
+      16,
+      4
+    ],
+    "method": "SOBOL",
+    "rocket": 0.008652623261648834,
+    "hubble": 0.012806913666911118,
+    "mean_of_two_scenes": 0.010729768464279976
+  },
+  {
+    "quotas": [
+      6,
+      12,
+      6
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.009105829629721148,
+    "hubble": 0.012637861929560084,
+    "mean_of_two_scenes": 0.010871845779640617
+  },
+  {
+    "quotas": [
+      4,
+      18,
+      2
+    ],
+    "method": "SOBOL",
+    "rocket": 0.008819540735612664,
+    "hubble": 0.013069731791078532,
+    "mean_of_two_scenes": 0.010944636263345594
+  },
+  {
+    "quotas": [
+      4,
+      12,
+      8
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.009854136233383088,
+    "hubble": 0.01259470955319355,
+    "mean_of_two_scenes": 0.01122442289328832
+  },
+  {
+    "quotas": [
+      10,
+      12,
+      2
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.009553942209593892,
+    "hubble": 0.01314425089174863,
+    "mean_of_two_scenes": 0.011349096550671262
+  },
+  {
+    "quotas": [
+      6,
+      12,
+      6
+    ],
+    "method": "SOBOL",
+    "rocket": 0.009383309779101952,
+    "hubble": 0.01353328897126234,
+    "mean_of_two_scenes": 0.011458299375182144
+  },
+  {
+    "quotas": [
+      10,
+      12,
+      2
+    ],
+    "method": "SOBOL",
+    "rocket": 0.00949084257479684,
+    "hubble": 0.013847237894351846,
+    "mean_of_two_scenes": 0.011669040234574343
+  },
+  {
+    "quotas": [
+      4,
+      12,
+      8
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.010179738088146682,
+    "hubble": 0.013942323575006443,
+    "mean_of_two_scenes": 0.012061030831576561
+  },
+  {
+    "quotas": [
+      4,
+      12,
+      8
+    ],
+    "method": "SOBOL",
+    "rocket": 0.009934285298254063,
+    "hubble": 0.01438425879285798,
+    "mean_of_two_scenes": 0.01215927204555602
+  },
+  {
+    "quotas": [
+      2,
+      20,
+      2
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.01114110189272009,
+    "hubble": 0.01421612845463888,
+    "mean_of_two_scenes": 0.012678615173679486
+  },
+  {
+    "quotas": [
+      8,
+      8,
+      8
+    ],
+    "method": "COSI-SHRINK",
+    "rocket": 0.010636957469011828,
+    "hubble": 0.015010413736813522,
+    "mean_of_two_scenes": 0.012823685602912674
+  },
+  {
+    "quotas": [
+      2,
+      20,
+      2
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.011133762756399225,
+    "hubble": 0.014870597973476075,
+    "mean_of_two_scenes": 0.013002180364937648
+  },
+  {
+    "quotas": [
+      8,
+      8,
+      8
+    ],
+    "method": "POWER-DIAG",
+    "rocket": 0.01111728084910272,
+    "hubble": 0.015562036024571731,
+    "mean_of_two_scenes": 0.013339658436837225
+  },
+  {
+    "quotas": [
+      8,
+      8,
+      8
+    ],
+    "method": "SOBOL",
+    "rocket": 0.010820963024059804,
+    "hubble": 0.016377338299897213,
+    "mean_of_two_scenes": 0.013599150661978508
+  },
+  {
+    "quotas": [
+      2,
+      20,
+      2
+    ],
+    "method": "SOBOL",
+    "rocket": 0.011415913001166974,
+    "hubble": 0.015963269048850256,
+    "mean_of_two_scenes": 0.013689591025008612
+  }
+]

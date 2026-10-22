@@ -1,0 +1,5 @@
+Fourier modes 40
+[8, 8, 8] mean train/rocket/hubble 0.01313 0.01044 0.01382 s/layout 0.51
+[6, 16, 2] mean train/rocket/hubble 0.00836 0.00783 0.00921 s/layout 0.51
+[4, 16, 4] mean train/rocket/hubble 0.00878 0.0085 0.00942 s/layout 0.45
+[4, 18, 2] mean train/rocket/hubble 0.00864 0.00858 0.00929 s/layout 0.47

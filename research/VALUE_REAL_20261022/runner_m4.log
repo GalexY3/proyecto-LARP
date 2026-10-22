@@ -1,0 +1,106 @@
+Fourier modes 40
+data (1800, 3, 24, 24) (600, 3, 24, 24) [('rocket', (800, 3, 24, 24)), ('hubble_deep_field', (800, 3, 24, 24))]
+completed IID 0.0 seconds/layout
+completed STRAT 0.0 seconds/layout
+completed FPS 0.0 seconds/layout
+completed SOBOL 0.0 seconds/layout
+completed MHU-plain 0.01 seconds/layout
+completed POWER-DIAG 0.01 seconds/layout
+completed COSI-FULL 0.01 seconds/layout
+completed COSI-SHRINK 0.01 seconds/layout
+completed DIRECT-EMPIRICAL 0.14 seconds/layout
+{
+  "elapsed": 7.88756537437439,
+  "summary": {
+    "IID": {
+      "runtime_s_per_layout": 0.00011055810110909598,
+      "train_fixed_RMSE": 0.05382966204115712,
+      "same_scene_new_crops_RMSE": 0.05793653955522928,
+      "rocket_RMSE": 0.02349009663195704,
+      "hubble_RMSE": 0.03902910455027429,
+      "rocket_dropout2_RMSE": 0.03131087760986007,
+      "ridge_rocket_RMSE": 0.02947841447853931,
+      "ridge_hubble_RMSE": 0.02623410554322476
+    },
+    "STRAT": {
+      "runtime_s_per_layout": 6.743839808872767e-05,
+      "train_fixed_RMSE": 0.03436163259913982,
+      "same_scene_new_crops_RMSE": 0.03530979897013027,
+      "rocket_RMSE": 0.01787229153629264,
+      "hubble_RMSE": 0.028138054104883004,
+      "rocket_dropout2_RMSE": 0.02936148654062991,
+      "ridge_rocket_RMSE": 0.02027354585017374,
+      "ridge_hubble_RMSE": 0.02341458138319027
+    },
+    "FPS": {
+      "runtime_s_per_layout": 0.0003102166312081473,
+      "train_fixed_RMSE": 0.052551577252626665,
+      "same_scene_new_crops_RMSE": 0.050763747875696916,
+      "rocket_RMSE": 0.030273363839386228,
+      "hubble_RMSE": 0.041452759976988364,
+      "rocket_dropout2_RMSE": 0.03844880008544562,
+      "ridge_rocket_RMSE": 0.02711001898519291,
+      "ridge_hubble_RMSE": 0.03453859792857591
+    },
+    "SOBOL": {
+      "runtime_s_per_layout": 0.004935639245169503,
+      "train_fixed_RMSE": 0.030643472633614676,
+      "same_scene_new_crops_RMSE": 0.03197811040408684,
+      "rocket_RMSE": 0.017842910175664885,
+      "hubble_RMSE": 0.02550506259357618,
+      "rocket_dropout2_RMSE": 0.02969270150674689,
+      "ridge_rocket_RMSE": 0.021884057615724425,
+      "ridge_hubble_RMSE": 0.02202159229134997
+    },
+    "MHU-plain": {
+      "runtime_s_per_layout": 0.008258819580078125,
+      "train_fixed_RMSE": 0.03175415242875235,
+      "same_scene_new_crops_RMSE": 0.03304108639975828,
+      "rocket_RMSE": 0.017708467043163013,
+      "hubble_RMSE": 0.026797777331220386,
+      "rocket_dropout2_RMSE": 0.030763598288528538,
+      "ridge_rocket_RMSE": 0.020970245128135973,
+      "ridge_hubble_RMSE": 0.0209232943413554
+    },
+    "POWER-DIAG": {
+      "runtime_s_per_layout": 0.006686619349888393,
+      "train_fixed_RMSE": 0.029287429565659804,
+      "same_scene_new_crops_RMSE": 0.030727662134681862,
+      "rocket_RMSE": 0.015906404346395096,
+      "hubble_RMSE": 0.025043700473613328,
+      "rocket_dropout2_RMSE": 0.029153306133830836,
+      "ridge_rocket_RMSE": 0.021140628201157717,
+      "ridge_hubble_RMSE": 0.021307867992165087
+    },
+    "COSI-FULL": {
+      "runtime_s_per_layout": 0.009297370910644531,
+      "train_fixed_RMSE": 0.028741653241307456,
+      "same_scene_new_crops_RMSE": 0.028541137903401514,
+      "rocket_RMSE": 0.016102945251511697,
+      "hubble_RMSE": 0.024280407543683265,
+      "rocket_dropout2_RMSE": 0.02962014639722582,
+      "ridge_rocket_RMSE": 0.0203153396046566,
+      "ridge_hubble_RMSE": 0.01954300276868165
+    },
+    "COSI-SHRINK": {
+      "runtime_s_per_layout": 0.00816239629473005,
+      "train_fixed_RMSE": 0.02740475154446208,
+      "same_scene_new_crops_RMSE": 0.02744818068998141,
+      "rocket_RMSE": 0.015963221975844117,
+      "hubble_RMSE": 0.024034623764408954,
+      "rocket_dropout2_RMSE": 0.02900022646443048,
+      "ridge_rocket_RMSE": 0.0195982033673187,
+      "ridge_hubble_RMSE": 0.019515744105883862
+    },
+    "DIRECT-EMPIRICAL": {
+      "runtime_s_per_layout": 0.1437478746686663,
+      "train_fixed_RMSE": 0.022797009668608054,
+      "same_scene_new_crops_RMSE": 0.027661514493181834,
+      "rocket_RMSE": 0.016695222538742716,
+      "hubble_RMSE": 0.023125948537062135,
+      "rocket_dropout2_RMSE": 0.02914127192314708,
+      "ridge_rocket_RMSE": 0.017501407179015587,
+      "ridge_hubble_RMSE": 0.019594276213746674
+    }
+  }
+}
