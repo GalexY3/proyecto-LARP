@@ -1,0 +1,15 @@
+{
+  "id": "C26",
+  "E": "MismaK, funcióninicial y5834params: SGDpreserva logits con errorfinal2.66e-15; AdamW difiere ya.219 alprimerpaso y8.21 al60. No se puntuóvalidación/test.",
+  "F": "Se rota después de centrar/escalar y sinclipping; el control cambia base, no geometría ni información. No se comparaSGDcontraAdamWporaccuracy, solo equivariancia interna.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "Ksola no explica aprendizajeC04conAdamW. Próxima pregunta: bajo un optimizador controlado, si métricas derivadas de geometría aportan algo frente precondicionadores convencionales de datos.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: SGD enpixeles con Kgeometría frente identidad, diagonal y covarianza regularizada.",
+  "options_rejected": [
+    "Atribuir dependencia de base a emergenciaMHU",
+    "Usar la igualdadSGD como descubrimiento original"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C27"
+}

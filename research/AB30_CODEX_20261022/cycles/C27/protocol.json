@@ -1,0 +1,36 @@
+{
+  "id": "C27",
+  "parent_id": "C26",
+  "short_name": "conventional_input_preconditioners",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿La métrica de geometría mejora optimización frente a precondicionadores convencionales con igual información de entrenamiento?",
+  "B": [
+    "H_generic: covarianza de datos iguala o supera métrica de sensores",
+    "H_geometry_metric: K_MHU aporta ventaja específica",
+    "H_other: escala de learningrate o regularización desigual"
+  ],
+  "C": "MismaMLPpixel64->64->10FP64, init991/992, SGDlr.1 sin decay,240pasos. Métricas identidad, inversadiagonal e inversacovarianza con floor=.01tr(C)/64; K=MMT para4MHUy4CVT. Todas normalizadas por lambda_max(C^1/2 K C^1/2), calculada solo train. Val e indicadores de costes, testnoevaluado.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿La métrica de geometría mejora optimización frente a precondicionadores convencionales con igual información de entrenamiento?",
+  "null": "H_other: escala de learningrate o regularización desigual",
+  "predicted_discriminant": "Un precondicionador convencional puede explicar o superar beneficio deK; fuente de conocimiento del campo distinta pero acceso a datos igual.",
+  "falsification_rule": "Inestabilidad invalida ranking; no ajustarlr por resultados. Normalizar curvatura input no garantizaigualdad global de convergenciaMLP. Coste de generar geometrías históricas no está incluido.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    991,
+    992,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}
