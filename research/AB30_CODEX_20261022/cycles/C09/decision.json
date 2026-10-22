@@ -1,0 +1,15 @@
+{
+  "id": "C09",
+  "E": "Promedio16 MHUmantienerot74.11 vsorig75.06, CVTmean76.72 vsorig73.83. Clean yruido empeoran; copias80no recuperanmejora.",
+  "F": "Invarianciacontradeoffdeinformación/regularización, noMHUespecial; promedioperderango16 ypodríamodificarrepresentación.",
+  "G": "Condicionesexploratorias4geomx2métodos.",
+  "H": "Tiposdistintosnoindispensablespara rotación; varíanatribuciónycostes.",
+  "I": "n4, initúnicoporciclo peroC04cruzó2. No significaciónselectiva.",
+  "J": "CONTINUE controlcontrafactual: transportar mismoclasificadorporoperadorinvertible",
+  "options_rejected": [
+    "Confundirtoleranciarotacionalconmejorinformación",
+    "Repetirgriddebandwidthparabuscarganador"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C10"
+}

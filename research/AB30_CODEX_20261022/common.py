@@ -60,7 +60,7 @@ def normalize_fit(X,tr,mode='guard'):
     elif mode=='global': sd=np.repeat(max(float(X[tr].std()),1e-5),X.shape[1])
     else: raise ValueError(mode)
     return mu,sd
-def train(X,y,tr,va,te,ext=None,seed=991,steps=240,mode='guard',hidden=None,clip=9.,decay=.001,lr=.012,patience=45):
+def train(X,y,tr,va,te,ext=None,seed=991,steps=240,mode='guard',hidden=None,clip=9.,decay=.001,lr=.012,patience=45,return_model=False):
     torch.manual_seed(seed)
     X=np.asarray(X,dtype=np.float32);ext=ext or {'clean':X[te]}
     mu,sd=normalize_fit(X,tr,mode)
@@ -90,8 +90,9 @@ def train(X,y,tr,va,te,ext=None,seed=991,steps=240,mode='guard',hidden=None,clip
     with torch.no_grad():
         for name,a in ext.items():
             pr=net(transform(a)).argmax(1).numpy();pred[name]=pr.tolist();scores[name]=float(np.mean(pr==y[te]))
-    return {'accuracy':scores,'predictions':pred,'best_step':bestep,'steps':ep+1,'val_loss':best,'val_curve':history,
+    result={'accuracy':scores,'predictions':pred,'best_step':bestep,'steps':ep+1,'val_loss':best,'val_curve':history,
             'params':sum(a.numel() for a in net.parameters()),'elapsed':time.perf_counter()-start}
+    return (result,net,mu,sd) if return_model else result
 def version_info():
     import sklearn
     return {'python':sys.version,'numpy':np.__version__,'scipy':scipy.__version__,'torch':torch.__version__,'sklearn':sklearn.__version__,'threads':torch.get_num_threads()}

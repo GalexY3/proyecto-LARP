@@ -1,0 +1,34 @@
+{
+  "id": "C10",
+  "parent_id": "C09",
+  "short_name": "neural_function_transport",
+  "date": "2026-10-22",
+  "A": "¿Se puede expresar exactamente el mismo clasificador de píxeles a través de frontends MHU/CVT completos, conservando sus predicciones incluso bajo corrupción?",
+  "B": [
+    "H_reparam: fullrankpermitemismofuncion/robustez",
+    "H_arch: frontendimponeventajaexpresiva",
+    "H_otras: precisiónfinita"
+  ],
+  "C": "EntrenarunpixelMLPglobal, construirprimeracapaequivalentemediantepinversaM para4MHUy4CVT; comprobarlogits/prediccionesfloat64yfloat32 sin volveraentrenar.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "Enfloat64, prediccionesidénticas para todo frontendfullrank; float32 puedeintroducirerror porcondición.",
+  "falsification_rule": "Errores float64 superiores1e-7con fullrankyfactorescorrectosinvalidanmappingoexpresividadasumida.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2,
+    "max_training_runs": 1,
+    "steps_per_run": 240
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}
