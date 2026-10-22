@@ -1,0 +1,34 @@
+{
+  "id": "C24",
+  "parent_id": "C23",
+  "short_name": "periodic_spectrum_nonperiodic_boundary",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Pueden cambiar errores de integración no periódica sin cambiar ningún factor de estructura periódico?",
+  "B": [
+    "H_boundary: alineación de frontera importa aun con espectro idéntico",
+    "H_spectrum_sufficient: el espectro periódico determina utilidad",
+    "H_other: error numérico no conserva la geometría"
+  ],
+  "C": "Cuatro traslaciones toroidales comunes (0,0,0),(.25,0,0),(0,.25,0),(.37,.19,.11). Mismo patrón/labels. Campo afín por tipo f=mu+g·(x-.5), g independiente, targetintegralbalanced; ruido.03. Medias y GLS competente con tendencia conocida. Verificar S en modos3D q²1..9 idéntico.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Pueden cambiar errores de integración no periódica sin cambiar ningún factor de estructura periódico?",
+  "null": "H_other: error numérico no conserva la geometría",
+  "predicted_discriminant": "Medias varían por alineación de cubo aunque S sea idéntico; lector con tendencia explica gran parte. No es un efecto de cambiar HU.",
+  "falsification_rule": "ResiduoS>1e-10 invalida invariancia; no usar fases como realizaciones geométricas nuevas. El campo afín introduce hipótesis de frontera diferente al toro.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

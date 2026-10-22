@@ -1,0 +1,15 @@
+{
+  "id": "C23",
+  "E": "Con rho1, lector nominal≈2.6e-4 y conocer solo distribución de jitter apenas ayuda; recalibrar posiciones reales devuelve≈9.23e-6 para todas las geometrías. Con rho0 CVT conserva menor riesgo queMHU.",
+  "F": "Covarianza integrada se comprobó por dominancia esperada; mediasMC de24jitters tienen ruido y no garantizan ordenar diferencias diminutas. El valor de posiciones reales es información extra explícita para todos los métodos.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La calibración física, no una robustezHU intrínseca, domina este escenario. Ahora se necesita aislar espectro fijo frente interfaz no periódica.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: traslación toroidal conserva todo espectro, pero cambia alineación de fronteras en señal no periódica.",
+  "options_rejected": [
+    "Vender conocimiento de distribución como sustituto de calibración",
+    "Interpretar pequeñas diferenciasMC como superioridad estable"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C24"
+}
