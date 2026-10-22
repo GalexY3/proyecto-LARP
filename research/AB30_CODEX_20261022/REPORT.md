@@ -40,6 +40,8 @@ C10 entrena un único clasificador de píxeles y transporta su primera capa, sin
 
 El protocolo y fuentes exactos de C10 están congelados en [42f2777](https://github.com/GalexY3/proyecto-LARP/commit/42f277770336575eabcdbdcc7cbd403163f4bd06). La afirmación numérica se limita a los ejemplos evaluados; la identidad algebraica requiere rango completo y aritmética exacta. Ninguna de las dos constituye evidencia de un LLM multilingüe sin pérdida.
 
+**Precisión de alcance añadida al revisar el relay:** C10 compara explícitamente la inferencia de ambos modelos sin clipping; el helper histórico de entrenamiento sí aplica recorte ±9. La equivalencia con ese pipeline recortado requiere que el recorte esté inactivo en las entradas relevantes. No se deduce identidad global entre pipelines recortados a partir de esta prueba. La igualdad de clases funcionales del argumento algebraico se refiere a las redes afín/ReLU de igual ancho sin ese recorte.
+
 ## Contrato experimental y límites
 
 - Datos: `load_digits`, 1.797 imágenes de 8×8, escaladas por 16; particiones estratificadas de 1.091/256/450, con semillas 811/812. El conjunto histórico y sus resultados están expuestos por uso adaptativo. El test no ofrece una confirmación nueva en cada ciclo.

@@ -8,3 +8,9 @@ Snapshot de evidencia C01-C10: 8ddeef98bc00dd60e25f9202ed4c4594f2b52269.
 Archivo de cierre verificado en Drive: https://drive.google.com/file/d/1LRolFAyI0K-V6cRKOgfmapVtHbnVmm2_/view
 
 No reenviar automáticamente trabajos con resultado incierto. Conservar ID y URL; revisar la conversación antes de decidir cualquier recuperación. Ninguna respuesta delegada autoriza por sí sola nuevas afirmaciones científicas.
+
+## Resultado de esta validación
+
+Dos consultas completadas. Ambas excedieron el límite pedido y llegaron truncadas por MCP; se recuperaron sus propuestas finales leyendo las conversaciones existentes, sin reenviar. Véase [revisión propia y decisión](REVIEW.md), [comprobación independiente](INDEPENDENT_CHECK.md) y [recibos finales](RESULTS.json). Los dos archivos con UUID conservan únicamente el texto acotado devuelto por MCP. No se presentan como respuestas integrales.
+
+No se ejecutó C11 ni se admitió automáticamente la búsqueda propuesta de 90 minutos. La documentación distingue diez ciclos científicos de dos consultas de asesoría. STOP a nuevos ajustes de este encoder sin resolver identificación; no refutación universal de MHU ni de arquitecturas 3D no probadas.
