@@ -1,0 +1,34 @@
+{
+  "id": "C08",
+  "parent_id": "C07",
+  "short_name": "dense_rbf_pooling_control",
+  "date": "2026-10-22",
+  "A": "¿Un operador RBF normalizado sobre la rejilla completa reproduce tolerancia a rotación sin geometría irregular ni tipos?",
+  "B": [
+    "H_RBF: normalización/centrosdelkernel explican",
+    "H_irregular: selecciónirregularesnecesaria",
+    "H_otras: redundancia/capacidad"
+  ],
+  "C": "Píxelesuniformes→RBF16centros, RBF64centros, 5copiasRBF16→80features; misma sigma.16,globaltrain,2inits, ~5.8kparams.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "SiRBFdensecierra brecha sinMHU, beneficioespacialnoesspecífico.",
+  "falsification_rule": "SiRBFdensefallapero5tiposirregularessobreviven, estudiar redundancia/estructuraindividual de operadores.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2,
+    "max_training_runs": 6,
+    "steps_per_run": 240
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}

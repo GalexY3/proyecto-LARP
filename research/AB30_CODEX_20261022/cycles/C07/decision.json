@@ -1,0 +1,15 @@
+{
+  "id": "C07",
+  "E": "Blur.5rot53.78%, blur.8545.22%, pool4 44.33 frentepíxeles60.67; RBFfrontsC04~68–74. Blurconvencional NOreproducebeneficio.",
+  "F": "Refutada versiónsimplelowpass; nohacefaltainterpretarresultadofavorableMHU, controlesRBFalineadosfaltan.",
+  "G": "Mismotest; exploraciónadaptativa.",
+  "H": "Bajaexplicaciónsolofiltrogaussianotranslacional; sube kernelRBFnormalizado/soporteyfronteras.",
+  "I": "Paramcountparecido, operadoresdistintosnocausalidadMHU.",
+  "J": "CONTINUE con poolingRBFdenso sin puntosirregulares",
+  "options_rejected": [
+    "Aceptar lowpass porintuiciónpeseanulo",
+    "Volver a4x4simpleya inferior"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C08"
+}
