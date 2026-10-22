@@ -1,0 +1,269 @@
+{
+  "id": "C10",
+  "started_utc": "2026-10-22T01:11:28.007217+00:00",
+  "status": "COMPLETED",
+  "inference": "exploratory",
+  "result": {
+    "pixel_accuracy": {
+      "clean": 0.9822222222222222,
+      "noise": 0.9244444444444444,
+      "occlusion": 0.8688888888888889,
+      "rotation": 0.5955555555555555
+    },
+    "rows": [
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "precision": "float64",
+        "max_logit_error": 8.146372465489549e-12,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 6414.054976841424
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "precision": "float32",
+        "max_logit_error": 0.00034234673114674763,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 6414.054976841424
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "precision": "float64",
+        "max_logit_error": 7.744915819785092e-12,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 3151.6858885243605
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "precision": "float32",
+        "max_logit_error": 0.0002847213993564246,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 3151.6858885243605
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "precision": "float64",
+        "max_logit_error": 9.912071163853398e-13,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 553.3913815602754
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "precision": "float32",
+        "max_logit_error": 4.847989378486961e-05,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 553.3913815602754
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "precision": "float64",
+        "max_logit_error": 1.170619157164765e-12,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 441.47264914868407
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "precision": "float32",
+        "max_logit_error": 3.4856824420614885e-05,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 441.47264914868407
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "precision": "float64",
+        "max_logit_error": 3.1015190415928373e-12,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 2079.631189568263
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "precision": "float32",
+        "max_logit_error": 0.00010174677631447082,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 2079.631189568263
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "precision": "float64",
+        "max_logit_error": 1.7630341631047486e-12,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 782.8574460561671
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "precision": "float32",
+        "max_logit_error": 5.306051391662514e-05,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 782.8574460561671
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "precision": "float64",
+        "max_logit_error": 8.952838470577262e-13,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 475.622653861426
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "precision": "float32",
+        "max_logit_error": 3.6264036491928664e-05,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 475.622653861426
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "precision": "float64",
+        "max_logit_error": 2.6270097208680454e-12,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 1247.3393937865185
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "precision": "float32",
+        "max_logit_error": 0.00010218513600257495,
+        "minimum_prediction_agreement": 1.0,
+        "weight_norm": 1247.3393937865185
+      }
+    ],
+    "summary": {
+      "float64": {
+        "max_error": 8.146372465489549e-12,
+        "min_agreement": 1.0
+      },
+      "float32": {
+        "max_error": 0.00034234673114674763,
+        "min_agreement": 1.0
+      }
+    }
+  },
+  "freeze_commit": "42f277770336575eabcdbdcc7cbd403163f4bd06",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C09/decision.json",
+    "sha256": "6d4e5461c35f2fd83bcc97c751721c18f73767c3624c6dc67347420c1354f778"
+  },
+  "protocol_sha256": "8a9359344c6fb9ff93c421871f3ef924ac728ec4585b63f37d0bc2c3a40abc1b",
+  "source_sha256": "bd67ef34c07e4eae2da473f2e0e16524c449946c31ce3fdb91ba20107e1afdd2",
+  "common_sha256": "18da4a3991cb1e9e323266a58702ebca5f59ce82ee833b0ae306ca7d2e140272",
+  "inputs": {
+    "geometry_sha256": {
+      "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+      "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+      "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+      "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+    },
+    "datasets": [
+      {
+        "args": "()",
+        "kwargs": "{}",
+        "arrays": {
+          "images": {
+            "shape": [
+              1797,
+              8,
+              8
+            ],
+            "dtype": "float64",
+            "sha256": "23a53393488b04f92efc45ebc92767e2dcfdf206ba37a928f497d261e42267d2"
+          },
+          "labels": {
+            "shape": [
+              1797
+            ],
+            "dtype": "int64",
+            "sha256": "a3c91c262eddcf7ba8f0e37507c30284493c9b20412ffe4af30d536401f7ba21"
+          },
+          "train": {
+            "shape": [
+              1091
+            ],
+            "dtype": "int64",
+            "sha256": "a68a7deef54d5cf025f52a49bc5651978c0e191c43d0d7ff34d81d52efb8edc6"
+          },
+          "validation": {
+            "shape": [
+              256
+            ],
+            "dtype": "int64",
+            "sha256": "b520da2761fb0fc9141281d7da84ebc50003f8b1d347592e6657171a1b1b66ab"
+          },
+          "test": {
+            "shape": [
+              450
+            ],
+            "dtype": "int64",
+            "sha256": "18bff590c4110041a82dd6bfb05597c49a658c3ae99535943d544955757aefba"
+          }
+        }
+      },
+      {
+        "args": "()",
+        "kwargs": "{}",
+        "arrays": {
+          "images": {
+            "shape": [
+              1797,
+              8,
+              8
+            ],
+            "dtype": "float64",
+            "sha256": "23a53393488b04f92efc45ebc92767e2dcfdf206ba37a928f497d261e42267d2"
+          },
+          "labels": {
+            "shape": [
+              1797
+            ],
+            "dtype": "int64",
+            "sha256": "a3c91c262eddcf7ba8f0e37507c30284493c9b20412ffe4af30d536401f7ba21"
+          },
+          "train": {
+            "shape": [
+              1091
+            ],
+            "dtype": "int64",
+            "sha256": "a68a7deef54d5cf025f52a49bc5651978c0e191c43d0d7ff34d81d52efb8edc6"
+          },
+          "validation": {
+            "shape": [
+              256
+            ],
+            "dtype": "int64",
+            "sha256": "b520da2761fb0fc9141281d7da84ebc50003f8b1d347592e6657171a1b1b66ab"
+          },
+          "test": {
+            "shape": [
+              450
+            ],
+            "dtype": "int64",
+            "sha256": "18bff590c4110041a82dd6bfb05597c49a658c3ae99535943d544955757aefba"
+          }
+        }
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "worker_returncode": 0,
+  "elapsed_seconds": 4.479098599997087,
+  "finished_utc": "2026-10-22T01:11:32.486315+00:00"
+}

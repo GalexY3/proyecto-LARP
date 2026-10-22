@@ -1,4 +1,15 @@
-# LARP — branching AB 3.2.1, 30 condiciones de contraste (2026-10-21)
+# LARP — laboratorio de investigación
+
+## Estado actual, 22 de octubre de 2026
+
+Se cerraron por indicación del investigador **10/30 ciclos dinámicos nuevos**, con veinte pendientes. No se encontró una ventaja específica de MHU en este bloque exploratorio. Se identificaron confounds de normalización y se probó un control de transporte del mismo clasificador entre representaciones lineales completas, con límites explícitos de presupuesto y condicionamiento.
+
+- [Informe y decisión de cierre](research/AB30_CODEX_20261022/REPORT.md)
+- [Diez ciclos: protocolos, evidencias y decisiones A–J](research/AB30_CODEX_20261022/LEDGER.md)
+- [Importación verificada del laboratorio local: 539 archivos originales](legacy/local_lab_20261022/README_IMPORT.md)
+- [Metodología AB y salvaguardas operativas O2](https://github.com/GalexY3/Metodologia-AB)
+
+## Estudio anterior: 30 condiciones de contraste (2026-10-21)
 
 ## Lectura
 - `docs/00_DICTAMEN.md`: principal; `docs/01_LEDGER_30_CICLOS.md`: auditoría A–J por condición; `docs/02_PRIORS_LARP.md`: priors nuevos y estado.

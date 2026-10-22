@@ -1,0 +1,143 @@
+{
+  "status": "CLOSED_AT_USER_REQUEST",
+  "date": "2026-10-22",
+  "requested_cycles": 30,
+  "executed_cycles": 10,
+  "remaining_cycles": 20,
+  "no_more_experiments_started": true,
+  "all_exploratory": true,
+  "independent_external_confirmation": false,
+  "runtime_seconds_sum_excludes_setup_and_research": 64.15935869999885,
+  "verification": "JSON parsed, ten protocols/results/decisions present; source and protocol bytes match each recorded Git freeze. No historical test suite or new science run for closeout.",
+  "cycles": [
+    {
+      "id": "C01",
+      "freeze_commit": "63871e49775a6e07fd272632f81c2faf001e2576",
+      "historical_receipt_status": "RUN",
+      "elapsed_seconds": 5.085767399999895,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "85043e4c0e562f534a94113fefe0cee3336ef824d6b51633eed01e3facbb007a",
+      "decision_sha256": "840ef9033c59ce05a3f8aa0178643525f2f477a397ef751523f074575cdf603c"
+    },
+    {
+      "id": "C02",
+      "freeze_commit": "fb988621a3f569a29667a5999600d08899c56cfa",
+      "historical_receipt_status": "RUN",
+      "elapsed_seconds": 7.100545400000556,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "e6024ba8a24c2f272df9e6fde2804689ca73caa8522746b95176d6fd06a4eef6",
+      "decision_sha256": "b80ef74ee2b04af8c29b7fe95f199c4937aac00b8e5ebb998dde494223c02077"
+    },
+    {
+      "id": "C03",
+      "freeze_commit": "a00789311a564d4dd47b277e29084496cb35965c",
+      "historical_receipt_status": "RUN",
+      "elapsed_seconds": 4.632912500001112,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "54272d11e48cecba1c1b249e97e21f09422585c35f2e48c75e3edab43a1fb444",
+      "decision_sha256": "0d3203da7f1ad0e7dd52052eaef04b069f2630fc42fee1a307bacb3b00085774"
+    },
+    {
+      "id": "C04",
+      "freeze_commit": "d0a45b5c1c1cee797f4f4d54bc2da839a13335fc",
+      "historical_receipt_status": "RUN",
+      "elapsed_seconds": 10.220013699999981,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "6b1a99215ee81fdad3e1d354e247005211b5903f4954108480242c0ced487b86",
+      "decision_sha256": "ffe494585fd43078f1b2da4656ada3a994a0a2e54daa4165e0ab6120266cbfb9"
+    },
+    {
+      "id": "C05",
+      "freeze_commit": "f3bc2a529d627c09182837d05a8f8ddb2372fa6e",
+      "historical_receipt_status": "RUN",
+      "elapsed_seconds": 2.66752439999982,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "bab0c42d053a729fa6824a66650245e8c11a00096fb6f5b895eeee4fc0688bf1",
+      "decision_sha256": "15c8560c2151223b4d56f4b26b014a134d2a58c0e99ac174019b5be8a3cf19f7"
+    },
+    {
+      "id": "C06",
+      "freeze_commit": "d8e0fda923e5818ca3a249c44e932a8c2cb96737",
+      "historical_receipt_status": "COMPLETED",
+      "elapsed_seconds": 11.737653100000898,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "34c93a4919c27227b4f8dcfeaaf4a67451249398c87deb6e569426b4ebaf295d",
+      "decision_sha256": "5bf0beb6531b8ec311ea5e162460bc6a81ec55d0dff933048abac40eb516c530"
+    },
+    {
+      "id": "C07",
+      "freeze_commit": "62554885e497649a89ecaaf1595e4635f2eaae46",
+      "historical_receipt_status": "COMPLETED",
+      "elapsed_seconds": 5.598229600000195,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "44a042df391a57c85f8c1c268c8f9b427a9d72bdd5926f75b0ff53075d660e74",
+      "decision_sha256": "cdb5a11a83a1f24dc0bc71e34d55ee6670b1a7baeb9f17f2541e68bebb495885"
+    },
+    {
+      "id": "C08",
+      "freeze_commit": "e39dfe7424f0034079d789a7abd8dcfb65a33e48",
+      "historical_receipt_status": "COMPLETED",
+      "elapsed_seconds": 5.057441799999651,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "49c5b53c13ed89b340368102c9599ab01ae09f05e6d7eee2a5b1f273387d3c56",
+      "decision_sha256": "c685e20099903523000919d581d70d6ebed6f4541d732cd6bc11c33aad546242"
+    },
+    {
+      "id": "C09",
+      "freeze_commit": "ccb9a6a9a023974906e581440c512095603ed2e3",
+      "historical_receipt_status": "COMPLETED",
+      "elapsed_seconds": 7.580172199999652,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "f063dbc6f6623f75a2fd7933aa2a00bcd7905ac920fa0fe1a9a88fb787f3b403",
+      "decision_sha256": "6d4e5461c35f2fd83bcc97c751721c18f73767c3624c6dc67347420c1354f778"
+    },
+    {
+      "id": "C10",
+      "freeze_commit": "42f277770336575eabcdbdcc7cbd403163f4bd06",
+      "historical_receipt_status": "COMPLETED",
+      "elapsed_seconds": 4.479098599997087,
+      "source_and_protocol_match_frozen_commit": {
+        "source.py": true,
+        "protocol.json": true
+      },
+      "result_sha256": "ad9d321895564e8fb7a66d667dcadcf9de70a6fb6935730c1619b4b2c4995ff4",
+      "decision_sha256": "680953448101855933868fc221705988960a5db82ed63caa96cb68fef3e00128"
+    }
+  ],
+  "archive_import_commit": "24660f031b6c02bc8028c78cf683f63c87a114ab",
+  "ab_o2_commit": "57c306715a0003fd2605ebbb537a3b505a049e6c",
+  "archive_original_files": 539,
+  "archive_original_bytes": 25845075,
+  "c10_transport_parameter_counts": {
+    "pixels": 5860,
+    "transported_frontend": 7108,
+    "historical_frontend_c04": 5834
+  }
+}

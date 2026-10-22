@@ -1,0 +1,21 @@
+{
+  "id": "C10",
+  "E": "Los ocho transportes (cuatro MHU y cuatro CVT) conservan todas las predicciones evaluadas, tanto en float64 como en float32. Máximo error de logits: 8.146372465489549e-12 en float64 y 0.00034234673114674763 en float32.",
+  "F": "El transporte utiliza el rango completo del operador lineal y una pseudoinversa. Mantiene 78 unidades ocultas: 7108 parámetros sensoriales frente a 5860 del pixel y 5834 del frontend histórico de 64 unidades. No demuestra equivalencia a igual presupuesto, aprendizaje, regularización, estabilidad numérica ni coste. Las normas de pesos pueden crecer mucho.",
+  "G": "Control algebraico y numérico sobre datos históricos expuestos; no hay confirmación externa.",
+  "H": "Se debilita la explicación por mayor expresividad del frontend MHU completo en este pipeline. Siguen abiertas las explicaciones por condicionamiento, optimización y regularización, que también pueden favorecer controles convencionales. No se actualizan numéricamente los priors históricos H1-H6.",
+  "I": "Validez interna del transporte apoyada por acuerdo de predicciones y residuos pequeños. Identificación limitada al operador y clasificador estudiados. Robustez fuera de estos datos y coste total sin establecer.",
+  "J": "STOP de esta sesión por indicación expresa del usuario de finalizar con los créditos restantes. Diez de treinta ciclos solicitados ejecutados; veinte pendientes, sin fabricar ciclos adicionales. No equivale a refutación universal de MHU ni a confirmación de su utilidad.",
+  "options_rejected": [
+    "Iniciar otro barrido después de la petición de cierre",
+    "Contar semillas o condiciones como ciclos nuevos",
+    "Presentar el control algebraico como descubrimiento de una arquitectura superior"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": null,
+  "pending_if_resumed": [
+    "Diseñar y congelar evaluación sobre datos no utilizados antes de inspeccionarlos",
+    "Separar convergencia, condicionamiento, regularización y presupuesto total",
+    "Evaluar tareas espaciales nativas con controles locales y espectrales emparejados antes de escalar"
+  ]
+}
