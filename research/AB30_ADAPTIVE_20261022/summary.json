@@ -1,0 +1,67 @@
+{
+  "source_sha256": "3d100c43cd29d1610d26a88dc9dcb5659aac1260461d69e091ceb42149bec58c",
+  "cycles": 30,
+  "family_counts": {
+    "pilot_samples": 5,
+    "role_correlation": 5,
+    "spectral_shift": 5,
+    "spatial_outage": 5,
+    "role_heterogeneity": 5,
+    "shrinkage": 5
+  },
+  "winner_counts": {
+    "COSI-pilot": 8,
+    "COSI-shrink": 21,
+    "MHU-proxy": 1
+  },
+  "cosi_better_count": 29,
+  "mean_RMSE": {
+    "COSI-pilot": {
+      "source": 0.0701183179239835,
+      "shift": 0.07628480194515806,
+      "outage": 0.07154648704980772
+    },
+    "COSI-shrink": {
+      "source": 0.06781449062370479,
+      "shift": 0.07247391216465174,
+      "outage": 0.0693733893554252
+    },
+    "CVT-proxy": {
+      "source": 0.1256723099301132,
+      "shift": 0.12485476671432784,
+      "outage": 0.1264579852411212
+    },
+    "IID": {
+      "source": 0.12444914548146421,
+      "shift": 0.1243616358910338,
+      "outage": 0.12533506194812735
+    },
+    "LOCAL-proxy": {
+      "source": 0.11199067380391049,
+      "shift": 0.11177128758206485,
+      "outage": 0.11292988263720076
+    },
+    "MHU-proxy": {
+      "source": 0.08032717728804734,
+      "shift": 0.08125467931079791,
+      "outage": 0.08162561368890456
+    },
+    "Oracle-known-covariance": {
+      "source": 0.06585020213545628,
+      "shift": 0.0725222718331155,
+      "outage": 0.06738068970213092
+    },
+    "Sobol": {
+      "source": 0.11994808505790719,
+      "shift": 0.11964313676092347,
+      "outage": 0.1207916777606864
+    }
+  },
+  "limits": [
+    "Same synthetic generator across 30 feedback-selected conditions, not 30 independent domains",
+    "Only 3 new synthetic geometry seeds per cycle; comparable sample size, not matched runtime",
+    "Oracle receives true covariance and is NOT fair head-to-head baseline",
+    "Not LARP Scale3D, no trained neural model or real 3D measurements",
+    "All adaptive results exploratory; no fresh blinded confirmation or p-values"
+  ]
+}

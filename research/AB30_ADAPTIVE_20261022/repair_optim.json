@@ -1,0 +1,4565 @@
+{
+  "method": "posthoc monotone linesearch, 90 steps; original data unchanged",
+  "comparisons": [
+    {
+      "cycle_repaired": 1,
+      "previous_regret": -0.012532274987425582,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.074608619946636,
+          "shift_RMSE": 0.07491955937982774,
+          "outage_RMSE": 0.07568508251779037,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.0695698771230593,
+          "shift_RMSE": 0.07518343117091246,
+          "outage_RMSE": 0.0704430916466572,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.06194782094388798,
+          "shift_RMSE": 0.06593060313810689,
+          "outage_RMSE": 0.06261898719835197,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.058236860527815924,
+          "shift_RMSE": 0.06462243882615239,
+          "outage_RMSE": 0.05987238822146405,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81010,
+          "method": "MHU-monotone",
+          "target_start": 0.007094972168360582,
+          "target_end": 0.0031809281874092374,
+          "source_RMSE": 0.07406785058068006,
+          "shift_RMSE": 0.07430670657723028,
+          "outage_RMSE": 0.07482186059495846,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81010,
+          "method": "COSI-monotone",
+          "target_start": 0.015928008046955492,
+          "target_end": 0.00226462134320047,
+          "source_RMSE": 0.06962439550904725,
+          "shift_RMSE": 0.07471345642594818,
+          "outage_RMSE": 0.07051603336302853,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81010,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.014557046410015465,
+          "target_end": 0.0044817880568019065,
+          "source_RMSE": 0.06236114134265763,
+          "shift_RMSE": 0.06706361318424792,
+          "outage_RMSE": 0.06326353727642327,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81010,
+          "method": "Oracle-monotone",
+          "target_start": 0.014144424897059426,
+          "target_end": 0.0033489280502821024,
+          "source_RMSE": 0.057869923537897494,
+          "shift_RMSE": 0.06570783199475713,
+          "outage_RMSE": 0.06049124689972444,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81011,
+          "method": "MHU-monotone",
+          "target_start": 0.006745951502309727,
+          "target_end": 0.00323683112859273,
+          "source_RMSE": 0.07748496294799187,
+          "shift_RMSE": 0.07775030048045557,
+          "outage_RMSE": 0.07849986548716156,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81011,
+          "method": "COSI-monotone",
+          "target_start": 0.013384876346708827,
+          "target_end": 0.0024175341679638735,
+          "source_RMSE": 0.06933541232256464,
+          "shift_RMSE": 0.07547357941022673,
+          "outage_RMSE": 0.07066453369845202,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81011,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012961151162898511,
+          "target_end": 0.004211094258984446,
+          "source_RMSE": 0.06027153568798267,
+          "shift_RMSE": 0.06421420338717884,
+          "outage_RMSE": 0.06027153568798267,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81011,
+          "method": "Oracle-monotone",
+          "target_start": 0.013437591151666034,
+          "target_end": 0.0035218373648606273,
+          "source_RMSE": 0.05934507026586646,
+          "shift_RMSE": 0.06503478835781087,
+          "outage_RMSE": 0.06084902873850638,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81012,
+          "method": "MHU-monotone",
+          "target_start": 0.006553940015326701,
+          "target_end": 0.003184460068000325,
+          "source_RMSE": 0.07227304631123607,
+          "shift_RMSE": 0.07270167108179736,
+          "outage_RMSE": 0.07373352147125109,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81012,
+          "method": "COSI-monotone",
+          "target_start": 0.011745420984362001,
+          "target_end": 0.0024596086479788523,
+          "source_RMSE": 0.06974982353756604,
+          "shift_RMSE": 0.07536325767656246,
+          "outage_RMSE": 0.07014870787849106,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81012,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011962995738480843,
+          "target_end": 0.004654564141732745,
+          "source_RMSE": 0.06321078580102364,
+          "shift_RMSE": 0.0665139928428939,
+          "outage_RMSE": 0.06432188863065001,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81012,
+          "method": "Oracle-monotone",
+          "target_start": 0.011539376963973065,
+          "target_end": 0.003305742614131327,
+          "source_RMSE": 0.05749558777968382,
+          "shift_RMSE": 0.06312469612588917,
+          "outage_RMSE": 0.058276889026161315,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 2,
+      "previous_regret": -0.005051450141182856,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.08034768586558613,
+          "shift_RMSE": 0.08152352787665551,
+          "outage_RMSE": 0.08170010028878864,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.08080609271559923,
+          "shift_RMSE": 0.08225038154937525,
+          "outage_RMSE": 0.08217941701267396,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.07817843242865902,
+          "shift_RMSE": 0.07953594402097784,
+          "outage_RMSE": 0.07922395093006208,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.07651221346611985,
+          "shift_RMSE": 0.07810778578558049,
+          "outage_RMSE": 0.0775542232723791,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81020,
+          "method": "MHU-monotone",
+          "target_start": 0.006652795773190216,
+          "target_end": 0.0032961129774230617,
+          "source_RMSE": 0.08175306068643652,
+          "shift_RMSE": 0.08285801616332543,
+          "outage_RMSE": 0.08244165795623318,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81020,
+          "method": "COSI-monotone",
+          "target_start": 0.014575900973367376,
+          "target_end": 0.005394933437450456,
+          "source_RMSE": 0.08306436351280716,
+          "shift_RMSE": 0.08437130431609025,
+          "outage_RMSE": 0.08513028272727911,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81020,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01492029556605887,
+          "target_end": 0.006447739358393441,
+          "source_RMSE": 0.07984341504774962,
+          "shift_RMSE": 0.08106014280819099,
+          "outage_RMSE": 0.08053330797884603,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81020,
+          "method": "Oracle-monotone",
+          "target_start": 0.01507313455696266,
+          "target_end": 0.006112970183629313,
+          "source_RMSE": 0.07818548576065325,
+          "shift_RMSE": 0.07959591103663208,
+          "outage_RMSE": 0.07891849635300921,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81021,
+          "method": "MHU-monotone",
+          "target_start": 0.006533710430658294,
+          "target_end": 0.003196769110453708,
+          "source_RMSE": 0.08029088021546048,
+          "shift_RMSE": 0.08148382195005167,
+          "outage_RMSE": 0.08276509346656558,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81021,
+          "method": "COSI-monotone",
+          "target_start": 0.015608416872930382,
+          "target_end": 0.0048297099794162,
+          "source_RMSE": 0.07976251279596153,
+          "shift_RMSE": 0.081215783246024,
+          "outage_RMSE": 0.0805993244582112,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81021,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.015299934196822337,
+          "target_end": 0.006332438819235684,
+          "source_RMSE": 0.0783828866942412,
+          "shift_RMSE": 0.07971289977609906,
+          "outage_RMSE": 0.0783828866942412,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81021,
+          "method": "Oracle-monotone",
+          "target_start": 0.014726059045792083,
+          "target_end": 0.005775951736408093,
+          "source_RMSE": 0.07599968247570574,
+          "shift_RMSE": 0.07756148654623445,
+          "outage_RMSE": 0.076907475165639,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81022,
+          "method": "MHU-monotone",
+          "target_start": 0.00684605855531976,
+          "target_end": 0.0031052842033560467,
+          "source_RMSE": 0.0789991166948614,
+          "shift_RMSE": 0.08022874551658941,
+          "outage_RMSE": 0.07989354944356715,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81022,
+          "method": "COSI-monotone",
+          "target_start": 0.015466496648744103,
+          "target_end": 0.004922028208405817,
+          "source_RMSE": 0.079591401838029,
+          "shift_RMSE": 0.08116405708601147,
+          "outage_RMSE": 0.08080864385253157,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81022,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.015587311955541173,
+          "target_end": 0.006006931121543485,
+          "source_RMSE": 0.07630899554398622,
+          "shift_RMSE": 0.07783478947864349,
+          "outage_RMSE": 0.078755658117099,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81022,
+          "method": "Oracle-monotone",
+          "target_start": 0.015259981198635387,
+          "target_end": 0.0056778443569807414,
+          "source_RMSE": 0.07535147216200054,
+          "shift_RMSE": 0.07716595977387497,
+          "outage_RMSE": 0.07683669829848906,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 3,
+      "previous_regret": -0.014471947094542581,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07179118537030289,
+          "shift_RMSE": 0.07179118537030289,
+          "outage_RMSE": 0.07264555688490498,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.06048092404483205,
+          "shift_RMSE": 0.06048092404483205,
+          "outage_RMSE": 0.06171568635505528,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.0584000790430278,
+          "shift_RMSE": 0.0584000790430278,
+          "outage_RMSE": 0.059266803166303554,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05546442139680763,
+          "shift_RMSE": 0.05546442139680763,
+          "outage_RMSE": 0.05662582423850728,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81030,
+          "method": "MHU-monotone",
+          "target_start": 0.006720744844771074,
+          "target_end": 0.00300829128425303,
+          "source_RMSE": 0.07063184345503087,
+          "shift_RMSE": 0.07063184345503087,
+          "outage_RMSE": 0.07137494676472374,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81030,
+          "method": "COSI-monotone",
+          "target_start": 0.011552628472368136,
+          "target_end": 0.002989614006038842,
+          "source_RMSE": 0.05855927042673832,
+          "shift_RMSE": 0.05855927042673832,
+          "outage_RMSE": 0.05972855852801183,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81030,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011629897650112075,
+          "target_end": 0.004109966164976725,
+          "source_RMSE": 0.055628589580812016,
+          "shift_RMSE": 0.055628589580812016,
+          "outage_RMSE": 0.055628589580812016,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81030,
+          "method": "Oracle-monotone",
+          "target_start": 0.011742429834527814,
+          "target_end": 0.0027953557696638433,
+          "source_RMSE": 0.0528711241573682,
+          "shift_RMSE": 0.0528711241573682,
+          "outage_RMSE": 0.05354734825725808,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81031,
+          "method": "MHU-monotone",
+          "target_start": 0.006862752788871148,
+          "target_end": 0.0031218947051049454,
+          "source_RMSE": 0.06968408882541502,
+          "shift_RMSE": 0.06968408882541502,
+          "outage_RMSE": 0.07059693566572783,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81031,
+          "method": "COSI-monotone",
+          "target_start": 0.012822240731178202,
+          "target_end": 0.003169575573070443,
+          "source_RMSE": 0.06086328767761425,
+          "shift_RMSE": 0.06086328767761425,
+          "outage_RMSE": 0.06198469368558063,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81031,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012388388782508575,
+          "target_end": 0.004498045289969232,
+          "source_RMSE": 0.059975120883089664,
+          "shift_RMSE": 0.059975120883089664,
+          "outage_RMSE": 0.06213454954347813,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81031,
+          "method": "Oracle-monotone",
+          "target_start": 0.012922867749320787,
+          "target_end": 0.003349989338050142,
+          "source_RMSE": 0.05787909240865947,
+          "shift_RMSE": 0.05787909240865947,
+          "outage_RMSE": 0.059002504276194766,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81032,
+          "method": "MHU-monotone",
+          "target_start": 0.006690933614767689,
+          "target_end": 0.0031678976716480066,
+          "source_RMSE": 0.07505762383046279,
+          "shift_RMSE": 0.07505762383046279,
+          "outage_RMSE": 0.07596478822426339,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81032,
+          "method": "COSI-monotone",
+          "target_start": 0.012692999955698751,
+          "target_end": 0.0030129197760335852,
+          "source_RMSE": 0.062020214030143614,
+          "shift_RMSE": 0.062020214030143614,
+          "outage_RMSE": 0.06343380685157339,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81032,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01217411863258371,
+          "target_end": 0.004429517867501211,
+          "source_RMSE": 0.059596526665181705,
+          "shift_RMSE": 0.059596526665181705,
+          "outage_RMSE": 0.06003727037462051,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81032,
+          "method": "Oracle-monotone",
+          "target_start": 0.012707915673379313,
+          "target_end": 0.003096148748930715,
+          "source_RMSE": 0.055643047624395224,
+          "shift_RMSE": 0.055643047624395224,
+          "outage_RMSE": 0.057327620182068995,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 4,
+      "previous_regret": -0.012127400343603656,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.06984144276033194,
+          "shift_RMSE": 0.07172942735528,
+          "outage_RMSE": 0.06984144276033194,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.059284057667381124,
+          "shift_RMSE": 0.06425782256710598,
+          "outage_RMSE": 0.059284057667381124,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05869172152935884,
+          "shift_RMSE": 0.06307122674021166,
+          "outage_RMSE": 0.05869172152935884,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05451734763218833,
+          "shift_RMSE": 0.05963605845886429,
+          "outage_RMSE": 0.05451734763218833,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81040,
+          "method": "MHU-monotone",
+          "target_start": 0.006793163063414027,
+          "target_end": 0.0030978629239326724,
+          "source_RMSE": 0.07045472200109458,
+          "shift_RMSE": 0.07160520054206085,
+          "outage_RMSE": 0.07045472200109458,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81040,
+          "method": "COSI-monotone",
+          "target_start": 0.01100634097936515,
+          "target_end": 0.0031778708055923135,
+          "source_RMSE": 0.05959956112475616,
+          "shift_RMSE": 0.06500959157500981,
+          "outage_RMSE": 0.05959956112475616,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81040,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011465618174628513,
+          "target_end": 0.00457558078984139,
+          "source_RMSE": 0.06023979927462226,
+          "shift_RMSE": 0.06379165065675087,
+          "outage_RMSE": 0.06023979927462226,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81040,
+          "method": "Oracle-monotone",
+          "target_start": 0.010892722949549157,
+          "target_end": 0.0028243910253390923,
+          "source_RMSE": 0.05314500000319026,
+          "shift_RMSE": 0.05804997862844367,
+          "outage_RMSE": 0.05314500000319026,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81041,
+          "method": "MHU-monotone",
+          "target_start": 0.006667109412498926,
+          "target_end": 0.0031927551752728976,
+          "source_RMSE": 0.06955645764333354,
+          "shift_RMSE": 0.07087526080440729,
+          "outage_RMSE": 0.06955645764333354,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81041,
+          "method": "COSI-monotone",
+          "target_start": 0.012174071062645227,
+          "target_end": 0.002884952937821255,
+          "source_RMSE": 0.05574773022457406,
+          "shift_RMSE": 0.06079853546223008,
+          "outage_RMSE": 0.05574773022457406,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81041,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011938844285322601,
+          "target_end": 0.004235571018541073,
+          "source_RMSE": 0.05543086788097651,
+          "shift_RMSE": 0.059810600346524224,
+          "outage_RMSE": 0.05543086788097651,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81041,
+          "method": "Oracle-monotone",
+          "target_start": 0.012149357401450416,
+          "target_end": 0.0028930297355194744,
+          "source_RMSE": 0.05378689185591109,
+          "shift_RMSE": 0.05915822494336206,
+          "outage_RMSE": 0.05378689185591109,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81042,
+          "method": "MHU-monotone",
+          "target_start": 0.006628180424009948,
+          "target_end": 0.0033340845024801306,
+          "source_RMSE": 0.06951314863656773,
+          "shift_RMSE": 0.07270782071937189,
+          "outage_RMSE": 0.06951314863656773,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81042,
+          "method": "COSI-monotone",
+          "target_start": 0.010954026049402196,
+          "target_end": 0.0032691325660457386,
+          "source_RMSE": 0.06250488165281315,
+          "shift_RMSE": 0.06696534066407803,
+          "outage_RMSE": 0.06250488165281315,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81042,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011294653298550322,
+          "target_end": 0.0045648699878048085,
+          "source_RMSE": 0.06040449743247774,
+          "shift_RMSE": 0.06561142921735989,
+          "outage_RMSE": 0.06040449743247774,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81042,
+          "method": "Oracle-monotone",
+          "target_start": 0.011267396324229179,
+          "target_end": 0.003205841503505195,
+          "source_RMSE": 0.056620151037463644,
+          "shift_RMSE": 0.06169997180478715,
+          "outage_RMSE": 0.056620151037463644,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 5,
+      "previous_regret": -0.01208178645890294,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.05728414729316092,
+          "shift_RMSE": 0.0572196401018785,
+          "outage_RMSE": 0.05780365207706189,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.04373401416825742,
+          "shift_RMSE": 0.04825474988392578,
+          "outage_RMSE": 0.0446028122379148,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.04373551563762846,
+          "shift_RMSE": 0.04747500535911795,
+          "outage_RMSE": 0.04457511956572365,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.0416070407979477,
+          "shift_RMSE": 0.04640166199832375,
+          "outage_RMSE": 0.04198233817868167,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81050,
+          "method": "MHU-monotone",
+          "target_start": 0.0068526662908037295,
+          "target_end": 0.003118311534988975,
+          "source_RMSE": 0.05595635942769218,
+          "shift_RMSE": 0.05661027184832635,
+          "outage_RMSE": 0.05677944809885704,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81050,
+          "method": "COSI-monotone",
+          "target_start": 0.007222033651712975,
+          "target_end": 0.0017015657524051772,
+          "source_RMSE": 0.04361893506701599,
+          "shift_RMSE": 0.04829559029027597,
+          "outage_RMSE": 0.04493678258481904,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81050,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.007044384712393417,
+          "target_end": 0.0025587497225028613,
+          "source_RMSE": 0.04264295276066377,
+          "shift_RMSE": 0.04729148354647193,
+          "outage_RMSE": 0.04329248310457524,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81050,
+          "method": "Oracle-monotone",
+          "target_start": 0.007166757309839948,
+          "target_end": 0.00167302226862968,
+          "source_RMSE": 0.040902594888707,
+          "shift_RMSE": 0.04583019483314217,
+          "outage_RMSE": 0.042028487030908925,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81051,
+          "method": "MHU-monotone",
+          "target_start": 0.006446900175311331,
+          "target_end": 0.003233520098206257,
+          "source_RMSE": 0.05770434776814751,
+          "shift_RMSE": 0.05719198141782543,
+          "outage_RMSE": 0.05770434776814751,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81051,
+          "method": "COSI-monotone",
+          "target_start": 0.006407126878360345,
+          "target_end": 0.0017474873722855032,
+          "source_RMSE": 0.04350299500214674,
+          "shift_RMSE": 0.047245982637234424,
+          "outage_RMSE": 0.04479154169331583,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81051,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.006433631720679299,
+          "target_end": 0.002686800632573088,
+          "source_RMSE": 0.04440824203918877,
+          "shift_RMSE": 0.04730293487228128,
+          "outage_RMSE": 0.045330991264013396,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81051,
+          "method": "Oracle-monotone",
+          "target_start": 0.00638455280310398,
+          "target_end": 0.0016411644084197306,
+          "source_RMSE": 0.04051128741992447,
+          "shift_RMSE": 0.045000558127325785,
+          "outage_RMSE": 0.04051128741992447,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81052,
+          "method": "MHU-monotone",
+          "target_start": 0.006907897446050386,
+          "target_end": 0.003626844674257034,
+          "source_RMSE": 0.058191734683643075,
+          "shift_RMSE": 0.05785666703948371,
+          "outage_RMSE": 0.0589271603641811,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81052,
+          "method": "COSI-monotone",
+          "target_start": 0.0068263761563502,
+          "target_end": 0.0017750987458265467,
+          "source_RMSE": 0.04408011243560953,
+          "shift_RMSE": 0.04922267672426695,
+          "outage_RMSE": 0.04408011243560953,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81052,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.006874228240978377,
+          "target_end": 0.0028628321151238914,
+          "source_RMSE": 0.04415535211303284,
+          "shift_RMSE": 0.04783059765860065,
+          "outage_RMSE": 0.045101884328582295,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81052,
+          "method": "Oracle-monotone",
+          "target_start": 0.006901660571624064,
+          "target_end": 0.001884188491815202,
+          "source_RMSE": 0.043407240085211615,
+          "shift_RMSE": 0.0483742330345033,
+          "outage_RMSE": 0.043407240085211615,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 6,
+      "previous_regret": -0.01252203929076863,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.0726048728961126,
+          "shift_RMSE": 0.0730586864043485,
+          "outage_RMSE": 0.07313977352203012,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.06190811677807312,
+          "shift_RMSE": 0.06565042895837675,
+          "outage_RMSE": 0.06285720910456415,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.06190811677807312,
+          "shift_RMSE": 0.06565042895837675,
+          "outage_RMSE": 0.06285720910456415,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05606770179943282,
+          "shift_RMSE": 0.06173391032576448,
+          "outage_RMSE": 0.057348237566914075,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81060,
+          "method": "MHU-monotone",
+          "target_start": 0.006763219097907608,
+          "target_end": 0.003238721670664051,
+          "source_RMSE": 0.06892024089657947,
+          "shift_RMSE": 0.07006186697543987,
+          "outage_RMSE": 0.06892024089657947,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81060,
+          "method": "COSI-monotone",
+          "target_start": 0.011468047357080546,
+          "target_end": 0.003130153265600426,
+          "source_RMSE": 0.0603678141130529,
+          "shift_RMSE": 0.06453465435232046,
+          "outage_RMSE": 0.0609555472046931,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81060,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011468047357080546,
+          "target_end": 0.003130153265600426,
+          "source_RMSE": 0.0603678141130529,
+          "shift_RMSE": 0.06453465435232046,
+          "outage_RMSE": 0.0609555472046931,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81060,
+          "method": "Oracle-monotone",
+          "target_start": 0.011239933829155887,
+          "target_end": 0.003106475384341256,
+          "source_RMSE": 0.055735763961223816,
+          "shift_RMSE": 0.06193901082020833,
+          "outage_RMSE": 0.057446886250250254,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81061,
+          "method": "MHU-monotone",
+          "target_start": 0.006596672575601987,
+          "target_end": 0.003237030440414892,
+          "source_RMSE": 0.07448639652831385,
+          "shift_RMSE": 0.07447787589583854,
+          "outage_RMSE": 0.07496668783158732,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81061,
+          "method": "COSI-monotone",
+          "target_start": 0.011475939194479305,
+          "target_end": 0.0032134037910437636,
+          "source_RMSE": 0.06384722394923112,
+          "shift_RMSE": 0.06764524474620567,
+          "outage_RMSE": 0.06448945055303643,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81061,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011475939194479305,
+          "target_end": 0.0032134037910437636,
+          "source_RMSE": 0.06384722394923112,
+          "shift_RMSE": 0.06764524474620567,
+          "outage_RMSE": 0.06448945055303643,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81061,
+          "method": "Oracle-monotone",
+          "target_start": 0.010826319832410374,
+          "target_end": 0.0033786021758459113,
+          "source_RMSE": 0.058125744518637446,
+          "shift_RMSE": 0.06303384194872033,
+          "outage_RMSE": 0.05953185813076149,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81062,
+          "method": "MHU-monotone",
+          "target_start": 0.0071335805797990825,
+          "target_end": 0.003414346379307718,
+          "source_RMSE": 0.07440798126344446,
+          "shift_RMSE": 0.07463631634176711,
+          "outage_RMSE": 0.07553239183792358,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81062,
+          "method": "COSI-monotone",
+          "target_start": 0.013359027845634494,
+          "target_end": 0.0032611458364877133,
+          "source_RMSE": 0.06150931227193536,
+          "shift_RMSE": 0.06477138777660414,
+          "outage_RMSE": 0.06312662955596293,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81062,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.013359027845634494,
+          "target_end": 0.0032611458364877133,
+          "source_RMSE": 0.06150931227193536,
+          "shift_RMSE": 0.06477138777660414,
+          "outage_RMSE": 0.06312662955596293,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81062,
+          "method": "Oracle-monotone",
+          "target_start": 0.012764464413632763,
+          "target_end": 0.0029530091556459023,
+          "source_RMSE": 0.05434159691843719,
+          "shift_RMSE": 0.06022887820836478,
+          "outage_RMSE": 0.055065968319730485,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 7,
+      "previous_regret": -0.007114377215228521,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07870133243690614,
+          "shift_RMSE": 0.07927319381079191,
+          "outage_RMSE": 0.07931071536017045,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.07772816448717366,
+          "shift_RMSE": 0.0798067047215575,
+          "outage_RMSE": 0.0781519689071707,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.07309222896912738,
+          "shift_RMSE": 0.07459069916411966,
+          "outage_RMSE": 0.07374658276844374,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.0713622142458354,
+          "shift_RMSE": 0.07324159549454184,
+          "outage_RMSE": 0.07191331371996888,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81070,
+          "method": "MHU-monotone",
+          "target_start": 0.006847833986418412,
+          "target_end": 0.003312399389312453,
+          "source_RMSE": 0.080216891948574,
+          "shift_RMSE": 0.08055937158704955,
+          "outage_RMSE": 0.08058984468063614,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81070,
+          "method": "COSI-monotone",
+          "target_start": 0.014271208794039007,
+          "target_end": 0.004941728865776464,
+          "source_RMSE": 0.07756735057983245,
+          "shift_RMSE": 0.07950375170220958,
+          "outage_RMSE": 0.07756735057983245,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81070,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.014088083426962843,
+          "target_end": 0.005792372182795313,
+          "source_RMSE": 0.07528554517537918,
+          "shift_RMSE": 0.07678179281906075,
+          "outage_RMSE": 0.07528554517537918,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81070,
+          "method": "Oracle-monotone",
+          "target_start": 0.01412911188087733,
+          "target_end": 0.005398658288287382,
+          "source_RMSE": 0.07347556252447056,
+          "shift_RMSE": 0.0749681141199747,
+          "outage_RMSE": 0.07390189082026571,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81071,
+          "method": "MHU-monotone",
+          "target_start": 0.006737104124246906,
+          "target_end": 0.0030631538938349244,
+          "source_RMSE": 0.07894776506887806,
+          "shift_RMSE": 0.07921452764309903,
+          "outage_RMSE": 0.07964265211124497,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81071,
+          "method": "COSI-monotone",
+          "target_start": 0.014593178487558828,
+          "target_end": 0.005145979695744025,
+          "source_RMSE": 0.08040639877932783,
+          "shift_RMSE": 0.08228552636196734,
+          "outage_RMSE": 0.08167781203931893,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81071,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.014136646295289431,
+          "target_end": 0.005563446860813226,
+          "source_RMSE": 0.072627097666814,
+          "shift_RMSE": 0.07400577934044218,
+          "outage_RMSE": 0.07415118250186564,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81071,
+          "method": "Oracle-monotone",
+          "target_start": 0.01435542638650603,
+          "target_end": 0.004822609962992003,
+          "source_RMSE": 0.06944501395342939,
+          "shift_RMSE": 0.07161697601759684,
+          "outage_RMSE": 0.07067198408003467,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81072,
+          "method": "MHU-monotone",
+          "target_start": 0.006782545404929507,
+          "target_end": 0.0032136631431197806,
+          "source_RMSE": 0.07693934029326635,
+          "shift_RMSE": 0.07804568220222717,
+          "outage_RMSE": 0.07769964928863024,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81072,
+          "method": "COSI-monotone",
+          "target_start": 0.01372225392302967,
+          "target_end": 0.0045900608643917335,
+          "source_RMSE": 0.07521074410236073,
+          "shift_RMSE": 0.07763083610049559,
+          "outage_RMSE": 0.07521074410236073,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81072,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.013747319703765346,
+          "target_end": 0.005436207172692259,
+          "source_RMSE": 0.071364044065189,
+          "shift_RMSE": 0.07298452533285602,
+          "outage_RMSE": 0.0718030206280864,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81072,
+          "method": "Oracle-monotone",
+          "target_start": 0.013553051788065706,
+          "target_end": 0.005064608986866666,
+          "source_RMSE": 0.07116606625960624,
+          "shift_RMSE": 0.073139696346054,
+          "outage_RMSE": 0.07116606625960624,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 8,
+      "previous_regret": -0.011283370954775829,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07050672389174706,
+          "shift_RMSE": 0.0713536897878042,
+          "outage_RMSE": 0.07125722652047983,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.06047475535327055,
+          "shift_RMSE": 0.06557588808804025,
+          "outage_RMSE": 0.06060154085238517,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.0588266313297325,
+          "shift_RMSE": 0.06291409227231338,
+          "outage_RMSE": 0.05897944917772396,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05455800846454737,
+          "shift_RMSE": 0.05961391684330412,
+          "outage_RMSE": 0.055181668680778194,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81080,
+          "method": "MHU-monotone",
+          "target_start": 0.006667506446390717,
+          "target_end": 0.0030172223554874,
+          "source_RMSE": 0.0701153349326053,
+          "shift_RMSE": 0.06999949879022686,
+          "outage_RMSE": 0.0717265803730867,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81080,
+          "method": "COSI-monotone",
+          "target_start": 0.011655666162958963,
+          "target_end": 0.0030674495659246646,
+          "source_RMSE": 0.060261039608199445,
+          "shift_RMSE": 0.06608130694988626,
+          "outage_RMSE": 0.060261039608199445,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81080,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01163677093912694,
+          "target_end": 0.0035884202582881965,
+          "source_RMSE": 0.05607390999755308,
+          "shift_RMSE": 0.0605404621898618,
+          "outage_RMSE": 0.05653236354152743,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81080,
+          "method": "Oracle-monotone",
+          "target_start": 0.011101879558296794,
+          "target_end": 0.0029761144485042803,
+          "source_RMSE": 0.0545537757492942,
+          "shift_RMSE": 0.06016181369970987,
+          "outage_RMSE": 0.055054780467072434,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81081,
+          "method": "MHU-monotone",
+          "target_start": 0.007125269913988133,
+          "target_end": 0.0033709406296850417,
+          "source_RMSE": 0.07251022921348173,
+          "shift_RMSE": 0.07373804187454829,
+          "outage_RMSE": 0.07315049165919864,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81081,
+          "method": "COSI-monotone",
+          "target_start": 0.012654412705894283,
+          "target_end": 0.003092625849038715,
+          "source_RMSE": 0.06143426945600021,
+          "shift_RMSE": 0.06583022348386548,
+          "outage_RMSE": 0.06181462595334407,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81081,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012584591058628433,
+          "target_end": 0.003966194678398886,
+          "source_RMSE": 0.061254980351940214,
+          "shift_RMSE": 0.06471332114106668,
+          "outage_RMSE": 0.061254980351940214,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81081,
+          "method": "Oracle-monotone",
+          "target_start": 0.012792683126043739,
+          "target_end": 0.0030283410470505904,
+          "source_RMSE": 0.05503036477301046,
+          "shift_RMSE": 0.059401353075365856,
+          "outage_RMSE": 0.056400340703924697,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81082,
+          "method": "MHU-monotone",
+          "target_start": 0.0067545156354806846,
+          "target_end": 0.0032279357856510975,
+          "source_RMSE": 0.06889460752915418,
+          "shift_RMSE": 0.07032352869863741,
+          "outage_RMSE": 0.06889460752915418,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81082,
+          "method": "COSI-monotone",
+          "target_start": 0.013303012911429636,
+          "target_end": 0.003087233624323635,
+          "source_RMSE": 0.059728956995612016,
+          "shift_RMSE": 0.06481613383036902,
+          "outage_RMSE": 0.059728956995612016,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81082,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012910060260118848,
+          "target_end": 0.0038078036998738327,
+          "source_RMSE": 0.05915100363970421,
+          "shift_RMSE": 0.06348849348601165,
+          "outage_RMSE": 0.05915100363970421,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81082,
+          "method": "Oracle-monotone",
+          "target_start": 0.013539813990293343,
+          "target_end": 0.0029257156453945405,
+          "source_RMSE": 0.05408988487133746,
+          "shift_RMSE": 0.05927858375483665,
+          "outage_RMSE": 0.05408988487133746,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 9,
+      "previous_regret": -0.010860183282496327,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.06704979060221726,
+          "shift_RMSE": 0.06824837368584162,
+          "outage_RMSE": 0.068070639693372,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.05704099721492262,
+          "shift_RMSE": 0.06219865529398008,
+          "outage_RMSE": 0.057472559650029204,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05611087801017576,
+          "shift_RMSE": 0.06044993669205965,
+          "outage_RMSE": 0.056725031671759775,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.0544137371423403,
+          "shift_RMSE": 0.05995386701766634,
+          "outage_RMSE": 0.05512610566836539,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81090,
+          "method": "MHU-monotone",
+          "target_start": 0.006460453760808642,
+          "target_end": 0.003077192284594893,
+          "source_RMSE": 0.06289310418094805,
+          "shift_RMSE": 0.0630137567498561,
+          "outage_RMSE": 0.06424766824473353,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81090,
+          "method": "COSI-monotone",
+          "target_start": 0.009608261643092557,
+          "target_end": 0.002767838688406917,
+          "source_RMSE": 0.056853788456728255,
+          "shift_RMSE": 0.06049054871724107,
+          "outage_RMSE": 0.05732357149375992,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81090,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.009927183937756523,
+          "target_end": 0.004118366646513302,
+          "source_RMSE": 0.0554316152992407,
+          "shift_RMSE": 0.05876504428677063,
+          "outage_RMSE": 0.05599393450682474,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81090,
+          "method": "Oracle-monotone",
+          "target_start": 0.009761699476916352,
+          "target_end": 0.0028198354193458034,
+          "source_RMSE": 0.05310212255028798,
+          "shift_RMSE": 0.05776690014167804,
+          "outage_RMSE": 0.05350959484010709,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81091,
+          "method": "MHU-monotone",
+          "target_start": 0.006823057731479918,
+          "target_end": 0.0033725028847926626,
+          "source_RMSE": 0.0702411546439612,
+          "shift_RMSE": 0.07287667507434407,
+          "outage_RMSE": 0.07194913785363993,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81091,
+          "method": "COSI-monotone",
+          "target_start": 0.01046879831927388,
+          "target_end": 0.0028317247078427955,
+          "source_RMSE": 0.056089981395914514,
+          "shift_RMSE": 0.06265948970782294,
+          "outage_RMSE": 0.056089981395914514,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81091,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.010644992357500018,
+          "target_end": 0.004177509875038628,
+          "source_RMSE": 0.05660527977514969,
+          "shift_RMSE": 0.06149573346983769,
+          "outage_RMSE": 0.05660527977514969,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81091,
+          "method": "Oracle-monotone",
+          "target_start": 0.010495219243345328,
+          "target_end": 0.0030792512793669596,
+          "source_RMSE": 0.05549100178737954,
+          "shift_RMSE": 0.06235659068653888,
+          "outage_RMSE": 0.055931097532639695,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81092,
+          "method": "MHU-monotone",
+          "target_start": 0.00675518844293897,
+          "target_end": 0.0032016327244897666,
+          "source_RMSE": 0.06801511298174251,
+          "shift_RMSE": 0.06885468923332465,
+          "outage_RMSE": 0.06801511298174251,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81092,
+          "method": "COSI-monotone",
+          "target_start": 0.01017123527279494,
+          "target_end": 0.0030680749224790455,
+          "source_RMSE": 0.058179221792125084,
+          "shift_RMSE": 0.06344592745687624,
+          "outage_RMSE": 0.05900412606041317,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81092,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.010442391399430167,
+          "target_end": 0.0041445481112221075,
+          "source_RMSE": 0.056295738956136904,
+          "shift_RMSE": 0.06108903231957064,
+          "outage_RMSE": 0.05757588073330493,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81092,
+          "method": "Oracle-monotone",
+          "target_start": 0.009989963391059264,
+          "target_end": 0.0029864134225255543,
+          "source_RMSE": 0.054648087089353405,
+          "shift_RMSE": 0.059738110224782134,
+          "outage_RMSE": 0.05593762463234939,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 10,
+      "previous_regret": -0.0133271723304616,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07344779121662735,
+          "shift_RMSE": 0.07388097451843945,
+          "outage_RMSE": 0.07401659544824696,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.06510262587408579,
+          "shift_RMSE": 0.06985594355366996,
+          "outage_RMSE": 0.06615469889278058,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05944507475532714,
+          "shift_RMSE": 0.06322851878943189,
+          "outage_RMSE": 0.0610296264293003,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05778170158709961,
+          "shift_RMSE": 0.06282033563186318,
+          "outage_RMSE": 0.05894264179101905,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81100,
+          "method": "MHU-monotone",
+          "target_start": 0.006283323964748641,
+          "target_end": 0.0033574953296536146,
+          "source_RMSE": 0.0739041619392807,
+          "shift_RMSE": 0.07546817955942206,
+          "outage_RMSE": 0.0753138313478315,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81100,
+          "method": "COSI-monotone",
+          "target_start": 0.010616207093260362,
+          "target_end": 0.002693504164222955,
+          "source_RMSE": 0.06490696042304377,
+          "shift_RMSE": 0.06893908715161622,
+          "outage_RMSE": 0.06662428102350197,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81100,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.010935470735045609,
+          "target_end": 0.0043421863347327,
+          "source_RMSE": 0.060668061746876764,
+          "shift_RMSE": 0.06483984137381126,
+          "outage_RMSE": 0.06286475176136527,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81100,
+          "method": "Oracle-monotone",
+          "target_start": 0.01102191422883793,
+          "target_end": 0.0033512529916589814,
+          "source_RMSE": 0.0578900077013208,
+          "shift_RMSE": 0.06333470396794706,
+          "outage_RMSE": 0.059390693085852916,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81101,
+          "method": "MHU-monotone",
+          "target_start": 0.007016508742400522,
+          "target_end": 0.0031411654517612977,
+          "source_RMSE": 0.07456616245622587,
+          "shift_RMSE": 0.07444276323501063,
+          "outage_RMSE": 0.07456616245622587,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81101,
+          "method": "COSI-monotone",
+          "target_start": 0.012818475175171038,
+          "target_end": 0.00273664886730071,
+          "source_RMSE": 0.06459266173509008,
+          "shift_RMSE": 0.07069254006109803,
+          "outage_RMSE": 0.06547411758822444,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81101,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01269324765864581,
+          "target_end": 0.004327587838976046,
+          "source_RMSE": 0.05882606187858266,
+          "shift_RMSE": 0.06312629271200912,
+          "outage_RMSE": 0.06069643022585602,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81101,
+          "method": "Oracle-monotone",
+          "target_start": 0.01296496808890529,
+          "target_end": 0.003398517510024949,
+          "source_RMSE": 0.05829680531577137,
+          "shift_RMSE": 0.06315435691626471,
+          "outage_RMSE": 0.05904711482662617,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81102,
+          "method": "MHU-monotone",
+          "target_start": 0.0066362732680907074,
+          "target_end": 0.00314573533811672,
+          "source_RMSE": 0.07187304925437547,
+          "shift_RMSE": 0.07173198076088566,
+          "outage_RMSE": 0.07216979254068352,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81102,
+          "method": "COSI-monotone",
+          "target_start": 0.012092796782066201,
+          "target_end": 0.002654803032014349,
+          "source_RMSE": 0.06580825546412353,
+          "shift_RMSE": 0.06993620344829563,
+          "outage_RMSE": 0.06636569806661537,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81102,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011989868225109378,
+          "target_end": 0.004145630811414899,
+          "source_RMSE": 0.058841100640522,
+          "shift_RMSE": 0.06171942228247531,
+          "outage_RMSE": 0.05952769730067962,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81102,
+          "method": "Oracle-monotone",
+          "target_start": 0.01284493780281963,
+          "target_end": 0.0032670703151158444,
+          "source_RMSE": 0.05715829174420667,
+          "shift_RMSE": 0.06197194601137777,
+          "outage_RMSE": 0.05839011746057808,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 11,
+      "previous_regret": -0.013838889238879354,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07024383784446928,
+          "shift_RMSE": 0.07161969463583436,
+          "outage_RMSE": 0.07077100223519776,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.058980001163427824,
+          "shift_RMSE": 0.06601001651142412,
+          "outage_RMSE": 0.05966056346942885,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05793201005976479,
+          "shift_RMSE": 0.0632785749391515,
+          "outage_RMSE": 0.05876091215692943,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05606646245759875,
+          "shift_RMSE": 0.06314929081264535,
+          "outage_RMSE": 0.056968875547657005,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81110,
+          "method": "MHU-monotone",
+          "target_start": 0.006828785851191381,
+          "target_end": 0.003161239891522006,
+          "source_RMSE": 0.0739435726394204,
+          "shift_RMSE": 0.07544237296193783,
+          "outage_RMSE": 0.0749616919324952,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81110,
+          "method": "COSI-monotone",
+          "target_start": 0.012646682110804526,
+          "target_end": 0.003131385799453411,
+          "source_RMSE": 0.0588171761364922,
+          "shift_RMSE": 0.06598281064580494,
+          "outage_RMSE": 0.05931893428025903,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81110,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012244517807044043,
+          "target_end": 0.00447594794975802,
+          "source_RMSE": 0.05886121775944206,
+          "shift_RMSE": 0.06405514024187185,
+          "outage_RMSE": 0.05886121775944206,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81110,
+          "method": "Oracle-monotone",
+          "target_start": 0.012780578453758431,
+          "target_end": 0.003248058172284563,
+          "source_RMSE": 0.05699173775456021,
+          "shift_RMSE": 0.06413336608785977,
+          "outage_RMSE": 0.05845270718910473,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81111,
+          "method": "MHU-monotone",
+          "target_start": 0.00708635003038587,
+          "target_end": 0.0031477949230136054,
+          "source_RMSE": 0.06759318531308901,
+          "shift_RMSE": 0.06960390357927303,
+          "outage_RMSE": 0.0678720771678204,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81111,
+          "method": "COSI-monotone",
+          "target_start": 0.012355852382092877,
+          "target_end": 0.0031322358213950402,
+          "source_RMSE": 0.05984176110293813,
+          "shift_RMSE": 0.06788922993548197,
+          "outage_RMSE": 0.05984176110293813,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81111,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012322434448923138,
+          "target_end": 0.004262447589643271,
+          "source_RMSE": 0.05616386564828663,
+          "shift_RMSE": 0.06285095901622442,
+          "outage_RMSE": 0.057100140913489854,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81111,
+          "method": "Oracle-monotone",
+          "target_start": 0.011978641479498816,
+          "target_end": 0.0029651611085144557,
+          "source_RMSE": 0.05445329290790829,
+          "shift_RMSE": 0.06216438146989937,
+          "outage_RMSE": 0.05445329290790829,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81112,
+          "method": "MHU-monotone",
+          "target_start": 0.0072041745008172,
+          "target_end": 0.003245837281267434,
+          "source_RMSE": 0.06919475558089841,
+          "shift_RMSE": 0.06981280736629221,
+          "outage_RMSE": 0.06947923760527767,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81112,
+          "method": "COSI-monotone",
+          "target_start": 0.012416334189644204,
+          "target_end": 0.0029225412974392445,
+          "source_RMSE": 0.05828106625085313,
+          "shift_RMSE": 0.06415800895298544,
+          "outage_RMSE": 0.0598209950250894,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81112,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012454839856066604,
+          "target_end": 0.004514456940148549,
+          "source_RMSE": 0.0587709467715657,
+          "shift_RMSE": 0.06292962555935824,
+          "outage_RMSE": 0.060321377797856374,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81112,
+          "method": "Oracle-monotone",
+          "target_start": 0.01232320124828728,
+          "target_end": 0.0032210570056031237,
+          "source_RMSE": 0.05675435671032774,
+          "shift_RMSE": 0.0631501248801769,
+          "outage_RMSE": 0.05800062654595801,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 12,
+      "previous_regret": -0.012500013839956248,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07063430042946185,
+          "shift_RMSE": 0.07195357114541415,
+          "outage_RMSE": 0.07120771780367542,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.0610681635915091,
+          "shift_RMSE": 0.0670025508156299,
+          "outage_RMSE": 0.06180347643883316,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05949112847638649,
+          "shift_RMSE": 0.06351770326255134,
+          "outage_RMSE": 0.059757671152126914,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.0563504192901653,
+          "shift_RMSE": 0.06233856311319095,
+          "outage_RMSE": 0.05682329398186567,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81120,
+          "method": "MHU-monotone",
+          "target_start": 0.006913302335114609,
+          "target_end": 0.0031503637717800897,
+          "source_RMSE": 0.06972393326233567,
+          "shift_RMSE": 0.07144170591397721,
+          "outage_RMSE": 0.06972393326233567,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81120,
+          "method": "COSI-monotone",
+          "target_start": 0.01290418362413236,
+          "target_end": 0.0030071397022000475,
+          "source_RMSE": 0.058683981001989384,
+          "shift_RMSE": 0.0645325565742857,
+          "outage_RMSE": 0.05950130171530509,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81120,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012546756487078243,
+          "target_end": 0.004583853826962594,
+          "source_RMSE": 0.059223846453140355,
+          "shift_RMSE": 0.06393202152818958,
+          "outage_RMSE": 0.059223846453140355,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81120,
+          "method": "Oracle-monotone",
+          "target_start": 0.013200968378128338,
+          "target_end": 0.0030509625619593787,
+          "source_RMSE": 0.05523551902498408,
+          "shift_RMSE": 0.06139906569883916,
+          "outage_RMSE": 0.055971470756981855,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81121,
+          "method": "MHU-monotone",
+          "target_start": 0.006944736912053399,
+          "target_end": 0.0032132371307599657,
+          "source_RMSE": 0.06735825053150869,
+          "shift_RMSE": 0.06993787787463887,
+          "outage_RMSE": 0.06849275851768705,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81121,
+          "method": "COSI-monotone",
+          "target_start": 0.012275815019095556,
+          "target_end": 0.003161252949396229,
+          "source_RMSE": 0.05983479126337621,
+          "shift_RMSE": 0.06547819797365963,
+          "outage_RMSE": 0.06058699529442117,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81121,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012260284440780643,
+          "target_end": 0.0043562403092317625,
+          "source_RMSE": 0.057608715419047815,
+          "shift_RMSE": 0.061933147249692504,
+          "outage_RMSE": 0.05840834344626909,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81121,
+          "method": "Oracle-monotone",
+          "target_start": 0.011918541910588994,
+          "target_end": 0.0030111412175376625,
+          "source_RMSE": 0.054873866435104265,
+          "shift_RMSE": 0.060457564264825736,
+          "outage_RMSE": 0.05555653877820759,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81122,
+          "method": "MHU-monotone",
+          "target_start": 0.0067903967803655116,
+          "target_end": 0.0031519409403100696,
+          "source_RMSE": 0.07482071749454122,
+          "shift_RMSE": 0.07448112964762635,
+          "outage_RMSE": 0.07540646163100354,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81122,
+          "method": "COSI-monotone",
+          "target_start": 0.011155542206323584,
+          "target_end": 0.003481549001084396,
+          "source_RMSE": 0.06468571850916172,
+          "shift_RMSE": 0.0709968978989444,
+          "outage_RMSE": 0.06532213230677322,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81122,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011564084066273827,
+          "target_end": 0.004877262862671989,
+          "source_RMSE": 0.06164082355697129,
+          "shift_RMSE": 0.0646879410097719,
+          "outage_RMSE": 0.06164082355697129,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81122,
+          "method": "Oracle-monotone",
+          "target_start": 0.011315335548431065,
+          "target_end": 0.003474144323244763,
+          "source_RMSE": 0.058941872410407554,
+          "shift_RMSE": 0.06515905937590796,
+          "outage_RMSE": 0.058941872410407554,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 13,
+      "previous_regret": -0.008549172552755058,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07155118223835898,
+          "shift_RMSE": 0.07322135592980908,
+          "outage_RMSE": 0.07261434771500526,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.0653425408787461,
+          "shift_RMSE": 0.0692553728462027,
+          "outage_RMSE": 0.06618057529080623,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.063531475006284,
+          "shift_RMSE": 0.06710348598743,
+          "outage_RMSE": 0.06481715656679819,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.06076679722457485,
+          "shift_RMSE": 0.06544172498040816,
+          "outage_RMSE": 0.06258657293243393,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81130,
+          "method": "MHU-monotone",
+          "target_start": 0.006491890659629027,
+          "target_end": 0.003275876085802254,
+          "source_RMSE": 0.07424849660674947,
+          "shift_RMSE": 0.07565062856040701,
+          "outage_RMSE": 0.07467720622754331,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81130,
+          "method": "COSI-monotone",
+          "target_start": 0.011891852099035389,
+          "target_end": 0.003954096893625119,
+          "source_RMSE": 0.06850361105252865,
+          "shift_RMSE": 0.0717857068477293,
+          "outage_RMSE": 0.06942202902697411,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81130,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011867176170171603,
+          "target_end": 0.0050760126316931895,
+          "source_RMSE": 0.06497066543137009,
+          "shift_RMSE": 0.06853044976174853,
+          "outage_RMSE": 0.06601889547011479,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81130,
+          "method": "Oracle-monotone",
+          "target_start": 0.011833554791181686,
+          "target_end": 0.003743072349931585,
+          "source_RMSE": 0.06118065339575563,
+          "shift_RMSE": 0.06581215463369948,
+          "outage_RMSE": 0.06339203527271631,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81131,
+          "method": "MHU-monotone",
+          "target_start": 0.006793575125179785,
+          "target_end": 0.0033306617037397847,
+          "source_RMSE": 0.07151294221209488,
+          "shift_RMSE": 0.07275442032295136,
+          "outage_RMSE": 0.07206404848727192,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81131,
+          "method": "COSI-monotone",
+          "target_start": 0.012078763907202684,
+          "target_end": 0.0034612147809226284,
+          "source_RMSE": 0.06303511890317982,
+          "shift_RMSE": 0.06652973707338278,
+          "outage_RMSE": 0.06303511890317982,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81131,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012235798319606729,
+          "target_end": 0.004812552330362658,
+          "source_RMSE": 0.06267277450480851,
+          "shift_RMSE": 0.06580007651081543,
+          "outage_RMSE": 0.06411610933455121,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81131,
+          "method": "Oracle-monotone",
+          "target_start": 0.012562287152617611,
+          "target_end": 0.0035747632438032514,
+          "source_RMSE": 0.059789323827948174,
+          "shift_RMSE": 0.06447783227445945,
+          "outage_RMSE": 0.06072077741972368,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81132,
+          "method": "MHU-monotone",
+          "target_start": 0.006730758442264757,
+          "target_end": 0.0031683576988623084,
+          "source_RMSE": 0.0688921078962326,
+          "shift_RMSE": 0.07125901890606887,
+          "outage_RMSE": 0.07110178843020053,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81132,
+          "method": "COSI-monotone",
+          "target_start": 0.011991615342073972,
+          "target_end": 0.0033372241712415034,
+          "source_RMSE": 0.06448889268052982,
+          "shift_RMSE": 0.06945067461749603,
+          "outage_RMSE": 0.06608457794226476,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81132,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012134928972970636,
+          "target_end": 0.004678335158688695,
+          "source_RMSE": 0.06295098508267341,
+          "shift_RMSE": 0.06697993168972605,
+          "outage_RMSE": 0.06431646489572855,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81132,
+          "method": "Oracle-monotone",
+          "target_start": 0.012321170952451773,
+          "target_end": 0.003761419736611313,
+          "source_RMSE": 0.06133041445002074,
+          "shift_RMSE": 0.06603518803306556,
+          "outage_RMSE": 0.06364690610486183,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 14,
+      "previous_regret": -0.01525880716438581,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07363560257831403,
+          "shift_RMSE": 0.07366158468586069,
+          "outage_RMSE": 0.07458332677148301,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.06039850225789837,
+          "shift_RMSE": 0.06589837499658856,
+          "outage_RMSE": 0.06131823829913324,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.0594286239111921,
+          "shift_RMSE": 0.06319292444116503,
+          "outage_RMSE": 0.06033203507061664,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.057284301052830555,
+          "shift_RMSE": 0.06316494237361132,
+          "outage_RMSE": 0.05833391204707796,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81140,
+          "method": "MHU-monotone",
+          "target_start": 0.006701769059095222,
+          "target_end": 0.0033454327596616155,
+          "source_RMSE": 0.07456424479319888,
+          "shift_RMSE": 0.0745436967071962,
+          "outage_RMSE": 0.07545344046331356,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81140,
+          "method": "COSI-monotone",
+          "target_start": 0.009921479803679715,
+          "target_end": 0.0030012265682705865,
+          "source_RMSE": 0.060018342158526486,
+          "shift_RMSE": 0.06414437920329799,
+          "outage_RMSE": 0.06122808436836207,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81140,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.010662072226418998,
+          "target_end": 0.0043555291559449994,
+          "source_RMSE": 0.061021724278459234,
+          "shift_RMSE": 0.06419405192468805,
+          "outage_RMSE": 0.06163093229465565,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81140,
+          "method": "Oracle-monotone",
+          "target_start": 0.010690988826620321,
+          "target_end": 0.0034003693525354426,
+          "source_RMSE": 0.05831268603430511,
+          "shift_RMSE": 0.06360292428734708,
+          "outage_RMSE": 0.059464504321698045,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81141,
+          "method": "MHU-monotone",
+          "target_start": 0.007055654031136464,
+          "target_end": 0.0032730698925306826,
+          "source_RMSE": 0.07166012579542354,
+          "shift_RMSE": 0.07160728094794312,
+          "outage_RMSE": 0.07196282619796188,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81141,
+          "method": "COSI-monotone",
+          "target_start": 0.01220482775779786,
+          "target_end": 0.0031640326231468347,
+          "source_RMSE": 0.060083460835368106,
+          "shift_RMSE": 0.06664876773377365,
+          "outage_RMSE": 0.06075909199226418,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81141,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012104803403821788,
+          "target_end": 0.004552803541082741,
+          "source_RMSE": 0.05864645848853814,
+          "shift_RMSE": 0.06320675372499282,
+          "outage_RMSE": 0.05927018778525827,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81141,
+          "method": "Oracle-monotone",
+          "target_start": 0.012580539899178442,
+          "target_end": 0.0032850809877462226,
+          "source_RMSE": 0.057315626034670705,
+          "shift_RMSE": 0.06390124453106662,
+          "outage_RMSE": 0.058066629713961614,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81142,
+          "method": "MHU-monotone",
+          "target_start": 0.006717227976048946,
+          "target_end": 0.003385021306640845,
+          "source_RMSE": 0.07468243714631967,
+          "shift_RMSE": 0.07483377640244274,
+          "outage_RMSE": 0.07633371365317361,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81142,
+          "method": "COSI-monotone",
+          "target_start": 0.011699696187732549,
+          "target_end": 0.0032118948348405724,
+          "source_RMSE": 0.061093703779800515,
+          "shift_RMSE": 0.066901978052694,
+          "outage_RMSE": 0.061967538536773475,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81142,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011564331636005131,
+          "target_end": 0.004533794193924431,
+          "source_RMSE": 0.05861768896657892,
+          "shift_RMSE": 0.062177967673814234,
+          "outage_RMSE": 0.06009498513193599,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81142,
+          "method": "Oracle-monotone",
+          "target_start": 0.01184263162240508,
+          "target_end": 0.0031612046431832674,
+          "source_RMSE": 0.05622459108951587,
+          "shift_RMSE": 0.06199065830242026,
+          "outage_RMSE": 0.05747060210557423,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 15,
+      "previous_regret": -0.01346349644801674,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07925352869684425,
+          "shift_RMSE": 0.08070226985412829,
+          "outage_RMSE": 0.08040005341572039,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.07057884855988703,
+          "shift_RMSE": 0.07607007066876777,
+          "outage_RMSE": 0.07130546176376218,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.06867752425379198,
+          "shift_RMSE": 0.07254845665312543,
+          "outage_RMSE": 0.06914066333354349,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.06468706313544596,
+          "shift_RMSE": 0.07079534385448036,
+          "outage_RMSE": 0.06637863533796019,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81150,
+          "method": "MHU-monotone",
+          "target_start": 0.006799972274033724,
+          "target_end": 0.0031026710159510365,
+          "source_RMSE": 0.07598848204162363,
+          "shift_RMSE": 0.0777068722133167,
+          "outage_RMSE": 0.07647075067186669,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81150,
+          "method": "COSI-monotone",
+          "target_start": 0.016097537417086763,
+          "target_end": 0.004085087435921051,
+          "source_RMSE": 0.06818068521164121,
+          "shift_RMSE": 0.07229080898529057,
+          "outage_RMSE": 0.06948572405790056,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81150,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01589636881787653,
+          "target_end": 0.005557896783370566,
+          "source_RMSE": 0.06593244062343794,
+          "shift_RMSE": 0.06913931953383927,
+          "outage_RMSE": 0.06652537525635632,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81150,
+          "method": "Oracle-monotone",
+          "target_start": 0.01666325756165384,
+          "target_end": 0.004030963089985919,
+          "source_RMSE": 0.06348986604164415,
+          "shift_RMSE": 0.0681937381110886,
+          "outage_RMSE": 0.06609437499628323,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81151,
+          "method": "MHU-monotone",
+          "target_start": 0.006791093439276686,
+          "target_end": 0.0031055035008757314,
+          "source_RMSE": 0.07883849107625335,
+          "shift_RMSE": 0.08053934100168292,
+          "outage_RMSE": 0.08038720010096766,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81151,
+          "method": "COSI-monotone",
+          "target_start": 0.015884973644512294,
+          "target_end": 0.004158172619545717,
+          "source_RMSE": 0.06957795018398888,
+          "shift_RMSE": 0.07609233651911543,
+          "outage_RMSE": 0.07010716119714933,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81151,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.015779840192072986,
+          "target_end": 0.00582640864155914,
+          "source_RMSE": 0.0678412267824973,
+          "shift_RMSE": 0.07282897083012918,
+          "outage_RMSE": 0.0678412267824973,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81151,
+          "method": "Oracle-monotone",
+          "target_start": 0.016377573021718474,
+          "target_end": 0.004090522294853608,
+          "source_RMSE": 0.06395719111134891,
+          "shift_RMSE": 0.0706237337903083,
+          "outage_RMSE": 0.06395719111134891,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81152,
+          "method": "MHU-monotone",
+          "target_start": 0.006608995671120274,
+          "target_end": 0.0032231495053140673,
+          "source_RMSE": 0.08293361297265577,
+          "shift_RMSE": 0.08386059634738527,
+          "outage_RMSE": 0.0843422094743268,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81152,
+          "method": "COSI-monotone",
+          "target_start": 0.014458122288557234,
+          "target_end": 0.0043449830776406085,
+          "source_RMSE": 0.07397791028403097,
+          "shift_RMSE": 0.07982706650189729,
+          "outage_RMSE": 0.07432350003623668,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81152,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.014856262118217218,
+          "target_end": 0.005979238567712353,
+          "source_RMSE": 0.0722589053554407,
+          "shift_RMSE": 0.0756770795954078,
+          "outage_RMSE": 0.07305538796177685,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81152,
+          "method": "Oracle-monotone",
+          "target_start": 0.014762247302230998,
+          "target_end": 0.004437442615866117,
+          "source_RMSE": 0.06661413225334484,
+          "shift_RMSE": 0.07356855966204418,
+          "outage_RMSE": 0.06908433990624847,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 16,
+      "previous_regret": -0.012733268723563576,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.072228321641618,
+          "shift_RMSE": 0.07305381752823589,
+          "outage_RMSE": 0.07320050500616705,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.06098714773443955,
+          "shift_RMSE": 0.06611212138544449,
+          "outage_RMSE": 0.06241937107602527,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05909182492188483,
+          "shift_RMSE": 0.0627847053950904,
+          "outage_RMSE": 0.060408697725781,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.0561784623725333,
+          "shift_RMSE": 0.06225481687588021,
+          "outage_RMSE": 0.058343329518078045,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81160,
+          "method": "MHU-monotone",
+          "target_start": 0.006757004715605395,
+          "target_end": 0.0031943007477297394,
+          "source_RMSE": 0.07162597915030851,
+          "shift_RMSE": 0.0721211660037273,
+          "outage_RMSE": 0.07162597915030851,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81160,
+          "method": "COSI-monotone",
+          "target_start": 0.01247840002131883,
+          "target_end": 0.00310815324823512,
+          "source_RMSE": 0.05939438804570726,
+          "shift_RMSE": 0.06434011739213426,
+          "outage_RMSE": 0.06096638313148262,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81160,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012149767281802538,
+          "target_end": 0.004201682952126344,
+          "source_RMSE": 0.055322224821221934,
+          "shift_RMSE": 0.059023004925753714,
+          "outage_RMSE": 0.05657891490438119,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81160,
+          "method": "Oracle-monotone",
+          "target_start": 0.012296652906813161,
+          "target_end": 0.003023726163422724,
+          "source_RMSE": 0.05498841844809436,
+          "shift_RMSE": 0.06030144984632547,
+          "outage_RMSE": 0.056992488090394616,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81161,
+          "method": "MHU-monotone",
+          "target_start": 0.006858584813877865,
+          "target_end": 0.003046551549951432,
+          "source_RMSE": 0.0746711943251736,
+          "shift_RMSE": 0.07496627713664572,
+          "outage_RMSE": 0.07653265414690077,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81161,
+          "method": "COSI-monotone",
+          "target_start": 0.011499213620393727,
+          "target_end": 0.0031787326228213185,
+          "source_RMSE": 0.061307746208271854,
+          "shift_RMSE": 0.06630615466315264,
+          "outage_RMSE": 0.06284561160248812,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81161,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011749029429163288,
+          "target_end": 0.004503870429016172,
+          "source_RMSE": 0.06267298700950912,
+          "shift_RMSE": 0.06533471577688248,
+          "outage_RMSE": 0.06332740499017106,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81161,
+          "method": "Oracle-monotone",
+          "target_start": 0.012190162605924003,
+          "target_end": 0.003014800564297689,
+          "source_RMSE": 0.054907199567066696,
+          "shift_RMSE": 0.060661887719562414,
+          "outage_RMSE": 0.05740828718139284,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81162,
+          "method": "MHU-monotone",
+          "target_start": 0.0067214131848518715,
+          "target_end": 0.003199732691157419,
+          "source_RMSE": 0.07038779144937193,
+          "shift_RMSE": 0.07207400944433465,
+          "outage_RMSE": 0.07144288172129187,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81162,
+          "method": "COSI-monotone",
+          "target_start": 0.011271748723728643,
+          "target_end": 0.00340393504941253,
+          "source_RMSE": 0.06225930894933954,
+          "shift_RMSE": 0.0676900921010466,
+          "outage_RMSE": 0.06344611849410506,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81162,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011515308587278514,
+          "target_end": 0.004595012084915761,
+          "source_RMSE": 0.05928026293492343,
+          "shift_RMSE": 0.063996395482635,
+          "outage_RMSE": 0.06131977328279076,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81162,
+          "method": "Oracle-monotone",
+          "target_start": 0.011094980515016525,
+          "target_end": 0.0034386225203873444,
+          "source_RMSE": 0.05863976910243887,
+          "shift_RMSE": 0.06580111306175274,
+          "outage_RMSE": 0.06062921328244667,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 17,
+      "previous_regret": -0.009980255445629693,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.06970110939500973,
+          "shift_RMSE": 0.07339452336428377,
+          "outage_RMSE": 0.07082229441461635,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.05872625949023073,
+          "shift_RMSE": 0.0714806169152133,
+          "outage_RMSE": 0.05998106091543682,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05830665258893864,
+          "shift_RMSE": 0.0685376332508234,
+          "outage_RMSE": 0.059645325243038276,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.056643139828111956,
+          "shift_RMSE": 0.06984696707235317,
+          "outage_RMSE": 0.057653977716859726,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81170,
+          "method": "MHU-monotone",
+          "target_start": 0.006690748690308574,
+          "target_end": 0.0032014412806834398,
+          "source_RMSE": 0.07021930676604658,
+          "shift_RMSE": 0.07476915093057505,
+          "outage_RMSE": 0.07089655476968076,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81170,
+          "method": "COSI-monotone",
+          "target_start": 0.01083600437508452,
+          "target_end": 0.0031584956287310354,
+          "source_RMSE": 0.061139576021771475,
+          "shift_RMSE": 0.075528856410199,
+          "outage_RMSE": 0.06269365234359502,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81170,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011213953100301585,
+          "target_end": 0.004563049509908124,
+          "source_RMSE": 0.05926197145233056,
+          "shift_RMSE": 0.06850503332080242,
+          "outage_RMSE": 0.061401168836930885,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81170,
+          "method": "Oracle-monotone",
+          "target_start": 0.011301466544988278,
+          "target_end": 0.0032843952230723946,
+          "source_RMSE": 0.057309643368916495,
+          "shift_RMSE": 0.07097391748278427,
+          "outage_RMSE": 0.059334825138596226,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81171,
+          "method": "MHU-monotone",
+          "target_start": 0.006689010210366256,
+          "target_end": 0.003227004185801146,
+          "source_RMSE": 0.0687956238074008,
+          "shift_RMSE": 0.07197985422885166,
+          "outage_RMSE": 0.07155000594968594,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81171,
+          "method": "COSI-monotone",
+          "target_start": 0.012672948290336739,
+          "target_end": 0.0031341178421141263,
+          "source_RMSE": 0.05839657870768444,
+          "shift_RMSE": 0.0701198501900541,
+          "outage_RMSE": 0.05955650964541493,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81171,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01213091907632907,
+          "target_end": 0.004465667995863261,
+          "source_RMSE": 0.05825088786975354,
+          "shift_RMSE": 0.06817353270597903,
+          "outage_RMSE": 0.05917650073704208,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81171,
+          "method": "Oracle-monotone",
+          "target_start": 0.012498140665922804,
+          "target_end": 0.003278399570744496,
+          "source_RMSE": 0.05725731019480828,
+          "shift_RMSE": 0.0701566293582755,
+          "outage_RMSE": 0.05787782291833452,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81172,
+          "method": "MHU-monotone",
+          "target_start": 0.007046212120385833,
+          "target_end": 0.0030916218878054617,
+          "source_RMSE": 0.0700883976115818,
+          "shift_RMSE": 0.07343456493342461,
+          "outage_RMSE": 0.07002032252448234,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81172,
+          "method": "COSI-monotone",
+          "target_start": 0.011857940363713649,
+          "target_end": 0.0030018207518850335,
+          "source_RMSE": 0.05664262374123627,
+          "shift_RMSE": 0.06879314414538684,
+          "outage_RMSE": 0.05769302075730052,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81172,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012032846064955104,
+          "target_end": 0.004484751591350828,
+          "source_RMSE": 0.057407098444731824,
+          "shift_RMSE": 0.06893433372568876,
+          "outage_RMSE": 0.05835830615514186,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81172,
+          "method": "Oracle-monotone",
+          "target_start": 0.01213567745813894,
+          "target_end": 0.0030650026328108266,
+          "source_RMSE": 0.05536246592061111,
+          "shift_RMSE": 0.06841035437599978,
+          "outage_RMSE": 0.055749285093648446,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 18,
+      "previous_regret": -0.013165756468711917,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07203130641683413,
+          "shift_RMSE": 0.07243821376294475,
+          "outage_RMSE": 0.07407040596010585,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.059116766078733674,
+          "shift_RMSE": 0.0650313245541257,
+          "outage_RMSE": 0.061717075240538564,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05710491788056344,
+          "shift_RMSE": 0.06129828558406403,
+          "outage_RMSE": 0.05887459179790134,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05603362940190849,
+          "shift_RMSE": 0.06205894713427528,
+          "outage_RMSE": 0.058639574507539184,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81180,
+          "method": "MHU-monotone",
+          "target_start": 0.006670174250716468,
+          "target_end": 0.0030983693180733486,
+          "source_RMSE": 0.06642425309824657,
+          "shift_RMSE": 0.06680239073068252,
+          "outage_RMSE": 0.06889567099348431,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81180,
+          "method": "COSI-monotone",
+          "target_start": 0.011947470803587691,
+          "target_end": 0.002829970786725944,
+          "source_RMSE": 0.05699469435287623,
+          "shift_RMSE": 0.06326125263839061,
+          "outage_RMSE": 0.061187183086497385,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81180,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011737255094467838,
+          "target_end": 0.0039900881546022105,
+          "source_RMSE": 0.05367794648760617,
+          "shift_RMSE": 0.05885998368179089,
+          "outage_RMSE": 0.05459201776797722,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81180,
+          "method": "Oracle-monotone",
+          "target_start": 0.012455780323480147,
+          "target_end": 0.0029663758689933008,
+          "source_RMSE": 0.054464445916517876,
+          "shift_RMSE": 0.060772156042216384,
+          "outage_RMSE": 0.05677303157241512,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81181,
+          "method": "MHU-monotone",
+          "target_start": 0.006554050085444958,
+          "target_end": 0.003225603458020685,
+          "source_RMSE": 0.07586840939588928,
+          "shift_RMSE": 0.07582263047417914,
+          "outage_RMSE": 0.07722796258923466,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81181,
+          "method": "COSI-monotone",
+          "target_start": 0.01098860723731316,
+          "target_end": 0.0031341260155263373,
+          "source_RMSE": 0.059546314188086605,
+          "shift_RMSE": 0.06467428339451164,
+          "outage_RMSE": 0.06106005788857574,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81181,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011157483516869333,
+          "target_end": 0.004544656754709292,
+          "source_RMSE": 0.05957003491936839,
+          "shift_RMSE": 0.06226544041193155,
+          "outage_RMSE": 0.061321043140239916,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81181,
+          "method": "Oracle-monotone",
+          "target_start": 0.010950092042703996,
+          "target_end": 0.0033497642166349264,
+          "source_RMSE": 0.05787714762006613,
+          "shift_RMSE": 0.06389595576971911,
+          "outage_RMSE": 0.05999012809890665,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81182,
+          "method": "MHU-monotone",
+          "target_start": 0.006735186778816653,
+          "target_end": 0.003347772278691017,
+          "source_RMSE": 0.07380125675636653,
+          "shift_RMSE": 0.0746896200839726,
+          "outage_RMSE": 0.07608758429759858,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81182,
+          "method": "COSI-monotone",
+          "target_start": 0.011281373865112191,
+          "target_end": 0.0031331212259773636,
+          "source_RMSE": 0.060809289695238196,
+          "shift_RMSE": 0.06715843762947488,
+          "outage_RMSE": 0.06290398474654255,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81182,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011460382217035018,
+          "target_end": 0.004353142973198552,
+          "source_RMSE": 0.058066772234715756,
+          "shift_RMSE": 0.06276943265846965,
+          "outage_RMSE": 0.060710714485486886,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81182,
+          "method": "Oracle-monotone",
+          "target_start": 0.011587089885464068,
+          "target_end": 0.0031090989420001474,
+          "source_RMSE": 0.05575929466914146,
+          "shift_RMSE": 0.06150872959089035,
+          "outage_RMSE": 0.05915556385129578,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 19,
+      "previous_regret": -0.01804549032223441,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.06798853156259634,
+          "shift_RMSE": 0.06867026893956647,
+          "outage_RMSE": 0.06933130156095135,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.049887338110224694,
+          "shift_RMSE": 0.05862263259583427,
+          "outage_RMSE": 0.0505458312664371,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.04937438645293931,
+          "shift_RMSE": 0.0551432455943912,
+          "outage_RMSE": 0.05035302771172528,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.047088812014422464,
+          "shift_RMSE": 0.055186638112533354,
+          "outage_RMSE": 0.04754154226386642,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81190,
+          "method": "MHU-monotone",
+          "target_start": 0.007159804509096861,
+          "target_end": 0.0031550240330713813,
+          "source_RMSE": 0.07099234281121587,
+          "shift_RMSE": 0.07244659622246788,
+          "outage_RMSE": 0.0719974867575129,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81190,
+          "method": "COSI-monotone",
+          "target_start": 0.011634095628323517,
+          "target_end": 0.002740394890339616,
+          "source_RMSE": 0.051319017552307784,
+          "shift_RMSE": 0.06090272960368563,
+          "outage_RMSE": 0.051319017552307784,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81190,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011839626277872942,
+          "target_end": 0.004121074436468268,
+          "source_RMSE": 0.05063097882437464,
+          "shift_RMSE": 0.05710914767111047,
+          "outage_RMSE": 0.051494866386174946,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81190,
+          "method": "Oracle-monotone",
+          "target_start": 0.011291213994584826,
+          "target_end": 0.002392192845314637,
+          "source_RMSE": 0.04891004851065512,
+          "shift_RMSE": 0.059142124351064015,
+          "outage_RMSE": 0.04961910972040885,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81191,
+          "method": "MHU-monotone",
+          "target_start": 0.00674489088241937,
+          "target_end": 0.003281974122235153,
+          "source_RMSE": 0.0699669216490809,
+          "shift_RMSE": 0.06961955734013228,
+          "outage_RMSE": 0.07260146504998152,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81191,
+          "method": "COSI-monotone",
+          "target_start": 0.01068441689163015,
+          "target_end": 0.002667006176437914,
+          "source_RMSE": 0.05081078880882717,
+          "shift_RMSE": 0.059767155284071984,
+          "outage_RMSE": 0.051533425604211855,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81191,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011015776001595267,
+          "target_end": 0.004371941453090426,
+          "source_RMSE": 0.049479729088428716,
+          "shift_RMSE": 0.05429150003265087,
+          "outage_RMSE": 0.05017248698402707,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81191,
+          "method": "Oracle-monotone",
+          "target_start": 0.010570254539608434,
+          "target_end": 0.002120244898995632,
+          "source_RMSE": 0.046046117089236005,
+          "shift_RMSE": 0.05222863145251731,
+          "outage_RMSE": 0.046695246627814144,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81192,
+          "method": "MHU-monotone",
+          "target_start": 0.006467499208500533,
+          "target_end": 0.003091152145465748,
+          "source_RMSE": 0.06300633022749226,
+          "shift_RMSE": 0.06394465325609924,
+          "outage_RMSE": 0.06339495287535964,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81192,
+          "method": "COSI-monotone",
+          "target_start": 0.010062436163027372,
+          "target_end": 0.0021800813709980087,
+          "source_RMSE": 0.04753220796953914,
+          "shift_RMSE": 0.055198012899745186,
+          "outage_RMSE": 0.04878505064279166,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81192,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.010471453411639709,
+          "target_end": 0.004006605335887472,
+          "source_RMSE": 0.04801245144601458,
+          "shift_RMSE": 0.054029089079412264,
+          "outage_RMSE": 0.0493917297649738,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81192,
+          "method": "Oracle-monotone",
+          "target_start": 0.009882346344968934,
+          "target_end": 0.0021446411485386485,
+          "source_RMSE": 0.04631027044337625,
+          "shift_RMSE": 0.05418915853401874,
+          "outage_RMSE": 0.04631027044337625,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 20,
+      "previous_regret": -0.012032524698651709,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07626498238545602,
+          "shift_RMSE": 0.07662658024625875,
+          "outage_RMSE": 0.07704560619181781,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.06007661968200875,
+          "shift_RMSE": 0.06589121251410535,
+          "outage_RMSE": 0.06088605022922946,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.06064785793681409,
+          "shift_RMSE": 0.06374062888229291,
+          "outage_RMSE": 0.06091353496153212,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05546151637497793,
+          "shift_RMSE": 0.0608809178258423,
+          "outage_RMSE": 0.05615405763873347,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81200,
+          "method": "MHU-monotone",
+          "target_start": 0.006899419324305053,
+          "target_end": 0.003477084281295622,
+          "source_RMSE": 0.07805477459899644,
+          "shift_RMSE": 0.07755106513042263,
+          "outage_RMSE": 0.07847508466963406,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81200,
+          "method": "COSI-monotone",
+          "target_start": 0.012419330648434802,
+          "target_end": 0.0029538071425642015,
+          "source_RMSE": 0.057997042591665986,
+          "shift_RMSE": 0.06427777876909938,
+          "outage_RMSE": 0.05921250283037531,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81200,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012248692103403685,
+          "target_end": 0.00526316338650692,
+          "source_RMSE": 0.06334729268358497,
+          "shift_RMSE": 0.06484580531855219,
+          "outage_RMSE": 0.06334729268358497,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81200,
+          "method": "Oracle-monotone",
+          "target_start": 0.012459406432110924,
+          "target_end": 0.0033086774316013214,
+          "source_RMSE": 0.05752110422793812,
+          "shift_RMSE": 0.0632422415068764,
+          "outage_RMSE": 0.05752110422793812,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81201,
+          "method": "MHU-monotone",
+          "target_start": 0.006838025967563756,
+          "target_end": 0.00330123545080473,
+          "source_RMSE": 0.07363842200142118,
+          "shift_RMSE": 0.07461001829496038,
+          "outage_RMSE": 0.07363842200142118,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81201,
+          "method": "COSI-monotone",
+          "target_start": 0.013244434119954388,
+          "target_end": 0.003213862076459218,
+          "source_RMSE": 0.06050932591038417,
+          "shift_RMSE": 0.0658444605243493,
+          "outage_RMSE": 0.060995743272009156,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81201,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012373602830496407,
+          "target_end": 0.00521863400561388,
+          "source_RMSE": 0.05813320676928398,
+          "shift_RMSE": 0.062090171546558055,
+          "outage_RMSE": 0.05855163998976533,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81201,
+          "method": "Oracle-monotone",
+          "target_start": 0.013002073675689016,
+          "target_end": 0.0029400129800984335,
+          "source_RMSE": 0.05422188654130759,
+          "shift_RMSE": 0.05927753879895312,
+          "outage_RMSE": 0.055195874042775886,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81202,
+          "method": "MHU-monotone",
+          "target_start": 0.007039487049334427,
+          "target_end": 0.003433840089883676,
+          "source_RMSE": 0.07710175055595042,
+          "shift_RMSE": 0.07771865731339322,
+          "outage_RMSE": 0.07902331190439821,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81202,
+          "method": "COSI-monotone",
+          "target_start": 0.012867080672146295,
+          "target_end": 0.003424453496887784,
+          "source_RMSE": 0.0617234905439761,
+          "shift_RMSE": 0.06755139824886736,
+          "outage_RMSE": 0.06244990458530391,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81202,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01254626256331342,
+          "target_end": 0.005106217769478994,
+          "source_RMSE": 0.06046307435757333,
+          "shift_RMSE": 0.06428590978176851,
+          "outage_RMSE": 0.06084167221124607,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81202,
+          "method": "Oracle-monotone",
+          "target_start": 0.012905481905582697,
+          "target_end": 0.0029856998995380687,
+          "source_RMSE": 0.054641558355688104,
+          "shift_RMSE": 0.06012297317169739,
+          "outage_RMSE": 0.05574519464548642,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 21,
+      "previous_regret": -0.0026282986671318648,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.09295727545601216,
+          "shift_RMSE": 0.09532703783513037,
+          "outage_RMSE": 0.09426743077500595,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.08181082246873371,
+          "shift_RMSE": 0.08865902701259475,
+          "outage_RMSE": 0.08294611040015515,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.07903758217058944,
+          "shift_RMSE": 0.08424001846402036,
+          "outage_RMSE": 0.0805060451540269,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.07657240823231672,
+          "shift_RMSE": 0.08322984235772364,
+          "outage_RMSE": 0.07859727881909284,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81210,
+          "method": "MHU-monotone",
+          "target_start": 0.006686047008853489,
+          "target_end": 0.003076937860958724,
+          "source_RMSE": 0.09052091690882244,
+          "shift_RMSE": 0.09304865129604166,
+          "outage_RMSE": 0.09154799360712529,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81210,
+          "method": "COSI-monotone",
+          "target_start": 0.01988302481637015,
+          "target_end": 0.005538026068281401,
+          "source_RMSE": 0.07811468835178495,
+          "shift_RMSE": 0.08481984042197607,
+          "outage_RMSE": 0.07926524091124182,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81210,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.020330137374615795,
+          "target_end": 0.00772471602406809,
+          "source_RMSE": 0.07760464393394823,
+          "shift_RMSE": 0.08244130764584638,
+          "outage_RMSE": 0.07887903865709582,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81210,
+          "method": "Oracle-monotone",
+          "target_start": 0.020083842195186618,
+          "target_end": 0.0054410772025044254,
+          "source_RMSE": 0.0737636577353945,
+          "shift_RMSE": 0.08034999165490107,
+          "outage_RMSE": 0.07499223701501888,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81211,
+          "method": "MHU-monotone",
+          "target_start": 0.006017254017880736,
+          "target_end": 0.003219126297145333,
+          "source_RMSE": 0.09197161562823505,
+          "shift_RMSE": 0.09422043753867564,
+          "outage_RMSE": 0.0945384717159474,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81211,
+          "method": "COSI-monotone",
+          "target_start": 0.017997013017191303,
+          "target_end": 0.006200575281356818,
+          "source_RMSE": 0.08481628164941513,
+          "shift_RMSE": 0.09147356413330136,
+          "outage_RMSE": 0.08707159288422262,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81211,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.018347976417607055,
+          "target_end": 0.00813934070044531,
+          "source_RMSE": 0.08072407429564882,
+          "shift_RMSE": 0.08521955407424708,
+          "outage_RMSE": 0.08210367842793505,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81211,
+          "method": "Oracle-monotone",
+          "target_start": 0.01763963645649509,
+          "target_end": 0.006034443907869089,
+          "source_RMSE": 0.07768168321984976,
+          "shift_RMSE": 0.08453144597199871,
+          "outage_RMSE": 0.08125737100463856,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81212,
+          "method": "MHU-monotone",
+          "target_start": 0.006346426772771002,
+          "target_end": 0.0034126200273265923,
+          "source_RMSE": 0.09637929383097897,
+          "shift_RMSE": 0.0987120246706738,
+          "outage_RMSE": 0.09671582700194516,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81212,
+          "method": "COSI-monotone",
+          "target_start": 0.01916261233664455,
+          "target_end": 0.0059054767778215405,
+          "source_RMSE": 0.08250149740500103,
+          "shift_RMSE": 0.08968367648250679,
+          "outage_RMSE": 0.08250149740500103,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81212,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.019442237078908086,
+          "target_end": 0.007931496819623173,
+          "source_RMSE": 0.07878402828217129,
+          "shift_RMSE": 0.08505919367196764,
+          "outage_RMSE": 0.08053541837704983,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81212,
+          "method": "Oracle-monotone",
+          "target_start": 0.01977015159174688,
+          "target_end": 0.006126487784475125,
+          "source_RMSE": 0.0782718837417059,
+          "shift_RMSE": 0.08480808944627118,
+          "outage_RMSE": 0.07954222843762108,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 22,
+      "previous_regret": -0.012662581377964707,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07198141633330096,
+          "shift_RMSE": 0.07235396757434735,
+          "outage_RMSE": 0.07246400776184082,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.05719309630792288,
+          "shift_RMSE": 0.06273706668707295,
+          "outage_RMSE": 0.05876466077002405,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.057481352709471974,
+          "shift_RMSE": 0.061845094417433945,
+          "outage_RMSE": 0.05871261605253534,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05551891955439375,
+          "shift_RMSE": 0.060580788320308464,
+          "outage_RMSE": 0.056760831032044545,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81220,
+          "method": "MHU-monotone",
+          "target_start": 0.006863576070840527,
+          "target_end": 0.003233085376889332,
+          "source_RMSE": 0.07260958489354961,
+          "shift_RMSE": 0.07276709447262487,
+          "outage_RMSE": 0.07316225240463312,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81220,
+          "method": "COSI-monotone",
+          "target_start": 0.012157344463478598,
+          "target_end": 0.003374754002932631,
+          "source_RMSE": 0.058667329282350085,
+          "shift_RMSE": 0.06409179652584382,
+          "outage_RMSE": 0.05927625482079171,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81220,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012082969864169214,
+          "target_end": 0.004618466629980372,
+          "source_RMSE": 0.05818437836276252,
+          "shift_RMSE": 0.06187471055675615,
+          "outage_RMSE": 0.05976749435578582,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81220,
+          "method": "Oracle-monotone",
+          "target_start": 0.012195838988731935,
+          "target_end": 0.0031557739729801896,
+          "source_RMSE": 0.05617627589098613,
+          "shift_RMSE": 0.0612059886525047,
+          "outage_RMSE": 0.05732749546425091,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81221,
+          "method": "MHU-monotone",
+          "target_start": 0.0069887950243238085,
+          "target_end": 0.003077956150106836,
+          "source_RMSE": 0.07423447985893457,
+          "shift_RMSE": 0.07438955521042485,
+          "outage_RMSE": 0.07485268714754185,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81221,
+          "method": "COSI-monotone",
+          "target_start": 0.01291674345143686,
+          "target_end": 0.003226703955381943,
+          "source_RMSE": 0.057707255239054275,
+          "shift_RMSE": 0.06388630325060586,
+          "outage_RMSE": 0.059889441460562284,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81221,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012572211651870311,
+          "target_end": 0.004690940373564112,
+          "source_RMSE": 0.058534283865216766,
+          "shift_RMSE": 0.06353896242727072,
+          "outage_RMSE": 0.059312983489569523,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81221,
+          "method": "Oracle-monotone",
+          "target_start": 0.012870270881225662,
+          "target_end": 0.0031543210024875495,
+          "source_RMSE": 0.05616334215916597,
+          "shift_RMSE": 0.061848911706221484,
+          "outage_RMSE": 0.05734137212619813,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81222,
+          "method": "MHU-monotone",
+          "target_start": 0.0065644321164923,
+          "target_end": 0.0032525600083697886,
+          "source_RMSE": 0.06910018424741869,
+          "shift_RMSE": 0.06990525303999232,
+          "outage_RMSE": 0.06937708373334747,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81222,
+          "method": "COSI-monotone",
+          "target_start": 0.011623181741799169,
+          "target_end": 0.0030515532499088196,
+          "source_RMSE": 0.055204704402364274,
+          "shift_RMSE": 0.06023310028476915,
+          "outage_RMSE": 0.05712828602871817,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81222,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011554195572660393,
+          "target_end": 0.004496749056150899,
+          "source_RMSE": 0.05572539590043663,
+          "shift_RMSE": 0.060121610268274985,
+          "outage_RMSE": 0.05705737031225069,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81222,
+          "method": "Oracle-monotone",
+          "target_start": 0.011571980053907744,
+          "target_end": 0.0029394983362529764,
+          "source_RMSE": 0.054217140613029166,
+          "shift_RMSE": 0.0586874646021992,
+          "outage_RMSE": 0.05561362550568459,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 23,
+      "previous_regret": -0.013743343151595727,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07336070651397006,
+          "shift_RMSE": 0.07607939325991483,
+          "outage_RMSE": 0.07398394534796941,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.05807925932135011,
+          "shift_RMSE": 0.0761232069405468,
+          "outage_RMSE": 0.058583536286681136,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.057113891735346,
+          "shift_RMSE": 0.07003478482665926,
+          "outage_RMSE": 0.05768923838163912,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.053890749272177775,
+          "shift_RMSE": 0.07251010518411903,
+          "outage_RMSE": 0.055168687370535124,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81230,
+          "method": "MHU-monotone",
+          "target_start": 0.007019042108388509,
+          "target_end": 0.003198146304173756,
+          "source_RMSE": 0.07417640897635636,
+          "shift_RMSE": 0.07476752009418691,
+          "outage_RMSE": 0.07472748636846889,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81230,
+          "method": "COSI-monotone",
+          "target_start": 0.012811410441424259,
+          "target_end": 0.0029051768319104275,
+          "source_RMSE": 0.05780081544385614,
+          "shift_RMSE": 0.07536488961373213,
+          "outage_RMSE": 0.05834505197339577,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81230,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012566455643846371,
+          "target_end": 0.0043094609854794404,
+          "source_RMSE": 0.057164387461355444,
+          "shift_RMSE": 0.07042297297392523,
+          "outage_RMSE": 0.057164387461355444,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81230,
+          "method": "Oracle-monotone",
+          "target_start": 0.012985411790890909,
+          "target_end": 0.003011127615957134,
+          "source_RMSE": 0.054873742500007545,
+          "shift_RMSE": 0.07193397940407913,
+          "outage_RMSE": 0.05553943697101491,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81231,
+          "method": "MHU-monotone",
+          "target_start": 0.006760598235431299,
+          "target_end": 0.0033639658852102914,
+          "source_RMSE": 0.07506191887423452,
+          "shift_RMSE": 0.07893974706064354,
+          "outage_RMSE": 0.07571480780449469,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81231,
+          "method": "COSI-monotone",
+          "target_start": 0.01228717780310263,
+          "target_end": 0.0028398225068481083,
+          "source_RMSE": 0.057782988458195274,
+          "shift_RMSE": 0.0770726190766,
+          "outage_RMSE": 0.05875158282464871,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81231,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012077498086936799,
+          "target_end": 0.0044685285422086315,
+          "source_RMSE": 0.05925800534334679,
+          "shift_RMSE": 0.07490273825965185,
+          "outage_RMSE": 0.05964340361561803,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81231,
+          "method": "Oracle-monotone",
+          "target_start": 0.011775203112833813,
+          "target_end": 0.0030442162417696444,
+          "source_RMSE": 0.05517441655123907,
+          "shift_RMSE": 0.07655575607093965,
+          "outage_RMSE": 0.05517441655123907,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81232,
+          "method": "MHU-monotone",
+          "target_start": 0.006896023804688237,
+          "target_end": 0.00321387658817046,
+          "source_RMSE": 0.0708437916913193,
+          "shift_RMSE": 0.07453091262491404,
+          "outage_RMSE": 0.07150954187094469,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81232,
+          "method": "COSI-monotone",
+          "target_start": 0.011984719096693594,
+          "target_end": 0.0028901654046713725,
+          "source_RMSE": 0.05865397406199892,
+          "shift_RMSE": 0.07593211213130831,
+          "outage_RMSE": 0.05865397406199892,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81232,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012045134402326243,
+          "target_end": 0.003888113530419988,
+          "source_RMSE": 0.05491928240133574,
+          "shift_RMSE": 0.06477864324640069,
+          "outage_RMSE": 0.05625992406794389,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81232,
+          "method": "Oracle-monotone",
+          "target_start": 0.012289709973681047,
+          "target_end": 0.0026650465408462,
+          "source_RMSE": 0.0516240887652867,
+          "shift_RMSE": 0.06904058007733835,
+          "outage_RMSE": 0.05479220858935138,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 24,
+      "previous_regret": -0.014235080124052793,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07213096274447238,
+          "shift_RMSE": 0.07280811128386129,
+          "outage_RMSE": 0.07858026422024587,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.059970938224631905,
+          "shift_RMSE": 0.06495603548003348,
+          "outage_RMSE": 0.0672569091621919,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05919338641658933,
+          "shift_RMSE": 0.06322760918964863,
+          "outage_RMSE": 0.0663045641312142,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05607376791384238,
+          "shift_RMSE": 0.06159710860658637,
+          "outage_RMSE": 0.06362729453288125,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81240,
+          "method": "MHU-monotone",
+          "target_start": 0.006599949147055066,
+          "target_end": 0.003123757851760131,
+          "source_RMSE": 0.07084048312492872,
+          "shift_RMSE": 0.07108382004105829,
+          "outage_RMSE": 0.07824358954549561,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81240,
+          "method": "COSI-monotone",
+          "target_start": 0.010357700844317589,
+          "target_end": 0.0032691465327976967,
+          "source_RMSE": 0.06148902331881517,
+          "shift_RMSE": 0.06701174034674613,
+          "outage_RMSE": 0.07004259041329436,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81240,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.010803663494261371,
+          "target_end": 0.004306550787502132,
+          "source_RMSE": 0.05868274204425202,
+          "shift_RMSE": 0.06295117362031981,
+          "outage_RMSE": 0.06435202115658212,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81240,
+          "method": "Oracle-monotone",
+          "target_start": 0.010713759221237077,
+          "target_end": 0.0033207412312841926,
+          "source_RMSE": 0.05762587293294734,
+          "shift_RMSE": 0.06268644097121209,
+          "outage_RMSE": 0.062465207129218346,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81241,
+          "method": "MHU-monotone",
+          "target_start": 0.006716951760008183,
+          "target_end": 0.0032522469195609967,
+          "source_RMSE": 0.07393929932905349,
+          "shift_RMSE": 0.07518151088306506,
+          "outage_RMSE": 0.08160901064830342,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81241,
+          "method": "COSI-monotone",
+          "target_start": 0.011051265127727469,
+          "target_end": 0.0031349595646480146,
+          "source_RMSE": 0.060201065604874225,
+          "shift_RMSE": 0.06587437474921284,
+          "outage_RMSE": 0.06867104613714071,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81241,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011250161226517877,
+          "target_end": 0.004494018718037232,
+          "source_RMSE": 0.06043085251990639,
+          "shift_RMSE": 0.06479793488529778,
+          "outage_RMSE": 0.0703259391670634,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81241,
+          "method": "Oracle-monotone",
+          "target_start": 0.011529739617756125,
+          "target_end": 0.0031125934955865235,
+          "source_RMSE": 0.05579062193224345,
+          "shift_RMSE": 0.06189388963656236,
+          "outage_RMSE": 0.06467936372857822,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81242,
+          "method": "MHU-monotone",
+          "target_start": 0.006497465631777422,
+          "target_end": 0.003148942981428877,
+          "source_RMSE": 0.0716131057794349,
+          "shift_RMSE": 0.0721590029274605,
+          "outage_RMSE": 0.07588819246693856,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81242,
+          "method": "COSI-monotone",
+          "target_start": 0.010965478558961616,
+          "target_end": 0.0028281252288933443,
+          "source_RMSE": 0.05822272575020631,
+          "shift_RMSE": 0.06198199134414146,
+          "outage_RMSE": 0.06305709093614063,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81242,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011020210676130305,
+          "target_end": 0.004200075728371711,
+          "source_RMSE": 0.05846656468560959,
+          "shift_RMSE": 0.061933719063328306,
+          "outage_RMSE": 0.06423573206999711,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81242,
+          "method": "Oracle-monotone",
+          "target_start": 0.011368308239258884,
+          "target_end": 0.003003567075971756,
+          "source_RMSE": 0.054804808876336354,
+          "shift_RMSE": 0.06021099521198463,
+          "outage_RMSE": 0.06373731274084722,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 25,
+      "previous_regret": -0.03899213866246847,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.06348874963253386,
+          "shift_RMSE": 0.06419307729538425,
+          "outage_RMSE": 0.06456504603987763,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.005596682603127428,
+          "shift_RMSE": 0.03953876211293972,
+          "outage_RMSE": 0.01290143100924559,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.02248348462064546,
+          "shift_RMSE": 0.036805623899260204,
+          "outage_RMSE": 0.024567910579013044,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.002790758716852597,
+          "shift_RMSE": 0.04403991613005173,
+          "outage_RMSE": 0.010270242532542011,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81250,
+          "method": "MHU-monotone",
+          "target_start": 0.0063979850958018145,
+          "target_end": 0.00321802430799716,
+          "source_RMSE": 0.07022198507815004,
+          "shift_RMSE": 0.0701330029890267,
+          "outage_RMSE": 0.07068637897870685,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81250,
+          "method": "COSI-monotone",
+          "target_start": 0.007737580735649447,
+          "target_end": 0.0007773940705625543,
+          "source_RMSE": 0.005683028863247269,
+          "shift_RMSE": 0.04085113975975613,
+          "outage_RMSE": 0.013903522341149045,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81250,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.008372103221936393,
+          "target_end": 0.003078293096849243,
+          "source_RMSE": 0.022934648433796875,
+          "shift_RMSE": 0.037807518846637,
+          "outage_RMSE": 0.02615095936982996,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81250,
+          "method": "Oracle-monotone",
+          "target_start": 0.008176048685188158,
+          "target_end": 1.2285583891666184e-05,
+          "source_RMSE": 0.003505079726863026,
+          "shift_RMSE": 0.04379345195070165,
+          "outage_RMSE": 0.007824770803918118,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81251,
+          "method": "MHU-monotone",
+          "target_start": 0.0069833245569208184,
+          "target_end": 0.003026256613330367,
+          "source_RMSE": 0.060939498035355616,
+          "shift_RMSE": 0.06190689265132533,
+          "outage_RMSE": 0.06301080768378343,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81251,
+          "method": "COSI-monotone",
+          "target_start": 0.009532636294884812,
+          "target_end": 0.0007494186328617657,
+          "source_RMSE": 0.005058782143559305,
+          "shift_RMSE": 0.037634262242571125,
+          "outage_RMSE": 0.012676365383834173,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81251,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.009681630510744221,
+          "target_end": 0.0028382840068810417,
+          "source_RMSE": 0.022735196186969484,
+          "shift_RMSE": 0.035746609299168564,
+          "outage_RMSE": 0.02451455580563432,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81251,
+          "method": "Oracle-monotone",
+          "target_start": 0.00907327513022173,
+          "target_end": 3.653286411431104e-06,
+          "source_RMSE": 0.0019113572171185333,
+          "shift_RMSE": 0.04666064265851865,
+          "outage_RMSE": 0.011674838787020978,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81252,
+          "method": "MHU-monotone",
+          "target_start": 0.006504900906881803,
+          "target_end": 0.0032610235676852196,
+          "source_RMSE": 0.05930476578409588,
+          "shift_RMSE": 0.06053933624580075,
+          "outage_RMSE": 0.059997951457142595,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81252,
+          "method": "COSI-monotone",
+          "target_start": 0.009856006772673698,
+          "target_end": 0.0007304106445777501,
+          "source_RMSE": 0.006048236802575708,
+          "shift_RMSE": 0.0401308843364919,
+          "outage_RMSE": 0.012124405302753554,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81252,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.00950657045550761,
+          "target_end": 0.0027762817658123296,
+          "source_RMSE": 0.021780609241170014,
+          "shift_RMSE": 0.036862743551975045,
+          "outage_RMSE": 0.023038216561574853,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81252,
+          "method": "Oracle-monotone",
+          "target_start": 0.00976614328825023,
+          "target_end": 8.736985415133214e-06,
+          "source_RMSE": 0.0029558392065762327,
+          "shift_RMSE": 0.04166565378093489,
+          "outage_RMSE": 0.011311118006686938,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 26,
+      "previous_regret": -0.0032775885978583302,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07184351700328628,
+          "shift_RMSE": 0.07284168567236621,
+          "outage_RMSE": 0.07283878605475207,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.060643463616034926,
+          "shift_RMSE": 0.06563947130779785,
+          "outage_RMSE": 0.06195707616921949,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.0697537590917579,
+          "shift_RMSE": 0.07093467822925449,
+          "outage_RMSE": 0.0705364114752599,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05631732746244624,
+          "shift_RMSE": 0.061978780993978216,
+          "outage_RMSE": 0.056992524565304924,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81260,
+          "method": "MHU-monotone",
+          "target_start": 0.006799899575874529,
+          "target_end": 0.003000588922282587,
+          "source_RMSE": 0.06682504608931392,
+          "shift_RMSE": 0.06791729045067514,
+          "outage_RMSE": 0.06712386163363346,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81260,
+          "method": "COSI-monotone",
+          "target_start": 0.01164969998671707,
+          "target_end": 0.0031143431538299938,
+          "source_RMSE": 0.05940578940296909,
+          "shift_RMSE": 0.06476451405399888,
+          "outage_RMSE": 0.06103379079132276,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81260,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01176281428641447,
+          "target_end": 0.004953851754988495,
+          "source_RMSE": 0.06561085819912417,
+          "shift_RMSE": 0.06648558728899583,
+          "outage_RMSE": 0.0659361781497457,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81260,
+          "method": "Oracle-monotone",
+          "target_start": 0.0117745089956277,
+          "target_end": 0.003208671370527951,
+          "source_RMSE": 0.05664513545334631,
+          "shift_RMSE": 0.062225322335017486,
+          "outage_RMSE": 0.05711016628706485,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81261,
+          "method": "MHU-monotone",
+          "target_start": 0.0067014869219731875,
+          "target_end": 0.0034339567417188857,
+          "source_RMSE": 0.0772039887951569,
+          "shift_RMSE": 0.07814642663626624,
+          "outage_RMSE": 0.07835747660482108,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81261,
+          "method": "COSI-monotone",
+          "target_start": 0.011749379030761344,
+          "target_end": 0.0031454292137974133,
+          "source_RMSE": 0.06083113881412537,
+          "shift_RMSE": 0.0659611729336636,
+          "outage_RMSE": 0.06206579312277955,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81261,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011592575041208307,
+          "target_end": 0.005605100137890102,
+          "source_RMSE": 0.07483858786583797,
+          "shift_RMSE": 0.07571742535557245,
+          "outage_RMSE": 0.07610991311094578,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81261,
+          "method": "Oracle-monotone",
+          "target_start": 0.012261636590572457,
+          "target_end": 0.0031415462166432735,
+          "source_RMSE": 0.05604949791606766,
+          "shift_RMSE": 0.06153079653887955,
+          "outage_RMSE": 0.05661905541825659,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81262,
+          "method": "MHU-monotone",
+          "target_start": 0.006626996141743826,
+          "target_end": 0.0031740299407243405,
+          "source_RMSE": 0.071501516125388,
+          "shift_RMSE": 0.07246133993015724,
+          "outage_RMSE": 0.07303501992580164,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81262,
+          "method": "COSI-monotone",
+          "target_start": 0.0116434211725081,
+          "target_end": 0.0033296891396911257,
+          "source_RMSE": 0.061693462631010325,
+          "shift_RMSE": 0.06619272693573106,
+          "outage_RMSE": 0.06277164459355615,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81262,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011463717077335312,
+          "target_end": 0.0053345608054650795,
+          "source_RMSE": 0.06881183121031159,
+          "shift_RMSE": 0.07060102204319518,
+          "outage_RMSE": 0.06956314316508819,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81262,
+          "method": "Oracle-monotone",
+          "target_start": 0.011647889935124826,
+          "target_end": 0.003164889318524599,
+          "source_RMSE": 0.05625734901792475,
+          "shift_RMSE": 0.06218022410803762,
+          "outage_RMSE": 0.05724835199059332,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 27,
+      "previous_regret": 0.030669420289329744,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.10695136035907209,
+          "shift_RMSE": 0.1110791191783506,
+          "outage_RMSE": 0.10828758093717167,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.09510191492596913,
+          "shift_RMSE": 0.10352791214087985,
+          "outage_RMSE": 0.09787699362392029,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.09428026826607179,
+          "shift_RMSE": 0.10133604860892971,
+          "outage_RMSE": 0.09482561885705436,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.08819742913982816,
+          "shift_RMSE": 0.09869270859791064,
+          "outage_RMSE": 0.09046204432499783,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81270,
+          "method": "MHU-monotone",
+          "target_start": 0.006490849437475763,
+          "target_end": 0.003333388138773579,
+          "source_RMSE": 0.11244053220724344,
+          "shift_RMSE": 0.11620032476399865,
+          "outage_RMSE": 0.11244053220724344,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81270,
+          "method": "COSI-monotone",
+          "target_start": 0.02812827324881262,
+          "target_end": 0.007274484358149747,
+          "source_RMSE": 0.09599283781727287,
+          "shift_RMSE": 0.10698063600537351,
+          "outage_RMSE": 0.0996588707664513,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81270,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.028633971303179122,
+          "target_end": 0.011250814418451561,
+          "source_RMSE": 0.09713037313727942,
+          "shift_RMSE": 0.10475006205114858,
+          "outage_RMSE": 0.09713037313727942,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81270,
+          "method": "Oracle-monotone",
+          "target_start": 0.028417626766843153,
+          "target_end": 0.007844733891051583,
+          "source_RMSE": 0.08857050237551768,
+          "shift_RMSE": 0.09934040959145461,
+          "outage_RMSE": 0.09353477143772178,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81271,
+          "method": "MHU-monotone",
+          "target_start": 0.0068309596814270825,
+          "target_end": 0.003115513350616739,
+          "source_RMSE": 0.10249816942917982,
+          "shift_RMSE": 0.10687774879779098,
+          "outage_RMSE": 0.10517372515389849,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81271,
+          "method": "COSI-monotone",
+          "target_start": 0.03264663896140915,
+          "target_end": 0.007665795152247703,
+          "source_RMSE": 0.09661466714833329,
+          "shift_RMSE": 0.10419611536566628,
+          "outage_RMSE": 0.09809034352426003,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81271,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.031656590451546805,
+          "target_end": 0.010881142747072615,
+          "source_RMSE": 0.09445371254954353,
+          "shift_RMSE": 0.1016025651707264,
+          "outage_RMSE": 0.0952703489975509,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81271,
+          "method": "Oracle-monotone",
+          "target_start": 0.03205042847432088,
+          "target_end": 0.007714020413284569,
+          "source_RMSE": 0.08782949625999553,
+          "shift_RMSE": 0.09971953236351196,
+          "outage_RMSE": 0.08873918843306285,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81272,
+          "method": "MHU-monotone",
+          "target_start": 0.006484380975662546,
+          "target_end": 0.0032483816833701064,
+          "source_RMSE": 0.10591537944079302,
+          "shift_RMSE": 0.11015928397326219,
+          "outage_RMSE": 0.10724848545037309,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81272,
+          "method": "COSI-monotone",
+          "target_start": 0.028561460330012056,
+          "target_end": 0.007398199391189758,
+          "source_RMSE": 0.09269823981230119,
+          "shift_RMSE": 0.09940698505159973,
+          "outage_RMSE": 0.09588176658104954,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81272,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.028836045261996426,
+          "target_end": 0.01065146000343524,
+          "source_RMSE": 0.09125671911139245,
+          "shift_RMSE": 0.0976555186049142,
+          "outage_RMSE": 0.09207613443633278,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81272,
+          "method": "Oracle-monotone",
+          "target_start": 0.029128562671132292,
+          "target_end": 0.0077778798009553824,
+          "source_RMSE": 0.08819228878397126,
+          "shift_RMSE": 0.09701818383876538,
+          "outage_RMSE": 0.08911217310420885,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 28,
+      "previous_regret": -0.00951485960336236,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.06757061885280008,
+          "shift_RMSE": 0.072791998781298,
+          "outage_RMSE": 0.06775982399100544,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.05660194962056688,
+          "shift_RMSE": 0.0797699613094207,
+          "outage_RMSE": 0.05700467709521559,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05506259541861689,
+          "shift_RMSE": 0.07442503509167729,
+          "outage_RMSE": 0.05584027379518044,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.055122845083246996,
+          "shift_RMSE": 0.07859728186071514,
+          "outage_RMSE": 0.055641142012537476,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81280,
+          "method": "MHU-monotone",
+          "target_start": 0.00663897805563213,
+          "target_end": 0.003252239599524332,
+          "source_RMSE": 0.07126589506311977,
+          "shift_RMSE": 0.07757264311126613,
+          "outage_RMSE": 0.07126589506311977,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81280,
+          "method": "COSI-monotone",
+          "target_start": 0.01230872870926802,
+          "target_end": 0.0029520244024589365,
+          "source_RMSE": 0.05790034293011696,
+          "shift_RMSE": 0.08471348943114858,
+          "outage_RMSE": 0.05854762954853823,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81280,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012151401690492903,
+          "target_end": 0.004405086925335178,
+          "source_RMSE": 0.055610711622271845,
+          "shift_RMSE": 0.07554758046942521,
+          "outage_RMSE": 0.056626919541607944,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81280,
+          "method": "Oracle-monotone",
+          "target_start": 0.011289476127380479,
+          "target_end": 0.003131112535328944,
+          "source_RMSE": 0.055956344906801625,
+          "shift_RMSE": 0.08138889202299493,
+          "outage_RMSE": 0.05669928535385997,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81281,
+          "method": "MHU-monotone",
+          "target_start": 0.00672340461594901,
+          "target_end": 0.002941205547418879,
+          "source_RMSE": 0.06590039996643417,
+          "shift_RMSE": 0.07113625416476568,
+          "outage_RMSE": 0.06646801538105025,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81281,
+          "method": "COSI-monotone",
+          "target_start": 0.012550259772018303,
+          "target_end": 0.0027283742779437375,
+          "source_RMSE": 0.05412754364571568,
+          "shift_RMSE": 0.0761299681527825,
+          "outage_RMSE": 0.05412754364571568,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81281,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012348430350035607,
+          "target_end": 0.004007476080710131,
+          "source_RMSE": 0.052674688956802364,
+          "shift_RMSE": 0.07135478814216055,
+          "outage_RMSE": 0.053303087379269205,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81281,
+          "method": "Oracle-monotone",
+          "target_start": 0.012480488492220408,
+          "target_end": 0.002803410723683466,
+          "source_RMSE": 0.05294724472230322,
+          "shift_RMSE": 0.07792051188607813,
+          "outage_RMSE": 0.05294724472230322,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81282,
+          "method": "MHU-monotone",
+          "target_start": 0.007032273355406618,
+          "target_end": 0.002934839222785928,
+          "source_RMSE": 0.0655455615288463,
+          "shift_RMSE": 0.06966709906786216,
+          "outage_RMSE": 0.0655455615288463,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81282,
+          "method": "COSI-monotone",
+          "target_start": 0.011901793098384728,
+          "target_end": 0.0029056941378442797,
+          "source_RMSE": 0.057777962285867984,
+          "shift_RMSE": 0.078466426344331,
+          "outage_RMSE": 0.058338858091392866,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81282,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012303200400018045,
+          "target_end": 0.004392392520620095,
+          "source_RMSE": 0.056902385676776454,
+          "shift_RMSE": 0.07637273666344611,
+          "outage_RMSE": 0.05759081446466415,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81282,
+          "method": "Oracle-monotone",
+          "target_start": 0.011463645757177243,
+          "target_end": 0.003188290083941396,
+          "source_RMSE": 0.056464945620636135,
+          "shift_RMSE": 0.0764824416730724,
+          "outage_RMSE": 0.05727689596144924,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 29,
+      "previous_regret": -0.016113012673635477,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07147499526730172,
+          "shift_RMSE": 0.07239114852414243,
+          "outage_RMSE": 0.07269589009207879,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.0559135046400833,
+          "shift_RMSE": 0.061039732805288065,
+          "outage_RMSE": 0.05639380392010912,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05623612858735295,
+          "shift_RMSE": 0.060515867059304236,
+          "outage_RMSE": 0.05687425375225708,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.055521016408971446,
+          "shift_RMSE": 0.06072516380340034,
+          "outage_RMSE": 0.05613365826725552,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81290,
+          "method": "MHU-monotone",
+          "target_start": 0.006555039948522552,
+          "target_end": 0.0033367122519972784,
+          "source_RMSE": 0.07545219510893808,
+          "shift_RMSE": 0.07531734042870232,
+          "outage_RMSE": 0.07664031445637484,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81290,
+          "method": "COSI-monotone",
+          "target_start": 0.01099573174523187,
+          "target_end": 0.003299313317290027,
+          "source_RMSE": 0.05584073552175946,
+          "shift_RMSE": 0.06051495065131922,
+          "outage_RMSE": 0.05664896884947552,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81290,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011241522338538557,
+          "target_end": 0.0045259223257137,
+          "source_RMSE": 0.05813552247054627,
+          "shift_RMSE": 0.0618434784374493,
+          "outage_RMSE": 0.058779494239765265,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81290,
+          "method": "Oracle-monotone",
+          "target_start": 0.010854165122661383,
+          "target_end": 0.003041301270334188,
+          "source_RMSE": 0.055147994254861055,
+          "shift_RMSE": 0.060000264627402204,
+          "outage_RMSE": 0.05634197605324461,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81291,
+          "method": "MHU-monotone",
+          "target_start": 0.006689992314872381,
+          "target_end": 0.0032223749334030012,
+          "source_RMSE": 0.07144087847333074,
+          "shift_RMSE": 0.07206873828038898,
+          "outage_RMSE": 0.07305292231994025,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81291,
+          "method": "COSI-monotone",
+          "target_start": 0.01186862303855761,
+          "target_end": 0.003334659978536157,
+          "source_RMSE": 0.0567402331856597,
+          "shift_RMSE": 0.06163290000700796,
+          "outage_RMSE": 0.0567402331856597,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81291,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.011796215934514296,
+          "target_end": 0.004484989037791578,
+          "source_RMSE": 0.05605555317635094,
+          "shift_RMSE": 0.05962425959037338,
+          "outage_RMSE": 0.056679466960645804,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81291,
+          "method": "Oracle-monotone",
+          "target_start": 0.011631553714691097,
+          "target_end": 0.0031856588661666207,
+          "source_RMSE": 0.05644164124267313,
+          "shift_RMSE": 0.06142041920782668,
+          "outage_RMSE": 0.05708558501914179,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81292,
+          "method": "MHU-monotone",
+          "target_start": 0.006389184679995422,
+          "target_end": 0.0032184992826189127,
+          "source_RMSE": 0.06753191221963635,
+          "shift_RMSE": 0.06978736686333596,
+          "outage_RMSE": 0.06839443349992132,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81292,
+          "method": "COSI-monotone",
+          "target_start": 0.01076099749342327,
+          "target_end": 0.0032252716645384547,
+          "source_RMSE": 0.05515954521283074,
+          "shift_RMSE": 0.060971347757537014,
+          "outage_RMSE": 0.055792209725192124,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81292,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.010978829525382294,
+          "target_end": 0.004329281357758151,
+          "source_RMSE": 0.05451731011516165,
+          "shift_RMSE": 0.060079863150090035,
+          "outage_RMSE": 0.05516380005636017,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81292,
+          "method": "Oracle-monotone",
+          "target_start": 0.0107981742745876,
+          "target_end": 0.003022076217061602,
+          "source_RMSE": 0.05497341372938015,
+          "shift_RMSE": 0.060754807574972126,
+          "outage_RMSE": 0.05497341372938015,
+          "steps_accepted": 90
+        }
+      ]
+    },
+    {
+      "cycle_repaired": 30,
+      "previous_regret": -0.01401962186876786,
+      "aggregate": {
+        "MHU-monotone": {
+          "source_RMSE": 0.07214576655277789,
+          "shift_RMSE": 0.07303801432144791,
+          "outage_RMSE": 0.08418269244393704,
+          "steps_accepted": 90.0
+        },
+        "COSI-monotone": {
+          "source_RMSE": 0.05890101224476654,
+          "shift_RMSE": 0.0637441630838857,
+          "outage_RMSE": 0.07254140666425239,
+          "steps_accepted": 90.0
+        },
+        "COSI-shrink-monotone": {
+          "source_RMSE": 0.05814018889095973,
+          "shift_RMSE": 0.06246302047420716,
+          "outage_RMSE": 0.07185112467087071,
+          "steps_accepted": 90.0
+        },
+        "Oracle-monotone": {
+          "source_RMSE": 0.05654748459036361,
+          "shift_RMSE": 0.06122002617393033,
+          "outage_RMSE": 0.07125247550011478,
+          "steps_accepted": 90.0
+        }
+      },
+      "rows": [
+        {
+          "seed": 81300,
+          "method": "MHU-monotone",
+          "target_start": 0.007096005476182122,
+          "target_end": 0.003228447375156966,
+          "source_RMSE": 0.07259753368268917,
+          "shift_RMSE": 0.0735645758398802,
+          "outage_RMSE": 0.08764843278091111,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81300,
+          "method": "COSI-monotone",
+          "target_start": 0.011959513695513155,
+          "target_end": 0.0028451413893377468,
+          "source_RMSE": 0.05755836072307044,
+          "shift_RMSE": 0.062394389521486855,
+          "outage_RMSE": 0.07268614471547069,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81300,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.01232090825117314,
+          "target_end": 0.004391958795621327,
+          "source_RMSE": 0.05747731752889332,
+          "shift_RMSE": 0.06167697551387288,
+          "outage_RMSE": 0.07190787653564996,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81300,
+          "method": "Oracle-monotone",
+          "target_start": 0.011717654372151345,
+          "target_end": 0.00317747259945374,
+          "source_RMSE": 0.05636907485007839,
+          "shift_RMSE": 0.06041126534466761,
+          "outage_RMSE": 0.07304994866318963,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81301,
+          "method": "MHU-monotone",
+          "target_start": 0.006536584156227142,
+          "target_end": 0.0031819037856325636,
+          "source_RMSE": 0.07133672138018908,
+          "shift_RMSE": 0.07218264646335129,
+          "outage_RMSE": 0.08261760164745027,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81301,
+          "method": "COSI-monotone",
+          "target_start": 0.013057360190717994,
+          "target_end": 0.0030615465742751,
+          "source_RMSE": 0.058088293287542156,
+          "shift_RMSE": 0.06312868578180515,
+          "outage_RMSE": 0.07198273634372902,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81301,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012369919921756567,
+          "target_end": 0.004580773907001898,
+          "source_RMSE": 0.05769049723770055,
+          "shift_RMSE": 0.06227498374594252,
+          "outage_RMSE": 0.07218141357949513,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81301,
+          "method": "Oracle-monotone",
+          "target_start": 0.01233243676332741,
+          "target_end": 0.0031715865557928034,
+          "source_RMSE": 0.056316840783133454,
+          "shift_RMSE": 0.06123802078865613,
+          "outage_RMSE": 0.06976747367671651,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81302,
+          "method": "MHU-monotone",
+          "target_start": 0.007101890742371517,
+          "target_end": 0.0032504061973204863,
+          "source_RMSE": 0.0725030445954554,
+          "shift_RMSE": 0.07336682066111223,
+          "outage_RMSE": 0.08228204290344975,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81302,
+          "method": "COSI-monotone",
+          "target_start": 0.011959948369842481,
+          "target_end": 0.0032086726119614916,
+          "source_RMSE": 0.06105638272368704,
+          "shift_RMSE": 0.06570941394836506,
+          "outage_RMSE": 0.07295533893355743,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81302,
+          "method": "COSI-shrink-monotone",
+          "target_start": 0.012326384795659678,
+          "target_end": 0.004716795258227137,
+          "source_RMSE": 0.059252751906285345,
+          "shift_RMSE": 0.0634371021628061,
+          "outage_RMSE": 0.07146408389746703,
+          "steps_accepted": 90
+        },
+        {
+          "seed": 81302,
+          "method": "Oracle-monotone",
+          "target_start": 0.011405858729381158,
+          "target_end": 0.003244047236651664,
+          "source_RMSE": 0.05695653813787899,
+          "shift_RMSE": 0.062010792388467274,
+          "outage_RMSE": 0.07094000416043823,
+          "steps_accepted": 90
+        }
+      ]
+    }
+  ]
+}
