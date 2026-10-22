@@ -1,0 +1,44 @@
+{
+  "block": "B03",
+  "prereg_commit": "9ef84ea4ec931826316da16853608efc520da62f",
+  "n_seeds": 12,
+  "decision": "PIVOT to real Digits image classification. CVT helps local interpolation relative to Sobol, but mechanism is designed in geometry and not uniquely MHU.",
+  "results": [
+    {
+      "id": "N13",
+      "paired_delta": -0.032381378286649685,
+      "favors_cvt": true,
+      "raw_result_sha256": "3d49f3e9bdc4eadbf0158daac4c2524be906c4eab6e968f9c0d315da0dc035f4"
+    },
+    {
+      "id": "N14",
+      "paired_delta": -0.07652908053691705,
+      "favors_cvt": true,
+      "raw_result_sha256": "b501d268e3791bc925bd61495ecbd3120135572dc8d032db3f207b295b21cfcd"
+    },
+    {
+      "id": "N15",
+      "paired_delta": -0.07057414798222562,
+      "favors_cvt": true,
+      "raw_result_sha256": "afb2737086573398a4894fb92e8f0530baa6b1cdcf51192f18ca1c48edfa7cb4"
+    },
+    {
+      "id": "N16",
+      "paired_delta": -0.08069563959625115,
+      "favors_cvt": true,
+      "raw_result_sha256": "79fdcc182a5f7d8cadb1486c288b3a55be8a891665de9de5f2f82b3e45d3d00a"
+    },
+    {
+      "id": "N17",
+      "paired_delta": -0.01808899351765642,
+      "favors_cvt": true,
+      "raw_result_sha256": "d166e8c495754501fb7a9dd2bf16192852d6276e2730e50ba14e1a68b76d7f1f"
+    },
+    {
+      "id": "N18",
+      "paired_delta": -0.02905087941151795,
+      "favors_cvt": true,
+      "raw_result_sha256": "f7749f6f572b54fc31f5f41106999d09bc3a226acd3319650c4a96464565ba6b"
+    }
+  ]
+}
