@@ -1,0 +1,108 @@
+{
+  "review": "MHU_3D_SCALE_REVIEW",
+  "date_accessed": "2026-10-08",
+  "status": "literature_review_only_no_experiments",
+  "search_scope": "Primary papers, publisher accepted manuscripts, author-hosted arXiv records and author institutional publication lists; searches for 3D multihyperuniform point patterns, multicomponent spectral/concentration structure factors and finite-size estimation through 2026-10-08. Not an exhaustive systematic review.",
+  "sources": [
+    {
+      "id": "torquato_zhang_stillinger_2015",
+      "citation": "S. Torquato, G. Zhang and F. H. Stillinger, Ensemble Theory for Stealthy Hyperuniform Disordered Ground States, Physical Review X 5, 021020 (2015).",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevX.5.021020",
+      "accessed_primary_URL": "https://arxiv.org/abs/1503.06436",
+      "date_accessed": "2026-10-08",
+      "source_type": "peer_reviewed_journal_article_accessed_via_author_manuscript_record",
+      "peer_review_status": "peer_reviewed; journal reference and related DOI verified in arXiv record",
+      "claims_supported": ["Stealthy disordered hyperuniform constructions and ensemble theory are studied in dimensions 1, 2 and 3.", "Constraint density and sampling of the ground-state manifold matter."],
+      "limitations": ["Single-component framework; does not validate LARP five-component 3D feasibility or learning advantage.", "No LARP CPU timing extrapolation supported."],
+      "implementation_relevance": "Separate constrained mode counts, physical bandwidth and spatial dimension when designing a new 3D finite certificate."
+    },
+    {
+      "id": "chen_et_al_2023",
+      "citation": "D. Chen, X. Jiang, D. Wang, J. Ilyssa Vidallon, H. L. Zhuang and Y. Jiao, Multihyperuniform long-range order in medium-entropy alloys, Acta Materialia 246, 118678 (2023).",
+      "DOI_or_URL": "https://doi.org/10.1016/j.actamat.2023.118678",
+      "accessed_primary_URL": "https://arxiv.org/pdf/2111.11412",
+      "publication_verification_URL": "https://faculty.engineering.asu.edu/zhuang/publications/",
+      "date_accessed": "2026-10-08",
+      "source_type": "peer_reviewed_journal_article_with_earlier_author_preprint_accessed",
+      "peer_review_status": "peer_reviewed publication verified on author institutional list; publisher page returned 403; specific method details read from 2021 preprint, not asserted identical to final article",
+      "claims_supported": ["Multihyperuniform assignments of Si, Ge and Sn are constructed on a volumetric diamond lattice.", "The accessed manuscript reports five configurations of N=5832, spectral objectives using type swaps, emergent short-range ordering and finite residual low-k power instead of exact stealthiness."],
+      "limitations": ["Lattice-constrained ternary material model, not free five-component continuum geometry.", "Material energy/thermal/electronic outcomes cannot be transferred to neural computation.", "Preprint author list lacks J. Ilyssa Vidallon, present in published citation; preserve this version distinction."],
+      "implementation_relevance": "Direct prior art removes novelty of the claim that multihyperuniformity can exist in 3D; simultaneous local-order changes motivate explicit matching."
+    },
+    {
+      "id": "lomba_weis_torquato_2018",
+      "citation": "E. Lomba, J.-J. Weis and S. Torquato, Disordered multihyperuniformity derived from binary plasmas, Physical Review E 97, 010102 (2018).",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevE.97.010102",
+      "accessed_primary_URL": "https://link.aps.org/accepted/10.1103/PhysRevE.97.010102",
+      "date_accessed": "2026-10-08",
+      "source_type": "publisher_hosted_accepted_manuscript_of_peer_reviewed_article",
+      "peer_review_status": "peer_reviewed; accepted manuscript identifies published journal article and publication date 2018-01-10",
+      "claims_supported": ["Total hyperuniformity need not imply component hyperuniformity in a mixture.", "Partial and cross structure factors and concentration-concentration fluctuations distinguish multihyperuniformity from global density suppression."],
+      "limitations": ["Demonstrated model is a two-dimensional binary hard-disk plasma; no direct LARP 3D generation result.", "Normalization conventions differ from per-species normalized LARP S_c."],
+      "implementation_relevance": "Keep total-density and concentration channels separate; record cross spectra alongside diagonal component spectra."
+    },
+    {
+      "id": "wang_samajdar_torquato_2024",
+      "citation": "H. Wang, R. Samajdar and S. Torquato, Correlations in interacting electron liquids: Many-body statistics and hyperuniformity, Physical Review B 110, 104201 (2024).",
+      "DOI_or_URL": "https://doi.org/10.1103/PhysRevB.110.104201",
+      "accessed_primary_URL": "https://arxiv.org/html/2409.01381v1",
+      "metadata_URL": "https://arxiv.org/abs/2409.01381",
+      "date_accessed": "2026-10-08",
+      "source_type": "peer_reviewed_journal_article_accessed_via_author_manuscript",
+      "peer_review_status": "peer_reviewed; arXiv lists Accepted at PRB and Phys. Rev. B 110, 104201 (2024)",
+      "claims_supported": ["Total and spin-resolved spectra are analyzed for quasi-1D, 2D and 3D electron liquids.", "Partially polarized liquids can have hyperuniform union and components with different scaling classes."],
+      "limitations": ["Quantum/effective classical physical models do not establish LARP utility or feasibility with its exclusion and species counts.", "HTML dynamically displayed a 2026 document date although arXiv submission and journal reference are 2024; use verified publication metadata."],
+      "implementation_relevance": "A 3D claim must specify whether it concerns total density, every component, concentration contrasts or scaling exponents."
+    },
+    {
+      "id": "frusawa_2025",
+      "citation": "H. Frusawa, Theoretical Basis for Classifying Hyperuniform States of Two-Component Systems, Axioms 14(1), 39 (2025).",
+      "DOI_or_URL": "https://doi.org/10.3390/axioms14010039",
+      "accessed_primary_URL": "https://arxiv.org/html/2501.06735v1",
+      "metadata_URL": "https://arxiv.org/abs/2501.06735",
+      "date_accessed": "2026-10-08",
+      "source_type": "peer_reviewed_journal_article_accessed_via_author_manuscript",
+      "peer_review_status": "peer_reviewed; arXiv journal reference/DOI verified, official publisher search result supports same citation",
+      "claims_supported": ["Theoretical classification distinguishes global, component and cross-correlation behaviors in binary systems.", "Suppressed sums and suppressed differences have distinct conditions."],
+      "limitations": ["Binary theoretical classification is not a five-component finite-sample certifier.", "Do not apply every thermodynamic stability classification to LARP's non-equilibrium numerical objective."],
+      "implementation_relevance": "Use the multicomponent covariance matrix and a declared concentration contrast space; the four-dimensional contrast proposal for five species is own algebraic inference."
+    },
+    {
+      "id": "jiao_2026_leakage",
+      "citation": "Y. Jiao, Spectral leakage and masking effects in the measurement of hyperuniformity, Journal of Chemical Physics 164, 224106 (2026).",
+      "DOI_or_URL": "https://doi.org/10.1063/5.0336587",
+      "accessed_primary_URL": "https://arxiv.org/abs/2606.24904",
+      "date_accessed": "2026-10-08",
+      "source_type": "peer_reviewed_journal_article_accessed_via_author_manuscript_record",
+      "peer_review_status": "peer_reviewed; journal reference and DOI verified in author arXiv record and institutional publication list; DOI fetch unavailable",
+      "claims_supported": ["Finite observation windows and masks convolve intrinsic spectra and can distort apparent small-k scaling.", "Scaling exponents require an appropriate range of accessible scales."],
+      "limitations": ["A cropped/masked observation differs from a complete periodic simulation sampled at reciprocal-lattice modes; do not claim the same leakage is necessarily present in current LARP.", "Abstract consulted; no replication or quantitative validation performed."],
+      "implementation_relevance": "Declare boundary and estimator conventions; treat a small finite certificate separately from asymptotic hyperuniformity."
+    },
+    {
+      "id": "liu_et_al_2026_effective_exponents",
+      "citation": "Y. Liu, X. Li, J. Tian, X. Yan and G. Zhang, Extracting effective scaling exponents in finite-size hyperuniform systems, arXiv:2606.18848v1 (2026).",
+      "DOI_or_URL": "https://arxiv.org/abs/2606.18848",
+      "date_accessed": "2026-10-08",
+      "source_type": "author_preprint",
+      "peer_review_status": "preprint; accessed arXiv record has no journal reference or acceptance statement",
+      "claims_supported": ["Finite-sample effective exponent estimation depends on accessible scales and method-specific fitting windows.", "The manuscript proposes a protocol combining structure-factor, number-variance and spreadability estimates."],
+      "limitations": ["Proposal not independently validated here; does not justify LARP certificate thresholds or an N400 asymptotic exponent.", "Correlated diagnostics must not be counted as independent evidence."],
+      "implementation_relevance": "Context for finite-size diagnostics only; not a required implementation or authority to run experiments."
+    }
+  ],
+  "own_inferences": [
+    "For unit numerical density, N400 implies L2D=20 and L3D=400^(1/3), and reciprocal k_min=2*pi/L; dimensional densities require a declared reference length.",
+    "Integer wavevectors with 0<|n|<=2 contain six conjugate pairs in 2D and sixteen in 3D; sixteen complex species amplitudes impose at most 32 real equations, compared with 3*(34-1)=99 relative coordinate degrees for E34 before other constraints.",
+    "Five concentration amplitudes eta_c=rho_c-f_c*rho_union sum to zero, so their covariance has at most four independent contrast directions; a single mode outer product has rank one and needs averaging before spectral eigenvalue interpretation.",
+    "Holding N, numerical density, native kNN graph, full distance distribution, hop profiles and wiring cost simultaneously is generally incompatible with a genuine spatial-dimension intervention.",
+    "The proposed 3D preflight, gates, resource ceilings and sequencing are research recommendations, not executed or externally validated results."
+  ],
+  "local_evidence": [
+    {"path": "docs/PHASE_3_ROLE_COVERAGE.md", "claim": "Four N400 Grid b0 runs; BALANCED passes train/SS/UU in two seeds, AUX retains a counterexample; no MHU/3D/XOR/remote training in that phase."},
+    {"path": "artifacts/role_coverage/v1/execution_wall_supervision.json", "claim": "38.91160609999497 seconds external wall for the full four-run phase; this is not a future 3D training-cost estimate."},
+    {"path": "artifacts/geometry/mhu_N400_g1101_timing.json", "claim": "Original 2D N400 generator wall 2.5998564999972587 seconds for one seed/attempt."},
+    {"path": "artifacts/avian_v1/summary_full_spectral.json", "claim": "Three 2D N400 avian full realizations: runtime 8.267179100002977,7.80608950000169,7.912252200003422 seconds; peak RSS 243245056,260460544,262414336 bytes."},
+    {"path": "docs/INDEPENDENT_SPECTRAL_MATCHING_NEXT.md", "claim": "Proposed fixed-X/graph/ports/count local matching plus spectral concentration manipulation is NOT_RUN and targets acquisition."}
+  ]
+}

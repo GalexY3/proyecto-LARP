@@ -1,0 +1,10 @@
+{
+  "analysis.json": "3525c709958cfbeb9ed0eb9f124982f5caa01a8d533023585d5ee42f2bf1f915",
+  "baseline_screen.json": "c238bcf583797909274b10ed9115ea29e6eafa95b7dd0684461a8dfba0b55727",
+  "confirmation.json": "fd62c2ad994a971d05356ca3ec225a89464674b27b842e614110c1bdf2176143",
+  "geometry_validation.json": "5df9bd05e548af6dd6210b864f0b60e3dc98958e93e6a3fef053095f4792c296",
+  "pilot_focal.json": "4d6ad9d5895045a9627549bd70bc4d97ed8091b926842160c1c9fc7ff22ad3c4",
+  "robustness.json": "2b8e4652e0e96cab42b7e7f53f75271bd3cf014331c65640a5d22a02b8522067",
+  "scientific_contract.json": "d59d7d409adff7bf221d7628c2e32cf263f7442f705999abc3ae91fd61e07fbe",
+  "smoke.json": "0ec8ad3f84b4c8b939f61bf169e2e612688b7d606bbecfbe1dd0156ebc7580f6"
+}

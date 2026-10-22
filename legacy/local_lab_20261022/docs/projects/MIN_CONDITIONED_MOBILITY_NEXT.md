@@ -1,0 +1,15 @@
+# Siguiente diagnóstico propuesto: kernel condicionado a MIN
+
+2026-10-09. **PLAN, NO EJECUTADO.** Motivación: auditoría de136vecinos revela18ciclos completos, pero masa nativa de propuestas extremadamente pequeña; tres endpoints carecen de ruta admisible de dos swaps. No modifica protocolos cerrados. La exploración local/espectral nueva también queda cerrada para su constructor breve.
+
+Pregunta única: ¿la componente alcanzable bajo las130guardas permite desplazamiento sostenido cuando eliminamos la rareza de propuestas necesarias, o sólo oscilaciones entre pocos estados? No optimizar espectro ni construir por decreto el control q=.25.
+
+Intervención: enumerar candidatos MIN para cycle3 en CADA estado actual usando siempre los mínimos de referencia nativa y las mismas130guardas finales. Muestrearlos con probabilidades relativas exactamente iguales a la mezcla near/global original, divididas por su masa MIN actual. Comparar contra cycle3 original, con RNG nuevos emparejados por sustrato. No muestrear uniformemente la lista bajo la afirmación de conservar el kernel; no usar umbrales derivados del nuevo estado. Si masa MIN=0, registrar estado absorbente. El filtro conserva soporte factible, pero cambia tasas y dinámica; no promete distribución uniforme ni mixing.
+
+Plan recomendado para congelar en un ADR propio antes de ejecución:3sustratos×2semillas nuevas×2condiciones,100propuestas por cadena,≤20s cada una,≤300s global (30prep+240cadenas+30cierres). Caps y reglas de clasificación deben implementarse/verificarse antes de lanzar; no reutilizar saldo de estas fases ni reiniciar ramas fallidas. Preservar trazas, todos los candidatos MIN considerados y contabilidad del coste de enumeración; cachear sólo datos invariantes, comprobar contra recomputación completa.
+
+Endpoints: máximo/final Hamming respecto de nativa, estados aceptados distintos, movilidad por segundo TOTAL incluyendo enumeración/serialización. El porcentaje de aceptación no es hallazgo: crece por construcción. Espectros, varianzas y familias son diagnóstico, sin target energético. Contraste descriptivo de dosseeds, sin p-values/BFs inventados.
+
+Puerta propuesta: condicionado alcanza máximoHamming≥20 y≥5estados distintos en ambas semillas de≥2sustratos dentro de presupuesto. Si falla o sólo revisita vecinos inmediatos, cerrar esta línea de reetiquetado sobre X fijo; no añadir ciclos4/5 o annealing sin una nueva pregunta y decisión. Éxito justificaría estudiar alcance espectral, no asumir que el objetivo q=.25 exista.
+
+Después, si corresponde abrir generación de efecto total: rival local fuerte (incluido avian_local y antecedentes blue noise multiclase), posiciones y marcas cooptimizadas, presupuestos comparables, nuevas geometrías y amplia evaluación espectral reservada. Adquisición debe usar campos/queries/ruido nuevos y decoder local más espectral fuerte. Redes necesitan núcleo competente y panel causal propio. NUFFT/FReSCo es antecedente pertinente para escalar; GPU/3D se estudian con precisión y coste medidos, después de cerrar el problema de identificación.

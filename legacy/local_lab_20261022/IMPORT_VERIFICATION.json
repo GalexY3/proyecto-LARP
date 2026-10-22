@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "copied_files": 539,
+  "copied_bytes": 25845075,
+  "copied_hashes_match_manifest_and_originals": true,
+  "python_sources_ast_parsed": 82,
+  "npz_integrity_checked": 48,
+  "large_files_justified": true,
+  "readme_entry_links_exist": true,
+  "privacy_scan": "Three genuine exclusions retained; Python matrix-multiplication false positive manually reviewed and original test copied. Known secret formats scan found no token/private-key/AWS-key hits among selected candidates.",
+  "experimental_runs_executed": false,
+  "historical_tests_executed": false,
+  "validation_limit": "Static copy/integrity verification only; no full replay or claim that omitted dependencies are available.",
+  "staged_files": 543,
+  "index_blobs_match_literal_worktree_bytes": true,
+  "git_diff_check": "PASS; archived original whitespace intentionally preserved by scoped -whitespace attribute",
+  "all_staged_paths_in_archive_subtree": true,
+  "destination_repository_visibility_verified": "private"
+}

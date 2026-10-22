@@ -1,0 +1,175 @@
+{
+  "box_length": 15.999999999999998,
+  "validation": {
+    "version": "scale3d_cic_multicomponent_v1",
+    "N": 4096,
+    "counts": [
+      1669,
+      871,
+      696,
+      512,
+      348
+    ],
+    "physical_box_length": 15.999999999999998,
+    "periodic_3d": true,
+    "asymptotic_HU_established": false,
+    "finite_low_k_pass": false,
+    "finite_mean_threshold": 0.2,
+    "exact_audit_float64": true,
+    "subsampled_bands": true,
+    "components": [
+      {
+        "component": "union",
+        "n": 4096,
+        "cutoff_integer_norm_squared": 78,
+        "physical_cutoff": 3.4682243819896748,
+        "full_band_halfspace_modes": 1472,
+        "tested_modes": 128,
+        "chi_realized": 0.11982091982091982,
+        "exact_low_k_mean": 1.067663163769947,
+        "exact_low_k_max": 4.320596097725613,
+        "first_shell_mean": 0.6926717894742538,
+        "first_shell_max": 0.8878392484363533,
+        "outside_band_mean": 1.1007294603679019,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.1032322208856438,
+          0.9783927928285998,
+          1.0552634219565167
+        ]
+      },
+      {
+        "component": "type_0",
+        "n": 1669,
+        "cutoff_integer_norm_squared": 42,
+        "physical_cutoff": 2.5449809209923155,
+        "full_band_halfspace_modes": 594,
+        "tested_modes": 128,
+        "chi_realized": 0.11870503597122302,
+        "exact_low_k_mean": 0.8981905127772953,
+        "exact_low_k_max": 5.079146963187685,
+        "first_shell_mean": 0.9762439191854121,
+        "first_shell_max": 1.7905765738979933,
+        "outside_band_mean": 1.0252186236497831,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          0.8894202940280386,
+          0.9742723316318037,
+          0.6826436215447124
+        ]
+      },
+      {
+        "component": "type_1",
+        "n": 871,
+        "cutoff_integer_norm_squared": 27,
+        "physical_cutoff": 2.0405242847634955,
+        "full_band_halfspace_modes": 309,
+        "tested_modes": 128,
+        "chi_realized": 0.11839080459770115,
+        "exact_low_k_mean": 1.0223874886001891,
+        "exact_low_k_max": 3.6137949307695463,
+        "first_shell_mean": 0.8438695251151588,
+        "first_shell_max": 2.164674381827029,
+        "outside_band_mean": 1.034877007085414,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.1407028021211967,
+          0.901602497552229,
+          1.0281416266503283
+        ]
+      },
+      {
+        "component": "type_2",
+        "n": 696,
+        "cutoff_integer_norm_squared": 24,
+        "physical_cutoff": 1.9238247452427961,
+        "full_band_halfspace_modes": 242,
+        "tested_modes": 128,
+        "chi_realized": 0.11606714628297363,
+        "exact_low_k_mean": 1.083552630259192,
+        "exact_low_k_max": 6.464419024757282,
+        "first_shell_mean": 1.4740148528557626,
+        "first_shell_max": 2.534167529706591,
+        "outside_band_mean": 0.981423782238877,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.039691025084107,
+          1.1182690138350049,
+          1.0158965203409998
+        ]
+      },
+      {
+        "component": "type_3",
+        "n": 512,
+        "cutoff_integer_norm_squared": 19,
+        "physical_cutoff": 1.7117356123459617,
+        "full_band_halfspace_modes": 182,
+        "tested_modes": 128,
+        "chi_realized": 0.1187214611872146,
+        "exact_low_k_mean": 1.1607707228542807,
+        "exact_low_k_max": 6.37825963924179,
+        "first_shell_mean": 0.30262035419829303,
+        "first_shell_max": 0.5542103225497995,
+        "outside_band_mean": 0.9537150935888776,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.121718277471528,
+          1.3424420618761106,
+          1.2640882880586775
+        ]
+      },
+      {
+        "component": "type_4",
+        "n": 348,
+        "cutoff_integer_norm_squared": 13,
+        "physical_cutoff": 1.4158966748923723,
+        "full_band_halfspace_modes": 101,
+        "tested_modes": 101,
+        "chi_realized": 0.09702209414024976,
+        "exact_low_k_mean": 1.0064297255235732,
+        "exact_low_k_max": 5.5024589523979195,
+        "first_shell_mean": 0.51182442834222,
+        "first_shell_max": 0.9062876445998181,
+        "outside_band_mean": 0.9071195321649534,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.0314107789934512,
+          0.9143240122458653,
+          1.1952004095500386
+        ]
+      }
+    ],
+    "nearest_neighbor_p05_physical": 0.22505977021143167,
+    "nearest_neighbor_cv": 0.36448731152588065,
+    "homotypic_nearest_p05_physical": [
+      0.30754245801718305,
+      0.39867079201686045,
+      0.4541425563365258,
+      0.4623656663615066,
+      0.5003417500042
+    ],
+    "CIC_grid_axis_coherent_power_fraction": [
+      0.00012168062633032876,
+      0.000641211875190732,
+      1.772723237620037e-06
+    ],
+    "interpretation": "Finite low-k proxy audit; no thermodynamic-limit, isotropy, or avian-retina equivalence certificate."
+  },
+  "history": [],
+  "construction": {
+    "version": "scale3d_cic_multicomponent_v1",
+    "seed": 3102,
+    "N": 4096,
+    "iterations": 0,
+    "spectral": false,
+    "chi_requested": 0.12,
+    "local_weight": 0.15,
+    "grid_size": 64,
+    "device": "cuda",
+    "dtype": "float32",
+    "initialization": "numpy PCG64 uniform plus Hamilton-label permutation",
+    "initial_coordinates": null,
+    "cuda_scatter_nondeterminism": true,
+    "elapsed_seconds_including_exact_validation": 0.07179149999865331
+  }
+}

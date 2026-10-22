@@ -1,0 +1,33 @@
+{
+  "phase": 5,
+  "stage": "screen",
+  "tasks": [
+    "copy",
+    "fill"
+  ],
+  "N": 400,
+  "variant": "T",
+  "geometries": [
+    "grid_balanced",
+    "hu",
+    "random_regular",
+    "small_world",
+    "poisson"
+  ],
+  "geometry_seeds": [
+    1101
+  ],
+  "training_seeds": [
+    2101,
+    2102
+  ],
+  "updates": 500,
+  "batch_size": 4,
+  "lr": 0.003,
+  "train_size": 8192,
+  "validation_size": 1024,
+  "test_size": 4096,
+  "steps": 16,
+  "uses_test": false,
+  "auto_run": false
+}

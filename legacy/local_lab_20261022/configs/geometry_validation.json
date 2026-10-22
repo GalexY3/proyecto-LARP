@@ -1,0 +1,21 @@
+{
+  "phase": 1,
+  "N": [
+    400,
+    1600,
+    6400
+  ],
+  "seeds": [
+    6101,
+    6102,
+    6103
+  ],
+  "primary_admission_N": 400,
+  "primary_admission_seed": 1101,
+  "kind": "mhu",
+  "adam_steps": 6000,
+  "lbfgs_maxiter": 250,
+  "window_centers": 10000,
+  "max_restarts": 4,
+  "full_sizes_auto_run": false
+}

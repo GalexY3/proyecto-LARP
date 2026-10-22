@@ -1,0 +1,46 @@
+{
+  "version": "role_coverage_diagnostic_beliefs_v1",
+  "registered_before_training": true,
+  "scope": "Four technical runs on one Grid, two fixed curricula and two initializations; not MHU architecture evidence.",
+  "hypotheses_are": "marginal, overlapping diagnostic explanations; not an exhaustive exclusive partition",
+  "prior_scale": "ordinal, subjective; no numerical probabilities elicited",
+  "primary_condition": "BALANCED",
+  "threshold": 0.98,
+  "effect_threshold_accuracy_points": 0.10,
+  "hypotheses": {
+    "H-R1": {
+      "proposition": "Insufficient coverage of sources by role and their local configurations materially limits transfer under the fixed training budget.",
+      "prior_ordinal": "moderately_plausible",
+      "support_weak": "In both seeds, BALANCED minus UNIFORM UU accuracy >=0.10, with BALANCED train and SS >=0.98.",
+      "contradict_weak": "In both seeds, BALANCED minus UNIFORM UU accuracy <=-0.10, while UNIFORM train and SS >=0.98.",
+      "otherwise": "neutral_or_inconclusive; if both curricula reach ceiling, the contrast cannot identify the proposed cause",
+      "limit": "The treatment is a curriculum-construction package; marginal exposure, ordering of chosen contexts and relational statistics are not independently manipulated."
+    },
+    "H-R2": {
+      "proposition": "The learned selection rule transfers to new combinations of sources previously exposed in their relevant role in both curricula, but remains dependent on the support of source/context configurations. Shared swapped anchors additionally expose each SS source in both roles.",
+      "prior_ordinal": "moderately_plausible",
+      "support_weak": "BALANCED train and SS >=0.98 in both seeds, but BALANCED UU <0.98 in both seeds.",
+      "contradict_weak": "BALANCED train, SS and UU >=0.98 in both seeds.",
+      "otherwise": "neutral_or_inconclusive",
+      "limit": "Source novelty is accompanied by remaining geometric differences; equal queries and hops do not equal all path and mixing statistics. This pattern does not prove memorization of IDs."
+    },
+    "H-R3": {
+      "proposition": "The current GGNN/interface/optimization regime does not learn selection reproducibly even for new combinations of exposed sources under the fixed budget.",
+      "prior_ordinal": "moderately_plausible",
+      "support_weak": "BALANCED SS <0.98 in at least one seed; label a one-seed failure as initialization instability and a two-seed failure as reproducible transfer failure.",
+      "contradict_weak": "BALANCED train and SS >=0.98 in both seeds, regardless of UU.",
+      "otherwise": "neutral_or_inconclusive; a UU-only failure is represented by H-R2, while successful SS contradicts this narrower known-source transfer defect",
+      "limit": "Does not establish intrinsic incapacity, missing information or a unique architecture versus interface cause."
+    }
+  },
+  "update_policy": {
+    "eligibility": "All four expected runs COMPLETE, finite and exactly 250 updates; source/config/data identities unchanged.",
+    "ineligible": "No evidential update for resource limits, numerical failures or incomplete/missing panels; preserve all records.",
+    "method": "One ordinal update per hypothesis from the same joint experiment package; no Bayes factors or manufactured numerical posterior.",
+    "correlation": "Accuracy, BCE, Jacobians and flips belong to the same package; never multiply them as independent evidence.",
+    "replication": "Two initializations share one fixed panel pair and one geometry; no general population effect or confirmatory inference.",
+    "architecture_priors_H1_H6": "unchanged",
+    "architecture_C": "unchanged"
+  },
+  "stop_policy": "BALANCED is the primary candidate fixed before scores. Its two seeds must have finite final train, SS and UU >=0.98. Failure closes this intervention; no extension, seed/panel winner selection or extra training. Passing does not execute XOR or MHU automatically."
+}

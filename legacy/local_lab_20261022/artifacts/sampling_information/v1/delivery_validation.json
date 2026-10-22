@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checks": {
+    "historical_bytes_unchanged": true,
+    "all_freeze_inputs_unchanged": true,
+    "all_freeze_dependencies_unchanged": true,
+    "result_complete": true,
+    "180_designs_216_cells": true,
+    "no_new_fields_geometry_or_training": true,
+    "not_confirmatory_or_architecture_update": true,
+    "supervisor_complete_and_owned_pid": true,
+    "supervisor_bytes_unchanged": true,
+    "20_relevant_tests_passed": true,
+    "plot_provenance": true,
+    "local_links_resolve": true
+  },
+  "historical_file_count": 972,
+  "changed_historical_files": [],
+  "missing_local_links": [],
+  "scope": "Software/provenance delivery; no new scientific evidence",
+  "AB_update": {
+    "belief_revision": "Retrospective diagnosis only; numerical H1-H6/C unchanged",
+    "hypothesis_generation": "Operationalize B02/B06 and B03/B07; old data are not new confirmation",
+    "objective_revision": "None; continue delegated multichannel portfolio",
+    "decision": "Close complete diagnosis, prepare common-decoder pilot, no large run or 3D/multilayer"
+  },
+  "independent_agent_review": {
+    "mode": "Read-only math and result review; separate TEMP algebra tests",
+    "finding": "No blocker after real-CPython ownership/deadline and mark-hash corrections",
+    "scientific_rating": "1/3; known identities and old-data qualification"
+  },
+  "files": {
+    "LARP_INFORMATION_DIAGNOSTIC_RESULTS.md": "43b901edf18ca6c9c4a1fb1afad812c265bfb8dc93d78464e2ba705a61e07eac",
+    "docs/projects/MULTICHANNEL_INFORMATION_PILOT_NEXT.md": "de8b2fe9e6dc0f99e645bc900fcfe1493878191f5d94a754826ad6d736e94e70",
+    "docs/decisions/ADR_2026_10_09_INFORMATION_DIAGNOSTIC.md": "b71595e04fdbf38c9e680f4042c10117d4b13fc1a21798d1a5cecc5f7e74f4bf"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": "role_orientation_diagnostic_beliefs_v1",
+  "registered_before_training": true,
+  "parent_observation": "artifacts/role_coverage/v1/results.json",
+  "scope": "One Grid, one physical curriculum, two fresh initialization blocks; exploratory orientation contrast, not MHU evidence or population confirmation.",
+  "primary_condition": "B",
+  "threshold": 0.98,
+  "effect_threshold_accuracy_points": 0.10,
+  "primary_effect_endpoint": "UU",
+  "hypotheses": {
+    "H-R4": {
+      "proposition": "At the fixed 250-update budget, balanced role assignment produces a reproducible material advantage in UU selection accuracy over D8 with the same physical curriculum.",
+      "prior_ordinal": "moderately_plausible",
+      "support_weak": "B passes train, SS and UU >=0.98 in both seeds, and B minus D8 UU accuracy >=0.10 in both paired seeds.",
+      "contradict_weak": "D8 passes train, SS and UU >=0.98 in both seeds and B minus D8 UU accuracy <=0 in both paired seeds. This includes equal accuracy ceilings, and only contradicts the predicted accuracy advantage in this finite setup.",
+      "otherwise": "neutral_or_inconclusive",
+      "limit": "Orientation changes source-role support and marked-context diversity (12 vs 11 unique oriented triples). Train failure does not isolate transfer. Two initializations share one skeleton/geometry. A ceiling does not exclude loss, speed or other-task effects."
+    }
+  },
+  "update_policy": {
+    "eligibility": "Exactly all four registered B/D8 runs at seeds2103/2104 COMPLETE, finite, 250 updates; full train/SS/UU final measures and verified frozen identities.",
+    "ineligible": "No update on partial/resource/numerical/identity failure; retain records.",
+    "method": "One ordinal update from the joint package, no manufactured probabilities or Bayes factors.",
+    "H_R1_H_R3": "Historical registers unchanged; their prior operational tests are not redefined as B versus D8.",
+    "H1_H6_and_C": "unchanged",
+    "AUX_OLD": "known challenge, outside H-R4 update; independent prospective readiness guard for any later XOR proposal"
+  },
+  "stop_policy": "Exactly four runs, hard global120s, final checkpoint250 only. B primary gate train/SS/UU>=0.98 both seeds; XOR readiness additionally AUX_OLD>=0.98 both. No automatic fifth run, XOR, MHU, 3D or multilayer training."
+}

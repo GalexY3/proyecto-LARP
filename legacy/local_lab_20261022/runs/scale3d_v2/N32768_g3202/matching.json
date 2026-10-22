@@ -1,0 +1,59 @@
+{
+  "parameter_counts": {
+    "mhu": 4827415,
+    "local": 4827415,
+    "random": 4827415
+  },
+  "common_initialization": true,
+  "graph": {
+    "mhu": {
+      "nodes": 32768,
+      "edges": 524288,
+      "degree": 16,
+      "neighbor_radius_mean": 0.04900697725005717,
+      "neighbor_radius_p95": 0.05156864734400541,
+      "query_radius_mean": 0.04822067846153448,
+      "query_missing_type_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.00390625,
+        0.0390625
+      ]
+    },
+    "local": {
+      "nodes": 32768,
+      "edges": 524288,
+      "degree": 16,
+      "neighbor_radius_mean": 0.049092472968479406,
+      "neighbor_radius_p95": 0.05176716527577503,
+      "query_radius_mean": 0.0484414292032037,
+      "query_missing_type_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0390625
+      ]
+    },
+    "random": {
+      "nodes": 32768,
+      "edges": 524288,
+      "degree": 16,
+      "neighbor_radius_mean": 0.048504047303626105,
+      "neighbor_radius_p95": 0.05527976908131083,
+      "query_radius_mean": 0.048596761862416876,
+      "query_missing_type_fraction": [
+        0.0,
+        0.0078125,
+        0.0703125,
+        0.13671875,
+        0.21484375
+      ]
+    }
+  },
+  "batch": 2,
+  "evaluation_uses_new_worlds_and_queries": true,
+  "train_query_seed": 48201,
+  "test_query_seed": 48204
+}

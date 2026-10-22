@@ -1,0 +1,964 @@
+{
+  "version": "sampling_grid_supplement_v1",
+  "status": "COMPLETE",
+  "calibration": {
+    "measurements": [
+      {
+        "total_seconds": 0.2229419999930542,
+        "noncertificate_seconds": 0.01781049999408424,
+        "certificate_seconds": [
+          0.20513149999896996
+        ],
+        "actual_proposals": 1000,
+        "seconds_per_proposal_conservative_includes_wrapper": 1.781049999408424e-05,
+        "test_only": true,
+        "proposals": 1000,
+        "hashes": {
+          "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+          "labels": "d13219654026c9147c9616b988aff9b51ea2140adec9cc89e45724756d5ba37a",
+          "geometry": "59a989de9154dcf14a8896ae1771a837852418484f43f4d6bd316c96c24ef936"
+        },
+        "annealing": {
+          "status": "ADMITTED",
+          "attempts": [
+            {
+              "proposals": 1000,
+              "accepted": 401,
+              "minimum_energy": 0.028539066110967105,
+              "implementation": "cached_exact_statistics_incremental_swaps",
+              "attempt": 0,
+              "component_certificate": {
+                "A": {
+                  "restricted_S": [
+                    0.020637282680964108,
+                    0.010208717560922637,
+                    0.016435409137591662,
+                    0.03442015409283591,
+                    0.00681874957056221,
+                    0.033018196388037414
+                  ],
+                  "restricted_mean_S": 0.020256418238485657,
+                  "restricted_max_S": 0.03442015409283591,
+                  "mean_variance_ratio_R4_R5": 0.19282642844138204,
+                  "maximum_nonoptimized_S_over_N": 0.023091760286207214,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.018544722374049347,
+                    "quadrupole_real": -0.000316734090934058,
+                    "quadrupole_imag": -0.018542017351038335,
+                    "orientation_radians": -0.7939383152952916,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "B": {
+                  "restricted_S": [
+                    0.002287789948730949,
+                    0.022904355106056522,
+                    0.0381762426466618,
+                    0.005841936667149663,
+                    0.044281553205883985,
+                    0.026402336426536215
+                  ],
+                  "restricted_mean_S": 0.02331570233350319,
+                  "restricted_max_S": 0.044281553205883985,
+                  "mean_variance_ratio_R4_R5": 0.2511190643731193,
+                  "maximum_nonoptimized_S_over_N": 0.046608600220890785,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.09538431118473377,
+                    "quadrupole_real": -0.08420161273021227,
+                    "quadrupole_imag": 0.04481356082501681,
+                    "orientation_radians": 1.3262522799822671,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "C": {
+                  "restricted_S": [
+                    0.06486771761677337,
+                    0.0011080868106349616,
+                    0.06447039347540719,
+                    0.011167654659655715,
+                    0.0037846207904705426,
+                    0.02543367895222907
+                  ],
+                  "restricted_mean_S": 0.028472025384195142,
+                  "restricted_max_S": 0.06486771761677337,
+                  "mean_variance_ratio_R4_R5": 0.29072941493944304,
+                  "maximum_nonoptimized_S_over_N": 0.07698970860606662,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.088471534553959,
+                    "quadrupole_real": 0.05154731702352022,
+                    "quadrupole_imag": -0.07190331379017981,
+                    "orientation_radians": -0.474409724190672,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "D": {
+                  "restricted_S": [
+                    0.021806761915840675,
+                    0.0077659220800585784,
+                    0.046756810494310234,
+                    0.03683417139975781,
+                    0.005147084275039868,
+                    0.023080573050121997
+                  ],
+                  "restricted_mean_S": 0.02356522053585486,
+                  "restricted_max_S": 0.046756810494310234,
+                  "mean_variance_ratio_R4_R5": 0.26679553450513344,
+                  "maximum_nonoptimized_S_over_N": 0.09927414595449591,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.07923106105267655,
+                    "quadrupole_real": 0.07104969404180628,
+                    "quadrupole_imag": 0.035064255476177954,
+                    "orientation_radians": 0.22922401943906512,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "E": {
+                  "restricted_S": [
+                    0.010527746436909142,
+                    0.08613497270715244,
+                    0.0195041325560283,
+                    0.03582851793401511,
+                    0.06046259088237772,
+                    0.07005782386029724
+                  ],
+                  "restricted_mean_S": 0.04708596406279666,
+                  "restricted_max_S": 0.08613497270715244,
+                  "mean_variance_ratio_R4_R5": 0.25231356552212714,
+                  "maximum_nonoptimized_S_over_N": 0.16330611227248748,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.023060518749636934,
+                    "quadrupole_real": 0.009875301589460376,
+                    "quadrupole_imag": 0.020839048527213473,
+                    "orientation_radians": 0.5641292756688225,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "union": {
+                  "restricted_S": [
+                    1.0496318196910435e-31,
+                    7.996018165208595e-31,
+                    6.957999703082205e-32,
+                    9.756761098265738e-32,
+                    1.0126632092225417e-29,
+                    1.5879831651857193e-30
+                  ],
+                  "restricted_mean_S": 2.1310546439857633e-30,
+                  "restricted_max_S": 1.0126632092225417e-29,
+                  "mean_variance_ratio_R4_R5": 0.0328631961576481,
+                  "maximum_nonoptimized_S_over_N": 1.9418421650175517e-30,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.15568830067337722,
+                    "quadrupole_real": 0.07202871210454834,
+                    "quadrupole_imag": 0.13802431524598846,
+                    "orientation_radians": 0.5449088926694965,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                }
+              },
+              "admitted": true
+            }
+          ],
+          "minimum_energy": 0.028539066110967105,
+          "admitted": true,
+          "name": "grid_balanced",
+          "long_wave_mechanism_identifiable": false,
+          "scientific_blocker": null,
+          "homotypic_population": "all_unordered_physical_pairs_within_distance_3_not_graph_arcs"
+        },
+        "no_field_MSE": true
+      },
+      {
+        "total_seconds": 0.37380380000104196,
+        "noncertificate_seconds": 0.1681337999907555,
+        "certificate_seconds": [
+          0.20567000001028646
+        ],
+        "actual_proposals": 10000,
+        "seconds_per_proposal_conservative_includes_wrapper": 1.681337999907555e-05,
+        "test_only": true,
+        "proposals": 10000,
+        "hashes": {
+          "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+          "labels": "a402ca1dda77f8557ffb5e4592049aea07bba3d7fe63e063516159efde5aa90c",
+          "geometry": "51865294b21225993f4fd677305a103cdbee47def3513549c3f647bfa392f5d3"
+        },
+        "annealing": {
+          "status": "ADMITTED",
+          "attempts": [
+            {
+              "proposals": 10000,
+              "accepted": 3421,
+              "minimum_energy": 0.007695022624067618,
+              "implementation": "cached_exact_statistics_incremental_swaps",
+              "attempt": 0,
+              "component_certificate": {
+                "A": {
+                  "restricted_S": [
+                    0.001078503927373666,
+                    0.016923688435570853,
+                    0.007474268175641681,
+                    2.2554626518972635e-05,
+                    0.001075551464774852,
+                    0.0017094506135227094
+                  ],
+                  "restricted_mean_S": 0.004714002873900456,
+                  "restricted_max_S": 0.016923688435570853,
+                  "mean_variance_ratio_R4_R5": 0.18550376863960505,
+                  "maximum_nonoptimized_S_over_N": 0.023438587976615917,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.06901696626946685,
+                    "quadrupole_real": 0.058170146470865366,
+                    "quadrupole_imag": 0.037142639817315005,
+                    "orientation_radians": 0.2841302812919984,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "B": {
+                  "restricted_S": [
+                    0.007522234708587289,
+                    0.01609377755170767,
+                    0.009170106825094964,
+                    0.0005937886962461543,
+                    0.0030276966323762,
+                    0.0017164474558860805
+                  ],
+                  "restricted_mean_S": 0.00635400864498306,
+                  "restricted_max_S": 0.01609377755170767,
+                  "mean_variance_ratio_R4_R5": 0.22675900828022663,
+                  "maximum_nonoptimized_S_over_N": 0.0542505775331019,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.032823028613660446,
+                    "quadrupole_real": -0.032811315517864106,
+                    "quadrupole_imag": -0.0008768017793906638,
+                    "orientation_radians": -1.557438234494257,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "C": {
+                  "restricted_S": [
+                    0.005244693462650942,
+                    0.001542524817456559,
+                    0.0031347915761867273,
+                    0.006104354056198255,
+                    0.0008195307353063798,
+                    0.005617147224266211
+                  ],
+                  "restricted_mean_S": 0.003743840312010846,
+                  "restricted_max_S": 0.006104354056198255,
+                  "mean_variance_ratio_R4_R5": 0.2503085010133066,
+                  "maximum_nonoptimized_S_over_N": 0.054738102835500124,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.05601562495861864,
+                    "quadrupole_real": -0.05152228747078558,
+                    "quadrupole_imag": -0.021981904678220025,
+                    "orientation_radians": -1.369163286731738,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "D": {
+                  "restricted_S": [
+                    0.006681355253959225,
+                    0.028103736149171468,
+                    0.01815236008143577,
+                    0.0002856303214971097,
+                    0.010719893275124128,
+                    0.017244651700109387
+                  ],
+                  "restricted_mean_S": 0.013531271130216183,
+                  "restricted_max_S": 0.028103736149171468,
+                  "mean_variance_ratio_R4_R5": 0.25909597864849854,
+                  "maximum_nonoptimized_S_over_N": 0.0884223969879649,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.09967141535150818,
+                    "quadrupole_real": 0.0024899934687353,
+                    "quadrupole_imag": -0.09964030796168043,
+                    "orientation_radians": -0.7729058528682656,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "E": {
+                  "restricted_S": [
+                    0.005963495515314489,
+                    0.02128346999470012,
+                    0.007883691494870115,
+                    0.0042056907519047405,
+                    0.01123429444853249,
+                    0.010221298750043316
+                  ],
+                  "restricted_mean_S": 0.010131990159227545,
+                  "restricted_max_S": 0.02128346999470012,
+                  "mean_variance_ratio_R4_R5": 0.2139280359262705,
+                  "maximum_nonoptimized_S_over_N": 0.12456747404844291,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.07976504464309397,
+                    "quadrupole_real": 0.04651272719855511,
+                    "quadrupole_imag": -0.06479991169336241,
+                    "orientation_radians": -0.4741151467608682,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "union": {
+                  "restricted_S": [
+                    1.0496318196910435e-31,
+                    7.996018165208595e-31,
+                    6.957999703082205e-32,
+                    9.756761098265738e-32,
+                    1.0126632092225417e-29,
+                    1.5879831651857193e-30
+                  ],
+                  "restricted_mean_S": 2.1310546439857633e-30,
+                  "restricted_max_S": 1.0126632092225417e-29,
+                  "mean_variance_ratio_R4_R5": 0.0328631961576481,
+                  "maximum_nonoptimized_S_over_N": 1.9418421650175517e-30,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.15568830067337722,
+                    "quadrupole_real": 0.07202871210454834,
+                    "quadrupole_imag": 0.13802431524598846,
+                    "orientation_radians": 0.5449088926694965,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                }
+              },
+              "admitted": true
+            }
+          ],
+          "minimum_energy": 0.007695022624067618,
+          "admitted": true,
+          "name": "grid_balanced",
+          "long_wave_mechanism_identifiable": false,
+          "scientific_blocker": null,
+          "homotypic_population": "all_unordered_physical_pairs_within_distance_3_not_graph_arcs"
+        },
+        "no_field_MSE": true
+      }
+    ],
+    "grid_create_seconds": 0.0005441999965114519,
+    "decision": {
+      "seconds_per_proposal_max_measured": 1.781049999408424e-05,
+      "certificate_seconds_max_measured": 0.20567000001028646,
+      "grid_create_seconds_measured": 0.0005441999965114519,
+      "runtime_multiplier": 2.0,
+      "worst_case_proposals": 3000000,
+      "worst_case_certificates": 30,
+      "estimated_conservative_construction_seconds": 119.20646516510169,
+      "budget_seconds": 180.0,
+      "eligible": true,
+      "can_interrupt_mid_attempt": false
+    },
+    "no_field_MSE": true,
+    "architecture_evidence": false
+  },
+  "construction": {
+    "status": "COMPLETE",
+    "records": [
+      {
+        "family": "grid_balanced",
+        "geometry_seed": 1101,
+        "hashes": {
+          "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+          "labels": "c94defd54212d60879da41769dfb4d5779e915f65656bab212e6f9d217d61fa8",
+          "geometry": "10bd4225de4d9554264f9b471bd4ea3e1789ff1e6dcdf22a19f85708bd01c3ee"
+        },
+        "path": "C:\\Programación\\LARP\\artifacts\\sampling_grid\\v1\\geometries\\grid_balanced_N400_g1101.npz",
+        "annealing": {
+          "status": "ADMITTED",
+          "attempts": [
+            {
+              "proposals": 100000,
+              "accepted": 34573,
+              "minimum_energy": 0.0028151698100375125,
+              "implementation": "cached_exact_statistics_incremental_swaps",
+              "attempt": 0,
+              "component_certificate": {
+                "A": {
+                  "restricted_S": [
+                    0.002570988885468722,
+                    0.0005683629342527963,
+                    6.832250828227248e-06,
+                    0.0005913917387498694,
+                    0.0023433497622705976,
+                    0.00023035259977776537
+                  ],
+                  "restricted_mean_S": 0.001051879695224663,
+                  "restricted_max_S": 0.002570988885468722,
+                  "mean_variance_ratio_R4_R5": 0.15609005520372826,
+                  "maximum_nonoptimized_S_over_N": 0.023784334576717112,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.07632518610162399,
+                    "quadrupole_real": -0.07630568140364287,
+                    "quadrupole_imag": -0.0017254040029181176,
+                    "orientation_radians": -1.5594923845432658,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "B": {
+                  "restricted_S": [
+                    0.0018588041001606985,
+                    0.002716487757455713,
+                    0.0005040535085243062,
+                    0.00020446647844566264,
+                    0.0044937177794132435,
+                    0.008928317926583159
+                  ],
+                  "restricted_mean_S": 0.0031176412584304636,
+                  "restricted_max_S": 0.008928317926583159,
+                  "mean_variance_ratio_R4_R5": 0.21924566597345663,
+                  "maximum_nonoptimized_S_over_N": 0.06340192854048142,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.07677557695399022,
+                    "quadrupole_real": 0.0767510757419595,
+                    "quadrupole_imag": 0.0019394816498412965,
+                    "orientation_radians": 0.01263219416403057,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "C": {
+                  "restricted_S": [
+                    0.004111547268457757,
+                    7.74136594175771e-06,
+                    0.002396798876668147,
+                    0.0024181710612662657,
+                    0.0011325636213684873,
+                    0.005617147224266207
+                  ],
+                  "restricted_mean_S": 0.0026139949029947702,
+                  "restricted_max_S": 0.005617147224266207,
+                  "mean_variance_ratio_R4_R5": 0.22050961061821528,
+                  "maximum_nonoptimized_S_over_N": 0.0726519864773515,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.13400306682306562,
+                    "quadrupole_real": 0.11945827478307325,
+                    "quadrupole_imag": -0.06071690459697991,
+                    "orientation_radians": -0.23512034191763828,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "D": {
+                  "restricted_S": [
+                    0.0031764933617450465,
+                    0.0036657505649032667,
+                    0.0021954777657904427,
+                    0.006556613605151232,
+                    0.001540286525061021,
+                    0.008227657325161945
+                  ],
+                  "restricted_mean_S": 0.004227046524635492,
+                  "restricted_max_S": 0.008227657325161945,
+                  "mean_variance_ratio_R4_R5": 0.22520681589576558,
+                  "maximum_nonoptimized_S_over_N": 0.08430675368365251,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.012233792570027137,
+                    "quadrupole_real": 0.0019456060619889707,
+                    "quadrupole_imag": 0.012078091641397781,
+                    "orientation_radians": 0.7055413942296435,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "E": {
+                  "restricted_S": [
+                    0.0003549842322387773,
+                    0.01003749509904843,
+                    0.00039278295312421285,
+                    3.721614806049265e-05,
+                    1.743759629647549e-31,
+                    0.007569241580941115
+                  ],
+                  "restricted_mean_S": 0.0030652866689021715,
+                  "restricted_max_S": 0.01003749509904843,
+                  "mean_variance_ratio_R4_R5": 0.2662618977295197,
+                  "maximum_nonoptimized_S_over_N": 0.12459117600130876,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.11792989597932563,
+                    "quadrupole_real": -0.09020646861189467,
+                    "quadrupole_imag": 0.07596218392243488,
+                    "orientation_radians": 1.2208536476328817,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "union": {
+                  "restricted_S": [
+                    1.0496318196910435e-31,
+                    7.996018165208595e-31,
+                    6.957999703082205e-32,
+                    9.756761098265738e-32,
+                    1.0126632092225417e-29,
+                    1.5879831651857193e-30
+                  ],
+                  "restricted_mean_S": 2.1310546439857633e-30,
+                  "restricted_max_S": 1.0126632092225417e-29,
+                  "mean_variance_ratio_R4_R5": 0.0328631961576481,
+                  "maximum_nonoptimized_S_over_N": 1.9418421650175517e-30,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.15568830067337722,
+                    "quadrupole_real": 0.07202871210454834,
+                    "quadrupole_imag": 0.13802431524598846,
+                    "orientation_radians": 0.5449088926694965,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                }
+              },
+              "admitted": true
+            }
+          ],
+          "minimum_energy": 0.0028151698100375125,
+          "admitted": true,
+          "name": "grid_balanced",
+          "long_wave_mechanism_identifiable": false,
+          "scientific_blocker": null,
+          "homotypic_population": "all_unordered_physical_pairs_within_distance_3_not_graph_arcs"
+        },
+        "timing": {
+          "total_seconds": 1.8510187000065343,
+          "noncertificate_seconds": 1.6492920000018785,
+          "certificate_seconds": [
+            0.20172670000465587
+          ],
+          "actual_proposals": 100000,
+          "seconds_per_proposal_conservative_includes_wrapper": 1.6492920000018784e-05,
+          "test_only": false
+        },
+        "coordinate_replication": "same_grid_coordinates_different_mark_assignments"
+      },
+      {
+        "family": "grid_balanced",
+        "geometry_seed": 1102,
+        "hashes": {
+          "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+          "labels": "c50e42adaf1d5442215b242a7d45042cec8ec74aebdace324b18e657b6577bda",
+          "geometry": "b35be248897adcd0376c39dd3d8c5ce0c922b5f03ef13ea70cac77d032606fe1"
+        },
+        "path": "C:\\Programación\\LARP\\artifacts\\sampling_grid\\v1\\geometries\\grid_balanced_N400_g1102.npz",
+        "annealing": {
+          "status": "ADMITTED",
+          "attempts": [
+            {
+              "proposals": 100000,
+              "accepted": 34394,
+              "minimum_energy": 0.003769755999804983,
+              "implementation": "cached_exact_statistics_incremental_swaps",
+              "attempt": 0,
+              "component_certificate": {
+                "A": {
+                  "restricted_S": [
+                    0.003007255627664943,
+                    0.0003355115125382588,
+                    0.0011626894063264505,
+                    0.0035947980002195724,
+                    0.0046059902147471314,
+                    0.0008950799616583622
+                  ],
+                  "restricted_mean_S": 0.00226688745385912,
+                  "restricted_max_S": 0.0046059902147471314,
+                  "mean_variance_ratio_R4_R5": 0.1678023824634563,
+                  "maximum_nonoptimized_S_over_N": 0.01572804641945833,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.05070112206262161,
+                    "quadrupole_real": 0.039232348540750354,
+                    "quadrupole_imag": 0.032115831086645404,
+                    "orientation_radians": 0.34299173679553974,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "B": {
+                  "restricted_S": [
+                    0.0011127680473185556,
+                    0.002916739402472256,
+                    0.004653773536707498,
+                    0.0032092736596757024,
+                    0.010084795132527672,
+                    0.0005965069560023434
+                  ],
+                  "restricted_mean_S": 0.003762309455784004,
+                  "restricted_max_S": 0.010084795132527672,
+                  "mean_variance_ratio_R4_R5": 0.19844740155830737,
+                  "maximum_nonoptimized_S_over_N": 0.04558757423215256,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.05961797128246808,
+                    "quadrupole_real": -0.019675619665797506,
+                    "quadrupole_imag": -0.05627763757127756,
+                    "orientation_radians": -0.9535649581228701,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "C": {
+                  "restricted_S": [
+                    0.0050963848422379285,
+                    0.004141392991434944,
+                    0.0007077041783690821,
+                    0.00195775455533111,
+                    0.0014455965074302087,
+                    0.003784620790470599
+                  ],
+                  "restricted_mean_S": 0.0028555756442123124,
+                  "restricted_max_S": 0.0050963848422379285,
+                  "mean_variance_ratio_R4_R5": 0.19872777698941557,
+                  "maximum_nonoptimized_S_over_N": 0.1046712802768166,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.1295255894694287,
+                    "quadrupole_real": -0.11643642167247278,
+                    "quadrupole_imag": 0.05674009195897631,
+                    "orientation_radians": 1.3440761187269779,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "D": {
+                  "restricted_S": [
+                    0.0028829203362067853,
+                    0.00251979928641275,
+                    0.006381808060674953,
+                    0.0016291259838562158,
+                    0.015015528100075764,
+                    0.004032522475023108
+                  ],
+                  "restricted_mean_S": 0.0054102840403749295,
+                  "restricted_max_S": 0.015015528100075764,
+                  "mean_variance_ratio_R4_R5": 0.27557273540844784,
+                  "maximum_nonoptimized_S_over_N": 0.0810059718859419,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.13929774756484983,
+                    "quadrupole_real": 0.13549662502858062,
+                    "quadrupole_imag": -0.03231914421058904,
+                    "orientation_radians": -0.11707426638075424,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "E": {
+                  "restricted_S": [
+                    0.001599212007733038,
+                    0.0016390614706129664,
+                    0.0005237892658651202,
+                    0.009047860294797708,
+                    0.004291118639715116,
+                    0.010221298750043328
+                  ],
+                  "restricted_mean_S": 0.004553723404794547,
+                  "restricted_max_S": 0.010221298750043328,
+                  "mean_variance_ratio_R4_R5": 0.25041706994354107,
+                  "maximum_nonoptimized_S_over_N": 0.18202259995974296,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.030308927509601742,
+                    "quadrupole_real": 0.014419958528269099,
+                    "quadrupole_imag": 0.026658879999454075,
+                    "orientation_radians": 0.5374807860790325,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "union": {
+                  "restricted_S": [
+                    1.0496318196910435e-31,
+                    7.996018165208595e-31,
+                    6.957999703082205e-32,
+                    9.756761098265738e-32,
+                    1.0126632092225417e-29,
+                    1.5879831651857193e-30
+                  ],
+                  "restricted_mean_S": 2.1310546439857633e-30,
+                  "restricted_max_S": 1.0126632092225417e-29,
+                  "mean_variance_ratio_R4_R5": 0.0328631961576481,
+                  "maximum_nonoptimized_S_over_N": 1.9418421650175517e-30,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.15568830067337722,
+                    "quadrupole_real": 0.07202871210454834,
+                    "quadrupole_imag": 0.13802431524598846,
+                    "orientation_radians": 0.5449088926694965,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                }
+              },
+              "admitted": true
+            }
+          ],
+          "minimum_energy": 0.003769755999804983,
+          "admitted": true,
+          "name": "grid_balanced",
+          "long_wave_mechanism_identifiable": false,
+          "scientific_blocker": null,
+          "homotypic_population": "all_unordered_physical_pairs_within_distance_3_not_graph_arcs"
+        },
+        "timing": {
+          "total_seconds": 1.8213427000009688,
+          "noncertificate_seconds": 1.6188015000079758,
+          "certificate_seconds": [
+            0.20254119999299292
+          ],
+          "actual_proposals": 100000,
+          "seconds_per_proposal_conservative_includes_wrapper": 1.618801500007976e-05,
+          "test_only": false
+        },
+        "coordinate_replication": "same_grid_coordinates_different_mark_assignments"
+      },
+      {
+        "family": "grid_balanced",
+        "geometry_seed": 1103,
+        "hashes": {
+          "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+          "labels": "46eb961639bfcbadd789abb18b9a5ab0b7268b66f6fce76aaab1230d5c231456",
+          "geometry": "d881547622621a43a472eb1b5f740656040275f1c82ce8cd2b1a6a9dfcae5775"
+        },
+        "path": "C:\\Programación\\LARP\\artifacts\\sampling_grid\\v1\\geometries\\grid_balanced_N400_g1103.npz",
+        "annealing": {
+          "status": "ADMITTED",
+          "attempts": [
+            {
+              "proposals": 100000,
+              "accepted": 34301,
+              "minimum_energy": 0.0034443851211173673,
+              "implementation": "cached_exact_statistics_incremental_swaps",
+              "attempt": 0,
+              "component_certificate": {
+                "A": {
+                  "restricted_S": [
+                    0.0027813115591922327,
+                    0.0039793929512993926,
+                    0.0002965013020245272,
+                    0.0003994331159335587,
+                    0.0008143706518643938,
+                    0.004475399808291848
+                  ],
+                  "restricted_mean_S": 0.002124401564767659,
+                  "restricted_max_S": 0.004475399808291848,
+                  "mean_variance_ratio_R4_R5": 0.21553055133601307,
+                  "maximum_nonoptimized_S_over_N": 0.029889035719238868,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.11629745437600732,
+                    "quadrupole_real": -0.01536231092948414,
+                    "quadrupole_imag": -0.11527834704421015,
+                    "orientation_radians": -0.8516392599174195,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "B": {
+                  "restricted_S": [
+                    0.00042215200715149236,
+                    0.0001520780510227967,
+                    0.001404329274960211,
+                    0.0006324880102953213,
+                    0.0026224983529809847,
+                    0.0024677263824346503
+                  ],
+                  "restricted_mean_S": 0.0012835453464742428,
+                  "restricted_max_S": 0.0026224983529809847,
+                  "mean_variance_ratio_R4_R5": 0.20297269948856855,
+                  "maximum_nonoptimized_S_over_N": 0.04861580949411711,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.12073870009746242,
+                    "quadrupole_real": -0.054695025524784946,
+                    "quadrupole_imag": 0.10763962041956528,
+                    "orientation_radians": 1.0204637696551568,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "C": {
+                  "restricted_S": [
+                    0.009709352334108814,
+                    0.0023472193382060467,
+                    0.00749502282893407,
+                    0.0016834344996428283,
+                    0.0003130328860618139,
+                    0.0014455965074302531
+                  ],
+                  "restricted_mean_S": 0.003832276399063972,
+                  "restricted_max_S": 0.009709352334108814,
+                  "mean_variance_ratio_R4_R5": 0.23262782224343526,
+                  "maximum_nonoptimized_S_over_N": 0.07287503032738307,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.07436081825057589,
+                    "quadrupole_real": -0.03970688232538467,
+                    "quadrupole_imag": 0.062872050920049,
+                    "orientation_radians": 1.0670461667304973,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "D": {
+                  "restricted_S": [
+                    0.007414899074198916,
+                    0.007988948726305584,
+                    0.0016090422502749201,
+                    0.0022908654240705035,
+                    0.0026548483250777503,
+                    0.007639320225002077
+                  ],
+                  "restricted_mean_S": 0.004932987337488292,
+                  "restricted_max_S": 0.007988948726305584,
+                  "mean_variance_ratio_R4_R5": 0.20004559339182154,
+                  "maximum_nonoptimized_S_over_N": 0.09281378158616638,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.0762399033635676,
+                    "quadrupole_real": 0.07509754346109834,
+                    "quadrupole_imag": -0.01314845355905292,
+                    "orientation_radians": -0.08666407079191697,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "E": {
+                  "restricted_S": [
+                    0.0019208808349854723,
+                    0.005280170871140945,
+                    0.00997874627572577,
+                    0.008582237279430322,
+                    0.0006260657721237498,
+                    0.0039041887133497676
+                  ],
+                  "restricted_mean_S": 0.005048714957792671,
+                  "restricted_max_S": 0.00997874627572577,
+                  "mean_variance_ratio_R4_R5": 0.22667678424161047,
+                  "maximum_nonoptimized_S_over_N": 0.16378840271517814,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.038610001959030804,
+                    "quadrupole_real": -0.01967445805837001,
+                    "quadrupole_imag": -0.03322119732017198,
+                    "orientation_radians": -1.0527400345866655,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                },
+                "union": {
+                  "restricted_S": [
+                    1.0496318196910435e-31,
+                    7.996018165208595e-31,
+                    6.957999703082205e-32,
+                    9.756761098265738e-32,
+                    1.0126632092225417e-29,
+                    1.5879831651857193e-30
+                  ],
+                  "restricted_mean_S": 2.1310546439857633e-30,
+                  "restricted_max_S": 1.0126632092225417e-29,
+                  "mean_variance_ratio_R4_R5": 0.0328631961576481,
+                  "maximum_nonoptimized_S_over_N": 1.9418421650175517e-30,
+                  "passed": true,
+                  "required": true,
+                  "anisotropy": {
+                    "quadrupole_magnitude": 0.15568830067337722,
+                    "quadrupole_real": 0.07202871210454834,
+                    "quadrupole_imag": 0.13802431524598846,
+                    "orientation_radians": 0.5449088926694965,
+                    "flag": false,
+                    "flag_is_exclusion": false
+                  }
+                }
+              },
+              "admitted": true
+            }
+          ],
+          "minimum_energy": 0.0034443851211173673,
+          "admitted": true,
+          "name": "grid_balanced",
+          "long_wave_mechanism_identifiable": false,
+          "scientific_blocker": null,
+          "homotypic_population": "all_unordered_physical_pairs_within_distance_3_not_graph_arcs"
+        },
+        "timing": {
+          "total_seconds": 1.8329702000046382,
+          "noncertificate_seconds": 1.6296366000024136,
+          "certificate_seconds": [
+            0.20333360000222456
+          ],
+          "actual_proposals": 100000,
+          "seconds_per_proposal_conservative_includes_wrapper": 1.6296366000024136e-05,
+          "test_only": false
+        },
+        "coordinate_replication": "same_grid_coordinates_different_mark_assignments"
+      }
+    ],
+    "seconds": 5.518153600001824,
+    "budget_exceeded": false,
+    "original_budget_unchanged": true,
+    "no_field_MSE": true,
+    "spatial_coordinate_realizations": 1,
+    "mark_realizations": 3
+  },
+  "evaluation_path": "C:\\Programación\\LARP\\artifacts\\sampling_grid\\v1\\evaluation.json",
+  "completed_cells": 576,
+  "reused_aligned_cells": 216,
+  "new_cells": 360,
+  "architecture_evidence": false,
+  "beliefs_updated": false,
+  "total_seconds": 9.77032290000352,
+  "local_identity_hash": "1017dcc7d3e6c14df6d1d29572d3cafdffdcb13b1d2e940e9590aa53fabcfb31"
+}

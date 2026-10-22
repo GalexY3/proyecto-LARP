@@ -1,0 +1,382 @@
+{
+  "status": "PASS",
+  "reviewer": "independent_subagent_three_d_review",
+  "date_UTC": "2026-10-08T23:11:58.724888+02:00",
+  "scope": "Pretraining static and pure reconstruction audit; no learning execution or confirmation claim.",
+  "prepared_manifest_sha256": "8525b1ced721c3bbc2959a587aa4db04594fc63c376783303bb7824d0ecb5281",
+  "frozen_identity_hash": "519fa71fe689bf7a533535fcb3aa4a9ddf7413dba45a04903392d262462153ee",
+  "protocol_hash": "9515a880b5fc40cad0aeb0433a33950feeedf77ed292e896a47f0392eb692f9c",
+  "checks": [
+    {
+      "id": "capsule_prepared_no_execution",
+      "status": "PASS",
+      "evidence": "Frozen prepared capsule exists; no execution marker or learning result present at audit start."
+    },
+    {
+      "id": "frozen_config_identity_hashes",
+      "status": "PASS",
+      "evidence": {
+        "files_verified": 26,
+        "identity": "519fa71fe689bf7a533535fcb3aa4a9ddf7413dba45a04903392d262462153ee",
+        "protocol": "9515a880b5fc40cad0aeb0433a33950feeedf77ed292e896a47f0392eb692f9c"
+      }
+    },
+    {
+      "id": "guarded_prepared_reconstruction",
+      "status": "PASS",
+      "evidence": "Reconstructed geometry, panel, calendars, input/target/case hashes and fresh initialization hashes using validate_prepared with AdamW/forward/measure/predictions patched to raise."
+    },
+    {
+      "id": "literal_panel_and_multiplicities",
+      "status": "PASS",
+      "evidence": "Only slot11 differs; D8 slots10 and11 retain the same oriented triple. B12/48 unique triples/cases; D8 11/44, while both contain12 slots/48 rows."
+    },
+    {
+      "id": "admissibility_pool_and_geometry",
+      "status": "PASS",
+      "evidence": "All fixed train, SS, UU and AUX triples are geometrically admissible; 2086 ordered candidates and old coordinates/edges/ports hashes match."
+    },
+    {
+      "id": "calendar_mapping_2103",
+      "status": "PASS",
+      "evidence": {
+        "mapped_to": 2101,
+        "visits": [
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          20,
+          21,
+          20
+        ]
+      }
+    },
+    {
+      "id": "independent_weighted_matching_2103",
+      "status": "PASS",
+      "evidence": {
+        "weighted_I": [
+          4,
+          3364
+        ],
+        "manipulated_visits_B": [
+          [
+            21,
+            20
+          ],
+          [
+            20,
+            21
+          ]
+        ],
+        "manipulated_visits_D8": [
+          [
+            41,
+            0
+          ],
+          [
+            0,
+            41
+          ]
+        ]
+      }
+    },
+    {
+      "id": "calendar_mapping_2104",
+      "status": "PASS",
+      "evidence": {
+        "mapped_to": 2102,
+        "visits": [
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          20,
+          21,
+          21,
+          21,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "id": "independent_weighted_matching_2104",
+      "status": "PASS",
+      "evidence": {
+        "weighted_I": [
+          4,
+          3364
+        ],
+        "manipulated_visits_B": [
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            20
+          ]
+        ],
+        "manipulated_visits_D8": [
+          [
+            41,
+            0
+          ],
+          [
+            0,
+            41
+          ]
+        ]
+      }
+    },
+    {
+      "id": "independent_SS_common_novel_holdout",
+      "status": "PASS",
+      "evidence": {
+        "common_both_role_sources": [
+          4,
+          8,
+          13,
+          19,
+          35,
+          39,
+          46,
+          49,
+          57,
+          69
+        ],
+        "novel_SS_pairs": [
+          [
+            13,
+            35
+          ],
+          [
+            35,
+            57
+          ],
+          [
+            46,
+            57
+          ],
+          [
+            49,
+            69
+          ]
+        ],
+        "query46_seen_as_source": true
+      }
+    },
+    {
+      "id": "independent_UU_holdout_query_hops",
+      "status": "PASS",
+      "evidence": "U excluded from every active training role and validation queries; same ordered query/hops in SS-UU. Motifs/degrees across strata need not match."
+    },
+    {
+      "id": "independent_case_order_B",
+      "status": "PASS",
+      "evidence": {
+        "case_count": 48,
+        "case_hash": "c5e016d2969e2e1d084e3483d57f130ab7afbe17afe218d74d0241f53eff25b7",
+        "COORDS_OFF": true,
+        "target": "b0"
+      }
+    },
+    {
+      "id": "independent_case_order_D8",
+      "status": "PASS",
+      "evidence": {
+        "case_count": 48,
+        "case_hash": "8de3fba0d2b269b2b423709cd10fbde2afba4f009789ef56cf0b1cecef0ebda8",
+        "COORDS_OFF": true,
+        "target": "b0"
+      }
+    },
+    {
+      "id": "independent_case_order_SS",
+      "status": "PASS",
+      "evidence": {
+        "case_count": 16,
+        "case_hash": "96ec779aeb1ae096a2e53fc0422353a0e52bd78102f7091daaf3df5a64615955",
+        "COORDS_OFF": true,
+        "target": "b0"
+      }
+    },
+    {
+      "id": "independent_case_order_UU",
+      "status": "PASS",
+      "evidence": {
+        "case_count": 16,
+        "case_hash": "4a51694e228fa5d77de8d99506cc69deee86856b1046f004a5a0880d80c96b86",
+        "COORDS_OFF": true,
+        "target": "b0"
+      }
+    },
+    {
+      "id": "independent_case_order_AUX_OLD",
+      "status": "PASS",
+      "evidence": {
+        "case_count": 16,
+        "case_hash": "ce70b49a5f0c7172c25e38374040b81aaa26c5a2b833cb4486dbeb200aaf29dc",
+        "COORDS_OFF": true,
+        "target": "b0"
+      }
+    },
+    {
+      "id": "physical_quartet_distribution_slot_0",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_1",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_2",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_3",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_4",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_5",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_6",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_7",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_8",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_9",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_10",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "physical_quartet_distribution_slot_11",
+      "status": "PASS",
+      "evidence": "Physical bit input distributions equal after erasing role marks; slot11 requires mixed-pattern swap."
+    },
+    {
+      "id": "fresh_initialization_blocks",
+      "status": "PASS",
+      "evidence": {
+        "2103": "9c1c51182bf52f664488927479e77a569b941b0145c2ae38a5765c7848cdc507",
+        "2104": "f51437c321e41aeb41cc6c56ecd11c1b87bd93ff0629b070aa57c19641e21b2b"
+      }
+    },
+    {
+      "id": "hypothesis_scope_frozen",
+      "status": "PASS",
+      "evidence": "Only new H-R4 with preregistered UU threshold0.10; historical registers excluded."
+    },
+    {
+      "id": "historical_snapshot_independently_verified",
+      "status": "PASS",
+      "evidence": "391 historical byte hashes independently reread; snapshot itself remains untouched."
+    },
+    {
+      "id": "strict_four_run_aggregate",
+      "status": "PASS",
+      "evidence": "Synthetic rule check: exactly four identities required; absent or duplicate registered run rejected."
+    },
+    {
+      "id": "gate98_and_AUX_separation",
+      "status": "PASS",
+      "evidence": "Synthetic perfect rows pass both technical gate and prospective AUX readiness."
+    },
+    {
+      "id": "AUX61_failure_does_not_change_primary_or_HR4",
+      "status": "PASS",
+      "evidence": "Synthetic query61 error blocks readiness only; technical B gate and H-R4 package unchanged."
+    },
+    {
+      "id": "HR4_ceiling_rule",
+      "status": "PASS",
+      "evidence": "Equal accuracy ceiling weakly contradicts material UU advantage only; no historical update."
+    },
+    {
+      "id": "HR4_UU_advantage_rule",
+      "status": "PASS",
+      "evidence": "Synthetic paired UU advantage0.25 with B gate yields registered weak support."
+    },
+    {
+      "id": "HR4_partial_package_ineligible",
+      "status": "PASS",
+      "evidence": "Synthetic missing run produces no ordinal update."
+    },
+    {
+      "id": "effective_final_panel_binding_static",
+      "status": "PASS",
+      "evidence": "Static call path binds final train to current B/D8 and validation to frozen common batches. Frozen measure enumerates every batch case/target and has no alternate final-panel selector."
+    },
+    {
+      "id": "hard_global_deadline_static",
+      "status": "PASS",
+      "evidence": "120s counted from supervisor entry before worker imports; includes reconstruction, all four runs and final measures; direct unbounded execution rejected, timeout kills worker and no retry marker can be overwritten. Pre-registration preparation is separately measured and precedes execution command."
+    },
+    {
+      "id": "frozen_capsule_preserved",
+      "status": "PASS",
+      "evidence": "Capsule and all frozen files remain byte-identical after guarded audit; no forward/optimizer/measurement called."
+    }
+  ],
+  "check_count": 40,
+  "blockers": [],
+  "limitations": [
+    {
+      "id": "AGGREGATE_ACCEPTANCE_NOT_FULL_ROW_IDENTITY",
+      "description": "measurement_valid verifies size, finitude, accuracy consistency and diagnostics but does not compare each case/target to a reconstructed expected batch. This is not an effective-path blocker: validate_prepared rebuilds and hashes batches and frozen measure uses those exact batches. Parent committed to independently compare every saved final row/target to reconstructed datasets and checkpoints after execution. Synthetic acceptance metadata alone is insufficient for the posterior audit."
+    },
+    {
+      "id": "PREPARATION_BUDGET_BOUNDARY",
+      "description": "120s applies from entry into supervised execution, including fresh reconstruction/imports and final measurements. The prior freeze/pretraining review are separate operations; preparation reports2.4968211s. No additional training budget is implied."
+    },
+    {
+      "id": "NO_EMPIRICAL_SUPERVISOR_LAUNCH",
+      "description": "External hard-kill logic reviewed statically; this audit did not launch the supervisor or run a forward."
+    }
+  ],
+  "optimizer_constructions": 0,
+  "forwards_performed": 0,
+  "model_measurements": 0,
+  "synthetic_rule_fixtures": "In memory only; never saved as experimental/model results.",
+  "audit_internal_seconds_including_imports": 2.751652500000091,
+  "historical_file_count": 391,
+  "capsule_modified": false,
+  "training_authorization": "Root execution signal still required; this report supplies the requested pretraining review, not an autonomous launch.",
+  "UTC": "2026-10-08T21:12:23.495152+00:00"
+}

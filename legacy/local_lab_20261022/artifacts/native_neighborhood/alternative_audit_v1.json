@@ -1,0 +1,2152 @@
+{
+  "status": "PASS",
+  "references": [
+    {
+      "id": "g1101",
+      "checks": {
+        "diagonal_false": true,
+        "only_cross_type_edges": true,
+        "all_origin_destination_scalar_predicates_match": true,
+        "frozen_five_counts": true,
+        "complete_candidate_list_matches_alternative_enumerator": true,
+        "counts_match": true,
+        "full_mass_matches": true,
+        "all_candidate_checks": true
+      },
+      "candidates": [
+        {
+          "operator": "swap2",
+          "nodes": [
+            1,
+            173
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.359632430732233e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            15,
+            215
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.424616477180734e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            21,
+            198
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.464862061823396e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            22,
+            272
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.488454301096681e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            40,
+            175
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.8039016381219426e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            44,
+            120
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2290168882600483e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            51,
+            215
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.359632430732233e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            71,
+            125
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.6653345369377348e-16
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            82,
+            294
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.1843304115188857e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            85,
+            180
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3994695119711196e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            99,
+            322
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.7470027081099033e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            121,
+            253
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.42115225038242e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            144,
+            180
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.212363542890671e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            153,
+            372
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.471800955727304e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            171,
+            177
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2129186544029835e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            193,
+            233
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.493627692170321e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            202,
+            329
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2601031329495527e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            238,
+            357
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.4210134725043417e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            256,
+            306
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.359979375427429e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            279,
+            324
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.359285486037038e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            279,
+            398
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.359979375427429e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            280,
+            345
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.449218771185315e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            312,
+            374
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.420978778034822e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            324,
+            398
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3972490659218693e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            15,
+            51,
+            215
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.359632430732233e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            15,
+            62,
+            215
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.119243586700236e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            15,
+            285,
+            215
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.4217073618947325e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            21,
+            198,
+            393
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.395306175628775e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            76,
+            166,
+            97
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.1948428357833052e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            85,
+            180,
+            144
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.212363542890671e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            151,
+            307,
+            297
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.488076577047195e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            155,
+            225,
+            235
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.1953285583565787e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            193,
+            233,
+            346
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.42115225038242e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            279,
+            324,
+            398
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3972490659218693e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            279,
+            354,
+            324
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.354428260304303e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            279,
+            398,
+            324
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.359979375427429e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            324,
+            398,
+            354
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3972490659218693e-13
+        }
+      ],
+      "candidate_count": 37,
+      "independent_inequalities_recomputed": 4810
+    },
+    {
+      "id": "g1102",
+      "checks": {
+        "diagonal_false": true,
+        "only_cross_type_edges": true,
+        "all_origin_destination_scalar_predicates_match": true,
+        "frozen_five_counts": true,
+        "complete_candidate_list_matches_alternative_enumerator": true,
+        "counts_match": true,
+        "full_mass_matches": true,
+        "all_candidate_checks": true
+      },
+      "candidates": [
+        {
+          "operator": "swap2",
+          "nodes": [
+            0,
+            152
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3273050153704844e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            4,
+            217
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.353672812205332e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            6,
+            343
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3397950243975174e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            7,
+            150
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2068792066297647e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            8,
+            290
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.8909101475233e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            19,
+            147
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.718447854656915e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            23,
+            267
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2575331321282874e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            25,
+            291
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2979894936648861e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            26,
+            231
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.328692794151266e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            27,
+            253
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.748390486890685e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            27,
+            298
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2336633370988466e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            28,
+            344
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2580882436406e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            41,
+            80
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.297850715786808e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            42,
+            261
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2968072716244023e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            53,
+            171
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2981282715429643e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            54,
+            110
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.256006575469428e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            57,
+            158
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.7594927171369363e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            62,
+            76
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.893685705084863e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            63,
+            282
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.888134589961737e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            66,
+            324
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.301248163722903e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            80,
+            378
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2403940641856366e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            80,
+            380
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.893685705084863e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            83,
+            349
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.893685705084863e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            84,
+            321
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.297850715786808e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            91,
+            255
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.649058915617843e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            99,
+            146
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.893685705084863e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            119,
+            266
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.321232178166156e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            121,
+            310
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.240671619941793e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            124,
+            316
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.702593787124897e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            126,
+            313
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.892991815694472e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            130,
+            158
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2156942119645464e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            132,
+            138
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.893685705084863e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            135,
+            284
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.398081733190338e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            138,
+            180
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3703261575747092e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            148,
+            197
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2212453270876722e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            156,
+            326
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.481949088061768e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            157,
+            391
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3869795029440866e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            191,
+            285
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.7755575615628914e-17
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            197,
+            392
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.852473895449293e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            203,
+            325
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2469860133943484e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            203,
+            377
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.297850715786808e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            207,
+            209
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3168966745146236e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            207,
+            246
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2940317140628395e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            207,
+            294
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.6653345369377348e-16
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            215,
+            272
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.899236820207989e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            216,
+            270
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2492931956173976e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            226,
+            346
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.300137940698278e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            226,
+            360
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.297850715786808e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            230,
+            339
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.679590048795035e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            244,
+            290
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2325531140742214e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            255,
+            308
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.74353326115795e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            286,
+            324
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.297850715786808e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            321,
+            344
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.2100377083944522e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            0,
+            10,
+            152
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.255382075018076e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            4,
+            217,
+            395
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2748803668880555e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            19,
+            354,
+            147
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.904787935331115e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            26,
+            231,
+            205
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.765043832260062e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            37,
+            50,
+            279
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.280986593523494e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            49,
+            126,
+            313
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.203548537555889e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            57,
+            130,
+            158
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.745614929329122e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            80,
+            380,
+            378
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.2403940641856366e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            124,
+            355,
+            316
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.702593787124897e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            148,
+            392,
+            197
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.893685705084863e-14
+        }
+      ],
+      "candidate_count": 63,
+      "independent_inequalities_recomputed": 8190
+    },
+    {
+      "id": "g1103",
+      "checks": {
+        "diagonal_false": true,
+        "only_cross_type_edges": true,
+        "all_origin_destination_scalar_predicates_match": true,
+        "frozen_five_counts": true,
+        "complete_candidate_list_matches_alternative_enumerator": true,
+        "counts_match": true,
+        "full_mass_matches": true,
+        "all_candidate_checks": true
+      },
+      "candidates": [
+        {
+          "operator": "swap2",
+          "nodes": [
+            17,
+            24
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.6359804056473877e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            17,
+            111
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.21541665620839e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            22,
+            134
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.071321389024888e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            22,
+            271
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.358003095703225e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            25,
+            131
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.7755575615628914e-16
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            25,
+            215
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.401168235939167e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            26,
+            118
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.624078897563777e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            29,
+            122
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.3584246494910985e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            31,
+            126
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3162027851242328e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            37,
+            321
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.2426505097428162e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            48,
+            221
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.3593960946376455e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            48,
+            265
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.387845559643665e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            68,
+            176
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.974176874370187e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            70,
+            208
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.5565326805244695e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            99,
+            166
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.355921427532053e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            99,
+            181
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.4072744625746054e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            99,
+            383
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.5942802633617248e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            113,
+            148
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.358840983125333e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            132,
+            145
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.680389326632394e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            142,
+            316
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.291811268013589e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            143,
+            266
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.2145839889399213e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            146,
+            289
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 7.939482404850651e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            159,
+            244
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.697042672001771e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            185,
+            295
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.3435407220672175e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            186,
+            300
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 4.388156504830931e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            192,
+            308
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.368416656712725e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            202,
+            365
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 1.201816424156732e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            211,
+            386
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.2037927038809357e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            213,
+            325
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 8.010259122670504e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            224,
+            397
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.350167365745449e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            275,
+            387
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.410605131648481e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            289,
+            397
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.3507918661968006e-13
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            295,
+            327
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 2.3071822230491534e-14
+        },
+        {
+          "operator": "swap2",
+          "nodes": [
+            383,
+            395
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.938516179857743e-14
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            48,
+            221,
+            96
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.3593960946376455e-13
+        },
+        {
+          "operator": "cycle3",
+          "nodes": [
+            192,
+            308,
+            201
+          ],
+          "checks": {
+            "all_130_values_and_flags": true,
+            "counts_and_hash": true,
+            "status": true,
+            "spectrum": true,
+            "mass_exact_fractions": true
+          },
+          "max_residual_ratio_discrepancy": 3.3422049849907154e-13
+        }
+      ],
+      "candidate_count": 36,
+      "independent_inequalities_recomputed": 4680
+    }
+  ],
+  "historical_first_acceptances": [
+    {
+      "id": "g1101",
+      "seed": 0,
+      "consistent": true
+    },
+    {
+      "id": "g1102",
+      "seed": 0,
+      "consistent": true
+    },
+    {
+      "id": "g1102",
+      "seed": 1,
+      "consistent": true
+    },
+    {
+      "id": "g1103",
+      "seed": 0,
+      "consistent": true
+    },
+    {
+      "id": "g1103",
+      "seed": 1,
+      "consistent": true
+    }
+  ],
+  "all_136_candidates_recomputed": true,
+  "wall_seconds": 27.4187678,
+  "scope": "Same agent, alternative formulas; no independent empirical or laboratory replication",
+  "source_sha256": "9f233fadd586b19472df452ea0697659c9e2dee715d9792bbbe2d5dea3522b72"
+}

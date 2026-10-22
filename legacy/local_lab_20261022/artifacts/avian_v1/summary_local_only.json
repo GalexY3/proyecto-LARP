@@ -1,0 +1,89 @@
+{
+  "version": "avian_spectral_hybrid_v1",
+  "control_selection_version": "first_packed_not_MHU_selected_v1",
+  "treatment": "local_only",
+  "local_identity": {
+    "files": {
+      "src/larp/avian.py": "08dc1a3a45195963cab81a910cbed589e73d8460a4d46a5fa7736cc563e6edfd",
+      "src/larp/geometry.py": "c895f2f56946e59c5af7988b7bd7435b3d0967045f23dbf74a75cc468d2455d6",
+      "src/larp/graphs.py": "d18d7d37e8136fdd063dbd048022413b5d75f38d6b72ed675168a9a9a1adf0af",
+      "src/larp/data.py": "f77e30eb63fae5c3a11c586f5f4b0a2b3bfb2e4e248900694ea31d0d8f0456c9",
+      "src/larp/artifacts.py": "2b39af74cefa36f7936e5f38f494dc4a38f488d8341a91a2cd8b14f27f2bfa0b",
+      "configs/avian_v1.json": "776ec2dc19c005213e3f558d458038ef5fed2d7ae4331eeb25230536318311bb",
+      "LARP_NETWORK_PREVIEW.py": "82f61ac1df6e4ce97ee404f3a4428fb5dd6c5d8b2aae1d299ad23660eef0addf",
+      "artifacts/avian_v1/reference_Jiao2014.pdf": "12e4a868a52709e7b16d3b1cdeeecca355b15f10be0aec91a61d4838ed0ce3af",
+      "src/larp/avian_local.py": "9a37b7e76c1a5696fc27a73720003721b0e8fd64b3a5d0e460434bdb319efda9"
+    },
+    "runtime": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "psutil": "7.2.2",
+      "python": "3.13.4"
+    },
+    "hash": "2dc7a94dcd549af5d1531d1a448a7a418c6b6736807d0fcf4bebf1bfe46d7df4"
+  },
+  "records": [
+    {
+      "seed": 1101,
+      "admitted": false,
+      "control_admitted": true,
+      "status": "PACKED_LOCAL_CONTROL",
+      "attempt": 0,
+      "hashes": {
+        "points": "45bdc8757ec5403af69a87cc227e189d33a24792e9c3a817380719876af43e81",
+        "labels": "cdbe8bf69f324444ddae96cf93adff0bb7274b51a7d3390ff505cfa0565bf581",
+        "geometry": "8f27d24c8d7b30874d1e170033bca80bf68dddc04719b4d70ce0468c3abd0837"
+      },
+      "runtime_seconds": 6.7051390999986324,
+      "peak_RSS_bytes": 242221056,
+      "certificate_passed": false,
+      "packing_maximum_overlap": 0.0005469399829277632,
+      "gradient_passed": true,
+      "SCC_count": 1,
+      "port_digest": "5a26c25cfcb98c9b4c278790831aaa4685c09789781c81ad69cfb3c5dd9c9755"
+    },
+    {
+      "seed": 1102,
+      "admitted": false,
+      "control_admitted": true,
+      "status": "PACKED_LOCAL_CONTROL",
+      "attempt": 0,
+      "hashes": {
+        "points": "5c73fc369eda26cd3b53a60b781e4b2b34f5a94325239db50ab2fb00b6a32173",
+        "labels": "3c09dc64daaf6eb08d5e1d68622afe21c0ffb7007ab9da94f5a7eed83d89c34a",
+        "geometry": "200025ab59211459591f7a65ac35fd232bdf3ea3615806a165d9a9b7fea9ea68"
+      },
+      "runtime_seconds": 6.586547699997027,
+      "peak_RSS_bytes": 259858432,
+      "certificate_passed": false,
+      "packing_maximum_overlap": 0.0002543956495842936,
+      "gradient_passed": true,
+      "SCC_count": 1,
+      "port_digest": "929a26e679ad9f197b8185ea96deeb47d4651ae31962c65aa30f963f07bddd22"
+    },
+    {
+      "seed": 1103,
+      "admitted": false,
+      "control_admitted": true,
+      "status": "PACKED_LOCAL_CONTROL",
+      "attempt": 0,
+      "hashes": {
+        "points": "80c29ad05459dca0451bbce7e9868f181e1133e5f42f481559ea38207fa40803",
+        "labels": "6fa25ca818ef2b56595e98990c9670bf4cd51ff29931898c32b8eb90643c7154",
+        "geometry": "9b6c045ee70bb6704bd61536efb10b7e8e0fc616e95ceedd138b2a15b3ef14bc"
+      },
+      "runtime_seconds": 6.31513509999786,
+      "peak_RSS_bytes": 260935680,
+      "certificate_passed": false,
+      "packing_maximum_overlap": 0.001112610328294239,
+      "gradient_passed": false,
+      "SCC_count": 1,
+      "port_digest": "05c705785e090ff98f8c934f5b4f1e5cb7191bdf8378c88fef2b454d811f7f68"
+    }
+  ],
+  "packed_control_count": 3,
+  "finite_MHU_admitted_count": 0,
+  "architecture_evidence": false,
+  "beliefs_updated": false,
+  "MHU_certificate_was_selection_criterion": false
+}

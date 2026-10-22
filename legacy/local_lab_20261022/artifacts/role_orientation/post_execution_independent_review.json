@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "experiment_status": "INVALID_EXPERIMENT",
+  "UTC": "2026-10-08T21:14:50.374873+00:00",
+  "reviewer": "independent_subagent_three_d_review",
+  "scope": "Post-execution evidence and chronology review of the unique v1 attempt; no model/optimizer calls, no repair and no retry.",
+  "prepared_manifest_sha256": "8525b1ced721c3bbc2959a587aa4db04594fc63c376783303bb7824d0ecb5281",
+  "frozen_identity_hash": "519fa71fe689bf7a533535fcb3aa4a9ddf7413dba45a04903392d262462153ee",
+  "checks": [
+    {
+      "id": "single_attempt_invalid_before_worker_start",
+      "status": "PASS",
+      "evidence": "One execution marker and failed subprocess; worker_started marker, four run directories and checkpoints are absent."
+    },
+    {
+      "id": "four_registered_not_run_zero_updates",
+      "status": "PASS",
+      "evidence": "Summary conserves all four registered identities as NOT_RUN, each with0 updates; no model results fabricated."
+    },
+    {
+      "id": "failure_before_prepared_validation",
+      "status": "PASS",
+      "evidence": "Traceback locates failure in supervised_deadline, called before validate_prepared and run_one/optimizer construction. No forward is on this execution path."
+    },
+    {
+      "id": "floating_point_guard_sufficient_rejection",
+      "status": "PASS",
+      "evidence": {
+        "stored_begin": 4010.2372454,
+        "stored_deadline": 4130.2372454,
+        "computed_span": 119.99999999999955,
+        "registered_budget": 120,
+        "difference_seconds": -4.547473508864641e-13,
+        "interpretation": "Exact equality produces a sufficient false precondition rejection. The combined error message cannot independently exclude an additional PID/launcher mismatch; separate implementer diagnosis pending."
+      }
+    },
+    {
+      "id": "gates_and_beliefs_correctly_unavailable",
+      "status": "PASS",
+      "evidence": "No scientific null or ordinal belief update from a software launch failure; historical priors/registers unchanged."
+    },
+    {
+      "id": "retry_not_authorized",
+      "status": "PASS",
+      "evidence": "Unique attempt ended after2.962s, without hard kill or budget extension. No retry performed by this reviewer."
+    },
+    {
+      "id": "manifest_and_frozen_identity_preserved",
+      "status": "PASS",
+      "evidence": {
+        "prepared_manifest_sha256": "8525b1ced721c3bbc2959a587aa4db04594fc63c376783303bb7824d0ecb5281",
+        "identity": "519fa71fe689bf7a533535fcb3aa4a9ddf7413dba45a04903392d262462153ee",
+        "frozen_files_verified": 26
+      }
+    },
+    {
+      "id": "historical_391_hashes_preserved",
+      "status": "PASS",
+      "evidence": "391 pre-execution historical byte hashes reread after the failed attempt; all remain identical."
+    },
+    {
+      "id": "timestamp_discrepancy_preserved",
+      "status": "PASS",
+      "evidence": {
+        "preaudit_original_date_UTC_raw": "2026-10-08T23:11:58.724888+02:00",
+        "preaudit_current_UTC_raw": "2026-10-08T21:12:23.495152+00:00",
+        "execution_marker_UTC_raw": "2026-10-08T21:12:21.554165+00:00",
+        "last_UTC_after_marker_seconds": 1.940987,
+        "original_date_before_marker_seconds": 22.829277
+      }
+    }
+  ],
+  "check_count": 9,
+  "blockers_for_interpreting_v1_as_scientific_results": [
+    "The worker failed its supervisor/deadline precondition before validation or optimization; all four runs are NOT_RUN."
+  ],
+  "temporal_provenance": {
+    "status": "LIMITATION_RECORDED_NO_BACKDATING",
+    "original_date_UTC": "2026-10-08T23:11:58.724888+02:00",
+    "current_pretraining_UTC": "2026-10-08T21:12:23.495152+00:00",
+    "launch_marker_UTC": "2026-10-08T21:12:21.554165+00:00",
+    "pretraining_finalization_after_launch": true,
+    "original_40_check_PASS_before_launch": "Original report date_UTC precedes marker. The root explicitly reports reading PASS with the earlier UTC field before the launch; prior collaboration/tool transcript reported40 checks and PASS before execution. This statement relies on the trusted parent report and preserved conversation, not an immutable captured copy of the earlier JSON.",
+    "late_edit": "Reviewer added UTC via PowerShell, then normalized that field via Python at2026-10-08T21:12:23.495152+00:00, while the root launch marker is2026-10-08T21:12:21.554165+00:00. This was a metadata edit to the review report, outside the frozen scientific identity. Treat finalization of the present pretraining report as after launch.",
+    "handling": "Preserve both existing timestamps and the prior transcript. Do not rewrite, delete, backdate or relabel the pretraining report as finalized before launch. No frozen manifest/config/model/data files changed."
+  },
+  "learning_execution": {
+    "registered_run_count": 4,
+    "completed_runs": 0,
+    "updates_total": 0,
+    "run_statuses": [
+      {
+        "condition": "D8",
+        "seed": 2103,
+        "status": "NOT_RUN",
+        "updates_completed": 0
+      },
+      {
+        "condition": "B",
+        "seed": 2103,
+        "status": "NOT_RUN",
+        "updates_completed": 0
+      },
+      {
+        "condition": "B",
+        "seed": 2104,
+        "status": "NOT_RUN",
+        "updates_completed": 0
+      },
+      {
+        "condition": "D8",
+        "seed": 2104,
+        "status": "NOT_RUN",
+        "updates_completed": 0
+      }
+    ],
+    "evidence": "Traceback plus absence of worker_started/run directories/checkpoints and summary NOT_RUN records. Imports occurred; prepared validation and optimization were not reached.",
+    "H_R4": "no_update_ineligible",
+    "historical_priors": "unchanged"
+  },
+  "failure_diagnosis": {
+    "exact_float_equality_sufficient_to_fail": true,
+    "computed_span_seconds": 119.99999999999955,
+    "difference_from_120_seconds": -4.547473508864641e-13,
+    "PID_or_Windows_launcher_additional_issue": "Not independently resolved by this review. Implementer is diagnosing separately; no repaired launch is authorized here.",
+    "classification": "INVALID_EXPERIMENT / software precondition failure, not VALID_NULL_RESULT or evidence against H-R4/MHU."
+  },
+  "supervision": {
+    "worker_interval_seconds": 2.962017199999991,
+    "budget_seconds": 120,
+    "worker_returncode": 1,
+    "hard_killed": false,
+    "retry_allowed": false
+  },
+  "historical_files_verified": 391,
+  "frozen_files_verified": 26,
+  "optimizer_constructions": 0,
+  "forwards_performed": 0,
+  "model_measurements": 0,
+  "files_modified_by_this_review": [
+    "artifacts/role_orientation/post_execution_independent_review.json"
+  ],
+  "existing_review_modified": false,
+  "capsule_modified": false,
+  "no_new_experiment_executed": true,
+  "evidence_file_sha256": {
+    "artifacts/role_orientation/pretraining_independent_review.json": "7b5c3ebc07ddcf43de35f3ced0eb5553e20df4b1a2a915bafbe0cad24d4e02ed",
+    "artifacts/role_orientation/v1/preregistration.json": "8525b1ced721c3bbc2959a587aa4db04594fc63c376783303bb7824d0ecb5281",
+    "artifacts/role_orientation/v1/execution_started.json": "bdf2da6c2eba43e49eb6468e22b82bdf021d016b15470cca5e9b858471d7d3ef",
+    "artifacts/role_orientation/v1/execution.stdout.log": "cfecdffdecef069823a0cf41c952c46ce86861b68bdc486ab3694efce09f15a8",
+    "artifacts/role_orientation/v1/execution_wall_supervision.json": "7550940b153b2e8846c55f8034f3d2f20c556c7036b71eb66d3bd6e3f3d5eb03",
+    "artifacts/role_orientation/v1/results.json": "1eeae1ed3877e5c91e747265df45aec70907c221a34d01f561216d2b104ea75f",
+    "artifacts/role_orientation/v1/H_R4_ordinal_updates.json": "2e4b00e7e5f43618849443c427b7e00ff2f406d46a4ee6ddfa0e147659fc175e",
+    "artifacts/role_orientation/v1/historical_bytes_pre_execution.json": "81b3e2c55e60f46d165823f087a867ebd5a816f1ab1035ecd0870300ce52d509"
+  }
+}

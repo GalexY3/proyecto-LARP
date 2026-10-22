@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "fixture": "random unlabelled technical data; NOT scientific arms",
+  "N": 32768,
+  "layers": 8,
+  "width": 256,
+  "batch": 2,
+  "parameter_count_per_model": 4827415,
+  "all_three_models_and_optimizers_resident": true,
+  "graph": {
+    "nodes": 32768,
+    "edges": 524288,
+    "degree": 16,
+    "neighbor_radius_mean": 0.04852468661467062,
+    "neighbor_radius_p95": 0.05527380004385317,
+    "query_radius_mean": 0.04845404195525144,
+    "query_missing_type_fraction": [
+      0.0234375,
+      0.015625,
+      0.03515625,
+      0.04296875,
+      0.05859375
+    ]
+  },
+  "seconds_per_model_update": [
+    0.39395010000589537,
+    0.23255470000003697,
+    0.23297230000025593
+  ],
+  "peak_allocated_VRAM_GiB": 7.585327625274658,
+  "peak_reserved_VRAM_GiB": 7.873046875,
+  "total_seconds": 5.272484399996756,
+  "torch": "2.11.0+cu128",
+  "torch_path": "C:\\Programaci\u00f3n\\LARP\\.venv-scale\\Lib\\site-packages\\torch\\__init__.py",
+  "numpy": "2.5.3",
+  "cuda": "12.8",
+  "GPU": "NVIDIA GeForce RTX 4070 SUPER",
+  "python": "C:\\Programaci\u00f3n\\LARP\\.venv-scale\\Scripts\\python.exe",
+  "support_packages": "new CUDA venv imports compatible support packages from original venv through reuse_larp_support.pth"
+}

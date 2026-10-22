@@ -1,0 +1,240 @@
+{
+  "version": "multichannel_pilot_v1",
+  "stage": "exploratory_new_gaussian_fields_old_geometries",
+  "N": 400,
+  "L": 20.0,
+  "counts_A_to_E": [
+    163,
+    85,
+    68,
+    50,
+    34
+  ],
+  "geometries": [
+    {
+      "family": "nominal_mhu",
+      "geometry_seed": 1101,
+      "path": "artifacts/geometry/mhu_N400_g1101.npz",
+      "file_hash": "a38ff09ae31959d55927cbc389f05330a91933c5a5bea2880b2813f1d55a7b5f",
+      "hashes": {
+        "points": "cd6ca97d23aee99324621a6eddb8793f630b5758f73cd5c9415f264a66817b84",
+        "labels": "6ff755ea6ff5620fef1df48f1b8896bcd63a56a3ef0d0d82e4420e45c52d0406",
+        "geometry": "c0ff8152ca3f7ce08258e7a532f54a52f83e5ab019303471176261b91d55ac2c"
+      }
+    },
+    {
+      "family": "nominal_mhu",
+      "geometry_seed": 1102,
+      "path": "artifacts/sampling_probe/v1/geometries/mhu_N400_g1102.npz",
+      "file_hash": "11375df8b531526aaa487272aac05febc3265358f8be5719f75fded7dfd983bf",
+      "hashes": {
+        "points": "bf257ef11ff94b001dedb148e843fff40a3b3ccd1172b8cc901d66b0638e5b04",
+        "labels": "0453f6be3fd4bd5fcbb2d9d0d7a4551fb9dd58ce78ce46760f1eaea609f6ec7f",
+        "geometry": "5d7d2c37c584ce9e158a0e05fe904e30edde5856808b1489a2a7bcf509fe4f28"
+      }
+    },
+    {
+      "family": "nominal_mhu",
+      "geometry_seed": 1103,
+      "path": "artifacts/sampling_probe/v1/geometries/mhu_N400_g1103.npz",
+      "file_hash": "23de2b0099c47f3b0ac7c77a0ba6c3948a563dafcdad0d89b0cdfee64fdbb3ea",
+      "hashes": {
+        "points": "5916327bdf75a0083e67dc83c0afc1f0f0c601b6b42b1e34935e2526c7ece758",
+        "labels": "f97b44ceef6b82ee1cf2c40b6551f26ca5eddb004d7858fdd0342c96bfa95265",
+        "geometry": "c5dd092bc4b513e097a100ad7e5148c74dca391b4369d13b5523b6184e537ee5"
+      }
+    },
+    {
+      "family": "avian_full_spectral",
+      "geometry_seed": 1101,
+      "path": "artifacts/avian_v1/avian_full_spectral_N400_g1101.npz",
+      "file_hash": "427e9e7ddfb7cbfeea6d53a5ffd25465f90c788f5ce2cfaa41a421a95bb29680",
+      "hashes": {
+        "points": "94645c5ea85d819f17678afa275351d683cd4aae39b8239c15389b5387a51198",
+        "labels": "cdbe8bf69f324444ddae96cf93adff0bb7274b51a7d3390ff505cfa0565bf581",
+        "geometry": "b7f2f23911ec1580042277ceca4e1e06471c3e9082e147290057051498fe1a75"
+      }
+    },
+    {
+      "family": "avian_full_spectral",
+      "geometry_seed": 1102,
+      "path": "artifacts/avian_v1/avian_full_spectral_N400_g1102.npz",
+      "file_hash": "009acff5a4b0fd5baecf2817b9bd4cdf9b9bcda900b9d603c79f2413c6b7485f",
+      "hashes": {
+        "points": "75fdb625d11c18c69d79682f17cc3b2b311b470f4a5b9e5a35b0b1602d42485d",
+        "labels": "3c09dc64daaf6eb08d5e1d68622afe21c0ffb7007ab9da94f5a7eed83d89c34a",
+        "geometry": "f4252496dad2ea8188bf2550179bb9411d52a754f2f623ccdc80dcc00a8a2870"
+      }
+    },
+    {
+      "family": "avian_full_spectral",
+      "geometry_seed": 1103,
+      "path": "artifacts/avian_v1/avian_full_spectral_N400_g1103.npz",
+      "file_hash": "de129159097d2e1307c1167e4b2c9d0111fcdac57f6217dd8c57331ab1a203b5",
+      "hashes": {
+        "points": "706b7b8c020594885e0bd7a1bc9cd5516df4c00776ccc89dc4681e8a5866bdcf",
+        "labels": "6fa25ca818ef2b56595e98990c9670bf4cd51ff29931898c32b8eb90643c7154",
+        "geometry": "bf21f41b68a197e53f111744669d95d32c4f5b88372575476f5067ba8bb23de3"
+      }
+    },
+    {
+      "family": "avian_local_only",
+      "geometry_seed": 1101,
+      "path": "artifacts/avian_v1/avian_local_only_N400_g1101.npz",
+      "file_hash": "0b53f51f2a70406c46c5d15962fc1b29372db96efaa0f64615442813e1cb0643",
+      "hashes": {
+        "points": "45bdc8757ec5403af69a87cc227e189d33a24792e9c3a817380719876af43e81",
+        "labels": "cdbe8bf69f324444ddae96cf93adff0bb7274b51a7d3390ff505cfa0565bf581",
+        "geometry": "8f27d24c8d7b30874d1e170033bca80bf68dddc04719b4d70ce0468c3abd0837"
+      }
+    },
+    {
+      "family": "avian_local_only",
+      "geometry_seed": 1102,
+      "path": "artifacts/avian_v1/avian_local_only_N400_g1102.npz",
+      "file_hash": "7e3a4f44cc030cc93c56e1487f55a5275bc2ad8b751cf1018526e9c088d1167a",
+      "hashes": {
+        "points": "5c73fc369eda26cd3b53a60b781e4b2b34f5a94325239db50ab2fb00b6a32173",
+        "labels": "3c09dc64daaf6eb08d5e1d68622afe21c0ffb7007ab9da94f5a7eed83d89c34a",
+        "geometry": "200025ab59211459591f7a65ac35fd232bdf3ea3615806a165d9a9b7fea9ea68"
+      }
+    },
+    {
+      "family": "avian_local_only",
+      "geometry_seed": 1103,
+      "path": "artifacts/avian_v1/avian_local_only_N400_g1103.npz",
+      "file_hash": "ba1736cfbb86bb86873e3eb872c5d4335736cc3bfdc38ecf96a2c8479787c4c1",
+      "hashes": {
+        "points": "80c29ad05459dca0451bbce7e9868f181e1133e5f42f481559ea38207fa40803",
+        "labels": "6fa25ca818ef2b56595e98990c9670bf4cd51ff29931898c32b8eb90643c7154",
+        "geometry": "9b6c045ee70bb6704bd61536efb10b7e8e0fc616e95ceedd138b2a15b3ef14bc"
+      }
+    },
+    {
+      "family": "grid_balanced",
+      "geometry_seed": 1101,
+      "path": "artifacts/sampling_grid/v1/geometries/grid_balanced_N400_g1101.npz",
+      "file_hash": "baed6d02a0595f3e41c4f4f959938a72772aa50e733fe7bc86fa5b6e94c704e2",
+      "hashes": {
+        "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+        "labels": "c94defd54212d60879da41769dfb4d5779e915f65656bab212e6f9d217d61fa8",
+        "geometry": "10bd4225de4d9554264f9b471bd4ea3e1789ff1e6dcdf22a19f85708bd01c3ee"
+      }
+    },
+    {
+      "family": "grid_balanced",
+      "geometry_seed": 1102,
+      "path": "artifacts/sampling_grid/v1/geometries/grid_balanced_N400_g1102.npz",
+      "file_hash": "0dc47d45e4424dff25f0e3b3e9eecd24c8cbedf4db94ab26cfaa4ed395787871",
+      "hashes": {
+        "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+        "labels": "c50e42adaf1d5442215b242a7d45042cec8ec74aebdace324b18e657b6577bda",
+        "geometry": "b35be248897adcd0376c39dd3d8c5ce0c922b5f03ef13ea70cac77d032606fe1"
+      }
+    },
+    {
+      "family": "grid_balanced",
+      "geometry_seed": 1103,
+      "path": "artifacts/sampling_grid/v1/geometries/grid_balanced_N400_g1103.npz",
+      "file_hash": "548e2cca0154fd2507928d57b2bdac8387cb034d9050ca6e94c7a0a76baf580c",
+      "hashes": {
+        "points": "cee54eaaab971ca6615cc707d0a3b4e24bde63ce2080e8e988cfd6f835452493",
+        "labels": "46eb961639bfcbadd789abb18b9a5ab0b7268b66f6fce76aaab1230d5c231456",
+        "geometry": "d881547622621a43a472eb1b5f740656040275f1c82ce8cd2b1a6a9dfcae5775"
+      }
+    }
+  ],
+  "source_manifests": {
+    "artifacts/sampling_probe/v1/results.json": "53f5941d30328ca7499e548d91744895b9fdac3fac221a7466607c092a77e696",
+    "artifacts/sampling_grid/v1/results.json": "acf9a0c0db82bf48bec1ef38469563f79b5ad0659d74bc9dabc45e4c581819e8"
+  },
+  "master_seed": 20261009,
+  "namespaces": {
+    "queries": 88301,
+    "training_fields": 88302,
+    "training_noise": 88303,
+    "test_fields": 88304,
+    "sensor_noise": 88305,
+    "calibration": 88306
+  },
+  "field_bands": {
+    "smooth": [
+      1.0,
+      2.0
+    ],
+    "fine": [
+      3.0,
+      5.0
+    ]
+  },
+  "rho": [
+    0.0,
+    0.8
+  ],
+  "sigma": 0.1,
+  "training_worlds": 64,
+  "test_worlds": 128,
+  "training_grid_side": 16,
+  "query_count": 100,
+  "mark_conditions": [
+    "native",
+    "shuffle"
+  ],
+  "mark_rule": "exact historical sampling_probe_v1 shuffle; original seed namespace",
+  "information_conditions": [
+    "known_model",
+    "train_estimated_rho"
+  ],
+  "scopes": [
+    "local",
+    "global"
+  ],
+  "local_K": 24,
+  "local_selection": "nearest physical nodes; torus distance; node ID tie; marks/values blind",
+  "field_prior": "Gaussian coefficients covariance C_rho/M; no per-world normalization",
+  "rho_estimator": "M*mean off-diagonal coefficient second moments pooled over train worlds and components; no centering; clip[0,.95]",
+  "training_information": "common offline noisy full maps, known Fourier dictionary and marginal scale",
+  "shared_base_draws_across_rho": true,
+  "shared_sensor_noise_across_band_rho_condition": true,
+  "seed_rule_fields": "[master_seed,namespace,band_index]; same seed across rho",
+  "seed_rule_sensor_noise": "[master_seed,namespace,geometry_seed]",
+  "expected_cells": 384,
+  "expected_global_cells": 192,
+  "expected_local_cells": 192,
+  "new_coordinate_geometries": 0,
+  "primary_slice": {
+    "band": "fine",
+    "rho": 0.0,
+    "information": "known_model",
+    "marks": "native"
+  },
+  "primary_contrast": "(full-local risk at LOCAL24)-(full-local risk at GLOBAL); equal seed pairing",
+  "primary_interaction_practical_absolute_MSE": 0.005,
+  "MHU_candidate_relative_risk_improvement": 0.05,
+  "candidate_requires_consistent_three_seed_sign": true,
+  "thresholds_are_decision_margins_not_significance_tests": true,
+  "calibration": {
+    "largest_mode_dimension": 56,
+    "model_rho": [
+      0.3,
+      0.15
+    ],
+    "true_rho": 0.3,
+    "scopes": [
+      "local",
+      "global"
+    ],
+    "conservative_multiplier": 2.0,
+    "fixed_extra_seconds": 20.0,
+    "max_fixture_seconds": 20.0,
+    "score_selection_forbidden": true
+  },
+  "threads": 4,
+  "cold_process_deadline_seconds": 180.0,
+  "sanity_absolute_tolerance": 1e-08,
+  "no_hpo": true,
+  "neural_training": false,
+  "architecture_evidence": false,
+  "confirmatory_new_geometry": false,
+  "historical_priors_updated": false
+}

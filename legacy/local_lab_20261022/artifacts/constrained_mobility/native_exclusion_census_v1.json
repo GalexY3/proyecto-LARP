@@ -1,0 +1,587 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "N": 400,
+      "native_type_minima": [
+        1.0975841225824832,
+        1.8493149247543526,
+        2.095962659743368,
+        2.314711606794752,
+        3.122834980061477
+      ],
+      "native_counts": [
+        163,
+        85,
+        68,
+        50,
+        34
+      ],
+      "transition_graph_uint8_sha256": "8e9ebb72291b6dfd69807b081b1595de552bd33b0d7793c1845673d9ed04a778",
+      "directed_transition_edges": 1607,
+      "minimum_guard_valid_swaps": 24,
+      "minimum_guard_valid_oriented_three_cycles": 13,
+      "all_distinct_type_swaps": 58963,
+      "all_distinct_type_oriented_three_cycles": 8119472,
+      "pair_blocks": [
+        {
+          "types": [
+            0,
+            1
+          ],
+          "minimum_guard_swaps": 4
+        },
+        {
+          "types": [
+            0,
+            2
+          ],
+          "minimum_guard_swaps": 2
+        },
+        {
+          "types": [
+            0,
+            3
+          ],
+          "minimum_guard_swaps": 4
+        },
+        {
+          "types": [
+            0,
+            4
+          ],
+          "minimum_guard_swaps": 1
+        },
+        {
+          "types": [
+            1,
+            2
+          ],
+          "minimum_guard_swaps": 1
+        },
+        {
+          "types": [
+            1,
+            3
+          ],
+          "minimum_guard_swaps": 3
+        },
+        {
+          "types": [
+            1,
+            4
+          ],
+          "minimum_guard_swaps": 2
+        },
+        {
+          "types": [
+            2,
+            3
+          ],
+          "minimum_guard_swaps": 1
+        },
+        {
+          "types": [
+            2,
+            4
+          ],
+          "minimum_guard_swaps": 3
+        },
+        {
+          "types": [
+            3,
+            4
+          ],
+          "minimum_guard_swaps": 3
+        }
+      ],
+      "triple_blocks": [
+        {
+          "types": [
+            0,
+            1,
+            2
+          ],
+          "minimum_guard_oriented_cycles": 2
+        },
+        {
+          "types": [
+            0,
+            1,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 3
+        },
+        {
+          "types": [
+            0,
+            1,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 1
+        },
+        {
+          "types": [
+            0,
+            2,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            0,
+            2,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            0,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 3
+        },
+        {
+          "types": [
+            1,
+            2,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 2
+        },
+        {
+          "types": [
+            1,
+            2,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            1,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 1
+        },
+        {
+          "types": [
+            2,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 1
+        }
+      ],
+      "native_minimum_guard_proposal_probability": {
+        "swap2": {
+          "near": 0.009659734752796831,
+          "global": 0.0006067718173519859,
+          "mixture": 0.007849142165707862
+        },
+        "cycle3": {
+          "near": 0.0005786982737880425,
+          "global": 2.094699301589997e-06,
+          "mixture": 0.000463377558890752
+        }
+      },
+      "scope": "One necessary guard family at native labels, not the full 130 inequalities; no complete candidates generated",
+      "id": "g1101",
+      "source_npz_sha256": "427e9e7ddfb7cbfeea6d53a5ffd25465f90c788f5ce2cfaa41a421a95bb29680"
+    },
+    {
+      "N": 400,
+      "native_type_minima": [
+        1.1812558745463677,
+        1.6470003611087636,
+        1.94508852852549,
+        2.475530402621567,
+        2.9200985801966133
+      ],
+      "native_counts": [
+        163,
+        85,
+        68,
+        50,
+        34
+      ],
+      "transition_graph_uint8_sha256": "bcd8b56d1f8bc14aec6b2e82514f5245f5419696e88deebe70247fa963a2508b",
+      "directed_transition_edges": 601,
+      "minimum_guard_valid_swaps": 53,
+      "minimum_guard_valid_oriented_three_cycles": 10,
+      "all_distinct_type_swaps": 58963,
+      "all_distinct_type_oriented_three_cycles": 8119472,
+      "pair_blocks": [
+        {
+          "types": [
+            0,
+            1
+          ],
+          "minimum_guard_swaps": 7
+        },
+        {
+          "types": [
+            0,
+            2
+          ],
+          "minimum_guard_swaps": 5
+        },
+        {
+          "types": [
+            0,
+            3
+          ],
+          "minimum_guard_swaps": 2
+        },
+        {
+          "types": [
+            0,
+            4
+          ],
+          "minimum_guard_swaps": 4
+        },
+        {
+          "types": [
+            1,
+            2
+          ],
+          "minimum_guard_swaps": 11
+        },
+        {
+          "types": [
+            1,
+            3
+          ],
+          "minimum_guard_swaps": 5
+        },
+        {
+          "types": [
+            1,
+            4
+          ],
+          "minimum_guard_swaps": 8
+        },
+        {
+          "types": [
+            2,
+            3
+          ],
+          "minimum_guard_swaps": 3
+        },
+        {
+          "types": [
+            2,
+            4
+          ],
+          "minimum_guard_swaps": 6
+        },
+        {
+          "types": [
+            3,
+            4
+          ],
+          "minimum_guard_swaps": 2
+        }
+      ],
+      "triple_blocks": [
+        {
+          "types": [
+            0,
+            1,
+            2
+          ],
+          "minimum_guard_oriented_cycles": 2
+        },
+        {
+          "types": [
+            0,
+            1,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 2
+        },
+        {
+          "types": [
+            0,
+            1,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            0,
+            2,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 1
+        },
+        {
+          "types": [
+            0,
+            2,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 2
+        },
+        {
+          "types": [
+            0,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            1,
+            2,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 1
+        },
+        {
+          "types": [
+            1,
+            2,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 1
+        },
+        {
+          "types": [
+            1,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            2,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 1
+        }
+      ],
+      "native_minimum_guard_proposal_probability": {
+        "swap2": {
+          "near": 0.020887721039335953,
+          "global": 0.0012425223427516082,
+          "mixture": 0.016958681300019082
+        },
+        "cycle3": {
+          "near": 0.0004675282689763021,
+          "global": 1.4660304013765907e-06,
+          "mixture": 0.000374315821261317
+        }
+      },
+      "scope": "One necessary guard family at native labels, not the full 130 inequalities; no complete candidates generated",
+      "id": "g1102",
+      "source_npz_sha256": "009acff5a4b0fd5baecf2817b9bd4cdf9b9bcda900b9d603c79f2413c6b7485f"
+    },
+    {
+      "N": 400,
+      "native_type_minima": [
+        1.1412996584127375,
+        1.7790388356110602,
+        2.096237469922195,
+        2.3335714000409884,
+        3.0173754069195713
+      ],
+      "native_counts": [
+        163,
+        85,
+        68,
+        50,
+        34
+      ],
+      "transition_graph_uint8_sha256": "24d5a0005d0498dad07f6c300c14cc4451a90fb7416d5a897b2e174879d9cab1",
+      "directed_transition_edges": 535,
+      "minimum_guard_valid_swaps": 34,
+      "minimum_guard_valid_oriented_three_cycles": 2,
+      "all_distinct_type_swaps": 58963,
+      "all_distinct_type_oriented_three_cycles": 8119472,
+      "pair_blocks": [
+        {
+          "types": [
+            0,
+            1
+          ],
+          "minimum_guard_swaps": 2
+        },
+        {
+          "types": [
+            0,
+            2
+          ],
+          "minimum_guard_swaps": 6
+        },
+        {
+          "types": [
+            0,
+            3
+          ],
+          "minimum_guard_swaps": 3
+        },
+        {
+          "types": [
+            0,
+            4
+          ],
+          "minimum_guard_swaps": 2
+        },
+        {
+          "types": [
+            1,
+            2
+          ],
+          "minimum_guard_swaps": 3
+        },
+        {
+          "types": [
+            1,
+            3
+          ],
+          "minimum_guard_swaps": 6
+        },
+        {
+          "types": [
+            1,
+            4
+          ],
+          "minimum_guard_swaps": 3
+        },
+        {
+          "types": [
+            2,
+            3
+          ],
+          "minimum_guard_swaps": 6
+        },
+        {
+          "types": [
+            2,
+            4
+          ],
+          "minimum_guard_swaps": 2
+        },
+        {
+          "types": [
+            3,
+            4
+          ],
+          "minimum_guard_swaps": 1
+        }
+      ],
+      "triple_blocks": [
+        {
+          "types": [
+            0,
+            1,
+            2
+          ],
+          "minimum_guard_oriented_cycles": 1
+        },
+        {
+          "types": [
+            0,
+            1,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            0,
+            1,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            0,
+            2,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            0,
+            2,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 1
+        },
+        {
+          "types": [
+            0,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            1,
+            2,
+            3
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            1,
+            2,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            1,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        },
+        {
+          "types": [
+            2,
+            3,
+            4
+          ],
+          "minimum_guard_oriented_cycles": 0
+        }
+      ],
+      "native_minimum_guard_proposal_probability": {
+        "swap2": {
+          "near": 0.013121932515337432,
+          "global": 0.0007601502961343325,
+          "mixture": 0.010649576071496813
+        },
+        "cycle3": {
+          "near": 8.63105978587754e-05,
+          "global": 1.85747341159488e-07,
+          "mixture": 6.908562775525222e-05
+        }
+      },
+      "scope": "One necessary guard family at native labels, not the full 130 inequalities; no complete candidates generated",
+      "id": "g1103",
+      "source_npz_sha256": "de129159097d2e1307c1167e4b2c9d0111fcdac57f6217dd8c57331ab1a203b5"
+    }
+  ],
+  "command_wall_seconds": 0.4306262,
+  "script_sha256": "e4b2145888bc55e785b6beac4fbed21fba158da3d2f8739ec80a974c1834321b",
+  "scientific_classification": "POSTHOC_DETERMINISTIC_NECESSARY_GUARD_CENSUS",
+  "controls_generated": 0,
+  "utility_scores": 0,
+  "is_new_empirical_confirmation": false
+}

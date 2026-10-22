@@ -1,0 +1,84 @@
+{
+  "version": "sampling_oracle_band_v1",
+  "created": "2026-10-08T12:31:55.828066+00:00",
+  "config": {
+    "version": "sampling_oracle_band_v1",
+    "stage": "posthoc_oracle_qualification_of_sampling_v1",
+    "source_series": "artifacts/sampling_probe/v1",
+    "source_results_sha256": "53f5941d30328ca7499e548d91744895b9fdac3fac221a7466607c092a77e696",
+    "source_field_bank_sha256": "7f89f58ddf033eda6a6a26130606596ce11d7307929c283c8259538ef9a207d9",
+    "source_field_manifest_sha256": "e09e4f8b27deac4adfebd55d08611401f2a472dbfd80962b55a623b768f4859a",
+    "families": [
+      "nominal_mhu",
+      "avian_full_spectral",
+      "avian_local_only"
+    ],
+    "geometry_seeds": [
+      1101,
+      1102,
+      1103
+    ],
+    "mark_conditions": [
+      "native",
+      "shuffle"
+    ],
+    "bands": [
+      "smooth",
+      "fine"
+    ],
+    "noise_sigma": [
+      0.0,
+      0.1
+    ],
+    "design_matrix": "[cos(2*pi*x@n/L),sin(2*pi*x@n/L)]",
+    "zero_noise_estimator": "minimum_norm_SVD",
+    "SVD_relative_cutoff": 1e-10,
+    "positive_noise_estimator": "LMMSE_ridge",
+    "ridge_lambda_rule": "number_real_mode_pairs * noise_sigma^2",
+    "coefficient_covariance": "I/M; normalized_sphere_not_Gaussian_posterior",
+    "oracle_information": [
+      "exact_generating_frequency_band",
+      "known_generating_noise_sigma"
+    ],
+    "expected_unique_oracle_cells": 72,
+    "expected_comparisons_to_v1_estimators": 144,
+    "comparison_is_not_an_independent_replication": true,
+    "reuse_fields_queries_noise_and_geometry_exactly": true,
+    "no_hpo": true,
+    "maximum_seconds": 30.0,
+    "threads": 4,
+    "neural_training": false,
+    "architecture_evidence": false,
+    "MHU_confirmation": false,
+    "beliefs_updated": false
+  },
+  "config_hash": "8f82daecac091c7f580cb5966680dcdbf9306ba43a6a40536d951f631ca1b038",
+  "local_identity": {
+    "files": {
+      "src/larp/sampling_oracle.py": "f1a947a115e7f61ff47fadf84883611452551b08b8133ea674aa3d28b9144262",
+      "configs/sampling_oracle_v1.json": "a63d015efb4ada2abc70054d6ad1348259399938f385b4bbe893bea2fb7a3234",
+      "src/larp/sampling_probe.py": "5689c4c8ec7bbee3cbb20df5feb4b266e86a44d6019b3ec7b52b77cc1a3c823f",
+      "src/larp/artifacts.py": "2b39af74cefa36f7936e5f38f494dc4a38f488d8341a91a2cd8b14f27f2bfa0b",
+      "src/larp/geometry.py": "c895f2f56946e59c5af7988b7bd7435b3d0967045f23dbf74a75cc468d2455d6",
+      "configs/sampling_probe_v1.json": "598fceef0d15cf30fb9e934a8b272169ecd272f349283e27dbe704ab5f96e5ee"
+    },
+    "runtime": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "psutil": "7.2.2",
+      "python": "3.13.4",
+      "thread_environment": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4"
+      }
+    },
+    "hash": "9f906548d0f75a2e50e576f21de6ae2b11988cffe196cbe284d9272eed7c95ba"
+  },
+  "posthoc": true,
+  "before_oracle_scores": true,
+  "no_hpo": true,
+  "MHU_confirmation": false,
+  "architecture_evidence": false
+}

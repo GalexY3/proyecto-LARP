@@ -1,0 +1,102 @@
+{
+  "protocol": "local_spectral_tradeoff_v1",
+  "parent": "4f2f9a1",
+  "historical_config": "configs/constrained_mobility_v1.json",
+  "output": "artifacts/local_tradeoff/v1",
+  "budget_seconds": 180,
+  "prepare_seconds": 30,
+  "calibrate_seconds": 30,
+  "chain_seconds": 5,
+  "maximum_proposals": 4096,
+  "minimum_proposals": 100,
+  "calibration_per_reference": 20,
+  "seed_indices": [
+    0,
+    1
+  ],
+  "lambdas": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "temperature_start": 0.02,
+  "temperature_end": 0.0002,
+  "holdout_modes": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      -2
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "retries": 0,
+  "field_or_neural_scores": false,
+  "acceptance": "Metropolis J=(1-lambda)C+lambda W; counts only hard invariant",
+  "seal_files": [
+    "docs/decisions/ADR_2026_10_09_LOCAL_SPECTRAL_TRADEOFF.md",
+    "artifacts/local_tradeoff/audit.py",
+    "tests/test_local_tradeoff.py",
+    "artifacts/native_neighborhood/worker.py",
+    "src/larp/constrained_mobility.py",
+    "src/larp/spectral_matching.py",
+    "configs/constrained_mobility_v1.json",
+    "artifacts/spectral_matching/v2/prepared/substrate_g1101.npz",
+    "artifacts/spectral_matching/v2/prepared/substrate_g1102.npz",
+    "artifacts/spectral_matching/v2/prepared/substrate_g1103.npz",
+    "artifacts/native_neighborhood/alternative_audit_v1.json",
+    "artifacts/native_neighborhood/audit.py",
+    "artifacts/native_neighborhood/worker.py",
+    "artifacts/native_neighborhood/tests_fixed/junit.xml",
+    "artifacts/native_neighborhood/tests_v1/junit.xml",
+    "artifacts/native_neighborhood/v1/boot.json",
+    "artifacts/native_neighborhood/v1/boot.json.ready",
+    "artifacts/native_neighborhood/v1/completion.json",
+    "artifacts/native_neighborhood/v1/completion.json.ready",
+    "artifacts/native_neighborhood/v1/g1101_candidates.jsonl",
+    "artifacts/native_neighborhood/v1/g1101_completion.json",
+    "artifacts/native_neighborhood/v1/g1101_completion.json.ready",
+    "artifacts/native_neighborhood/v1/g1102_candidates.jsonl",
+    "artifacts/native_neighborhood/v1/g1102_completion.json",
+    "artifacts/native_neighborhood/v1/g1102_completion.json.ready",
+    "artifacts/native_neighborhood/v1/g1103_candidates.jsonl",
+    "artifacts/native_neighborhood/v1/g1103_completion.json",
+    "artifacts/native_neighborhood/v1/g1103_completion.json.ready",
+    "artifacts/native_neighborhood/v1/gate.json",
+    "artifacts/native_neighborhood/v1/gate.json.ready",
+    "artifacts/native_neighborhood/v1/launch.json",
+    "artifacts/native_neighborhood/v1/launch.json.ready",
+    "artifacts/native_neighborhood/v1/prelaunch_seal.json",
+    "artifacts/native_neighborhood/v1/prelaunch_seal.json.ready",
+    "artifacts/native_neighborhood/v1/results.json",
+    "artifacts/native_neighborhood/v1/results.json.ready",
+    "artifacts/native_neighborhood/v1/supervision.json",
+    "artifacts/native_neighborhood/v1/supervision.json.ready",
+    "artifacts/native_neighborhood/v1/worker.log"
+  ]
+}

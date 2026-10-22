@@ -1,0 +1,103 @@
+{
+  "config": {
+    "version": "sampling_information_v1",
+    "stage": "posthoc_algebraic_diagnostic_B02_B06",
+    "source_oracle_results": "artifacts/sampling_oracle/v1/results.json",
+    "source_oracle_sha256": "44a79a2a111c33c18976910058892606db9561b62e0f217e82e984df34c2a1e3",
+    "bands": [
+      "smooth",
+      "fine"
+    ],
+    "conditions": [
+      "native",
+      "shuffle"
+    ],
+    "noise_sigma": [
+      0.0,
+      0.1
+    ],
+    "estimators": [
+      "nearest_neighbor",
+      "local_gaussian",
+      "oracle_band"
+    ],
+    "coefficient_covariance": "I/M; sphere ensemble, not Gaussian posterior",
+    "SVD_relative_cutoff": 1e-10,
+    "density_modes_halfspace": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "expected_geometry_count": 9,
+    "expected_designs": 180,
+    "expected_cells": 216,
+    "identity_absolute_tolerance": 1e-09,
+    "risk_decomposition_absolute_tolerance": 1e-10,
+    "maximum_numeric_seconds": 30.0,
+    "threads": 4,
+    "new_fields": false,
+    "new_geometries": false,
+    "neural_training": false,
+    "confirmatory": false,
+    "historical_beliefs_updated": false
+  },
+  "config_hash": "2cadcaccb58c764458bf6970ec5188d44da1bcf76cbe4fc8c30f3a3c462e18e2",
+  "created": "2026-10-09T19:40:21.568373+00:00",
+  "inputs": {
+    "artifacts\\sampling_oracle\\v1\\results.json": "44a79a2a111c33c18976910058892606db9561b62e0f217e82e984df34c2a1e3",
+    "artifacts/sampling_probe/v1/results.json": "53f5941d30328ca7499e548d91744895b9fdac3fac221a7466607c092a77e696",
+    "artifacts/sampling_probe/v1/common_field_bank.npz": "7f89f58ddf033eda6a6a26130606596ce11d7307929c283c8259538ef9a207d9",
+    "artifacts/sampling_probe/v1/field_manifest.json": "e09e4f8b27deac4adfebd55d08611401f2a472dbfd80962b55a623b768f4859a",
+    "artifacts/geometry/mhu_N400_g1101.npz": "a38ff09ae31959d55927cbc389f05330a91933c5a5bea2880b2813f1d55a7b5f",
+    "artifacts/sampling_probe/v1/geometries/mhu_N400_g1102.npz": "11375df8b531526aaa487272aac05febc3265358f8be5719f75fded7dfd983bf",
+    "artifacts/sampling_probe/v1/geometries/mhu_N400_g1103.npz": "23de2b0099c47f3b0ac7c77a0ba6c3948a563dafcdad0d89b0cdfee64fdbb3ea",
+    "artifacts/avian_v1/avian_full_spectral_N400_g1101.npz": "427e9e7ddfb7cbfeea6d53a5ffd25465f90c788f5ce2cfaa41a421a95bb29680",
+    "artifacts/avian_v1/avian_full_spectral_N400_g1102.npz": "009acff5a4b0fd5baecf2817b9bd4cdf9b9bcda900b9d603c79f2413c6b7485f",
+    "artifacts/avian_v1/avian_full_spectral_N400_g1103.npz": "de129159097d2e1307c1167e4b2c9d0111fcdac57f6217dd8c57331ab1a203b5",
+    "artifacts/avian_v1/avian_local_only_N400_g1101.npz": "0b53f51f2a70406c46c5d15962fc1b29372db96efaa0f64615442813e1cb0643",
+    "artifacts/avian_v1/avian_local_only_N400_g1102.npz": "7e3a4f44cc030cc93c56e1487f55a5275bc2ad8b751cf1018526e9c088d1167a",
+    "artifacts/avian_v1/avian_local_only_N400_g1103.npz": "ba1736cfbb86bb86873e3eb872c5d4335736cc3bfdc38ecf96a2c8479787c4c1"
+  },
+  "identity": {
+    "src/larp/sampling_information.py": "9d0fe5e8fbde9e7bdfaf65e200577a6d2d156ed7ad7fd075c3fbef040057c02f",
+    "configs/sampling_information_v1.json": "10acdf39be1a7a178862824fa272c762ed9dc03c4ecf71a170e09747634d9b60",
+    "src/larp/sampling_probe.py": "5689c4c8ec7bbee3cbb20df5feb4b266e86a44d6019b3ec7b52b77cc1a3c823f",
+    "src/larp/sampling_oracle.py": "f1a947a115e7f61ff47fadf84883611452551b08b8133ea674aa3d28b9144262",
+    "src/larp/geometry.py": "c895f2f56946e59c5af7988b7bd7435b3d0967045f23dbf74a75cc468d2455d6",
+    "src/larp/artifacts.py": "2b39af74cefa36f7936e5f38f494dc4a38f488d8341a91a2cd8b14f27f2bfa0b",
+    "configs/sampling_probe_v1.json": "598fceef0d15cf30fb9e934a8b272169ecd272f349283e27dbe704ab5f96e5ee",
+    "configs/sampling_oracle_v1.json": "a63d015efb4ada2abc70054d6ad1348259399938f385b4bbe893bea2fb7a3234"
+  },
+  "runtime": {
+    "python": "3.13.4",
+    "numpy": "2.5.3",
+    "pid": 25476,
+    "ppid": 23904,
+    "threads": 4
+  },
+  "before_new_diagnostic_scores": true,
+  "historical_results_already_observed": true,
+  "stage": "posthoc_algebraic_diagnostic",
+  "new_fields_or_geometries": false
+}

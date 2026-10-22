@@ -1,0 +1,128 @@
+{
+  "version": "sampling_grid_supplement_v1",
+  "config": {
+    "version": "sampling_grid_supplement_v1",
+    "stage": "posthoc_new_grid_and_query_stratum",
+    "families": [
+      "nominal_mhu",
+      "avian_full_spectral",
+      "avian_local_only",
+      "grid_balanced"
+    ],
+    "geometry_seeds": [
+      1101,
+      1102,
+      1103
+    ],
+    "marks": [
+      "native",
+      "shuffle"
+    ],
+    "bands": [
+      "smooth",
+      "fine"
+    ],
+    "noise_sigma": [
+      0.0,
+      0.1
+    ],
+    "estimators": [
+      "nearest_neighbor",
+      "local_gaussian",
+      "oracle_band"
+    ],
+    "query_strata": [
+      "aligned",
+      "continuous"
+    ],
+    "continuous_queries": {
+      "count": 100,
+      "distribution": "uniform_torus_20",
+      "seed_keys": [
+        20261008,
+        7814
+      ]
+    },
+    "source_sampling_series": "artifacts/sampling_probe/v1",
+    "source_oracle_series": "artifacts/sampling_oracle/v1",
+    "source_sampling_results_sha256": "53f5941d30328ca7499e548d91744895b9fdac3fac221a7466607c092a77e696",
+    "source_oracle_results_sha256": "44a79a2a111c33c18976910058892606db9561b62e0f217e82e984df34c2a1e3",
+    "source_field_bank_sha256": "7f89f58ddf033eda6a6a26130606596ce11d7307929c283c8259538ef9a207d9",
+    "source_field_manifest_sha256": "e09e4f8b27deac4adfebd55d08611401f2a472dbfd80962b55a623b768f4859a",
+    "calibration": {
+      "seed": 9005,
+      "first_proposals": 1000,
+      "extended_proposals": 10000,
+      "extended_optimization_ceiling_seconds": 5.0,
+      "restarts": 1,
+      "test_only": true,
+      "no_field_MSE": true
+    },
+    "construction": {
+      "N": 400,
+      "L": 20.0,
+      "counts_A_to_E": [
+        163,
+        85,
+        68,
+        50,
+        34
+      ],
+      "proposals": 100000,
+      "restarts": 10,
+      "maximum_seconds": 180.0,
+      "conservative_runtime_multiplier": 2.0,
+      "maximum_total_proposals": 3000000,
+      "maximum_total_certificates": 30,
+      "first_component_admitted": true,
+      "preserve_failed_as_approximate": true
+    },
+    "evaluation": {
+      "maximum_seconds": 30.0,
+      "threads": 4,
+      "expected_cells": 576,
+      "reused_aligned_cells": 216,
+      "new_cells": 360,
+      "kernel_length_scale": 1.25,
+      "kernel_cutoff_scales": 2.0,
+      "oracle_rcond": 1e-10,
+      "oracle_ridge_rule": "M*sigma^2"
+    },
+    "replication_unit_grid": "three_label_assignments_on_one_identical_coordinate_grid",
+    "cannot_interrupt_existing_annealer_mid_attempt": true,
+    "no_hpo": true,
+    "neural_training": false,
+    "architecture_evidence": false,
+    "beliefs_updated": false
+  },
+  "config_hash": "8aabee3c054b9b3325e8a7390388888df98ea1546f0a2918bce7ca7a810419cb",
+  "local_identity": {
+    "files": {
+      "src/larp/sampling_grid.py": "ce93d2f04cad70caa354d1f5c2b4db33b502c834d4c4b36247206d5f09d626f2",
+      "configs/sampling_grid_v1.json": "45cef12ee1c6862ca1c0d2cedfaeb8f9f5106542119b52612ab5856e8a457b6e",
+      "src/larp/geometry.py": "c895f2f56946e59c5af7988b7bd7435b3d0967045f23dbf74a75cc468d2455d6",
+      "src/larp/artifacts.py": "2b39af74cefa36f7936e5f38f494dc4a38f488d8341a91a2cd8b14f27f2bfa0b",
+      "src/larp/sampling_probe.py": "5689c4c8ec7bbee3cbb20df5feb4b266e86a44d6019b3ec7b52b77cc1a3c823f",
+      "src/larp/sampling_oracle.py": "f1a947a115e7f61ff47fadf84883611452551b08b8133ea674aa3d28b9144262",
+      "configs/sampling_probe_v1.json": "598fceef0d15cf30fb9e934a8b272169ecd272f349283e27dbe704ab5f96e5ee",
+      "configs/sampling_oracle_v1.json": "a63d015efb4ada2abc70054d6ad1348259399938f385b4bbe893bea2fb7a3234"
+    },
+    "runtime": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "psutil": "7.2.2",
+      "python": "3.13.4",
+      "threads": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4"
+      }
+    },
+    "hash": "1017dcc7d3e6c14df6d1d29572d3cafdffdcb13b1d2e940e9590aa53fabcfb31"
+  },
+  "created": "2026-10-08T13:28:03.839687+00:00",
+  "before_calibration_construction_scores": true,
+  "neural_training": false,
+  "architecture_evidence": false,
+  "beliefs_updated": false
+}

@@ -1,0 +1,38 @@
+{
+  "seed": 1101,
+  "treatment": "full_spectral",
+  "geometry_hashes": {
+    "points": "94645c5ea85d819f17678afa275351d683cd4aae39b8239c15389b5387a51198",
+    "labels": "cdbe8bf69f324444ddae96cf93adff0bb7274b51a7d3390ff505cfa0565bf581",
+    "geometry": "b7f2f23911ec1580042277ceca4e1e06471c3e9082e147290057051498fe1a75"
+  },
+  "component_q6": {
+    "A": {
+      "local_mean_abs": 0.4748557232197953,
+      "global_abs": 0.08934630932019366,
+      "definition": "six_homotypic_nearest_neighbors_periodic"
+    },
+    "B": {
+      "local_mean_abs": 0.44862573834366065,
+      "global_abs": 0.12234668549664308,
+      "definition": "six_homotypic_nearest_neighbors_periodic"
+    },
+    "C": {
+      "local_mean_abs": 0.5325603111560582,
+      "global_abs": 0.1539450452533885,
+      "definition": "six_homotypic_nearest_neighbors_periodic"
+    },
+    "D": {
+      "local_mean_abs": 0.4642284579538058,
+      "global_abs": 0.06969153704714899,
+      "definition": "six_homotypic_nearest_neighbors_periodic"
+    },
+    "E": {
+      "local_mean_abs": 0.5872117932672091,
+      "global_abs": 0.46222460704506185,
+      "definition": "six_homotypic_nearest_neighbors_periodic"
+    }
+  },
+  "descriptive_only": true,
+  "source_script_sha256": "a3a79cda9ec3f836683fbaf72aa7f361693475808890b8233d307bb653a3c0b3"
+}

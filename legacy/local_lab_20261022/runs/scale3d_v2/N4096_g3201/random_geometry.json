@@ -1,0 +1,1270 @@
+{
+  "box_length": 15.999999999999998,
+  "validation": {
+    "version": "scale3d_cic_multicomponent_inverse_k2_v2",
+    "N": 4096,
+    "counts": [
+      1669,
+      871,
+      696,
+      512,
+      348
+    ],
+    "physical_box_length": 15.999999999999998,
+    "periodic_3d": true,
+    "asymptotic_HU_established": false,
+    "finite_low_k_pass": false,
+    "finite_mean_threshold": 0.2,
+    "exact_audit_float64": true,
+    "subsampled_bands": true,
+    "components": [
+      {
+        "component": "union",
+        "n": 4096,
+        "cutoff_integer_norm_squared": 78,
+        "physical_cutoff": 3.4682243819896748,
+        "full_band_halfspace_modes": 1472,
+        "tested_modes": 128,
+        "chi_realized": 0.11982091982091982,
+        "exact_low_k_mean": 1.147769049547975,
+        "exact_low_k_max": 6.005542956132458,
+        "first_shell_mean": 2.0719637959582586,
+        "first_shell_max": 4.49694147102765,
+        "outside_band_mean": 1.07034681064611,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          0.9037648423463899,
+          1.1375244267605955,
+          1.2355197300520953
+        ],
+        "exact_full_band_mean": 0.9977080662853041,
+        "exact_full_band_max": 7.383150270978644,
+        "exact_full_band_modes": 1472,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 2.0719637959582586,
+            "max": 4.49694147102765
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 1.0590422955968737,
+            "max": 2.0770136676382096
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 1.2648583123016657,
+            "max": 2.0773274145375944
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 2.1570471507327778,
+            "max": 3.2478905313273057
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 0.7687395140708598,
+            "max": 2.409776012056717
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 1.1022071376488831,
+            "max": 2.7822788601900252
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.7913714254924126,
+            "max": 2.5092379364807296
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 0.585631184028334,
+            "max": 1.8129592704673412
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 0.6888424697239062,
+            "max": 1.5431117898321225
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 1.4374636743160745,
+            "max": 3.4818006465581064
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.45013836991024264,
+            "max": 0.6687387446626093
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 0.7138173064332376,
+            "max": 1.81442881727747
+          },
+          {
+            "norm_squared": 14,
+            "modes": 24,
+            "mean": 1.2250953183761706,
+            "max": 3.748941903375421
+          },
+          {
+            "norm_squared": 16,
+            "modes": 3,
+            "mean": 0.36043103311169156,
+            "max": 0.7029077295793458
+          },
+          {
+            "norm_squared": 17,
+            "modes": 24,
+            "mean": 1.36150537358874,
+            "max": 4.994848249518908
+          },
+          {
+            "norm_squared": 18,
+            "modes": 18,
+            "mean": 1.1643528629258464,
+            "max": 4.413383177147898
+          },
+          {
+            "norm_squared": 19,
+            "modes": 12,
+            "mean": 0.599963877249993,
+            "max": 1.4811829657783706
+          },
+          {
+            "norm_squared": 20,
+            "modes": 12,
+            "mean": 0.7353193604822653,
+            "max": 2.9478386984350897
+          },
+          {
+            "norm_squared": 21,
+            "modes": 24,
+            "mean": 1.2449498226787676,
+            "max": 4.185290533871919
+          },
+          {
+            "norm_squared": 22,
+            "modes": 12,
+            "mean": 0.6891091592897216,
+            "max": 1.9155899923592965
+          },
+          {
+            "norm_squared": 24,
+            "modes": 12,
+            "mean": 1.5294170095444295,
+            "max": 7.383150270978644
+          },
+          {
+            "norm_squared": 25,
+            "modes": 15,
+            "mean": 0.8305411463170064,
+            "max": 1.9200697049537776
+          },
+          {
+            "norm_squared": 26,
+            "modes": 36,
+            "mean": 0.9501734486706636,
+            "max": 2.9176768604034855
+          },
+          {
+            "norm_squared": 27,
+            "modes": 16,
+            "mean": 1.431171655434754,
+            "max": 3.514604067515915
+          },
+          {
+            "norm_squared": 29,
+            "modes": 36,
+            "mean": 1.232998219875862,
+            "max": 3.9856908661152466
+          },
+          {
+            "norm_squared": 30,
+            "modes": 24,
+            "mean": 1.3761225100266712,
+            "max": 5.500835436722287
+          },
+          {
+            "norm_squared": 32,
+            "modes": 6,
+            "mean": 1.1609647582090414,
+            "max": 3.8490047586964478
+          },
+          {
+            "norm_squared": 33,
+            "modes": 24,
+            "mean": 0.8171605289562005,
+            "max": 2.5225421232586616
+          },
+          {
+            "norm_squared": 34,
+            "modes": 24,
+            "mean": 0.8651819761873852,
+            "max": 4.559593484409088
+          },
+          {
+            "norm_squared": 35,
+            "modes": 24,
+            "mean": 0.8739923932216573,
+            "max": 2.370867312879473
+          },
+          {
+            "norm_squared": 36,
+            "modes": 15,
+            "mean": 1.303287968837449,
+            "max": 3.595326143822955
+          },
+          {
+            "norm_squared": 37,
+            "modes": 12,
+            "mean": 0.5543966460788535,
+            "max": 1.4576836685922345
+          },
+          {
+            "norm_squared": 38,
+            "modes": 36,
+            "mean": 0.9710713241456396,
+            "max": 4.024606797513899
+          },
+          {
+            "norm_squared": 40,
+            "modes": 12,
+            "mean": 0.8955857822613917,
+            "max": 2.634470566000489
+          },
+          {
+            "norm_squared": 41,
+            "modes": 48,
+            "mean": 0.8908918341470701,
+            "max": 4.400891426448823
+          },
+          {
+            "norm_squared": 42,
+            "modes": 24,
+            "mean": 0.6312948521659366,
+            "max": 2.6802801460373638
+          },
+          {
+            "norm_squared": 43,
+            "modes": 12,
+            "mean": 0.5734211839882447,
+            "max": 2.1382922437452105
+          },
+          {
+            "norm_squared": 44,
+            "modes": 12,
+            "mean": 1.0428794257628615,
+            "max": 3.3501780764618214
+          },
+          {
+            "norm_squared": 45,
+            "modes": 36,
+            "mean": 1.0249311010369047,
+            "max": 4.795644108213742
+          },
+          {
+            "norm_squared": 46,
+            "modes": 24,
+            "mean": 1.1418549176280222,
+            "max": 2.7810861519916985
+          },
+          {
+            "norm_squared": 48,
+            "modes": 4,
+            "mean": 1.8479608577485704,
+            "max": 2.9371041352169094
+          },
+          {
+            "norm_squared": 49,
+            "modes": 27,
+            "mean": 1.1110933482598342,
+            "max": 4.011982173370852
+          },
+          {
+            "norm_squared": 50,
+            "modes": 42,
+            "mean": 0.9796561079885484,
+            "max": 5.539973529945872
+          },
+          {
+            "norm_squared": 51,
+            "modes": 24,
+            "mean": 0.820341246588442,
+            "max": 2.069256157927258
+          },
+          {
+            "norm_squared": 52,
+            "modes": 12,
+            "mean": 1.229867769166419,
+            "max": 2.6253034133846924
+          },
+          {
+            "norm_squared": 53,
+            "modes": 36,
+            "mean": 0.9667593975734154,
+            "max": 4.734140111106949
+          },
+          {
+            "norm_squared": 54,
+            "modes": 48,
+            "mean": 0.8698499152966033,
+            "max": 4.341356343418736
+          },
+          {
+            "norm_squared": 56,
+            "modes": 24,
+            "mean": 1.1128236280788075,
+            "max": 6.005542956132458
+          },
+          {
+            "norm_squared": 57,
+            "modes": 24,
+            "mean": 0.5301321000813861,
+            "max": 1.4773381582295428
+          },
+          {
+            "norm_squared": 58,
+            "modes": 12,
+            "mean": 0.7414604620958415,
+            "max": 2.047352910667371
+          },
+          {
+            "norm_squared": 59,
+            "modes": 36,
+            "mean": 1.1301982790372,
+            "max": 5.939393709366089
+          },
+          {
+            "norm_squared": 61,
+            "modes": 36,
+            "mean": 1.0885426824707183,
+            "max": 3.736723014818612
+          },
+          {
+            "norm_squared": 62,
+            "modes": 48,
+            "mean": 1.044163614500947,
+            "max": 4.580407461948316
+          },
+          {
+            "norm_squared": 64,
+            "modes": 3,
+            "mean": 0.9506307552412218,
+            "max": 1.3822255285814902
+          },
+          {
+            "norm_squared": 65,
+            "modes": 48,
+            "mean": 0.9588737748540826,
+            "max": 3.5509490972051885
+          },
+          {
+            "norm_squared": 66,
+            "modes": 48,
+            "mean": 0.8136667234847347,
+            "max": 3.2564731043480695
+          },
+          {
+            "norm_squared": 67,
+            "modes": 12,
+            "mean": 0.4931822511311407,
+            "max": 2.428845898227402
+          },
+          {
+            "norm_squared": 68,
+            "modes": 24,
+            "mean": 1.1272797195992545,
+            "max": 3.5395013177794055
+          },
+          {
+            "norm_squared": 69,
+            "modes": 48,
+            "mean": 0.9749146125511724,
+            "max": 5.500394020902162
+          },
+          {
+            "norm_squared": 70,
+            "modes": 24,
+            "mean": 1.044835038021196,
+            "max": 6.564836483600428
+          },
+          {
+            "norm_squared": 72,
+            "modes": 18,
+            "mean": 1.464569663595993,
+            "max": 6.789132276433897
+          },
+          {
+            "norm_squared": 73,
+            "modes": 24,
+            "mean": 1.308859566901153,
+            "max": 4.282778974347099
+          },
+          {
+            "norm_squared": 74,
+            "modes": 60,
+            "mean": 1.027534225834965,
+            "max": 3.6728116798327504
+          },
+          {
+            "norm_squared": 75,
+            "modes": 28,
+            "mean": 0.9400334230590687,
+            "max": 3.170577163010162
+          },
+          {
+            "norm_squared": 76,
+            "modes": 12,
+            "mean": 0.8529996577689697,
+            "max": 1.818968368796165
+          },
+          {
+            "norm_squared": 77,
+            "modes": 48,
+            "mean": 0.9960192447490842,
+            "max": 3.793690762999982
+          },
+          {
+            "norm_squared": 78,
+            "modes": 24,
+            "mean": 0.9486565270451056,
+            "max": 3.3991929938884713
+          }
+        ]
+      },
+      {
+        "component": "type_0",
+        "n": 1669,
+        "cutoff_integer_norm_squared": 42,
+        "physical_cutoff": 2.5449809209923155,
+        "full_band_halfspace_modes": 594,
+        "tested_modes": 128,
+        "chi_realized": 0.11870503597122302,
+        "exact_low_k_mean": 0.9096666487344891,
+        "exact_low_k_max": 5.980836817789646,
+        "first_shell_mean": 1.095736775952834,
+        "first_shell_max": 3.0348177718893377,
+        "outside_band_mean": 0.9998545376433527,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.1204448863193153,
+          0.8113062584262475,
+          0.7613544132219999
+        ],
+        "exact_full_band_mean": 1.030682712764451,
+        "exact_full_band_max": 6.6889932648482695,
+        "exact_full_band_modes": 594,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 1.0957367759528334,
+            "max": 3.0348177718893363
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 0.9307244616562773,
+            "max": 2.6878946174249307
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 1.1508729379466547,
+            "max": 1.7113761124847662
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 1.1635266837919869,
+            "max": 2.9376901553614636
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 1.1105943909224492,
+            "max": 2.793154837974473
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 1.0289970379729223,
+            "max": 2.6570929840748256
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.6669054662704146,
+            "max": 1.6760554334430835
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 1.5605904519860316,
+            "max": 6.6889932648482695
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 0.9697457357550068,
+            "max": 3.3029267236714266
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 1.7107682104040798,
+            "max": 5.580200889683119
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.9113843440248544,
+            "max": 1.7897096799657808
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 1.1698129238951984,
+            "max": 3.2588312316048262
+          },
+          {
+            "norm_squared": 14,
+            "modes": 24,
+            "mean": 1.7601082445537886,
+            "max": 6.353860669346075
+          },
+          {
+            "norm_squared": 16,
+            "modes": 3,
+            "mean": 0.4006419761019498,
+            "max": 0.6318493232539711
+          },
+          {
+            "norm_squared": 17,
+            "modes": 24,
+            "mean": 1.0365016429754805,
+            "max": 3.779444861606046
+          },
+          {
+            "norm_squared": 18,
+            "modes": 18,
+            "mean": 1.1092416685847826,
+            "max": 5.980836817789646
+          },
+          {
+            "norm_squared": 19,
+            "modes": 12,
+            "mean": 0.7123476941362341,
+            "max": 2.343235418860882
+          },
+          {
+            "norm_squared": 20,
+            "modes": 12,
+            "mean": 0.9897562254692401,
+            "max": 2.8821427288944603
+          },
+          {
+            "norm_squared": 21,
+            "modes": 24,
+            "mean": 1.1725946477482745,
+            "max": 3.4997694055719246
+          },
+          {
+            "norm_squared": 22,
+            "modes": 12,
+            "mean": 0.9929548177355912,
+            "max": 5.897894598388766
+          },
+          {
+            "norm_squared": 24,
+            "modes": 12,
+            "mean": 0.9694145165075487,
+            "max": 3.7814287293233595
+          },
+          {
+            "norm_squared": 25,
+            "modes": 15,
+            "mean": 0.7590089062784489,
+            "max": 2.3328946957071683
+          },
+          {
+            "norm_squared": 26,
+            "modes": 36,
+            "mean": 1.063752660241315,
+            "max": 3.94155041531756
+          },
+          {
+            "norm_squared": 27,
+            "modes": 16,
+            "mean": 1.3479779844417383,
+            "max": 3.619209404783418
+          },
+          {
+            "norm_squared": 29,
+            "modes": 36,
+            "mean": 0.8438856747504351,
+            "max": 3.3624025970884714
+          },
+          {
+            "norm_squared": 30,
+            "modes": 24,
+            "mean": 1.046943894012409,
+            "max": 4.097090102467217
+          },
+          {
+            "norm_squared": 32,
+            "modes": 6,
+            "mean": 0.6561785772655435,
+            "max": 1.7019525841330507
+          },
+          {
+            "norm_squared": 33,
+            "modes": 24,
+            "mean": 0.8010355373368697,
+            "max": 4.412460574110812
+          },
+          {
+            "norm_squared": 34,
+            "modes": 24,
+            "mean": 1.0164607044864966,
+            "max": 4.604930487209109
+          },
+          {
+            "norm_squared": 35,
+            "modes": 24,
+            "mean": 0.8623887254859585,
+            "max": 3.3053995779256606
+          },
+          {
+            "norm_squared": 36,
+            "modes": 15,
+            "mean": 1.1170206440004373,
+            "max": 3.0064650894264147
+          },
+          {
+            "norm_squared": 37,
+            "modes": 12,
+            "mean": 1.164468540643944,
+            "max": 3.861757789980123
+          },
+          {
+            "norm_squared": 38,
+            "modes": 36,
+            "mean": 0.9132167249108929,
+            "max": 4.265466999008656
+          },
+          {
+            "norm_squared": 40,
+            "modes": 12,
+            "mean": 1.4813830448570728,
+            "max": 4.752279380430058
+          },
+          {
+            "norm_squared": 41,
+            "modes": 48,
+            "mean": 0.8413486763151633,
+            "max": 4.8850212478694335
+          },
+          {
+            "norm_squared": 42,
+            "modes": 24,
+            "mean": 0.6311416374308025,
+            "max": 3.4299925686560484
+          }
+        ]
+      },
+      {
+        "component": "type_1",
+        "n": 871,
+        "cutoff_integer_norm_squared": 27,
+        "physical_cutoff": 2.0405242847634955,
+        "full_band_halfspace_modes": 309,
+        "tested_modes": 128,
+        "chi_realized": 0.11839080459770115,
+        "exact_low_k_mean": 1.0081246192365658,
+        "exact_low_k_max": 6.650067649512202,
+        "first_shell_mean": 1.7996733097638007,
+        "first_shell_max": 2.3328147663219188,
+        "outside_band_mean": 0.8995511097401787,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          0.9807007253890095,
+          0.9786553268096004,
+          0.9365216275211313
+        ],
+        "exact_full_band_mean": 0.9777092262156654,
+        "exact_full_band_max": 6.650067649512202,
+        "exact_full_band_modes": 309,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 1.7996733097638014,
+            "max": 2.33281476632192
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 0.5966912207396744,
+            "max": 0.9945324248461807
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 0.8369411152908453,
+            "max": 1.5295046950553337
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 1.1935369319600588,
+            "max": 2.124262136080866
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 0.7466349399987792,
+            "max": 2.809113665168796
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 0.5222877910330421,
+            "max": 1.6288045336825194
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.46007006916798504,
+            "max": 1.5752270286376233
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 0.5336386484690586,
+            "max": 1.0875189738344468
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 1.4376319749778022,
+            "max": 5.32600489121429
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 0.6931959975027221,
+            "max": 2.346023274761273
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.6248072197901273,
+            "max": 1.2178641399755195
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 1.097850478915425,
+            "max": 2.613600919998427
+          },
+          {
+            "norm_squared": 14,
+            "modes": 24,
+            "mean": 1.1859688607028087,
+            "max": 4.5492655814928495
+          },
+          {
+            "norm_squared": 16,
+            "modes": 3,
+            "mean": 0.7675675536637484,
+            "max": 1.2555751152619634
+          },
+          {
+            "norm_squared": 17,
+            "modes": 24,
+            "mean": 1.1954465179168834,
+            "max": 4.186110582275517
+          },
+          {
+            "norm_squared": 18,
+            "modes": 18,
+            "mean": 1.0267779021097272,
+            "max": 2.9704524220781026
+          },
+          {
+            "norm_squared": 19,
+            "modes": 12,
+            "mean": 0.6831893097491014,
+            "max": 2.3406127809943675
+          },
+          {
+            "norm_squared": 20,
+            "modes": 12,
+            "mean": 0.8806880121089727,
+            "max": 3.1239194978177425
+          },
+          {
+            "norm_squared": 21,
+            "modes": 24,
+            "mean": 0.9285296587977738,
+            "max": 3.2833403571241395
+          },
+          {
+            "norm_squared": 22,
+            "modes": 12,
+            "mean": 1.1342292184003842,
+            "max": 4.306332005411275
+          },
+          {
+            "norm_squared": 24,
+            "modes": 12,
+            "mean": 1.4251487931653652,
+            "max": 6.650067649512202
+          },
+          {
+            "norm_squared": 25,
+            "modes": 15,
+            "mean": 1.2188301722647426,
+            "max": 3.3372427540848775
+          },
+          {
+            "norm_squared": 26,
+            "modes": 36,
+            "mean": 0.9966928145596382,
+            "max": 5.001657214793119
+          },
+          {
+            "norm_squared": 27,
+            "modes": 16,
+            "mean": 0.9439575920837812,
+            "max": 3.2780134770343152
+          }
+        ]
+      },
+      {
+        "component": "type_2",
+        "n": 696,
+        "cutoff_integer_norm_squared": 24,
+        "physical_cutoff": 1.9238247452427961,
+        "full_band_halfspace_modes": 242,
+        "tested_modes": 128,
+        "chi_realized": 0.11606714628297363,
+        "exact_low_k_mean": 0.9827690474438366,
+        "exact_low_k_max": 5.32647778028103,
+        "first_shell_mean": 0.16624770951384185,
+        "first_shell_max": 0.3155793983378056,
+        "outside_band_mean": 1.0993842141804444,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          0.9931260151258151,
+          1.0258039633506213,
+          0.8446154311996682
+        ],
+        "exact_full_band_mean": 0.9124320846764342,
+        "exact_full_band_max": 5.326477780281032,
+        "exact_full_band_modes": 242,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 0.16624770951384193,
+            "max": 0.31557939833780563
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 1.2832639999299893,
+            "max": 2.962193517416505
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 1.3962484291571027,
+            "max": 3.3293935177416163
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 1.5168281743017313,
+            "max": 3.028745042505416
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 0.8927063280995088,
+            "max": 3.875766041246769
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 1.077263447962929,
+            "max": 2.947782067895442
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.7785611090158211,
+            "max": 1.5906485363069593
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 1.1288226543070736,
+            "max": 2.194342728734934
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 0.8183012696483821,
+            "max": 2.0577233510126898
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 0.6435512331241241,
+            "max": 1.6170714829761026
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.7839338974124225,
+            "max": 2.391799039991169
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 1.054014225676246,
+            "max": 2.961077075066938
+          },
+          {
+            "norm_squared": 14,
+            "modes": 24,
+            "mean": 0.788227818894404,
+            "max": 2.976699125502928
+          },
+          {
+            "norm_squared": 16,
+            "modes": 3,
+            "mean": 0.6098441458508562,
+            "max": 0.8639858163692097
+          },
+          {
+            "norm_squared": 17,
+            "modes": 24,
+            "mean": 0.9112534085604964,
+            "max": 4.7202552246783975
+          },
+          {
+            "norm_squared": 18,
+            "modes": 18,
+            "mean": 0.709946911486014,
+            "max": 2.5354257906282496
+          },
+          {
+            "norm_squared": 19,
+            "modes": 12,
+            "mean": 1.0552702285419813,
+            "max": 2.951656612201252
+          },
+          {
+            "norm_squared": 20,
+            "modes": 12,
+            "mean": 0.7964034871229425,
+            "max": 2.5667688039354597
+          },
+          {
+            "norm_squared": 21,
+            "modes": 24,
+            "mean": 1.0490943516290707,
+            "max": 5.326477780281032
+          },
+          {
+            "norm_squared": 22,
+            "modes": 12,
+            "mean": 0.7185087945427603,
+            "max": 1.5574410185267242
+          },
+          {
+            "norm_squared": 24,
+            "modes": 12,
+            "mean": 1.0407248455623879,
+            "max": 3.688564098105668
+          }
+        ]
+      },
+      {
+        "component": "type_3",
+        "n": 512,
+        "cutoff_integer_norm_squared": 19,
+        "physical_cutoff": 1.7117356123459617,
+        "full_band_halfspace_modes": 182,
+        "tested_modes": 128,
+        "chi_realized": 0.1187214611872146,
+        "exact_low_k_mean": 1.0455174872261348,
+        "exact_low_k_max": 5.389581346117701,
+        "first_shell_mean": 0.5617054835680279,
+        "first_shell_max": 0.7329800162079367,
+        "outside_band_mean": 0.9810293571292955,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          1.0218263209653555,
+          1.1539424633388369,
+          1.196550348989898
+        ],
+        "exact_full_band_mean": 1.0111125590188934,
+        "exact_full_band_max": 5.389581346117701,
+        "exact_full_band_modes": 182,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 0.5617054835680283,
+            "max": 0.7329800162079371
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 1.1325715933348046,
+            "max": 2.519009317745315
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 1.9103841146649487,
+            "max": 5.389581346117701
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 1.2178884131555696,
+            "max": 2.881172754995429
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 1.2222670198026238,
+            "max": 3.9211904931559634
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 0.5594214842616426,
+            "max": 2.8043232943460614
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.9873391818296368,
+            "max": 2.058576716659463
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 0.8938273560743348,
+            "max": 2.9235774443560847
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 1.5068110562282468,
+            "max": 3.9685725209022324
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 0.5686345197703817,
+            "max": 1.7840730285090147
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.9007354604459883,
+            "max": 2.430838119990846
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 0.8865664661022911,
+            "max": 2.04366259983615
+          },
+          {
+            "norm_squared": 14,
+            "modes": 24,
+            "mean": 0.9766124360992872,
+            "max": 4.054790412899626
+          },
+          {
+            "norm_squared": 16,
+            "modes": 3,
+            "mean": 0.6510694144733922,
+            "max": 0.8832577940508535
+          },
+          {
+            "norm_squared": 17,
+            "modes": 24,
+            "mean": 1.0871239991063826,
+            "max": 4.329887955393293
+          },
+          {
+            "norm_squared": 18,
+            "modes": 18,
+            "mean": 0.8283873460170993,
+            "max": 3.3622144259035895
+          },
+          {
+            "norm_squared": 19,
+            "modes": 12,
+            "mean": 1.499507440673008,
+            "max": 4.521161758170627
+          }
+        ]
+      },
+      {
+        "component": "type_4",
+        "n": 348,
+        "cutoff_integer_norm_squared": 13,
+        "physical_cutoff": 1.4158966748923723,
+        "full_band_halfspace_modes": 101,
+        "tested_modes": 101,
+        "chi_realized": 0.09702209414024976,
+        "exact_low_k_mean": 0.9394200249879381,
+        "exact_low_k_max": 4.924206958580252,
+        "first_shell_mean": 0.8266563819706588,
+        "first_shell_max": 1.9991052922241266,
+        "outside_band_mean": 0.9729181675106111,
+        "outside_band_tested": 128,
+        "dominant_axis_means": [
+          0.855655483345914,
+          0.9419954349225609,
+          0.9319563259296184
+        ],
+        "exact_full_band_mean": 0.9394200249879381,
+        "exact_full_band_max": 4.924206958580252,
+        "exact_full_band_modes": 101,
+        "shell_profile": [
+          {
+            "norm_squared": 1,
+            "modes": 3,
+            "mean": 0.8266563819706588,
+            "max": 1.9991052922241261
+          },
+          {
+            "norm_squared": 2,
+            "modes": 6,
+            "mean": 0.6466342630415821,
+            "max": 1.9062904772727178
+          },
+          {
+            "norm_squared": 3,
+            "modes": 4,
+            "mean": 1.0241580980547786,
+            "max": 2.6445803528171266
+          },
+          {
+            "norm_squared": 4,
+            "modes": 3,
+            "mean": 0.4226472477923733,
+            "max": 0.9005738664213188
+          },
+          {
+            "norm_squared": 5,
+            "modes": 12,
+            "mean": 0.9833405848863458,
+            "max": 2.537481247033935
+          },
+          {
+            "norm_squared": 6,
+            "modes": 12,
+            "mean": 0.6179849917013521,
+            "max": 3.3343272759888944
+          },
+          {
+            "norm_squared": 8,
+            "modes": 6,
+            "mean": 0.9196242692974019,
+            "max": 1.8771811043601323
+          },
+          {
+            "norm_squared": 9,
+            "modes": 15,
+            "mean": 0.8512457104594713,
+            "max": 1.63425082359271
+          },
+          {
+            "norm_squared": 10,
+            "modes": 12,
+            "mean": 0.8821638263367721,
+            "max": 1.9697930109943715
+          },
+          {
+            "norm_squared": 11,
+            "modes": 12,
+            "mean": 1.5266188355712809,
+            "max": 4.924206958580252
+          },
+          {
+            "norm_squared": 12,
+            "modes": 4,
+            "mean": 0.7947318841341106,
+            "max": 1.5358756531432451
+          },
+          {
+            "norm_squared": 13,
+            "modes": 12,
+            "mean": 1.130867999405175,
+            "max": 4.4959553345772
+          }
+        ]
+      }
+    ],
+    "nearest_neighbor_p05_physical": 0.2368352573221421,
+    "nearest_neighbor_cv": 0.35773549076010186,
+    "homotypic_nearest_p05_physical": [
+      0.3514475799992449,
+      0.36016787280483353,
+      0.4450966617809372,
+      0.4720348327377115,
+      0.5645183751040606
+    ],
+    "CIC_grid_axis_coherent_power_fraction": [
+      0.00012186069636734685,
+      0.0004616048709519914,
+      0.00017439178511675013
+    ],
+    "interpretation": "Finite low-k proxy audit; no thermodynamic-limit, isotropy, or avian-retina equivalence certificate.",
+    "audit_implementation_version": "scale3d_cic_multicomponent_v1",
+    "full_band_audit_float64": true,
+    "original_sampled_gate_retained": true
+  },
+  "history": [],
+  "construction": {
+    "version": "scale3d_cic_multicomponent_inverse_k2_v2",
+    "seed": 3201,
+    "N": 4096,
+    "iterations": 0,
+    "spectral": false,
+    "chi_requested": 0.12,
+    "local_weight": 0.15,
+    "grid_size": 64,
+    "device": "cuda",
+    "dtype": "float32",
+    "spectral_weighting": "inverse integer norm squared, separately normalized",
+    "initialization": "numpy PCG64 uniform plus Hamilton-label permutation",
+    "cuda_scatter_nondeterminism": true,
+    "elapsed_seconds_including_exact_validation": 0.08630170000105863
+  }
+}

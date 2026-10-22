@@ -1,0 +1,43 @@
+# MHU en 3D y escalado: revisión para decidir una exploración
+
+**2026-10-08 · Propuesta NOT_RUN.** Recomendación: merece la pena abrir un **preflight geométrico 3D en N400**, con una pregunta falsable y presupuesto acotado. Su valor inmediato es saber si podemos construir y distinguir organizaciones multicomponente volumétricas sin confundir espectro, cobertura y conectividad. Entrenamiento 3D y N1600/6400 requieren puertas posteriores. Esta revisión aplica AB 2.1 prospectivamente; no cambia protocolos, resultados ni priors.
+
+La [fase 3](../PHASE_3_ROLE_COVERAGE.md) demuestra aprendizaje b0 en un panel Grid N400 y dos inicializaciones; AUX conserva un fallo. No acredita XOR amplio, transporte remoto ni ventaja MHU. El [matching espectral independiente](../INDEPENDENT_SPECTRAL_MATCHING_NEXT.md) sigue NOT_RUN: proporciona una pregunta causal más identificable que aumentar simultáneamente dimensión y tamaño.
+
+## Antecedentes y oportunidad real
+
+MHU no está limitada matemáticamente a superficies. [Torquato, Zhang y Stillinger, PRX 2015](https://doi.org/10.1103/PhysRevX.5.021020), revisado por pares, estudian estados stealthy y simulaciones en las primeras tres dimensiones; es antecedente de construcción continua **monocomponente**, no reproducción de cinco poblaciones LARP. [Chen et al., Acta Materialia 2023](https://doi.org/10.1016/j.actamat.2023.118678), revisado por pares, construyen composiciones Si/Ge/Sn MHU sobre retícula diamante 3D. Su [manuscrito primario](https://arxiv.org/pdf/2111.11412) describe N5832 y promedios de cinco configuraciones; la organización local cambia y el objetivo stealthy no alcanza ceros exactos. Acredita factibilidad volumétrica condicionada a ese modelo, sin demostrar utilidad neuronal.
+
+[Wang, Samajdar y Torquato, PRB 2024](https://doi.org/10.1103/PhysRevB.110.104201), revisado por pares, analizan espectros totales y por espín en líquidos electrónicos 3D: unión y componentes pueden tener diferentes exponentes. [Lomba, Weis y Torquato, PRE 2018](https://doi.org/10.1103/PhysRevE.97.010102) y [Frusawa, Axioms 2025](https://doi.org/10.3390/axioms14010039), ambos revisados, distinguen hiperuniformidad global de componentes mediante correlaciones cruzadas; sus modelos binarios no son un generador LARP 3D. Por tanto, «MHU existe en 3D» carece de novedad suficiente. La oportunidad propia sería identificar **qué aporta la concentración espectral al adquirir o transportar información bajo recursos declarados**. No encontré en esta búsqueda una demostración primaria de ventaja de la arquitectura neuronal LARP.
+
+## Qué debe cambiar al pasar a 3D
+
+Denotar dimensión espacial D y estado neuronal h evita confundir dos capacidades. Con densidad numérica uno, L=N^(1/D): para N400, L2D=20 y L3D≈7,368; k mínimo pasa de 0,314 a 0,853. Igualar densidades numéricas de área y volumen presupone una unidad de longitud común elegida. El cutoff entero 0<|n|≤2 contiene seis pares ± en 2D y dieciséis en 3D; copiarlo altera banda física y restricciones. En E34, imponer dieciséis amplitudes complejas supone hasta 32 restricciones reales frente a 99 coordenadas relativas; ese conteo no prueba realizabilidad con exclusión. Más direcciones no equivalen a acceso a ondas más largas.
+
+Las ventanas R4/R5 originales superan L3D/2: trasladarlas como esferas ordinarias sería incorrecto. Diseñar ventanas R/L y R/a_c, a_c=(L^D/n_c)^(1/D), separadamente; registrar volumen, conteos y normalización binomial de N fijo. E34 ofrece poco rango entre espaciado y caja. Un certificado N400 sólo puede acreditar supresión finita, sin ajustar un exponente asintótico. [Jiao, JCP 2026](https://doi.org/10.1063/5.0336587), revisado por pares, analiza fuga espectral por ventanas/máscaras: no trasladar automáticamente ese artefacto a modos recíprocos de un toro íntegro. [Liu et al., junio 2026](https://arxiv.org/abs/2606.18848), **preprint**, propone diagnóstico de exponentes efectivos; refuerza la cautela, sin validar nuestros umbrales.
+
+Además de S_c=|ρ_c|²/n_c, registrar la matriz 5×5 S_cc′=〈ρ_cρ_c′*〉/√(n_cn_c′). Su diagonal no reemplaza cruces y autovalores. Con f_c=n_c/N, η_c=ρ_c−f_cρ_unión satisface Ση_c=0: la matriz de concentración tiene como máximo cuatro direcciones independientes. **Inferencia algebraica propia:** un único producto ρρ* por modo tiene rango uno; promediar por realizaciones y cascarones declarados antes de interpretar autovalores. Conservar también direcciones para detectar anisotropía. Las cinco poblaciones y la unión no son seis réplicas.
+
+## Tres comparaciones distintas
+
+| Estimando | Qué fijar | Qué no identifica |
+|---|---|---|
+| Efecto espectral dentro de D | X, grafo, conteos, puertos, decoder; funciones relabeladas y matching local | Beneficio de aumentar D |
+| Efecto del sustrato 2D/3D en cómputo | N, h, T, parámetros P, número de arcos 6N, tarea abstracta común y perfiles de hops | Costo físico idéntico |
+| Utilidad en un campo físico 3D | Dominio, resolución/spectro objetivo, costo de sensores/cableado y comparadores pertinentes | Transferencia de resultados de un campo 2D diferente |
+
+Cambiar D altera distancias, outdegree, caminos redundantes, orientación, SCC y disponibilidad de tipos por campo receptivo. Fijar grado entrante seis y T16 no fija alcance. Rehacer kNN conserva 6N arcos pero cambia E; conservar exactamente E mediante otro embedding estudia distancias, no redes volumétricas nativas. Mantener simultáneamente N, densidad, distribución de distancias, costo Σlongitud^p, hops y E generalmente impide la intervención deseada. Igualar costo exige ajustar escala o conectividad, cambiando el estimando. COORDS_OFF conserva distancias de arista. Una tarea volumétrica debe compararse con baselines volumétricos; una superficie embebida en 3D sigue siendo un sustrato 2D.
+
+## Prueba mínima y puertas propuestas
+
+Primero, tres semillas nuevas prefijadas, N400/conteos originales, coordenadas continuas periódicas 3D y repulsión común; dejar polidispersidad para una regla volumétrica explícita. Comparar término espectral activo frente a control local con inicialización/presupuesto comunes. Retener el primer candidato terminado del control sin exigirle certificado MHU. Propuesta: 120 s por construcción, una tentativa por semilla/condición y techo global 15 minutos, incluida certificación; timeout o fracaso conservado, sin sustituir semillas. Estos números son **techos propuestos**, no costos estimados.
+
+Congelar un certificado 3D nuevo: dieciséis pares de modos, medias≤0,05/máximos≤0,10 en cada componente y unión como criterios operativos propuestos, separación≥0,299 y ventanas R/L=[0,15;0,25;0,35]; medir fuera de banda y anisotropía. Éxito exige tres candidatas completas admitidas y controles con media S_c≥0,50 en los cinco tipos; si falla ese contraste, la manipulación fracasa. Publicar cobertura, vecinos, vacíos, arcos/hops y cableado: sus cambios impiden atribución exclusiva a ondas largas. **NOT_IDENTIFIED** si el matching es inviable.
+
+Puerta de utilidad propuesta, tras controles admitidos: campos multicanal 3D nuevos con banda k·a_c/ruido prefijados; reducción de MSE macro local≥10% frente al control 3D emparejado en tres sustratos nuevos. El 10% es una decisión operativa propuesta, no potencia calculada; publicar también ausencia de ventaja o inversiones del ranking con el oracle global. Ese resultado exploratorio apoyaría utilidad MHU **dentro de 3D**, sin probar superioridad dimensional ni neuronal. Confirmación posterior requiere otras realizaciones y endpoints congelados.
+
+## Escalar después de medir
+
+Las referencias empíricas relevantes aquí son 2D N400: generador nominal 2,600 s; aviar full 7,806–8,267 s y pico RSS 243–262 MB. Fase 3 consumió 38,912 s externos para cuatro entrenamientos Grid, 1000 updates; no predice entrenamiento 3D. A N1600/6400, operaciones lineales crecerían ×4/×16 y cuadráticas ×16/×256: **escenarios**, no cotas de tiempo. Una matriz float64 N×N ocupa 20,48/327,68 MB, antes de temporales. Fijar banda física hace crecer el número de modos con volumen; fijar cutoff entero reduce la banda al ampliar caja.
+
+Priorizar réplicas independientes N400 y matching; sumar nodos no corrige falta de réplicas. E crece 34→136→544; en 3D, L≈7,37→11,70→18,57 y N6400 apenas aproxima la longitud L20 de N400 2D. N1600 sólo como sentinel geométrico tras calibrar por fase tiempo/RSS; N6400 condicionado a ese costo observado y valor adicional de resolución espectral. Con 6N arcos, h/P fijos no bastan: mayor diámetro puede exigir más T. Prioridad: exploración geométrica 3D pequeña e identificación 2D; expansión neuronal sólo cuando responda una pregunta que N400 no pueda resolver.

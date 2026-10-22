@@ -1,0 +1,36 @@
+{
+  "protocol": "full_native_neighborhood_v1",
+  "parent": "4f2f9a1",
+  "historical_config": "configs/constrained_mobility_v1.json",
+  "output": "artifacts/native_neighborhood/v1",
+  "budget_seconds": 60,
+  "expected_counts": {
+    "g1101": [
+      24,
+      13
+    ],
+    "g1102": [
+      53,
+      10
+    ],
+    "g1103": [
+      34,
+      2
+    ]
+  },
+  "acceptance": "all_130_unchanged_historical_local_guards",
+  "retries": 0,
+  "task_scores_used": false,
+  "new_empirical_confirmation": false,
+  "seal_files": [
+    "docs/decisions/ADR_2026_10_09_FULL_NATIVE_NEIGHBORHOOD.md",
+    "artifacts/native_neighborhood/audit.py",
+    "tests/test_next_exploration.py",
+    "src/larp/constrained_mobility.py",
+    "src/larp/spectral_matching.py",
+    "configs/constrained_mobility_v1.json",
+    "artifacts/spectral_matching/v2/prepared/substrate_g1101.npz",
+    "artifacts/spectral_matching/v2/prepared/substrate_g1102.npz",
+    "artifacts/spectral_matching/v2/prepared/substrate_g1103.npz"
+  ]
+}

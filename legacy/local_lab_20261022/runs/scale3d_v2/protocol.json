@@ -1,0 +1,107 @@
+{
+  "config": {
+    "version": "scale3d_v2",
+    "date": "2026-10-10",
+    "user_authorization": "Explicit repair instruction: corrijamos; preserve v1 and restart with repaired long-wave generator",
+    "sizes": [
+      32768,
+      16384,
+      4096,
+      1024
+    ],
+    "geometry_seeds": [
+      3201,
+      3202
+    ],
+    "arms": [
+      "mhu",
+      "local",
+      "random"
+    ],
+    "geometry_iterations": 600,
+    "chi": 0.12,
+    "local_weight": 0.15,
+    "degree": 16,
+    "layers": 8,
+    "width": 256,
+    "batch": 2,
+    "updates": 1800,
+    "checkpoints": [
+      300,
+      600,
+      1200,
+      1800
+    ],
+    "learning_rate": 0.0003,
+    "queries": 256,
+    "modes_per_task": 512,
+    "bands": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "evaluation_worlds": 64,
+    "master_seed": 20261020,
+    "query_seed": 48201,
+    "mode_seed": 48202,
+    "evaluation_seed": 48203,
+    "test_query_seed": 48204,
+    "VRAM_fraction": 0.8,
+    "maximum_job_seconds": 21600,
+    "maximum_triplet_seconds": 2700,
+    "require_finite_MHU_pass": true,
+    "no_retries_or_test_hpo": true,
+    "field_domain": "fixed unit 3D torus; density increases with N; graph reach shrinks with N",
+    "interpretation": "End-to-end sensor-density scaling; geometry and wiring jointly change; not isolated neural MHU causality",
+    "numeric_historical_priors_updated": false,
+    "spectral_weighting": "inverse integer norm squared; per-component normalization",
+    "full_band_exact_audit": true,
+    "generator_qualification": "artifacts/scale3d_v2/qualification/result.json",
+    "source_paths": [
+      "src/larp/scale3d_train.py",
+      "src/larp/scale3d_geometry.py",
+      "src/larp/scale3d_report.py",
+      "src/larp/scale3d_train_v2.py",
+      "src/larp/scale3d_geometry_v2.py",
+      "src/larp/scale3d_runner_v2.py",
+      "src/larp/scale3d_report_v2.py",
+      "docs/experiments/SCALE3D_V2_PROTOCOL.md",
+      "docs/experiments/SCALE3D_V2_REPAIR_REVIEW.md",
+      "artifacts/scale3d_v2/repair_qualification.py",
+      "artifacts/scale3d_v2/qualification/protocol.json",
+      "artifacts/scale3d_v2/qualification/result.json"
+    ]
+  },
+  "files": {
+    "src\\larp\\scale3d_train.py": "ac4bc98794dc17da65c2a5ef019a47a64c1e274bbbf532b9aa7c3c53205ad980",
+    "src\\larp\\scale3d_geometry.py": "220096b284fa928a8090cb73abb1fafb71c40a753614491feb5a3b26f0e98cf2",
+    "src\\larp\\scale3d_report.py": "9a9c8f482de7373eb23597d1dc7e86862563dd6145ecc4c6412be608bc2519e6",
+    "src\\larp\\scale3d_train_v2.py": "1241f0c01726db3a9a49038d4286ffe0b50ae121b661d833f9a19f51495afec4",
+    "src\\larp\\scale3d_geometry_v2.py": "5f2bec63ae2e6b05e528af89173ca1975fd82d3422b15773cbade82636822d7c",
+    "src\\larp\\scale3d_runner_v2.py": "f93cf73175e1734bb632957bdc89c99f5b53d840f8a4af606ec56a52c83aad13",
+    "src\\larp\\scale3d_report_v2.py": "9bc3d0a9e5ab0d20edf8acaf11023bfaf89ffd74364710d48237012c9d4e5050",
+    "docs\\experiments\\SCALE3D_V2_PROTOCOL.md": "2fa2fd6d3bc66af066c4c9783729a43a6edb2ffd4026051ea2306828c0995fb2",
+    "docs\\experiments\\SCALE3D_V2_REPAIR_REVIEW.md": "4fdaea55dbda922ae1711940550ea92dc6611edaba2fb3a389b152ac3579d0e1",
+    "artifacts\\scale3d_v2\\repair_qualification.py": "c1554129189d14fc05a8229474d1b2f37fc9cdedc8be687f35a01bfd40f7d8ee",
+    "artifacts\\scale3d_v2\\qualification\\protocol.json": "f6e322b067ad9c40703b0b3ca8347bb68dcec7595850af352ea2a11d748be50f",
+    "artifacts\\scale3d_v2\\qualification\\result.json": "921b08b901df7db8e13b5517190b1dd333e99e3ae3d6c632d1e5907a461b6bfe",
+    "configs\\scale3d_v2.json": "83c9f524ff32e70b9379a1e8c8f74f7d3e4eaa4f78b7e2e680e2cfc3c963a34e"
+  },
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "GPU": "NVIDIA GeForce RTX 4070 SUPER",
+  "pid": 16548,
+  "ppid": 27064,
+  "precision": "FP32 with TF32 permitted; geometry audit FP64",
+  "status": "FROZEN_BEFORE_GENERATION_AND_TRAINING",
+  "historical_priors_updated": false
+}

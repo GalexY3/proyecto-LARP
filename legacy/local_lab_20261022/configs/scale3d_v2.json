@@ -1,0 +1,82 @@
+{
+  "version": "scale3d_v2",
+  "date": "2026-10-10",
+  "user_authorization": "Explicit repair instruction: corrijamos; preserve v1 and restart with repaired long-wave generator",
+  "sizes": [
+    32768,
+    16384,
+    4096,
+    1024
+  ],
+  "geometry_seeds": [
+    3201,
+    3202
+  ],
+  "arms": [
+    "mhu",
+    "local",
+    "random"
+  ],
+  "geometry_iterations": 600,
+  "chi": 0.12,
+  "local_weight": 0.15,
+  "degree": 16,
+  "layers": 8,
+  "width": 256,
+  "batch": 2,
+  "updates": 1800,
+  "checkpoints": [
+    300,
+    600,
+    1200,
+    1800
+  ],
+  "learning_rate": 0.0003,
+  "queries": 256,
+  "modes_per_task": 512,
+  "bands": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "evaluation_worlds": 64,
+  "master_seed": 20261020,
+  "query_seed": 48201,
+  "mode_seed": 48202,
+  "evaluation_seed": 48203,
+  "test_query_seed": 48204,
+  "VRAM_fraction": 0.8,
+  "maximum_job_seconds": 21600,
+  "maximum_triplet_seconds": 2700,
+  "require_finite_MHU_pass": true,
+  "no_retries_or_test_hpo": true,
+  "field_domain": "fixed unit 3D torus; density increases with N; graph reach shrinks with N",
+  "interpretation": "End-to-end sensor-density scaling; geometry and wiring jointly change; not isolated neural MHU causality",
+  "numeric_historical_priors_updated": false,
+  "spectral_weighting": "inverse integer norm squared; per-component normalization",
+  "full_band_exact_audit": true,
+  "generator_qualification": "artifacts/scale3d_v2/qualification/result.json",
+  "source_paths": [
+    "src/larp/scale3d_train.py",
+    "src/larp/scale3d_geometry.py",
+    "src/larp/scale3d_report.py",
+    "src/larp/scale3d_train_v2.py",
+    "src/larp/scale3d_geometry_v2.py",
+    "src/larp/scale3d_runner_v2.py",
+    "src/larp/scale3d_report_v2.py",
+    "docs/experiments/SCALE3D_V2_PROTOCOL.md",
+    "docs/experiments/SCALE3D_V2_REPAIR_REVIEW.md",
+    "artifacts/scale3d_v2/repair_qualification.py",
+    "artifacts/scale3d_v2/qualification/protocol.json",
+    "artifacts/scale3d_v2/qualification/result.json"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "classification": "AMENDED_EXPLORATORY_OPERATOR_DIAGNOSTIC",
+  "parent_observations": ["spectral_feasibility_v2_low_mobility", "constrained_mobility_v1_2280_proposals"],
+  "belief_revision": {
+    "H_CM1_registered_cycle3_kernel_viability": "counterevidence within the operational budget; neither operator viable",
+    "H_MOVE1_general_compensated_moves": "unresolved; this kernel did not construct deliberate local compensation",
+    "native_minimum_guard_three_cycle_isolation": "excluded for these three natives by positive exact necessary-guard counts; not excluded under all130 guards",
+    "MHU_utility": "unchanged; no task or acquisition evidence"
+  },
+  "hypothesis_generation": "Posthoc exclusion graphs provide a structural view of rare moves. New empirical hypotheses require new data; the census is deterministic verification on observed references.",
+  "objective_revision": "No change of mission; separate total structural effects and residual spectral contrasts",
+  "decision": "Close swap/cycle search sequence and prepare, without executing, the local/spectral tradeoff draft",
+  "old_numeric_priors_changed": false,
+  "old_role_hypotheses_changed": false,
+  "BF_or_numeric_posterior_invented": false,
+  "kernel_probability_is_theory_likelihood": false,
+  "innovation_rating": 1,
+  "innovation_scale_maximum": 3,
+  "innovation_basis": "Useful project-specific diagnosis using established methods; no general or neuronal novelty demonstrated"
+}

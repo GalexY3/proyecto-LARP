@@ -1,0 +1,53 @@
+{
+  "phase": 5,
+  "stage": "robustness",
+  "test_examples": 512,
+  "random_masks": 10,
+  "lesion_centers": 20,
+  "node_fractions": [
+    0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "lesion_radii": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subtype_absolute": [
+    4,
+    8,
+    16
+  ],
+  "subtype_fractions": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "edge_fractions": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "relocations": [
+    [
+      0.5,
+      0
+    ],
+    [
+      0,
+      0.5
+    ],
+    [
+      0.5,
+      0.5
+    ]
+  ],
+  "protect_ports_primary": true,
+  "steps": 16,
+  "auto_run": false
+}

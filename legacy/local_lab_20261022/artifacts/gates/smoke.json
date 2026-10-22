@@ -1,0 +1,232 @@
+{
+  "gate": "smoke",
+  "passed": false,
+  "created_UTC": "2026-10-08T05:47:16.913919+00:00",
+  "code": {
+    "commit": "a580b3654136fa5cc7e5d5bd7c053ffd49a23006",
+    "source_hash": "69c4739d1221098d3684d8c70acf33b52ed503dfb8e3ee863e6790f11285ed78",
+    "files": {
+      "src/larp/__init__.py": "3b4685d222b632a43e1f58668174d7437fcd56e73ce837d2acb9dc0614e2da76",
+      "src/larp/__main__.py": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7",
+      "src/larp/analysis.py": "224dd597475afd342057256e90f9f70067f64769c75d686db076d3f9a4ebb550",
+      "src/larp/artifacts.py": "2b39af74cefa36f7936e5f38f494dc4a38f488d8341a91a2cd8b14f27f2bfa0b",
+      "src/larp/baselines.py": "41c1efbc8d48e3e21de04559a8f7ae19b4be82e7d93ece7f62f5ba9089f1e9bc",
+      "src/larp/cli.py": "8e0ed6a62f0e9d03c3311232cabab0c53e414108d325238f5555e810b718ea22",
+      "src/larp/config.py": "171cdcbe3c4e0a2730211c733127f53c7910d01de5e68855947fa03fc4d09831",
+      "src/larp/data.py": "f77e30eb63fae5c3a11c586f5f4b0a2b3bfb2e4e248900694ea31d0d8f0456c9",
+      "src/larp/geometry.py": "c895f2f56946e59c5af7988b7bd7435b3d0967045f23dbf74a75cc468d2455d6",
+      "src/larp/graphs.py": "d18d7d37e8136fdd063dbd048022413b5d75f38d6b72ed675168a9a9a1adf0af",
+      "src/larp/interventions.py": "c22618eb7353e74ffcf08fe78bce056258f217e1b2727acf9072eac4cbfb0b08",
+      "src/larp/model.py": "c2f6692dd6ef78800411ed0c01be9abf21aa0f28a076dbfff0fbc18e48b55c7c",
+      "src/larp/reporting.py": "a58725d8a25961e408debaccb87c59d6f0e805e3d7e28966696a21a166862930",
+      "src/larp/robustness.py": "8da51f8ed035ac98fbb2dc271ae2bdc9b7c843fc39f6b8f5672aadd8fedb5a46",
+      "src/larp/runner.py": "12c047a65a68adfa951d69dfdc644b169e003b037fc6d2ad12595c7b4d6e9c76",
+      "src/larp/training.py": "3fc4fe9033065c77b9ba7ca9afaaf6ff0edf4b4b4b1fd216ef63a7a8e424d32d",
+      "tests/test_analysis.py": "ad9f862c23a4ba8ae0f0ec86b3052d38940ebac7b0c7f9374422a09030a8d2a9",
+      "tests/test_cli.py": "358467d638009609c43325bd6735aa1f9eefe81246c479ad51ef0d6cd4b4afd7",
+      "tests/test_data.py": "a3912b8e554f6bc3a56f718e091fda02492967b1db1a99678db2d1de61c05ee7",
+      "tests/test_geometry.py": "a95d2949d1fffae65cdcb408164976f02fa7a209b44248ea85de4f03f5027990",
+      "tests/test_graphs.py": "494b391144513882e2b0d97c2f63d615f024f1adac591920e71c861758d30f78",
+      "tests/test_integration_model_data.py": "165ba05b9acdef8919813c2f212d356b16736d877f18fcf0a423ae9653b2a1eb",
+      "tests/test_interventions.py": "7249678e70fcd253e43c337ef3b7ef5a20af6147fe2b0eacbbf10388b27c9f2b",
+      "tests/test_model.py": "1119db69119a7ac27015d9d718b04c28a90ccc119338456bde912f4e11b4b221",
+      "tests/test_reporting.py": "60e84cbe50e586e325fe2dfb4883aa026174b43f0a3c3fceae62383ec570e0d3",
+      "tests/test_robustness.py": "059f38ee8c7fb60887733c6c1f9dea5586b290f43156b34941bc36da5f2921cc",
+      "tests/test_runner.py": "5a2d261c931e772cd87bb35cd2316f4bea7738c177214ac8a8c210d60bb7ed02",
+      "tests/test_training.py": "bb83f054e1910ab43b4e3f43e20cbe94c4308c79a6074414d2fd2a703b1ce8c1",
+      "pyproject.toml": "fce85edcfd7ea0abefed16512c26c041a9f96a3e2de39c3ccf06bb29d5d7156f",
+      "requirements-lock.txt": "13b63736315fe7679c04ee0fd21685e14e4d3025c6c32c049d01a5e03bbba9a3",
+      "configs/analysis.json": "3525c709958cfbeb9ed0eb9f124982f5caa01a8d533023585d5ee42f2bf1f915",
+      "configs/baseline_screen.json": "c238bcf583797909274b10ed9115ea29e6eafa95b7dd0684461a8dfba0b55727",
+      "configs/confirmation.json": "fd62c2ad994a971d05356ca3ec225a89464674b27b842e614110c1bdf2176143",
+      "configs/geometry_validation.json": "5df9bd05e548af6dd6210b864f0b60e3dc98958e93e6a3fef053095f4792c296",
+      "configs/pilot_focal.json": "4d6ad9d5895045a9627549bd70bc4d97ed8091b926842160c1c9fc7ff22ad3c4",
+      "configs/preset_hashes.json": "ca6f79c8e1ae382ef41ccf9871f824f85a81d8c9cfa8cbb2cd23fb0dbcd3e5d5",
+      "configs/robustness.json": "2b8e4652e0e96cab42b7e7f53f75271bd3cf014331c65640a5d22a02b8522067",
+      "configs/scientific_contract.json": "d59d7d409adff7bf221d7628c2e32cf263f7442f705999abc3ae91fd61e07fbe",
+      "configs/smoke.json": "0ec8ad3f84b4c8b939f61bf169e2e612688b7d606bbecfbe1dd0156ebc7580f6",
+      "LARP_v0_1_RESEARCH_ARCHITECTURE_REVIEW.md": "7f0a00a43fcba53bee9477d028351dc282c4efb4b25f7fc14ea8fc90e0a8a1d3"
+    },
+    "runtime": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "torch": "2.14.1+cpu",
+      "matplotlib": "3.11.2",
+      "networkx": "3.7",
+      "psutil": "7.2.2",
+      "python": "3.13.4"
+    }
+  },
+  "diagnostics": [
+    {
+      "run": "xor_grid_G_g1101_s2101_u250_lr0.003_causal",
+      "status": "COMPLETE",
+      "all_validation": {
+        "score": 0.48046875,
+        "accuracy": 0.48046875,
+        "loss": 0.693100094795227,
+        "BCE": 0.693100094795227,
+        "exact_accuracy": 0.48046875,
+        "evaluation_seconds": 1.5426126000020304
+      },
+      "train": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 8.0
+        },
+        "accessible_score": {
+          "score": 0.51025390625,
+          "accuracy": 0.51025390625,
+          "loss": 0.6927553415298462,
+          "BCE": 0.6927553415298462,
+          "exact_accuracy": 0.51025390625,
+          "evaluation_seconds": 6.127197000001615
+        }
+      },
+      "validation": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 8.0
+        },
+        "accessible_score": {
+          "score": 0.48046875,
+          "accuracy": 0.48046875,
+          "loss": 0.693100094795227,
+          "BCE": 0.693100094795227,
+          "exact_accuracy": 0.48046875,
+          "evaluation_seconds": 1.5195071999987704
+        }
+      }
+    },
+    {
+      "run": "xor_grid_G_g1101_s2102_u250_lr0.003_causal",
+      "status": "COMPLETE",
+      "all_validation": {
+        "score": 0.5,
+        "accuracy": 0.5,
+        "loss": 0.7030170559883118,
+        "BCE": 0.7030170559883118,
+        "exact_accuracy": 0.5,
+        "evaluation_seconds": 1.5193287000001874
+      },
+      "train": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 8.0
+        },
+        "accessible_score": {
+          "score": 0.5,
+          "accuracy": 0.5,
+          "loss": 0.6998989582061768,
+          "BCE": 0.6998989582061768,
+          "exact_accuracy": 0.5,
+          "evaluation_seconds": 6.161086399995838
+        }
+      },
+      "validation": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 8.0
+        },
+        "accessible_score": {
+          "score": 0.5,
+          "accuracy": 0.5,
+          "loss": 0.7030170559883118,
+          "BCE": 0.7030170559883118,
+          "exact_accuracy": 0.5,
+          "evaluation_seconds": 1.5258696999953827
+        }
+      }
+    },
+    {
+      "run": "xor_mhu_G_g1101_s2101_u250_lr0.003_causal",
+      "status": "COMPLETE",
+      "all_validation": {
+        "score": 0.517578125,
+        "accuracy": 0.517578125,
+        "loss": 0.6924373507499695,
+        "BCE": 0.6924373507499695,
+        "exact_accuracy": 0.517578125,
+        "evaluation_seconds": 1.527765899998485
+      },
+      "train": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 9.0
+        },
+        "accessible_score": {
+          "score": 0.51416015625,
+          "accuracy": 0.51416015625,
+          "loss": 0.6929265260696411,
+          "BCE": 0.6929265260696411,
+          "exact_accuracy": 0.51416015625,
+          "evaluation_seconds": 6.116377999998804
+        }
+      },
+      "validation": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 9.0
+        },
+        "accessible_score": {
+          "score": 0.517578125,
+          "accuracy": 0.517578125,
+          "loss": 0.6924373507499695,
+          "BCE": 0.6924373507499695,
+          "exact_accuracy": 0.517578125,
+          "evaluation_seconds": 1.526070100000652
+        }
+      }
+    },
+    {
+      "run": "xor_mhu_G_g1101_s2102_u250_lr0.003_causal",
+      "status": "COMPLETE",
+      "all_validation": {
+        "score": 0.5,
+        "accuracy": 0.5,
+        "loss": 0.6971684694290161,
+        "BCE": 0.6971684694290161,
+        "exact_accuracy": 0.5,
+        "evaluation_seconds": 1.5412350000042352
+      },
+      "train": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 9.0
+        },
+        "accessible_score": {
+          "score": 0.5,
+          "accuracy": 0.5,
+          "loss": 0.6962884664535522,
+          "BCE": 0.6962884664535522,
+          "exact_accuracy": 0.5,
+          "evaluation_seconds": 6.118906700001389
+        }
+      },
+      "validation": {
+        "accessibility": {
+          "fraction": 1.0,
+          "inaccessible_examples": 0,
+          "required_hops_median_finite": 9.0
+        },
+        "accessible_score": {
+          "score": 0.5,
+          "accuracy": 0.5,
+          "loss": 0.6971684694290161,
+          "BCE": 0.6971684694290161,
+          "exact_accuracy": 0.5,
+          "evaluation_seconds": 1.5292727000050945
+        }
+      }
+    }
+  ],
+  "test_opened": false,
+  "next_action": "STOP copy/fill; diagnose block/interface, version any scientific revision"
+}

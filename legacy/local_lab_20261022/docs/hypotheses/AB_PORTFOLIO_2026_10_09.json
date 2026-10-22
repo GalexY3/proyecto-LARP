@@ -1,0 +1,50 @@
+{
+  "status": "PROSPECTIVE_PORTFOLIO_REVISION_NO_NEW_EXPERIMENT",
+  "date": "2026-10-09",
+  "authority": "Explicit human delegation to decide whether MHU merits further priority",
+  "decision_id": "ADR_2026_10_09_MHU_PORTFOLIO_PIVOT",
+  "belief_revision": {
+    "MHU_as_default_neural_architecture": "Priority withdrawn; utility not causally identified",
+    "local_organization_and_decoder_interaction": "Preferred working explanations, mechanism not fully isolated",
+    "conditional_MHU_acquisition_usefulness": "Open candidate, bounded comparison required",
+    "native_cycle3_isolation": "Refuted only within audited native 130-guard neighborhood",
+    "historical_priors_changed": false,
+    "likelihood_or_Bayes_factor_computed": false
+  },
+  "hypothesis_generation": {
+    "batch": "LARP-20261009-BATCH1",
+    "count": 32,
+    "new_empirical_data_required_for_confirmatory_claims": true
+  },
+  "objective_revision": {
+    "mission_changed": false,
+    "primary_track": "Multichannel acquisition/communication under explicit risk and resource constraints",
+    "MHU_role": "Secondary competing factor, no privilege"
+  },
+  "decision": {
+    "next": "Gram/risk/nullity diagnostic; not executed in this turn",
+    "conditional_followup": "One fresh comparison local vs spectral vs information objective",
+    "paused_priorities": [
+      "MHU neural scaling",
+      "3D MHU",
+      "MHU multilayer",
+      "optimizer carousel on g1101-1103"
+    ],
+    "MIN_conditioned_plan": "Preserved NOT_RUN; contingent on a functional identifiable contrast"
+  },
+  "historical_AB_source": "artifacts/AB_initial.json",
+  "historical_AB_sha256": "9a0b5c8ff8043bf1395459e1dc2a4adcdaf5fe9b31d4e57d00e0182533386e1f",
+  "historical_priors_reference_only": {
+    "H1": 0.7,
+    "H2": 0.35,
+    "H3": 0.25,
+    "H4": 0.75,
+    "H5": 0.2,
+    "H6": 0.3
+  },
+  "historical_mechanism_prior_reference_only": 0.25,
+  "new_numeric_posteriors": null,
+  "scientific_runs_this_turn": 0,
+  "fields_generated_this_turn": 0,
+  "neural_training_this_turn": 0
+}

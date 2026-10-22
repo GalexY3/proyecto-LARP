@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": {
+    "io_supervision_complete": true,
+    "actual_scientific_not_dummy": true,
+    "completion_and_parent_ended_before_global_deadline": true,
+    "registered_remaining_budget_arithmetic": true,
+    "original_global_360_seconds_preserved": true,
+    "frozen_new_runner_unchanged": true,
+    "frozen_old_41_capsule_files_unchanged": true,
+    "frozen_scientific_core_config_inputs_unchanged": true,
+    "only_two_never_started_chains": true,
+    "no_original_chain_repeated": true,
+    "original_search_remains_bug_invalid": true,
+    "new_supplement_is_exploratory": true,
+    "chain_0_hard_20s_and_end_checked": true,
+    "chain_0_closed_ready_ipc": true,
+    "chain_1_hard_20s_and_end_checked": true,
+    "chain_1_closed_ready_ipc": true
+  },
+  "prior_scientific_command_wall_seconds": 92.0014909,
+  "supplement_scientific_command_wall_seconds": 18.6608748,
+  "total_scientific_command_wall_seconds": 110.6623657,
+  "global_budget_seconds": 360,
+  "created_UTC": "2026-10-09T14:42:34.239061+00:00",
+  "hashes": {
+    "prelaunch_seal": "8ae158d222bb9be9be654085395ba4ac65607fe2e95020883ac794c7735fd790",
+    "supplement_results": "ef4cb28fdcf12cc1b7deb03d060a0ca3d3b4ce0ccd69a10581302f03cd3e13d8",
+    "supplement_supervision": "41ee305fa07f9e3b7cc0c84e373fd287318cf5ee114d7e40678537a6888470fc",
+    "original_capsule_snapshot": "ea9a279861e954a677a5b16a8ba8f7aaf5c42b9c610cd863fda147f4ca97b996"
+  },
+  "scope": "Read-only operational closure; scientific trace metrics need the combined independent metric audit. Original v1 stays BUG_INVALID.",
+  "scientific_chains_run": 0,
+  "scientific_scores_computed": 0
+}

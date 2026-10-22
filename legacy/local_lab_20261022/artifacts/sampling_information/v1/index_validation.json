@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "protected_staged_file_count": 21,
+  "checked_paths": [
+    "LARP_INFORMATION_DIAGNOSTIC_RESULTS.md",
+    "artifacts/sampling_information/render_diagnostic.py",
+    "artifacts/sampling_information/run_supervised.py",
+    "artifacts/sampling_information/v1/delivery_validation.json",
+    "artifacts/sampling_information/v1/historical_before.json",
+    "artifacts/sampling_information/v1/plot_manifest.json",
+    "artifacts/sampling_information/v1/protocol_freeze.json",
+    "artifacts/sampling_information/v1/results.json",
+    "artifacts/sampling_information/v1/risk_decomposition.png",
+    "artifacts/sampling_information/v1/runner_receipt.json",
+    "artifacts/sampling_information/v1/tests_final.xml",
+    "artifacts/sampling_information/v1/tests_final_v2.xml",
+    "artifacts/sampling_information/v1/tests_initial.xml",
+    "artifacts/sampling_information/validate_delivery.py",
+    "configs/sampling_information_v1.json",
+    "docs/decisions/ADR_2026_10_09_INFORMATION_DIAGNOSTIC.md",
+    "docs/literature/MULTICHANNEL_INFORMATION_FOLLOWUP_2026_10_09.json",
+    "docs/projects/MULTICHANNEL_INFORMATION_PILOT_NEXT.md",
+    "src/larp/sampling_information.py",
+    "tests/test_sampling_information.py",
+    "tests/test_sampling_information_runner.py"
+  ],
+  "different_bytes": [],
+  "exclusions": [
+    "README.md",
+    ".gitattributes"
+  ],
+  "no_corner_staged": true
+}
