@@ -1,0 +1,34 @@
+{
+  "id": "C13",
+  "parent_id": "C12",
+  "short_name": "task_covariance_risk",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Cambia el ranking MHU/CVT al variar covarianza entre canales y pesos del objetivo de integración?",
+  "B": [
+    "H_conditional: MHU beneficia principalmente tareas coherentes y pesos proporcionales a abundancia",
+    "H_universal: MHU mejora riesgo para todo objetivo",
+    "H_other: conteos ignorados causan ranking falso"
+  ],
+  "C": "Campos f_c=mu_c+1/sqrt(Q) sum(u_cq cos+v_cq sin), cov(u)=cov(v)=Σρ. Mu desconocido. Lectura media por tipo. Riesgo exacto wT(C⊙Σ)w con w=alpha/sqrt(nc), Σ=(1-ρ)I+ρ11T, ρ=-.2,0,.5,1. Pesos alpha iguales o proporcionales a nc. Sin simular aún.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Cambia el ranking MHU/CVT al variar covarianza entre canales y pesos del objetivo de integración?",
+  "null": "H_other: conteos ignorados causan ranking falso",
+  "predicted_discriminant": "El ranking y posible cruce rho dependen de pesos y covarianza; la unión sola no basta.",
+  "falsification_rule": "Riesgo negativo < -1e-12 o Σ no PSD invalidan; una dominancia MHU en ambos pesos no confirma universalidad fuera de esta familia.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

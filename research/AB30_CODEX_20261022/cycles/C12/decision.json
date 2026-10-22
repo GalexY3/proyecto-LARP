@@ -1,0 +1,15 @@
+{
+  "id": "C12",
+  "E": "MHU unión=.000156 pero peor autovalor=.09171; CVT unión=.01468 pero peor autovalor=.03262. Traza MHU=.1090 frente CVT=.06510. Dirección común casi coincide con menor autovector MHU (overlap.933).",
+  "F": "C es una matriz finita condicionada a cuatro modos conjugados; diagonalización no es evidencia de utilidad por sí sola. Diferencias de conteos afectan estimación de medias por tipo.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La supresión es direccional en el espacio de canales. Nueva predicción: rankings pueden invertirse al cambiar covarianza de campos o pesos del objetivo.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: riesgo exacto de integración de campos por tipo con covarianza variable y conteos explícitos.",
+  "options_rejected": [
+    "Afirmar dominancia MHU desde S_union",
+    "Elegir solo el autovector que favorece MHU como tarea general"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C13"
+}
