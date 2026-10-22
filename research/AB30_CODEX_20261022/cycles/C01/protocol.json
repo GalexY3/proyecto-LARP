@@ -1,0 +1,14 @@
+{
+  "id":"C01","parent_id":null,"short_name":"normalization_intervention","date":"2026-10-22",
+  "A":"En el split histórico UCI Digits, ¿la guarda de desviación nula explica el colapso de robustez del MLP de píxeles? Estimando: diferencia pareada de accuracy al cambiar solo normalización; población condicionada al benchmark.",
+  "B":["H_bug: escalar píxeles constantes por 1e-5 crea el colapso","H_filter: la diferencia sensorial persiste tras reparar","H_otras: convergencia, regularización y clipping"],
+  "C":"MLP de píxeles con normalización legacy, guarda correcta y escala fija; misma semilla, entrenamiento, splits y corrupciones. Barrido de escalas es una condición de este único contraste.",
+  "D":"1797 imágenes 8x8 sklearn Digits, splits 811/812 y corruptions 99128. La auditoría fuente previa ya detectó la condición imposible; este ensayo mide su efecto, no descubre el bug a ciegas.",
+  "predicted_discriminant":"Si la guarda es material, ruido/rotación subirán con guard frente a legacy sin necesidad de cambiar geometría.",
+  "falsification_rule":"Diferencia nula o inversa refuta que este fallo explique la catástrofe; no exigir que explique toda la ventaja.",
+  "budget":{"max_training_runs":3,"steps_per_run":240,"threads":2,"wall_seconds":120},
+  "rng_seeds":[991,811,812,99128],"holdout_status":"historical_test_already_exposed_exploratory_repair",
+  "source_refs":["src/AB06_REALDATA_20261022/cycle6_robust.py:21","src/AB06_REALDATA_20261022/cycle4_train.py:15"],
+  "license":"UCI Digits via scikit-learn; dataset metadata retained at close",
+  "rejected_options":["Entrenar GNN antes de reparar comparador","Atribuir robustez a MHU a partir del score histórico"]
+}
