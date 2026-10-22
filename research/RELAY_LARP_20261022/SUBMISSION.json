@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-22T13:32:01.422Z",
+  "transport": "local MCP SDK stdio",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"jobs\":[{\"id\":\"0ba3329b-6cdd-4959-a0c8-874e81a11a3f\",\"state\":\"dispatched\"},{\"id\":\"cc891737-6cf7-44a7-a21a-462917938092\",\"state\":\"queued\"}]}"
+      }
+    ]
+  }
+}

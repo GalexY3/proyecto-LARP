@@ -9,6 +9,8 @@ Se cerraron por indicación del investigador **10/30 ciclos dinámicos nuevos**,
 - [Importación verificada del laboratorio local: 539 archivos originales](legacy/local_lab_20261022/README_IMPORT.md)
 - [Metodología AB y salvaguardas operativas O2](https://github.com/GalexY3/Metodologia-AB)
 
+Después de ese checkpoint, el investigador reautorizó continuar. La [reanudación mediante ChatRelay](research/RELAY_LARP_20261022/README.md) conserva dos encargos de asesoría adversarial y su comprobación independiente. No cuentan como nuevos ciclos experimentales.
+
 ## Estudio anterior: 30 condiciones de contraste (2026-10-21)
 
 ## Lectura
