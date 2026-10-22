@@ -1,0 +1,15 @@
+{
+  "id": "C06",
+  "E": "Escala guard empeora ruido con ysincentrado; globalcentrado92.67 vsglobalnocentrado87.44. Unidadcentrada91.33 vsnocentrada87.0. Ambosfactoresimportan.",
+  "F": "Separaefectodeescala delcentrado; fixedvsglobalera intervencióncompuesta. Todavíano identificafiltrado.",
+  "G": "16entrenamientosson condicionespareadas, no16ciclos niconfirmaciones.",
+  "H": "Escaladoperverso explica granpartecatástrofe; centrado contribuyeadicionalmente.",
+  "I": "Validezcondicionada aMLP/AdamW; presupuesto yrecibos ahoraenforcedporworker.",
+  "J": "PIVOT acontroleslowpassconvencionalespararotación",
+  "options_rejected": [
+    "Reducir toda diferenciaal bugdeceros",
+    "Conservarrankinghistóricoderobustez"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C07"
+}

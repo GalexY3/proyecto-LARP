@@ -1,0 +1,34 @@
+{
+  "id": "C07",
+  "parent_id": "C06",
+  "short_name": "standard_lowpass_baselines",
+  "date": "2026-10-22",
+  "A": "¿El beneficio de rotación del frontend espacial puede explicarse con suavizado o pooling convencional sin MHU?",
+  "B": [
+    "H_lowpass: blur/poolingretiene beneficio",
+    "H_irregular: hacefaltadistribuciónirregular",
+    "H_otras: capacidad/parametrización"
+  ],
+  "C": "Píxeles, blurgaussiano sigma.5/.85 ypool2x2→4x4; MLP ~5.8kparams,2inits, globaltrain. Benchmark yaexpuestoexploratorio.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "Uncontrolconvencionalcerrará parte de brecha de rotación; clean yoclusiónevidenciaráncostes.",
+  "falsification_rule": "Si todos controlesigualadosfallanfrenteafronts, mantenerparticularidaddeoperadorRBFcomorival.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2,
+    "max_training_runs": 8,
+    "steps_per_run": 240
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}
