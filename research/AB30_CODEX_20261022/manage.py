@@ -33,7 +33,7 @@ def worker(folder):
                 arrays=original(*args,**kwargs)
                 out['inputs']['datasets'].append({'args':repr(args),'kwargs':repr(kwargs),'arrays':{n:{'shape':list(a.shape),'dtype':str(a.dtype),'sha256':hashlib.sha256(common.np.ascontiguousarray(a).tobytes()).hexdigest()} for n,a in zip(['images','labels','train','validation','test'],arrays)}})
                 return arrays
-            common.dataset=tracked;tracked()
+            common.dataset=tracked
             result=runpy.run_path(str(folder/'source.py'))['run']()
             if not isinstance(result,dict):raise TypeError('run() must return dict')
             out.update(result=result,status='COMPLETED')

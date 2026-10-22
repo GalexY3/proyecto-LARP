@@ -1,0 +1,35 @@
+{
+  "id": "C11",
+  "parent_id": "C10",
+  "short_name": "component_spectral_admission",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Los N128 efectivos muestran supresión finita por cada tipo, además de la unión, en 3D y en la proyección XY?",
+  "B": [
+    "H_component: todos los tipos suprimen modos bajos",
+    "H_union_only: cancelación entre tipos sin supresión individual",
+    "H_other: anisotropía o error de normalización"
+  ],
+  "C": "Cinco métodos x cuatro realizaciones. S=|sum exp(-2pi i q.r)|²/n por tipo y unión. Modos canónicos q²1..2 (bajos),4..9 (medios); comparar XY con plano kz=0 exactamente. Sin Digits ni entrenamiento ni nuevos controles optimizados.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Los N128 efectivos muestran supresión finita por cada tipo, además de la unión, en 3D y en la proyección XY?",
+  "null": "H_other: anisotropía o error de normalización",
+  "predicted_discriminant": "MHU tiene menores medias S bajas por los cinco tipos; la identidad XY/plano se cumple a precisión de flotante.",
+  "falsification_rule": "Si solo la unión suprime o tipos no distinguen LOCAL/CVT, no atribuir multihiperuniformidad efectiva. Residuo de proyección >1e-10 invalida instrumentos.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/CONTINUATION.md",
+    "research/RELAY_LARP_20261022/REVIEW.md"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

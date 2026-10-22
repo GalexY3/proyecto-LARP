@@ -96,3 +96,21 @@ def train(X,y,tr,va,te,ext=None,seed=991,steps=240,mode='guard',hidden=None,clip
 def version_info():
     import sklearn
     return {'python':sys.version,'numpy':np.__version__,'scipy':scipy.__version__,'torch':torch.__version__,'sklearn':sklearn.__version__,'threads':torch.get_num_threads()}
+
+def finite_modes(dim,lo=1,hi=2):
+    """One vector per conjugate pair; unit-torus angular wavevectors are 2*pi*q."""
+    from itertools import product
+    cap=int(np.ceil(np.sqrt(hi)))
+    return np.array([q for q in product(range(-cap,cap+1),repeat=dim)
+        if lo<=sum(x*x for x in q)<=hi and next((x for x in q if x),0)>0],float)
+
+def amplitudes(p,labels,q):
+    p=np.asarray(p,dtype=float);q=np.asarray(q,dtype=float)
+    phase=np.exp(-2j*np.pi*p@q.T)
+    a=np.array([phase[labels==c].sum(0)/np.sqrt(np.sum(labels==c)) for c in range(5)])
+    union=phase.sum(0)/np.sqrt(len(p))
+    return a,union
+
+def finite_spectrum(p,labels,q):
+    a,u=amplitudes(p,labels,q)
+    return np.concatenate([np.mean(abs(a)**2,axis=1),[np.mean(abs(u)**2)]]).tolist()
