@@ -1,0 +1,37 @@
+{
+  "id": "C25",
+  "parent_id": "C24",
+  "short_name": "neural_boundary_phase_intervention",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿El mismo espectro periódico produce resultados distintos al trasladar patrones en la interfazDigits no periódica?",
+  "B": [
+    "H_interface: fase modifica operador y aprendizaje pese espectro idéntico",
+    "H_spectrum: desempeño determinado porS",
+    "H_other: distinto clipping, precisión o presupuesto"
+  ],
+  "C": "MHU/CVT,4geos,2inits991/992,4fasesC24. CoordenadasFP64 en todos los brazos; encoder lineal exacto, mismoscorruptions y globalnormalizationC04, clip9, h64,240pasos. Reportar todasfases, sin seleccionar ganadora. Mismo dataset históricoexpuesto, sin confirmación.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿El mismo espectro periódico produce resultados distintos al trasladar patrones en la interfazDigits no periódica?",
+  "null": "H_other: distinto clipping, precisión o presupuesto",
+  "predicted_discriminant": "Rangos de exactitud por fase no nulos y posiblemente comparables o mayores que diferencia mediaMHU-CVT. No se espera equivalencia dinámica bajo desplazamiento del operador.",
+  "falsification_rule": "VerificarSXYinvariante<1e-10. Diferencias no prueban efecto aislado deHU ni rendimiento externo. Reportar cap/convergencia.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    991,
+    992,
+    8101,
+    8102,
+    8103,
+    8104,
+    99128
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

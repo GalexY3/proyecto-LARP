@@ -1,0 +1,1056 @@
+{
+  "id": "C24",
+  "started_utc": "2026-10-22T14:56:32.731391+00:00",
+  "status": "COMPLETED",
+  "inference": "exploratory",
+  "result": {
+    "rows": [
+      {
+        "geometry": 8101,
+        "method": "local",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0008172678648161138,
+        "gls_risk": 9.70666349505246e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0008700601593877041,
+        "gls_risk": 9.712926189416712e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0006358264056736688,
+        "gls_risk": 9.628014832282138e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0012804471435489842,
+        "gls_risk": 1.0266968125501515e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0005149141461665329,
+        "gls_risk": 9.680839787445068e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0009066365477602245,
+        "gls_risk": 1.0271327023092156e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0005350178445384519,
+        "gls_risk": 9.584470277496978e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.001364566363957197,
+        "gls_risk": 1.0551055694028458e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0010273013475895194,
+        "gls_risk": 9.83470496533105e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0015036649942685699,
+        "gls_risk": 1.0336264407233496e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0010469209346414808,
+        "gls_risk": 9.972615169046881e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0005183895093204099,
+        "gls_risk": 9.49089033377049e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0002101819054910871,
+        "gls_risk": 9.393757414662259e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0001702258145163454,
+        "gls_risk": 9.347253396720867e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.00023481736701571297,
+        "gls_risk": 9.449285580035518e-06
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0013785436407906153,
+        "gls_risk": 1.0753398043936692e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0015472700098985912,
+        "gls_risk": 1.0667964427130413e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0015451667857580688,
+        "gls_risk": 1.0518515123263221e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0028818647376484246,
+        "gls_risk": 1.3267454886253062e-05
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.004483896523189953,
+        "gls_risk": 1.5668649988562207e-05
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0009408325399269226,
+        "gls_risk": 9.939929516357433e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0008956057251916102,
+        "gls_risk": 9.947516152363561e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0010054309268856003,
+        "gls_risk": 1.0121605593982573e-05
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0005706592694667194,
+        "gls_risk": 9.664697818497748e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0003815110725740563,
+        "gls_risk": 9.448858645193304e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0006708586164629467,
+        "gls_risk": 9.615160521500198e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0004683914030316189,
+        "gls_risk": 9.437334348764991e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0009687125142433175,
+        "gls_risk": 9.90443017058758e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0006605122444153717,
+        "gls_risk": 9.754359468819174e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.00048011024127055877,
+        "gls_risk": 9.63883310271907e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0006296751168237226,
+        "gls_risk": 9.541841773975156e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.000921261761672349,
+        "gls_risk": 9.853001972508317e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.00013306143404709473,
+        "gls_risk": 9.414318341626589e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0001491840278360763,
+        "gls_risk": 9.414835908220236e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.00015048449458707756,
+        "gls_risk": 9.409957379836569e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0004762223181656965,
+        "gls_risk": 9.447461329947004e-06
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0054171046696138755,
+        "gls_risk": 1.2842531730407489e-05
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0039859159019232215,
+        "gls_risk": 1.2798619204782187e-05
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.005756241897963241,
+        "gls_risk": 1.3168969196214466e-05
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0032085812379948507,
+        "gls_risk": 1.117606711568343e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0011988297575192982,
+        "gls_risk": 1.0673475891609166e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0008777121578540269,
+        "gls_risk": 1.04345597748409e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0011552064292941993,
+        "gls_risk": 1.038383686388589e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0010717516297705214,
+        "gls_risk": 9.81463409671623e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0018745854875539176,
+        "gls_risk": 1.0636383287574859e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0012035981831711234,
+        "gls_risk": 1.0179864104502133e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0020663822295725895,
+        "gls_risk": 1.124428581573071e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0004356051875370913,
+        "gls_risk": 9.48324949337922e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0007478265226594916,
+        "gls_risk": 9.732663760708667e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0010481708265272236,
+        "gls_risk": 9.97105668992721e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.000887059276664111,
+        "gls_risk": 9.910273501251732e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0009076637188501577,
+        "gls_risk": 1.0527965029342333e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 8.205838349327737e-05,
+        "gls_risk": 9.228620250032928e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 6.0998892999763946e-05,
+        "gls_risk": 9.213300781483499e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 6.884164519224817e-05,
+        "gls_risk": 9.221558132936758e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0008551763308805732,
+        "gls_risk": 9.811231325981589e-06
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.004073661480099943,
+        "gls_risk": 1.1615007416179781e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.002738612218110952,
+        "gls_risk": 1.0849027378639754e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.005137272442229789,
+        "gls_risk": 1.2795812822344918e-05
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.004762738725459082,
+        "gls_risk": 1.845343731707381e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0011903063091488713,
+        "gls_risk": 9.99837450256947e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0013686174485424665,
+        "gls_risk": 1.0632481260351807e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0010680559558297257,
+        "gls_risk": 9.778610104268667e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.001061559780109829,
+        "gls_risk": 1.0425364086951722e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.000676689104107049,
+        "gls_risk": 9.659464377802691e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0006042517759427943,
+        "gls_risk": 9.55528724962922e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0013160038223376817,
+        "gls_risk": 1.0664513601964335e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0006310372322977718,
+        "gls_risk": 9.61813499345074e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.00048248033262504586,
+        "gls_risk": 9.552242838398725e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0010407956272643333,
+        "gls_risk": 1.0034860661850393e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.0003734657511857192,
+        "gls_risk": 9.4576274776845e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0004711101470783476,
+        "gls_risk": 9.550768953936412e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.00010802242724216313,
+        "gls_risk": 9.275445305950189e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 9.328182392184014e-05,
+        "gls_risk": 9.275518191644662e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.000127637093549426,
+        "gls_risk": 9.274482153246392e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.0005705594441950416,
+        "gls_risk": 9.960123468227963e-06
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "phase": 0,
+        "shift": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.003009839017954142,
+        "gls_risk": 1.1593698345161198e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "phase": 1,
+        "shift": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "mean_risk": 0.0028118258323586785,
+        "gls_risk": 1.1709617423582061e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "phase": 2,
+        "shift": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "mean_risk": 0.002814707539333908,
+        "gls_risk": 1.0637809358759636e-05
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "phase": 3,
+        "shift": [
+          0.37,
+          0.19,
+          0.11
+        ],
+        "mean_risk": 0.005579390814859307,
+        "gls_risk": 1.5460700787813302e-05
+      }
+    ],
+    "summary": {
+      "local": {
+        "mean_phase_max_min_ratio": 1.6077040953883366,
+        "phase_ratios": [
+          2.013831341578727,
+          1.7618760978423686,
+          1.36585752719934,
+          1.2892514149329106
+        ],
+        "average_mean_risk": 0.0010005105939353913,
+        "average_gls_risk": 1.0070603644040498e-05
+      },
+      "mhu": {
+        "mean_phase_max_min_ratio": 3.0277106305338566,
+        "phase_ratios": [
+          2.6500852115177094,
+          2.539146525177923,
+          4.743704365083208,
+          2.1779064203565874
+        ],
+        "average_mean_risk": 0.0009136725957033978,
+        "average_gls_risk": 9.970916212008915e-06
+      },
+      "cvt": {
+        "mean_phase_max_min_ratio": 2.2519953982275727,
+        "phase_ratios": [
+          2.900647037089583,
+          1.9188546347904003,
+          1.401622963036426,
+          2.7868569579938813
+        ],
+        "average_mean_risk": 0.0007966505220535257,
+        "average_gls_risk": 9.822498131656476e-06
+      },
+      "sobol": {
+        "mean_phase_max_min_ratio": 7.953334974758472,
+        "phase_ratios": [
+          8.098323069902214,
+          3.578965773036431,
+          14.019538533000633,
+          6.1165125230946105
+        ],
+        "average_mean_risk": 0.0003043310652452524,
+        "average_gls_risk": 9.493159187780608e-06
+      },
+      "random": {
+        "mean_phase_max_min_ratio": 2.1390064806978457,
+        "phase_ratios": [
+          2.9018851327367385,
+          1.7940146971502295,
+          1.8758670571379368,
+          1.9842590357664784
+        ],
+        "average_mean_risk": 0.0037346306146497517,
+        "average_gls_risk": 1.2701492657615684e-05
+      }
+    },
+    "max_spectrum_residual": 6.661338147750939e-16
+  },
+  "freeze_commit": "b80fd489ce79e0fcf765051cc47cb44c52ecd363",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C23/decision.json",
+    "sha256": "bfe2076da37a630d2172d934530d57a30d89f781aa3d079ebb00278011d731ff"
+  },
+  "protocol_sha256": "f6e5c911e417d7908974448b8e5aa1b57f8da5d9433a50094940e0d56e0ef34b",
+  "source_sha256": "f09244a926240f16220478fe9bfd463f25cad24f41c929f3ba6f59c4823faf21",
+  "common_sha256": "d2df25d6f40ab89912261d44a9a44d0000b079460aa2b04b0b65a219ece46a8f",
+  "inputs": {
+    "geometry_sha256": {
+      "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+      "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+      "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+      "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+    },
+    "datasets": []
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "worker_returncode": 0,
+  "elapsed_seconds": 3.084964800000307,
+  "finished_utc": "2026-10-22T14:56:35.816356+00:00"
+}

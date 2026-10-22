@@ -1,0 +1,15 @@
+{
+  "id": "C24",
+  "E": "Con todoSperiódico conservado, error de medias para tendencia no periódica varía por fase: ratio medio max/minMHU3.03, CVT2.25, LOCAL1.61. GLS con tendencia reduce todos≈1e-5.",
+  "F": "Traslación toroidal conserva geometría periódica pero cambia qué puntos se envuelven respecto a fronteras físicas. No se manipula HU; se observa insuficiencia del descriptor para interfaz no periódica.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La interfaz de imágenes puede depender de fase aunque certificadoHU sea idéntico. Hace falta comprobar efecto en la tarea neural realmente usada, no extrapolar de un campo afín.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: trasladar mismos patrones en pipelineDigitsC04 y evaluar todas las fases prefijadas.",
+  "options_rejected": [
+    "Atribuir efecto de fase a cambio de espectro",
+    "Escoger mejor fase por test y publicarla como mejora"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C25"
+}
