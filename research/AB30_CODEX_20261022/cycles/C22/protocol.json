@@ -1,0 +1,35 @@
+{
+  "id": "C22",
+  "parent_id": "C21",
+  "short_name": "failure_readout_adaptation",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿La robustez funcional tras perder sensores depende más de adaptar el lector que de la etiqueta geométrica?",
+  "B": [
+    "H_adaptation: un lector consciente del fallo evita sesgo y recupera información compartida",
+    "H_geometry: mantenerlectorcongelado es suficiente porHU",
+    "H_other: imputar0 crea artificialmente robustez o daño"
+  ],
+  "C": "Campos3D bajos correlacionadosrho1, ruido.03, offsets independientesN(0,1), targetbalanced.32máscaras fijas por seed, mismas por métodos, mitad por tipo. Comparar BLUEfull con entradas ausentes=0, media por supervivientes y BLUErefit con posiciones observadas. Reportar sesgo² y varianza por separado y MSEtotal.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿La robustez funcional tras perder sensores depende más de adaptar el lector que de la etiqueta geométrica?",
+  "null": "H_other: imputar0 crea artificialmente robustez o daño",
+  "predicted_discriminant": "Lector congelado tendrá sesgo fuerte; lectores adaptados mejoran todas las geometrías, sin ventajaMHU grande.",
+  "falsification_rule": "No presentar refit con conocimiento del fallo como mismo acceso que sistema ciego. Misma máscara y operación se aplica a todos los métodos; tiempos de resolver lector registrados.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    60222,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

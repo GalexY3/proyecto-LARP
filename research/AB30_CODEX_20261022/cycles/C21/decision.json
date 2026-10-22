@@ -1,0 +1,15 @@
+{
+  "id": "C21",
+  "E": "Retener≈mitad por tipo introduce sueloS: uniónMHU .000160→.5310, CVT .01160→.5512, LOCAL .00203→.5216. Fórmula fijo-tamaño concuerda con simulación; diferencia espectral previa se comprime.",
+  "F": "Esto evalúa potencia espectral después de fallos, no error funcional ni entrenamiento. Las máscaras no son nuevas geometrías y la unión ya no tiene mismoN.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "Se debilita equivalencia automática HU→robusto. Próxima incertidumbre: adaptación del lector puede restaurar utilidad aunque el certificado espectral se degrade.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: mismo fallo físico, comparar lector congelado, media adaptada y GLS adaptado.",
+  "options_rejected": [
+    "Concluir desde S que todas las tareas fallan",
+    "Tratar fallo de sensores como parámetro que se puede ocultar al lector"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C22"
+}
