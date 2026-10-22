@@ -1,0 +1,34 @@
+{
+  "id": "C09",
+  "parent_id": "C08",
+  "short_name": "multiview_versus_average_pooling",
+  "date": "2026-10-22",
+  "A": "¿La diversidad entre cinco bloques RBF de intensidad es necesaria, o su promedio espacial explica la tolerancia a rotación?",
+  "B": [
+    "H_diverse: diferenciasentrebloquesaportaninformaciónútil",
+    "H_pool: promedio16basta",
+    "H_otras: dimensión/regularización"
+  ],
+  "C": "MHU yCVT,4geom,original80vsmean16vsmean16repetido5. Global,init991,~5.8kparams. Medir rangoytodosshifts.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "Si promediarretieneclasificaciónyrotación, tipo/homogeneidaddemúltiplesvistasnoesnecesario.",
+  "falsification_rule": "Pérdidareproducibleenpromediofrenteoriginalmantienerivaldiversidad.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2,
+    "max_training_runs": 24,
+    "steps_per_run": 240
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}
