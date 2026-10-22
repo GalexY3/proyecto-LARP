@@ -1,0 +1,35 @@
+{
+  "id": "C04",
+  "parent_id": "C03",
+  "short_name": "pipeline_parity_after_scaling",
+  "date": "2026-10-22",
+  "A": "¿Subsiste una ventaja del frontend MHU frente a otros frontends y píxeles bajo la misma política de escalado global y semillas de modelo cruzadas?",
+  "B": [
+    "H_geom: MHU aporta robustez específica",
+    "H_front: filtrado explica efecto para cualquier geometría",
+    "H_scale: baseline convencional cierra brecha de ruido",
+    "H_otras: convergencia"
+  ],
+  "C": "Cinco métodos×4geometrías×2inicializaciones y píxeles×2inicializaciones; 240steps, mismas corrupciones y global train-only. Agregar primero inicializaciones dentro de geometría.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "Ruido favorecerá baseline competente o empates; rotación podría favorecer filtrado genérico.",
+  "falsification_rule": "MHU tendría que superar de forma consistente LOCAL/Sobol y píxeles para sostener un mecanismo propio.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2,
+    "max_training_runs": 42,
+    "steps_per_run": 240
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}

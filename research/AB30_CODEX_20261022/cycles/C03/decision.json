@@ -1,0 +1,15 @@
+{
+  "id": "C03",
+  "E": "Escala global train-only: clean98.22%, ruido92.44%, rotación59.56%; guard97.11/35.78/32.22. Piso .2: ruido89.78. Misma red y datos.",
+  "F": "Escalados elegidos adaptativamente; no afirmar confirmación ni compararlos sin replay con sensores.",
+  "G": "Sin evidencia externa; mismo dataset y corrupción.",
+  "H": "Se debilita fuerte la ventaja de ruido atribuida al pipeline; queda explicar rotación.",
+  "I": "Coste seis entrenamientos; efectos grandes de preprocesamiento, convergencia no establecida.",
+  "J": "PIVOT a comparación completa con escala global común",
+  "options_rejected": [
+    "Declarar superioridad de píxeles con una sola inicialización",
+    "Reusar scores sensoriales históricos sin parity de normalización"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C04"
+}
