@@ -1,0 +1,189 @@
+{
+  "campaign": "AB30_INTENSIVE_20261022",
+  "block": "B04",
+  "stage": "REAL_DIGITS",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "parent_decision": "B03 CVT local interpolation gains require real-data classifier challenge",
+  "specs": [
+    {
+      "id": "N19",
+      "kind": "classify",
+      "a": "cvt_types",
+      "b": "sobol_global",
+      "case": "orig",
+      "claim": "Role-wise CVT improves source-domain balanced accuracy relative to Sobol",
+      "direction": "higher",
+      "falsification_rule": "paired balanced accuracy improvement <=0",
+      "seeds": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608
+      ],
+      "rivals": [
+        "ordinary pixel features",
+        "Sobol sensor coverage",
+        "five derived views not new information"
+      ],
+      "exploration": true,
+      "primary_endpoint": "balanced accuracy on stratified held-out images (previous Digits dataset already exposed to research)",
+      "holdout": "not independent because Digit task was repeatedly used in LARP; no blind test",
+      "source_code_commit": "47312001f898fecdc82365732160bf8a47ce486d",
+      "computation": "RidgeClassifier alpha=10, n100 derived features or n64 raw; unequal feature counts and geometry generation cost"
+    },
+    {
+      "id": "N20",
+      "kind": "classify",
+      "a": "cvt_types",
+      "b": "raw_pixels",
+      "case": "orig",
+      "claim": "Sensor transformation exceeds full 64-pixel competent baseline",
+      "direction": "higher",
+      "falsification_rule": "paired balanced accuracy improvement <=0",
+      "seeds": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608
+      ],
+      "rivals": [
+        "ordinary pixel features",
+        "Sobol sensor coverage",
+        "five derived views not new information"
+      ],
+      "exploration": true,
+      "primary_endpoint": "balanced accuracy on stratified held-out images (previous Digits dataset already exposed to research)",
+      "holdout": "not independent because Digit task was repeatedly used in LARP; no blind test",
+      "source_code_commit": "47312001f898fecdc82365732160bf8a47ce486d",
+      "computation": "RidgeClassifier alpha=10, n100 derived features or n64 raw; unequal feature counts and geometry generation cost"
+    },
+    {
+      "id": "N21",
+      "kind": "classify",
+      "a": "cvt_types",
+      "b": "sobol_global",
+      "case": "rot15",
+      "claim": "Role-wise CVT improves rotation robustness relative to Sobol",
+      "direction": "higher",
+      "falsification_rule": "paired balanced accuracy improvement <=0",
+      "seeds": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608
+      ],
+      "rivals": [
+        "ordinary pixel features",
+        "Sobol sensor coverage",
+        "five derived views not new information"
+      ],
+      "exploration": true,
+      "primary_endpoint": "balanced accuracy on stratified held-out images (previous Digits dataset already exposed to research)",
+      "holdout": "not independent because Digit task was repeatedly used in LARP; no blind test",
+      "source_code_commit": "47312001f898fecdc82365732160bf8a47ce486d",
+      "computation": "RidgeClassifier alpha=10, n100 derived features or n64 raw; unequal feature counts and geometry generation cost"
+    },
+    {
+      "id": "N22",
+      "kind": "classify",
+      "a": "cvt_types",
+      "b": "raw_pixels",
+      "case": "rot15",
+      "claim": "Role-wise CVT improves rotation robustness relative to full pixels",
+      "direction": "higher",
+      "falsification_rule": "paired balanced accuracy improvement <=0",
+      "seeds": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608
+      ],
+      "rivals": [
+        "ordinary pixel features",
+        "Sobol sensor coverage",
+        "five derived views not new information"
+      ],
+      "exploration": true,
+      "primary_endpoint": "balanced accuracy on stratified held-out images (previous Digits dataset already exposed to research)",
+      "holdout": "not independent because Digit task was repeatedly used in LARP; no blind test",
+      "source_code_commit": "47312001f898fecdc82365732160bf8a47ce486d",
+      "computation": "RidgeClassifier alpha=10, n100 derived features or n64 raw; unequal feature counts and geometry generation cost"
+    },
+    {
+      "id": "N23",
+      "kind": "classify",
+      "a": "cvt_types",
+      "b": "sobol_types",
+      "case": "blur",
+      "claim": "CVT improves out-of-distribution blur classification relative to Sobol types",
+      "direction": "higher",
+      "falsification_rule": "paired balanced accuracy improvement <=0",
+      "seeds": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608
+      ],
+      "rivals": [
+        "ordinary pixel features",
+        "Sobol sensor coverage",
+        "five derived views not new information"
+      ],
+      "exploration": true,
+      "primary_endpoint": "balanced accuracy on stratified held-out images (previous Digits dataset already exposed to research)",
+      "holdout": "not independent because Digit task was repeatedly used in LARP; no blind test",
+      "source_code_commit": "47312001f898fecdc82365732160bf8a47ce486d",
+      "computation": "RidgeClassifier alpha=10, n100 derived features or n64 raw; unequal feature counts and geometry generation cost"
+    },
+    {
+      "id": "N24",
+      "kind": "classify",
+      "a": "cvt_types",
+      "b": "raw_pixels",
+      "case": "shift",
+      "claim": "CVT improves shifted classification relative to raw pixels",
+      "direction": "higher",
+      "falsification_rule": "paired balanced accuracy improvement <=0",
+      "seeds": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608
+      ],
+      "rivals": [
+        "ordinary pixel features",
+        "Sobol sensor coverage",
+        "five derived views not new information"
+      ],
+      "exploration": true,
+      "primary_endpoint": "balanced accuracy on stratified held-out images (previous Digits dataset already exposed to research)",
+      "holdout": "not independent because Digit task was repeatedly used in LARP; no blind test",
+      "source_code_commit": "47312001f898fecdc82365732160bf8a47ce486d",
+      "computation": "RidgeClassifier alpha=10, n100 derived features or n64 raw; unequal feature counts and geometry generation cost"
+    }
+  ]
+}
