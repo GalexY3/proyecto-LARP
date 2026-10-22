@@ -1,0 +1,5552 @@
+{
+  "id": "C19",
+  "started_utc": "2026-10-22T14:46:20.580195+00:00",
+  "status": "COMPLETED",
+  "inference": "exploratory",
+  "result": {
+    "rows": [
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.010533899657147704,
+        "fixed_mean_risk": 0.010533899657147704,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009639721932107596,
+            "risk_after_selection": 0.010533899657147704
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00977064124428936,
+            "risk_after_selection": 0.010701395200178952
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.00978359779166802,
+            "risk_after_selection": 0.01071702753259229
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.012491802554345632,
+            "risk_after_selection": 0.0137329167839694
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15171911198586427,
+            "risk_after_selection": 0.16754731542856546
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.016610485286860703,
+            "risk_after_selection": 0.01713476397067429
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.01660568995609892,
+            "risk_after_selection": 0.017130406310408564
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.016237510803317045,
+            "risk_after_selection": 0.016805319783238595
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03871473314937211,
+            "risk_after_selection": 0.04248656392186058
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.007724552949757917,
+        "fixed_mean_risk": 0.010533899657147704,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009639721932107596,
+            "risk_after_selection": 0.010533899657147704
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009919813215611289,
+            "risk_after_selection": 0.010372375446737504
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.009926204349803834,
+            "risk_after_selection": 0.010378498191349199
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.011544586466780736,
+            "risk_after_selection": 0.01211035203403171
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14661235291707958,
+            "risk_after_selection": 0.16353932070390925
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.009066150791951116,
+            "risk_after_selection": 0.009284645412556834
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.0074724811679994525,
+            "risk_after_selection": 0.007722042056371152
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.007439590737363789,
+            "risk_after_selection": 0.007724552949757917
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.027058194843633844,
+            "risk_after_selection": 0.030115231136960015
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "group",
+        "lambda": 0.1,
+        "selected_risk": 0.010124023517574542,
+        "fixed_mean_risk": 0.009039201685559713,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009806809760041266,
+            "risk_after_selection": 0.009039201685559713
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009659283467094113,
+            "risk_after_selection": 0.008995058859640831
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.009631261221788673,
+            "risk_after_selection": 0.008982473214589646
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.00944151801099642,
+            "risk_after_selection": 0.010124023517574542
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15157933791610279,
+            "risk_after_selection": 0.16819398024289856
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.013542775980664815,
+            "risk_after_selection": 0.013654686620771198
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.013540674236024732,
+            "risk_after_selection": 0.01365480127368135
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.013388257170288466,
+            "risk_after_selection": 0.013706083192464472
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03408851594011658,
+            "risk_after_selection": 0.040116145713101875
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.005135143187910018,
+        "fixed_mean_risk": 0.009039201685559713,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009806809760041266,
+            "risk_after_selection": 0.009039201685559713
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.008538378721885854,
+            "risk_after_selection": 0.008712801275979561
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.00853262458133645,
+            "risk_after_selection": 0.008715596708292066
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009187411949293758,
+            "risk_after_selection": 0.010228139366018874
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14568950470675252,
+            "risk_after_selection": 0.1634819137350552
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.0066418630027212915,
+            "risk_after_selection": 0.006187101555080557
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.0055464665247455846,
+            "risk_after_selection": 0.005135143187910018
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.006069826420008831,
+            "risk_after_selection": 0.005952281992856399
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02463503175343186,
+            "risk_after_selection": 0.029199483812912614
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.007630219190622163,
+        "fixed_mean_risk": 0.007630219190622163,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.007970785753362318,
+            "risk_after_selection": 0.007630219190622163
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00938809715500927,
+            "risk_after_selection": 0.009432721033174092
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.009386595117481791,
+            "risk_after_selection": 0.009444176761175425
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.011163167960327992,
+            "risk_after_selection": 0.012342479711697519
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15140854929695483,
+            "risk_after_selection": 0.16787569410060782
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.015913689980197286,
+            "risk_after_selection": 0.016877195269063616
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.01591115805705335,
+            "risk_after_selection": 0.016875595815591022
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.01573776987750696,
+            "risk_after_selection": 0.01679874612082923
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03763934992117812,
+            "risk_after_selection": 0.043664372619433546
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.005736993671620133,
+        "fixed_mean_risk": 0.007630219190622163,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.007970785753362318,
+            "risk_after_selection": 0.007630219190622163
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007606413420963914,
+            "risk_after_selection": 0.0074707295072755165
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007595378149071174,
+            "risk_after_selection": 0.007465902231143283
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.007946362933401546,
+            "risk_after_selection": 0.008508100802680437
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14632562247408093,
+            "risk_after_selection": 0.16415765140151029
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.006924229400783214,
+            "risk_after_selection": 0.0069947879747667314
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.005735354058196262,
+            "risk_after_selection": 0.005736993671620133
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.006101836354999099,
+            "risk_after_selection": 0.0060333422929504926
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02351277528480679,
+            "risk_after_selection": 0.02810594322937069
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.004680919537187843,
+        "fixed_mean_risk": 0.004680919537187843,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00503647232474079,
+            "risk_after_selection": 0.004680919537187843
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005231965645127843,
+            "risk_after_selection": 0.004848143892300836
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.005233469499661431,
+            "risk_after_selection": 0.004851120775158903
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0073533473132563545,
+            "risk_after_selection": 0.007246809543590458
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15192483397272738,
+            "risk_after_selection": 0.16790387382812058
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.01020727129591495,
+            "risk_after_selection": 0.010855030574699682
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.010207938094101966,
+            "risk_after_selection": 0.010856085338544534
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.01031178664189989,
+            "risk_after_selection": 0.010993928275704133
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.0377039210636398,
+            "risk_after_selection": 0.04128345881904875
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.0024736996720208116,
+        "fixed_mean_risk": 0.004680919537187843,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00503647232474079,
+            "risk_after_selection": 0.004680919537187843
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.004951407956504202,
+            "risk_after_selection": 0.004592737156710961
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0049553292470309535,
+            "risk_after_selection": 0.00459646813265529
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006504581908322105,
+            "risk_after_selection": 0.00629787650475749
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14628222374755998,
+            "risk_after_selection": 0.16338114030110573
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.0029808606866356235,
+            "risk_after_selection": 0.003280911148202206
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.0022462484068386467,
+            "risk_after_selection": 0.0024736996720208116
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.002742283244340344,
+            "risk_after_selection": 0.0029577994327921325
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.024320650828518642,
+            "risk_after_selection": 0.02721344034554426
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "group",
+        "lambda": 0.1,
+        "selected_risk": 0.010279841897970493,
+        "fixed_mean_risk": 0.009373885402394037,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009382626722327252,
+            "risk_after_selection": 0.009373885402394037
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.010212851757588338,
+            "risk_after_selection": 0.010301268431088412
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.010166814845789657,
+            "risk_after_selection": 0.010271207013981617
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.008764695093452336,
+            "risk_after_selection": 0.010279841897970493
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1522069812107099,
+            "risk_after_selection": 0.16921934829144042
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.010910639813084419,
+            "risk_after_selection": 0.012361715202
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.010909585600239805,
+            "risk_after_selection": 0.012361176318696118
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.010832548138147175,
+            "risk_after_selection": 0.012341885049026906
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03242023282815317,
+            "risk_after_selection": 0.03889150965815706
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.004733822879186473,
+        "fixed_mean_risk": 0.009373885402394037,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009382626722327252,
+            "risk_after_selection": 0.009373885402394037
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.008424099108427003,
+            "risk_after_selection": 0.008871568509842094
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.008412748627334547,
+            "risk_after_selection": 0.008869477631693453
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.00870236060292013,
+            "risk_after_selection": 0.01008772404934323
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14589927582444698,
+            "risk_after_selection": 0.16397364921526184
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.006560369159640176,
+            "risk_after_selection": 0.006484586372594328
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.004620519423278966,
+            "risk_after_selection": 0.004733822879186473
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0047721941930747615,
+            "risk_after_selection": 0.005149945156904491
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.024052724962967877,
+            "risk_after_selection": 0.0289943429948612
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.00965279138000618,
+        "fixed_mean_risk": 0.00965279138000618,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010538304940814987,
+            "risk_after_selection": 0.00965279138000618
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.01366718222248578,
+            "risk_after_selection": 0.014365974766481392
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.013649209267915317,
+            "risk_after_selection": 0.014363759370521348
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.013884762237093388,
+            "risk_after_selection": 0.015988164136255822
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15160053394414205,
+            "risk_after_selection": 0.16867617432835016
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.01707772125256423,
+            "risk_after_selection": 0.017472099409288906
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.017074294914426042,
+            "risk_after_selection": 0.0174698637289946
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.01682568525485434,
+            "risk_after_selection": 0.01734156571670503
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.037750582523899505,
+            "risk_after_selection": 0.04428889086735349
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.006054772069287177,
+        "fixed_mean_risk": 0.00965279138000618,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010538304940814987,
+            "risk_after_selection": 0.00965279138000618
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00893426226295699,
+            "risk_after_selection": 0.009098632461492081
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.008925109188859054,
+            "risk_after_selection": 0.009101884268161647
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0093116850121101,
+            "risk_after_selection": 0.010675436761678552
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14518166021380408,
+            "risk_after_selection": 0.16345529528448888
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.006937879660646298,
+            "risk_after_selection": 0.007769310468998949
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.005742087551494331,
+            "risk_after_selection": 0.006054772069287177
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.006398661680057245,
+            "risk_after_selection": 0.006323539419764765
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02438133757319893,
+            "risk_after_selection": 0.030043805428124907
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.011062017286302456,
+        "fixed_mean_risk": 0.011062017286302456,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010670567056419758,
+            "risk_after_selection": 0.011062017286302456
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.01395226366447163,
+            "risk_after_selection": 0.01413189629081415
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.013922148710871498,
+            "risk_after_selection": 0.0141188202136598
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.013434812568683903,
+            "risk_after_selection": 0.015103107970931895
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15251196036797232,
+            "risk_after_selection": 0.16950156694671112
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.0186746683431043,
+            "risk_after_selection": 0.019201499790961193
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.018667961487291794,
+            "risk_after_selection": 0.019194673491229143
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.018142511919113685,
+            "risk_after_selection": 0.018661319587076286
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.038845871047720956,
+            "risk_after_selection": 0.04450817379332543
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.007207858861570043,
+        "fixed_mean_risk": 0.011062017286302456,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010670567056419758,
+            "risk_after_selection": 0.011062017286302456
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009588461803950113,
+            "risk_after_selection": 0.010357647199721359
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.009574333666118866,
+            "risk_after_selection": 0.010353071078830635
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009591123825723882,
+            "risk_after_selection": 0.011338320320894458
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1456924202602216,
+            "risk_after_selection": 0.16408042023931024
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.009026983488401742,
+            "risk_after_selection": 0.009146192828901382
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.006985572653889509,
+            "risk_after_selection": 0.007207858861570043
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0075838920078858995,
+            "risk_after_selection": 0.0075686331542145465
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02482943731313513,
+            "risk_after_selection": 0.029822572117158382
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "group",
+        "lambda": 0.001,
+        "selected_risk": 0.011036410828235812,
+        "fixed_mean_risk": 0.011195663782045378,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009600007166934032,
+            "risk_after_selection": 0.011195663782045378
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00929063847483079,
+            "risk_after_selection": 0.011053563766667544
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.009271159780372584,
+            "risk_after_selection": 0.011036410828235812
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009761961887770957,
+            "risk_after_selection": 0.01185586659379324
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15284085117889504,
+            "risk_after_selection": 0.16946740215710013
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.018841750251939245,
+            "risk_after_selection": 0.020553113829834255
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.01883356261297294,
+            "risk_after_selection": 0.020546376246294785
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.018140165296193,
+            "risk_after_selection": 0.019985896655249188
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03760933442272623,
+            "risk_after_selection": 0.04296735978979871
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.00906160006489207,
+        "fixed_mean_risk": 0.011195663782045378,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009600007166934032,
+            "risk_after_selection": 0.011195663782045378
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.008542409566178012,
+            "risk_after_selection": 0.010354825313657376
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.008531776395471263,
+            "risk_after_selection": 0.010347799834121329
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.00890069857512811,
+            "risk_after_selection": 0.01115987714784207
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1465261525838167,
+            "risk_after_selection": 0.16428441360495694
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.011469838039493405,
+            "risk_after_selection": 0.012584040207179832
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.008548712505439678,
+            "risk_after_selection": 0.009278695676990094
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.008291753427833021,
+            "risk_after_selection": 0.00906160006489207
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.0249478191934562,
+            "risk_after_selection": 0.029612196742135336
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.005881537367160766,
+        "fixed_mean_risk": 0.005881537367160766,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.005257549482319993,
+            "risk_after_selection": 0.005881537367160766
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007780520553272995,
+            "risk_after_selection": 0.008346645958289687
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007758630210615559,
+            "risk_after_selection": 0.008309091868260206
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.008360755305895324,
+            "risk_after_selection": 0.007911873731025006
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15459448791376987,
+            "risk_after_selection": 0.17026391297769222
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.0133195067084061,
+            "risk_after_selection": 0.013881723744827656
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.01331562880531828,
+            "risk_after_selection": 0.013876252210414813
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.013035435075330896,
+            "risk_after_selection": 0.013454453511805398
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03860403393786103,
+            "risk_after_selection": 0.040787844918782346
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.004724420881924185,
+        "fixed_mean_risk": 0.005881537367160766,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.005257549482319993,
+            "risk_after_selection": 0.005881537367160766
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005355802892257504,
+            "risk_after_selection": 0.005714531830454256
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0053614836732116915,
+            "risk_after_selection": 0.005713531359203139
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.007081999479396365,
+            "risk_after_selection": 0.007047906721635446
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14705306334078438,
+            "risk_after_selection": 0.16379063499815505
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.006171164413823291,
+            "risk_after_selection": 0.006606351198315659
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.004931813914593074,
+            "risk_after_selection": 0.005292683847852902
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0041899753856012275,
+            "risk_after_selection": 0.004724420881924185
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.024858391602033375,
+            "risk_after_selection": 0.027129733958324416
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.009307709447821833,
+        "fixed_mean_risk": 0.009307709447821833,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009261642717012415,
+            "risk_after_selection": 0.009307709447821833
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.010446838896624198,
+            "risk_after_selection": 0.010232382821372786
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.010466395052171026,
+            "risk_after_selection": 0.010249573565586565
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.013585388866809305,
+            "risk_after_selection": 0.013327177628189997
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15122465181135913,
+            "risk_after_selection": 0.16666460156273347
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.014717079125022669,
+            "risk_after_selection": 0.015273818068791923
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.014719215543513218,
+            "risk_after_selection": 0.015275397497424454
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.014969009857289215,
+            "risk_after_selection": 0.015480977377049282
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.04326156011106201,
+            "risk_after_selection": 0.04616341592084634
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.004363125401198775,
+        "fixed_mean_risk": 0.009307709447821833,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009261642717012415,
+            "risk_after_selection": 0.009307709447821833
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009341976150076214,
+            "risk_after_selection": 0.00903074362066385
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.009352442449806184,
+            "risk_after_selection": 0.009039772762622253
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.011307863763813573,
+            "risk_after_selection": 0.01101148193791859
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14634742470634088,
+            "risk_after_selection": 0.162933125890968
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.004729653091807319,
+            "risk_after_selection": 0.005357093431800363
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.0039073092859342184,
+            "risk_after_selection": 0.004363125401198775
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.004278127653102898,
+            "risk_after_selection": 0.004830388327876579
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02829208181828942,
+            "risk_after_selection": 0.030228001743752227
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.010537568187183185,
+        "fixed_mean_risk": 0.010537568187183185,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010809364165616137,
+            "risk_after_selection": 0.010537568187183185
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.011146248467814958,
+            "risk_after_selection": 0.011574489980106217
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.011137735292955663,
+            "risk_after_selection": 0.011571570670856943
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.012159170831452158,
+            "risk_after_selection": 0.013218450896030968
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1522743648898655,
+            "risk_after_selection": 0.16893613494657816
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.016584953651206453,
+            "risk_after_selection": 0.016916965711476696
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.016579988404306113,
+            "risk_after_selection": 0.016912789831005175
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.01614573506798805,
+            "risk_after_selection": 0.01655876866155484
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03580682314270338,
+            "risk_after_selection": 0.04134740309905797
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.008517158340770593,
+        "fixed_mean_risk": 0.010537568187183185,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010809364165616137,
+            "risk_after_selection": 0.010537568187183185
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009507204136773155,
+            "risk_after_selection": 0.009642536734139647
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.009499189893926781,
+            "risk_after_selection": 0.009639697248829626
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.010026722017249499,
+            "risk_after_selection": 0.010770352348643762
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14611249329985496,
+            "risk_after_selection": 0.16390275107344787
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.009419893367202139,
+            "risk_after_selection": 0.009699521924472548
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.007772286252071718,
+            "risk_after_selection": 0.008517158340770593
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.008127945442079194,
+            "risk_after_selection": 0.008843186766713895
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02521557503578182,
+            "risk_after_selection": 0.029341369827167087
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.008681508713877666,
+        "fixed_mean_risk": 0.008681508713877666,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009589148464182328,
+            "risk_after_selection": 0.008681508713877666
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.01015186819738378,
+            "risk_after_selection": 0.009888909064943746
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.01012895845371125,
+            "risk_after_selection": 0.009880613856427278
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.010347996222969866,
+            "risk_after_selection": 0.011397189350432485
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15155437668696198,
+            "risk_after_selection": 0.16835269136731904
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.020960174780154803,
+            "risk_after_selection": 0.02201482892376393
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.02095029357748705,
+            "risk_after_selection": 0.0220056957726231
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.020107565693374355,
+            "risk_after_selection": 0.021235453973154614
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03618660870772619,
+            "risk_after_selection": 0.04160393310200807
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.005706695390434461,
+        "fixed_mean_risk": 0.008681508713877666,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009589148464182328,
+            "risk_after_selection": 0.008681508713877666
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.008816624056418103,
+            "risk_after_selection": 0.008195622937065732
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.008803523400032286,
+            "risk_after_selection": 0.008192541954791728
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.008920564167425668,
+            "risk_after_selection": 0.009312175853904769
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14588629201739944,
+            "risk_after_selection": 0.16385735290593229
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.007566617711408862,
+            "risk_after_selection": 0.007440594280792456
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.006345300109183486,
+            "risk_after_selection": 0.005943957962809902
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.006083790988618132,
+            "risk_after_selection": 0.005706695390434461
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02411429116767097,
+            "risk_after_selection": 0.02810957345088215
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.009634835864156028,
+        "fixed_mean_risk": 0.009634835864156028,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0109816289335489,
+            "risk_after_selection": 0.009634835864156028
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.01140650864546391,
+            "risk_after_selection": 0.009547796117499367
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.011412202871489849,
+            "risk_after_selection": 0.009555850336560435
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.013602050476840856,
+            "risk_after_selection": 0.012080644980239598
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15257078055867762,
+            "risk_after_selection": 0.16808632870062148
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.018568224565976184,
+            "risk_after_selection": 0.018589508219557755
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.01856539455401379,
+            "risk_after_selection": 0.018585918518797432
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.018372443244088762,
+            "risk_after_selection": 0.018329340525749298
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.04143773817109205,
+            "risk_after_selection": 0.04421599761772791
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.007168810975672058,
+        "fixed_mean_risk": 0.009634835864156028,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0109816289335489,
+            "risk_after_selection": 0.009634835864156028
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.010849860141687684,
+            "risk_after_selection": 0.009115105445152932
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.01085167072590779,
+            "risk_after_selection": 0.009117083133944428
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.012132158428439097,
+            "risk_after_selection": 0.0105808296425257
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1467176546995367,
+            "risk_after_selection": 0.1634837802430127
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.008659076900627592,
+            "risk_after_selection": 0.008284597235956464
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.007409130721769789,
+            "risk_after_selection": 0.007168810975672058
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.008124714423627145,
+            "risk_after_selection": 0.007564789643793621
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02849630728509809,
+            "risk_after_selection": 0.029826286249390443
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.008676816363269092,
+        "fixed_mean_risk": 0.008676816363269092,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00898264287758401,
+            "risk_after_selection": 0.008676816363269092
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009083522400323615,
+            "risk_after_selection": 0.008721423198096703
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.00908005092742932,
+            "risk_after_selection": 0.008713985668282022
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.010707013812078999,
+            "risk_after_selection": 0.010218505345125617
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15289461518693404,
+            "risk_after_selection": 0.16869848953657213
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.014321337798824118,
+            "risk_after_selection": 0.014160775954164618
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.014317700047319856,
+            "risk_after_selection": 0.014157150366626192
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.01406540136072867,
+            "risk_after_selection": 0.013909674409404955
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03850686790031489,
+            "risk_after_selection": 0.04186769427653757
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.006522326881835614,
+        "fixed_mean_risk": 0.008676816363269092,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00898264287758401,
+            "risk_after_selection": 0.008676816363269092
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00871970845335436,
+            "risk_after_selection": 0.00813553266941697
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.008722771154772513,
+            "risk_after_selection": 0.008136828760389793
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.01013079953318806,
+            "risk_after_selection": 0.009557673884658531
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.146735849168264,
+            "risk_after_selection": 0.16355424167591442
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.007950588715913233,
+            "risk_after_selection": 0.008264480253111637
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.006403706874334223,
+            "risk_after_selection": 0.0067747634693085465
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.006322899080286971,
+            "risk_after_selection": 0.006522326881835614
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.026081872653824063,
+            "risk_after_selection": 0.02858964238194174
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.008142194749263764,
+        "fixed_mean_risk": 0.008142194749263764,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.008583199363550172,
+            "risk_after_selection": 0.008142194749263764
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009000768474261267,
+            "risk_after_selection": 0.009354297787121423
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.008981319655146949,
+            "risk_after_selection": 0.009335037199655366
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009472611840892677,
+            "risk_after_selection": 0.00999357403760986
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15297069143780934,
+            "risk_after_selection": 0.1689672627630969
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.011335761434155198,
+            "risk_after_selection": 0.012958157880107325
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.011335996910032436,
+            "risk_after_selection": 0.012960154888446066
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.011393016300580934,
+            "risk_after_selection": 0.013171034899047316
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03596898697554314,
+            "risk_after_selection": 0.04139588019054737
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.004172356585252187,
+        "fixed_mean_risk": 0.008142194749263764,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.008583199363550172,
+            "risk_after_selection": 0.008142194749263764
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00844793896945162,
+            "risk_after_selection": 0.007940861049814549
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.00844125954245441,
+            "risk_after_selection": 0.007937219350126333
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009129684942818534,
+            "risk_after_selection": 0.009030858043152647
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14657645076176043,
+            "risk_after_selection": 0.16372607859104385
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.005693160253860852,
+            "risk_after_selection": 0.005500595994313599
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.004517096860268714,
+            "risk_after_selection": 0.004172356585252187
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.004855196790710084,
+            "risk_after_selection": 0.004296667350510393
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02437897582048549,
+            "risk_after_selection": 0.028153504696741084
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.006626763898583146,
+        "fixed_mean_risk": 0.006626763898583146,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0067507461830282785,
+            "risk_after_selection": 0.006626763898583146
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.006862498853847293,
+            "risk_after_selection": 0.007024903144979254
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.006845123238683028,
+            "risk_after_selection": 0.007011356240840183
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.007551644968071542,
+            "risk_after_selection": 0.008167274939181355
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15288414931475763,
+            "risk_after_selection": 0.1691625058369193
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.013856311632124299,
+            "risk_after_selection": 0.015514756590477215
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.01385238175230117,
+            "risk_after_selection": 0.015511074040519716
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.013547229395476774,
+            "risk_after_selection": 0.015232297845003401
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03786330869553481,
+            "risk_after_selection": 0.04292649229882568
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.004423362084418672,
+        "fixed_mean_risk": 0.006626763898583146,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0067507461830282785,
+            "risk_after_selection": 0.006626763898583146
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.006446398078556166,
+            "risk_after_selection": 0.0065659832541420235
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.006443983365158461,
+            "risk_after_selection": 0.006566481552408563
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.007477705542056343,
+            "risk_after_selection": 0.007990985863854065
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14643926554223352,
+            "risk_after_selection": 0.16373590902636012
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.006632209778416762,
+            "risk_after_selection": 0.006405853347039184
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.005035014195447343,
+            "risk_after_selection": 0.00493826699151877
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.004376270176901161,
+            "risk_after_selection": 0.004423362084418672
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.0239850918383709,
+            "risk_after_selection": 0.027864932177832355
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.009136738271981098,
+        "fixed_mean_risk": 0.009136738271981098,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010467603833294368,
+            "risk_after_selection": 0.009136738271981098
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.01332916922537543,
+            "risk_after_selection": 0.012624236464326451
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.013313954255972142,
+            "risk_after_selection": 0.012609137218294106
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.013960843847992885,
+            "risk_after_selection": 0.013459630537125775
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1537778043601385,
+            "risk_after_selection": 0.16997600032582671
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.01789267567600762,
+            "risk_after_selection": 0.017082093283936554
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.017888703700907588,
+            "risk_after_selection": 0.017078715700806192
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.017557159537541178,
+            "risk_after_selection": 0.016810917013329735
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.04008455267908839,
+            "risk_after_selection": 0.04407876769397492
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.007343636591835015,
+        "fixed_mean_risk": 0.009136738271981098,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010467603833294368,
+            "risk_after_selection": 0.009136738271981098
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009441258321301802,
+            "risk_after_selection": 0.008548200992107775
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.00943951699813389,
+            "risk_after_selection": 0.008550378997830019
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.010472506553341105,
+            "risk_after_selection": 0.010064687469100072
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14660351705535732,
+            "risk_after_selection": 0.16380036149753543
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.009098650158426112,
+            "risk_after_selection": 0.00937200065901338
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.007826553557716557,
+            "risk_after_selection": 0.007343636591835015
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.008230707253158932,
+            "risk_after_selection": 0.007102228031647005
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.025880872345064816,
+            "risk_after_selection": 0.029404469808729718
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.007203146990735328,
+        "fixed_mean_risk": 0.007203146990735328,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.006937474184663036,
+            "risk_after_selection": 0.007203146990735328
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.008300943522060417,
+            "risk_after_selection": 0.008153483039704508
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.00829246438109958,
+            "risk_after_selection": 0.008145265017115872
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009622033063493605,
+            "risk_after_selection": 0.009690572585981737
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1526492499086944,
+            "risk_after_selection": 0.16868165940000795
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.012133849465903937,
+            "risk_after_selection": 0.012022450534404566
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.012129559196303269,
+            "risk_after_selection": 0.012019083621966584
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.011835583261146842,
+            "risk_after_selection": 0.011804865559698039
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03686536019428402,
+            "risk_after_selection": 0.0411431618740179
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.004804757869272043,
+        "fixed_mean_risk": 0.007203146990735328,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.006937474184663036,
+            "risk_after_selection": 0.007203146990735328
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.006602265097210544,
+            "risk_after_selection": 0.006842759903211814
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.006603792076444627,
+            "risk_after_selection": 0.006845376721081366
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.007924048062905658,
+            "risk_after_selection": 0.008415379120740096
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14625876915470568,
+            "risk_after_selection": 0.16351713558684083
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.0057153671397133675,
+            "risk_after_selection": 0.006546412554166238
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.004519875510594927,
+            "risk_after_selection": 0.005235960655205702
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.004080398071049797,
+            "risk_after_selection": 0.004804757869272043
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.024923389533622137,
+            "risk_after_selection": 0.028296315865638706
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "fixed_mean",
+        "lambda": null,
+        "selected_risk": 0.004396448123826179,
+        "fixed_mean_risk": 0.004396448123826179,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00403246848846398,
+            "risk_after_selection": 0.004396448123826179
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005246322262526578,
+            "risk_after_selection": 0.005616889085946007
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.005238149103838971,
+            "risk_after_selection": 0.005606561076061818
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0067291224786320165,
+            "risk_after_selection": 0.007152739014281419
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15235699846585643,
+            "risk_after_selection": 0.16858408655911253
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.007174184719494149,
+            "risk_after_selection": 0.008404980249076408
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.007174632314180828,
+            "risk_after_selection": 0.008405424353449402
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.007260602000124919,
+            "risk_after_selection": 0.008493542120833013
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.035566657870611126,
+            "risk_after_selection": 0.040024886524651006
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.1,
+        "selected_risk": 0.0023467600049703764,
+        "fixed_mean_risk": 0.004396448123826179,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00403246848846398,
+            "risk_after_selection": 0.004396448123826179
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.003943619281738891,
+            "risk_after_selection": 0.004379506625530744
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.003945489411199533,
+            "risk_after_selection": 0.004380843085638437
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0053583509027705905,
+            "risk_after_selection": 0.005913303770104006
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1463818861083041,
+            "risk_after_selection": 0.16362323242624888
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.003366641034455213,
+            "risk_after_selection": 0.0030711643708092574
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.0023627326536286826,
+            "risk_after_selection": 0.002298558048202605
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0023187516232482876,
+            "risk_after_selection": 0.0023467600049703764
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02284996357229561,
+            "risk_after_selection": 0.026508092738762656
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "pilots": 32,
+        "selected": "group",
+        "lambda": 0.001,
+        "selected_risk": 0.008081113115369113,
+        "fixed_mean_risk": 0.007902940987881869,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.007354641175928156,
+            "risk_after_selection": 0.007902940987881869
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007333203677184358,
+            "risk_after_selection": 0.008087068202160498
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007327351463541144,
+            "risk_after_selection": 0.008081113115369113
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.008749594728111359,
+            "risk_after_selection": 0.00969053735164799
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15235486708034468,
+            "risk_after_selection": 0.1687070474884358
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.013770430096099934,
+            "risk_after_selection": 0.015677067130351528
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.013769002301821648,
+            "risk_after_selection": 0.01567539700816977
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.013681586605358603,
+            "risk_after_selection": 0.015565182845469162
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03823837204360869,
+            "risk_after_selection": 0.042895810263689084
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 0,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 0.002823863939927893,
+        "fixed_mean_risk": 0.007902940987881869,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.007354641175928156,
+            "risk_after_selection": 0.007902940987881869
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007102236269504174,
+            "risk_after_selection": 0.007746821162577211
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007103083132065447,
+            "risk_after_selection": 0.007750089293630279
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.008325767050409313,
+            "risk_after_selection": 0.009334933622570601
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14577980904394788,
+            "risk_after_selection": 0.16332282900627262
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 0.003617382906009615,
+            "risk_after_selection": 0.0035526759999225275
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 0.002995201868414902,
+            "risk_after_selection": 0.002823863939927893
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.003945447545284463,
+            "risk_after_selection": 0.0038261152839147447
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.025149550319875612,
+            "risk_after_selection": 0.02892104192779706
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 2.6754736152579103e-05,
+        "fixed_mean_risk": 0.002288694681979635,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0022244135965366714,
+            "risk_after_selection": 0.002288694681979635
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0023409362531709938,
+            "risk_after_selection": 0.0025358849331538237
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.002341095859713061,
+            "risk_after_selection": 0.0025407951417362904
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.004440186920182694,
+            "risk_after_selection": 0.005205421624654204
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1519545687615477,
+            "risk_after_selection": 0.16834112500938164
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.7217349314221985e-05,
+            "risk_after_selection": 2.6754736152579103e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 2.7239071395837692e-05,
+            "risk_after_selection": 2.6985135685648518e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 9.565753967224404e-05,
+            "risk_after_selection": 0.00010951171649097487
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.034544929173744035,
+            "risk_after_selection": 0.039923161788412306
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1158314865788706e-05,
+        "fixed_mean_risk": 0.002288694681979635,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0022244135965366714,
+            "risk_after_selection": 0.002288694681979635
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0021115221093460047,
+            "risk_after_selection": 0.0021715804091928105
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.002111345388445761,
+            "risk_after_selection": 0.0021749102398715033
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0033611851777129603,
+            "risk_after_selection": 0.0038761749203703715
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1459692545489067,
+            "risk_after_selection": 0.163426557910003
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.8834292653021384e-05,
+            "risk_after_selection": 1.811541732077119e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.1658862135203372e-05,
+            "risk_after_selection": 1.1158314865788706e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 1.9842448156373557e-05,
+            "risk_after_selection": 1.972197924532102e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.020544145709667512,
+            "risk_after_selection": 0.024168192808877186
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 2.135970554835784e-05,
+        "fixed_mean_risk": 0.0033516261903141333,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.003234525614917739,
+            "risk_after_selection": 0.0033516261903141333
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0038233017899389427,
+            "risk_after_selection": 0.00389971862370465
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.003817407930715921,
+            "risk_after_selection": 0.003899745548592365
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.005280420596715607,
+            "risk_after_selection": 0.00601454862561154
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15208417474935537,
+            "risk_after_selection": 0.168671177759016
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.1567633624121055e-05,
+            "risk_after_selection": 2.135970554835784e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 2.1969292326010247e-05,
+            "risk_after_selection": 2.1874386754159024e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 9.982659230526738e-05,
+            "risk_after_selection": 0.00011709308359776875
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.033794601937024896,
+            "risk_after_selection": 0.039537980393522264
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1064084225299593e-05,
+        "fixed_mean_risk": 0.0033516261903141333,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.003234525614917739,
+            "risk_after_selection": 0.0033516261903141333
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0029800467459746315,
+            "risk_after_selection": 0.003121847752034146
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0029785719830980033,
+            "risk_after_selection": 0.0031238073366097263
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.004112154507464291,
+            "risk_after_selection": 0.004706375201696456
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14596910443317312,
+            "risk_after_selection": 0.1634848545790189
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.9031822449924562e-05,
+            "risk_after_selection": 1.7661155961914196e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.1521172300450792e-05,
+            "risk_after_selection": 1.1064084225299593e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 1.966364112261021e-05,
+            "risk_after_selection": 2.0625368499069454e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.020835821476799903,
+            "risk_after_selection": 0.024459663804194533
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 2.1099444909943362e-05,
+        "fixed_mean_risk": 0.0068146658122726035,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.006101976085004076,
+            "risk_after_selection": 0.0068146658122726035
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007563777080085527,
+            "risk_after_selection": 0.007878623737491082
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007567150414895518,
+            "risk_after_selection": 0.007889798437368662
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009748153572559235,
+            "risk_after_selection": 0.010811016358219157
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15132874556051956,
+            "risk_after_selection": 0.16750583243288455
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.3186175973881135e-05,
+            "risk_after_selection": 2.1099444909943362e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 2.409516933228322e-05,
+            "risk_after_selection": 2.2269888016093127e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00018686044199745625,
+            "risk_after_selection": 0.0002076021771605467
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03740363625392894,
+            "risk_after_selection": 0.04386707915385386
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.184107351334671e-05,
+        "fixed_mean_risk": 0.0068146658122726035,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.006101976085004076,
+            "risk_after_selection": 0.0068146658122726035
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005780239150323386,
+            "risk_after_selection": 0.006551763503393149
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.005775358602778516,
+            "risk_after_selection": 0.006550261442923376
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006620282065963485,
+            "risk_after_selection": 0.007829040500130563
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14615265506910194,
+            "risk_after_selection": 0.1637142307424444
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.0485849170186568e-05,
+            "risk_after_selection": 2.0086658071754967e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.1541560181074899e-05,
+            "risk_after_selection": 1.184107351334671e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.1678168522121156e-05,
+            "risk_after_selection": 2.2308763148096756e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.0215220669193559,
+            "risk_after_selection": 0.025859306386813607
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 3.0090570882126157e-05,
+        "fixed_mean_risk": 0.005040785316077521,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.005052178275260446,
+            "risk_after_selection": 0.005040785316077521
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005959899616851174,
+            "risk_after_selection": 0.0059478032728879915
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.005972545926273703,
+            "risk_after_selection": 0.005963728880519878
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.008700384485519835,
+            "risk_after_selection": 0.009130986116001098
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1520099628292113,
+            "risk_after_selection": 0.16825762941999808
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.9590461260394307e-05,
+            "risk_after_selection": 3.0090570882126157e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 3.11888845053939e-05,
+            "risk_after_selection": 3.181835927711394e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0004188946581009083,
+            "risk_after_selection": 0.00040674601402014256
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03667845767838574,
+            "risk_after_selection": 0.04185910175905111
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1618013640250323e-05,
+        "fixed_mean_risk": 0.005040785316077521,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.005052178275260446,
+            "risk_after_selection": 0.005040785316077521
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00483685144104739,
+            "risk_after_selection": 0.004914432875119816
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.004838113249905339,
+            "risk_after_selection": 0.004918038113919612
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006165124512433647,
+            "risk_after_selection": 0.006607804523446954
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14589407225229828,
+            "risk_after_selection": 0.16333112442393946
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.0923291373662448e-05,
+            "risk_after_selection": 1.9911529327728252e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.1784049760539096e-05,
+            "risk_after_selection": 1.1618013640250323e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.2201979778872427e-05,
+            "risk_after_selection": 2.2918403426636925e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.022067366495996693,
+            "risk_after_selection": 0.025825749429859882
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 4.4895165620160344e-05,
+        "fixed_mean_risk": 0.011735708568802988,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.011155441344690136,
+            "risk_after_selection": 0.011735708568802988
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.012814828631081701,
+            "risk_after_selection": 0.013018840721017983
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.012792753868268525,
+            "risk_after_selection": 0.013013445114879172
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.012744121574473239,
+            "risk_after_selection": 0.014453418641112615
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15179051834177143,
+            "risk_after_selection": 0.16902733152851557
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 4.892374989425503e-05,
+            "risk_after_selection": 4.4895165620160344e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 5.012403793406813e-05,
+            "risk_after_selection": 4.6188505695763766e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0003449494799883315,
+            "risk_after_selection": 0.0003633729219999269
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.0343156419925252,
+            "risk_after_selection": 0.04172831389332502
+          }
+        ]
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.3117548760025417e-05,
+        "fixed_mean_risk": 0.011735708568802988,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.011155441344690136,
+            "risk_after_selection": 0.011735708568802988
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.009904594563893438,
+            "risk_after_selection": 0.010995841363588285
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.00990325267616268,
+            "risk_after_selection": 0.011003286997774435
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.010847137576459623,
+            "risk_after_selection": 0.012817498858950971
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14542548040378342,
+            "risk_after_selection": 0.1634274503877921
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.2019742785551186e-05,
+            "risk_after_selection": 2.323505386760206e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.2534519430794081e-05,
+            "risk_after_selection": 1.3117548760025417e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.6756835235988126e-05,
+            "risk_after_selection": 3.079903472892731e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.023042301949370153,
+            "risk_after_selection": 0.027818858735296777
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 3.8940575706565356e-05,
+        "fixed_mean_risk": 0.002218134174120666,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0025893505360294437,
+            "risk_after_selection": 0.002218134174120666
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0027101910030716742,
+            "risk_after_selection": 0.0023084506340179264
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0027088107618763115,
+            "risk_after_selection": 0.0023101973207909393
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.004580230786649217,
+            "risk_after_selection": 0.004605720218963223
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15254051438858057,
+            "risk_after_selection": 0.16879706782421436
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 4.004500494191156e-05,
+            "risk_after_selection": 3.8940575706565356e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 4.112098091527183e-05,
+            "risk_after_selection": 3.9866457140702016e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00014363064305932918,
+            "risk_after_selection": 0.0001456193138019613
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03276620288384924,
+            "risk_after_selection": 0.03804266344262417
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.163596287243902e-05,
+        "fixed_mean_risk": 0.002218134174120666,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0025893505360294437,
+            "risk_after_selection": 0.002218134174120666
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.002438184708209245,
+            "risk_after_selection": 0.0021312484905398202
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0024392111338346085,
+            "risk_after_selection": 0.002134276944165162
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0038093676000477837,
+            "risk_after_selection": 0.003837735802059231
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14609291312252762,
+            "risk_after_selection": 0.16339924841594136
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.89995455412875e-05,
+            "risk_after_selection": 1.8116152052171002e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.19200170500602e-05,
+            "risk_after_selection": 1.163596287243902e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 1.9516527116844894e-05,
+            "risk_after_selection": 1.891727331919762e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.021060233878888696,
+            "risk_after_selection": 0.024525208528933126
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 4.125958784540798e-05,
+        "fixed_mean_risk": 0.0029490286648499076,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0028276325343515527,
+            "risk_after_selection": 0.0029490286648499076
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0030674206758808118,
+            "risk_after_selection": 0.0031555681308203898
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0030726719297257945,
+            "risk_after_selection": 0.0031611000246829475
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.005456823983974064,
+            "risk_after_selection": 0.005697292568771717
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1526204340334394,
+            "risk_after_selection": 0.16856909081986649
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 4.2805607867769474e-05,
+            "risk_after_selection": 4.125958784540798e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 4.4106099911031015e-05,
+            "risk_after_selection": 4.2693573733363626e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00016363018262949898,
+            "risk_after_selection": 0.00016272171908156198
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03583735760330002,
+            "risk_after_selection": 0.040493842828652954
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1942233314090069e-05,
+        "fixed_mean_risk": 0.0029490286648499076,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0028276325343515527,
+            "risk_after_selection": 0.0029490286648499076
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.00260997816075366,
+            "risk_after_selection": 0.0027608565190833496
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0026067633986385057,
+            "risk_after_selection": 0.002758132607270551
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0036739415510121235,
+            "risk_after_selection": 0.004038926851256823
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14640396104615278,
+            "risk_after_selection": 0.1637554547226862
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.983999293176533e-05,
+            "risk_after_selection": 1.794263119162819e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.2189154251492396e-05,
+            "risk_after_selection": 1.1942233314090069e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 1.9173828735571413e-05,
+            "risk_after_selection": 1.9027362220452565e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.020674602582074895,
+            "risk_after_selection": 0.024213884088048664
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 4.9898173003092086e-05,
+        "fixed_mean_risk": 0.010547281330605535,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009789937850826588,
+            "risk_after_selection": 0.010547281330605535
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.011987838796029672,
+            "risk_after_selection": 0.01252739664494357
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.011973486216319381,
+            "risk_after_selection": 0.012514327852523913
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.012740612914693087,
+            "risk_after_selection": 0.013538988850100752
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15314032958835877,
+            "risk_after_selection": 0.16947979779889086
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 5.2935400551877766e-05,
+            "risk_after_selection": 5.08776553090162e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 5.150597193718224e-05,
+            "risk_after_selection": 4.9898173003092086e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0005383288572145978,
+            "risk_after_selection": 0.0005765334314651065
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03698925430714235,
+            "risk_after_selection": 0.042381010661951164
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.4393246324463156e-05,
+        "fixed_mean_risk": 0.010547281330605535,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.009789937850826588,
+            "risk_after_selection": 0.010547281330605535
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.008940836617728204,
+            "risk_after_selection": 0.009968250101910157
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.008937274440846896,
+            "risk_after_selection": 0.00996503061600258
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009852974541488537,
+            "risk_after_selection": 0.011059185599493083
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14685755807313494,
+            "risk_after_selection": 0.16417339619366786
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.8798912092211414e-05,
+            "risk_after_selection": 2.6189948037093578e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.5083896370503475e-05,
+            "risk_after_selection": 1.4393246324463156e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.8761122577745803e-05,
+            "risk_after_selection": 2.847336556358594e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02289771243866967,
+            "risk_after_selection": 0.027060608418262345
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 4.4498025766530877e-05,
+        "fixed_mean_risk": 0.004022895602359111,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.003387853155883981,
+            "risk_after_selection": 0.004022895602359111
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.003804741105636007,
+            "risk_after_selection": 0.004586807250690093
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0037871176338079367,
+            "risk_after_selection": 0.004558191547390973
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.004888350851946426,
+            "risk_after_selection": 0.005025977966114711
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15372384691713825,
+            "risk_after_selection": 0.16950905523177018
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 4.458876370677354e-05,
+            "risk_after_selection": 4.4498025766530877e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 4.630790601419338e-05,
+            "risk_after_selection": 4.610862447375742e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0001633608416348217,
+            "risk_after_selection": 0.00017643805229043908
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03414594647774287,
+            "risk_after_selection": 0.038482416658098706
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.2255784706357268e-05,
+        "fixed_mean_risk": 0.004022895602359111,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.003387853155883981,
+            "risk_after_selection": 0.004022895602359111
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0034668528337435337,
+            "risk_after_selection": 0.0039454608913500975
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.003474103973288927,
+            "risk_after_selection": 0.00394731753823512
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.005321891533646522,
+            "risk_after_selection": 0.005506180369148435
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1465774668525898,
+            "risk_after_selection": 0.16333703708297456
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.132858154696084e-05,
+            "risk_after_selection": 2.036661935931905e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.2275763309199971e-05,
+            "risk_after_selection": 1.2255784706357268e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.1997119001021825e-05,
+            "risk_after_selection": 2.186655314273185e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.022093948519659,
+            "risk_after_selection": 0.02495926203436634
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 6.11022744017391e-05,
+        "fixed_mean_risk": 0.0104769611371116,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.01133234348236793,
+            "risk_after_selection": 0.0104769611371116
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.013099330612949892,
+            "risk_after_selection": 0.012039011328797483
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.013090881243749308,
+            "risk_after_selection": 0.012039009864331849
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.014303714748679457,
+            "risk_after_selection": 0.014170653063582114
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15107802132777964,
+            "risk_after_selection": 0.16776268721961227
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 5.883152172111154e-05,
+            "risk_after_selection": 6.11022744017391e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 5.890089342116711e-05,
+            "risk_after_selection": 6.097561510375071e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00033906537881361464,
+            "risk_after_selection": 0.00032477175454680374
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03907070802199859,
+            "risk_after_selection": 0.0448279371363245
+          }
+        ]
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.3414320100735303e-05,
+        "fixed_mean_risk": 0.0104769611371116,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.01133234348236793,
+            "risk_after_selection": 0.0104769611371116
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.010481481782121119,
+            "risk_after_selection": 0.009890468661203553
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.010479009977231276,
+            "risk_after_selection": 0.009893514725882603
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.011403047548829473,
+            "risk_after_selection": 0.011443596778925104
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1458629663188461,
+            "risk_after_selection": 0.16341662140666688
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 2.404040677243081e-05,
+            "risk_after_selection": 2.0784574834187303e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.452529041343578e-05,
+            "risk_after_selection": 1.3414320100735303e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 3.045951640964667e-05,
+            "risk_after_selection": 3.2922011852843964e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.023778938385402335,
+            "risk_after_selection": 0.027594617128767523
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 4.558680058891753e-05,
+        "fixed_mean_risk": 0.0032876276170459235,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0032712461733407916,
+            "risk_after_selection": 0.0032876276170459235
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0034940631948418774,
+            "risk_after_selection": 0.0035230981240635026
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.003494170016715225,
+            "risk_after_selection": 0.0035278857106801655
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.005360431220180731,
+            "risk_after_selection": 0.005930461912217252
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15173189626518768,
+            "risk_after_selection": 0.16807004374060427
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 4.971891547821765e-05,
+            "risk_after_selection": 4.558680058891753e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 5.2711664460890475e-05,
+            "risk_after_selection": 4.87044729960652e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0006769097069132619,
+            "risk_after_selection": 0.0006572811853508655
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03345692288639568,
+            "risk_after_selection": 0.038565195455017756
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1215410962909467e-05,
+        "fixed_mean_risk": 0.0032876276170459235,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0032712461733407916,
+            "risk_after_selection": 0.0032876276170459235
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0031091821382691247,
+            "risk_after_selection": 0.0029901578458887746
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.003104088975706121,
+            "risk_after_selection": 0.002988459085264689
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.003989596241526076,
+            "risk_after_selection": 0.004331767750686248
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1462087010092636,
+            "risk_after_selection": 0.16378704004664646
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.7686897097137786e-05,
+            "risk_after_selection": 1.703049579521174e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.1981938181395082e-05,
+            "risk_after_selection": 1.1215410962909467e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.139575313002333e-05,
+            "risk_after_selection": 2.1622677965037057e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02070145206929129,
+            "risk_after_selection": 0.024287251014538637
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 5.210484586041885e-05,
+        "fixed_mean_risk": 0.0030010750666786684,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0030442018388133914,
+            "risk_after_selection": 0.0030010750666786684
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.004199937514874942,
+            "risk_after_selection": 0.00426481016506647
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.004205327301824233,
+            "risk_after_selection": 0.004274897744179476
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.00643175081560677,
+            "risk_after_selection": 0.00703513694600267
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15171238909590362,
+            "risk_after_selection": 0.16803202653648938
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 5.571515528776572e-05,
+            "risk_after_selection": 5.210484586041885e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 5.734093245544385e-05,
+            "risk_after_selection": 5.3933440608043635e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.000139503272107848,
+            "risk_after_selection": 0.00014638931116609105
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.0339817185051543,
+            "risk_after_selection": 0.038959781264997426
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1089153069406503e-05,
+        "fixed_mean_risk": 0.0030010750666786684,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0030442018388133914,
+            "risk_after_selection": 0.0030010750666786684
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0028364056993918133,
+            "risk_after_selection": 0.0028526919511470917
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0028360836299470464,
+            "risk_after_selection": 0.0028547358147306538
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.004075665571283814,
+            "risk_after_selection": 0.004458007245902874
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14605597240016494,
+            "risk_after_selection": 0.16348551948644488
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.752739644847955e-05,
+            "risk_after_selection": 1.728189643797316e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.1317191083697685e-05,
+            "risk_after_selection": 1.1089153069406503e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 1.9038210294276252e-05,
+            "risk_after_selection": 1.982911823348593e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.020793812618140447,
+            "risk_after_selection": 0.024381918749817554
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 6.884044250646776e-05,
+        "fixed_mean_risk": 0.007343835912354454,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0071523932617107685,
+            "risk_after_selection": 0.007343835912354454
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007167518159221387,
+            "risk_after_selection": 0.007580715975538032
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007156161379213175,
+            "risk_after_selection": 0.007577695428784008
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0081544457402112,
+            "risk_after_selection": 0.009423135461609482
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15232471300024827,
+            "risk_after_selection": 0.1691609879804582
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 7.421828864705881e-05,
+            "risk_after_selection": 6.884044250646776e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 7.529036626069132e-05,
+            "risk_after_selection": 7.001897199764796e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0002688536325633242,
+            "risk_after_selection": 0.00026891467543422405
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.0355594458278674,
+            "risk_after_selection": 0.0419301556641834
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1589786920600365e-05,
+        "fixed_mean_risk": 0.007343835912354454,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0071523932617107685,
+            "risk_after_selection": 0.007343835912354454
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.006726553559077671,
+            "risk_after_selection": 0.006900339645626504
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.006714241908102683,
+            "risk_after_selection": 0.006893918583421582
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006970832519695906,
+            "risk_after_selection": 0.007807211867265405
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14629345511882064,
+            "risk_after_selection": 0.1641034687832095
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.816468443168186e-05,
+            "risk_after_selection": 1.856541417880629e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.2431753732622652e-05,
+            "risk_after_selection": 1.1589786920600365e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.3934462792671916e-05,
+            "risk_after_selection": 2.391182643582807e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02109094221425485,
+            "risk_after_selection": 0.025293024986904417
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 6.192303077151088e-05,
+        "fixed_mean_risk": 0.0034413982415460974,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0031449757720709262,
+            "risk_after_selection": 0.0034413982415460974
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0036925235068269472,
+            "risk_after_selection": 0.0037567294009749263
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0036993161372908287,
+            "risk_after_selection": 0.003766721361425673
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006133652258989711,
+            "risk_after_selection": 0.006613760458017101
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15206834215673898,
+            "risk_after_selection": 0.1682574013368619
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 6.514585603012045e-05,
+            "risk_after_selection": 6.192303077151088e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 6.559867369846417e-05,
+            "risk_after_selection": 6.230499784570104e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00025918427635356517,
+            "risk_after_selection": 0.00025564239311925746
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03547289845066825,
+            "risk_after_selection": 0.04082256796988233
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1102899391118164e-05,
+        "fixed_mean_risk": 0.0034413982415460974,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0031449757720709262,
+            "risk_after_selection": 0.0034413982415460974
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.002944498407845819,
+            "risk_after_selection": 0.0032650222715808522
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.002947506141819952,
+            "risk_after_selection": 0.003269484611004602
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.004419987535455587,
+            "risk_after_selection": 0.005015521457044342
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14602062807736943,
+            "risk_after_selection": 0.16329711030539348
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.7345080361235354e-05,
+            "risk_after_selection": 1.8688630064293268e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.147744499871652e-05,
+            "risk_after_selection": 1.1102899391118164e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.0497244745059424e-05,
+            "risk_after_selection": 2.0633387439278763e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02109079651547494,
+            "risk_after_selection": 0.024639497422841248
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 7.892818520407403e-05,
+        "fixed_mean_risk": 0.010833909511655049,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010598913713066732,
+            "risk_after_selection": 0.010833909511655049
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.010533077022717562,
+            "risk_after_selection": 0.011083698059696601
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.010524863291932317,
+            "risk_after_selection": 0.01107119586692441
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.011831173847280134,
+            "risk_after_selection": 0.01221720176308713
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15347809156062076,
+            "risk_after_selection": 0.1694006027525655
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 8.271491411056739e-05,
+            "risk_after_selection": 7.892818520407403e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 8.58036822938321e-05,
+            "risk_after_selection": 8.163875600416975e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0007888733742065153,
+            "risk_after_selection": 0.0007193243382098815
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.04074866707006382,
+            "risk_after_selection": 0.04537244013523954
+          }
+        ]
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.3837854399250072e-05,
+        "fixed_mean_risk": 0.010833909511655049,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.010598913713066732,
+            "risk_after_selection": 0.010833909511655049
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.010149412518572942,
+            "risk_after_selection": 0.0101943959836307
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.010150228314584925,
+            "risk_after_selection": 0.01019314587424862
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.011405659355844179,
+            "risk_after_selection": 0.011429004818890592
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1470059502454218,
+            "risk_after_selection": 0.16384050932445415
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.900263731820391e-05,
+            "risk_after_selection": 2.1512768292650328e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.2809434519683549e-05,
+            "risk_after_selection": 1.3837854399250072e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 3.29514409501769e-05,
+            "risk_after_selection": 3.2325536302831984e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.024520329836039745,
+            "risk_after_selection": 0.02740790469475361
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 3.1284365590188765e-05,
+        "fixed_mean_risk": 0.0020875208974334095,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0019353896816463165,
+            "risk_after_selection": 0.0020875208974334095
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0022433636078288415,
+            "risk_after_selection": 0.002477509603043458
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0022283772123446403,
+            "risk_after_selection": 0.0024612489802412945
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0033157882764201776,
+            "risk_after_selection": 0.0036229564622367156
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15306103305017674,
+            "risk_after_selection": 0.16913761745454067
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 3.196482739300993e-05,
+            "risk_after_selection": 3.1284365590188765e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 3.2457392205682886e-05,
+            "risk_after_selection": 3.1883257459103034e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00011404984764912712,
+            "risk_after_selection": 0.00012529237275137693
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03266708188214928,
+            "risk_after_selection": 0.03719718506899584
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1353522554673616e-05,
+        "fixed_mean_risk": 0.0020875208974334095,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.0019353896816463165,
+            "risk_after_selection": 0.0020875208974334095
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0019097016295111613,
+            "risk_after_selection": 0.0020246335685628904
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.001912838366071239,
+            "risk_after_selection": 0.002026508131406541
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.0034675982711383064,
+            "risk_after_selection": 0.0036384574269326397
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14644125235653313,
+            "risk_after_selection": 0.16350975818246077
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.8948730808487377e-05,
+            "risk_after_selection": 1.7669518724375726e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.1921835576439045e-05,
+            "risk_after_selection": 1.1353522554673616e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 1.8731753284465696e-05,
+            "risk_after_selection": 1.7862591122519432e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.021093733881532628,
+            "risk_after_selection": 0.024208422516406838
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 4.821311698421782e-05,
+        "fixed_mean_risk": 0.0034601418859479516,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.003231491045953303,
+            "risk_after_selection": 0.0034601418859479516
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.004517147232221518,
+            "risk_after_selection": 0.004777572081227078
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.004502692351953887,
+            "risk_after_selection": 0.004762388694680073
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.00552439221978788,
+            "risk_after_selection": 0.005924474434442527
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1530504525969238,
+            "risk_after_selection": 0.16931514619640514
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 5.200773337990011e-05,
+            "risk_after_selection": 4.821311698421782e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 5.30716696856671e-05,
+            "risk_after_selection": 4.9094786119901394e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00027285973070749557,
+            "risk_after_selection": 0.00024138159373839413
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03395958747819359,
+            "risk_after_selection": 0.03858432119960492
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.1882297468271069e-05,
+        "fixed_mean_risk": 0.0034601418859479516,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.003231491045953303,
+            "risk_after_selection": 0.0034601418859479516
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0032400303472000535,
+            "risk_after_selection": 0.003362825550497825
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.003239595160983427,
+            "risk_after_selection": 0.003360913198459833
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.004530088886078164,
+            "risk_after_selection": 0.004700983487743433
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14650026466983257,
+            "risk_after_selection": 0.1636385569784624
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.903365988381237e-05,
+            "risk_after_selection": 1.8319739394884622e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.2207405658051133e-05,
+            "risk_after_selection": 1.1882297468271069e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 1.9858121694968927e-05,
+            "risk_after_selection": 1.963360789279065e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02133989268796988,
+            "risk_after_selection": 0.024591244392631165
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 4.562855800291147e-05,
+        "fixed_mean_risk": 0.006287777455833922,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.006277047650851119,
+            "risk_after_selection": 0.006287777455833922
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007739919559300507,
+            "risk_after_selection": 0.007587192761546394
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007722095481572661,
+            "risk_after_selection": 0.007572466940162348
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.008409472836429836,
+            "risk_after_selection": 0.008660940130892794
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15286008554945696,
+            "risk_after_selection": 0.1690547620060202
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 4.899012597289481e-05,
+            "risk_after_selection": 4.562855800291147e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 4.954878869941047e-05,
+            "risk_after_selection": 4.626768923560893e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00020002864361309797,
+            "risk_after_selection": 0.00021479247337449704
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03525269440692815,
+            "risk_after_selection": 0.04088650844609738
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.2153571787786756e-05,
+        "fixed_mean_risk": 0.006287777455833922,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.006277047650851119,
+            "risk_after_selection": 0.006287777455833922
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005780224706026942,
+            "risk_after_selection": 0.0059531749491753515
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.005779270364726436,
+            "risk_after_selection": 0.005952969910009927
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006926450575888823,
+            "risk_after_selection": 0.007318032908438102
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14624260960684088,
+            "risk_after_selection": 0.163416918858657
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.6838953285545605e-05,
+            "risk_after_selection": 1.8957120611539106e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.173428237037861e-05,
+            "risk_after_selection": 1.2153571787786756e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.4742960170456288e-05,
+            "risk_after_selection": 2.492207587470548e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.021897671584293666,
+            "risk_after_selection": 0.0255982049013276
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 5.984222928036639e-05,
+        "fixed_mean_risk": 0.00504346386667475,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.005316548707905995,
+            "risk_after_selection": 0.00504346386667475
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.0055129209510929224,
+            "risk_after_selection": 0.005242155282652954
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.005501084418239384,
+            "risk_after_selection": 0.005231709733535195
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006734003287699993,
+            "risk_after_selection": 0.006807519080568639
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1523376425946792,
+            "risk_after_selection": 0.16870892118770695
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 6.411888515877318e-05,
+            "risk_after_selection": 5.984222928036639e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 6.696923404732949e-05,
+            "risk_after_selection": 6.213249508156363e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.00038197905915944114,
+            "risk_after_selection": 0.0003531514212088118
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.03543135620625078,
+            "risk_after_selection": 0.04059835110624926
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.195000414551078e-05,
+        "fixed_mean_risk": 0.00504346386667475,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.005316548707905995,
+            "risk_after_selection": 0.00504346386667475
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005148347801676726,
+            "risk_after_selection": 0.004976827476130975
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.0051473791967475094,
+            "risk_after_selection": 0.004978616126288731
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.006293566967624698,
+            "risk_after_selection": 0.00652381676237345
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.1460977211411627,
+            "risk_after_selection": 0.16355303966665863
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.7460772932861716e-05,
+            "risk_after_selection": 1.7852694759836075e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.2224229956751334e-05,
+            "risk_after_selection": 1.195000414551078e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.105090075855082e-05,
+            "risk_after_selection": 2.1166992037212215e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.02132136851364199,
+            "risk_after_selection": 0.025181176527062976
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "pilots": 32,
+        "selected": "raw",
+        "lambda": 1e-05,
+        "selected_risk": 6.459676250282057e-05,
+        "fixed_mean_risk": 0.0056562191616014255,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00523241047651163,
+            "risk_after_selection": 0.0056562191616014255
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.007509296761689168,
+            "risk_after_selection": 0.007621204842118656
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.007514442876613414,
+            "risk_after_selection": 0.007629064717071334
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.009698897543439455,
+            "risk_after_selection": 0.010184774996521847
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.15252697126000067,
+            "risk_after_selection": 0.1687114288917757
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 7.14815629588798e-05,
+            "risk_after_selection": 6.459676250282057e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 7.346606485103801e-05,
+            "risk_after_selection": 6.658591113058001e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 0.0003149181653472813,
+            "risk_after_selection": 0.0003133122880008037
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.037046398893402735,
+            "risk_after_selection": 0.04217215850450406
+          }
+        ]
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "rho": 1,
+        "pilots": 256,
+        "selected": "raw",
+        "lambda": 0.001,
+        "selected_risk": 1.2190224582960695e-05,
+        "fixed_mean_risk": 0.0056562191616014255,
+        "candidates": 9,
+        "all_candidates": [
+          {
+            "family": "fixed_mean",
+            "lambda": null,
+            "validation": 0.00523241047651163,
+            "risk_after_selection": 0.0056562191616014255
+          },
+          {
+            "family": "group",
+            "lambda": 1e-05,
+            "validation": 0.005359162798095641,
+            "risk_after_selection": 0.00560974026363145
+          },
+          {
+            "family": "group",
+            "lambda": 0.001,
+            "validation": 0.005367694423712637,
+            "risk_after_selection": 0.00561733983662003
+          },
+          {
+            "family": "group",
+            "lambda": 0.1,
+            "validation": 0.007223872660456092,
+            "risk_after_selection": 0.007541817922687754
+          },
+          {
+            "family": "group",
+            "lambda": 10.0,
+            "validation": 0.14598283797975353,
+            "risk_after_selection": 0.16291836924186873
+          },
+          {
+            "family": "raw",
+            "lambda": 1e-05,
+            "validation": 1.906916172985221e-05,
+            "risk_after_selection": 1.8755947758845755e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.001,
+            "validation": 1.288471350263438e-05,
+            "risk_after_selection": 1.2190224582960695e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 0.1,
+            "validation": 2.5292388550427755e-05,
+            "risk_after_selection": 2.4532016113549217e-05
+          },
+          {
+            "family": "raw",
+            "lambda": 10.0,
+            "validation": 0.023290164103951683,
+            "risk_after_selection": 0.02640692540275367
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "rho0_n32": {
+        "local": {
+          "risk": 0.009337755780730053,
+          "selected": [
+            "fixed_mean",
+            "fixed_mean",
+            "fixed_mean",
+            "fixed_mean"
+          ]
+        },
+        "mhu": {
+          "risk": 0.00975107194743394,
+          "selected": [
+            "group",
+            "fixed_mean",
+            "fixed_mean",
+            "fixed_mean"
+          ]
+        },
+        "cvt": {
+          "risk": 0.008876153218437332,
+          "selected": [
+            "fixed_mean",
+            "group",
+            "fixed_mean",
+            "fixed_mean"
+          ]
+        },
+        "random": {
+          "risk": 0.008952714802606301,
+          "selected": [
+            "group",
+            "fixed_mean",
+            "fixed_mean",
+            "group"
+          ]
+        }
+      },
+      "rho0_n256": {
+        "local": {
+          "risk": 0.006679961361058589,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "mhu": {
+          "risk": 0.006348333507937384,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "cvt": {
+          "risk": 0.006693040645364076,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "random": {
+          "risk": 0.004023292201391332,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        }
+      },
+      "rho1_n32": {
+        "local": {
+          "risk": 3.564161950956269e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "mhu": {
+          "risk": 4.0734314059600625e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "cvt": {
+          "risk": 4.6366654605603673e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "random": {
+          "risk": 6.23805969321985e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        }
+      },
+      "rho1_n256": {
+        "local": {
+          "risk": 1.1340802813952703e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "mhu": {
+          "risk": 1.1494442019266809e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "cvt": {
+          "risk": 1.2494419636549246e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        },
+        "random": {
+          "risk": 1.3139986960742873e-05,
+          "selected": [
+            "raw",
+            "raw",
+            "raw",
+            "raw"
+          ]
+        }
+      }
+    }
+  },
+  "freeze_commit": "35384771c9b5ff7f6b4acfc142a6f314d8207413",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C18/decision.json",
+    "sha256": "cacfc1e2d641103252d7d7ef3ea68b27357df5078a80010241a637ade600171b"
+  },
+  "protocol_sha256": "b6f644644d9220f0e655ff64a4c1b120d883b3ae85892f3f2906d6beba852619",
+  "source_sha256": "2b41186c3b33146d45d43bc2c8b306f8af1576a78f228fe1977e8eedbc0d57be",
+  "common_sha256": "d2df25d6f40ab89912261d44a9a44d0000b079460aa2b04b0b65a219ece46a8f",
+  "inputs": {
+    "geometry_sha256": {
+      "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+      "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+      "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+      "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+    },
+    "datasets": []
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "worker_returncode": 0,
+  "elapsed_seconds": 3.249010300001828,
+  "finished_utc": "2026-10-22T14:46:23.829206+00:00"
+}

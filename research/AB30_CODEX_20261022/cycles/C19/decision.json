@@ -1,0 +1,15 @@
+{
+  "id": "C19",
+  "E": "Con32pilotos/rho0 el selectorelige mayormente media fija; MHU=.00975,CVT=.00888, frente rawRidgeMHU=.01760. Con256pilotos usa raw y reproduce mejora de calibración. Nueve candidatas iguales para todos.",
+  "F": "Selección usa solo validación, pero diseño nacido mirando C18, mismo corpus sintético; no validación externa ni victoriaMHU. Agregación por tipo es conocimiento común disponible.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La comparación justa exige adaptar complejidad del lector al volumen de calibración. Se cierra lectura ingenua como rival suficiente. Nueva cuestión: escenario realmente3D y observabilidad de sus modos.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "PIVOT a campos nativos3D sobre puntos completos, sin el frontend de imagenXY.",
+  "options_rejected": [
+    "Presentar al selector convencional como una nueva arquitectura",
+    "Declarar3D por proyectar coordenadas antes de leer imágenes"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C20"
+}

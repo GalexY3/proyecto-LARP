@@ -1,0 +1,34 @@
+{
+  "id": "C20",
+  "parent_id": "C19",
+  "short_name": "native_3d_field_integration",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Qué cambia al observar campos 3D nativos con la geometría completa y lectores competentes?",
+  "B": [
+    "H_native: geometría puede aportar de forma condicionada a correlación y lector",
+    "H_dimension: minorías no observan modos3D suficientes",
+    "H_other: la antigua proyección escondía la dificultad"
+  ],
+  "C": "Modos3D q²1..2, varianza puntual1, offsets desconocidos, rho0/1, noise.03. Medias y GLS exacto; pesosbalanced/counts. Comparar cinco métodos4geos y registrar rangos por tipo. No comparar scores de tareas2D/3D como efecto causal puro de dimensionalidad.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Qué cambia al observar campos 3D nativos con la geometría completa y lectores competentes?",
+  "null": "H_other: la antigua proyección escondía la dificultad",
+  "predicted_discriminant": "Con19columnas de banda3D, tipos16/11 están submuestreados por separado; correlación puede resolver más que etiquetaMHU.",
+  "falsification_rule": "GLS no puede ser peor que media; ningún resultado valida redesmulticapa/LLMs. Diferencias dimensionales cambian la familia de señal y se declaran.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}
