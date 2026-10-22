@@ -1,0 +1,71 @@
+{
+  "id": "C01",
+  "started_utc": "2026-10-22T00:58:16.701735+00:00",
+  "elapsed_seconds": 5.085767399999895,
+  "freeze_commit": "63871e49775a6e07fd272632f81c2faf001e2576",
+  "protocol_sha256": "a28f9cd92dd7b5292ab55cf3d8752dad89d31f744db3d3f8162e4d317aa9189f",
+  "source_sha256": "2447e081da7a0783f26cf5f7d17244eeb68102a1a7053cfc27fd173f9a589aea",
+  "common_sha256": "9b4b30f77f93303d9a552edb882343df8fa46078af3d8dcb057c8fff4f4d958d",
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "result": {
+    "constant_or_tiny_features": [
+      0,
+      32,
+      39,
+      56
+    ],
+    "train_size": 1091,
+    "val_size": 256,
+    "test_size": 450,
+    "models": {
+      "legacy": {
+        "accuracy": {
+          "clean": 0.9711111111111111,
+          "noise": 0.3888888888888889,
+          "occlusion": 0.8688888888888889,
+          "rotation": 0.34444444444444444
+        },
+        "best_step": 240,
+        "steps": 240,
+        "val_loss": 0.0540008507668972,
+        "params": 5860,
+        "elapsed": 0.2864943000022322
+      },
+      "guard": {
+        "accuracy": {
+          "clean": 0.9711111111111111,
+          "noise": 0.35777777777777775,
+          "occlusion": 0.8688888888888889,
+          "rotation": 0.32222222222222224
+        },
+        "best_step": 240,
+        "steps": 240,
+        "val_loss": 0.054210904985666275,
+        "params": 5860,
+        "elapsed": 0.20489979999911156
+      },
+      "fixed": {
+        "accuracy": {
+          "clean": 0.9666666666666667,
+          "noise": 0.8644444444444445,
+          "occlusion": 0.8511111111111112,
+          "rotation": 0.56
+        },
+        "best_step": 234,
+        "steps": 240,
+        "val_loss": 0.050946153700351715,
+        "params": 5860,
+        "elapsed": 0.19828450000204612
+      }
+    }
+  },
+  "status": "RUN",
+  "inference": "exploratory"
+}

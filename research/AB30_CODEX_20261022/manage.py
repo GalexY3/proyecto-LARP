@@ -13,9 +13,9 @@ def main():
         if int(cid[1:])>1:
             prev=BASE/'cycles'/f'C{int(cid[1:])-1:02}'/'decision.json'
             assert prev.exists(),'Previous decision must exist before next freeze.'
-        subprocess.run(['git','add','--','.gitignore','research/AB30_CODEX_20261022'],cwd=ROOT,check=True)
-        subprocess.run(['git','commit','-m',f'research({cid}): freeze {protocol["short_name"]} after prior evidence'],cwd=ROOT,check=True)
-        subprocess.run(['git','push','-u','origin','HEAD'],cwd=ROOT,check=True)
+        subprocess.run(['git','-c','core.safecrlf=false','add','--','.gitignore','research/AB30_CODEX_20261022'],cwd=ROOT,check=True,capture_output=True)
+        subprocess.run(['git','commit','-m',f'research({cid}): freeze {protocol["short_name"]} after prior evidence'],cwd=ROOT,check=True,capture_output=True)
+        subprocess.run(['git','push','-u','origin','HEAD'],cwd=ROOT,check=True,capture_output=True)
         print(json.dumps({'id':cid,'freeze_commit':git('rev-parse','HEAD')}))
     elif action=='run':
         assert not (folder/'result.json').exists(),'Results are immutable; use an explicit repair cycle.'
@@ -31,6 +31,6 @@ def main():
              'protocol_sha256':digest(folder/'protocol.json'),'source_sha256':digest(folder/'source.py'),'common_sha256':digest(BASE/'common.py'),
              'environment':common.version_info(),'result':result,'status':'RUN','inference':'exploratory'}
         (folder/'result.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
-        print(json.dumps({'id':cid,'elapsed':out['elapsed_seconds'],'result':result},ensure_ascii=False))
+        print(json.dumps({'id':cid,'elapsed':out['elapsed_seconds'],'result':result.get('summary',result)},ensure_ascii=False))
     else:raise ValueError(action)
 if __name__=='__main__':main()

@@ -1,0 +1,34 @@
+{
+  "id": "C02",
+  "parent_id": "C01",
+  "short_name": "rare_variance_noise_amplification",
+  "date": "2026-10-22",
+  "A": "¿La energía de la perturbación estandarizada se concentra en píxeles de pequeña varianza positiva, incluso tras arreglar ceros?",
+  "B": [
+    "H_rare: pequeñas desviaciones positivas dominan el shift",
+    "H_zero: solo cuatro ceros",
+    "H_other: arquitectura o cambio semántico de corrupción"
+  ],
+  "C": "Descomponer energía normalizada y clipping por dimensiones y cuantificar contribución de std<.05 frente a std>=.05 con legacy/guard/fijo.",
+  "D": "Mismos datos históricos UCI Digits; instrumentos versionados. Elección después de inspeccionar decisión anterior.",
+  "predicted_discriminant": "La guarda elimina escala extrema en ceros pero deja dominancia en píxeles raros de std positiva.",
+  "falsification_rule": "Si energía está repartida o no se reduce con escala fija, falta este mecanismo.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    991,
+    811,
+    812,
+    99128
+  ],
+  "holdout_status": "exposed_historical_dataset_exploratory",
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "rejected_options": [
+    "Barrido de geometrías antes de explicar transformación de entrada"
+  ],
+  "selection_exposure": "Hypothesis selected after preceding result; not independent confirmation."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C01",
+  "E": "Legacy ruido .3889/rotación .3444; guard .3578/.3222; fijo .8644/.5600. Clean ~.97.",
+  "F": "La hipótesis de que solo los cuatro píxeles de varianza cero causan la catástrofe no sobrevive: guard no mejora. El escalado completo sí es un rival material.",
+  "G": "Replay exploratorio sobre test histórico, no réplica externa; versión de entorno difiere.",
+  "H": "Baja credibilidad del bug específico como explicación suficiente; sube preprocesamiento de dimensiones de varianza pequeña.",
+  "I": "Intervención controlada de normalización, coste ~5s; ventaja MHU no probada.",
+  "J": "PIVOT al mecanismo de amplificación por varianzas pequeñas",
+  "options_rejected": [
+    "Entrenar más el mismo modelo",
+    "Atribuir la diferencia a geometría"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C02"
+}
