@@ -1,0 +1,40 @@
+{
+  "audit": "not counted among 30 AB cycles",
+  "prereg_commit": "d9494f39922456fca677f26aadd70510b3c43a89",
+  "results": [
+    {
+      "id": "AUD01",
+      "a_mean": 0.030497467850602283,
+      "b_mean": 0.03307643796730242,
+      "delta": -0.0025789701167001342,
+      "ci95": [
+        -0.003318923441179145,
+        -0.0018390167922211237
+      ],
+      "local_result_sha256": "a027727fce5ec5984c299677ebd66d4dcdbbcdcb9ad91ec99bdba75c5161f397"
+    },
+    {
+      "id": "AUD02",
+      "a_mean": 0.03047781697997184,
+      "b_mean": 0.033062218441331254,
+      "delta": -0.002584401461359416,
+      "ci95": [
+        -0.0035083166895443856,
+        -0.0016604862331744464
+      ],
+      "local_result_sha256": "97dded4896f68f7d6a890ec96a9622a10c62b928bd6c38da6f25b85fd1143fc0"
+    },
+    {
+      "id": "AUD03",
+      "a_mean": 0.6797225209984609,
+      "b_mean": 0.920412757750324,
+      "delta": -0.2406902367518632,
+      "ci95": [
+        -0.25703224280119014,
+        -0.2243482307025363
+      ],
+      "local_result_sha256": "ffe5250a7c9237f9e0b854bd5c47221b308d5749039cf37e184a22a8b4e5e49e"
+    }
+  ],
+  "interpretation": "Cvt_types wins 3 of 3 in reconstruction on same synthetic generator; not MHU, not a new external dataset, not a biological sensor claim."
+}
