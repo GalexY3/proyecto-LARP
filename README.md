@@ -23,3 +23,12 @@ LARP privado: https://github.com/GalexY3/proyecto-LARP
 - [Priors acumulativos nuevos](docs/02_PRIORS_LARP.md): BR30-A01..A05; hipótesis previas no eliminadas.
 
 **Alcance:** proxies 3D periódicos, N=60 en BR30, no Scale3D original ni dataset 3D real; comparadores/kernel con presupuesto total no igualado; ningún modelo neuronal nuevo entrenado. Esta rama no altera la implementación estable ni los datos históricos.
+
+
+## VALUE_REAL_20261022 — utilidad en muestreo multicanal con pocos pilotos
+- [Dictamen científico y cautelas](research/VALUE_REAL_20261022/DICTAMEN_VALUE_REAL.md).
+- [Priors VAL-R01–R05](research/VALUE_REAL_20261022/PRIORS_VALUE_REAL.md).
+- [Implementación 2D y pruebas de derivadas](research/VALUE_REAL_20261022/real_rgb_sensors.py) · [test de consistencia](research/VALUE_REAL_20261022/test_value_real.py).
+- [Escasez de muestras piloto y asignación de sensores](research/VALUE_REAL_20261022/pilot_quota_results.json) · [comparador empírico a igual cuota](research/VALUE_REAL_20261022/direct_quota_results.json).
+- Figuras regenerables con `python research/VALUE_REAL_20261022/plot_results.py`. Archivo `MANIFEST_SHA256.json` verifica los scripts, logs y resultados, y las figuras tras regenerarlas.
+- **Límite:** resultado exploratorio sobre dos escenas RGB externas; se observaron las escenas durante la selección post hoc de cuotas, por lo que NO constituye una confirmación independiente. No se usó Scale3D original, no hay datos 3D ni entrenamiento neuronal. El selector empírico directo supera COSI con 1.800 pilotos; la utilidad provisional se concentra en regímenes de pocos datos piloto.
