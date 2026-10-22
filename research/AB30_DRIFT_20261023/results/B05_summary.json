@@ -1,0 +1,47 @@
+{
+  "block": "B05",
+  "prereg_commit": "a62ba7f4ef0919a72bad83b1a74a8c0da2bf416e",
+  "manifest_sha256": "84f471fbf155bc2577bb7b3ce40808944b53807a85a79d1266b1df740e300e5f",
+  "source_sha256": "867e75309dfa81c8568bb2360d4cb4909560a338d7f16a587d03bba877f1deb6",
+  "n_splits": 16,
+  "metric": "1-balanced-accuracy, smaller is better",
+  "results": [
+    [
+      "T25",
+      0.003021,
+      -0.00381,
+      0.00986
+    ],
+    [
+      "T26",
+      -0.0143381,
+      -0.02499,
+      -0.00369
+    ],
+    [
+      "T27",
+      -0.0173591,
+      -0.03052,
+      -0.0042
+    ],
+    [
+      "T28",
+      -0.0884382,
+      -0.14321,
+      -0.03366
+    ],
+    [
+      "T29",
+      0.0198963,
+      0.00767,
+      0.03213
+    ],
+    [
+      "T30",
+      0.0368675,
+      0.03072,
+      0.04302
+    ]
+  ],
+  "decision": "B05: wrapper beats filters under equal k3, but full-feature regularized logistic dominates five-feature designs. CLOSE 30 explorations; no 2/3. Needs external untouched data and matched information/cost."
+}

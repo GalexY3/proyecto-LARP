@@ -1,0 +1,45 @@
+{
+  "block": "B03",
+  "prereg_commit": "d6e8064e4ebce3cd1375239c4aadc50ae7826ada",
+  "manifest_sha256": "cfdcad9e86df8c4274f0aecab7151dba6a1d8d61a9847f294ab5e52df9ba1a46",
+  "n_worlds": 24,
+  "results": [
+    [
+      "T13",
+      -0.036759,
+      -0.058975,
+      -0.014543
+    ],
+    [
+      "T14",
+      -0.0798699,
+      -0.185179,
+      0.025439
+    ],
+    [
+      "T15",
+      -0.079319,
+      -0.187217,
+      0.028579
+    ],
+    [
+      "T16",
+      0.0152266,
+      -0.030188,
+      0.060642
+    ],
+    [
+      "T17",
+      0.0112834,
+      -0.005261,
+      0.027828
+    ],
+    [
+      "T18",
+      -0.2413155,
+      -0.441415,
+      -0.041216
+    ]
+  ],
+  "decision": "PIVOT to real datasets. Correlation-aware nominal wins in strong-correlation settings; CVaR and shrinkage show unstable advantages across worlds; no new robust-selection principle established."
+}

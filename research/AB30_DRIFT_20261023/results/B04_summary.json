@@ -1,0 +1,48 @@
+{
+  "block": "B04",
+  "prereg_initial": "6cf58d6638fbf7a088dd8e8e7c558f516ea2db52",
+  "prereg_repair": "b9fa7d5bba0f476a80e66910684cdcd57a086a7a",
+  "manifest_sha256": "ff6d4d15cdf59814aea92eb42bc950625bc60bb8e82be32208a22365db558fd4",
+  "n_splits": 16,
+  "results": [
+    [
+      "T19",
+      8.1313,
+      -24.681,
+      40.944
+    ],
+    [
+      "T20",
+      66.5539,
+      -42.979,
+      176.087
+    ],
+    [
+      "T21",
+      58.4226,
+      -52.264,
+      169.11
+    ],
+    [
+      "T22",
+      -1100.313,
+      -1399.715,
+      -800.911
+    ],
+    [
+      "T23",
+      79.9934,
+      -10.557,
+      170.544
+    ],
+    [
+      "T24",
+      65.8932,
+      33.872,
+      97.915
+    ]
+  ],
+  "units": "diabetes target squared units MSE; lower is better",
+  "decision": "Filter strongly beats random. Validation greedy not consistently better than filter or full; stable selects can be worse than full. PIVOT to independent real classification dataset and equal-information controls.",
+  "source_sha256": "867e75309dfa81c8568bb2360d4cb4909560a338d7f16a587d03bba877f1deb6"
+}
