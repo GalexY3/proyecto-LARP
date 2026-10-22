@@ -1,0 +1,15 @@
+{
+  "id": "C27",
+  "E": "Con SGD y escala de curvatura comparable, covarianzade datos regularizada obtiene mejorvalCE=.1614 frente identidad=.2996, MHU=.3862 yCVT=.4004. AUCtrain también favorece controlconvencional(.639vs.975MHU).",
+  "F": "No se evaluótest ni se establecióconvergencia; normalizacióninput no iguala todascurvaturas deMLP. Construccióngeométrica histórica excluida del tiempo medido. Solo esteoptim/arquitectura.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "No hay apoyo para métricaMHU como mejorprecondicionador general. Queda distinguir lo que requiere organización multicolor de lo que basta con uniónbien distribuida.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "PIVOT: permutar roles a posicionesfijas, preservando unióntotal yconteos.",
+  "options_rejected": [
+    "Comparar soloMHUfrenteCVTsinprecondicionadorcompetente",
+    "InterpretarvalCEcomoresultadoexterno"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C28"
+}

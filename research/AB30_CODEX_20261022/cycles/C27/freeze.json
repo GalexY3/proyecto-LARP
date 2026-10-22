@@ -1,0 +1,21 @@
+{
+  "id": "C27",
+  "freeze_commit": "df1dee94df1e38fb4c6455cfa3f9fe05fe4d96d4",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C26/decision.json",
+    "sha256": "f4e7bfaa1e7accfe1aa9f9588a8eb0c723600a404f7e790f75ca81066e24b739"
+  },
+  "source_sha256": {
+    "research/AB30_CODEX_20261022/cycles/C27/source.py": "43de93ec2b562e8b7ab71da4636514177dcf2c2dfbe7f02451fcf1e87e17c50d",
+    "research/AB30_CODEX_20261022/cycles/C27/protocol.json": "96a7817eae9621d409b7c34aa2edc6da46eaf5743243933bc8adf6af5a1b6619",
+    "research/AB30_CODEX_20261022/common.py": "d2df25d6f40ab89912261d44a9a44d0000b079460aa2b04b0b65a219ece46a8f",
+    "research/AB30_CODEX_20261022/manage.py": "f7cd49388063710ac401d72f3769c5b74a4e5cb3f87f59b7c8ce9d4e5af5863b"
+  },
+  "geometry_sha256": {
+    "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+    "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+    "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+    "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+  },
+  "pushed_utc": "2026-10-22T15:03:05.822399+00:00"
+}

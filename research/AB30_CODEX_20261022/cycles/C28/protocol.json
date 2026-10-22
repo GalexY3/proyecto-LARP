@@ -1,0 +1,35 @@
+{
+  "id": "C28",
+  "parent_id": "C27",
+  "short_name": "typed_organization_at_fixed_union",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿La mejor tarea de MHU requiere organización de tipos o basta la supresión de la unión?",
+  "B": [
+    "H_union: tarea común con pesos de abundancia no requiere etiquetas organizadas",
+    "H_typed: organización de tipos importa para contrastes/objetivos equilibrados",
+    "H_other: cambia conteo o posiciones"
+  ],
+  "C": "MHU/CVT/LOCAL,4geos,64permutaciones de labels con conteos fijos y mismoX. Riesgo de medias para camposXY bajos: rho1/counts, rho0/balanced y rho1/balanced. Medir cambio espectral por tipo y conservaruniónexacta. Efecto total deasignación, no espectralaislado.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿La mejor tarea de MHU requiere organización de tipos o basta la supresión de la unión?",
+  "null": "H_other: cambia conteo o posiciones",
+  "predicted_discriminant": "El caso común/counts esexactamenteinvariante; ventajas específicas multicolor solo pueden aparecer en otras tareas.",
+  "falsification_rule": "Residuo relativo de riesgo común/counts>1e-9 invalida instrumento. Permutar cambia también separaciónhomotípica, por loque no estima causa aislada deHU.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    60228,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}
