@@ -1,0 +1,34 @@
+{
+  "id": "C17",
+  "parent_id": "C16",
+  "short_name": "cross_channel_observability_ablation",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿La gran ganancia del oracle bajo correlación procede de compartir información entre tipos, especialmente los minoritarios?",
+  "B": [
+    "H_pooling: correlación permite estimar nuisance común con todas las lecturas",
+    "H_geometry: ventaja intrínseca sin pooling",
+    "H_other: conteos insuficientes para banda media por tipo"
+  ],
+  "C": "Banda media, sigma.03, pesos equilibrados. Descomponer GLS para rho0 por tipo; en campos rho1 comparar GLS conjunto con lector block-diagonal que usa las mismas marginaIes e ignora correlación. Registrar rangos de diseños y fracción del riesgo atribuible a tipos3/4.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿La gran ganancia del oracle bajo correlación procede de compartir información entre tipos, especialmente los minoritarios?",
+  "null": "H_other: conteos insuficientes para banda media por tipo",
+  "predicted_discriminant": "Tipos3/4 con16/11 lecturas y21 columnas sufren bajo rho0; pooling reduce fuertemente ese cuello de botella bajo rho1.",
+  "falsification_rule": "Si lector conjunto no mejora riesgo de block bajo rho1, revisar identificación. Los tipos no son nuevos datasets independientes.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

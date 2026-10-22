@@ -1,0 +1,15 @@
+{
+  "id": "C16",
+  "E": "Desplazar energía a banda media deja al lector de banda baja muy por encima del oracle correcto; rho1/shift1: MHU3.193e-3 vs oracle9.73e-6. Con rho0/shift1, el oracle de azar(.00258) incluso vence MHU(.00445)/CVT(.00452).",
+  "F": "La varianza puntual y ruido permanecen fijos. La covarianza oracle nueva no está disponible para desplegar; riesgo exacto condicionado al modelo no implica eficacia empírica.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La banda y la información compartida entre tipos son candidatos más fuertes que una robustez inherente de HU. Se abre mecanismo de identificabilidad por canal minoritario.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: descomponer riesgo por tipo y ablacionar pooling entre canales a igual geometría.",
+  "options_rejected": [
+    "Llamar robusto al lector óptimo solo en su banda",
+    "Confundir la derrota out-of-band de patrones regulares con inutilidad universal de HU"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C17"
+}
