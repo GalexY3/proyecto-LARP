@@ -1,0 +1,35 @@
+{
+  "id": "C18",
+  "parent_id": "C17",
+  "short_name": "finite_pilot_readout_learning",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Un lector Ridge convencional con pilotos finitos se acerca al lector oracle y cómo cambia el ranking geométrico?",
+  "B": [
+    "H_readout_data: diferencia depende de complejidad estadística y cantidad de calibración",
+    "H_mhu: mejora específica persiste a igual calibración",
+    "H_other: lambda o acceso privilegiado al offset"
+  ],
+  "C": "Banda media, ruido.03, rho0/1, objetivo balanced. 32/256 pilotos anidados y256 validación nuevos; mismos campos por métodos. Ridge128features con intercepto, lambda1e-5/1e-3/.1/10 elegida por validación. Riesgo poblacional exacto posterior a selección; comparar media, BLUE y BayesLMMSE. El aprendiz ve lecturas y target scalar, no mu ni R.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Un lector Ridge convencional con pilotos finitos se acerca al lector oracle y cómo cambia el ranking geométrico?",
+  "null": "H_other: lambda o acceso privilegiado al offset",
+  "predicted_discriminant": "Pilotos escasos alejan Ridge del oracle; aumentar calibración puede importar más que geometría.",
+  "falsification_rule": "Ningún score de riesgo poblacional entra en selección de lambda. Bayes no debe ser peor que Ridge dentro de tolerancia; fallo invalida reporte.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    60218,
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

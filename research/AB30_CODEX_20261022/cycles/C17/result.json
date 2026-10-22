@@ -1,0 +1,555 @@
+{
+  "id": "C17",
+  "started_utc": "2026-10-22T14:40:32.433018+00:00",
+  "status": "COMPLETED",
+  "inference": "exploratory",
+  "result": {
+    "rows": [
+      {
+        "geometry": 8101,
+        "method": "local",
+        "independent_risk_by_type": [
+          7.971567419255501e-07,
+          5.872633118438946e-06,
+          3.0376172905742314e-05,
+          0.0015068336883592491,
+          0.0033295390316420703
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.992398362386326,
+        "correlated_block_risk": 0.0025479290829744103,
+        "correlated_joint_risk": 9.584573218063578e-06,
+        "joint_to_block": 0.00376171114106312
+      },
+      {
+        "geometry": 8101,
+        "method": "mhu",
+        "independent_risk_by_type": [
+          7.83479248958474e-07,
+          6.9876884912483694e-06,
+          6.631897961570606e-05,
+          0.00044823266923460617,
+          0.003074185941172968
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9793994252909908,
+        "correlated_block_risk": 0.0037189633233921976,
+        "correlated_joint_risk": 9.766037732589347e-06,
+        "joint_to_block": 0.0026260107678828626
+      },
+      {
+        "geometry": 8101,
+        "method": "cvt",
+        "independent_risk_by_type": [
+          7.307150614456167e-07,
+          2.8270476714982307e-06,
+          9.10584154312199e-05,
+          0.0013206623874765589,
+          0.0021722973769020084
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9736267107151177,
+        "correlated_block_risk": 0.004291609010927951,
+        "correlated_joint_risk": 1.0128919485126065e-05,
+        "joint_to_block": 0.002360168286377967
+      },
+      {
+        "geometry": 8101,
+        "method": "sobol",
+        "independent_risk_by_type": [
+          8.133517545828867e-07,
+          1.9644475711097743e-06,
+          8.127558871328322e-06,
+          0.0006602406646429603,
+          0.00088506939863806
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.992992385214469,
+        "correlated_block_risk": 0.0013696886510539447,
+        "correlated_joint_risk": 1.0053304553035968e-05,
+        "joint_to_block": 0.007339846574110237
+      },
+      {
+        "geometry": 8101,
+        "method": "random",
+        "independent_risk_by_type": [
+          1.1181996983425385e-06,
+          8.301807278399143e-06,
+          8.663932558744827e-06,
+          0.0003399246338003863,
+          0.002738103782442187
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9941591462268036,
+        "correlated_block_risk": 0.003451756195462774,
+        "correlated_joint_risk": 1.1046312154779027e-05,
+        "joint_to_block": 0.003200200573058741
+      },
+      {
+        "geometry": 8102,
+        "method": "local",
+        "independent_risk_by_type": [
+          7.72645325404707e-07,
+          6.8001544303400505e-06,
+          0.00013920917693361996,
+          0.0009028757680111625,
+          0.0030596688936375127
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9642807716184059,
+        "correlated_block_risk": 0.0029732724927391107,
+        "correlated_joint_risk": 9.562486819418728e-06,
+        "joint_to_block": 0.0032161488201201973
+      },
+      {
+        "geometry": 8102,
+        "method": "mhu",
+        "independent_risk_by_type": [
+          8.325998709745867e-07,
+          3.5993415665473516e-06,
+          9.56621543526071e-05,
+          0.0010048247683571486,
+          0.004052029586479438
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9805904408879702,
+        "correlated_block_risk": 0.005109868567101848,
+        "correlated_joint_risk": 9.674341156000621e-06,
+        "joint_to_block": 0.001893266143533628
+      },
+      {
+        "geometry": 8102,
+        "method": "cvt",
+        "independent_risk_by_type": [
+          7.177715034718759e-07,
+          6.459887531313579e-06,
+          8.904761885569197e-06,
+          0.0015109399073241572,
+          0.004652228270179511
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.997397350914291,
+        "correlated_block_risk": 0.004472899917140304,
+        "correlated_joint_risk": 1.14006880114239e-05,
+        "joint_to_block": 0.002548835928060022
+      },
+      {
+        "geometry": 8102,
+        "method": "sobol",
+        "independent_risk_by_type": [
+          7.403840341219674e-07,
+          5.0428051665832005e-06,
+          5.893751449777933e-06,
+          0.0012781543699616907,
+          0.0021606414572270046
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9966158432666617,
+        "correlated_block_risk": 0.002995677019201073,
+        "correlated_joint_risk": 9.93609207065633e-06,
+        "joint_to_block": 0.003316810192477365
+      },
+      {
+        "geometry": 8102,
+        "method": "random",
+        "independent_risk_by_type": [
+          9.009158897679902e-07,
+          6.563185468992145e-06,
+          4.632270890724347e-05,
+          0.00023200074607619594,
+          0.0023614567647264216
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.979681962168006,
+        "correlated_block_risk": 0.0022669091508441055,
+        "correlated_joint_risk": 1.1192531989389519e-05,
+        "joint_to_block": 0.004937353570266313
+      },
+      {
+        "geometry": 8103,
+        "method": "local",
+        "independent_risk_by_type": [
+          7.683009467984869e-07,
+          2.6797005765213872e-06,
+          0.00025329556043953696,
+          0.0008687646678707665,
+          0.005213210538537956
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9594959847021555,
+        "correlated_block_risk": 0.00596769152434648,
+        "correlated_joint_risk": 9.851540631734726e-06,
+        "joint_to_block": 0.0016508126453157388
+      },
+      {
+        "geometry": 8103,
+        "method": "mhu",
+        "independent_risk_by_type": [
+          8.254772255641788e-07,
+          3.21334088226244e-06,
+          6.420195265355152e-06,
+          0.0011481060029030544,
+          0.0029672107921182586
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.997464958383851,
+        "correlated_block_risk": 0.005001085115622067,
+        "correlated_joint_risk": 9.713804618101146e-06,
+        "joint_to_block": 0.0019423393910569106
+      },
+      {
+        "geometry": 8103,
+        "method": "cvt",
+        "independent_risk_by_type": [
+          7.106172677385063e-07,
+          2.15562552571121e-06,
+          5.080279478675653e-05,
+          0.001320366080886003,
+          0.0036813306496070804
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9893837478745557,
+        "correlated_block_risk": 0.005277951104979258,
+        "correlated_joint_risk": 1.0210987928891169e-05,
+        "joint_to_block": 0.0019346499665860958
+      },
+      {
+        "geometry": 8103,
+        "method": "sobol",
+        "independent_risk_by_type": [
+          7.915165773887867e-07,
+          1.5773735854970003e-06,
+          1.7595365646252134e-05,
+          0.002351836043180543,
+          0.0024203916166401643
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9958340032785366,
+        "correlated_block_risk": 0.004398116054790242,
+        "correlated_joint_risk": 9.67993858166633e-06,
+        "joint_to_block": 0.002200928411410006
+      },
+      {
+        "geometry": 8103,
+        "method": "random",
+        "independent_risk_by_type": [
+          1.100055899634955e-06,
+          5.339127164025148e-06,
+          1.6067651191364555e-05,
+          0.0007553030699613819,
+          0.002155179778351316
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9923263165947038,
+        "correlated_block_risk": 0.002890507988193654,
+        "correlated_joint_risk": 1.1681582110776501e-05,
+        "joint_to_block": 0.004041359566723285
+      },
+      {
+        "geometry": 8104,
+        "method": "local",
+        "independent_risk_by_type": [
+          7.981509516974426e-07,
+          3.1159502121680536e-06,
+          6.735787799502396e-06,
+          0.0012019261014503844,
+          0.0021758712755540395
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9968570002341983,
+        "correlated_block_risk": 0.0026745389980791156,
+        "correlated_joint_risk": 9.534178234627156e-06,
+        "joint_to_block": 0.0035647931256469665
+      },
+      {
+        "geometry": 8104,
+        "method": "mhu",
+        "independent_risk_by_type": [
+          9.337406585673702e-07,
+          4.133368888187453e-06,
+          4.2813305728341716e-05,
+          0.0014137494789403916,
+          0.003461057680373238
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9902735214149566,
+        "correlated_block_risk": 0.002770964838760978,
+        "correlated_joint_risk": 9.775693230149412e-06,
+        "joint_to_block": 0.0035279023008175595
+      },
+      {
+        "geometry": 8104,
+        "method": "cvt",
+        "independent_risk_by_type": [
+          7.157197950820802e-07,
+          1.7079855211139055e-06,
+          5.850724533374873e-06,
+          0.0012146982042046538,
+          0.002032006268086143
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9974579159809208,
+        "correlated_block_risk": 0.003357803945426275,
+        "correlated_joint_risk": 1.0173468789203029e-05,
+        "joint_to_block": 0.0030297983308586237
+      },
+      {
+        "geometry": 8104,
+        "method": "sobol",
+        "independent_risk_by_type": [
+          8.097926230562062e-07,
+          2.1009330331396456e-06,
+          1.2467870242707155e-05,
+          0.0002408431528639147,
+          0.0014038003864784202
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.9907359091349297,
+        "correlated_block_risk": 0.0013383929636417977,
+        "correlated_joint_risk": 9.883738478245851e-06,
+        "joint_to_block": 0.007384780663634074
+      },
+      {
+        "geometry": 8104,
+        "method": "random",
+        "independent_risk_by_type": [
+          9.509561570715047e-07,
+          2.732804458816883e-05,
+          0.00015704864150202489,
+          0.00033184349042271043,
+          0.0011245364803166994
+        ],
+        "design_ranks": [
+          21,
+          21,
+          21,
+          16,
+          11
+        ],
+        "nuisance_columns": 21,
+        "minority_fraction_rho0": 0.8871128812577606,
+        "correlated_block_risk": 0.0012622172535993992,
+        "correlated_joint_risk": 1.016293395351735e-05,
+        "joint_to_block": 0.00805165190424726
+      }
+    ],
+    "summary": {
+      "local": {
+        "minority_fraction": 0.9782580297352714,
+        "joint_to_block": 0.003048366433036506,
+        "risk_by_type": [
+          7.840634914565466e-07,
+          4.6171095843671094e-06,
+          0.00010740417451960041,
+          0.0011201000564228906,
+          0.0034445724348428947
+        ]
+      },
+      "mhu": {
+        "minority_fraction": 0.9869320864944422,
+        "joint_to_block": 0.00249737965082274,
+        "risk_by_type": [
+          8.438242510161525e-07,
+          4.483434957061404e-06,
+          5.280365874050251e-05,
+          0.0010037282298588001,
+          0.003388621000035975
+        ]
+      },
+      "cvt": {
+        "minority_fraction": 0.9894664313712213,
+        "joint_to_block": 0.002468363127970677,
+        "risk_by_type": [
+          7.187059069345197e-07,
+          3.2876365624092316e-06,
+          3.9154174159230126e-05,
+          0.001341666644972843,
+          0.0031344656411936857
+        ]
+      },
+      "sobol": {
+        "minority_fraction": 0.9940445352236493,
+        "joint_to_block": 0.005060591460407921,
+        "risk_by_type": [
+          7.887612472874617e-07,
+          2.671389839082405e-06,
+          1.1021136552516385e-05,
+          0.001132768557662277,
+          0.0017174757147459122
+        ]
+      },
+      "random": {
+        "minority_fraction": 0.9633200765618185,
+        "joint_to_block": 0.0050576414035739,
+        "risk_by_type": [
+          1.017531911204247e-06,
+          1.1883041124896316e-05,
+          5.702573353984443e-05,
+          0.00041476798506516867,
+          0.002094819201459156
+        ]
+      }
+    }
+  },
+  "freeze_commit": "e14c2f9f8f270b99d965397ee54671a0ee12d3ca",
+  "parent_decision": {
+    "path": "research/AB30_CODEX_20261022/cycles/C16/decision.json",
+    "sha256": "2a439f8c9502cded2298dc0ca12bb2b147a1627e84a4dabd88d8e1fba4b8a449"
+  },
+  "protocol_sha256": "e9cb4f57af676b76ebc1322a60e894cc74ca10a568603483eceb8452849c2e7a",
+  "source_sha256": "69d0d317c95a512b644bfaa5f955bc9478b04079718c0d79f5c7aa660e6c9946",
+  "common_sha256": "d2df25d6f40ab89912261d44a9a44d0000b079460aa2b04b0b65a219ece46a8f",
+  "inputs": {
+    "geometry_sha256": {
+      "data/AB06_REALDATA_20261022/geo_8101.npz": "fb9c291f32d5d0b7f8fafbccc925a72dd2fc5ab437adf47f7e09e378706dcf3a",
+      "data/AB06_REALDATA_20261022/geo_8102.npz": "6a29a0609f34c2a88e697bdbb0a5cadc1cda6bfbf8755523ae6c5143b714f540",
+      "data/AB06_REALDATA_20261022/geo_8103.npz": "2cbc99a159027e7e09807d7c1c7d008afd81464d025174fc8ab3b0e8fb24ae27",
+      "data/AB06_REALDATA_20261022/geo_8104.npz": "f2c0ed0fb6e74a143589162e524f743ed391ac1b36371502f9996e9001b6530c"
+    },
+    "datasets": []
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.9.1",
+    "threads": 2
+  },
+  "worker_returncode": 0,
+  "elapsed_seconds": 2.807865499999025,
+  "finished_utc": "2026-10-22T14:40:35.240884+00:00"
+}

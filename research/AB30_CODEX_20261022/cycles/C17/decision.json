@@ -1,0 +1,15 @@
+{
+  "id": "C17",
+  "E": "Tipos3/4 aportan≈97.8-98.9% del riesgo en LOCAL/MHU/CVT bajo banda media independiente. Con campos correlacionados, GLS conjunto reduce riesgo a≈.25-.30% del lector que ignora correlación, sin cambiar geometría.",
+  "F": "El pooling tiene acceso a la covarianza real conocida. No se interpreta como capacidad emergente: la correlación fue un supuesto generador ablacionado.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "La observabilidad de canales escasos y la información del readout dominan el fenómeno. Pregunta nueva: si un método convencional aprende el lector con pocos pilotos.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: Ridge con muestras piloto y validación separadas; comparar con medias y límite Bayes de información completa.",
+  "options_rejected": [
+    "Atribuir pooling al diseño MHU",
+    "Contar cada canal o campo gaussiano como réplica externa"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C18"
+}
