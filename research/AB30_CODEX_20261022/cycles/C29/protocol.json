@@ -1,0 +1,34 @@
+{
+  "id": "C29",
+  "parent_id": "C28",
+  "short_name": "missing_channel_information_bound",
+  "date": "2026-10-22",
+  "authorization": "User explicitly resumed and requested remaining twenty cycles with ChatRelay available.",
+  "A": "¿Alguna geometría permite recuperar sin pérdida un canal completamente ausente cuando sus medias son independientes?",
+  "B": [
+    "H_information: el prior de correlación, noMHU, determina recuperabilidad",
+    "H_lossless: distribución espacial evita pérdida de tipo completo",
+    "H_other: se confunde correlación de fluctuaciones con correlación de medias"
+  ],
+  "C": "3D bajo con fluctuacionescompartidasrho1, ruido.03, targetbalanced. Borrar tipo0 o4. MediasmuGaussianas con correlación0/.5/1 e igualvarianza marginal1. LMMSEBayesóptimo cony sin pérdida; cota analítica alpha_missing²Var(mu_missing|otras medias). Misma información por método.",
+  "D": "Frozen source, inputs and supervisor. Full finite-array results retained. Seeds/conditions are not additional cycles.",
+  "estimand": "¿Alguna geometría permite recuperar sin pérdida un canal completamente ausente cuando sus medias son independientes?",
+  "null": "H_other: se confunde correlación de fluctuaciones con correlación de medias",
+  "predicted_discriminant": "Con medias independientes hay sueloMSE>=.04 pese a fluctuacionescompartidas y buena geometría. Con mediascorrelacionadas puede recuperarse por prior, no por diseñoHU.",
+  "falsification_rule": "RiesgoBayesmenorquecota por>1e-10 invalida. No extrapolar formalmente estos canales a idiomas niLLMs; es un límite condicional de observabilidad.",
+  "budget": {
+    "wall_seconds": 120,
+    "threads": 2
+  },
+  "rng_seeds": [
+    8101,
+    8102,
+    8103,
+    8104
+  ],
+  "source_refs": [
+    "research/AB30_CODEX_20261022/common.py"
+  ],
+  "holdout_status": "Historical geometries exposed; generated random worlds are within-model evidence, not external confirmation.",
+  "selection_exposure": "Question chosen after preceding result/decision; exploratory. No untouched holdout is claimed."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C28",
+  "E": "Permutar roles destruye supresión por tipo y eleva riesgo balancedindependienteMHU .000328→.00883; sinembargo el caso favorable countscorrelacionado queda exactamente1.22e-6. LOCAL/CVTmuestran el mismo principio.",
+  "F": "La permutación cambia organización local y espectral de tipos a la vez; no es efecto aislado deHU. Solo conserva unióntotal/posiciones/conteos. No se evaluó entrenamiento nuevo.",
+  "G": "No external confirmation; historical geometries and/or within-model simulations. No confirmatory p-value claimed.",
+  "H": "El beneficio del caso común puede ser hiperuniformidadunión, sin necesitar multihiperuniformidad. Organización multiclase ayuda otras tareas, peroCVT/LOCAL también. Falta comprobar límites de pérdida completa de información.",
+  "I": "Separate validity, identification, transportability and cost; inference conditional on four geometric realizations.",
+  "J": "CONTINUE: pérdida de un tipo entero con medias independientes vs correlacionadas; cota Bayes de información.",
+  "options_rejected": [
+    "Confundir organizaciónporcolor con causa espectralaislada",
+    "Vender tarea común/counts como prueba específica deMHU"
+  ],
+  "recorded_after_result": true,
+  "next_cycle": "C29"
+}
