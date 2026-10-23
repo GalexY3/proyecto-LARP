@@ -1,0 +1,100 @@
+{
+  "campaign": "AB30_INTENSIVE_20261022",
+  "status": "FROZEN_BEFORE_ADVERSARIAL_AUDIT",
+  "role": "not part of 30 counted cycles",
+  "reason": "B03 claims CVT-type reconstruction advantage over Sobol; stronger type lattice may eliminate difference",
+  "source_code_commit": "47312001f898fecdc82365732160bf8a47ce486d",
+  "audit_specs": [
+    {
+      "id": "AUD01",
+      "kind": "reconstruct",
+      "a": "cvt_types",
+      "b": "type_lattice",
+      "direction": "lower",
+      "freq": 1,
+      "shared": true,
+      "dropout": 0,
+      "noise": 0,
+      "seeds": [
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812
+      ],
+      "claim": "CVT outperforms type-lattice for low-frequency shared reconstruction",
+      "rivals": [
+        "type-lattice more regular",
+        "CVT kernel tuned to spacing"
+      ],
+      "falsification_rule": "paired_delta>=0"
+    },
+    {
+      "id": "AUD02",
+      "kind": "reconstruct",
+      "a": "cvt_types",
+      "b": "type_lattice",
+      "direction": "lower",
+      "freq": 1,
+      "shared": false,
+      "dropout": 0,
+      "noise": 0,
+      "seeds": [
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812
+      ],
+      "claim": "CVT outperforms type-lattice for independent-channel reconstruction",
+      "rivals": [
+        "regular sample geometry"
+      ],
+      "falsification_rule": "paired_delta>=0"
+    },
+    {
+      "id": "AUD03",
+      "kind": "reconstruct",
+      "a": "cvt_types",
+      "b": "type_lattice",
+      "direction": "lower",
+      "freq": 3,
+      "shared": true,
+      "dropout": 0,
+      "noise": 0,
+      "seeds": [
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812
+      ],
+      "claim": "CVT outperforms type-lattice for more oscillatory reconstruction",
+      "rivals": [
+        "regular lattice aliasing"
+      ],
+      "falsification_rule": "paired_delta>=0"
+    }
+  ]
+}

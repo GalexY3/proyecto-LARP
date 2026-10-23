@@ -1,0 +1,222 @@
+{
+  "campaign": "AB30_INTENSIVE_20261022",
+  "block": "B01",
+  "stage": "GEOMETRY",
+  "method": "AB 3.2.1 + O1 + O2",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "assumptions": [
+    "flat periodic 2D torus",
+    "five equal subtypes 20 points each",
+    "same 12 layout seeds for pairwise comparisons",
+    "spectral estimator finite modes only; no asymptotic HU claim"
+  ],
+  "specs": [
+    {
+      "id": "N01",
+      "kind": "cover",
+      "a": "cvt_types",
+      "b": "iid",
+      "direction": "lower",
+      "quantile": 0.95,
+      "claim": "El relajado por tipo reduce distancia extrema frente a puntos iid",
+      "falsification_rule": "Si delta >=0, no gana cobertura",
+      "rivals": [
+        "geometric coverage effect",
+        "sampling regularity not MHU",
+        "random variation"
+      ],
+      "seeds": [
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312
+      ],
+      "exploration": true,
+      "primary_endpoint": "mean or 95th percentile of maximum classwise distance",
+      "holdout": "none; exploratory; no external independent confirmation",
+      "source_code_commit": "626b456891a11cf5228a75786afb1b577becf64c",
+      "external_competitors": "Wei 2010 not executed; CVT and Sobol are surrogate controls; geometry not certified MHU"
+    },
+    {
+      "id": "N02",
+      "kind": "cover",
+      "a": "cvt_types",
+      "b": "sobol_types",
+      "direction": "lower",
+      "quantile": 0,
+      "claim": "CVT por tipo mejora cobertura media frente a Sobol por tipo",
+      "falsification_rule": "Si delta >=0, Sobol iguala/supera",
+      "rivals": [
+        "geometric coverage effect",
+        "sampling regularity not MHU",
+        "random variation"
+      ],
+      "seeds": [
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312
+      ],
+      "exploration": true,
+      "primary_endpoint": "mean or 95th percentile of maximum classwise distance",
+      "holdout": "none; exploratory; no external independent confirmation",
+      "source_code_commit": "626b456891a11cf5228a75786afb1b577becf64c",
+      "external_competitors": "Wei 2010 not executed; CVT and Sobol are surrogate controls; geometry not certified MHU"
+    },
+    {
+      "id": "N03",
+      "kind": "cover",
+      "a": "type_lattice",
+      "b": "cvt_types",
+      "direction": "lower",
+      "quantile": 0.95,
+      "claim": "Retícula por tipo mejora cobertura extrema, control regular competente",
+      "falsification_rule": "Si delta >=0, CVT irregular no pierde",
+      "rivals": [
+        "geometric coverage effect",
+        "sampling regularity not MHU",
+        "random variation"
+      ],
+      "seeds": [
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312
+      ],
+      "exploration": true,
+      "primary_endpoint": "mean or 95th percentile of maximum classwise distance",
+      "holdout": "none; exploratory; no external independent confirmation",
+      "source_code_commit": "626b456891a11cf5228a75786afb1b577becf64c",
+      "external_competitors": "Wei 2010 not executed; CVT and Sobol are surrogate controls; geometry not certified MHU"
+    },
+    {
+      "id": "N04",
+      "kind": "spectral",
+      "a": "cvt_types",
+      "b": "sobol_global",
+      "direction": "lower",
+      "band": "low",
+      "mode": "union",
+      "claim": "CVT por tipo reduce espectro global bajo frente a Sobol global",
+      "falsification_rule": "Si delta >=0, geometría por tipo insuficiente",
+      "rivals": [
+        "geometric coverage effect",
+        "sampling regularity not MHU",
+        "random variation"
+      ],
+      "seeds": [
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312
+      ],
+      "exploration": true,
+      "primary_endpoint": "mean finite-mode Fourier power",
+      "holdout": "none; exploratory; no external independent confirmation",
+      "source_code_commit": "626b456891a11cf5228a75786afb1b577becf64c",
+      "external_competitors": "Wei 2010 not executed; CVT and Sobol are surrogate controls; geometry not certified MHU"
+    },
+    {
+      "id": "N05",
+      "kind": "spectral",
+      "a": "cvt_types",
+      "b": "sobol_types",
+      "direction": "lower",
+      "band": "low",
+      "mode": "classes",
+      "claim": "CVT reduce espectro de cada tipo frente a Sobol por tipo",
+      "falsification_rule": "Si delta >=0, no mejora firma finita",
+      "rivals": [
+        "geometric coverage effect",
+        "sampling regularity not MHU",
+        "random variation"
+      ],
+      "seeds": [
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312
+      ],
+      "exploration": true,
+      "primary_endpoint": "mean finite-mode Fourier power",
+      "holdout": "none; exploratory; no external independent confirmation",
+      "source_code_commit": "626b456891a11cf5228a75786afb1b577becf64c",
+      "external_competitors": "Wei 2010 not executed; CVT and Sobol are surrogate controls; geometry not certified MHU"
+    },
+    {
+      "id": "N06",
+      "kind": "spectral",
+      "a": "shift_types",
+      "b": "cvt_types",
+      "direction": "higher",
+      "band": "low",
+      "mode": "union",
+      "claim": "Desplazar fases sin cambiar cada tipo empeora espectro de unión",
+      "falsification_rule": "Si delta <=0, coordinación de fases no demuestra ventaja",
+      "rivals": [
+        "geometric coverage effect",
+        "sampling regularity not MHU",
+        "random variation"
+      ],
+      "seeds": [
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312
+      ],
+      "exploration": true,
+      "primary_endpoint": "mean finite-mode Fourier power",
+      "holdout": "none; exploratory; no external independent confirmation",
+      "source_code_commit": "626b456891a11cf5228a75786afb1b577becf64c",
+      "external_competitors": "Wei 2010 not executed; CVT and Sobol are surrogate controls; geometry not certified MHU"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "block": "B02",
+  "prereg_commit": "c4fcb09f31dcb6c589a01b7ce0b3c80c4ee24c3d",
+  "n_seeds": 12,
+  "decision": "PIVOT to spatial reconstruction; global Sobol and grids defeat CVT in periodic Fourier integration; N12 null",
+  "results": [
+    {
+      "id": "N07",
+      "paired_delta": 0.00045103391238144594,
+      "favors_cvt": false,
+      "raw_result_sha256": "b313565e79ca6c115f67ffe55edff392be1c39f93528d028b4611fde9c139249"
+    },
+    {
+      "id": "N08",
+      "paired_delta": 0.0004941490148345676,
+      "favors_cvt": false,
+      "raw_result_sha256": "b78c767db7e5b7cba655ba24ff7ef061517708a8e7525f9bfdc4ede5e1389ee8"
+    },
+    {
+      "id": "N09",
+      "paired_delta": 0.00042299086188647244,
+      "favors_cvt": false,
+      "raw_result_sha256": "c5a3879bf5d11bcd2a8c6b349a4201e72092b83a90dcfbad9f6bd736b04d5647"
+    },
+    {
+      "id": "N10",
+      "paired_delta": 0.0075745875822064886,
+      "favors_cvt": false,
+      "raw_result_sha256": "3cc848faf84f8ac3823ec72f4017141adabc1709f0018fb8473570e0fe6a7718"
+    },
+    {
+      "id": "N11",
+      "paired_delta": 0.0005610981568170092,
+      "favors_cvt": false,
+      "raw_result_sha256": "40978feed87716b6e8f40d8e3c086ea4e1b05bb938aecb9fceffbd26931ef809"
+    },
+    {
+      "id": "N12",
+      "paired_delta": -0.00003072001667116392,
+      "favors_cvt": false,
+      "raw_result_sha256": "e8e75fab6b91005a6bdc19e11c2214a7977ee9406397f8198373f12a189f9f07"
+    }
+  ]
+}

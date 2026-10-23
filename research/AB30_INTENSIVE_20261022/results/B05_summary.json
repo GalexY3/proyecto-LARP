@@ -1,0 +1,37 @@
+{
+  "block": "B05",
+  "prereg_commit": "56b129e543d8d4da3965bf9037e7b646862b000c",
+  "decision": "Campaign quota 30 reached; adversarial audit required; graph results mixed; no MHU-specific 2/3",
+  "results": [
+    {
+      "id": "N25",
+      "delta": 0.029938627918055172,
+      "raw_result_sha256": "59c72768554686656a1296d33863ad0cd531a052526a59e6c00aebfc2502f7c7"
+    },
+    {
+      "id": "N26",
+      "delta": -0.009758095985678375,
+      "raw_result_sha256": "580840b821daa4965acac853cd4c5e85f32f7cdb714ab4a88158d487cc91143d"
+    },
+    {
+      "id": "N27",
+      "delta": 0.0022953456907714646,
+      "raw_result_sha256": "9b24abac77b904b0deb9b9b8e3dde44525b38784e811a1750a7183579889fe10"
+    },
+    {
+      "id": "N28",
+      "delta": 0.009095345555421103,
+      "raw_result_sha256": "184aeaf08d36f1841f0180a693b6cadb1f769f7c683187388c8279f97a66f92b"
+    },
+    {
+      "id": "N29",
+      "delta": 0.007073273072835562,
+      "raw_result_sha256": "ef621d08ed0c07364523aa32a1db63352f1acaeb2341a791e5ff7f621e1b304c"
+    },
+    {
+      "id": "N30",
+      "delta": 0.009122129780285437,
+      "raw_result_sha256": "bc706deac8069d471eb515e9407e1dbc1565c0d9b41bd5453c68e84dceb43b36"
+    }
+  ]
+}
