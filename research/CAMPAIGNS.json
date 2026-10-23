@@ -91,22 +91,30 @@
     {
       "pull_request": 1,
       "head": "research/ab4-cosi-branch30-20261022",
-      "review": "older synthetic research chain; consider selective salvage; do not overwrite current README/priors"
+      "review": "older synthetic research chain; consider selective salvage; do not overwrite current README/priors",
+      "pr_state": "CLOSED_UNMERGED_ARCHIVE",
+      "source_branch_preserved": true
     },
     {
       "pull_request": 2,
       "head": "research/evidence-gate-20261022",
-      "review": "multi-scene/gates; superseded as general mechanism evidence, not all raw transferred"
+      "review": "multi-scene/gates; superseded as general mechanism evidence, not all raw transferred",
+      "pr_state": "CLOSED_UNMERGED_ARCHIVE",
+      "source_branch_preserved": true
     },
     {
       "pull_request": 3,
       "head": "research/branch30-intel-layout-20261022",
-      "review": "Intel station positions; original time series absent, synthetic generator"
+      "review": "Intel station positions; original time series absent, synthetic generator",
+      "pr_state": "CLOSED_UNMERGED_ARCHIVE",
+      "source_branch_preserved": true
     },
     {
       "pull_request": 4,
       "head": "research/ab45-dynamic-realdata-20261022",
-      "review": "45 adaptive validation conditions; source distinctions; Beijing observed dataset cherry-picked separately"
+      "review": "45 adaptive validation conditions; source distinctions; Beijing observed dataset cherry-picked separately",
+      "pr_state": "CLOSED_UNMERGED_ARCHIVE",
+      "source_branch_preserved": true
     }
   ],
   "repositories": {
@@ -125,7 +133,7 @@
   "next_actions": [
     "Verify clean clone on merged exploratory engines",
     "Backfill raw per-seed records for PR8 and PR9 from original ZIP after hash checks",
-    "Consider closing historical PRs without deleting branches once index is verified",
-    "Require external, independent evidence before any 2/3 claim"
+    "Require external, independent evidence before any 2/3 claim",
+    "Review closed historical branch content selectively only if a new scientific need appears; do not merge stacked PRs"
   ]
 }
