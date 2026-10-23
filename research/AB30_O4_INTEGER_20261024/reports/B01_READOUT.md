@@ -1,3 +1,9 @@
+# OBSOLETO — INVALIDADO POR REPAIR R1
+
+**Los números siguientes provienen del motor v1 mal identificado como Hamilton. NO son evidencia válida para las políticas nominales; conservar solo como histórico de fallos.** El readout válido corregido es [RESULTS_R1_30_ROUNDED.json](../results/RESULTS_R1_30_ROUNDED.json) y el dictamen R1. El parche R1 quedó congelado antes de las 30 repeticiones, pero la repetición ya conocía los resultados anteriores y es EXPLORATORIA, no confirmación ciega.
+
+---
+
 # B01 E/G — alias de asignaciones enteras (Q01–Q06), 2026-10-24
 **Prereg remoto previo:** a2ce3359. Fuente exacta SHA256 f800f562..., tres partes b64 precommitted. Seis poblaciones observadas, 3 estratos (20/30/50), 21 parámetros de mezcla λ y los presupuestos 10/14/18 (E) y 26/34 (G). Mismo dato para ambos, G es extrapolación a presupuestos, no replicación externa.
 | Ciclo | Fuente | Fracción E de λ alias | Fracción G |
