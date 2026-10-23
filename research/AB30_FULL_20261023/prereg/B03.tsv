@@ -1,0 +1,6 @@
+id	dataset	a	b	proxy	proxy_a	proxy_b	shift	endpoint	claim
+C11	breast	srs	zero_proxy	raw	raw	raw	flip_all	mse	A random true-label risk survey outperforms a frozen unlabeled proxy when all outcome labels shift.
+C12	wine	pps_aipw_0.7	srs	raw	cal	raw	flip_confident	mse	PPS augmented risk estimation outperforms uniform random surveys when the confident part of label mechanism changes.
+C13	digits	pps_aipw_0.7	srs	raw	cal	raw	flip_uncertain	mse	PPS augmented risk estimation improves over random surveys when the uncertain part of labeling changes.
+C14	digits	strat_prop	srs	raw	raw	raw	flip_confident	mse	Proportionally stratifying model uncertainty improves over SRS under high-confidence label drift.
+C15	breast	strat_neyman	strat_prop	raw	raw	raw	rare_error	mse	Neyman proxy-based allocation improves over proportional allocation when rare systematic error flips occur.
