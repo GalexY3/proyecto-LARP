@@ -20,7 +20,7 @@ def load(name):
     assert len(y)>=80 and np.isfinite(y).all()
     return y
 
-def forecast(y):
+def forecast(y,development_window=None):
     n=len(y); p={k:np.full(n,np.nan) for k in ['persistence','mean4','mean16','ewma03','trend8','adaptive','fixed']}
     ema=float(y[0]); errs={k:np.full(n,np.nan) for k in ['persistence','mean4','ewma03']}
     for t in range(1,n):
@@ -41,7 +41,7 @@ def forecast(y):
             for k in errs: errs[k][t]=abs(y[t]-p[k][t])
         ema=.3*y[t]+.7*ema
     # fixed expert chosen ONLY on the early development segment (not the validation or test sets)
-    lo=max(33,int(.35*n)); hi=int(.50*n)
+    lo,hi=development_window if development_window is not None else (max(33,int(.35*n)),int(.50*n))
     choice=min(errs,key=lambda k:np.nanmean(errs[k][lo:hi]))
     p['fixed']=p[choice].copy()
     return p,choice
@@ -61,12 +61,14 @@ def bootstrap_delta(delta,seed=0,b=1499):
     lo,hi=np.percentile(values,[2.5,97.5]);return [float(lo),float(hi)]
 
 def run(spec,phase):
-    name=spec['dataset']; y=load(name); pred,choice=forecast(y); window=split(len(y))[phase]
+    name=spec['dataset']; full=load(name); partitions=split(len(full)); window=partitions[phase]
+    y=full[:partitions['validation'][1]] if phase=='validation' else full
+    pred,choice=forecast(y,partitions['development'])
     start,end=window; a,b=spec['a'],spec['b']; valid=np.arange(start,end)
     assert valid.min()>=33 and np.isfinite(pred[a][valid]).all() and np.isfinite(pred[b][valid]).all()
     d=np.abs(y[valid]-pred[a][valid])-np.abs(y[valid]-pred[b][valid])
     scale=np.mean(np.abs(y[valid]-pred['persistence'][valid]))
-    return dict(id=spec['id'],dataset=name,phase=phase,a=a,b=b,choice=choice,n=int(len(valid)),n_series=int(len(y)),window=window,raw_delta_mae=float(np.mean(d)),normalized_delta=float(np.mean(d)/max(scale,1e-12)),mae_a=float(np.mean(np.abs(y[valid]-pred[a][valid]))),mae_b=float(np.mean(np.abs(y[valid]-pred[b][valid]))),ci95=bootstrap_delta(d,seed=int(spec['id'][1:])*111+(0 if phase=='validation' else 404)),pred_positive=bool(np.mean(d)<0),data_sha256=hashlib.sha256(y.astype('<f8').tobytes()).hexdigest(),direction='A_lower_MAE',scope='REAL_OBSERVED_HISTORICAL_SERIES',external_replication='NOT_CLAIMED')
+    return dict(id=spec['id'],dataset=name,phase=phase,a=a,b=b,choice=choice,n=int(len(valid)),n_series=int(len(full)),window=window,raw_delta_mae=float(np.mean(d)),normalized_delta=float(np.mean(d)/max(scale,1e-12)),mae_a=float(np.mean(np.abs(y[valid]-pred[a][valid]))),mae_b=float(np.mean(np.abs(y[valid]-pred[b][valid]))),ci95=bootstrap_delta(d,seed=int(spec['id'][1:])*111+(0 if phase=='validation' else 404)),pred_positive=bool(np.mean(d)<0),data_sha256=hashlib.sha256(y.astype('<f8').tobytes()).hexdigest(),direction='A_lower_MAE',scope='REAL_OBSERVED_HISTORICAL_SERIES',external_replication='NOT_CLAIMED')
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('spec');p.add_argument('--phase',choices=['validation','test'],default='validation');p.add_argument('--output',required=True);args=p.parse_args()
