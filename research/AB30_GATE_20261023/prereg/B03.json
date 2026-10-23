@@ -1,0 +1,68 @@
+{
+  "block": "B03",
+  "drift": "DR03_FORECAST_COVARIANCE",
+  "trigger": "AR32 did not improve over strong fixed predictor in B02",
+  "source_sha256": "b3adb5622222740804f51dd5d375512666f83a97baf1563acae38d0f20be8a82",
+  "estimand": "paired one-step MAE, same set of 3 causal predictions, positive weights sum=1, 24 prior residuals",
+  "controls": "Equal average of same three experts and same predictions; covariance matrix shrunk by trace/3 identity; no individual extra features",
+  "rivals": [
+    "Simple average often beats estimated weights",
+    "inverse-MSE weights tuned to squared-error while endpoint is absolute-error",
+    "nonstationarity/serial dependence"
+  ],
+  "novelty_prior_art": [
+    "Claeskens et al IJF 2016 forecast combination puzzle",
+    "Elliott Liao 2026 optimal weights often worse than simple averages"
+  ],
+  "G": "future final [75%,100%] unopened",
+  "specs": [
+    {
+      "id": "G13",
+      "dataset": "nile",
+      "a": "shrink",
+      "b": "equal",
+      "claim": "Shrinkage-regularized inverse error-second-moment weighting lowers MAE versus equal three-expert averaging",
+      "falsifier": "delta>=0 or block CI includes zero"
+    },
+    {
+      "id": "G14",
+      "dataset": "sunspots",
+      "a": "shrink",
+      "b": "equal",
+      "claim": "Shrinkage-regularized inverse error-second-moment weighting lowers MAE versus equal three-expert averaging",
+      "falsifier": "delta>=0 or block CI includes zero"
+    },
+    {
+      "id": "G15",
+      "dataset": "co2",
+      "a": "shrink",
+      "b": "equal",
+      "claim": "Shrinkage-regularized inverse error-second-moment weighting lowers MAE versus equal three-expert averaging",
+      "falsifier": "delta>=0 or block CI includes zero"
+    },
+    {
+      "id": "G16",
+      "dataset": "elnino",
+      "a": "shrink",
+      "b": "equal",
+      "claim": "Shrinkage-regularized inverse error-second-moment weighting lowers MAE versus equal three-expert averaging",
+      "falsifier": "delta>=0 or block CI includes zero"
+    },
+    {
+      "id": "G17",
+      "dataset": "unemployment",
+      "a": "shrink",
+      "b": "equal",
+      "claim": "Shrinkage-regularized inverse error-second-moment weighting lowers MAE versus equal three-expert averaging",
+      "falsifier": "delta>=0 or block CI includes zero"
+    },
+    {
+      "id": "G18",
+      "dataset": "inflation",
+      "a": "shrink",
+      "b": "equal",
+      "claim": "Shrinkage-regularized inverse error-second-moment weighting lowers MAE versus equal three-expert averaging",
+      "falsifier": "delta>=0 or block CI includes zero"
+    }
+  ]
+}
