@@ -1,0 +1,13 @@
+# Engine patch B02: separate proxy predictions for two acquisition methods.
+# Parent source SHA256: 41a7ffe9b64a6eb4694969f6bd08bc5fcd401f3d79372990c67725cb0e310ee7
+# Result source SHA256: 20e0c44f5bf813be9e6516fd2b3de00501c6034e028f7b8bfbc126eb912516fc
+# Apply once to original engine.py BEFORE B02 or later; do not alter B01 source.
+--- a/engine.py
++++ b/engine.py
+@@
+-            a=label_survey(rngA,data,spec['a'],**cfg)
+-            b=label_survey(rngB,data,spec['b'],**cfg)
++            cfg_a={**cfg,'proxy':spec.get('proxy_a',cfg['proxy'])}
++            cfg_b={**cfg,'proxy':spec.get('proxy_b',cfg['proxy'])}
++            a=label_survey(rngA,data,spec['a'],**cfg_a)
++            b=label_survey(rngB,data,spec['b'],**cfg_b)
