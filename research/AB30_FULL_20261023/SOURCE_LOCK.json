@@ -1,0 +1,28 @@
+{
+  "campaign": "AB30_FULL_20261023",
+  "protocol": "AB 3.2.1 + O1 + O2 + O3",
+  "date": "2026-10-23",
+  "source_sha256": "41a7ffe9b64a6eb4694969f6bd08bc5fcd401f3d79372990c67725cb0e310ee7",
+  "bytes": 12331,
+  "source_local_file": "engine.py",
+  "artifact": "source/engine.py.gz.b64",
+  "frozen_before_execution": true,
+  "datasets": [
+    "scikit-learn packaged breast cancer",
+    "wine",
+    "digits",
+    "iris"
+  ],
+  "known_exposure": "All datasets reused in prior exploratory campaigns; no external confirmation possible from new splits",
+  "endpoints": [
+    "MSE of finite-population 0-1 risk estimate",
+    "MAE as auxiliary"
+  ],
+  "randomization_unit": "model-development split seed (four clusters/cycle), repeated randomized label acquisitions nested under split",
+  "budget": "same exact unique acquired labels for SRS, stratification and PPS; zero-label proxy distinguished",
+  "model": "StandardScaler+LogisticRegression(C=0.5), 55% train 15% calibration 30% test stratified",
+  "baseline_rule": "All methods see equal unlabeled features and frozen probabilities; true labels only for queried indices; true total risk only for scoring",
+  "commit_policy": "Preregister each block before run, commit raw results and A–J before choosing following block; preserve failures",
+  "novelty": "No 2/3 claimed: PPRM 2026, unbiased active learning Imberg 2020 and risk monitoring literature are existing rivals",
+  "external_replication": "none; public datasets reused"
+}
