@@ -1,0 +1,201 @@
+{
+  "block": "B01",
+  "campaign": "AB30_DISCOVERY_20261022",
+  "method": "AB 3.2.1 + O1+O2",
+  "state": "PREREG_BEFORE_RUN",
+  "role": "structural mechanism audit",
+  "specs": [
+    {
+      "id": "D01",
+      "parent": "ROOT",
+      "claim": "El término de unión reduce energía de unión frente a optimización sólo por subtipo.",
+      "estimand": "paired mean difference a-b over independent layout seeds; finite-mode power only",
+      "a": "joint",
+      "b": "sub",
+      "metric": "spectrum",
+      "which": "union",
+      "band": "train",
+      "direction": "lower",
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "null": "equal generator-level outcome conditional on layout seed",
+      "rivals": [
+        "subtype-only suppression already implies joint suppression",
+        "periodic lattice annihilates preselected modes",
+        "objective leakage; same frequency trained and tested"
+      ],
+      "predicted_discriminant": "lower",
+      "falsifier": "difference in opposite direction or uncertainty crossing zero",
+      "preregistered_validation": "descriptive paired CI; no alpha-spending; exposed construction band",
+      "holdout_status": "NONE, in-band exploratory",
+      "source_lock_sha256": "df7e95fa9bb96c8d65b9634b5188dc9ea587d364f6257dcaa8ba8d7d6a42e443",
+      "decision_from_previous": "initial structural mechanism gate"
+    },
+    {
+      "id": "D02",
+      "parent": "ROOT",
+      "claim": "Añadir el objetivo global mejora también el espectro de cada subtipo.",
+      "estimand": "paired mean difference a-b over independent layout seeds; finite-mode power only",
+      "a": "joint",
+      "b": "sub",
+      "metric": "spectrum",
+      "which": "sub",
+      "band": "train",
+      "direction": "lower",
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "null": "equal generator-level outcome conditional on layout seed",
+      "rivals": [
+        "subtype-only suppression already implies joint suppression",
+        "periodic lattice annihilates preselected modes",
+        "objective leakage; same frequency trained and tested"
+      ],
+      "predicted_discriminant": "lower",
+      "falsifier": "difference in opposite direction or uncertainty crossing zero",
+      "preregistered_validation": "descriptive paired CI; no alpha-spending; exposed construction band",
+      "holdout_status": "NONE, in-band exploratory",
+      "source_lock_sha256": "df7e95fa9bb96c8d65b9634b5188dc9ea587d364f6257dcaa8ba8d7d6a42e443",
+      "decision_from_previous": "initial structural mechanism gate"
+    },
+    {
+      "id": "D03",
+      "parent": "ROOT",
+      "claim": "La optimización multiespecie evita el deterioro intratipo de optimizar sólo unión.",
+      "estimand": "paired mean difference a-b over independent layout seeds; finite-mode power only",
+      "a": "joint",
+      "b": "union",
+      "metric": "spectrum",
+      "which": "sub",
+      "band": "train",
+      "direction": "lower",
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "null": "equal generator-level outcome conditional on layout seed",
+      "rivals": [
+        "subtype-only suppression already implies joint suppression",
+        "periodic lattice annihilates preselected modes",
+        "objective leakage; same frequency trained and tested"
+      ],
+      "predicted_discriminant": "lower",
+      "falsifier": "difference in opposite direction or uncertainty crossing zero",
+      "preregistered_validation": "descriptive paired CI; no alpha-spending; exposed construction band",
+      "holdout_status": "NONE, in-band exploratory",
+      "source_lock_sha256": "df7e95fa9bb96c8d65b9634b5188dc9ea587d364f6257dcaa8ba8d7d6a42e443",
+      "decision_from_previous": "initial structural mechanism gate"
+    },
+    {
+      "id": "D04",
+      "parent": "ROOT",
+      "claim": "La optimización espectral mejora el espectro de subtipos frente a repulsión sin Fourier.",
+      "estimand": "paired mean difference a-b over independent layout seeds; finite-mode power only",
+      "a": "joint",
+      "b": "repel",
+      "metric": "spectrum",
+      "which": "sub",
+      "band": "train",
+      "direction": "lower",
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "null": "equal generator-level outcome conditional on layout seed",
+      "rivals": [
+        "subtype-only suppression already implies joint suppression",
+        "periodic lattice annihilates preselected modes",
+        "objective leakage; same frequency trained and tested"
+      ],
+      "predicted_discriminant": "lower",
+      "falsifier": "difference in opposite direction or uncertainty crossing zero",
+      "preregistered_validation": "descriptive paired CI; no alpha-spending; exposed construction band",
+      "holdout_status": "NONE, in-band exploratory",
+      "source_lock_sha256": "df7e95fa9bb96c8d65b9634b5188dc9ea587d364f6257dcaa8ba8d7d6a42e443",
+      "decision_from_previous": "initial structural mechanism gate"
+    },
+    {
+      "id": "D05",
+      "parent": "ROOT",
+      "claim": "El desorden optimizado vence a una retícula separada en modos de diseño.",
+      "estimand": "paired mean difference a-b over independent layout seeds; finite-mode power only",
+      "a": "joint",
+      "b": "grid",
+      "metric": "spectrum",
+      "which": "union",
+      "band": "train",
+      "direction": "lower",
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "null": "equal generator-level outcome conditional on layout seed",
+      "rivals": [
+        "subtype-only suppression already implies joint suppression",
+        "periodic lattice annihilates preselected modes",
+        "objective leakage; same frequency trained and tested"
+      ],
+      "predicted_discriminant": "lower",
+      "falsifier": "difference in opposite direction or uncertainty crossing zero",
+      "preregistered_validation": "descriptive paired CI; no alpha-spending; exposed construction band",
+      "holdout_status": "NONE, in-band exploratory",
+      "source_lock_sha256": "df7e95fa9bb96c8d65b9634b5188dc9ea587d364f6257dcaa8ba8d7d6a42e443",
+      "decision_from_previous": "initial structural mechanism gate"
+    },
+    {
+      "id": "D06",
+      "parent": "ROOT",
+      "claim": "El diseño espectral reduce el peor subtipo frente a Sobol.",
+      "estimand": "paired mean difference a-b over independent layout seeds; finite-mode power only",
+      "a": "joint",
+      "b": "sobol",
+      "metric": "spectrum",
+      "which": "maxsub",
+      "band": "train",
+      "direction": "lower",
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "null": "equal generator-level outcome conditional on layout seed",
+      "rivals": [
+        "subtype-only suppression already implies joint suppression",
+        "periodic lattice annihilates preselected modes",
+        "objective leakage; same frequency trained and tested"
+      ],
+      "predicted_discriminant": "lower",
+      "falsifier": "difference in opposite direction or uncertainty crossing zero",
+      "preregistered_validation": "descriptive paired CI; no alpha-spending; exposed construction band",
+      "holdout_status": "NONE, in-band exploratory",
+      "source_lock_sha256": "df7e95fa9bb96c8d65b9634b5188dc9ea587d364f6257dcaa8ba8d7d6a42e443",
+      "decision_from_previous": "initial structural mechanism gate"
+    }
+  ]
+}
