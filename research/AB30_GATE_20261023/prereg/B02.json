@@ -1,0 +1,71 @@
+{
+  "block": "B02",
+  "drift": "DR02_CLASSICAL_FORECAST_CONTROL",
+  "trigger": "Five of six B01 recent winner policies identical to fixed",
+  "source_sha256": "b3adb5622222740804f51dd5d375512666f83a97baf1563acae38d0f20be8a82",
+  "estimand": "paired one-step mean absolute forecast loss over validation [50%,75%]; same horizon and observed dates",
+  "rivals": [
+    "AR1 instability near unit root",
+    "persistence already competitive",
+    "structural breaks",
+    "finite-sample bias"
+  ],
+  "G": "test [75%,100%] physically not opened until all 30 frozen; internal within-source chronology, not external",
+  "novelty": "AR1 is known baseline and cannot yield 2/3 from superiority alone",
+  "specs": [
+    {
+      "id": "G07",
+      "dataset": "nile",
+      "a": "ar32",
+      "b": "fixed",
+      "claim": "causal rolling AR(1) 32 lag-pairs reduces one-step MAE versus development-selected simple expert",
+      "falsifier": "delta>=0 or interval includes zero",
+      "status": "PRE_RUN"
+    },
+    {
+      "id": "G08",
+      "dataset": "sunspots",
+      "a": "ar32",
+      "b": "fixed",
+      "claim": "causal rolling AR(1) 32 lag-pairs reduces one-step MAE versus development-selected simple expert",
+      "falsifier": "delta>=0 or interval includes zero",
+      "status": "PRE_RUN"
+    },
+    {
+      "id": "G09",
+      "dataset": "co2",
+      "a": "ar32",
+      "b": "fixed",
+      "claim": "causal rolling AR(1) 32 lag-pairs reduces one-step MAE versus development-selected simple expert",
+      "falsifier": "delta>=0 or interval includes zero",
+      "status": "PRE_RUN"
+    },
+    {
+      "id": "G10",
+      "dataset": "elnino",
+      "a": "ar32",
+      "b": "fixed",
+      "claim": "causal rolling AR(1) 32 lag-pairs reduces one-step MAE versus development-selected simple expert",
+      "falsifier": "delta>=0 or interval includes zero",
+      "status": "PRE_RUN"
+    },
+    {
+      "id": "G11",
+      "dataset": "unemployment",
+      "a": "ar32",
+      "b": "fixed",
+      "claim": "causal rolling AR(1) 32 lag-pairs reduces one-step MAE versus development-selected simple expert",
+      "falsifier": "delta>=0 or interval includes zero",
+      "status": "PRE_RUN"
+    },
+    {
+      "id": "G12",
+      "dataset": "inflation",
+      "a": "ar32",
+      "b": "fixed",
+      "claim": "causal rolling AR(1) 32 lag-pairs reduces one-step MAE versus development-selected simple expert",
+      "falsifier": "delta>=0 or interval includes zero",
+      "status": "PRE_RUN"
+    }
+  ]
+}
