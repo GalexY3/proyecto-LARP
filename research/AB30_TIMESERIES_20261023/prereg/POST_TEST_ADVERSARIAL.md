@@ -1,0 +1,8 @@
+# Post-test adversarial baseline audit (NOT counted in 30 cycles)
+**Timestamp/order:** test results for C01–C30 were already exposed. This is a post hoc *F audit*, never a preregistered new confirmation and no fresh test. Avoid treating its successes as independent generalization.
+
+For each of six historical statsmodels time series, build a strict causal rolling AR(1) using at most the last 32 lag pairs (regularized to avoid singular variance) and, in CO₂ weekly and monthly El Niño only, seasonal-naive (lag52 / lag12). Then choose between [persistence, EWMA0.3, mean4, causal AR32, seasonal-naive if applicable] solely by MAE on original development window [35%,50%]. Compare its final-test MAE descriptively with the original fixed expert of B05 (selected from only first three) and the adaptive mixture.
+
+**A/B:** stronger classical forecast rival against adaptive/weak fixed baseline; H_other seasonal structure and autoregressive persistence; potential concern more candidates improve performance from mere selection flexibility. **C:** closed test already consumed, this is descriptive, not a second confirmation. **D:** no fitting with observations ≥ prediction target, exact same rolling one-step information; missing CO₂ causal ffill. **E–G:** run, audit equality of causal boundaries and report results; G=NOT INDEPENDENT, never claim 2/3. **H/I/J:** update novelty and transport limitations.
+
+Falsifiers: no gain for richer expert selected in development and/or AR model numerically unstable. Report all six sources and all negative cases. No post hoc choice of AR lag/window allowed; fixed lag32 and seasonal periods based on measurement frequency, not test outcomes.

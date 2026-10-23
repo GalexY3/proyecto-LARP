@@ -1,0 +1,11 @@
+{
+  "environment": "existing host Python packages, isolated empty worktree, NO git clone or independent machine",
+  "n_original_json": 60,
+  "n_replayed_json": 60,
+  "identical_sha256_count": 60,
+  "mismatches": [],
+  "source_sha256": "cfc0a2d1097df213a09d33188bce6a265a2bf68b7876bcca5ef4140c829daa23",
+  "replay_duration_seconds": 29.73,
+  "status": "REPRODUCED_COMPUTATIONALLY_IN_ISOLATED_DIRECTORY",
+  "external_replication": false
+}
