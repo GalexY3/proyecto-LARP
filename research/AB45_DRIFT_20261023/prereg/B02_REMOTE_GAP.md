@@ -1,0 +1,1 @@
+Retrospective provenance note. B02–B09 specifications were frozen locally before execution. GitHub rejected the attempted B02 preregistration before its execution, so those blocks DO NOT satisfy O3 remote freeze. Do not present as fully GitHub-preregistered. See local ZIP for spec timestamps and exact hashes. B01 was preregistered via commit 06aaa28.
