@@ -1,3 +1,9 @@
+# OBSOLETO — INVALIDADO POR REPAIR R1
+
+**Los números siguientes provienen del motor v1 mal identificado como Hamilton. NO son evidencia válida para las políticas nominales; conservar solo como histórico de fallos.** El readout válido corregido es [RESULTS_R1_30_ROUNDED.json](../results/RESULTS_R1_30_ROUNDED.json) y el dictamen R1. El parche R1 quedó congelado antes de las 30 repeticiones, pero la repetición ya conocía los resultados anteriores y es EXPLORATORIA, no confirmación ciega.
+
+---
+
 # B02 Q07–Q12 — exact proxy allocation versus rounded Neyman (2026-10-24)
 Precommit f38cbcc5. Δ = exact finite population variance on OBSERVED y for exact-proxy-optimum minus rounded proxy-Neyman; lower preferred.
 | Cycle/source | E budgets 10/14/18 | G budgets 26/34 | Verdict |
