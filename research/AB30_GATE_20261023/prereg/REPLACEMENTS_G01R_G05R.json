@@ -1,0 +1,49 @@
+{
+  "status": "PRE_RUN_REPLACEMENT",
+  "date": "2026-10-23",
+  "reason": "G01-G05 were executed but exactly same policy forecasts throughout validation/test; no treatment contrast, tag NONDISCRIMINATING; retain all original data",
+  "new_source": "safety_macro.py (v2), unchanged original engine for G06-G30",
+  "repeated_data_warning": "five outcomes share the same 203-quarter US macrodata panel and are NOT five independent observational sources; original macro panel previously exposed in other studies",
+  "source_comparator": "shrinkage covariance-weighted combination vs strongest of three base experts fixed solely using development [35%,50%]",
+  "data_access": "realcons,realinv,realint,tbilrate,m1; units remain original; each variable outcome only observed after GitHub freeze",
+  "metric": "paired one-step MAE lower is better, circular block bootstrap 599 resamples",
+  "holdout": "last 25% chronological tail of each new variable evaluated only after prereg; nevertheless same macro panel and prior adaptive work, NOT external confirmation",
+  "falsifier": "delta>=0 or bootstrap interval spanning zero means no supported gain",
+  "specs": [
+    {
+      "id": "G01R",
+      "dataset": "macro_realcons",
+      "a": "shrink",
+      "b": "fixed",
+      "hypothesis": "Covariance-weighted ensemble improves over development-only fixed expert for realcons"
+    },
+    {
+      "id": "G02R",
+      "dataset": "macro_realinv",
+      "a": "shrink",
+      "b": "fixed",
+      "hypothesis": "Covariance-weighted ensemble improves over development-only fixed expert for realinv"
+    },
+    {
+      "id": "G03R",
+      "dataset": "macro_realint",
+      "a": "shrink",
+      "b": "fixed",
+      "hypothesis": "Covariance-weighted ensemble improves over development-only fixed expert for realint"
+    },
+    {
+      "id": "G04R",
+      "dataset": "macro_tbilrate",
+      "a": "shrink",
+      "b": "fixed",
+      "hypothesis": "Covariance-weighted ensemble improves over development-only fixed expert for tbilrate"
+    },
+    {
+      "id": "G05R",
+      "dataset": "macro_m1",
+      "a": "shrink",
+      "b": "fixed",
+      "hypothesis": "Covariance-weighted ensemble improves over development-only fixed expert for m1"
+    }
+  ]
+}
