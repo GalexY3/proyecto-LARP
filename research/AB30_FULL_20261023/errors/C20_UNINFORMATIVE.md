@@ -1,0 +1,3 @@
+# C20 null-outcome diagnostic
+After execution B04, C20 (Iris, first predicted class risk, SRS vs within-class strat) yielded **both arm MSE exactly zero in every repeat**. No error variability was present for that subgroup in these splits, so the test could not discriminate efficiency. Original C20 retained, tagged INVALID / UNINFORMATIVE and NOT counted toward 30.
+C20R below is an independently specified cross-dataset intervention, preregistered after diagnosing C20, with same engine source frozen for B02. It is NOT claimed as an unseen external validation because Iris dataset is known from earlier LARP work.
