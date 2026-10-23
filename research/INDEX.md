@@ -17,7 +17,7 @@
 |---|---|
 | [#8 — AB30 DRIFT](https://github.com/GalexY3/proyecto-LARP/pull/8) | Código y CSV resumen presentes; incorporar raw por semilla, cotejar SHA y probar clon limpio |
 | [#9 — AB45 DRIFT](https://github.com/GalexY3/proyecto-LARP/pull/9) | En B02–B09 el freeze fue local, no previo en GitHub. No corregir retrospectivamente esa carencia; incluir raw íntegro y prueba limpia |
-| [#1–#4, y #5 antiguos](https://github.com/GalexY3/proyecto-LARP/pulls) | Dependencias entre ramas, cambios de README y ledgers, conflictos con `main`; rescatar solo aportaciones no duplicadas en nuevos commits selectivos |
+| [#1–#4 antiguos](https://github.com/GalexY3/proyecto-LARP/pulls) | Dependencias entre ramas, cambios de README y ledgers, conflictos con `main`; rescatar solo aportaciones no duplicadas en nuevos commits selectivos |
 
 ## Línea de investigación actual
 No se ha acreditado superioridad computacional de MHU ni descubrimiento interno 2/3. El **DRIFT exploratorio** plantea selección de información según función de pérdida, monitorización de daño con etiquetas tardías y distinción entre etiquetar para estimar riesgo o para aprender. Estos problemas tienen trabajos previos competentes y **todavía no han sido validados externamente**.
