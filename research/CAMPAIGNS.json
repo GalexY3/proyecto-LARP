@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-23",
+  "meaning_of_main": "GitHub source-of-truth archive; merging does not equal confirmation, external replication, or 2/3 discovery",
+  "campaigns": [
+    {
+      "id": "BR30_HIST",
+      "location": "docs/00_DICTAMEN.md",
+      "status": "ARCHIVED_EXPLORATORY",
+      "evidence": "synthetic spatial",
+      "independent_external_replication": false,
+      "level_2_3": false
+    },
+    {
+      "id": "AB30_CODEX_20261022",
+      "location": "research/AB30_CODEX_20261022",
+      "status": "ARCHIVED_EXPLORATORY",
+      "completed_corrections": "10 of original 30-codeX budget, not equivalent to later 30-cycle blocks",
+      "independent_external_replication": false,
+      "level_2_3": false
+    },
+    {
+      "id": "AB30_INTENSIVE_20261022",
+      "location": "research/AB30_INTENSIVE_20261022",
+      "status": "ARCHIVED_EXPLORATORY",
+      "merge_pr": 6,
+      "merge_sha": "95bf0b1969dd676440c336aa2f3a7ec04db81dc9",
+      "evidence": "synthetic layouts and reused Digits",
+      "raw_per_seed_in_repo": false,
+      "clean_clone_verified": false,
+      "independent_external_replication": false,
+      "level_2_3": false
+    },
+    {
+      "id": "AB30_DISCOVERY_20261022",
+      "location": "research/AB30_DISCOVERY_20261022",
+      "status": "ARCHIVED_EXPLORATORY",
+      "merge_pr": 7,
+      "merge_sha": "94efc458d88099942d9608b4e7ffb21209bd9bd1",
+      "evidence": "finite Fourier optimization and reused Digits",
+      "raw_per_seed_in_repo": false,
+      "clean_clone_verified": false,
+      "independent_external_replication": false,
+      "level_2_3": false
+    },
+    {
+      "id": "AB45_BEIJING_20261022",
+      "location": "research/AB45_BEIJING_20261022",
+      "status": "OBSERVATIONAL_EXPLORATORY",
+      "merge_pr": 10,
+      "merge_sha": "6ece73bb3b4a950f6fa867486a8234c888a6a8ed",
+      "source_pr": 5,
+      "source_branch": "research/ab45-beijing-real-20261022",
+      "evidence": "12 stations; 209 observed weeks; one 39-week temporal holdout, consumed",
+      "raw_hourly_csv_in_repo": false,
+      "observed_weekly_derived_data_in_repo": true,
+      "clean_clone_verified": false,
+      "independent_external_replication": false,
+      "level_2_3": false,
+      "notes": "COSI_PROXY not original COSI/MHU"
+    },
+    {
+      "id": "AB30_DRIFT_20261023",
+      "location": "research/AB30_DRIFT_20261023",
+      "status": "PR_PENDING_REPAIR",
+      "pull_request": 8,
+      "source_branch": "research/ab30-drift-20261023",
+      "evidence": "synthetic Gaussian observations and public Diabetes/Breast datasets",
+      "raw_per_seed_in_repo": false,
+      "clean_clone_verified": false,
+      "independent_external_replication": false,
+      "level_2_3": false
+    },
+    {
+      "id": "AB45_DRIFT_20261023",
+      "location": "research/AB45_DRIFT_20261023",
+      "status": "PR_PENDING_REPAIR",
+      "pull_request": 9,
+      "source_branch": "research/ab45-driftloop-20261023",
+      "evidence": "public data and induced shifts, 45 exploratory contrasts",
+      "remote_prereg_complete": false,
+      "prereg_b01_remote": true,
+      "prereg_b02_b09_local_only": true,
+      "raw_per_seed_in_repo": false,
+      "clean_clone_verified": false,
+      "independent_external_replication": false,
+      "level_2_3": false
+    }
+  ],
+  "historical_branches": [
+    {
+      "pull_request": 1,
+      "head": "research/ab4-cosi-branch30-20261022",
+      "review": "older synthetic research chain; consider selective salvage; do not overwrite current README/priors"
+    },
+    {
+      "pull_request": 2,
+      "head": "research/evidence-gate-20261022",
+      "review": "multi-scene/gates; superseded as general mechanism evidence, not all raw transferred"
+    },
+    {
+      "pull_request": 3,
+      "head": "research/branch30-intel-layout-20261022",
+      "review": "Intel station positions; original time series absent, synthetic generator"
+    },
+    {
+      "pull_request": 4,
+      "head": "research/ab45-dynamic-realdata-20261022",
+      "review": "45 adaptive validation conditions; source distinctions; Beijing observed dataset cherry-picked separately"
+    }
+  ],
+  "repositories": {
+    "methodology": "GalexY3/Metodologia-AB",
+    "substantive": "GalexY3/proyecto-LARP"
+  },
+  "governance": {
+    "AB_core": "3.2.1",
+    "operational_appendices": [
+      "O1",
+      "O2",
+      "O3"
+    ],
+    "proposals": "M027-M035 imported to Methodology-AB; proposals not norms"
+  },
+  "next_actions": [
+    "Verify clean clone on merged exploratory engines",
+    "Backfill raw per-seed records for PR8 and PR9 from original ZIP after hash checks",
+    "Consider closing historical PRs without deleting branches once index is verified",
+    "Require external, independent evidence before any 2/3 claim"
+  ]
+}
