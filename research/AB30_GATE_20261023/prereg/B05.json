@@ -1,0 +1,66 @@
+{
+  "block": "B05",
+  "drift": "DR05_COVARIANCE_IDENTIFICATION",
+  "trigger": "B03 shrink wins equal average but B04 loses to strong fixed; need test value beyond individual loss",
+  "engine_sha256": "b3adb5622222740804f51dd5d375512666f83a97baf1563acae38d0f20be8a82",
+  "estimand": "paired one-step MAE on validation [50,75%] of six series",
+  "null": "covariance shrinkage not superior to loss-only Hedge",
+  "mechanistic_discriminant": "Shrink exploits error cross-products; Hedge only marginal mean absolute losses. All 3 input expert forecasts and last 24 feedback observations are identical",
+  "rivals": [
+    "Squared-error covariance weights misaligned with MAE outcome",
+    "Hedge can react faster than covariance gram",
+    "neither beats fixed on stable regimes"
+  ],
+  "G": "final 25% holdout sealed until this and earlier 24 validation claims closed; same observational series used earlier in project and no external replication",
+  "novelty": "Forecast portfolio models extensively known; requires new mechanism and outside-domain replication for 2/3",
+  "specs": [
+    {
+      "id": "G25",
+      "dataset": "nile",
+      "a": "shrink",
+      "b": "hedge",
+      "claim": "Explicit residual covariance shrinkage outperforms relative mean-absolute-loss exponential weighting at equal input and feedback",
+      "falsifier": "delta >=0 contradicts; 95% block CI including zero inconclusive"
+    },
+    {
+      "id": "G26",
+      "dataset": "sunspots",
+      "a": "shrink",
+      "b": "hedge",
+      "claim": "Explicit residual covariance shrinkage outperforms relative mean-absolute-loss exponential weighting at equal input and feedback",
+      "falsifier": "delta >=0 contradicts; 95% block CI including zero inconclusive"
+    },
+    {
+      "id": "G27",
+      "dataset": "co2",
+      "a": "shrink",
+      "b": "hedge",
+      "claim": "Explicit residual covariance shrinkage outperforms relative mean-absolute-loss exponential weighting at equal input and feedback",
+      "falsifier": "delta >=0 contradicts; 95% block CI including zero inconclusive"
+    },
+    {
+      "id": "G28",
+      "dataset": "elnino",
+      "a": "shrink",
+      "b": "hedge",
+      "claim": "Explicit residual covariance shrinkage outperforms relative mean-absolute-loss exponential weighting at equal input and feedback",
+      "falsifier": "delta >=0 contradicts; 95% block CI including zero inconclusive"
+    },
+    {
+      "id": "G29",
+      "dataset": "unemployment",
+      "a": "shrink",
+      "b": "hedge",
+      "claim": "Explicit residual covariance shrinkage outperforms relative mean-absolute-loss exponential weighting at equal input and feedback",
+      "falsifier": "delta >=0 contradicts; 95% block CI including zero inconclusive"
+    },
+    {
+      "id": "G30",
+      "dataset": "inflation",
+      "a": "shrink",
+      "b": "hedge",
+      "claim": "Explicit residual covariance shrinkage outperforms relative mean-absolute-loss exponential weighting at equal input and feedback",
+      "falsifier": "delta >=0 contradicts; 95% block CI including zero inconclusive"
+    }
+  ]
+}
