@@ -1,0 +1,80 @@
+{
+  "campaign": "LARP_AB30_GATE_20261023",
+  "block": "B01",
+  "drift": "DR01_RECENCY_SELECTOR",
+  "status": "PRE_REGISTERED_BEFORE_RUN",
+  "date": "2026-10-23",
+  "engine_sha256": "b3adb5622222740804f51dd5d375512666f83a97baf1563acae38d0f20be8a82",
+  "base_sha256": "cfc0a2d1097df213a09d33188bce6a265a2bf68b7876bcca5ef4140c829daa23",
+  "estimand": "delta=MAE(A)-MAE(B) over paired real observational rolling 1-step forecasts, each dataset one distinct question",
+  "alternative": "Recent-best (24 realized loss history) beats development-only fixed expert on validation and prospective final tail",
+  "null": "mean delta>=0",
+  "falsifier": "delta>=0 contradicts; block bootstrap 95% interval containing 0 yields inconclusive",
+  "evidence": "Real historical series but several seen in prior LARP; no fresh external source, no 2/3 validation",
+  "split": "development 35%-50%, exploratory validation 50%-75%; chronological test 75%-100% sealed for all 30 until B05 frozen",
+  "diagnostics": "Test no lookahead, finite values, same dates, repeated-score autocorrelation, ARMA/seasonal omitted as rivals",
+  "bootstrap": "circular block bootstrap 599 resamples; descriptive only, multiplicity across 30 not controlled",
+  "prior_art": [
+    "Timmermann 2006 forecast combinations",
+    "Claeskens et al. 2016 forecast combination puzzle",
+    "Zhao et al. AAAI 2025 offline/online mixture",
+    "Elliott & Liao 2026 combination weights"
+  ],
+  "decision": "after six validation results choose branch DR02 gate if recent-winner is unreliable; explicit STOP_LOCAL allowed",
+  "specs": [
+    {
+      "id": "G01",
+      "dataset": "nile",
+      "a": "winner",
+      "b": "fixed",
+      "predict": "MAE(winner)<MAE(fixed)",
+      "direction": "negative",
+      "metric": "paired_one_step_MAE"
+    },
+    {
+      "id": "G02",
+      "dataset": "sunspots",
+      "a": "winner",
+      "b": "fixed",
+      "predict": "MAE(winner)<MAE(fixed)",
+      "direction": "negative",
+      "metric": "paired_one_step_MAE"
+    },
+    {
+      "id": "G03",
+      "dataset": "co2",
+      "a": "winner",
+      "b": "fixed",
+      "predict": "MAE(winner)<MAE(fixed)",
+      "direction": "negative",
+      "metric": "paired_one_step_MAE"
+    },
+    {
+      "id": "G04",
+      "dataset": "elnino",
+      "a": "winner",
+      "b": "fixed",
+      "predict": "MAE(winner)<MAE(fixed)",
+      "direction": "negative",
+      "metric": "paired_one_step_MAE"
+    },
+    {
+      "id": "G05",
+      "dataset": "unemployment",
+      "a": "winner",
+      "b": "fixed",
+      "predict": "MAE(winner)<MAE(fixed)",
+      "direction": "negative",
+      "metric": "paired_one_step_MAE"
+    },
+    {
+      "id": "G06",
+      "dataset": "inflation",
+      "a": "winner",
+      "b": "fixed",
+      "predict": "MAE(winner)<MAE(fixed)",
+      "direction": "negative",
+      "metric": "paired_one_step_MAE"
+    }
+  ]
+}
