@@ -11,7 +11,7 @@ ARMS=[('persistence','mean16'),('mean4','mean16'),('ewma03','mean4'),('trend8','
 def load(name):
     if name=='nile': y=sm.datasets.nile.load_pandas().data['volume'].to_numpy()
     elif name=='sunspots': y=sm.datasets.sunspots.load_pandas().data['SUNACTIVITY'].to_numpy()
-    elif name=='co2': y=sm.datasets.co2.load_pandas().data['co2'].ffill().bfill().to_numpy()
+    elif name=='co2': y=sm.datasets.co2.load_pandas().data['co2'].ffill().to_numpy()
     elif name=='realgdp': y=np.log(sm.datasets.macrodata.load_pandas().data['realgdp'].to_numpy())
     elif name=='elnino': y=sm.datasets.elnino.load_pandas().data.iloc[:,1:13].to_numpy().reshape(-1)
     elif name=='interest': y=sm.datasets.interest_inflation.load_pandas().data['R'].to_numpy()
