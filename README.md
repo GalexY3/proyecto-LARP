@@ -20,6 +20,6 @@
 ## Reglas de interpretación y próximos pasos
 - Los datasets reales públicos no equivalen a un despliegue experimental; múltiples seeds del mismo generador no son réplicas externas.
 - Mantener código y preregs vinculados a commits, JSON brutos, fallos, reparación, costes y pruebas de clon limpio. Etiquetar ausencias; no inventar `freeze-run` remoto.
-- Pendientes de integración: PR [#8](https://github.com/GalexY3/proyecto-LARP/pull/8) y [#9](https://github.com/GalexY3/proyecto-LARP/pull/9), con expedientes brutos en ZIP fuera del repositorio. La cadena antigua de PR #1–#5 requiere trasplantes selectivos, no merge indiscriminado.
+- Pendientes de integración: PR [#8](https://github.com/GalexY3/proyecto-LARP/pull/8) y [#9](https://github.com/GalexY3/proyecto-LARP/pull/9), con expedientes brutos en ZIP fuera del repositorio. El antiguo PR #5 quedó integrado selectivamente mediante PR #10 y se cerró; los PR #1–#4 requieren revisión de contenido no duplicado, sin merge indiscriminado.
 
 Repositorios privados: [LARP](https://github.com/GalexY3/proyecto-LARP) y [Metodología AB](https://github.com/GalexY3/Metodologia-AB). Este README es índice; los informes científicos conservan sus reivindicaciones y límites originales.
