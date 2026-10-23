@@ -1,0 +1,45 @@
+{
+  "block": "B05",
+  "ids": [
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q30"
+  ],
+  "sources": [
+    "diabetes",
+    "breast",
+    "wine",
+    "digits",
+    "nile",
+    "sunspots"
+  ],
+  "status": "PRE_EXECUTION",
+  "source_sha256": "f800f562eb72d0e5d4784bb8d0ffe35f9f60d5d45e87d49631c4eb452265d47a",
+  "E_budgets": [
+    10,
+    14,
+    18
+  ],
+  "G_budgets": [
+    26,
+    34
+  ],
+  "estimand": "worst real/synthetic evaluation loss variance under four worlds, method A minus B",
+  "A": "exact integer minmax over proxy variance scenarios: original proxy variance plus tripling a different ONE-stratum variance to 4x; does NOT inspect true outcomes or stress noise",
+  "B": "guard 50:50 proportional and proxy Neyman rounded",
+  "H1": "robust proxy-model scenario optimization reduces worst true-outcome variance compared to simple guarded mixture",
+  "null": "mean E delta>=0",
+  "rivals": [
+    "robust uncertainty scenario family misspecified",
+    "costs of exact enumeration",
+    "known robust experimental design and optimal stratification",
+    "simple proportional sometimes outperforms both"
+  ],
+  "falsifier": "E delta >=0 refutes; compare G and proportional third-party",
+  "controls": "same observed source, same simulated scoring stresses as B04 frozen in source; same integer budget and exact finite variance; score proportional as extra strong control",
+  "AB": "A paired worst-case variance; B null/prior known robust design; C exact integer search; D invariants/oracle leak; E execute all six; F compare proportional and guard, no artificial novelty; G larger budgets within same source; H update N1/CT2; I assess originality incl Census Bureau 2014 and stats textbook; J obligatory close 30 valid experimental cycles, may choose new drift next campaign",
+  "CT2_before": 19
+}
