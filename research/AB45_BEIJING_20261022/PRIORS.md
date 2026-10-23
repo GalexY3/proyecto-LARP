@@ -1,0 +1,10 @@
+# LARP — priors acumulativos: rama observacional BJ45 (2026-10-22)
+**Fuente:** `research/AB45_BEIJING_20261022/`, `campaign_results.json`, 45 ciclos adaptativos sobre validación temporal, cinco tests 2016–2017. Añadir estos registros sin eliminar priors históricos. No se han estimado factores de Bayes ni posteriors calibrados.
+
+| ID | Proposición | A favor | En contra / límites | Falsador y prueba futura | Estado |
+|---|---|---|---|---|---|
+| BJ45-R01 | Un regularizador multiclase COSI-proxy domina la selección supervisada en señales ambientales reales | Ningún ciclo favorable | 0/45 victorias en validación; COSI_PROXY peor que el seleccionado en cinco objetivos test | Reproducir COSI auténtico con costes pareados y un dominio nuevo | Debilitada solo para proxy |
+| BJ45-R02 | Elegir lecturas según covarianza con la meta mejora la estimación regional | GREEDY/SHRINK/RANK suman 40/45 victorias; PM2.5 TEST Ridge 2.0625 vs seis estaciones promediadas 6.4986 | Baseline promediado fijo no optimizado; elección retrospectiva; técnica conocida | Comparación limpia GP, QR/DEIM y presupuesto de piloto equilibrado | Observación empírica condicionada, NO novedad |
+| BJ45-R03 | Una política de selección por validación evita perder ante un brazo fijo | PM25_TOP3 RANK 2.7082 vs GREEDY 3.0694 | NO2 SHRINK elegida 2.0269 > GREEDY 1.8609; O3 GREEDY 3.1189 > SHRINK 2.2160 | Nuevo período/dataset independiente para política, coste de selección incluido | Hipótesis debilitada |
+| BJ45-R04 | La diversidad de tipos añade valor independiente del objetivo | TYPE gana 1/45; premio heurístico a roles | Pérdidas frente a GREEDY y SHRINK, sin ablatir papel causal bajo igualdad espectral ni costos reales | Ablación factorial de roles y fases conservando covarianza, control Wei original | NO VALIDADO |
+| BJ45-R05 | La transferencia a datos físicos por sí misma aproxima LARP a 2/3 | 12 estaciones medidas, trazabilidad SHA, test cronológico no usado en los 45 ciclos | Algoritmos evaluados son técnicas conocidas, no Scale3D ni redes neuronales | Predicción original que supere métodos especializados y replicación externa | Rechazada como inferencia |
