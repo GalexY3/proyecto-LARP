@@ -25,7 +25,7 @@ GitHub guarda el registro versionado. Un merge documenta procedencia, NO acredit
 - PR #6 y #7: directorios propios, fusionados como archivo exploratorio; faltan algunos brutos versionados y clon limpio.
 - Beijing: integrar solo el paquete observacional `research/AB45_BEIJING_20261022/` (nueve blobs del original), sin fusionar las versiones divergentes de `README` ni `docs/02_PRIORS_LARP.md`.
 - PR #8 y #9: conservar en borrador; antes de merge, recuperar registros exactos desde ZIP, corregir árbol de artefactos y comprobar ejecutabilidad; en #9 preservar fallo de freeze remoto, irreparable retrospectivamente.
-- PR #1–#5: cadena ancestral; no hacer `force merge` ni borrar ramas. Rescatar evidencias y mejoras metodológicas aisladas, manteniendo autoría y procedencia.
+- PR #1–#4: cadena ancestral sin integrar; no hacer `force merge` ni borrar ramas. El PR #5 quedó íntegramente trasplantado a `main` por PR #10 y cerrado como redundante. Rescatar evidencias y mejoras metodológicas aisladas, manteniendo autoría y procedencia.
 
 ## Comprobación y mantenimiento continuo
 Tras cada integración: leer los archivos desde `main`, cotejar los SHA de los blobs originales y revisar `research/INDEX.md`. Actualizar el índice y el ledger de priors sin eliminar hipótesis desmentidas. Registrar un PR como fusionado solo si GitHub confirma `merged:true`.
