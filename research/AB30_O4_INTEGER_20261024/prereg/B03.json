@@ -1,0 +1,44 @@
+{
+  "block": "B03",
+  "ids": [
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18"
+  ],
+  "sources": [
+    "diabetes",
+    "breast",
+    "wine",
+    "digits",
+    "nile",
+    "sunspots"
+  ],
+  "status": "PRE_EXECUTION",
+  "source_sha256": "f800f562eb72d0e5d4784bb8d0ffe35f9f60d5d45e87d49631c4eb452265d47a",
+  "E_budgets": [
+    10,
+    14,
+    18
+  ],
+  "G_budgets": [
+    26,
+    34
+  ],
+  "estimand": "E_sampling_variance of dependent randomized rounding based on 200 RNG draws minus deterministic Hamilton apportionment for same 50:50 proxy-Neyman/proportional continuous allocation, averaged over budgets",
+  "A": "dependent pairwise randomized rounding with unbiased expected fractional allocations, fixed budget and positive stratum counts",
+  "B": "deterministic Hamilton integer apportionment of same continuous target",
+  "H1": "Randomizing discrete allocation reduces real y risk-estimator variance versus deterministic rounding",
+  "null": "mean delta >=0",
+  "rivals": [
+    "Stochastic rounding increases variance when deterministic choice is favorable",
+    "Known dependent rounding theory no algorithm novelty",
+    "200 allocations share same fixed finite population; Monte Carlo variation, not external evidence"
+  ],
+  "falsifier": "E Δ>=0 refutes; E and G signs discordant means no budget transfer",
+  "controls": "same labels budget and same y; allocation-draw RNG not allowed to inspect target y; exact variance per rounded allocation",
+  "AB": "A paired variance target; B null/alternatives; C same fractional allocation; D randomization exact sum/margins; E run; F no-skill RNG and deterministic control; G larger budgets same population; H update; I novelty grade; J continue mandatory with drift on failure",
+  "CT2_before": 14
+}
