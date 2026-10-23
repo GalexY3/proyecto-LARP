@@ -1,0 +1,40 @@
+{
+  "block": "B02",
+  "ids": [
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12"
+  ],
+  "sources": [
+    "diabetes",
+    "breast",
+    "wine",
+    "digits",
+    "nile",
+    "sunspots"
+  ],
+  "status": "PRE_EXECUTION",
+  "engine_sha256": "f800f562eb72d0e5d4784bb8d0ffe35f9f60d5d45e87d49631c4eb452265d47a",
+  "E_budgets": [
+    10,
+    14,
+    18
+  ],
+  "G_budgets": [
+    26,
+    34
+  ],
+  "estimand": "Δ=exact finite-population sampling variance for policy A minus policy B (smaller better), evaluated on true observed y, policies see proxy x only",
+  "A": "enumerate all 3-stratum integer allocations with fixed budget; minimize proxy variance ΣW²s²_proxy/n exactly",
+  "B": "Hamilton round continuous proxy-Neyman weights",
+  "H1": "Exact optimization of proxy variance also yields lower TRUE outcome variance than heuristic rounding",
+  "null": "mean true variance difference >=0",
+  "strong_rival": "The exact optimizer is tautologically best for proxy objective; true outcome ordering is not guaranteed without predictor-quality assumption; Census Bureau 2014 exact integer optimal assignment.",
+  "falsifier": "mean E Δ>=0 refutes; G budget transfer contradictory => not transportable",
+  "AB": "A exact finite population variance; B rival proxy mismatch; C exact enumeration; D audit argmin and cap constraints; E run; F comparison to true oracle and proportional; G larger unexposed budgets same source; H prior update; I novelty prior art; J DRIFT upon failure but continue to 30",
+  "CT2_before": 16,
+  "grade_cap": "1/3 at most for new discriminating project-specific contradiction; no grade for the exact mathematical optimum tautology"
+}
