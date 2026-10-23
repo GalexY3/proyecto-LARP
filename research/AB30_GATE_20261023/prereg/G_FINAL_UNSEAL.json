@@ -1,0 +1,315 @@
+{
+  "campaign": "AB30_GATE_20261023",
+  "stage": "FINAL_G_UNSEAL_BEFORE_RUN",
+  "frozen_at_stage": "after B01-B05 validation readouts, before any test comparison",
+  "total": 30,
+  "source_sha256": "b3adb5622222740804f51dd5d375512666f83a97baf1563acae38d0f20be8a82",
+  "code_blob": "47713cc8f37905891ef143fb6815e5457125bfa9",
+  "data_prep": "statsmodels historical data as packaged, observational sources; same forecasts only use outcomes before prediction time",
+  "holdout": "last 25 percent chronologically for each source; already used in prior LARP forecasting campaign, not a genuinely fresh external holdout",
+  "scoring": "paired one-step MAE, per-cycle moving-block bootstrap interval 599 resamples, unadjusted descriptive; full raw paired losses preserved",
+  "multiplicity": "five related contrasts per series; do NOT treat 30 pair tests as 30 independent replications; no data-driven test-only selection",
+  "prohibitions": "No method tuning after seeing test, report all nulls and adverse effects, no 2/3 without strong external replication",
+  "specs": [
+    {
+      "id": "G01",
+      "block": 1,
+      "dataset": "nile",
+      "a": "winner",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G02",
+      "block": 1,
+      "dataset": "sunspots",
+      "a": "winner",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G03",
+      "block": 1,
+      "dataset": "co2",
+      "a": "winner",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G04",
+      "block": 1,
+      "dataset": "elnino",
+      "a": "winner",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G05",
+      "block": 1,
+      "dataset": "unemployment",
+      "a": "winner",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G06",
+      "block": 1,
+      "dataset": "inflation",
+      "a": "winner",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G07",
+      "block": 2,
+      "dataset": "nile",
+      "a": "ar32",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G08",
+      "block": 2,
+      "dataset": "sunspots",
+      "a": "ar32",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G09",
+      "block": 2,
+      "dataset": "co2",
+      "a": "ar32",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G10",
+      "block": 2,
+      "dataset": "elnino",
+      "a": "ar32",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G11",
+      "block": 2,
+      "dataset": "unemployment",
+      "a": "ar32",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G12",
+      "block": 2,
+      "dataset": "inflation",
+      "a": "ar32",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G13",
+      "block": 3,
+      "dataset": "nile",
+      "a": "shrink",
+      "b": "equal",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G14",
+      "block": 3,
+      "dataset": "sunspots",
+      "a": "shrink",
+      "b": "equal",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G15",
+      "block": 3,
+      "dataset": "co2",
+      "a": "shrink",
+      "b": "equal",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G16",
+      "block": 3,
+      "dataset": "elnino",
+      "a": "shrink",
+      "b": "equal",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G17",
+      "block": 3,
+      "dataset": "unemployment",
+      "a": "shrink",
+      "b": "equal",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G18",
+      "block": 3,
+      "dataset": "inflation",
+      "a": "shrink",
+      "b": "equal",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G19",
+      "block": 4,
+      "dataset": "nile",
+      "a": "shrink",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G20",
+      "block": 4,
+      "dataset": "sunspots",
+      "a": "shrink",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G21",
+      "block": 4,
+      "dataset": "co2",
+      "a": "shrink",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G22",
+      "block": 4,
+      "dataset": "elnino",
+      "a": "shrink",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G23",
+      "block": 4,
+      "dataset": "unemployment",
+      "a": "shrink",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G24",
+      "block": 4,
+      "dataset": "inflation",
+      "a": "shrink",
+      "b": "fixed",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G25",
+      "block": 5,
+      "dataset": "nile",
+      "a": "shrink",
+      "b": "hedge",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G26",
+      "block": 5,
+      "dataset": "sunspots",
+      "a": "shrink",
+      "b": "hedge",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G27",
+      "block": 5,
+      "dataset": "co2",
+      "a": "shrink",
+      "b": "hedge",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G28",
+      "block": 5,
+      "dataset": "elnino",
+      "a": "shrink",
+      "b": "hedge",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G29",
+      "block": 5,
+      "dataset": "unemployment",
+      "a": "shrink",
+      "b": "hedge",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    },
+    {
+      "id": "G30",
+      "block": 5,
+      "dataset": "inflation",
+      "a": "shrink",
+      "b": "hedge",
+      "metric": "MAE",
+      "direction": "lower",
+      "source": "precommitted safety.py"
+    }
+  ]
+}
