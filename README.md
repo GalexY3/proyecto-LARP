@@ -1,30 +1,25 @@
 # LARP — laboratorio de investigación
 
-## Estado actual, 22 de octubre de 2026
+**Estado (23 de octubre de 2026):** programa exploratorio abierto. La hipótesis inicial MHU (multihiperuniformidad) **no tiene una ventaja computacional específica confirmada**. Tras varios contrastes adversariales, el programa permite DRIFT hacia selección de información, decisiones bajo incertidumbre y monitorización del riesgo. No se ha acreditado ningún descubrimiento interno de nivel 2/3.
 
-Se cerraron por indicación del investigador **10/30 ciclos dinámicos nuevos**, con veinte pendientes. No se encontró una ventaja específica de MHU en este bloque exploratorio. Se identificaron confounds de normalización y se probó un control de transporte del mismo clasificador entre representaciones lineales completas, con límites explícitos de presupuesto y condicionamiento.
+## Empezar aquí
 
-- [Informe y decisión de cierre](research/AB30_CODEX_20261022/REPORT.md)
-- [Diez ciclos: protocolos, evidencias y decisiones A–J](research/AB30_CODEX_20261022/LEDGER.md)
-- [Importación verificada del laboratorio local: 539 archivos originales](legacy/local_lab_20261022/README_IMPORT.md)
-- [Metodología AB y salvaguardas operativas O2](https://github.com/GalexY3/Metodologia-AB)
+1. **[Índice de investigaciones y estado de cada campaña](research/INDEX.md)**. Distingue evidencia integrada, trabajos pendientes y ramas históricas.
+2. **[Política de integración, trazabilidad y reproducibilidad](docs/INTEGRACION_Y_REPRODUCIBILIDAD.md)**. Fusionar archivos exploratorios no los convierte en conclusiones confirmadas.
+3. **[Priors acumulativos originales](docs/02_PRIORS_LARP.md)**. Conservar también apéndices de cada campaña y evidencia contraria; no sustituir este ledger en un merge de rama divergente.
+4. **[Metodología AB 3.2.1, anexos O1/O2/O3](https://github.com/GalexY3/Metodologia-AB)**. O3 incorpora bucles DRIFT, branching y pivot; su eficacia metodológica sigue sin validación externa.
 
-Después de ese checkpoint, el investigador reautorizó continuar. La [reanudación mediante ChatRelay](research/RELAY_LARP_20261022/README.md) conserva dos encargos de asesoría adversarial y su comprobación independiente. No cuentan como nuevos ciclos experimentales.
+## Evidencia destacada
 
-## Estudio anterior: 30 condiciones de contraste (2026-10-21)
+**Observaciones físicas, no simulación:** [Beijing Multi-Site Air Quality](research/AB45_BEIJING_20261022/DICTAMEN.md): doce estaciones, series de 2013–2017, 45 condiciones adaptativas de validación y una única prueba cronológica de 39 semanas. Se comprobó que `COSI_PROXY` no era el mecanismo COSI/MHU original; **no** se atribuyó eficacia al mecanismo. El test está consumido y no es replicación externa multinacional.
 
-## Lectura
-- `docs/00_DICTAMEN.md`: principal; `docs/01_LEDGER_30_CICLOS.md`: auditoría A–J por condición; `docs/02_PRIORS_LARP.md`: priors nuevos y estado.
-- `data/pilot_raw.csv` (880 filas); `data/pilot_summary.csv`; `data/confirm_focus_raw.csv` (80 filas); `data/confirm_focus_summary.json`.
-- `src/run_br30.py` código del piloto (source lock en GitHub antes de experimentos); `src/confirm_focus.py` script confirmatorio; `data/geometrias/*.npz` entradas originales.
+**Auditoría geométrica y de aprendizaje:** [AB30 INTENSIVE](research/AB30_INTENSIVE_20261022/reports/DICTAMEN.md) y [AB30 DISCOVERY](research/AB30_DISCOVERY_20261022/reports/DICTAMEN.md). Exploran geometrías, espectro por tipos, reconstrucción, Digits y rivales. No hay certificación de multihiperuniformidad asintótica ni replicación independiente.
 
-## Reproducción (Python 3.10+, numpy, scipy, pandas, matplotlib)
-`OPENBLAS_NUM_THREADS=1 python src/run_br30.py --phase pilot --out data`
-`OPENBLAS_NUM_THREADS=1 python src/confirm_focus.py`
-`python src/build_report.py`
+**Histórico de 2026-10-21 y 2026-10-22:** [BR30](docs/00_DICTAMEN.md), [ledger A–J](docs/01_LEDGER_30_CICLOS.md), [AB30 CODEX](research/AB30_CODEX_20261022/REPORT.md), [importación de 539 archivos locales](legacy/local_lab_20261022/README_IMPORT.md) y [ChatRelay adversarial](research/RELAY_LARP_20261022/README.md). Las 10 ejecuciones del bloque CODEX no equivalen a los 30 contrastes de campañas posteriores.
 
-## Límites
-Se usa un solo patrón geométrico original por algoritmo y nuevos mundos sintéticos Fourier. NO réplica biológica, NO inferencia sobre lenguaje, NO LLM, NO nueva arquitectura neuronal probada en este estudio. Tras la selección confirmatoria no se han abierto múltiples afirmaciones confirmatorias. Tres controles clásicos/espaciales (RANDOM, STRATIFIED, kernel por tipo) incluidos, pero falta Multi-Class Blue Noise optimizado, PNT++ y Set Transformer.
+## Reglas de interpretación y próximos pasos
+- Los datasets reales públicos no equivalen a un despliegue experimental; múltiples seeds del mismo generador no son réplicas externas.
+- Mantener código y preregs vinculados a commits, JSON brutos, fallos, reparación, costes y pruebas de clon limpio. Etiquetar ausencias; no inventar `freeze-run` remoto.
+- Pendientes de integración: PR [#8](https://github.com/GalexY3/proyecto-LARP/pull/8) y [#9](https://github.com/GalexY3/proyecto-LARP/pull/9), con expedientes brutos en ZIP fuera del repositorio. La cadena antigua de PR #1–#5 requiere trasplantes selectivos, no merge indiscriminado.
 
-AB: https://github.com/GalexY3/Metodologia-AB
-LARP privado: https://github.com/GalexY3/proyecto-LARP
+Repositorios privados: [LARP](https://github.com/GalexY3/proyecto-LARP) y [Metodología AB](https://github.com/GalexY3/Metodologia-AB). Este README es índice; los informes científicos conservan sus reivindicaciones y límites originales.
