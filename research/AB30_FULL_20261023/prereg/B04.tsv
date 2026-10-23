@@ -1,0 +1,6 @@
+id	dataset	a	b	proxy	proxy_a	proxy_b	shift	endpoint	group	claim
+C16	digits	group_srs	group_global_srs	raw	raw	raw	none	mse	true	Direct subgroup sampling reduces MSE of predicted-class-0 risk versus a globally random budget.
+C17	digits	group_strat	group_srs	raw	raw	raw	none	mse	true	Risk-score-stratified acquisition within a predicted class improves subgroup risk estimation versus subgroup SRS.
+C18	wine	group_srs	group_proxy	raw	raw	raw	none	mse	true	Acquiring labels inside a rare predicted class estimates its risk more accurately than the prelabel score mean.
+C19	breast	group_strat	group_global_srs	raw	raw	raw	none	mse	true	Subgroup stratification reduces risk estimation error relative to spending same global budget without group targeting.
+C20	iris	group_srs	group_strat	raw	raw	raw	none	mse	true	Within-subgroup SRS is at least as efficient as uncertainty-stratified sampling for small subgroup counts.

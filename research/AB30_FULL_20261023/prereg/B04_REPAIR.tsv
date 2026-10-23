@@ -1,0 +1,2 @@
+id	dataset	a	b	proxy	proxy_a	proxy_b	shift	endpoint	claim
+C20R	iris	pps_aipw_0.7	srs	raw	cal	raw	flip_confident	mse	On a distinct small observational classification dataset, calibrated augmented PPS retains advantage versus SRS under high-confidence concept drift.

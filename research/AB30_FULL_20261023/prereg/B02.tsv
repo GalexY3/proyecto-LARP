@@ -1,0 +1,6 @@
+id	dataset	a	b	proxy	proxy_a	proxy_b	shift	endpoint	claim
+C06	digits	pps_aipw_0.7	pps_aipw_0.7	raw	cal	raw	none	mse	Validation-calibrated risk proxy improves generalized difference estimator over raw confidence proxy at equal PPS acquisition.
+C07	breast	pps_aipw_0.7	pps_aipw_0.7	raw	raw	const	none	mse	Discriminative raw uncertainty proxy improves augmented estimator over validation-only constant proxy.
+C08	breast	pps_aipw_0.7	pps_aipw_0.7	raw	const	anti	none	mse	Constant validated risk proxy is safer than deliberately inverted proxy for augmented estimation.
+C09	wine	pps_aipw_0.95	pps_aipw_0.3	raw	raw	raw	none	mse	Aggressive uncertainty-weighted probability-proportional sampling improves over mild oversampling under an augmented estimator.
+C10	wine	pps_ht_0.95	pps_ht_0.3	raw	raw	raw	none	mse	Aggressive uncertainty sampling improves Horvitz-Thompson population risk estimation relative to mild probability oversampling.

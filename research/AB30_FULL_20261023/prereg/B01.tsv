@@ -1,0 +1,6 @@
+id	dataset	a	b	proxy	shift	endpoint	claim
+C01	digits	srs	top_uncertain	raw	none	mse	Random sampling estimates population risk more accurately than deterministic uncertainty-top selection.
+C02	digits	strat_prop	srs	raw	none	mse	Risk-stratified proportional sampling reduces MSE relative to simple random sampling at equal labels.
+C03	digits	strat_equal	strat_prop	raw	none	mse	Equal-across-risk-strata allocation improves on proportional allocation for population risk.
+C04	digits	pps_aipw_0.7	pps_ht_0.7	cal	none	mse	Augmented IPW reduces MSE relative to IPW with identical PPS queries and known propensities.
+C05	digits	pps_hajek_0.7	pps_ht_0.7	raw	none	mse	Self-normalized Hajek ratio reduces MSE relative to unbiased Horvitz-Thompson on same queried set.

@@ -1,0 +1,2 @@
+id	dataset	a	b	proxy	shift	endpoint	claim
+C03R	digits	strat_neyman	strat_prop	raw	none	mse	Proxy variance-informed Neyman allocation reduces population-risk MSE relative to proportional allocation, at equal label budgets.

@@ -1,0 +1,6 @@
+id	dataset	a	b	proxy	proxy_a	proxy_b	shift	endpoint	claim
+C21	digits	pps_ht_0.95	pps_naive_0.95	raw	raw	raw	none	mse	Known inclusion-probability Horvitz-Thompson correction improves population risk estimation over an unweighted uncertainty-focused sample.
+C22	breast	strat_target	stratnaive_target	raw	raw	raw	none	mse	Poststratification to actual population strata proportions reduces MSE versus unweighted allocation-biased survey means.
+C23	wine	pps_aipw_0.3	pps_naive_0.3	raw	cal	raw	none	mse	Augmented design-unbiased risk estimation outperforms unweighted mild PPS sample means.
+C24	digits	pps_ht_0.95	pps_hajek_0.95	raw	raw	raw	none	mse	Horvitz-Thompson estimator improves over ratio normalization in strongly targeted acquisition.
+C25	breast	strat_target	strat_prop	raw	raw	raw	none	mse	Purposeful oversampling of high predicted error strata with design weights improves efficiency versus proportional risk stratification.
