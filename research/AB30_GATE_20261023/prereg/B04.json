@@ -1,0 +1,65 @@
+{
+  "block": "B04",
+  "drift": "DR04_STRONG_BASELINE_TEST",
+  "trigger": "B03 covariance shrinkage beat weak equal average but mechanism not identified",
+  "source_sha256": "b3adb5622222740804f51dd5d375512666f83a97baf1563acae38d0f20be8a82",
+  "estimand": "paired one-step MAE, same real historical dates, validation [50%,75%]",
+  "strong_control": "Single expert selected only on development [35%,50%] among persistence, 4-lag mean and EWMA",
+  "rivals": [
+    "Fixed expert already near optimal on stable regimes",
+    "complex covariance weights shrink errors of poor experts but still underperform fixed",
+    "short history noisy"
+  ],
+  "G": "last 25% still unobserved; final G as internal chronology only",
+  "novelty": "No new algorithm or 2/3 without new independent evidence",
+  "specs": [
+    {
+      "id": "G19",
+      "dataset": "nile",
+      "a": "shrink",
+      "b": "fixed",
+      "claim": "Covariance-shrinkage combination beats fixed development-selected competent expert",
+      "falsifier": "mean delta>=0 or 95% bootstrap interval crosses 0"
+    },
+    {
+      "id": "G20",
+      "dataset": "sunspots",
+      "a": "shrink",
+      "b": "fixed",
+      "claim": "Covariance-shrinkage combination beats fixed development-selected competent expert",
+      "falsifier": "mean delta>=0 or 95% bootstrap interval crosses 0"
+    },
+    {
+      "id": "G21",
+      "dataset": "co2",
+      "a": "shrink",
+      "b": "fixed",
+      "claim": "Covariance-shrinkage combination beats fixed development-selected competent expert",
+      "falsifier": "mean delta>=0 or 95% bootstrap interval crosses 0"
+    },
+    {
+      "id": "G22",
+      "dataset": "elnino",
+      "a": "shrink",
+      "b": "fixed",
+      "claim": "Covariance-shrinkage combination beats fixed development-selected competent expert",
+      "falsifier": "mean delta>=0 or 95% bootstrap interval crosses 0"
+    },
+    {
+      "id": "G23",
+      "dataset": "unemployment",
+      "a": "shrink",
+      "b": "fixed",
+      "claim": "Covariance-shrinkage combination beats fixed development-selected competent expert",
+      "falsifier": "mean delta>=0 or 95% bootstrap interval crosses 0"
+    },
+    {
+      "id": "G24",
+      "dataset": "inflation",
+      "a": "shrink",
+      "b": "fixed",
+      "claim": "Covariance-shrinkage combination beats fixed development-selected competent expert",
+      "falsifier": "mean delta>=0 or 95% bootstrap interval crosses 0"
+    }
+  ]
+}
