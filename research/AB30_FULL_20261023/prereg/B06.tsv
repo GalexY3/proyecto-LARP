@@ -1,0 +1,6 @@
+id	dataset	a	b	proxy	proxy_a	proxy_b	shift	endpoint	claim
+C26	digits	strat_prop	srs	raw	raw	raw	none	mse	Prospective within-source reproduction: proportional risk stratification improves SRS (C02) in new development splits.
+C27	wine	pps_aipw_0.95	pps_aipw_0.3	raw	raw	raw	none	mse	Prospective within-source reproduction: aggressive PPS allocation improves augmented estimates (C09) on new splits.
+C28	wine	pps_aipw_0.7	srs	raw	cal	raw	flip_confident	mse	Prospective within-source reproduction: calibrated augmented estimation worsens relative to SRS under confident-label drift (C12).
+C29	digits	pps_ht_0.95	pps_naive_0.95	raw	raw	raw	none	mse	Prospective within-source reproduction: HT fixes bias from purposive uncertainty acquisitions relative to naive mean (C21).
+C30	digits	pps_ht_0.95	pps_hajek_0.95	raw	raw	raw	none	mse	Prospective within-source reproduction: HT improves over Hajek ratio in aggressive PPS (C24).
