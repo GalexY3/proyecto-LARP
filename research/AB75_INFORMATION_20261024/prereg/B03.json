@@ -1,0 +1,99 @@
+{
+  "block": "B03",
+  "status": "PREREG_BEFORE_ALL_B03_B05_OUTCOMES",
+  "engine_sha256": "e20d7220103548b03aca7cc04eb42ea8c953453360574ec7e6e61a9dd3c969da",
+  "E_budget": 30,
+  "G_budget": 48,
+  "E_draws": 650,
+  "G_draws": 750,
+  "specs": [
+    {
+      "id": "C13",
+      "source": "engel",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C14",
+      "source": "fair",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C15",
+      "source": "anes96",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C16",
+      "source": "randhie",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C17",
+      "source": "grunfeld",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C18",
+      "source": "macrodata",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht"
+      },
+      "primary": "delta_MSE_lt_0"
+    }
+  ],
+  "H1": "Pilot-variance adaptive allocation reduces finite-pop MSE versus known-size proportional second stage at equal paid labels.",
+  "H0": "MSE(A)-MSE(B)>=0",
+  "rivals": [
+    "Pilot instability and source-specific x/y dependence",
+    "Known multistage optimal sampling literature",
+    "A strong comparator may dominate a seemingly useful within-family gain"
+  ],
+  "F": "check exact budget, purchased pilot use, no outcome leakage, MC CI not external",
+  "G": "larger budget/new RNG same finite source, NOT independent replication",
+  "AB": "A finite-pop target; B H1/H0/rivals; C frozen design; D RNG, positivity, variance formula; E report all raw draws; F strong comparators; G independent MC draws not new data; H prior ledger; I CT2/N1/novelty grade; J continue even when unfavorable and authorize conditional 45 if none 2/3"
+}
