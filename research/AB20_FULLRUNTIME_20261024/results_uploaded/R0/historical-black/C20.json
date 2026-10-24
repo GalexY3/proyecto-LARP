@@ -1,0 +1,254 @@
+{
+  "cycle_id": "C20",
+  "project": "black",
+  "bug_id": 4,
+  "repo": "https://github.com/psf/black",
+  "expected_buggy": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+  "expected_fixed": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+  "documented_python": "3.8.3",
+  "actual_python": "3.8.18",
+  "case_source": "BugsInPy bug.info",
+  "test_file": "tests/test_black.py;tests/data/beginning_backslash.py",
+  "status": "ATTEMPTED_FULL_CHECKOUT",
+  "versions": {
+    "buggy": {
+      "sha_requested": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.035,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\nHEAD is now at 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "65ea568e3301951f26e0e3b98f6d5dc80132e917"
+        ]
+      },
+      "sha_actual": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 2.583,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/black"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 1,
+        "seconds": 11.03,
+        "stdout": "....sssssssssss......................................................... [ 70%]\n.................F\n=================================== FAILURES ===================================\n________________________ BlackTestCase.test_shhh_click _________________________\n\nself = <test_black.BlackTestCase testMethod=test_shhh_click>\n\n    def test_shhh_click(self) -> None:\n        try:\n>           from click import _unicodefun  # type: ignore\nE           ImportError: cannot import name '_unicodefun' from 'click' (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/click/__init__.py)\n\ntests/test_black.py:1491: ImportError\n=========================== short test summary info ============================\nFAILED tests/test_black.py::BlackTestCase::test_shhh_click - ImportError: can...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 78 passed, 11 skipped in 10.82s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "tests/test_black.py",
+          "--disable-warnings"
+        ]
+      }
+    },
+    "fixed": {
+      "sha_requested": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.012,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\nHEAD is now at c7495b9a Fix unstable format involving backslash + whitespace at beginning of file (#948)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c7495b9aa098ef7a358fc74556359d21c6a4ba11"
+        ]
+      },
+      "sha_actual": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 2.592,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/black"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 1,
+        "seconds": 11.065,
+        "stdout": ".....sssssssssss........................................................ [ 69%]\n..................F\n=================================== FAILURES ===================================\n________________________ BlackTestCase.test_shhh_click _________________________\n\nself = <test_black.BlackTestCase testMethod=test_shhh_click>\n\n    def test_shhh_click(self) -> None:\n        try:\n>           from click import _unicodefun  # type: ignore\nE           ImportError: cannot import name '_unicodefun' from 'click' (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/click/__init__.py)\n\ntests/test_black.py:1499: ImportError\n=========================== short test summary info ============================\nFAILED tests/test_black.py::BlackTestCase::test_shhh_click - ImportError: can...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 79 passed, 11 skipped in 10.86s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "tests/test_black.py",
+          "--disable-warnings"
+        ]
+      }
+    }
+  },
+  "retrospective_fix_exposure": true,
+  "AB": {
+    "A": "Whole historical package and test-file buggy/fixed parity",
+    "B": "Repair should address a failing test; H0 no separable status; rival missing deps",
+    "C": "Identical test selection and instrument in both upstream revisions",
+    "D": "Workflow Python version approximation, git checkout and editable install",
+    "F": "Known patch and developer's test file; unblinded, selected bugs",
+    "G": "No external independent confirmation; same runner two revisions",
+    "H": "Metadata and patch-level execution cannot establish historical full-package parity",
+    "I": {
+      "grade": 0,
+      "CT2_before": 8,
+      "CT2_after": 8
+    },
+    "J": "Stop or repair instrumentation based on observed errors",
+    "E": {
+      "buggy": {
+        "sha_requested": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.035,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\nHEAD is now at 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "65ea568e3301951f26e0e3b98f6d5dc80132e917"
+          ]
+        },
+        "sha_actual": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 2.583,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/black"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 1,
+          "seconds": 11.03,
+          "stdout": "....sssssssssss......................................................... [ 70%]\n.................F\n=================================== FAILURES ===================================\n________________________ BlackTestCase.test_shhh_click _________________________\n\nself = <test_black.BlackTestCase testMethod=test_shhh_click>\n\n    def test_shhh_click(self) -> None:\n        try:\n>           from click import _unicodefun  # type: ignore\nE           ImportError: cannot import name '_unicodefun' from 'click' (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/click/__init__.py)\n\ntests/test_black.py:1491: ImportError\n=========================== short test summary info ============================\nFAILED tests/test_black.py::BlackTestCase::test_shhh_click - ImportError: can...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 78 passed, 11 skipped in 10.82s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "tests/test_black.py",
+            "--disable-warnings"
+          ]
+        }
+      },
+      "fixed": {
+        "sha_requested": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.012,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\nHEAD is now at c7495b9a Fix unstable format involving backslash + whitespace at beginning of file (#948)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "c7495b9aa098ef7a358fc74556359d21c6a4ba11"
+          ]
+        },
+        "sha_actual": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 2.592,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/black"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 1,
+          "seconds": 11.065,
+          "stdout": ".....sssssssssss........................................................ [ 69%]\n..................F\n=================================== FAILURES ===================================\n________________________ BlackTestCase.test_shhh_click _________________________\n\nself = <test_black.BlackTestCase testMethod=test_shhh_click>\n\n    def test_shhh_click(self) -> None:\n        try:\n>           from click import _unicodefun  # type: ignore\nE           ImportError: cannot import name '_unicodefun' from 'click' (/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/click/__init__.py)\n\ntests/test_black.py:1499: ImportError\n=========================== short test summary info ============================\nFAILED tests/test_black.py::BlackTestCase::test_shhh_click - ImportError: can...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 79 passed, 11 skipped in 10.86s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "tests/test_black.py",
+            "--disable-warnings"
+          ]
+        }
+      }
+    }
+  },
+  "result": "TEST_RUN_INCONCLUSIVE"
+}

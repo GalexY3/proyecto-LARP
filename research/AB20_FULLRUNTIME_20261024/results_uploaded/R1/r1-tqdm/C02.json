@@ -1,0 +1,295 @@
+{
+  "cycle_id": "C02",
+  "id": 2,
+  "project": "tqdm",
+  "buggy_sha": "bef86db56654d271838b145ad77f7040a73a7b4d",
+  "fixed_sha": "127af5caf19e7d29c346f5ca8a9c7ef3004b664b",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "bef86db56654d271838b145ad77f7040a73a7b4d",
+      "test_script_sha256": "a34275c58852ddc675261386198e461aa6975706195d0a9647aecbc70c660998",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "bef86db56654d271838b145ad77f7040a73a7b4d"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 127af5c fix most tests and logic\nHEAD is now at bef86db tidy wip\n"
+      },
+      "sha_actual": "bef86db56654d271838b145ad77f7040a73a7b4d",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "d2b488b92e200f692017f01f7217dd0b373ce0256e4a870a836e18bd3d67531e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.58,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.326,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_format_meter"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py F                                               [100%]\n\n=================================== FAILURES ===================================\n______________________________ test_format_meter _______________________________\n\n    def test_format_meter():\n        \"\"\"Test statistics and progress bar formatting\"\"\"\n        try:\n            unich = unichr\n        except NameError:\n            unich = chr\n    \n        format_meter = tqdm.format_meter\n    \n>       assert format_meter(0, 1000, 13) == \\\n            \"  0%|          | 0/1000 [00:13<?, ?it/s]\"\nE       AssertionError: assert None == '  0%|          | 0/1000 [00:13<?, ?it/s]'\nE        +  where None = <function tqdm.format_meter at 0x7efe5526ae18>(0, 1000, 13)\n\ntqdm/tests/tests_tqdm.py:259: AssertionError\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n=========================== short test summary info ============================\nFAILED tqdm/tests/tests_tqdm.py::test_format_meter - AssertionError: assert N...\n========================= 1 failed, 1 warning in 0.15s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_format_meter",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "127af5caf19e7d29c346f5ca8a9c7ef3004b664b",
+      "test_script_sha256": "a34275c58852ddc675261386198e461aa6975706195d0a9647aecbc70c660998",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "127af5caf19e7d29c346f5ca8a9c7ef3004b664b"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was bef86db tidy wip\nHEAD is now at 127af5c fix most tests and logic\n"
+      },
+      "sha_actual": "127af5caf19e7d29c346f5ca8a9c7ef3004b664b",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "d2b488b92e200f692017f01f7217dd0b373ce0256e4a870a836e18bd3d67531e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.576,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.296,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_format_meter"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py .                                               [100%]\n\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n========================= 1 passed, 1 warning in 0.11s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_format_meter",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "a34275c58852ddc675261386198e461aa6975706195d0a9647aecbc70c660998",
+  "official_commands": [
+    {
+      "source": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_format_meter",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tqdm/tests/tests_tqdm.py::test_format_meter"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tqdm/tests/tests_tqdm.py": "d2b488b92e200f692017f01f7217dd0b373ce0256e4a870a836e18bd3d67531e"
+  },
+  "result": "CANDIDATE_REPRODUCED_AUDIT_TRACE_REQUIRED",
+  "E": {
+    "buggy": {
+      "sha_expected": "bef86db56654d271838b145ad77f7040a73a7b4d",
+      "test_script_sha256": "a34275c58852ddc675261386198e461aa6975706195d0a9647aecbc70c660998",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "bef86db56654d271838b145ad77f7040a73a7b4d"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 127af5c fix most tests and logic\nHEAD is now at bef86db tidy wip\n"
+      },
+      "sha_actual": "bef86db56654d271838b145ad77f7040a73a7b4d",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "d2b488b92e200f692017f01f7217dd0b373ce0256e4a870a836e18bd3d67531e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.58,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.326,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_format_meter"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py F                                               [100%]\n\n=================================== FAILURES ===================================\n______________________________ test_format_meter _______________________________\n\n    def test_format_meter():\n        \"\"\"Test statistics and progress bar formatting\"\"\"\n        try:\n            unich = unichr\n        except NameError:\n            unich = chr\n    \n        format_meter = tqdm.format_meter\n    \n>       assert format_meter(0, 1000, 13) == \\\n            \"  0%|          | 0/1000 [00:13<?, ?it/s]\"\nE       AssertionError: assert None == '  0%|          | 0/1000 [00:13<?, ?it/s]'\nE        +  where None = <function tqdm.format_meter at 0x7efe5526ae18>(0, 1000, 13)\n\ntqdm/tests/tests_tqdm.py:259: AssertionError\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n=========================== short test summary info ============================\nFAILED tqdm/tests/tests_tqdm.py::test_format_meter - AssertionError: assert N...\n========================= 1 failed, 1 warning in 0.15s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_format_meter",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "127af5caf19e7d29c346f5ca8a9c7ef3004b664b",
+      "test_script_sha256": "a34275c58852ddc675261386198e461aa6975706195d0a9647aecbc70c660998",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "127af5caf19e7d29c346f5ca8a9c7ef3004b664b"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was bef86db tidy wip\nHEAD is now at 127af5c fix most tests and logic\n"
+      },
+      "sha_actual": "127af5caf19e7d29c346f5ca8a9c7ef3004b664b",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "d2b488b92e200f692017f01f7217dd0b373ce0256e4a870a836e18bd3d67531e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.576,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.296,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_format_meter"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py .                                               [100%]\n\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n========================= 1 passed, 1 warning in 0.11s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_format_meter",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

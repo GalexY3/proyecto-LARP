@@ -1,0 +1,300 @@
+{
+  "cycle_id": "C16",
+  "id": 4,
+  "project": "youtube-dl",
+  "buggy_sha": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+  "fixed_sha": "189935f15960300d316e8b07108b076ac6c2186a",
+  "documented_python": "3.7.0",
+  "actual_python": "3.7.17",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+      "test_script_sha256": "279d8fad881da2f7f386efcb07693cdc15d2b89a16adfaba9fa94c5af36d0004",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.059,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 189935f15 [jsinterp] Fix function calls without arguments.\nHEAD is now at bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\n"
+      },
+      "sha_actual": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "test/test_jsinterp.py": "a97675db14151af73ff69f4fb477aebdc95e29ed93619dc24feaac41e6a05f90"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.64,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": ""
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.393,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "unittest",
+            "-q",
+            "test.test_jsinterp.TestJSInterpreter.test_call"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "======================================================================\nERROR: test_call (test.test_jsinterp.TestJSInterpreter)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/test/test_jsinterp.py\", line 113, in test_call\n    self.assertEqual(jsi.call_function('z'), 5)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 248, in call_function\n    return f(args)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 254, in resf\n    res, abort = self.interpret_statement(stmt, local_vars)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 55, in interpret_statement\n    v = self.interpret_expression(expr, local_vars, allow_recursion)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 209, in interpret_expression\n    return self._functions[fname](argvals)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 254, in resf\n    res, abort = self.interpret_statement(stmt, local_vars)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 55, in interpret_statement\n    v = self.interpret_expression(expr, local_vars, allow_recursion)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 189, in interpret_expression\n    m.group('x'), local_vars, allow_recursion - 1)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 55, in interpret_statement\n    v = self.interpret_expression(expr, local_vars, allow_recursion)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 211, in interpret_expression\n    raise ExtractorError('Unsupported JS expression %r' % expr)\nyoutube_dl.utils.ExtractorError: Unsupported JS expression 'x()'; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nFAILED (errors=1)\n",
+          "source_command": "python -m unittest -q test.test_jsinterp.TestJSInterpreter.test_call",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "189935f15960300d316e8b07108b076ac6c2186a",
+      "test_script_sha256": "279d8fad881da2f7f386efcb07693cdc15d2b89a16adfaba9fa94c5af36d0004",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.053,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "189935f15960300d316e8b07108b076ac6c2186a"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\nHEAD is now at 189935f15 [jsinterp] Fix function calls without arguments.\n"
+      },
+      "sha_actual": "189935f15960300d316e8b07108b076ac6c2186a",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "test/test_jsinterp.py": "a97675db14151af73ff69f4fb477aebdc95e29ed93619dc24feaac41e6a05f90"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.719,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": ""
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.374,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "unittest",
+            "-q",
+            "test.test_jsinterp.TestJSInterpreter.test_call"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n",
+          "source_command": "python -m unittest -q test.test_jsinterp.TestJSInterpreter.test_call",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "279d8fad881da2f7f386efcb07693cdc15d2b89a16adfaba9fa94c5af36d0004",
+  "official_commands": [
+    {
+      "source": "python -m unittest -q test.test_jsinterp.TestJSInterpreter.test_call",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "test.test_jsinterp.TestJSInterpreter.test_call"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "test/test_jsinterp.py": "a97675db14151af73ff69f4fb477aebdc95e29ed93619dc24feaac41e6a05f90"
+  },
+  "result": "INCONCLUSIVE_ERRORS_OR_FIXED_FAILURE",
+  "E": {
+    "buggy": {
+      "sha_expected": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+      "test_script_sha256": "279d8fad881da2f7f386efcb07693cdc15d2b89a16adfaba9fa94c5af36d0004",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.059,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 189935f15 [jsinterp] Fix function calls without arguments.\nHEAD is now at bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\n"
+      },
+      "sha_actual": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "test/test_jsinterp.py": "a97675db14151af73ff69f4fb477aebdc95e29ed93619dc24feaac41e6a05f90"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.64,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": ""
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.393,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "unittest",
+            "-q",
+            "test.test_jsinterp.TestJSInterpreter.test_call"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "======================================================================\nERROR: test_call (test.test_jsinterp.TestJSInterpreter)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/test/test_jsinterp.py\", line 113, in test_call\n    self.assertEqual(jsi.call_function('z'), 5)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 248, in call_function\n    return f(args)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 254, in resf\n    res, abort = self.interpret_statement(stmt, local_vars)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 55, in interpret_statement\n    v = self.interpret_expression(expr, local_vars, allow_recursion)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 209, in interpret_expression\n    return self._functions[fname](argvals)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 254, in resf\n    res, abort = self.interpret_statement(stmt, local_vars)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 55, in interpret_statement\n    v = self.interpret_expression(expr, local_vars, allow_recursion)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 189, in interpret_expression\n    m.group('x'), local_vars, allow_recursion - 1)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 55, in interpret_statement\n    v = self.interpret_expression(expr, local_vars, allow_recursion)\n  File \"/tmp/larp_historical_r2/upstream_youtube-dl/youtube_dl/jsinterp.py\", line 211, in interpret_expression\n    raise ExtractorError('Unsupported JS expression %r' % expr)\nyoutube_dl.utils.ExtractorError: Unsupported JS expression 'x()'; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nFAILED (errors=1)\n",
+          "source_command": "python -m unittest -q test.test_jsinterp.TestJSInterpreter.test_call",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "189935f15960300d316e8b07108b076ac6c2186a",
+      "test_script_sha256": "279d8fad881da2f7f386efcb07693cdc15d2b89a16adfaba9fa94c5af36d0004",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.053,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "189935f15960300d316e8b07108b076ac6c2186a"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\nHEAD is now at 189935f15 [jsinterp] Fix function calls without arguments.\n"
+      },
+      "sha_actual": "189935f15960300d316e8b07108b076ac6c2186a",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "test/test_jsinterp.py": "a97675db14151af73ff69f4fb477aebdc95e29ed93619dc24feaac41e6a05f90"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.719,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": ""
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.374,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "unittest",
+            "-q",
+            "test.test_jsinterp.TestJSInterpreter.test_call"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n",
+          "source_command": "python -m unittest -q test.test_jsinterp.TestJSInterpreter.test_call",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "cycle_id": "C17",
+  "project": "black",
+  "bug_id": 1,
+  "repo": "https://github.com/psf/black",
+  "expected_buggy": "26c9465a22c732ab1e17b0dec578fa3432e9b558",
+  "expected_fixed": "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7",
+  "documented_python": "3.8.3",
+  "actual_python": "3.8.18",
+  "case_source": "BugsInPy bug.info",
+  "test_file": "tests/test_black.py",
+  "status": "ATTEMPTED_FULL_CHECKOUT",
+  "versions": {
+    "buggy": {
+      "sha_requested": "26c9465a22c732ab1e17b0dec578fa3432e9b558",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.03,
+        "stdout": "",
+        "stderr": "HEAD is now at 26c9465a Add Change Log project URL (#1382)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "26c9465a22c732ab1e17b0dec578fa3432e9b558"
+        ]
+      },
+      "sha_actual": "26c9465a22c732ab1e17b0dec578fa3432e9b558",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 5.453,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/black"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 2,
+        "seconds": 0.56,
+        "stdout": "\n==================================== ERRORS ====================================\n_____________________ ERROR collecting tests/test_black.py _____________________\ntests/test_black.py:1742: in <module>\n    class BlackDTestCase(AioHTTPTestCase):\nE   NameError: name 'AioHTTPTestCase' is not defined\n=========================== short test summary info ============================\nERROR tests/test_black.py - NameError: name 'AioHTTPTestCase' is not defined\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.36s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "tests/test_black.py",
+          "--disable-warnings"
+        ]
+      }
+    },
+    "fixed": {
+      "sha_requested": "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.011,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 26c9465a Add Change Log project URL (#1382)\nHEAD is now at c0a7582e permits black to run in AWS Lambda: (#1141)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7"
+        ]
+      },
+      "sha_actual": "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 3.361,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/black"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 2,
+        "seconds": 0.434,
+        "stdout": "\n==================================== ERRORS ====================================\n_____________________ ERROR collecting tests/test_black.py _____________________\ntests/test_black.py:1763: in <module>\n    class BlackDTestCase(AioHTTPTestCase):\nE   NameError: name 'AioHTTPTestCase' is not defined\n=========================== short test summary info ============================\nERROR tests/test_black.py - NameError: name 'AioHTTPTestCase' is not defined\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.26s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "tests/test_black.py",
+          "--disable-warnings"
+        ]
+      }
+    }
+  },
+  "retrospective_fix_exposure": true,
+  "AB": {
+    "A": "Whole historical package and test-file buggy/fixed parity",
+    "B": "Repair should address a failing test; H0 no separable status; rival missing deps",
+    "C": "Identical test selection and instrument in both upstream revisions",
+    "D": "Workflow Python version approximation, git checkout and editable install",
+    "F": "Known patch and developer's test file; unblinded, selected bugs",
+    "G": "No external independent confirmation; same runner two revisions",
+    "H": "Metadata and patch-level execution cannot establish historical full-package parity",
+    "I": {
+      "grade": 0,
+      "CT2_before": 8,
+      "CT2_after": 8
+    },
+    "J": "Stop or repair instrumentation based on observed errors",
+    "E": {
+      "buggy": {
+        "sha_requested": "26c9465a22c732ab1e17b0dec578fa3432e9b558",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.03,
+          "stdout": "",
+          "stderr": "HEAD is now at 26c9465a Add Change Log project URL (#1382)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "26c9465a22c732ab1e17b0dec578fa3432e9b558"
+          ]
+        },
+        "sha_actual": "26c9465a22c732ab1e17b0dec578fa3432e9b558",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 5.453,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/black"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 2,
+          "seconds": 0.56,
+          "stdout": "\n==================================== ERRORS ====================================\n_____________________ ERROR collecting tests/test_black.py _____________________\ntests/test_black.py:1742: in <module>\n    class BlackDTestCase(AioHTTPTestCase):\nE   NameError: name 'AioHTTPTestCase' is not defined\n=========================== short test summary info ============================\nERROR tests/test_black.py - NameError: name 'AioHTTPTestCase' is not defined\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.36s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "tests/test_black.py",
+            "--disable-warnings"
+          ]
+        }
+      },
+      "fixed": {
+        "sha_requested": "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.011,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 26c9465a Add Change Log project URL (#1382)\nHEAD is now at c0a7582e permits black to run in AWS Lambda: (#1141)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7"
+          ]
+        },
+        "sha_actual": "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 3.361,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/black"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 2,
+          "seconds": 0.434,
+          "stdout": "\n==================================== ERRORS ====================================\n_____________________ ERROR collecting tests/test_black.py _____________________\ntests/test_black.py:1763: in <module>\n    class BlackDTestCase(AioHTTPTestCase):\nE   NameError: name 'AioHTTPTestCase' is not defined\n=========================== short test summary info ============================\nERROR tests/test_black.py - NameError: name 'AioHTTPTestCase' is not defined\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.26s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "tests/test_black.py",
+            "--disable-warnings"
+          ]
+        }
+      }
+    }
+  },
+  "result": "TEST_RUN_INCONCLUSIVE"
+}

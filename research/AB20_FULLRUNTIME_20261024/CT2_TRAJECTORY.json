@@ -1,0 +1,148 @@
+{
+  "metric": "CT2_O4_ordinal_1_100_NOT_PROBABILITY",
+  "date": "2026-10-24",
+  "status": "AUDITED_FINAL_AFTER_R2",
+  "discontinuities": [
+    {
+      "x": 55,
+      "event": "AB55→P04, D3.7"
+    },
+    {
+      "x": 85,
+      "event": "P04→AB20 patches, D2.4"
+    },
+    {
+      "x": 105,
+      "event": "AB20 patches→AB20 full runtime, new estimand within testing domain"
+    }
+  ],
+  "tracks": [
+    {
+      "branch": "AB55_BUGSINPY",
+      "source": "AB55 archived O6 ledger",
+      "points": [
+        {
+          "x": 0,
+          "score": 11
+        },
+        {
+          "x": 20,
+          "score": 9
+        },
+        {
+          "x": 22,
+          "score": 10
+        },
+        {
+          "x": 25,
+          "score": 11
+        },
+        {
+          "x": 31,
+          "score": 11
+        },
+        {
+          "x": 37,
+          "score": 9
+        },
+        {
+          "x": 43,
+          "score": 9
+        },
+        {
+          "x": 55,
+          "score": 8
+        }
+      ]
+    },
+    {
+      "branch": "AB30_P04_SYNTHETIC",
+      "source": "LARP PR#21",
+      "points": [
+        {
+          "x": 55,
+          "score": 12
+        },
+        {
+          "x": 61,
+          "score": 10
+        },
+        {
+          "x": 67,
+          "score": 10
+        },
+        {
+          "x": 73,
+          "score": 10
+        },
+        {
+          "x": 79,
+          "score": 10
+        },
+        {
+          "x": 85,
+          "score": 10
+        }
+      ]
+    },
+    {
+      "branch": "AB20_REALPATCH_HUNKS",
+      "source": "LARP PR#22",
+      "points": [
+        {
+          "x": 85,
+          "score": 8
+        },
+        {
+          "x": 89,
+          "score": 8
+        },
+        {
+          "x": 93,
+          "score": 8
+        },
+        {
+          "x": 97,
+          "score": 8
+        },
+        {
+          "x": 101,
+          "score": 8
+        },
+        {
+          "x": 105,
+          "score": 8
+        }
+      ]
+    },
+    {
+      "branch": "AB20_REAL_FULL_RUNTIME",
+      "source": "LARP AB20 Full Runtime R2, automatic and manual adverse audit",
+      "points": [
+        {
+          "x": 105,
+          "score": 8,
+          "record": "PREREG_BEGINS",
+          "explanation": "Baseline from prior instance"
+        },
+        {
+          "x": 125,
+          "score": 11,
+          "record": "FINAL_AUDIT",
+          "explanation": "14/20 benchmark fixes reproduced in full upstream source with approximate environment; controlled comparisons remain unexecuted, no novelty"
+        }
+      ]
+    }
+  ],
+  "science": {
+    "n1_new": 0,
+    "n1_previously_audited": 6,
+    "n2": 0,
+    "n3": 0
+  },
+  "notes": [
+    "Scores belong to specific scientific lines, no continuous probability across pivots",
+    "No CT2 points invented at individual R0/R1 checkpoints; final assessment is ordinal and retrospective",
+    "13/14 automated candidates checked after classifying C09 invalid and C16 valid; 14 total confirmed"
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "cycle_id": "C08",
+  "id": 3,
+  "project": "PySnooper",
+  "buggy_sha": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+  "fixed_sha": "15555ed760000b049aff8fecc79d29339c1224c3",
+  "documented_python": "3.8.1",
+  "actual_python": "3.8.18",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 15555ed Fix #2\nHEAD is now at 6e3d797 Remove tests package, add docstsring\n"
+      },
+      "sha_actual": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.12,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.6 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.278,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_pysnooper.py::test_file_output"
+          ],
+          "stdout_tail": "F\n=================================== FAILURES ===================================\n_______________________________ test_file_output _______________________________\n\n    def test_file_output():\n    \n        with temp_file_tools.create_temp_folder(prefix='pysnooper') as folder:\n            path = folder / 'foo.log'\n            @pysnooper.snoop(str(path))\n            def my_function(foo):\n                x = 7\n                y = 8\n                return y + x\n>           result = my_function('baba')\n\ntests/test_pysnooper.py:183: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/decorator/__init__.py:247: in fun\n    return caller(func, *(extras + args), **kw)\npysnooper/pysnooper.py:72: in decorate\n    return function(*args, **kwargs)\ntests/test_pysnooper.py:178: in my_function\n    @pysnooper.snoop(str(path))\npysnooper/tracer.py:173: in trace\n    self.write('{indent}{newish_string}{name} = {value_repr}'.format(\npysnooper/tracer.py:114: in write\n    self._write(s)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = \"Starting var:.. foo = 'baba'\\n\"\n\n    def write(s):\n>       with open(output_path, 'a') as output_file:\nE       NameError: name 'output_path' is not defined\n\npysnooper/pysnooper.py:26: NameError\n=========================== short test summary info ============================\nFAILED tests/test_pysnooper.py::test_file_output - NameError: name 'output_pa...\n1 failed in 0.05s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_pysnooper.py::test_file_output",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.005,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "15555ed760000b049aff8fecc79d29339c1224c3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 6e3d797 Remove tests package, add docstsring\nHEAD is now at 15555ed Fix #2\n"
+      },
+      "sha_actual": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.787,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.6 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.244,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_pysnooper.py::test_file_output"
+          ],
+          "stdout_tail": ".\n1 passed in 0.02s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_pysnooper.py::test_file_output",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+  "official_commands": [
+    {
+      "source": "pytest -q -s tests/test_pysnooper.py::test_file_output",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-s",
+        "tests/test_pysnooper.py::test_file_output"
+      ],
+      "adaptation": "pytest executable -> python -m pytest"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+  },
+  "result": "CANDIDATE_REPRODUCED_AUDIT_TRACE_REQUIRED",
+  "E": {
+    "buggy": {
+      "sha_expected": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 15555ed Fix #2\nHEAD is now at 6e3d797 Remove tests package, add docstsring\n"
+      },
+      "sha_actual": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.12,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.6 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.278,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_pysnooper.py::test_file_output"
+          ],
+          "stdout_tail": "F\n=================================== FAILURES ===================================\n_______________________________ test_file_output _______________________________\n\n    def test_file_output():\n    \n        with temp_file_tools.create_temp_folder(prefix='pysnooper') as folder:\n            path = folder / 'foo.log'\n            @pysnooper.snoop(str(path))\n            def my_function(foo):\n                x = 7\n                y = 8\n                return y + x\n>           result = my_function('baba')\n\ntests/test_pysnooper.py:183: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/decorator/__init__.py:247: in fun\n    return caller(func, *(extras + args), **kw)\npysnooper/pysnooper.py:72: in decorate\n    return function(*args, **kwargs)\ntests/test_pysnooper.py:178: in my_function\n    @pysnooper.snoop(str(path))\npysnooper/tracer.py:173: in trace\n    self.write('{indent}{newish_string}{name} = {value_repr}'.format(\npysnooper/tracer.py:114: in write\n    self._write(s)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = \"Starting var:.. foo = 'baba'\\n\"\n\n    def write(s):\n>       with open(output_path, 'a') as output_file:\nE       NameError: name 'output_path' is not defined\n\npysnooper/pysnooper.py:26: NameError\n=========================== short test summary info ============================\nFAILED tests/test_pysnooper.py::test_file_output - NameError: name 'output_pa...\n1 failed in 0.05s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_pysnooper.py::test_file_output",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.005,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "15555ed760000b049aff8fecc79d29339c1224c3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 6e3d797 Remove tests package, add docstsring\nHEAD is now at 15555ed Fix #2\n"
+      },
+      "sha_actual": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.787,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.6 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.244,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_pysnooper.py::test_file_output"
+          ],
+          "stdout_tail": ".\n1 passed in 0.02s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_pysnooper.py::test_file_output",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "cycle_id": "C20",
+  "id": 4,
+  "project": "black",
+  "buggy_sha": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+  "fixed_sha": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+  "documented_python": "3.8.3",
+  "actual_python": "3.8.18",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+      "test_script_sha256": "2e1dd0725ca9e6b35a4bee6b3af6daf79b2509c1ff33e1ec74ef21380fd4e110",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.03,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "65ea568e3301951f26e0e3b98f6d5dc80132e917"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was c7495b9a Fix unstable format involving backslash + whitespace at beginning of file (#948)\nHEAD is now at 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\n"
+      },
+      "sha_actual": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "156be8f87263e7378daa2d5533334e1d9ff1a4ab291b82ecd3e3c3f3039538f2",
+        "tests/data/beginning_backslash.py": "cccd4c67d6584721723ebe59c7532dca56ced95511e2b6aebfcdf3123e25cded"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.78,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info\n      writing /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      warning: no files found matching '*.rst'\n      warning: no files found matching '*.txt' under directory 'tests'\n      writing manifest file '/tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-fo6zjo4t/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+      "test_script_sha256": "2e1dd0725ca9e6b35a4bee6b3af6daf79b2509c1ff33e1ec74ef21380fd4e110",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c7495b9aa098ef7a358fc74556359d21c6a4ba11"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\nHEAD is now at c7495b9a Fix unstable format involving backslash + whitespace at beginning of file (#948)\n"
+      },
+      "sha_actual": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "156be8f87263e7378daa2d5533334e1d9ff1a4ab291b82ecd3e3c3f3039538f2",
+        "tests/data/beginning_backslash.py": "cccd4c67d6584721723ebe59c7532dca56ced95511e2b6aebfcdf3123e25cded"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.776,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-bz0ef89v/black.egg-info\n      writing /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-bz0ef89v/black.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-bz0ef89v/black.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      warning: no files found matching '*.rst'\n      warning: no files found matching '*.txt' under directory 'tests'\n      writing manifest file '/tmp/pip-modern-metadata-bz0ef89v/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-bz0ef89v/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "2e1dd0725ca9e6b35a4bee6b3af6daf79b2509c1ff33e1ec74ef21380fd4e110",
+  "official_commands": [
+    {
+      "source": "python -m unittest -q tests.test_black.BlackTestCase.test_beginning_backslash",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "tests.test_black.BlackTestCase.test_beginning_backslash"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_black.py": "156be8f87263e7378daa2d5533334e1d9ff1a4ab291b82ecd3e3c3f3039538f2",
+    "tests/data/beginning_backslash.py": "cccd4c67d6584721723ebe59c7532dca56ced95511e2b6aebfcdf3123e25cded"
+  },
+  "result": "INSTRUMENT_BLOCKED",
+  "E": {
+    "buggy": {
+      "sha_expected": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+      "test_script_sha256": "2e1dd0725ca9e6b35a4bee6b3af6daf79b2509c1ff33e1ec74ef21380fd4e110",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.03,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "65ea568e3301951f26e0e3b98f6d5dc80132e917"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was c7495b9a Fix unstable format involving backslash + whitespace at beginning of file (#948)\nHEAD is now at 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\n"
+      },
+      "sha_actual": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "156be8f87263e7378daa2d5533334e1d9ff1a4ab291b82ecd3e3c3f3039538f2",
+        "tests/data/beginning_backslash.py": "cccd4c67d6584721723ebe59c7532dca56ced95511e2b6aebfcdf3123e25cded"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.78,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info\n      writing /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      warning: no files found matching '*.rst'\n      warning: no files found matching '*.txt' under directory 'tests'\n      writing manifest file '/tmp/pip-modern-metadata-fo6zjo4t/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-fo6zjo4t/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+      "test_script_sha256": "2e1dd0725ca9e6b35a4bee6b3af6daf79b2509c1ff33e1ec74ef21380fd4e110",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c7495b9aa098ef7a358fc74556359d21c6a4ba11"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 65ea568e Remove unnecessary if-statement in maybe_make_parens_invisible_in_atom (#964)\nHEAD is now at c7495b9a Fix unstable format involving backslash + whitespace at beginning of file (#948)\n"
+      },
+      "sha_actual": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "156be8f87263e7378daa2d5533334e1d9ff1a4ab291b82ecd3e3c3f3039538f2",
+        "tests/data/beginning_backslash.py": "cccd4c67d6584721723ebe59c7532dca56ced95511e2b6aebfcdf3123e25cded"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.776,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-bz0ef89v/black.egg-info\n      writing /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-bz0ef89v/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-bz0ef89v/black.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-bz0ef89v/black.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      warning: no files found matching '*.rst'\n      warning: no files found matching '*.txt' under directory 'tests'\n      writing manifest file '/tmp/pip-modern-metadata-bz0ef89v/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-bz0ef89v/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  }
+}

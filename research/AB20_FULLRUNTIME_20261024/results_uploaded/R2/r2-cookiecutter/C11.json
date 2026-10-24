@@ -1,0 +1,295 @@
+{
+  "cycle_id": "C11",
+  "id": 3,
+  "project": "cookiecutter",
+  "buggy_sha": "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f",
+  "fixed_sha": "7129d474206761a6156925db78eee4b62a0e3944",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f",
+      "test_script_sha256": "e2d6b23928c772e858658ac76f40fdb0c374d469f56411bb1a5f5e039442fca4",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.017,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7129d47 Prevent click API v7.0 from showing choices when already shown\nHEAD is now at 5c282f0 Fix typos (#1197)\n"
+      },
+      "sha_actual": "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_read_user_choice.py": "1ac2dbe51f8c6db9ad140640df0707388a3d7dbd164a9c8385df2f591b82f4bc"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.756,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.98,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_read_user_choice.py::test_click_invocation"
+          ],
+          "stdout_tail": "agicMock name='prompt' id='139777946743752'>\nactual_args = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nactual_kwargs = {'default': '1', 'type': <MagicMock name='Choice()' id='139777947315560'>}\nintrospection = \"\\nKwargs:\\nassert {'default': '...77947315560'>} == {'default': '...77947315560'>}\\n  Omitting 2 identical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n@py_assert2 = None, @py_assert1 = False\n\n    def assert_wrapper(\n        __wrapped_mock_method__: Callable[..., Any], *args: Any, **kwargs: Any\n    ) -> None:\n        __tracebackhide__ = True\n        try:\n>           __wrapped_mock_method__(*args, **kwargs)\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:414: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n_mock_self = <MagicMock name='prompt' id='139777946743752'>\nargs = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\nexpected = (('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',), {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>})\n_error_message = <function NonCallableMock.assert_called_with.<locals>._error_message at 0x7f20970d1d90>\nactual = call('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\ncause = None\n\n    def assert_called_with(_mock_self, *args, **kwargs):\n        \"\"\"assert that the mock was called with the specified arguments.\n    \n        Raises an AssertionError if the args and keyword args passed in are\n        different to the last call to the mock.\"\"\"\n        self = _mock_self\n        if self.call_args is None:\n            expected = self._format_mock_call_signature(args, kwargs)\n            raise AssertionError('Expected call: %s\\nNot called' % (expected,))\n    \n        def _error_message():\n            msg = self._format_mock_failure_message(args, kwargs)\n            return msg\n        expected = self._call_matcher((args, kwargs))\n        actual = self._call_matcher(self.call_args)\n        if expected != actual:\n            cause = expected if isinstance(expected, Exception) else None\n>           raise AssertionError(_error_message()) from cause\nE           AssertionError: Expected call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', show_choices=False, type=<MagicMock name='Choice()' id='139777947315560'>)\nE           Actual call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\n\n/usr/local/lib/python3.6/unittest/mock.py:814: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\n__wrapped_mock_method__ = <function NonCallableMock.assert_called_once_with at 0x7f209768ba60>\nargs = (<MagicMock name='prompt' id='139777946743752'>, 'Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4')\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\n__tracebackhide__ = True\nmsg = \"Expected call: prompt('Select varname:\\\\n1 - hello\\\\n2 - world\\\\n3 - foo\\\\n4 - bar\\\\nChoose from 1, 2, 3, 4', default...ntical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n\n    def assert_wrapper(\n        __wrapped_mock_method__: Callable[..., Any], *args: Any, **kwargs: Any\n    ) -> None:\n        __tracebackhide__ = True\n        try:\n>           __wrapped_mock_method__(*args, **kwargs)\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:414: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n_mock_self = <MagicMock name='prompt' id='139777946743752'>\nargs = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\nself = <MagicMock name='prompt' id='139777946743752'>\n\n    def assert_called_once_with(_mock_self, *args, **kwargs):\n        \"\"\"assert that the mock was called exactly once and that that call was\n        with the specified arguments.\"\"\"\n        self = _mock_self\n        if not self.call_count == 1:\n            msg = (\"Expected '%s' to be called once. Called %s times.\" %\n                   (self._mock_name or 'mock', self.call_count))\n            raise AssertionError(msg)\n>       return self.assert_called_with(*args, **kwargs)\n\n/usr/local/lib/python3.6/unittest/mock.py:825: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nargs = (<MagicMock name='prompt' id='139777946743752'>, 'Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4')\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\n__tracebackhide__ = True\n\n    def wrap_assert_called_with(*args: Any, **kwargs: Any) -> None:\n        __tracebackhide__ = True\n>       assert_wrapper(_mock_module_originals[\"assert_called_with\"], *args, **kwargs)\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:447: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n__wrapped_mock_method__ = <function NonCallableMock.assert_called_with at 0x7f209768b9d8>\nargs = (<MagicMock name='prompt' id='139777946743752'>, 'Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4')\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\n__tracebackhide__ = True\nmsg = \"Expected call: prompt('Select varname:\\\\n1 - hello\\\\n2 - world\\\\n3 - foo\\\\n4 - bar\\\\nChoose from 1, 2, 3, 4', default...ntical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n__mock_self = <MagicMock name='prompt' id='139777946743752'>\nactual_args = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nactual_kwargs = {'default': '1', 'type': <MagicMock name='Choice()' id='139777947315560'>}\nintrospection = \"\\nKwargs:\\nassert {'default': '...77947315560'>} == {'default': '...77947315560'>}\\n  Omitting 2 identical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n@py_assert2 = None, @py_assert1 = False\n\n    def assert_wrapper(\n        __wrapped_mock_method__: Callable[..., Any], *args: Any, **kwargs: Any\n    ) -> None:\n        __tracebackhide__ = True\n        try:\n            __wrapped_mock_method__(*args, **kwargs)\n            return\n        except AssertionError as e:\n            if getattr(e, \"_mock_introspection_applied\", 0):\n                msg = str(e)\n            else:\n                __mock_self = args[0]\n                msg = str(e)\n                if __mock_self.call_args is not None:\n                    actual_args, actual_kwargs = __mock_self.call_args\n                    introspection = \"\"\n                    try:\n                        assert actual_args == args[1:]\n                    except AssertionError as e_args:\n                        introspection += \"\\nArgs:\\n\" + str(e_args)\n                    try:\n                        assert actual_kwargs == kwargs\n                    except AssertionError as e_kwargs:\n                        introspection += \"\\nKwargs:\\n\" + str(e_kwargs)\n                    if introspection:\n                        msg += \"\\n\\npytest introspection follows:\\n\" + introspection\n            e = AssertionError(msg)\n            e._mock_introspection_applied = True  # type:ignore[attr-defined]\n>           raise e\nE           AssertionError: Expected call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', show_choices=False, type=<MagicMock name='Choice()' id='139777947315560'>)\nE           Actual call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\nE           \nE           pytest introspection follows:\nE           \nE           Kwargs:\nE           assert {'default': '...77947315560'>} == {'default': '...77947315560'>}\nE             Omitting 2 identical items, use -vv to show\nE             Right contains 1 more item:\nE             {'show_choices': False}\nE             Use -v to get the full diff\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:437: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nmocker = <pytest_mock.plugin.MockerFixture object at 0x7f2096dbb940>\nuser_choice = 4, expected_value = 'bar'\n\n    @pytest.mark.parametrize('user_choice, expected_value', enumerate(OPTIONS, 1))\n    def test_click_invocation(mocker, user_choice, expected_value):\n        choice = mocker.patch('click.Choice')\n        choice.return_value = click.Choice(OPTIONS)\n    \n        prompt = mocker.patch('click.prompt')\n        prompt.return_value = '{}'.format(user_choice)\n    \n        assert read_user_choice('varname', OPTIONS) == expected_value\n    \n        prompt.assert_called_once_with(\n            EXPECTED_PROMPT,\n            type=click.Choice(OPTIONS),\n            default='1',\n>           show_choices=False\n        )\nE       AssertionError: Expected call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', show_choices=False, type=<MagicMock name='Choice()' id='139777947315560'>)\nE       Actual call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\nE       \nE       pytest introspection follows:\nE       \nE       Kwargs:\nE       assert {'default': '...77947315560'>} == {'default': '...77947315560'>}\nE         Omitting 2 identical items, use -vv to show\nE         Right contains 1 more item:\nE         {'show_choices': False}\nE         Use -v to get the full diff\n\ntests/test_read_user_choice.py:33: AssertionError\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover\n-------------------------------------------------\ncookiecutter/__init__.py          2      0   100%\ncookiecutter/__main__.py          3      3     0%\ncookiecutter/cli.py              50     50     0%\ncookiecutter/config.py           52     52     0%\ncookiecutter/environment.py      21     13    38%\ncookiecutter/exceptions.py       24      4    83%\ncookiecutter/extensions.py        9      9     0%\ncookiecutter/find.py             18     18     0%\ncookiecutter/generate.py        166    166     0%\ncookiecutter/hooks.py            61     61     0%\ncookiecutter/log.py              22     22     0%\ncookiecutter/main.py             31     31     0%\ncookiecutter/prompt.py           90     63    30%\ncookiecutter/replay.py           30     30     0%\ncookiecutter/repository.py       39     39     0%\ncookiecutter/utils.py            50     32    36%\ncookiecutter/vcs.py              54     54     0%\ncookiecutter/zipfile.py          61     61     0%\n-------------------------------------------------\nTOTAL                           783    708    10%\n\n=========================== short test summary info ============================\nFAILED tests/test_read_user_choice.py::test_click_invocation[1-hello] - Asser...\nFAILED tests/test_read_user_choice.py::test_click_invocation[2-world] - Asser...\nFAILED tests/test_read_user_choice.py::test_click_invocation[3-foo] - Asserti...\nFAILED tests/test_read_user_choice.py::test_click_invocation[4-bar] - Asserti...\n============================== 4 failed in 0.54s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_read_user_choice.py::test_click_invocation",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "7129d474206761a6156925db78eee4b62a0e3944",
+      "test_script_sha256": "e2d6b23928c772e858658ac76f40fdb0c374d469f56411bb1a5f5e039442fca4",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.013,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7129d474206761a6156925db78eee4b62a0e3944"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 5c282f0 Fix typos (#1197)\nHEAD is now at 7129d47 Prevent click API v7.0 from showing choices when already shown\n"
+      },
+      "sha_actual": "7129d474206761a6156925db78eee4b62a0e3944",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_read_user_choice.py": "1ac2dbe51f8c6db9ad140640df0707388a3d7dbd164a9c8385df2f591b82f4bc"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.278,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.532,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_read_user_choice.py::test_click_invocation"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollected 4 items\n\ntests/test_read_user_choice.py ....                                      [100%]\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover\n-------------------------------------------------\ncookiecutter/__init__.py          2      0   100%\ncookiecutter/__main__.py          3      3     0%\ncookiecutter/cli.py              50     50     0%\ncookiecutter/config.py           52     52     0%\ncookiecutter/environment.py      21     13    38%\ncookiecutter/exceptions.py       24      4    83%\ncookiecutter/extensions.py        9      9     0%\ncookiecutter/find.py             18     18     0%\ncookiecutter/generate.py        166    166     0%\ncookiecutter/hooks.py            61     61     0%\ncookiecutter/log.py              22     22     0%\ncookiecutter/main.py             31     31     0%\ncookiecutter/prompt.py           90     63    30%\ncookiecutter/replay.py           30     30     0%\ncookiecutter/repository.py       39     39     0%\ncookiecutter/utils.py            50     32    36%\ncookiecutter/vcs.py              54     54     0%\ncookiecutter/zipfile.py          61     61     0%\n-------------------------------------------------\nTOTAL                           783    708    10%\n\n\n============================== 4 passed in 0.09s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_read_user_choice.py::test_click_invocation",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "e2d6b23928c772e858658ac76f40fdb0c374d469f56411bb1a5f5e039442fca4",
+  "official_commands": [
+    {
+      "source": "tox tests/test_read_user_choice.py::test_click_invocation",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_read_user_choice.py::test_click_invocation"
+      ],
+      "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_read_user_choice.py": "1ac2dbe51f8c6db9ad140640df0707388a3d7dbd164a9c8385df2f591b82f4bc"
+  },
+  "result": "CANDIDATE_REPRODUCED_AUDIT_TRACE_REQUIRED",
+  "E": {
+    "buggy": {
+      "sha_expected": "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f",
+      "test_script_sha256": "e2d6b23928c772e858658ac76f40fdb0c374d469f56411bb1a5f5e039442fca4",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.017,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7129d47 Prevent click API v7.0 from showing choices when already shown\nHEAD is now at 5c282f0 Fix typos (#1197)\n"
+      },
+      "sha_actual": "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_read_user_choice.py": "1ac2dbe51f8c6db9ad140640df0707388a3d7dbd164a9c8385df2f591b82f4bc"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.756,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.98,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_read_user_choice.py::test_click_invocation"
+          ],
+          "stdout_tail": "agicMock name='prompt' id='139777946743752'>\nactual_args = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nactual_kwargs = {'default': '1', 'type': <MagicMock name='Choice()' id='139777947315560'>}\nintrospection = \"\\nKwargs:\\nassert {'default': '...77947315560'>} == {'default': '...77947315560'>}\\n  Omitting 2 identical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n@py_assert2 = None, @py_assert1 = False\n\n    def assert_wrapper(\n        __wrapped_mock_method__: Callable[..., Any], *args: Any, **kwargs: Any\n    ) -> None:\n        __tracebackhide__ = True\n        try:\n>           __wrapped_mock_method__(*args, **kwargs)\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:414: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n_mock_self = <MagicMock name='prompt' id='139777946743752'>\nargs = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\nexpected = (('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',), {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>})\n_error_message = <function NonCallableMock.assert_called_with.<locals>._error_message at 0x7f20970d1d90>\nactual = call('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\ncause = None\n\n    def assert_called_with(_mock_self, *args, **kwargs):\n        \"\"\"assert that the mock was called with the specified arguments.\n    \n        Raises an AssertionError if the args and keyword args passed in are\n        different to the last call to the mock.\"\"\"\n        self = _mock_self\n        if self.call_args is None:\n            expected = self._format_mock_call_signature(args, kwargs)\n            raise AssertionError('Expected call: %s\\nNot called' % (expected,))\n    \n        def _error_message():\n            msg = self._format_mock_failure_message(args, kwargs)\n            return msg\n        expected = self._call_matcher((args, kwargs))\n        actual = self._call_matcher(self.call_args)\n        if expected != actual:\n            cause = expected if isinstance(expected, Exception) else None\n>           raise AssertionError(_error_message()) from cause\nE           AssertionError: Expected call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', show_choices=False, type=<MagicMock name='Choice()' id='139777947315560'>)\nE           Actual call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\n\n/usr/local/lib/python3.6/unittest/mock.py:814: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\n__wrapped_mock_method__ = <function NonCallableMock.assert_called_once_with at 0x7f209768ba60>\nargs = (<MagicMock name='prompt' id='139777946743752'>, 'Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4')\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\n__tracebackhide__ = True\nmsg = \"Expected call: prompt('Select varname:\\\\n1 - hello\\\\n2 - world\\\\n3 - foo\\\\n4 - bar\\\\nChoose from 1, 2, 3, 4', default...ntical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n\n    def assert_wrapper(\n        __wrapped_mock_method__: Callable[..., Any], *args: Any, **kwargs: Any\n    ) -> None:\n        __tracebackhide__ = True\n        try:\n>           __wrapped_mock_method__(*args, **kwargs)\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:414: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n_mock_self = <MagicMock name='prompt' id='139777946743752'>\nargs = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\nself = <MagicMock name='prompt' id='139777946743752'>\n\n    def assert_called_once_with(_mock_self, *args, **kwargs):\n        \"\"\"assert that the mock was called exactly once and that that call was\n        with the specified arguments.\"\"\"\n        self = _mock_self\n        if not self.call_count == 1:\n            msg = (\"Expected '%s' to be called once. Called %s times.\" %\n                   (self._mock_name or 'mock', self.call_count))\n            raise AssertionError(msg)\n>       return self.assert_called_with(*args, **kwargs)\n\n/usr/local/lib/python3.6/unittest/mock.py:825: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nargs = (<MagicMock name='prompt' id='139777946743752'>, 'Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4')\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\n__tracebackhide__ = True\n\n    def wrap_assert_called_with(*args: Any, **kwargs: Any) -> None:\n        __tracebackhide__ = True\n>       assert_wrapper(_mock_module_originals[\"assert_called_with\"], *args, **kwargs)\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:447: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n__wrapped_mock_method__ = <function NonCallableMock.assert_called_with at 0x7f209768b9d8>\nargs = (<MagicMock name='prompt' id='139777946743752'>, 'Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4')\nkwargs = {'default': '1', 'show_choices': False, 'type': <MagicMock name='Choice()' id='139777947315560'>}\n__tracebackhide__ = True\nmsg = \"Expected call: prompt('Select varname:\\\\n1 - hello\\\\n2 - world\\\\n3 - foo\\\\n4 - bar\\\\nChoose from 1, 2, 3, 4', default...ntical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n__mock_self = <MagicMock name='prompt' id='139777946743752'>\nactual_args = ('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4',)\nactual_kwargs = {'default': '1', 'type': <MagicMock name='Choice()' id='139777947315560'>}\nintrospection = \"\\nKwargs:\\nassert {'default': '...77947315560'>} == {'default': '...77947315560'>}\\n  Omitting 2 identical items, use -vv to show\\n  Right contains 1 more item:\\n  {'show_choices': False}\\n  Use -v to get the full diff\"\n@py_assert2 = None, @py_assert1 = False\n\n    def assert_wrapper(\n        __wrapped_mock_method__: Callable[..., Any], *args: Any, **kwargs: Any\n    ) -> None:\n        __tracebackhide__ = True\n        try:\n            __wrapped_mock_method__(*args, **kwargs)\n            return\n        except AssertionError as e:\n            if getattr(e, \"_mock_introspection_applied\", 0):\n                msg = str(e)\n            else:\n                __mock_self = args[0]\n                msg = str(e)\n                if __mock_self.call_args is not None:\n                    actual_args, actual_kwargs = __mock_self.call_args\n                    introspection = \"\"\n                    try:\n                        assert actual_args == args[1:]\n                    except AssertionError as e_args:\n                        introspection += \"\\nArgs:\\n\" + str(e_args)\n                    try:\n                        assert actual_kwargs == kwargs\n                    except AssertionError as e_kwargs:\n                        introspection += \"\\nKwargs:\\n\" + str(e_kwargs)\n                    if introspection:\n                        msg += \"\\n\\npytest introspection follows:\\n\" + introspection\n            e = AssertionError(msg)\n            e._mock_introspection_applied = True  # type:ignore[attr-defined]\n>           raise e\nE           AssertionError: Expected call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', show_choices=False, type=<MagicMock name='Choice()' id='139777947315560'>)\nE           Actual call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\nE           \nE           pytest introspection follows:\nE           \nE           Kwargs:\nE           assert {'default': '...77947315560'>} == {'default': '...77947315560'>}\nE             Omitting 2 identical items, use -vv to show\nE             Right contains 1 more item:\nE             {'show_choices': False}\nE             Use -v to get the full diff\n\n/usr/local/lib/python3.6/site-packages/pytest_mock/plugin.py:437: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nmocker = <pytest_mock.plugin.MockerFixture object at 0x7f2096dbb940>\nuser_choice = 4, expected_value = 'bar'\n\n    @pytest.mark.parametrize('user_choice, expected_value', enumerate(OPTIONS, 1))\n    def test_click_invocation(mocker, user_choice, expected_value):\n        choice = mocker.patch('click.Choice')\n        choice.return_value = click.Choice(OPTIONS)\n    \n        prompt = mocker.patch('click.prompt')\n        prompt.return_value = '{}'.format(user_choice)\n    \n        assert read_user_choice('varname', OPTIONS) == expected_value\n    \n        prompt.assert_called_once_with(\n            EXPECTED_PROMPT,\n            type=click.Choice(OPTIONS),\n            default='1',\n>           show_choices=False\n        )\nE       AssertionError: Expected call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', show_choices=False, type=<MagicMock name='Choice()' id='139777947315560'>)\nE       Actual call: prompt('Select varname:\\n1 - hello\\n2 - world\\n3 - foo\\n4 - bar\\nChoose from 1, 2, 3, 4', default='1', type=<MagicMock name='Choice()' id='139777947315560'>)\nE       \nE       pytest introspection follows:\nE       \nE       Kwargs:\nE       assert {'default': '...77947315560'>} == {'default': '...77947315560'>}\nE         Omitting 2 identical items, use -vv to show\nE         Right contains 1 more item:\nE         {'show_choices': False}\nE         Use -v to get the full diff\n\ntests/test_read_user_choice.py:33: AssertionError\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover\n-------------------------------------------------\ncookiecutter/__init__.py          2      0   100%\ncookiecutter/__main__.py          3      3     0%\ncookiecutter/cli.py              50     50     0%\ncookiecutter/config.py           52     52     0%\ncookiecutter/environment.py      21     13    38%\ncookiecutter/exceptions.py       24      4    83%\ncookiecutter/extensions.py        9      9     0%\ncookiecutter/find.py             18     18     0%\ncookiecutter/generate.py        166    166     0%\ncookiecutter/hooks.py            61     61     0%\ncookiecutter/log.py              22     22     0%\ncookiecutter/main.py             31     31     0%\ncookiecutter/prompt.py           90     63    30%\ncookiecutter/replay.py           30     30     0%\ncookiecutter/repository.py       39     39     0%\ncookiecutter/utils.py            50     32    36%\ncookiecutter/vcs.py              54     54     0%\ncookiecutter/zipfile.py          61     61     0%\n-------------------------------------------------\nTOTAL                           783    708    10%\n\n=========================== short test summary info ============================\nFAILED tests/test_read_user_choice.py::test_click_invocation[1-hello] - Asser...\nFAILED tests/test_read_user_choice.py::test_click_invocation[2-world] - Asser...\nFAILED tests/test_read_user_choice.py::test_click_invocation[3-foo] - Asserti...\nFAILED tests/test_read_user_choice.py::test_click_invocation[4-bar] - Asserti...\n============================== 4 failed in 0.54s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_read_user_choice.py::test_click_invocation",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "7129d474206761a6156925db78eee4b62a0e3944",
+      "test_script_sha256": "e2d6b23928c772e858658ac76f40fdb0c374d469f56411bb1a5f5e039442fca4",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.013,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7129d474206761a6156925db78eee4b62a0e3944"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 5c282f0 Fix typos (#1197)\nHEAD is now at 7129d47 Prevent click API v7.0 from showing choices when already shown\n"
+      },
+      "sha_actual": "7129d474206761a6156925db78eee4b62a0e3944",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_read_user_choice.py": "1ac2dbe51f8c6db9ad140640df0707388a3d7dbd164a9c8385df2f591b82f4bc"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.278,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.532,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_read_user_choice.py::test_click_invocation"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollected 4 items\n\ntests/test_read_user_choice.py ....                                      [100%]\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover\n-------------------------------------------------\ncookiecutter/__init__.py          2      0   100%\ncookiecutter/__main__.py          3      3     0%\ncookiecutter/cli.py              50     50     0%\ncookiecutter/config.py           52     52     0%\ncookiecutter/environment.py      21     13    38%\ncookiecutter/exceptions.py       24      4    83%\ncookiecutter/extensions.py        9      9     0%\ncookiecutter/find.py             18     18     0%\ncookiecutter/generate.py        166    166     0%\ncookiecutter/hooks.py            61     61     0%\ncookiecutter/log.py              22     22     0%\ncookiecutter/main.py             31     31     0%\ncookiecutter/prompt.py           90     63    30%\ncookiecutter/replay.py           30     30     0%\ncookiecutter/repository.py       39     39     0%\ncookiecutter/utils.py            50     32    36%\ncookiecutter/vcs.py              54     54     0%\ncookiecutter/zipfile.py          61     61     0%\n-------------------------------------------------\nTOTAL                           783    708    10%\n\n\n============================== 4 passed in 0.09s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_read_user_choice.py::test_click_invocation",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "cycle_id": "C19",
+  "id": 3,
+  "project": "black",
+  "buggy_sha": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+  "fixed_sha": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+  "documented_python": "3.8.3",
+  "actual_python": "3.8.18",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.026,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "8126b4f6a9342290de4655e6a8a78cd288ce7daa"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\nHEAD is now at 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\n"
+      },
+      "sha_actual": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.761,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-q329ogi7/black.egg-info\n      writing /tmp/pip-modern-metadata-q329ogi7/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-q329ogi7/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-q329ogi7/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-q329ogi7/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-q329ogi7/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.01,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7a14a37981862ef418f3cdb4a7e2375856f97529"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\nHEAD is now at 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\n"
+      },
+      "sha_actual": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.765,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-mk49c28f/black.egg-info\n      writing /tmp/pip-modern-metadata-mk49c28f/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-mk49c28f/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-mk49c28f/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-mk49c28f/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-mk49c28f/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+  "official_commands": [
+    {
+      "source": "python -m unittest -q tests.test_black.BlackTestCase.test_invalid_config_return_code",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "tests.test_black.BlackTestCase.test_invalid_config_return_code"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+  },
+  "result": "INSTRUMENT_BLOCKED",
+  "E": {
+    "buggy": {
+      "sha_expected": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.026,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "8126b4f6a9342290de4655e6a8a78cd288ce7daa"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\nHEAD is now at 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\n"
+      },
+      "sha_actual": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.761,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-q329ogi7/black.egg-info\n      writing /tmp/pip-modern-metadata-q329ogi7/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-q329ogi7/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-q329ogi7/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-q329ogi7/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-q329ogi7/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-q329ogi7/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.01,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7a14a37981862ef418f3cdb4a7e2375856f97529"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\nHEAD is now at 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\n"
+      },
+      "sha_actual": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.765,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-mk49c28f/black.egg-info\n      writing /tmp/pip-modern-metadata-mk49c28f/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-mk49c28f/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-mk49c28f/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-mk49c28f/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-mk49c28f/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-mk49c28f/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  }
+}

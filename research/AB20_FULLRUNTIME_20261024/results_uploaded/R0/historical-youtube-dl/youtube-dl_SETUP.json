@@ -1,0 +1,37 @@
+{
+  "clone": {
+    "status": "EXIT",
+    "code": 0,
+    "seconds": 7.017,
+    "stdout": "",
+    "stderr": "",
+    "command": [
+      "git",
+      "clone",
+      "--quiet",
+      "--no-checkout",
+      "https://github.com/ytdl-org/youtube-dl.git",
+      "/tmp/larp_abhistorical/youtube-dl"
+    ]
+  },
+  "pytest_setup": {
+    "status": "EXIT",
+    "code": 0,
+    "seconds": 2.407,
+    "stdout": "",
+    "stderr": "",
+    "command": [
+      "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "-q",
+      "pytest==6.2.5",
+      "six",
+      "mock",
+      "nose",
+      "pytest-mock==3.6.1"
+    ]
+  }
+}

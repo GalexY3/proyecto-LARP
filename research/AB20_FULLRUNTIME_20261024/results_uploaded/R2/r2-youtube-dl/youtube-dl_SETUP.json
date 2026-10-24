@@ -1,0 +1,70 @@
+{
+  "project": "youtube-dl",
+  "runner": "3.7.17 (default, Jun 23 2023, 13:13:52) \n[GCC 11.3.0]",
+  "bench_clone": {
+    "state": "EXIT",
+    "code": 0,
+    "elapsed": 0.461,
+    "cmd": [
+      "git",
+      "clone",
+      "--quiet",
+      "--depth",
+      "1",
+      "https://github.com/soarsmu/BugsInPy.git",
+      "/tmp/larp_historical_r2/BugsInPy"
+    ],
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "repo_clone": {
+    "state": "EXIT",
+    "code": 0,
+    "elapsed": 4.62,
+    "cmd": [
+      "git",
+      "clone",
+      "--quiet",
+      "--no-checkout",
+      "https://github.com/ytdl-org/youtube-dl.git",
+      "/tmp/larp_historical_r2/upstream_youtube-dl"
+    ],
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "setup": {
+    "state": "EXIT",
+    "code": 0,
+    "elapsed": 1.863,
+    "cmd": [
+      "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "-q",
+      "pytest==6.2.5",
+      "pytest-mock==3.6.1",
+      "six",
+      "nose",
+      "mock",
+      "wheel==0.37.1"
+    ],
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "installed_test_dependencies": [
+    "pytest==6.2.5",
+    "pytest-mock==3.6.1",
+    "six",
+    "nose",
+    "mock",
+    "wheel==0.37.1"
+  ],
+  "deviations": [
+    "Python micro may differ from bug.info",
+    "Curated full requirements were not installed exactly",
+    "Fixed version's test files overlaid onto buggy per BugsInPy",
+    "tox test command translated to pytest when necessary"
+  ]
+}

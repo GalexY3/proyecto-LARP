@@ -1,0 +1,61 @@
+name: LARP AB20 Full Runtime R2 Diagnostic Reproduction
+on:
+  push:
+    branches:
+      - research/ab20-fullruntime-pivot-20261024
+    paths:
+      - research/AB20_FULLRUNTIME_20261024/R2_START.md
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  historical:
+    name: "R2 ${{ matrix.project }} / Python ${{ matrix.python }}"
+    runs-on: ubuntu-22.04
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: tqdm
+            python: "3.6"
+          - project: PySnooper
+            python: "3.8"
+          - project: cookiecutter
+            python: "3.6"
+          - project: youtube-dl
+            python: "3.7"
+          - project: black
+            python: "3.8"
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout frozen prereg and revised R2 runner
+      - name: Configure available historical Python on host
+        if: matrix.python != '3.6'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "${{ matrix.python }}"
+      - name: Verify Python 3.6 container
+        if: matrix.python == '3.6'
+        run: docker run --rm python:3.6.15-buster python --version
+      - name: Run official-target full-checkout experiment in 3.6 container
+        if: matrix.python == '3.6'
+        run: |
+          sha256sum research/AB20_FULLRUNTIME_20261024/run_full_runtime_r2.py
+          docker run --rm -v "$PWD:/work" -w /work python:3.6.15-buster python -u research/AB20_FULLRUNTIME_20261024/run_full_runtime_r2.py --project "${{ matrix.project }}"
+      - name: Run official-target full-checkout experiment on host
+        if: matrix.python != '3.6'
+        run: |
+          python --version
+          sha256sum research/AB20_FULLRUNTIME_20261024/run_full_runtime_r2.py
+          python -u research/AB20_FULLRUNTIME_20261024/run_full_runtime_r2.py --project "${{ matrix.project }}"
+      - name: Preserve all attempts and exceptions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r2-${{ matrix.project }}
+          path: research/AB20_FULLRUNTIME_20261024/results_r2/
+          if-no-files-found: warn
+          retention-days: 30

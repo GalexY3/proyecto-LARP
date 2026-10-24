@@ -1,0 +1,373 @@
+{
+  "cycle_id": "C10",
+  "id": 2,
+  "project": "cookiecutter",
+  "buggy_sha": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+  "fixed_sha": "90434ff4ea4477941444f1e83313beb414838535",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "d7e7b28811e474e14d1bed747115e47dcdd15ba3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\nHEAD is now at d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\n"
+      },
+      "sha_actual": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.277,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.552,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestFindHooks::test_find_hook FAILED                [100%]\n\n=================================== FAILURES ===================================\n_________________________ TestFindHooks.test_find_hook _________________________\n\nself = <tests.test_hooks.TestFindHooks object at 0x7f012c101eb8>\n\n    def test_find_hook(self):\n        \"\"\"Finds the specified hook.\"\"\"\n        with utils.work_in(self.repo_path):\n            expected_pre = os.path.abspath('hooks/pre_gen_project.py')\n            actual_hook_path = hooks.find_hook('pre_gen_project')\n>           assert expected_pre == actual_hook_path[0]\nE           AssertionError: assert '/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/hooks/pre_gen_project.py' == '/'\nE             - /\nE             + /tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/hooks/pre_gen_project.py\n\ntests/test_hooks.py:91: AssertionError\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20     13    35%   23-36, 44-49, 64\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26     26     0%   2-51\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            60     32    47%   54-55, 61, 70-90, 100-111, 122-127\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     25    48%   21-22, 38-45, 68-69, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           788    695    12%\n\n=========================== short test summary info ============================\nFAILED tests/test_hooks.py::TestFindHooks::test_find_hook - AssertionError: a...\n============================== 1 failed in 0.12s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        },
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.727,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestExternalHooks::test_run_hook FAILED             [100%]\n\n=================================== FAILURES ===================================\n_______________________ TestExternalHooks.test_run_hook ________________________\n\nself = <tests.test_hooks.TestExternalHooks object at 0x7ff5b0e6de48>\n\n    def test_run_hook(self):\n        \"\"\"Execute hook from specified template in specified output \\\n        directory.\"\"\"\n        tests_dir = os.path.join(self.repo_path, 'input{{hooks}}')\n        with utils.work_in(self.repo_path):\n            hooks.run_hook('pre_gen_project', tests_dir, {})\n            assert os.path.isfile(os.path.join(tests_dir, 'python_pre.txt'))\n>           assert os.path.isfile(os.path.join(tests_dir, 'shell_pre.txt'))\nE           AssertionError: assert False\nE            +  where False = <function isfile at 0x7ff5b2e71a60>('/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/input{{hooks}}/shell_pre.txt')\nE            +    where <function isfile at 0x7ff5b2e71a60> = <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'>.isfile\nE            +      where <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'> = os.path\nE            +    and   '/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/input{{hooks}}/shell_pre.txt' = <function join at 0x7ff5b2e1a400>('/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/input{{hooks}}', 'shell_pre.txt')\nE            +      where <function join at 0x7ff5b2e1a400> = <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'>.join\nE            +        where <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'> = os.path\n\ntests/test_hooks.py:188: AssertionError\n----------------------------- Captured stdout call -----------------------------\npre generation hook\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20      3    85%   35-36, 49\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26      6    77%   18, 31-35, 49\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            60     11    82%   54-55, 61, 74, 82-90, 124-125\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     23    52%   21-22, 38-45, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           788    642    19%\n\n=========================== short test summary info ============================\nFAILED tests/test_hooks.py::TestExternalHooks::test_run_hook - AssertionError...\n============================== 1 failed in 0.30s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.009,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "90434ff4ea4477941444f1e83313beb414838535"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\nHEAD is now at 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\n"
+      },
+      "sha_actual": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.27,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.513,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestFindHooks::test_find_hook PASSED                [100%]\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20     13    35%   23-36, 44-49, 64\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26     26     0%   2-51\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            64     33    48%   54-55, 63, 73-93, 103-114, 125-131\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     25    48%   21-22, 38-45, 68-69, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           792    696    12%\n\n\n============================== 1 passed in 0.10s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        },
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.749,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestExternalHooks::test_run_hook PASSED             [100%]\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20      3    85%   35-36, 49\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26      6    77%   18, 31-35, 49\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            64     10    84%   54-55, 63, 85-93, 127-128\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     23    52%   21-22, 38-45, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           792    641    19%\n\n\n============================== 1 passed in 0.30s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+  "official_commands": [
+    {
+      "source": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_hooks.py::TestFindHooks::test_find_hook"
+      ],
+      "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env"
+    },
+    {
+      "source": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+      ],
+      "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+  },
+  "result": "CANDIDATE_REPRODUCED_AUDIT_TRACE_REQUIRED",
+  "E": {
+    "buggy": {
+      "sha_expected": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "d7e7b28811e474e14d1bed747115e47dcdd15ba3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\nHEAD is now at d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\n"
+      },
+      "sha_actual": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.277,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.552,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestFindHooks::test_find_hook FAILED                [100%]\n\n=================================== FAILURES ===================================\n_________________________ TestFindHooks.test_find_hook _________________________\n\nself = <tests.test_hooks.TestFindHooks object at 0x7f012c101eb8>\n\n    def test_find_hook(self):\n        \"\"\"Finds the specified hook.\"\"\"\n        with utils.work_in(self.repo_path):\n            expected_pre = os.path.abspath('hooks/pre_gen_project.py')\n            actual_hook_path = hooks.find_hook('pre_gen_project')\n>           assert expected_pre == actual_hook_path[0]\nE           AssertionError: assert '/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/hooks/pre_gen_project.py' == '/'\nE             - /\nE             + /tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/hooks/pre_gen_project.py\n\ntests/test_hooks.py:91: AssertionError\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20     13    35%   23-36, 44-49, 64\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26     26     0%   2-51\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            60     32    47%   54-55, 61, 70-90, 100-111, 122-127\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     25    48%   21-22, 38-45, 68-69, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           788    695    12%\n\n=========================== short test summary info ============================\nFAILED tests/test_hooks.py::TestFindHooks::test_find_hook - AssertionError: a...\n============================== 1 failed in 0.12s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        },
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.727,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestExternalHooks::test_run_hook FAILED             [100%]\n\n=================================== FAILURES ===================================\n_______________________ TestExternalHooks.test_run_hook ________________________\n\nself = <tests.test_hooks.TestExternalHooks object at 0x7ff5b0e6de48>\n\n    def test_run_hook(self):\n        \"\"\"Execute hook from specified template in specified output \\\n        directory.\"\"\"\n        tests_dir = os.path.join(self.repo_path, 'input{{hooks}}')\n        with utils.work_in(self.repo_path):\n            hooks.run_hook('pre_gen_project', tests_dir, {})\n            assert os.path.isfile(os.path.join(tests_dir, 'python_pre.txt'))\n>           assert os.path.isfile(os.path.join(tests_dir, 'shell_pre.txt'))\nE           AssertionError: assert False\nE            +  where False = <function isfile at 0x7ff5b2e71a60>('/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/input{{hooks}}/shell_pre.txt')\nE            +    where <function isfile at 0x7ff5b2e71a60> = <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'>.isfile\nE            +      where <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'> = os.path\nE            +    and   '/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/input{{hooks}}/shell_pre.txt' = <function join at 0x7ff5b2e1a400>('/tmp/larp_historical_r2/upstream_cookiecutter/tests/test-hooks/input{{hooks}}', 'shell_pre.txt')\nE            +      where <function join at 0x7ff5b2e1a400> = <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'>.join\nE            +        where <module 'posixpath' from '/usr/local/lib/python3.6/posixpath.py'> = os.path\n\ntests/test_hooks.py:188: AssertionError\n----------------------------- Captured stdout call -----------------------------\npre generation hook\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20      3    85%   35-36, 49\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26      6    77%   18, 31-35, 49\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            60     11    82%   54-55, 61, 74, 82-90, 124-125\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     23    52%   21-22, 38-45, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           788    642    19%\n\n=========================== short test summary info ============================\nFAILED tests/test_hooks.py::TestExternalHooks::test_run_hook - AssertionError...\n============================== 1 failed in 0.30s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.009,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "90434ff4ea4477941444f1e83313beb414838535"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\nHEAD is now at 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\n"
+      },
+      "sha_actual": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.27,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.513,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestFindHooks::test_find_hook PASSED                [100%]\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20     13    35%   23-36, 44-49, 64\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26     26     0%   2-51\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            64     33    48%   54-55, 63, 73-93, 103-114, 125-131\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     25    48%   21-22, 38-45, 68-69, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           792    696    12%\n\n\n============================== 1 passed in 0.10s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        },
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.749,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1 -- /usr/local/bin/python\ncachedir: .pytest_cache\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter, inifile: setup.cfg\nplugins: mock-3.6.1, cov-2.12.1\ncollecting ... collected 1 item\n\ntests/test_hooks.py::TestExternalHooks::test_run_hook PASSED             [100%]\n\n---------- coverage: platform linux, python 3.6.15-final-0 -----------\nName                          Stmts   Miss  Cover   Missing\n-----------------------------------------------------------\ncookiecutter/__init__.py          1      0   100%\ncookiecutter/__main__.py          1      1     0%   2\ncookiecutter/cli.py              51     51     0%   2-170\ncookiecutter/config.py           53     53     0%   2-124\ncookiecutter/environment.py      20      3    85%   35-36, 49\ncookiecutter/exceptions.py       23      4    83%   120-122, 126\ncookiecutter/extensions.py       26      6    77%   18, 31-35, 49\ncookiecutter/find.py             17     17     0%   2-31\ncookiecutter/generate.py        173    173     0%   2-372\ncookiecutter/hooks.py            64     10    84%   54-55, 63, 85-93, 127-128\ncookiecutter/log.py              21     21     0%   2-51\ncookiecutter/main.py             29     29     0%   7-109\ncookiecutter/prompt.py           90     75    17%   19, 32, 41, 54-78, 86-96, 107-119, 139-156, 164-168, 177-226\ncookiecutter/replay.py           27     27     0%   6-51\ncookiecutter/repository.py       39     39     0%   2-127\ncookiecutter/utils.py            48     23    52%   21-22, 38-45, 84-107\ncookiecutter/vcs.py              53     53     0%   2-120\ncookiecutter/zipfile.py          56     56     0%   2-112\n-----------------------------------------------------------\nTOTAL                           792    641    19%\n\n\n============================== 1 passed in 0.30s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "cycle_id": "C10",
+  "id": 2,
+  "project": "cookiecutter",
+  "buggy_sha": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+  "fixed_sha": "90434ff4ea4477941444f1e83313beb414838535",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "d7e7b28811e474e14d1bed747115e47dcdd15ba3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\nHEAD is now at d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\n"
+      },
+      "sha_actual": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.081,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.271,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestFindHooks::test_find_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        },
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.274,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestExternalHooks::test_run_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.007,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "90434ff4ea4477941444f1e83313beb414838535"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\nHEAD is now at 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\n"
+      },
+      "sha_actual": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.079,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.269,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestFindHooks::test_find_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        },
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.27,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestExternalHooks::test_run_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+  "official_commands": [
+    {
+      "source": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_hooks.py::TestFindHooks::test_find_hook"
+      ],
+      "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env"
+    },
+    {
+      "source": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+      ],
+      "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+  },
+  "result": "INCONCLUSIVE_ERRORS_OR_FIXED_FAILURE",
+  "E": {
+    "buggy": {
+      "sha_expected": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "d7e7b28811e474e14d1bed747115e47dcdd15ba3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\nHEAD is now at d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\n"
+      },
+      "sha_actual": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.081,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.271,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestFindHooks::test_find_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        },
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.274,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestExternalHooks::test_run_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_script_sha256": "d1afcc0a9c7c285eba2cd8697752e3d4ce55e5dc2710606c18a43817ef360cc0",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.007,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "90434ff4ea4477941444f1e83313beb414838535"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was d7e7b28 Render path templates in copy_wihtout_render (fix #456) (#839)\nHEAD is now at 90434ff Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)\n"
+      },
+      "sha_actual": "90434ff4ea4477941444f1e83313beb414838535",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_hooks.py": "68ca8d767046d25a14af1a7554be13d760ab6b12ef22dc1e5bcfabf8c820453e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.079,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.269,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestFindHooks::test_find_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestFindHooks::test_find_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestFindHooks::test_find_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        },
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.27,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_hook"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_hooks.py::TestExternalHooks::test_run_hook\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

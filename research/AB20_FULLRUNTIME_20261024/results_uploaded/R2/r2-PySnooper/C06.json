@@ -1,0 +1,305 @@
+{
+  "cycle_id": "C06",
+  "id": 1,
+  "project": "PySnooper",
+  "buggy_sha": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+  "fixed_sha": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+  "documented_python": "3.8.1",
+  "actual_python": "3.8.18",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+      "test_script_sha256": "6d24d2d88478e17cefec81f33a1ef5c44cea64321ff46762384c68e219064d0b",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.018,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "e21a31162f4c54be693d8ca8260e42393b39abd3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 56f22f8 Fix unicode issues and add test, fix #124\nHEAD is now at e21a311 Formatting\n"
+      },
+      "sha_actual": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_chinese.py": "7a3d64cd702fdfa1eba8c08ac3c8934948a3ef0178f141c1f5599307c1fe59f3"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 2.939,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.38 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.243,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_chinese.py::test_chinese"
+          ],
+          "stdout_tail": ".\n=============================== warnings summary ===============================\n../../../opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183\n  /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183: PytestDeprecationWarning: The --strict option is deprecated, use --strict-markers instead.\n    self.issue_config_time_warning(\n\npysnooper/variables.py:3\npysnooper/variables.py:3\n  /tmp/larp_historical_r2/upstream_PySnooper/pysnooper/variables.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n    from collections import Mapping, Sequence\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n1 passed, 3 warnings in 0.02s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_chinese.py::test_chinese",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+      "test_script_sha256": "6d24d2d88478e17cefec81f33a1ef5c44cea64321ff46762384c68e219064d0b",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was e21a311 Formatting\nHEAD is now at 56f22f8 Fix unicode issues and add test, fix #124\n"
+      },
+      "sha_actual": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_chinese.py": "7a3d64cd702fdfa1eba8c08ac3c8934948a3ef0178f141c1f5599307c1fe59f3"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.72,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.38 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.238,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_chinese.py::test_chinese"
+          ],
+          "stdout_tail": ".\n=============================== warnings summary ===============================\n../../../opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183\n  /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183: PytestDeprecationWarning: The --strict option is deprecated, use --strict-markers instead.\n    self.issue_config_time_warning(\n\npysnooper/variables.py:3\npysnooper/variables.py:3\n  /tmp/larp_historical_r2/upstream_PySnooper/pysnooper/variables.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n    from collections import Mapping, Sequence\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n1 passed, 3 warnings in 0.02s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_chinese.py::test_chinese",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "6d24d2d88478e17cefec81f33a1ef5c44cea64321ff46762384c68e219064d0b",
+  "official_commands": [
+    {
+      "source": "pytest -q -s tests/test_chinese.py::test_chinese",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-s",
+        "tests/test_chinese.py::test_chinese"
+      ],
+      "adaptation": "pytest executable -> python -m pytest"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_chinese.py": "7a3d64cd702fdfa1eba8c08ac3c8934948a3ef0178f141c1f5599307c1fe59f3"
+  },
+  "result": "BOTH_PASS_NON_REPRODUCED",
+  "E": {
+    "buggy": {
+      "sha_expected": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+      "test_script_sha256": "6d24d2d88478e17cefec81f33a1ef5c44cea64321ff46762384c68e219064d0b",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.018,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "e21a31162f4c54be693d8ca8260e42393b39abd3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 56f22f8 Fix unicode issues and add test, fix #124\nHEAD is now at e21a311 Formatting\n"
+      },
+      "sha_actual": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_chinese.py": "7a3d64cd702fdfa1eba8c08ac3c8934948a3ef0178f141c1f5599307c1fe59f3"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 2.939,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.38 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.243,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_chinese.py::test_chinese"
+          ],
+          "stdout_tail": ".\n=============================== warnings summary ===============================\n../../../opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183\n  /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183: PytestDeprecationWarning: The --strict option is deprecated, use --strict-markers instead.\n    self.issue_config_time_warning(\n\npysnooper/variables.py:3\npysnooper/variables.py:3\n  /tmp/larp_historical_r2/upstream_PySnooper/pysnooper/variables.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n    from collections import Mapping, Sequence\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n1 passed, 3 warnings in 0.02s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_chinese.py::test_chinese",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+      "test_script_sha256": "6d24d2d88478e17cefec81f33a1ef5c44cea64321ff46762384c68e219064d0b",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was e21a311 Formatting\nHEAD is now at 56f22f8 Fix unicode issues and add test, fix #124\n"
+      },
+      "sha_actual": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_chinese.py": "7a3d64cd702fdfa1eba8c08ac3c8934948a3ef0178f141c1f5599307c1fe59f3"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.72,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of PySnooper==0.0.38 from file:///tmp/larp_historical_r2/upstream_PySnooper (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.238,
+          "cmd": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-q",
+            "-s",
+            "tests/test_chinese.py::test_chinese"
+          ],
+          "stdout_tail": ".\n=============================== warnings summary ===============================\n../../../opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183\n  /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/_pytest/config/__init__.py:1183: PytestDeprecationWarning: The --strict option is deprecated, use --strict-markers instead.\n    self.issue_config_time_warning(\n\npysnooper/variables.py:3\npysnooper/variables.py:3\n  /tmp/larp_historical_r2/upstream_PySnooper/pysnooper/variables.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n    from collections import Mapping, Sequence\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n1 passed, 3 warnings in 0.02s\n",
+          "stderr_tail": "",
+          "source_command": "pytest -q -s tests/test_chinese.py::test_chinese",
+          "adaptation": "pytest executable -> python -m pytest",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

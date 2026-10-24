@@ -1,0 +1,295 @@
+{
+  "cycle_id": "C09",
+  "id": 1,
+  "project": "cookiecutter",
+  "buggy_sha": "c15633745df6abdb24e02746b82aadb20b8cdf8c",
+  "fixed_sha": "7f6804c4953a18386809f11faf4d86898570debc",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "c15633745df6abdb24e02746b82aadb20b8cdf8c",
+      "test_script_sha256": "8fa48fdd88c886fbdf244124c952d919743b1c4ca407a0b4d50d091d9fab4b34",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.024,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c15633745df6abdb24e02746b82aadb20b8cdf8c"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7f6804c Fix default values being loaded with wrong encoding on Windows (#1414)\nHEAD is now at c156337 Added: _output_dir to cookiecutter context (#1034)\n"
+      },
+      "sha_actual": "c15633745df6abdb24e02746b82aadb20b8cdf8c",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_generate_context.py": "370bcf475b890e24d3dff5c556a78d604e59f3fbe1854e5dbece9e0e3de59481"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 3.906,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.279,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "7f6804c4953a18386809f11faf4d86898570debc",
+      "test_script_sha256": "8fa48fdd88c886fbdf244124c952d919743b1c4ca407a0b4d50d091d9fab4b34",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.021,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7f6804c4953a18386809f11faf4d86898570debc"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was c156337 Added: _output_dir to cookiecutter context (#1034)\nHEAD is now at 7f6804c Fix default values being loaded with wrong encoding on Windows (#1414)\n"
+      },
+      "sha_actual": "7f6804c4953a18386809f11faf4d86898570debc",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_generate_context.py": "370bcf475b890e24d3dff5c556a78d604e59f3fbe1854e5dbece9e0e3de59481"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.088,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.274,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "8fa48fdd88c886fbdf244124c952d919743b1c4ca407a0b4d50d091d9fab4b34",
+  "official_commands": [
+    {
+      "source": "tox tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars"
+      ],
+      "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_generate_context.py": "370bcf475b890e24d3dff5c556a78d604e59f3fbe1854e5dbece9e0e3de59481"
+  },
+  "result": "INCONCLUSIVE_ERRORS_OR_FIXED_FAILURE",
+  "E": {
+    "buggy": {
+      "sha_expected": "c15633745df6abdb24e02746b82aadb20b8cdf8c",
+      "test_script_sha256": "8fa48fdd88c886fbdf244124c952d919743b1c4ca407a0b4d50d091d9fab4b34",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.024,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c15633745df6abdb24e02746b82aadb20b8cdf8c"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7f6804c Fix default values being loaded with wrong encoding on Windows (#1414)\nHEAD is now at c156337 Added: _output_dir to cookiecutter context (#1034)\n"
+      },
+      "sha_actual": "c15633745df6abdb24e02746b82aadb20b8cdf8c",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_generate_context.py": "370bcf475b890e24d3dff5c556a78d604e59f3fbe1854e5dbece9e0e3de59481"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 3.906,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.279,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "7f6804c4953a18386809f11faf4d86898570debc",
+      "test_script_sha256": "8fa48fdd88c886fbdf244124c952d919743b1c4ca407a0b4d50d091d9fab4b34",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.021,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7f6804c4953a18386809f11faf4d86898570debc"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was c156337 Added: _output_dir to cookiecutter context (#1034)\nHEAD is now at 7f6804c Fix default values being loaded with wrong encoding on Windows (#1414)\n"
+      },
+      "sha_actual": "7f6804c4953a18386809f11faf4d86898570debc",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_generate_context.py": "370bcf475b890e24d3dff5c556a78d604e59f3fbe1854e5dbece9e0e3de59481"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.088,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 4,
+          "elapsed": 0.274,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars"
+          ],
+          "stdout_tail": "",
+          "stderr_tail": "ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]\n__main__.py: error: unrecognized arguments: --cov-report --cov=cookiecutter tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars\n  inifile: /tmp/larp_historical_r1/upstream_cookiecutter/setup.cfg\n  rootdir: /tmp/larp_historical_r1/upstream_cookiecutter\n\n",
+          "source_command": "tox tests/test_generate_context.py::test_generate_context_decodes_non_ascii_chars",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

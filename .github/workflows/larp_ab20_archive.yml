@@ -1,0 +1,46 @@
+name: LARP AB20 Archive Exact Action Evidence
+on:
+  push:
+    branches:
+      - research/ab20-fullruntime-pivot-20261024
+    paths:
+      - research/AB20_FULLRUNTIME_20261024/ARCHIVE_START.md
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/ab20-fullruntime-pivot-20261024
+          fetch-depth: 1
+      - name: Fetch R0 R1 R2 raw artifacts for audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/larp_action_archives
+          for item in "R0:40109096869" "R1:40109855339" "R2:40110153479"; do
+            LABEL="${item%%:*}"
+            RUN_ID="${item##*:}"
+            mkdir -p "/tmp/larp_action_archives/${LABEL}"
+            gh run download "${RUN_ID}" --repo "${GITHUB_REPOSITORY}" --dir "/tmp/larp_action_archives/${LABEL}"
+          done
+          mkdir -p research/AB20_FULLRUNTIME_20261024/results_uploaded
+          cp -a /tmp/larp_action_archives/. research/AB20_FULLRUNTIME_20261024/results_uploaded/
+          find research/AB20_FULLRUNTIME_20261024/results_uploaded -type f -print0 | sort -z | xargs -0 sha256sum > research/AB20_FULLRUNTIME_20261024/results_uploaded/SHA256SUMS.txt
+          find research/AB20_FULLRUNTIME_20261024/results_uploaded -type f | wc -l
+      - name: Commit only verbatim archived traces (not findings)
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/AB20_FULLRUNTIME_20261024/results_uploaded/
+          git diff --cached --quiet && exit 0
+          git commit -m "Archive exact R0/R1/R2 GitHub Actions raw JSON and SHA256 hashes; no inference change"
+          git push origin HEAD:research/ab20-fullruntime-pivot-20261024
