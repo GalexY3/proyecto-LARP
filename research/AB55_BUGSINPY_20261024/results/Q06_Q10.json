@@ -1,0 +1,263 @@
+[
+  {
+    "cycle": "Q06",
+    "project": "cookiecutter",
+    "bug_id": 3,
+    "upstream": "cookiecutter/cookiecutter",
+    "buggy_commit": "5c282f020a8db7e5e7c4e7b51b010556ca31fb7f",
+    "fixed_commit": "7129d474206761a6156925db78eee4b62a0e3944",
+    "python": "3.6.9",
+    "official_test": "tests/test_read_user_choice.py",
+    "fix_message": "Prevent click API v7.0 from showing choices when already shown",
+    "files": [
+      {
+        "name": "cookiecutter/prompt.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_read_user_choice.py",
+        "changes": 3,
+        "additions": 2,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 2,
+    "test_changed_lines": 3,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q07",
+    "project": "cookiecutter",
+    "bug_id": 4,
+    "upstream": "cookiecutter/cookiecutter",
+    "buggy_commit": "9568ab6ecd2d6836646006c59473c4a4ac0dee04",
+    "fixed_commit": "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c",
+    "python": "3.6.9",
+    "official_test": "tests/test_hooks.py",
+    "fix_message": "using custom exception instead of exit status and cleanup project dir",
+    "files": [
+      {
+        "name": "cookiecutter/exceptions.py",
+        "changes": 6,
+        "additions": 6,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "name": "cookiecutter/generate.py",
+        "changes": 8,
+        "additions": 6,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "name": "cookiecutter/hooks.py",
+        "changes": 12,
+        "additions": 8,
+        "deletions": 4,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_hooks.py",
+        "changes": 16,
+        "additions": 15,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 26,
+    "test_changed_lines": 16,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q08",
+    "project": "tqdm",
+    "bug_id": 1,
+    "upstream": "tqdm/tqdm",
+    "buggy_commit": "8cc777fe8401a05d07f2c97e65d15e4460feab88",
+    "fixed_commit": "c0dcf39b046d1b4ff6de14ac99ad9a1b10487512",
+    "python": "3.6.9",
+    "official_test": "tqdm/tests/tests_contrib.py",
+    "fix_message": "fix `tenumerate(start)`",
+    "files": [
+      {
+        "name": "tqdm/contrib/__init__.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "tqdm/tests/tests_contrib.py",
+        "changes": 1,
+        "additions": 1,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 2,
+    "test_changed_lines": 1,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q09",
+    "project": "tqdm",
+    "bug_id": 2,
+    "upstream": "tqdm/tqdm",
+    "buggy_commit": "bef86db56654d271838b145ad77f7040a73a7b4d",
+    "fixed_commit": "127af5caf19e7d29c346f5ca8a9c7ef3004b664b",
+    "python": "3.6.9",
+    "official_test": "tqdm/tests/tests_tqdm.py",
+    "fix_message": "fix most tests and logic",
+    "files": [
+      {
+        "name": "tqdm/std.py",
+        "changes": 6,
+        "additions": 2,
+        "deletions": 4,
+        "status": "modified"
+      },
+      {
+        "name": "tqdm/tests/tests_tqdm.py",
+        "changes": 12,
+        "additions": 6,
+        "deletions": 6,
+        "status": "modified"
+      },
+      {
+        "name": "tqdm/utils.py",
+        "changes": 6,
+        "additions": 4,
+        "deletions": 2,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 12,
+    "test_changed_lines": 12,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q10",
+    "project": "tqdm",
+    "bug_id": 3,
+    "upstream": "tqdm/tqdm",
+    "buggy_commit": "c2599e3cd6087429f48bae34347ec5d2473c8392",
+    "fixed_commit": "73962a47026dd980ac0758820efc9c41cbf938e0",
+    "python": "3.6.9",
+    "official_test": "tqdm/tests/tests_tqdm.py",
+    "fix_message": "tqdm: fix boolean casting to work for sizeless self.iterable",
+    "files": [
+      {
+        "name": "tqdm/_tqdm.py",
+        "changes": 11,
+        "additions": 11,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "name": "tqdm/tests/tests_tqdm.py",
+        "changes": 37,
+        "additions": 21,
+        "deletions": 16,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 11,
+    "test_changed_lines": 37,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
