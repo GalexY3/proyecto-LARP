@@ -1,0 +1,100 @@
+{
+  "block": "B10",
+  "phase": "CONDITIONAL_45_ACTIVATED_AFTER_NO_LEVEL_2_3_IN_FIRST_30",
+  "status": "PRE_EXECUTION",
+  "source_sha256": "e20d7220103548b03aca7cc04eb42ea8c953453360574ec7e6e61a9dd3c969da",
+  "E_budget": 30,
+  "G_budget": 48,
+  "E_draws": 550,
+  "G_draws": 650,
+  "cycle_contracts": [
+    {
+      "id": "C51",
+      "source": "engel",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "stratum"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "stratum"
+      },
+      "H1": "Stale stage-one labels bias HT more than a stage-two-only estimator under counterfactual stratum shift",
+      "primary": "abs_bias_A_gt_B"
+    },
+    {
+      "id": "C52",
+      "source": "fair",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "stratum"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "stratum"
+      },
+      "H1": "Stale stage-one labels bias HT more than a stage-two-only estimator under counterfactual stratum shift",
+      "primary": "abs_bias_A_gt_B"
+    },
+    {
+      "id": "C53",
+      "source": "anes96",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "stratum"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "stratum"
+      },
+      "H1": "Stale stage-one labels bias HT more than a stage-two-only estimator under counterfactual stratum shift",
+      "primary": "abs_bias_A_gt_B"
+    },
+    {
+      "id": "C54",
+      "source": "grunfeld",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "stratum"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "stratum"
+      },
+      "H1": "Stale stage-one labels bias HT more than a stage-two-only estimator under counterfactual stratum shift",
+      "primary": "abs_bias_A_gt_B"
+    },
+    {
+      "id": "C55",
+      "source": "macrodata",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "stratum"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "stratum"
+      },
+      "H1": "Stale stage-one labels bias HT more than a stage-two-only estimator under counterfactual stratum shift",
+      "primary": "abs_bias_A_gt_B"
+    }
+  ],
+  "H0": "abs bias A <= B",
+  "rivals": [
+    "Poor MC precision",
+    "Same historical sources; no field drift",
+    "Classical adaptive survey corrections already exist"
+  ],
+  "AB_A_J": "A identified transformed finite population mean; B directional claim, null and theoretical competitors; C masks/y availability/two budgets; D exact distinct labels and allocations; E E&G records; F adversarial strong one-wave and estimator control; G E/G Monte Carlo only; H prior update; I grade 0-3 and CT2; J pivot allowed, campaign 45 required",
+  "external_replication": false
+}
