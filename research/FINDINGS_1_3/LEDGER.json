@@ -3,7 +3,7 @@
   "policy": "Persistent append-only, novelty/evidence-specific, nonduplicated; 1/3 does NOT mean original science, N2 requires independent strong confirmation",
   "last_review": "2026-10-24",
   "historical_n1_total_status": "NOT_AUDITED",
-  "confirmed_in_current_inventory": 2,
+  "confirmed_in_current_inventory": 3,
   "findings": [
     {
       "id": "LARP-1-001",
@@ -91,6 +91,61 @@
       "possible_composition": "Policy equivalence classes under bounded auxiliary uncertainty and fixed integer budgets",
       "duplicate_of": null,
       "external_confirmation": false
+    },
+    {
+      "id": "LARP-1-003",
+      "short_name": "COST-PILOT-03",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COST_PARITY_AND_POSTHOC_CONTROL",
+      "claim": "In six observed finite populations, a six-label pilot can improve allocation relative to a raw noisy pilot after 70% auxiliary-variance shrinkage, yet fails to improve full-budget population risk variance against a competent no-pilot comparator; a separate post-hoc audit reusing pilot labels still showed higher MSE under tested budgets.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab30-composition-pilot-20261024",
+      "source_path": "research/AB30_COMPOSITION_20261024/README.md",
+      "archival_zip": "LARP_AB30_COMPOSICIONES_20261024.zip",
+      "archival_zip_sha256": "82b5f789a06a501079415c0d98f7d118b3562837c69e0482a29b908f11177011",
+      "source_code_sha256": "e2b2668649c415a57b79039d4e05bb8216f6740ceb4a2795547eea226ae42904",
+      "experiment_ids": [
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18",
+        "Q19",
+        "Q20",
+        "Q21",
+        "Q22",
+        "Q23",
+        "Q24"
+      ],
+      "date": "2026-10-24",
+      "evidence": "Three prospectively specified six-source AB blocks plus a POSTSELECTED competent pilot-reuse audit with 500 finite-population random trials per source and budget; G larger budgets on same data, not independent replication.",
+      "adversarial_limits": [
+        "original pilot method excludes pilot labels from final estimate, a weak design",
+        "post-run reuse test is exploratory, not new field data",
+        "only six reused public populations",
+        "strong Bayesian and multi-wave design literature exists",
+        "no independent external replication or publication-level novelty"
+      ],
+      "prior_art": [
+        "https://www.bls.gov/osmr/research-papers/2026/st260020.htm",
+        "https://www.jstatsoft.org/article/view/v114i10"
+      ],
+      "falsifier": "A budget-parity, fully efficient multi-wave field implementation beats competent one-wave controls in a preregistered independent dataset under measured label costs",
+      "connections": [
+        "LARP-1-001",
+        "LARP-1-002"
+      ],
+      "possible_composition": "Integer policy quotient + proxy-target calibration + value-of-information under observable real label prices",
+      "duplicate_of": null,
+      "external_confirmation": false,
+      "novelty_assessed": "NO 2/3; known category of design and acquisition cost"
     }
   ],
   "pending_historical_audit": "Many older LARP reports predate explicit 1/3 grading. Do not infer that no other 1/3 exist; enumerate and assess before adding to historical total.",
