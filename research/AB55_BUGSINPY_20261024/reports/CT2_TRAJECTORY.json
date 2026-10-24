@@ -1,0 +1,74 @@
+{
+  "schema": "CT2_O6_v1",
+  "scale": "ordinal 1–100 (NOT probability)",
+  "campaign": "AB55_BUGSINPY_20261024",
+  "main_branch": "historical-Python-bug-reproduction",
+  "points": [
+    {
+      "sequence": 0,
+      "cycle": "START",
+      "ct2": 11,
+      "reason": "Continuación de QuixBugs; hipótesis de utilidad de test sobre defectos externos"
+    },
+    {
+      "sequence": 20,
+      "cycle": "Q20_POST_AUDIT",
+      "ct2": 9,
+      "reason": "Se verificaron commits, pero no defectos ejecutables"
+    },
+    {
+      "sequence": 22,
+      "cycle": "P02_PLAN",
+      "ct2": 10,
+      "reason": "Se definió un contraste ciego ejecutable, no comprobado"
+    },
+    {
+      "sequence": 25,
+      "cycle": "P05_PLAN_END",
+      "ct2": 11,
+      "reason": "Cohorte fijada con anterioridad a inspección; todavía no hay ejecución"
+    },
+    {
+      "sequence": 31,
+      "cycle": "X06",
+      "ct2": 11,
+      "reason": "Seis defectos nuevos con procedencia correcta, sin pruebas dinámicas"
+    },
+    {
+      "sequence": 37,
+      "cycle": "X12_INVALID",
+      "ct2": 9,
+      "reason": "Redirección GitHub de FastAPI interpretada erróneamente; seis registros invalidados"
+    },
+    {
+      "sequence": 43,
+      "cycle": "X18_REPAIRED",
+      "ct2": 9,
+      "reason": "Reparación de la redirección y verificación del SHA; no confirma eficacia"
+    },
+    {
+      "sequence": 55,
+      "cycle": "X30_POST_AUDIT",
+      "ct2": 8,
+      "reason": "50 expedientes documentales completos, 0 reproducciones dinámicas, antecedente fuerte"
+    }
+  ],
+  "alternate_branch": {
+    "branch": "metamorphic-test-equivalence-classes",
+    "drift_D": 3.7,
+    "status": "PLANNING_ONLY",
+    "point": {
+      "sequence": 24,
+      "cycle": "P04",
+      "ct2": 12,
+      "reason": "Predicción discriminante propuesta; aún sin matriz de pruebas ejecutadas"
+    }
+  },
+  "science_grades": {
+    "N1_new": 0,
+    "N1_portfolio_audited": 6,
+    "N2": 0,
+    "N3": 0
+  },
+  "honesty": "Scores are explicit subjective updates at review checkpoints, not per-cycle measurements or probabilities; 12 is a different branch not additive to 8."
+}
