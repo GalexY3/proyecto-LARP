@@ -1,0 +1,122 @@
+{
+  "status": "PLANNING_AB_ONLY",
+  "cycles": [
+    {
+      "id": "P01",
+      "title": "Portabilidad histórica y reproducción fiable de defectos",
+      "D": 1.2,
+      "A": "Problema: seleccionar 20 defectos reales no implica poder observar su comportamiento; Python 3.6–3.8, dependencias fijadas y test_config son intervenciones instrumentales.",
+      "B": {
+        "H1": "Una imagen reproducible por proyecto+commit recupera tanto defecto como reparación sin editar código fuente ni casos de prueba",
+        "H0": "Entornos irreconciliables o dependencias obsoletas imposibilitan paridad de versiones",
+        "rival": "Un entorno actual con adaptadores puede producir falsos éxitos por cambios de API."
+      },
+      "C": "Antes de cualquier método detector, ejecutar py_compile, instalación con constraints, pruebas originales en buggy/fixed, comparar código de salida y traza; solo reproducidos cuentan como elegibles.",
+      "D_instrumentation": "Docker/Conda versionado, hashes de paquetes, commit checkout, bloqueo de red salvo descarga preregistrada; registros stdout/stderr separados. No hay contenedor histórico ejecutado en esta sesión.",
+      "E_observation": "BugsInPy documenta la versión y test_file por caso; 20/20 fixes upstream verificados, 0/20 reproducción dinámica efectuada.",
+      "F": "Un fix commit no demuestra que el bug falle en local; reinstalación que resuelve dependencias no prueba equivalencia histórica.",
+      "G": "La confirmación debe ocurrir en máquina limpia, y una segunda máquina de distinta arquitectura si se desea transportabilidad.",
+      "H": "Actualizar prior contra equivalencia entre manifest metadata y bug reproducido.",
+      "I": {
+        "grade": 0,
+        "CT2_before": 9,
+        "CT2_after": 9
+      },
+      "J": "Aprobar solo una rama de replicación con entorno encapsulado; no inferir 2/3 desde metadatos."
+    },
+    {
+      "id": "P02",
+      "title": "Evitar contaminación por conocer el arreglo",
+      "D": 2.1,
+      "A": "BugsInPy revela buggy/fixed SHA y suite original; redactar una relación metamórfica mirando el arreglo destruye la independencia del test.",
+      "B": {
+        "H1": "Una especificación redactada con información pre-fix conserva capacidad de detectar defectos",
+        "H0": "La ventaja de relaciones metamórficas desaparece cuando el diseñador no lee el patch",
+        "rival": "Las pruebas oficiales pueden contener indicaciones suficientes incluso antes del fix."
+      },
+      "C": "Separar roles: selector de entradas ve únicamente buggy source+API; auditor custodia patch/fixed. Registrar MR como archivo SHA antes de revelar casos de prueba corregidos. Medir detección tras cumplir coste igual de invocaciones.",
+      "D_instrumentation": "Sellado de timestamp y SHA, prohibición de nombres de test ya añadidos, logs de consultas de fuentes y reproducibilidad de selección; este estudio examinó los fixes antes del prereg, por tanto los primeros 20 quedan contaminados.",
+      "E_observation": "Los veinte source edits ya inspeccionados y sus test cochanges visibles no sirven como holdout ciego; los 30 elegidos posteriormente sí permiten una auditoría documental más limpia, no pruebas dinámicas aún.",
+      "F": "Incluso sin patch explícito, entrenamientos y documentación pública pueden filtrar la solución.",
+      "G": "Validación en defectos prospectivos fijados antes de conocer el patch o con investigadores estrictamente separados.",
+      "H": "Disminuir creencia en resultados 2/3 basados en tests diseñados tras ver el arreglo.",
+      "I": {
+        "grade": 0,
+        "CT2_before": 9,
+        "CT2_after": 10
+      },
+      "J": "Preparar diseño ciego como ruta, no reivindicar mejora empírica por haberla planificado."
+    },
+    {
+      "id": "P03",
+      "title": "Paridad de recursos y comparación con controles profesionales",
+      "D": 2.4,
+      "A": "¿Qué significa coste comparable cuando una MR exige dos ejecuciones y una prueba diferencial exige acceso a oráculo? Resultados previos 13/20 vs 8/20 con seis llamadas ocultan coste de redactar relaciones.",
+      "B": {
+        "H1": "Un método MR gana bajo coste total de diseño+ejecución+validación de reglas",
+        "H0": "Con igual presupuesto humano y automatización no hay ventaja",
+        "rival": "Oráculos originales y tests property-based generan más cobertura con menor coste."
+      },
+      "C": "Presupuestos por caso: horas de especificación humana, número de llamadas al programa, segundos de CPU, falsos positivos y coste de preparar oracle. Comparadores: tests oficiales originales, property-based Hypothesis, MR cegada y versión corregida como techo no comparable.",
+      "D_instrumentation": "Cronometría, mapeo de API, listas de contratos independientes, diseño por un especialista distinto, fallos por excepción/timeouts; test de sanidad negativo en versión arreglada.",
+      "E_observation": "La auditoría de metadatos no midió ni tiempo de ensayo ni defectos detectados; no puede comparar rendimiento.",
+      "F": "Una prueba diferencial con arreglo disponible es una cota superior informativa, no baseline de mismo coste.",
+      "G": "Registrar experimentos en dos grupos de expertos, replicar en repositorios fuera del benchmark.",
+      "H": "Prior: aparente ganancia con igualdad de invocaciones no identifica mejora coste-efectiva general.",
+      "I": {
+        "grade": 0,
+        "CT2_before": 10,
+        "CT2_after": 10
+      },
+      "J": "Requerir recursos de ejecución reales para convertir esta pregunta en experimento."
+    },
+    {
+      "id": "P04",
+      "title": "DRIFT D3,7 hacia equivalencia de propiedades de prueba",
+      "D": 3.7,
+      "A": "Transferir ALIAS-01/PROXY-GAP-02 desde asignaciones discretas: reglas metamórficas semánticamente distintas podrían ser observacionalmente equivalentes ante el mismo conjunto de defectos; optimizar proxy cobertura MR puede no aumentar descubrimientos reales.",
+      "B": {
+        "H1": "Clases de equivalencia de relaciones metamórficas bajo una semántica falsable ahorran presupuesto sin reducir detección de bugs",
+        "H0": "Las equivalencias sobre casos conocidos no se mantienen ante defectos inéditos",
+        "rival": "Mutant subsumption y test-suite minimization ya estudian este fenómeno, probablemente sin novedad."
+      },
+      "C": "Construir matriz binaria MR×bugs en defectos independientes, identificar filas equivalentes o dominadas; comparar minimización greedy con cobertura set-cover y muestra aleatoria de coste igual en holdout por proyecto. No usar fixes ni test oficiales para generar MR.",
+      "D_instrumentation": "Normalización por error/timeout, listas de fuentes excluidas, hash de selecciones, contabilidad de diseños y sensibilidad al conjunto de defectos.",
+      "E_observation": "No existe matriz MR×BugsInPy reproducida todavía. La propuesta es exclusivamente abductiva, NO prueba.",
+      "F": "Matriz en un benchmark público puede optimizar Goodhart y sobreajustar; equivalencia observacional no implica equivalencia lógica global.",
+      "G": "Proyecto prospectivo y mecanismos de bugs diferentes, pre-prereg baseline mutant subsumption/test-suite reduction.",
+      "H": "Esta combinación de 1/3 genera una pregunta discriminante, pero no novedad demostrada.",
+      "I": {
+        "grade": 0,
+        "CT2_before": 10,
+        "CT2_after": 12
+      },
+      "J": "Priorizar investigación conceptual/documental y literatura previa; no elevar 2/3 por DRIFT."
+    },
+    {
+      "id": "P05",
+      "title": "Diseño de nuevo estrato documental y puerta de evidencia",
+      "D": 1.8,
+      "A": "Quedan 30 ciclos AB de exploración intensiva, y el mismo conjunto de veinte fixes ya fue inspeccionado. Necesitamos comprobar selección cruzada entre proyectos sin usar test suite como método detector.",
+      "B": {
+        "H1": "En defectos nuevos la co-modificación de tests no es universal y varía fuertemente por proyecto y tamaño del fix",
+        "H0": "La pauta 20/20 se explica por selección benchmark y persiste",
+        "rival": "Los proyectos tienen políticas de testing distintas; no se pueden interpretar las diferencias como causalidad."
+      },
+      "C": "Usar 30 BugsInPy elegidos antes de leer sus bug.info y upstream patches: 6 pandas, 6 fastapi, 6 spacy, 6 matplotlib[5:10], 6 black[5:10]. Repetir mediciones fijadas (archivos fuente, tests, líneas), registrar accesos faltantes.",
+      "D_instrumentation": "Archivo prereg GitHub CAMPAIGN_55.json ya congeló IDs antes de leerlos; scripts de extracción idénticos a Q01–Q20, sin dinámica de programa.",
+      "E_observation": "Antes de mirar estos 30 solo están verificadas su existencia en árbol de BugsInPy y su inclusión en la muestra. No atribuirles resultados.",
+      "F": "Los cinco proyectos no son selección aleatoria del universo BugsInPy; la transportabilidad del resultado es descriptiva.",
+      "G": "Una replicación externa completa exige defectos no curados y prueba real en entornos históricos.",
+      "H": "La evaluación de 30 commits sirve para calibrar el alcance de un estudio, no para afirmar superioridad MR.",
+      "I": {
+        "grade": 0,
+        "CT2_before": 12,
+        "CT2_after": 11
+      },
+      "J": "Ejecutar los 30 AB documentales ya autorizados, mantener proyecto de reproducción separado."
+    }
+  ],
+  "novelty_gate": "Planning does not count as empirical confirmation, no 2/3 claimed",
+  "authorizations_remaining": 30
+}
