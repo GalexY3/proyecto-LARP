@@ -1,11 +1,12 @@
-# LARP AB75 — campaña AB con 30 + 45 ciclos
+# LARP AB75 — 75 ciclos AB, registro de originalidad y trazabilidad
 
-**Resultado:** 75 expedientes A–J, 14 bloques con DRIFT y BRANCHING, 150 ejecuciones E/G corregidas, 150 versiones previas archivadas como inválidas por filtración de preprocesado. **CT2 12→10/100; N1 nuevo 1 (provisional), N2=N3 0.** La primera tanda 30 no obtuvo 2/3, por eso se utilizó la autorización adicional de 45.
+**Estado:** 30+45 ciclos experimentales A–J reparados (C01–C75), no 2/3/3/3, CT2 12→10/100, un 1/3 técnico nuevo (LARP-1-004) conservado en el [registro permanente](../../FINDINGS_1_3/LEDGER.json). Los N1 anteriores explícitamente registrados son tres; total explícito=4; el histórico anterior a O4 no está auditado.
 
-Abrir primero [Dictamen](reports/DICTAMEN.md), [A–J de cada ciclo](ledger/LEDGER_AJ_75.md), [resumen CSV](reports/SUMMARY_75.csv), [lectura por bloque](reports/BLOCK_READOUTS.md), [CT2](reports/CT2_TRAJECTORY.json) y [auditoría](reports/AUDIT.json). Los resultados individuales E/G están en `results/C##_E.json` y `results/C##_G.json`, con una trayectoria de muestras por resultado. `results_invalid_population_scaling/` guarda los 150 anteriores que NO deben usarse para reivindicar hipótesis sin filtración.
+## Empezar aquí
+[Dictamen científico R1](DICTAMEN_R1.md) · [CT2 por bloque (JSON)](results/CT2_BLOCK_REVIEW.json) · [Fuente, exposición previa y reparación](prereg/REPAIR_R1_NO_FULL_Y_PREPROCESSING.md) · [Source-lock original](SOURCE_LOCK.md).
 
-La fuente fuente v1/v2 `src/engine.py`/`src/engine2.py` era defectuosa, los motores R1 `src/engine3.py`/`src/engine4.py` usan centros/escalas fijos. Código reproducible: `src/design.py`, `src/run_block.py` y `src/finalize.py`. Ejecutar en Python con numpy, scipy, statsmodels, matplotlib (versiones en requirements). E/G usan las mismas poblaciones históricas, y las intervenciones de drift/MNAR son simuladas.
+**No seguir cifras B01–B05 anteriores:** sus readouts son versiones invalidas por fuga de información de y global. Los 75 ciclos se reejecutaron con fuente R1 congelada por SHA antes del replay, pero ya se habían visto los primeros resultados. Su grado de prueba es **EXPLORATORIO_POST_EXPOSICIÓN**, no confirmación independiente.
 
-Los 75 contratos se almacenan en `prereg/`. Antes de cada bloque el contrato se había comprometido en GitHub y el SHA de fuente corregida se congeló antes de R1, pero los scripts fuente y los datos brutos completos pueden haber sido copiados al remoto retrospectivamente; **no** afirmar cumplimiento O3 de bytes pre-run íntegros ni replicación externa. El ZIP local tiene `MANIFEST.json` de todos los hashes.
+El ZIP de conversación `LARP_AB75_20261024_COMPLETO.zip` SHA256 `04ce6a444c07f2cf27f83c9a67a5b852330cf985190dfeb285b27b2db68e6d1b` tiene 426 entradas, incluye todas las fuentes editables, contratos, 150 E/G R1, 150 E/G originales inválidos, 75 expedientes A–J de 183KB, CSV, auditorías, priors y gráficas de CT2. **No todos los brutos están aún en GitHub**, ni se ha probado un clon limpio: dejar PR en borrador.
 
-**Pendiente:** prueba desde clon GitHub limpio y benchmark serio con datos prospectivos que no contengan el objetivo completo accesible en la simulación. No hay originalidad 2/3 acreditada. Para siguiente bloque **SOLICITO BRANCHING 30 CICLOS**.
+Los datos son observaciones históricas de statsmodels, no flujo prospectivo. Las etiquetas envejecidas, MAR y MNAR se alteraron sintéticamente. E/G son distintos presupuestos y trayectorias de Monte Carlo en las mismas fuentes. No inferir replicación externa ni 2/3.
