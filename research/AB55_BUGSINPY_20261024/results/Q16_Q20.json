@@ -1,0 +1,277 @@
+[
+  {
+    "cycle": "Q16",
+    "project": "black",
+    "bug_id": 4,
+    "upstream": "psf/black",
+    "buggy_commit": "65ea568e3301951f26e0e3b98f6d5dc80132e917",
+    "fixed_commit": "c7495b9aa098ef7a358fc74556359d21c6a4ba11",
+    "python": "3.8.3",
+    "official_test": "tests/test_black.py;tests/data/beginning_backslash.py",
+    "fix_message": "Fix unstable format involving backslash + whitespace at beginning of file (#948)",
+    "files": [
+      {
+        "name": "black.py",
+        "changes": 8,
+        "additions": 7,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "tests/data/beginning_backslash.py",
+        "changes": 12,
+        "additions": 12,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "name": "tests/test_black.py",
+        "changes": 8,
+        "additions": 8,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 8,
+    "test_changed_lines": 20,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q17",
+    "project": "matplotlib",
+    "bug_id": 1,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_commit": "c404d1f716e8aaefd4d7371ff49673e9c1f7f07c",
+    "fixed_commit": "5324adaec6a7fd3d78dea7b28451d5f6e95392a6",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_bbox_tight.py",
+    "fix_message": "FIX: do not let no-op monkey patches to renderer leak out",
+    "files": [
+      {
+        "name": "lib/matplotlib/backend_bases.py",
+        "changes": 31,
+        "additions": 17,
+        "deletions": 14,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/figure.py",
+        "changes": 16,
+        "additions": 13,
+        "deletions": 3,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/tests/test_bbox_tight.py",
+        "changes": 23,
+        "additions": 23,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/tight_layout.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 49,
+    "test_changed_lines": 23,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q18",
+    "project": "matplotlib",
+    "bug_id": 2,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_commit": "2a3707d9c3472b1a010492322b6946388d4989ae",
+    "fixed_commit": "d86cc2bab8183fd3288ed474e4dfd33e0f018908",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_axes.py",
+    "fix_message": "Fix colors for scatter() with unfilled markers",
+    "files": [
+      {
+        "name": "lib/matplotlib/axes/_axes.py",
+        "changes": 10,
+        "additions": 5,
+        "deletions": 5,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/tests/test_axes.py",
+        "changes": 10,
+        "additions": 10,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 10,
+    "test_changed_lines": 10,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q19",
+    "project": "matplotlib",
+    "bug_id": 3,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_commit": "5e046f72ae82788788c7e9b9354b87b131891cd8",
+    "fixed_commit": "2a3707d9c3472b1a010492322b6946388d4989ae",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_marker.py",
+    "fix_message": "Markers with fillstyle 'none' should return False for is_filled()",
+    "files": [
+      {
+        "name": "lib/matplotlib/markers.py",
+        "changes": 5,
+        "additions": 4,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/tests/test_marker.py",
+        "changes": 6,
+        "additions": 6,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 5,
+    "test_changed_lines": 6,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q20",
+    "project": "matplotlib",
+    "bug_id": 4,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_commit": "793c6b05381231371267b44b107726f3878e14f2",
+    "fixed_commit": "fafa132484872141431a5be3727eab1d8b3c7b82",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_axes.py",
+    "fix_message": "changed 'colors' parameter to default to rcParams['lines.color'] in line with issue #16482",
+    "files": [
+      {
+        "name": "doc/api/api_changes_3.3/behaviour.rst",
+        "changes": 9,
+        "additions": 7,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/axes/_axes.py",
+        "changes": 8,
+        "additions": 4,
+        "deletions": 4,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/pyplot.py",
+        "changes": 4,
+        "additions": 2,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "name": "lib/matplotlib/tests/test_axes.py",
+        "changes": 14,
+        "additions": 14,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 12,
+    "test_changed_lines": 14,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
