@@ -1,0 +1,63 @@
+{
+  "block": "B04",
+  "status": "PRE_RUN",
+  "source_sha256": "e2b2668649c415a57b79039d4e05bb8216f6740ceb4a2795547eea226ae42904",
+  "question": "Do six purchased pilot labels plus 70% auxiliary variance shrinkage generate enough efficiency to beat optimally allocating the FULL labeling budget directly under the same auxiliary x proxy?",
+  "A": "pilot_shrink_70pct remaining B-6 labels",
+  "B": "no-pilot x-proxy exact B labels",
+  "H1": "paired expected true target variance A-B<0",
+  "H0": "paired mean>=0",
+  "rivals": [
+    "Pilot cost dominates even with shrinkage",
+    "A shrunk toward x, so cannot easily beat full-budget x-opt",
+    "Small budget and known Bayesian multiwave optimal allocation"
+  ],
+  "controls": "same underlying observations and auxiliary proxy, paid pilot cost counted, outcome only to compute offline exact target variance; no true outcome oracle for policies",
+  "E": [
+    18,
+    24
+  ],
+  "G": [
+    36,
+    48
+  ],
+  "AB": "A finite pop design variance at equal total labels; B full-budget competent baseline and Hother; C source-fixed comparison; D pilot/remaining positivity and code budget invariants; E run; F no observational field deployment; G larger budgets, not independent; H update priors; I novelty, CT2; J keep 30 mandatory via DRIFT",
+  "specs": [
+    {
+      "id": "Q19",
+      "source": "diabetes",
+      "family": "pilot_shrink_vs_proxy",
+      "hypothesis": "Cost-adjusted pilot-shrink beats no-pilot exact proxy allocation in diabetes"
+    },
+    {
+      "id": "Q20",
+      "source": "breast",
+      "family": "pilot_shrink_vs_proxy",
+      "hypothesis": "Cost-adjusted pilot-shrink beats no-pilot exact proxy allocation in breast"
+    },
+    {
+      "id": "Q21",
+      "source": "wine",
+      "family": "pilot_shrink_vs_proxy",
+      "hypothesis": "Cost-adjusted pilot-shrink beats no-pilot exact proxy allocation in wine"
+    },
+    {
+      "id": "Q22",
+      "source": "digits",
+      "family": "pilot_shrink_vs_proxy",
+      "hypothesis": "Cost-adjusted pilot-shrink beats no-pilot exact proxy allocation in digits"
+    },
+    {
+      "id": "Q23",
+      "source": "nile",
+      "family": "pilot_shrink_vs_proxy",
+      "hypothesis": "Cost-adjusted pilot-shrink beats no-pilot exact proxy allocation in nile"
+    },
+    {
+      "id": "Q24",
+      "source": "sunspots",
+      "family": "pilot_shrink_vs_proxy",
+      "hypothesis": "Cost-adjusted pilot-shrink beats no-pilot exact proxy allocation in sunspots"
+    }
+  ]
+}

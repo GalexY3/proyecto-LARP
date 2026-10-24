@@ -1,0 +1,62 @@
+{
+  "block": "B02",
+  "campaign": "AB30_COMPOSITION_20261024",
+  "source_sha256": "e2b2668649c415a57b79039d4e05bb8216f6740ceb4a2795547eea226ae42904",
+  "status": "PRE_RUN",
+  "question": "Does spending 6 labels (2/stratum) only to estimate stratum target variances and then choosing final labels beat full-budget proportional selection?",
+  "H1": "pilot_raw has lower expected true design variance than proportional_full at same TOTAL label acquisition budget",
+  "H0": "E delta >=0",
+  "rivals": [
+    "the pilot cost reduces estimation sample and harms precision",
+    "small pilot within-stratum variance is extremely noisy",
+    "two-wave optimum has been studied in JSS 2025 and BLS 2026"
+  ],
+  "E": [
+    18,
+    24
+  ],
+  "G": [
+    36,
+    48
+  ],
+  "pilot_draws": 12,
+  "AB": "A finite-pop variance under sample cost; B H1/H0/other; C six source-specific questions; D validate 6 pilot labels excluded from final estimate; E execution; F parity/competent proportional control and prior art; G budgets larger same source only; H priors without duplicate 1/3; I CT2 and 0-3; J BRANCH, never campaign STOP",
+  "specs": [
+    {
+      "id": "Q07",
+      "source": "diabetes",
+      "family": "pilot_vs_prop",
+      "hypothesis": "Six paid pilot labels can guide a better final variance estimator in diabetes"
+    },
+    {
+      "id": "Q08",
+      "source": "breast",
+      "family": "pilot_vs_prop",
+      "hypothesis": "Six paid pilot labels can guide a better final variance estimator in breast"
+    },
+    {
+      "id": "Q09",
+      "source": "wine",
+      "family": "pilot_vs_prop",
+      "hypothesis": "Six paid pilot labels can guide a better final variance estimator in wine"
+    },
+    {
+      "id": "Q10",
+      "source": "digits",
+      "family": "pilot_vs_prop",
+      "hypothesis": "Six paid pilot labels can guide a better final variance estimator in digits"
+    },
+    {
+      "id": "Q11",
+      "source": "nile",
+      "family": "pilot_vs_prop",
+      "hypothesis": "Six paid pilot labels can guide a better final variance estimator in nile"
+    },
+    {
+      "id": "Q12",
+      "source": "sunspots",
+      "family": "pilot_vs_prop",
+      "hypothesis": "Six paid pilot labels can guide a better final variance estimator in sunspots"
+    }
+  ]
+}
