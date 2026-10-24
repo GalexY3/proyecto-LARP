@@ -1,11 +1,20 @@
 # Registro acumulativo LARP de hallazgos 1/3
 
-[LEDGER.json](LEDGER.json) es el ledger canónico append-only. **4 hallazgos explícitamente reconocidos hasta ahora**, ambos exploratorios y no nuevos a la literatura. El total histórico de todas las campañas anteriores sigue **NOT_AUDITED**; no deducir que es 2 en toda la historia.
+**Inventario canónico al 24-10-2026: 6 entradas 1/3 auditadas, 0 hallazgos 2/3 y 0 hallazgos 3/3.** Ninguna de las seis ha recibido confirmación científica externa independiente. El histórico total previo es **NOT_AUDITED**. Estos seis registros NO son los únicos posibles resultados de toda la historia de LARP.
 
-Cada entrada conserva reivindicación concreta, rama y archivo de evidencia, falsador, límites, antecedentes, relaciones con otras entradas y potenciales hipótesis de combinación. No duplicar un hallazgo por datasets, seeds o repeticiones. El grado 1/3 no implica novedad 2/3 ni réplica externa. Los grados 2/3 y 3/3 se registran aparte y requieren controles competentes y prueba externa.
+La fuente de verdad es [LEDGER.json](LEDGER.json), append-only, con reclamación concreta, origen, experimentos, límites, fuentes adversariales, falsador, antecedentes y vínculos. **NUNCA** duplicar un 1/3 por cambio de datos, seeds, ciclos o combinaciones retóricas.
 
-La línea de combinación propuesta es **equivalencia entre políticas discretas (LARP-1-001)** + **desajuste del objetivo auxiliar (LARP-1-002)**. Una combinación conceptual no demuestra 2/3; debe producir una predicción nueva que sobreviva a muestreo adaptativo y asignación bayesiana existentes.
+| ID | Hallazgo auditado | Fuente |
+|---|---|---|
+| LARP-1-001 | ALIAS-01 | AB30 O4 enteros, PR #14 |
+| LARP-1-002 | PROXY-GAP-02 | AB30 O4 enteros, PR #14 |
+| LARP-1-003 | COST-PILOT-03 | AB30 composición/piloto, PR #16 |
+| LARP-1-004 | TEMPO-COST-04 | AB75 información temporal, PR #17 |
+| LARP-1-005 | FIXED-SITE-MODALITY-CONTROL | AB30 sitios fijos, PR #18 |
+| LARP-1-006 | QB-MR-06 | AB20 QuixBugs, PR #20 |
 
-**Actualización 24-10-2026:** se añadió COST-PILOT-03 (compra/uso del piloto y pérdida de la mejora al aplicar paridad de costes), una sola entrada 1/3 exploratoria con evidencia adversarial. Fuente de investigación: [AB30 Composition, PR #16](https://github.com/GalexY3/proyecto-LARP/pull/16). El total histórico anterior a la rúbrica sigue sin auditar.
+La combinación ALIAS-01 + PROXY-GAP-02 es una pregunta nueva posible, **no** un 2/3. Los resultados AB45 y campañas históricas que en sus dictámenes llaman algún efecto «novedad 1/3» son **candidatos históricos pendientes de reconciliar**, no nuevos 1/3 ya auditados: deben cotejarse por procedencia y duplicados.
 
-**AB75 (24-10-2026):** [LARP-1-004 — TEMPO-COST-04](LEDGER.json), 1/3 técnico post-exposición sobre validez temporal de etiquetas piloto y coste de reconsulta. Procede de [PR #17](https://github.com/GalexY3/proyecto-LARP/pull/17), datos observados históricos con shocks sintéticos; no es un descubrimiento 2/3 ni un principio nuevo de la teoría secuencial. Los 4 hallazgos son el inventario explícito O4, no el total histórico completo.
+Registro extensivo de todas las seis entradas y sus falsadores: [AB65/N1_REGISTRO_COMPLETO_AUDITADO.json](../AB65_CONDITIONAL_20261024/N1_REGISTRO_COMPLETO_AUDITADO.json). Los 20 reanálisis de CI y 45 contrastes D4–D5 de AB65 añadieron **cero** hallazgos 1/3 distintos; tampoco acreditaron 2/3. CT2 es ordinal y pertenece a cada rama.
+
+Política [AB3.2.1/O4/O6](https://github.com/GalexY3/Metodologia-AB): todo hallazgo nuevo se añade tras auditar novedad, procedencia y evidencias contrarias; una propuesta no se promueve retrospectivamente por comodidad documental.

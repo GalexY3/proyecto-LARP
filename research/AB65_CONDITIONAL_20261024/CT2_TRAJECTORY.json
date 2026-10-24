@@ -1,0 +1,189 @@
+{
+  "schema": "CT2_O6_v1",
+  "date": "2026-10-24",
+  "what": "Ordinal subjective confidence of prospectively reaching 2/3 on each scientific line, not probability",
+  "scope": "AB55->AB65 eight distinct subtrajectories, documented checkpoints only; x counts cumulative AB administrative records (not independent samples)",
+  "tracks": [
+    {
+      "id": "AB55_BUGSINPY",
+      "name": "BugsInPy documental",
+      "source": "LARP AB55",
+      "points": [
+        {
+          "cycle_position": 0,
+          "score": 11,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 20,
+          "score": 9,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 25,
+          "score": 11,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 37,
+          "score": 9,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 55,
+          "score": 8,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    },
+    {
+      "id": "AB30_P04",
+      "name": "P04 sintético",
+      "source": "PR21",
+      "points": [
+        {
+          "cycle_position": 55,
+          "score": 12,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 61,
+          "score": 10,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 85,
+          "score": 10,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    },
+    {
+      "id": "AB20_PATCH",
+      "name": "Parches originales aislados",
+      "source": "PR22",
+      "points": [
+        {
+          "cycle_position": 85,
+          "score": 8,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 105,
+          "score": 8,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    },
+    {
+      "id": "AB20_FULL",
+      "name": "Repos históricos completos",
+      "source": "PR23",
+      "points": [
+        {
+          "cycle_position": 105,
+          "score": 8,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 125,
+          "score": 11,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    },
+    {
+      "id": "AB20_BRANCH_REVIEW",
+      "name": "Reanálisis CI retrospectivo",
+      "source": "AB65 phase1",
+      "points": [
+        {
+          "cycle_position": 125,
+          "score": 11,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 145,
+          "score": 9,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    },
+    {
+      "id": "D4_ENV",
+      "name": "Dinámica ambiental D4.6",
+      "source": "AB65 phase2",
+      "points": [
+        {
+          "cycle_position": 145,
+          "score": 9,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 160,
+          "score": 7,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    },
+    {
+      "id": "D4_ECON",
+      "name": "Economía observacional D4.6",
+      "source": "AB65 phase2",
+      "points": [
+        {
+          "cycle_position": 160,
+          "score": 12,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 175,
+          "score": 8,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    },
+    {
+      "id": "D4_POPGEN",
+      "name": "Genética simulada D4.7",
+      "source": "AB65 phase2",
+      "points": [
+        {
+          "cycle_position": 175,
+          "score": 8,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        },
+        {
+          "cycle_position": 190,
+          "score": 4,
+          "record_type": "SUBJECTIVE_CHECKPOINT"
+        }
+      ]
+    }
+  ],
+  "pivots": [
+    {
+      "x": 145,
+      "new_line": "D4_ENV",
+      "D": 4.6,
+      "discipline": "physical-environmental time series"
+    },
+    {
+      "x": 160,
+      "new_line": "D4_ECON",
+      "D": 4.6,
+      "discipline": "political economy statistical prediction"
+    },
+    {
+      "x": 175,
+      "new_line": "D4_POPGEN",
+      "D": 4.7,
+      "discipline": "mathematical population genetics"
+    }
+  ],
+  "total_n1_audited": 6,
+  "new_n1": 0,
+  "n2": 0,
+  "n3": 0,
+  "reproducibility": "See local exact data and scripts ZIP; never insert 45 invented CT2 cycle points; no causal interpretation of branch-to-branch changes."
+}

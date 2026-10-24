@@ -1,0 +1,351 @@
+{
+  "schema": "LARP_N1_AUDITED_CUMULATIVE_20261024_v1",
+  "provenance": "Exact copied findings from project main research/FINDINGS_1_3/LEDGER.json, not promoted or modified",
+  "date": "2026-10-24",
+  "audited_count": 6,
+  "historical_total_status": "NOT_AUDITED",
+  "grade_2_3": 0,
+  "grade_3_3": 0,
+  "new_n1_AB65": 0,
+  "findings": [
+    {
+      "id": "LARP-1-001",
+      "short_name": "ALIAS-01",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COMPUTATIONAL_REPAIRED",
+      "claim": "At small integer label budgets, many nominally different continuous allocation mixtures map to identical three-stratum allocation vectors; 81-90% redundant across observed sources on the preselected grid.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab30-o4-integer-20261024",
+      "source_path": "research/AB30_O4_INTEGER_20261024/reports/DICTAMEN_R1.md",
+      "pr": "https://github.com/GalexY3/proyecto-LARP/pull/14",
+      "dataset_scope": [
+        "diabetes",
+        "breast",
+        "wine",
+        "digits",
+        "nile",
+        "sunspots"
+      ],
+      "experiment_ids": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06"
+      ],
+      "evidence": "Post-exposure R1 repaired experiments, exact enumeration",
+      "adversarial_limits": [
+        "discretization already known",
+        "grid/budget/strata-dependent",
+        "not external replication"
+      ],
+      "prior_art": [
+        "https://www.census.gov/library/working-papers/2014/adrm/rrs2014-07.html"
+      ],
+      "falsifier": "Alternative integer budgets and constraints with more distinct treatment vectors",
+      "connections": [
+        "LARP-1-002"
+      ],
+      "possible_composition": "Optimize unique implementable policies and protect against auxiliary-objective misspecification",
+      "duplicate_of": null,
+      "external_confirmation": false
+    },
+    {
+      "id": "LARP-1-002",
+      "short_name": "PROXY-GAP-02",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COMPUTATIONAL_REPAIRED",
+      "claim": "Exact optimal integer allocation on an imperfect auxiliary variance proxy can worsen true outcome variance relative to a less exact Hamilton approximation; five of six observed populations in one study.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab30-o4-integer-20261024",
+      "source_path": "research/AB30_O4_INTEGER_20261024/reports/DICTAMEN_R1.md",
+      "pr": "https://github.com/GalexY3/proyecto-LARP/pull/14",
+      "dataset_scope": [
+        "diabetes",
+        "breast",
+        "wine",
+        "digits",
+        "nile",
+        "sunspots"
+      ],
+      "experiment_ids": [
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12"
+      ],
+      "evidence": "Post-exposure R1 repaired finite population design variance comparisons",
+      "adversarial_limits": [
+        "Goodhart/proxy mismatch known",
+        "dataset reuse",
+        "proxy selection and scoring not field validated",
+        "no external replication"
+      ],
+      "prior_art": [
+        "https://www.bls.gov/osmr/research-papers/2026/st260020.htm"
+      ],
+      "falsifier": "Proxy calibrated strongly predicts within-stratum target variance, reversing outcome",
+      "connections": [
+        "LARP-1-001"
+      ],
+      "possible_composition": "Policy equivalence classes under bounded auxiliary uncertainty and fixed integer budgets",
+      "duplicate_of": null,
+      "external_confirmation": false
+    },
+    {
+      "id": "LARP-1-003",
+      "short_name": "COST-PILOT-03",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COST_PARITY_AND_POSTHOC_CONTROL",
+      "claim": "In six observed finite populations, a six-label pilot can improve allocation relative to a raw noisy pilot after 70% auxiliary-variance shrinkage, yet fails to improve full-budget population risk variance against a competent no-pilot comparator; a separate post-hoc audit reusing pilot labels still showed higher MSE under tested budgets.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab30-composition-pilot-20261024",
+      "source_path": "research/AB30_COMPOSITION_20261024/README.md",
+      "archival_zip": "LARP_AB30_COMPOSICIONES_20261024.zip",
+      "archival_zip_sha256": "82b5f789a06a501079415c0d98f7d118b3562837c69e0482a29b908f11177011",
+      "source_code_sha256": "e2b2668649c415a57b79039d4e05bb8216f6740ceb4a2795547eea226ae42904",
+      "experiment_ids": [
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18",
+        "Q19",
+        "Q20",
+        "Q21",
+        "Q22",
+        "Q23",
+        "Q24"
+      ],
+      "date": "2026-10-24",
+      "evidence": "Three prospectively specified six-source AB blocks plus a POSTSELECTED competent pilot-reuse audit with 500 finite-population random trials per source and budget; G larger budgets on same data, not independent replication.",
+      "adversarial_limits": [
+        "original pilot method excludes pilot labels from final estimate, a weak design",
+        "post-run reuse test is exploratory, not new field data",
+        "only six reused public populations",
+        "strong Bayesian and multi-wave design literature exists",
+        "no independent external replication or publication-level novelty"
+      ],
+      "prior_art": [
+        "https://www.bls.gov/osmr/research-papers/2026/st260020.htm",
+        "https://www.jstatsoft.org/article/view/v114i10"
+      ],
+      "falsifier": "A budget-parity, fully efficient multi-wave field implementation beats competent one-wave controls in a preregistered independent dataset under measured label costs",
+      "connections": [
+        "LARP-1-001",
+        "LARP-1-002"
+      ],
+      "possible_composition": "Integer policy quotient + proxy-target calibration + value-of-information under observable real label prices",
+      "duplicate_of": null,
+      "external_confirmation": false,
+      "novelty_assessed": "NO 2/3; known category of design and acquisition cost"
+    },
+    {
+      "id": "LARP-1-004",
+      "short_name": "TEMPO-COST-04",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COMPUTATIONAL_POST_EXPOSURE_REPAIRED",
+      "claim": "When pilot labels are acquired before an induced change in the outcome, reusing them as if contemporaneous can increase bias, but paying to refresh them may worsen the mean squared error at fixed total label-action budget.",
+      "date": "2026-10-24",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab75-information-20261024",
+      "source_path": "research/AB75_INFORMATION_20261024/DICTAMEN_R1.md",
+      "experiment_ids": [
+        "C51",
+        "C52",
+        "C53",
+        "C54",
+        "C55",
+        "C56",
+        "C57",
+        "C58",
+        "C59",
+        "C60"
+      ],
+      "evidence": "B10 finite-population MC: stale-pilot HT greater absolute bias in 5/5 exploratory sources E and 4/5 G while lower MSE than stage2-only; B11 buying another six labels to refresh stale pilot led to worse MSE in 5/5 E and G. B=30 and 48, same historical data, outcome shifts constructed post-pilot. R1 no-leakage fixed transformation selected after observing earlier invalid results.",
+      "adversarial_limits": [
+        "All label changes are artificially constructed; no naturally observed temporal drift",
+        "Public historical datasets reused, no outside prospective deployment",
+        "R1 repair after exposure, not blind confirmation",
+        "Conditional unbiasedness and missing-label methods predate study",
+        "The cost tradeoff overlaps COST-PILOT-03, but temporal validity is a distinct operational failure mode",
+        "No field measurements of real labels and price",
+        "No claim of a new statistical theorem"
+      ],
+      "prior_art": [
+        "https://www.usgs.gov/publications/efficient-estimators-adaptive-stratified-sequential-sampling",
+        "https://proceedings.mlr.press/v236/cook24a.html",
+        "https://www3.stat.sinica.edu.tw/sstest/oldpdf/A24n119.pdf"
+      ],
+      "connections": [
+        "LARP-1-001",
+        "LARP-1-002",
+        "LARP-1-003"
+      ],
+      "possible_composition": "Explicit time-indexed estimand and label-age-aware acquisition with equivalence-class compression, honest proxy-target gap and actual remeasurement costs",
+      "falsifier": "A preregistered real-time independent stream finds refreshed pilot labels improve net risk estimation enough to offset measured reacquisition cost, or there is no temporal bias in production outcome under detected drift.",
+      "duplicate_of": null,
+      "external_confirmation": false,
+      "novelty_assessed": "NOT 2/3; classical sequential survey principles cover broad effect",
+      "source_pr": "https://github.com/GalexY3/proyecto-LARP/pull/17",
+      "archival_zip": "LARP_AB75_20261024_COMPLETO.zip",
+      "archival_zip_sha256": "04ce6a444c07f2cf27f83c9a67a5b852330cf985190dfeb285b27b2db68e6d1b"
+    },
+    {
+      "id": "LARP-1-005",
+      "short_name": "FIXED-SITE-MODALITY-CONTROL",
+      "grade": "1/3",
+      "status": "EXPLORATORY_SYNTHETIC_WITH_POSTHOC_REAL_IMAGES",
+      "date": "2026-10-24",
+      "claim": "At identical fixed spatial sensor locations and equal five-modality quotas, lowering finite-wavenumber modality structure power can improve same-type coverage and synthetic signal reconstruction compared with randomized modality assignments, yet does not generally beat a competent spatial farthest-first assignment. Thus favorable spectral reduction does not alone imply superior functional sensing.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab30-fixed-site-multicolor-20261024",
+      "source_path": "research/AB30_FIXED_SITE_20261024/reports/DICTAMEN.md",
+      "experiment_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C30"
+      ],
+      "evidence": "Exact source and 30 A-D contracts frozen in GitHub before execution, 4 E+8 G synthetic layout seeds per task, five families including fixed type-specific modes, farthest-first stronger baseline and postselected public-image audit. All 30 raw per-seed JSON and 83k-character A-J report in archived ZIP.",
+      "adversarial_limits": [
+        "Blue noise for multiple classes and imaging sensors already published in SIGGRAPH 2010",
+        "Finite low-frequency S(k) not certificate of asymptotic multihyperuniformity",
+        "All 30 initial hypotheses use correlated artificial field/geometry generators",
+        "Strong farthest-first control wins most coverage, Fourier and OOD comparisons",
+        "Six public-image audit sources tested after seeing synthetic data, not preregistered independent validation",
+        "Four E and eight G seeds too few for general power, heavy overlapping tests",
+        "No cost parity/optimization effort control against published multicolor algorithms"
+      ],
+      "prior_art": [
+        "https://www.liyiwei.org/papers/noise-sig10/",
+        "https://doi.org/10.1145/2487228.2487233",
+        "https://doi.org/10.1103/PhysRevE.89.022721"
+      ],
+      "falsifier": "A prospective, independently acquired multisensor dataset with reliable measured modalities shows a consistent, predeclared A-vs-farthest reconstruction advantage, or failures of finite low-k reduction are shown to be a code artifact.",
+      "connections": [
+        "LARP-1-001",
+        "LARP-1-002",
+        "LARP-1-003",
+        "LARP-1-004"
+      ],
+      "possible_composition": "Functional task-aware type recoloring on fixed nodes under modality-selective failures, with spectral cutoff conditioned on estimator/model and a published multicolor blue-noise benchmark",
+      "duplicate_of": null,
+      "external_confirmation": false,
+      "novelty_assessed": "NOT 2/3; diagnostic mechanism already anticipated by published spectral blue noise work",
+      "CT2_after_project_audit": 7
+    },
+    {
+      "id": "LARP-1-006",
+      "short_name": "QB-MR-06",
+      "date": "2026-10-24",
+      "grade": "1/3",
+      "status": "EXPLORATORY_POST_EXPOSURE_REPAIRED_EXTERNAL_CHALLENGE_CORPUS",
+      "claim": "En veinte programas defectuosos escritos para desafíos Quixey y elegidos deliberadamente de QuixBugs, tres pares de pruebas metamórficas manuales detectaron fallos en 13/20, frente a comprobaciones superficiales en 8/20, con seis ejecuciones del código defectuoso por método; las referencias reparadas detectaron 20/20, con mayor acceso informativo.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab20-quixbugs-20261024",
+      "source_path": "research/AB20_QUIXBUGS_20261024/reports/DICTAMEN.md",
+      "source_code_sha256": "db5dc62aa1c5fe2f08b3ac233582493808d75c95793ed87f6fdcbb05a70f8a57",
+      "source_upstream": "https://github.com/jkoppel/QuixBugs",
+      "source_upstream_commit": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+      "experiment_ids": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18",
+        "Q19",
+        "Q20"
+      ],
+      "evidence": "20 preselected external human-crafted Quixey Challenge algorithms, E 3 seeds and G 5 seeds each drawn from a fixed hand-crafted pool of 12 cases per program. Program-level M>S difference +5/20, exact bilateral paired p=0.0625 (exploratory), corrected negative controls zero FP in 480 program-seed-method triples. Source R1 repair committed before replay after seeing invalid E results; 40 E/G JSONs reproduced byte-for-byte in same environment.",
+      "adversarial_limits": [
+        "QuixBugs are toy challenges with intentionally inserted defects, NOT production bugs",
+        "case inputs and metamorphic relations hand-built with knowledge of the algorithmic contract and likely defect type; not blind",
+        "baseline sanity checks shallow and not a competent Hypothesis/industry fuzzing suite",
+        "differential reference had unequal privileged access and additional queries; not equal total information budget",
+        "E and G reuse same twelve inputs/program, not external confirmation",
+        "first E had faulty sanity types in gcd/get_factors and invalid LCS relation; R1 repaired after E exposure and archived",
+        "paired two-sided exact 0.0625 on deliberately selected 20 programs, no population-level novelty inference",
+        "meta underdetects 7/20 detected by repaired reference",
+        "metamorphic testing and MR synthesis already widely published"
+      ],
+      "prior_art": [
+        "https://doi.org/10.1145/3656340",
+        "https://doi.org/10.1016/j.infsof.2024.107528",
+        "https://www.nist.gov/publications/metamorphic-testing-cybersecurity"
+      ],
+      "falsifier": "On truly blind defect cases from independent production repositories and equal total test cost versus strong contemporary property-testing baselines, program-specific metamorphic testing does not improve credible detection or exhibits unacceptable false-positive rates",
+      "connections": [
+        "LARP-1-002",
+        "LARP-1-003",
+        "LARP-1-004"
+      ],
+      "possible_composition": "Audit model scientific pipelines using verified metamorphic relations chosen on held-out operations, with explicit cost, alias-free test designs and nonleaky reference checks",
+      "duplicate_of": null,
+      "external_confirmation": false,
+      "novelty_assessed": "1/3 only; existing metamorphic testing principle, not novel scientific 2/3"
+    }
+  ],
+  "historical_unreviewed": [
+    {
+      "scope": "LARP pre-24-Oct research and multiple AB45 campaigns",
+      "status": "CANDIDATE_FINDINGS_NOT_YET_AUDITED_AS_CANONICAL_N1",
+      "count": "UNKNOWN",
+      "examples": [
+        "Finite-band MHU spectral suppression in original geometries (AB30_LIBRE)",
+        "Functional coverage for synthetic smooth fields (BR30/AB08)",
+        "Bottlenecks of adaptive feature selection on observed Beijing Air Quality (AB45)"
+      ],
+      "note": "Do not append as confirmed N1 or equate prior report label 'novelty 1/3' with cross-campaign audited distinct contribution until exact provenance, scope, duplicate and external evidence reviewed."
+    }
+  ]
+}
