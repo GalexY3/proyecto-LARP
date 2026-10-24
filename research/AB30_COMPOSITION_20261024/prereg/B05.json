@@ -1,0 +1,64 @@
+{
+  "block": "B05",
+  "status": "PRE_RUN",
+  "source_sha256": "e2b2668649c415a57b79039d4e05bb8216f6740ceb4a2795547eea226ae42904",
+  "question": "If unobserved target variance changes AFTER a six-label pilot, does adding a 50% proportional guard to the pilot allocation lower the worst-case evaluation variance compared with proxy-shrunk pilot alone?",
+  "A": "guarded_after_pilot, 50% N proportional + 50% raw-pilot Neyman weights",
+  "B": "70%-proxy-shrunken pilot Neyman weights",
+  "H1": "A improves worst-case exact design variance under fixed 3 synthetic heteroscedastic within-stratum shocks",
+  "H0": "E delta >=0",
+  "rivals": [
+    "Guard worsens informative pilot allocations",
+    "Stress shock constructed by experimenter",
+    "Neither robust policy beats no-pilot proportional at full label budget",
+    "Robust Bayesian 2026 design known"
+  ],
+  "E": [
+    18,
+    24
+  ],
+  "G": [
+    36,
+    48
+  ],
+  "controls": "same 6 pilot labels in A/B, same final B-6 label budget, shocks only for after-pilot offline score, natural original world included in worst of four, no true y future used by policies",
+  "AB": "A worst-of-four design variance; B rivals and null; C shocks each one of three strata; D no outcome shift leakage; E run; F exact full budget control and prior art; G budgets same sources only; H CT2 and unique 1/3 adjudication; I novelty; J close after 30 complete",
+  "specs": [
+    {
+      "id": "Q25",
+      "source": "diabetes",
+      "family": "stress_pilot_guard",
+      "hypothesis": "A guarded pilot policy beats shrunk pilot policy under postpilot variance shocks in diabetes"
+    },
+    {
+      "id": "Q26",
+      "source": "breast",
+      "family": "stress_pilot_guard",
+      "hypothesis": "A guarded pilot policy beats shrunk pilot policy under postpilot variance shocks in breast"
+    },
+    {
+      "id": "Q27",
+      "source": "wine",
+      "family": "stress_pilot_guard",
+      "hypothesis": "A guarded pilot policy beats shrunk pilot policy under postpilot variance shocks in wine"
+    },
+    {
+      "id": "Q28",
+      "source": "digits",
+      "family": "stress_pilot_guard",
+      "hypothesis": "A guarded pilot policy beats shrunk pilot policy under postpilot variance shocks in digits"
+    },
+    {
+      "id": "Q29",
+      "source": "nile",
+      "family": "stress_pilot_guard",
+      "hypothesis": "A guarded pilot policy beats shrunk pilot policy under postpilot variance shocks in nile"
+    },
+    {
+      "id": "Q30",
+      "source": "sunspots",
+      "family": "stress_pilot_guard",
+      "hypothesis": "A guarded pilot policy beats shrunk pilot policy under postpilot variance shocks in sunspots"
+    }
+  ]
+}
