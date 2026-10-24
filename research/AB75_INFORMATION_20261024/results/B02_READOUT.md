@@ -1,3 +1,9 @@
+# INVALIDADO PARA REIVINDICACIÓN CIENTÍFICA — VERSIÓN v1/V2 CON FILTRACIÓN DE RESPUESTA
+
+Los números en este readout pertenecen a los 75 primeros contratos ejecutados con preprocesado de y global. **No** son resultados válidos para una política que solo compra etiquetas del piloto. Se preservan EXCLUSIVAMENTE para auditoría del error. El [dictamen R1 corregido](../DICTAMEN_R1.md) resume las 75 reparaciones; contrato [R1](../prereg/REPAIR_R1_NO_FULL_Y_PREPROCESSING.md). La segunda ejecución está etiquetada POST-EXPOSURE/EXPLORATORY, no confirmación ciega.
+
+---
+
 # B02 C07–C12, variance-directed pilot allocation: conditional HT versus naive pooled
 Source SHA e20d7220, source-specific 650 E sampling trajectories B30, 750 G B48, same acquired labels per pair.
 E paired MSE difference A(conditional HT)−B(pooled): Engel +0.002734; Fair +0.017648; ANES96 +0.022143; RANDHIE +0.013112; Grunfeld +0.002207; Macrodata +0.010377.
