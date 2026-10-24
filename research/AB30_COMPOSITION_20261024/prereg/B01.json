@@ -1,0 +1,63 @@
+{
+  "campaign": "AB30_COMPOSITION_20261024",
+  "block": "B01",
+  "date": "2026-10-24",
+  "source_sha256": "af8548b2b5f11d91233ec51e9c155a15bee21b020b8d747a0a53414d2306e55c",
+  "state": "PRE_RUN",
+  "e_budgets": [
+    18,
+    24
+  ],
+  "g_budgets": [
+    36,
+    48
+  ],
+  "question": "Does exact allocation using known auxiliary-x stratum variances beat population-proportional sampling on the true y estimation variance?",
+  "null": "E delta(A-B)>=0",
+  "alternative": "E delta(A-B)<0",
+  "falsifiers": "Opposite effect, exact tie, G reversal",
+  "strong_rivals": [
+    "population-proportional design",
+    "true-y oracle only for offline efficiency ceiling",
+    "Bayesian optimal allocation and box-constrained exact Neyman prior art"
+  ],
+  "AB": "A target finite-pop sampling variance; B proposed/null/other; C source-fixed budget design; D no y leakage and integer invariants; E run; F oracle/prior art adversarial; G internal larger-budget transfer only; H update priors; I grade and CT2; J CONTINUE or DRIFT (no campaign STOP)",
+  "specs": [
+    {
+      "id": "Q01",
+      "source": "diabetes",
+      "family": "basic",
+      "hypothesis": "Proxy optimum beats population-proportional design in diabetes"
+    },
+    {
+      "id": "Q02",
+      "source": "breast",
+      "family": "basic",
+      "hypothesis": "Proxy optimum beats population-proportional design in breast"
+    },
+    {
+      "id": "Q03",
+      "source": "wine",
+      "family": "basic",
+      "hypothesis": "Proxy optimum beats population-proportional design in wine"
+    },
+    {
+      "id": "Q04",
+      "source": "digits",
+      "family": "basic",
+      "hypothesis": "Proxy optimum beats population-proportional design in digits"
+    },
+    {
+      "id": "Q05",
+      "source": "nile",
+      "family": "basic",
+      "hypothesis": "Proxy optimum beats population-proportional design in nile"
+    },
+    {
+      "id": "Q06",
+      "source": "sunspots",
+      "family": "basic",
+      "hypothesis": "Proxy optimum beats population-proportional design in sunspots"
+    }
+  ]
+}
