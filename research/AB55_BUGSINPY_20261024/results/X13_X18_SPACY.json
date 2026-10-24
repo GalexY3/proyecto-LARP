@@ -1,0 +1,323 @@
+[
+  {
+    "cycle": "X13",
+    "project": "spacy",
+    "bug_id": 1,
+    "upstream": "explosion/spaCy",
+    "buggy_sha": "9ce059dd067ecc3f097d04023e3cfa0d70d35bb8",
+    "fixed_sha": "a987e9e45d4084f30964a4cec9914ae6ed25a73c",
+    "python": "3.7.7",
+    "official_test": "spacy/tests/test_errors.py",
+    "headline": "Fix ErrorsWithCodes().__class__ return value",
+    "files": [
+      {
+        "path": "spacy/errors.py",
+        "changes": 7,
+        "additions": 5,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "path": "spacy/tests/test_errors.py",
+        "changes": 13,
+        "additions": 13,
+        "deletions": 0,
+        "status": "added"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 7,
+    "test_changed_lines": 13,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "spaCy source/test change provenance",
+      "B": {
+        "H1": "Regression test changed in documented fix",
+        "H0": "No test cochange"
+      },
+      "C": "SHA verified against upstream commit files",
+      "D": "Require exact commit SHA and file array",
+      "E": "Observed patch-level change table",
+      "F": "Cython/native deps and training data may prevent historical execution",
+      "G": "No dynamic reproductions and no external confirmation",
+      "H": "Preserve project-specific scope",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X14",
+    "project": "spacy",
+    "bug_id": 2,
+    "upstream": "explosion/spaCy",
+    "buggy_sha": "efec28ce70a0ff69471cc379867deebe7eb881e0",
+    "fixed_sha": "cfdaf99b8029d6762730c5d5bd2b6f6c173c1241",
+    "python": "3.7.7",
+    "official_test": "spacy/tests/regression/test_issue5137.py",
+    "headline": "Fix passing of component configuration (#5374)",
+    "files": [
+      {
+        "path": "spacy/tests/regression/test_issue5137.py",
+        "changes": 33,
+        "additions": 33,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "spacy/util.py",
+        "changes": 1,
+        "additions": 1,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "website/docs/usage/saving-loading.md",
+        "changes": 4,
+        "additions": 2,
+        "deletions": 2,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 1,
+    "test_changed_lines": 33,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "spaCy source/test change provenance",
+      "B": {
+        "H1": "Regression test changed in documented fix",
+        "H0": "No test cochange"
+      },
+      "C": "SHA verified against upstream commit files",
+      "D": "Require exact commit SHA and file array",
+      "E": "Observed patch-level change table",
+      "F": "Cython/native deps and training data may prevent historical execution",
+      "G": "No dynamic reproductions and no external confirmation",
+      "H": "Preserve project-specific scope",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X15",
+    "project": "spacy",
+    "bug_id": 3,
+    "upstream": "explosion/spaCy",
+    "buggy_sha": "dac70f29eb3b1f21ae9e2c6346666bf6a46307b6",
+    "fixed_sha": "663333c3b2bad90915d1a48a626ca1275b7ef077",
+    "python": "3.7.7",
+    "official_test": "spacy/tests/regression/test_issue5314.py",
+    "headline": "Fixes  #5413 (#5315)",
+    "files": [
+      {
+        "path": ".github/contributors/elben10",
+        "changes": 106,
+        "additions": 106,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "bin/wiki_entity_linking/wikipedia_processor.py",
+        "changes": 6,
+        "additions": 4,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "path": "spacy/tests/regression/test_issue5314.py",
+        "changes": 18,
+        "additions": 18,
+        "deletions": 0,
+        "status": "added"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 6,
+    "test_changed_lines": 18,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "spaCy source/test change provenance",
+      "B": {
+        "H1": "Regression test changed in documented fix",
+        "H0": "No test cochange"
+      },
+      "C": "SHA verified against upstream commit files",
+      "D": "Require exact commit SHA and file array",
+      "E": "Observed patch-level change table",
+      "F": "Cython/native deps and training data may prevent historical execution",
+      "G": "No dynamic reproductions and no external confirmation",
+      "H": "Preserve project-specific scope",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X16",
+    "project": "spacy",
+    "bug_id": 4,
+    "upstream": "explosion/spaCy",
+    "buggy_sha": "abd5c06374eab5db0cf897b73543b1f3eb007e12",
+    "fixed_sha": "9fa9d7f2cb52ce6a70c264d4e57c7f190d7686bf",
+    "python": "3.8.3",
+    "official_test": "spacy/tests/regression/test_issue4665.py",
+    "headline": "Fix for Issue 4665 - conllu2json (#4953)",
+    "files": [
+      {
+        "path": ".github/contributors/onlyanegg.md",
+        "changes": 106,
+        "additions": 106,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "spacy/cli/converters/conllu2json.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "spacy/tests/regression/test_issue4665.py",
+        "changes": 31,
+        "additions": 31,
+        "deletions": 0,
+        "status": "added"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 2,
+    "test_changed_lines": 31,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "spaCy source/test change provenance",
+      "B": {
+        "H1": "Regression test changed in documented fix",
+        "H0": "No test cochange"
+      },
+      "C": "SHA verified against upstream commit files",
+      "D": "Require exact commit SHA and file array",
+      "E": "Observed patch-level change table",
+      "F": "Cython/native deps and training data may prevent historical execution",
+      "G": "No dynamic reproductions and no external confirmation",
+      "H": "Preserve project-specific scope",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X17",
+    "project": "spacy",
+    "bug_id": 5,
+    "upstream": "explosion/spaCy",
+    "buggy_sha": "bdfb696677a7591ced018e7597c00929e97c6837",
+    "fixed_sha": "3bd15055ce74b04dcaf3b9abe2adeb01fb595776",
+    "python": "3.7.7",
+    "official_test": "spacy/tests/test_language.py",
+    "headline": "Fix bug in Language.evaluate for components without .pipe (#4662)",
+    "files": [
+      {
+        "path": "spacy/language.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "spacy/tests/test_language.py",
+        "changes": 14,
+        "additions": 14,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 2,
+    "test_changed_lines": 14,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "spaCy source/test change provenance",
+      "B": {
+        "H1": "Regression test changed in documented fix",
+        "H0": "No test cochange"
+      },
+      "C": "SHA verified against upstream commit files",
+      "D": "Require exact commit SHA and file array",
+      "E": "Observed patch-level change table",
+      "F": "Cython/native deps and training data may prevent historical execution",
+      "G": "No dynamic reproductions and no external confirmation",
+      "H": "Preserve project-specific scope",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X18",
+    "project": "spacy",
+    "bug_id": 6,
+    "upstream": "explosion/spaCy",
+    "buggy_sha": "6b874ef09611ac32ad038203423d44087cbeb3ae",
+    "fixed_sha": "afe4a428f78abe45d6104d74ef42a066570fa43d",
+    "python": "3.7.7",
+    "official_test": "spacy/tests/pipeline/test_analysis.py",
+    "headline": "Fix pipeline analysis on remove pipe (#4557)",
+    "files": [
+      {
+        "path": "spacy/language.py",
+        "changes": 3,
+        "additions": 2,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "spacy/tests/pipeline/test_analysis.py",
+        "changes": 21,
+        "additions": 21,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 3,
+    "test_changed_lines": 21,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "spaCy source/test change provenance",
+      "B": {
+        "H1": "Regression test changed in documented fix",
+        "H0": "No test cochange"
+      },
+      "C": "SHA verified against upstream commit files",
+      "D": "Require exact commit SHA and file array",
+      "E": "Observed patch-level change table",
+      "F": "Cython/native deps and training data may prevent historical execution",
+      "G": "No dynamic reproductions and no external confirmation",
+      "H": "Preserve project-specific scope",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
