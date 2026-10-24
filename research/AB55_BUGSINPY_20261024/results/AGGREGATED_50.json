@@ -1,0 +1,706 @@
+{
+  "campaign": "AB55_BUGSINPY_20261024",
+  "cohorts": {
+    "Q_exposed_before_contract": 20,
+    "X_locked_before_fix_inspection": 30
+  },
+  "status": "DOCUMENTARY_AB_AUDITS_NOT_BUG_DETECTION",
+  "valid_metadata_records": 50,
+  "dynamic_bug_reproductions": 0,
+  "n_source_cases": 50,
+  "test_cochange_total": 50,
+  "code_changed_lines_median": 6,
+  "code_changed_lines_min": 1,
+  "code_changed_lines_max": 159,
+  "groups": [
+    {
+      "project": "PySnooper",
+      "n": 3,
+      "test_cochange": 3,
+      "mean_code_change": 4.3,
+      "median_code_change": 3,
+      "python_versions": [
+        "3.8.1"
+      ],
+      "missing": 0
+    },
+    {
+      "project": "cookiecutter",
+      "n": 4,
+      "test_cochange": 4,
+      "mean_code_change": 11,
+      "median_code_change": 2,
+      "python_versions": [
+        "3.6.9"
+      ],
+      "missing": 0
+    },
+    {
+      "project": "tqdm",
+      "n": 5,
+      "test_cochange": 5,
+      "mean_code_change": 8.2,
+      "median_code_change": 11,
+      "python_versions": [
+        "3.6.9"
+      ],
+      "missing": 0
+    },
+    {
+      "project": "black",
+      "n": 10,
+      "test_cochange": 10,
+      "mean_code_change": 23.3,
+      "median_code_change": 13,
+      "python_versions": [
+        "3.8.3"
+      ],
+      "missing": 0
+    },
+    {
+      "project": "matplotlib",
+      "n": 10,
+      "test_cochange": 10,
+      "mean_code_change": 10.6,
+      "median_code_change": 6,
+      "python_versions": [
+        "3.8.1"
+      ],
+      "missing": 0
+    },
+    {
+      "project": "pandas",
+      "n": 6,
+      "test_cochange": 6,
+      "mean_code_change": 9.2,
+      "median_code_change": 5,
+      "python_versions": [
+        "3.8.3"
+      ],
+      "missing": 0
+    },
+    {
+      "project": "fastapi",
+      "n": 6,
+      "test_cochange": 6,
+      "mean_code_change": 35,
+      "median_code_change": 6,
+      "python_versions": [
+        "3.8.3"
+      ],
+      "missing": 0
+    },
+    {
+      "project": "spacy",
+      "n": 6,
+      "test_cochange": 6,
+      "mean_code_change": 3.5,
+      "median_code_change": 2,
+      "python_versions": [
+        "3.7.7",
+        "3.8.3"
+      ],
+      "missing": 0
+    }
+  ],
+  "invalidated_instrument": "X07_X12_FASTAPI.json original had redirect interpreted as zero files; valid R1 is separate; do not count original",
+  "raw_data_files": [
+    "Q01_Q05.json",
+    "Q06_Q10.json",
+    "Q11_Q15.json",
+    "Q16_Q20.json",
+    "X01_X06_PANDAS.json",
+    "X07_X12_FASTAPI_R1.json",
+    "X13_X18_SPACY.json",
+    "X19_X24_MATPLOTLIB.json",
+    "X25_X30_BLACK.json"
+  ],
+  "claims_cannot_make": [
+    "No dynamic metamorphic test detection was executed",
+    "No causal or generalization claim about all Python bugs",
+    "50 fixes selected from test-backed benchmark, not random",
+    "No independent external production repair evidence"
+  ],
+  "results": [
+    {
+      "id": "Q01",
+      "project": "PySnooper",
+      "bug_id": 1,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 8,
+      "test_lines": 52,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "source_file": "Q01_Q05.json"
+    },
+    {
+      "id": "Q02",
+      "project": "PySnooper",
+      "bug_id": 2,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 3,
+      "test_lines": 24,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "source_file": "Q01_Q05.json"
+    },
+    {
+      "id": "Q03",
+      "project": "PySnooper",
+      "bug_id": 3,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 2,
+      "test_lines": 28,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "source_file": "Q01_Q05.json"
+    },
+    {
+      "id": "Q04",
+      "project": "cookiecutter",
+      "bug_id": 1,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 2,
+      "test_lines": 14,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q01_Q05.json"
+    },
+    {
+      "id": "Q05",
+      "project": "cookiecutter",
+      "bug_id": 2,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 14,
+      "test_lines": 31,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q01_Q05.json"
+    },
+    {
+      "id": "Q06",
+      "project": "cookiecutter",
+      "bug_id": 3,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 2,
+      "test_lines": 3,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q06_Q10.json"
+    },
+    {
+      "id": "Q07",
+      "project": "cookiecutter",
+      "bug_id": 4,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 26,
+      "test_lines": 16,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q06_Q10.json"
+    },
+    {
+      "id": "Q08",
+      "project": "tqdm",
+      "bug_id": 1,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 2,
+      "test_lines": 1,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q06_Q10.json"
+    },
+    {
+      "id": "Q09",
+      "project": "tqdm",
+      "bug_id": 2,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 12,
+      "test_lines": 12,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q06_Q10.json"
+    },
+    {
+      "id": "Q10",
+      "project": "tqdm",
+      "bug_id": 3,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 11,
+      "test_lines": 37,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q06_Q10.json"
+    },
+    {
+      "id": "Q11",
+      "project": "tqdm",
+      "bug_id": 4,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 3,
+      "test_lines": 9,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q11_Q15.json"
+    },
+    {
+      "id": "Q12",
+      "project": "tqdm",
+      "bug_id": 5,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 13,
+      "test_lines": 31,
+      "test_cochange": true,
+      "python": "3.6.9",
+      "source_file": "Q11_Q15.json"
+    },
+    {
+      "id": "Q13",
+      "project": "black",
+      "bug_id": 1,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 14,
+      "test_lines": 21,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "source_file": "Q11_Q15.json"
+    },
+    {
+      "id": "Q14",
+      "project": "black",
+      "bug_id": 2,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 49,
+      "test_lines": 39,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "source_file": "Q11_Q15.json"
+    },
+    {
+      "id": "Q15",
+      "project": "black",
+      "bug_id": 3,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 2,
+      "test_lines": 10,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "source_file": "Q11_Q15.json"
+    },
+    {
+      "id": "Q16",
+      "project": "black",
+      "bug_id": 4,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 8,
+      "test_lines": 20,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "source_file": "Q16_Q20.json"
+    },
+    {
+      "id": "Q17",
+      "project": "matplotlib",
+      "bug_id": 1,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 49,
+      "test_lines": 23,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "source_file": "Q16_Q20.json"
+    },
+    {
+      "id": "Q18",
+      "project": "matplotlib",
+      "bug_id": 2,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 10,
+      "test_lines": 10,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "source_file": "Q16_Q20.json"
+    },
+    {
+      "id": "Q19",
+      "project": "matplotlib",
+      "bug_id": 3,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 5,
+      "test_lines": 6,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "source_file": "Q16_Q20.json"
+    },
+    {
+      "id": "Q20",
+      "project": "matplotlib",
+      "bug_id": 4,
+      "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+      "code_lines": 12,
+      "test_lines": 14,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "source_file": "Q16_Q20.json"
+    },
+    {
+      "id": "X01",
+      "project": "pandas",
+      "bug_id": 1,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 2,
+      "test_lines": 4,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "e41ee47a90bb1d8a1fa28fcefcd45ed8ef5cb946",
+      "source_file": "X01_X06_PANDAS.json"
+    },
+    {
+      "id": "X02",
+      "project": "pandas",
+      "bug_id": 2,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 8,
+      "test_lines": 62,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "55e8891f6d33be14e0db73ac06513129503f995c",
+      "source_file": "X01_X06_PANDAS.json"
+    },
+    {
+      "id": "X03",
+      "project": "pandas",
+      "bug_id": 3,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 6,
+      "test_lines": 23,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "d3a6a3a58e1a6eb68b8b8399ff252b8f4501950e",
+      "source_file": "X01_X06_PANDAS.json"
+    },
+    {
+      "id": "X04",
+      "project": "pandas",
+      "bug_id": 4,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 5,
+      "test_lines": 12,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "2250ddfaff92abaff20a5bcd78315f5d4bd44981",
+      "source_file": "X01_X06_PANDAS.json"
+    },
+    {
+      "id": "X05",
+      "project": "pandas",
+      "bug_id": 5,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 30,
+      "test_lines": 22,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "0babe10f1f3f19bb6183b6fb4cc958583c6860c8",
+      "source_file": "X01_X06_PANDAS.json"
+    },
+    {
+      "id": "X06",
+      "project": "pandas",
+      "bug_id": 6,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 4,
+      "test_lines": 10,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "8cd8ed3657e52ad9f67e17b7f5c20f7340ab6a2c",
+      "source_file": "X01_X06_PANDAS.json"
+    },
+    {
+      "id": "X07",
+      "project": "fastapi",
+      "bug_id": 1,
+      "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 159,
+      "test_lines": 80,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "3397d4d69a9c2d64c1219fcbf291ea5697a4abb8",
+      "source_file": "X07_X12_FASTAPI_R1.json"
+    },
+    {
+      "id": "X08",
+      "project": "fastapi",
+      "bug_id": 2,
+      "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 7,
+      "test_lines": 28,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "02441ff0313d5b471b662293244c53e712f1243f",
+      "source_file": "X07_X12_FASTAPI_R1.json"
+    },
+    {
+      "id": "X09",
+      "project": "fastapi",
+      "bug_id": 3,
+      "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 32,
+      "test_lines": 154,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "aea04ee32ee1942e6e1a904527bb8da6ba76abd9",
+      "source_file": "X07_X12_FASTAPI_R1.json"
+    },
+    {
+      "id": "X10",
+      "project": "fastapi",
+      "bug_id": 4,
+      "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 4,
+      "test_lines": 93,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "74c4d1c1dbe6bfdb05d6e4fc767ffe062398f0a3",
+      "source_file": "X07_X12_FASTAPI_R1.json"
+    },
+    {
+      "id": "X11",
+      "project": "fastapi",
+      "bug_id": 5,
+      "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 2,
+      "test_lines": 91,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "75a07f24bf01a31225ee687f3e2b3fc1981b67ab",
+      "source_file": "X07_X12_FASTAPI_R1.json"
+    },
+    {
+      "id": "X12",
+      "project": "fastapi",
+      "bug_id": 6,
+      "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 6,
+      "test_lines": 46,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "874d24181e779ebc6e1c52afb7d6598f863fd6a8",
+      "source_file": "X07_X12_FASTAPI_R1.json"
+    },
+    {
+      "id": "X13",
+      "project": "spacy",
+      "bug_id": 1,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 7,
+      "test_lines": 13,
+      "test_cochange": true,
+      "python": "3.7.7",
+      "sha": "a987e9e45d4084f30964a4cec9914ae6ed25a73c",
+      "source_file": "X13_X18_SPACY.json"
+    },
+    {
+      "id": "X14",
+      "project": "spacy",
+      "bug_id": 2,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 1,
+      "test_lines": 33,
+      "test_cochange": true,
+      "python": "3.7.7",
+      "sha": "cfdaf99b8029d6762730c5d5bd2b6f6c173c1241",
+      "source_file": "X13_X18_SPACY.json"
+    },
+    {
+      "id": "X15",
+      "project": "spacy",
+      "bug_id": 3,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 6,
+      "test_lines": 18,
+      "test_cochange": true,
+      "python": "3.7.7",
+      "sha": "663333c3b2bad90915d1a48a626ca1275b7ef077",
+      "source_file": "X13_X18_SPACY.json"
+    },
+    {
+      "id": "X16",
+      "project": "spacy",
+      "bug_id": 4,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 2,
+      "test_lines": 31,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "9fa9d7f2cb52ce6a70c264d4e57c7f190d7686bf",
+      "source_file": "X13_X18_SPACY.json"
+    },
+    {
+      "id": "X17",
+      "project": "spacy",
+      "bug_id": 5,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 2,
+      "test_lines": 14,
+      "test_cochange": true,
+      "python": "3.7.7",
+      "sha": "3bd15055ce74b04dcaf3b9abe2adeb01fb595776",
+      "source_file": "X13_X18_SPACY.json"
+    },
+    {
+      "id": "X18",
+      "project": "spacy",
+      "bug_id": 6,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 3,
+      "test_lines": 21,
+      "test_cochange": true,
+      "python": "3.7.7",
+      "sha": "afe4a428f78abe45d6104d74ef42a066570fa43d",
+      "source_file": "X13_X18_SPACY.json"
+    },
+    {
+      "id": "X19",
+      "project": "matplotlib",
+      "bug_id": 5,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 7,
+      "test_lines": 14,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "sha": "66289c4f1895b8c65ca92a03d92f6b1cfa552267",
+      "source_file": "X19_X24_MATPLOTLIB.json"
+    },
+    {
+      "id": "X20",
+      "project": "matplotlib",
+      "bug_id": 6,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 8,
+      "test_lines": 16,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "sha": "d84f4a7ac8d43d1288cb8ce11ab60ae557306b7e",
+      "source_file": "X19_X24_MATPLOTLIB.json"
+    },
+    {
+      "id": "X21",
+      "project": "matplotlib",
+      "bug_id": 7,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 2,
+      "test_lines": 13,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "sha": "ac400b51bb31b91920ee9aae02a0606a67983a8f",
+      "source_file": "X19_X24_MATPLOTLIB.json"
+    },
+    {
+      "id": "X22",
+      "project": "matplotlib",
+      "bug_id": 8,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 6,
+      "test_lines": 30,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "sha": "2f41868de465b86d2fc357f7ed58ff323d58030f",
+      "source_file": "X19_X24_MATPLOTLIB.json"
+    },
+    {
+      "id": "X23",
+      "project": "matplotlib",
+      "bug_id": 9,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 1,
+      "test_lines": 6,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "sha": "c01f9d3eff9b6239446c1bb2d205eccd69054aeb",
+      "source_file": "X19_X24_MATPLOTLIB.json"
+    },
+    {
+      "id": "X24",
+      "project": "matplotlib",
+      "bug_id": 10,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 6,
+      "test_lines": 10,
+      "test_cochange": true,
+      "python": "3.8.1",
+      "sha": "1986da3968ee76c6bce8f4c04aed80e23bd4ecfa",
+      "source_file": "X19_X24_MATPLOTLIB.json"
+    },
+    {
+      "id": "X25",
+      "project": "black",
+      "bug_id": 5,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 15,
+      "test_lines": 22,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "9394de150ebf0adc426523f46dc08e8b2b2b0b63",
+      "source_file": "X25_X30_BLACK.json"
+    },
+    {
+      "id": "X26",
+      "project": "black",
+      "bug_id": 6,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 110,
+      "test_lines": 85,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "f8617f975d56e81cfb4070ce65584f7b29a77e7a",
+      "source_file": "X25_X30_BLACK.json"
+    },
+    {
+      "id": "X27",
+      "project": "black",
+      "bug_id": 7,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 14,
+      "test_lines": 18,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "de806405d2934b629d67e2a6317ad7e826765a20",
+      "source_file": "X25_X30_BLACK.json"
+    },
+    {
+      "id": "X28",
+      "project": "black",
+      "bug_id": 8,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 13,
+      "test_lines": 59,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "6b994fdb8ab70ce4c2eafb8f2f0ff2648f3ff1ef",
+      "source_file": "X25_X30_BLACK.json"
+    },
+    {
+      "id": "X29",
+      "project": "black",
+      "bug_id": 9,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 4,
+      "test_lines": 24,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "d6db1c12a8e14833fe22da377cddc2bd1f43dc14",
+      "source_file": "X25_X30_BLACK.json"
+    },
+    {
+      "id": "X30",
+      "project": "black",
+      "bug_id": 10,
+      "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+      "code_lines": 4,
+      "test_lines": 13,
+      "test_cochange": true,
+      "python": "3.8.3",
+      "sha": "66aa676278948368dff251dffd58c850cb8b889e",
+      "source_file": "X25_X30_BLACK.json"
+    }
+  ]
+}
