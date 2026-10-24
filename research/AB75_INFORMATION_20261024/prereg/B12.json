@@ -1,0 +1,96 @@
+{
+  "block": "B12",
+  "status": "PRE_EXECUTION",
+  "source_v1_sha256": "e20d7220103548b03aca7cc04eb42ea8c953453360574ec7e6e61a9dd3c969da",
+  "source_v2_sha256": "4e776e1002d5f026062809e15e38db4564f46c9ad9dae180ff17e8923b26b397",
+  "E_budget": 30,
+  "G_budget": 48,
+  "E_draws": 550,
+  "G_draws": 650,
+  "contracts": [
+    {
+      "id": "C61",
+      "source": "engel",
+      "A": {
+        "policy": "prop",
+        "estimator": "ipw",
+        "missing": "mar"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht",
+        "missing": "mar"
+      },
+      "primary": "delta_MSE_lt_0",
+      "H1": "With x-known missing-at-random response probabilities, conditional IPW improves population risk MSE over the unweighted respondents-only mean."
+    },
+    {
+      "id": "C62",
+      "source": "fair",
+      "A": {
+        "policy": "prop",
+        "estimator": "ipw",
+        "missing": "mar"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht",
+        "missing": "mar"
+      },
+      "primary": "delta_MSE_lt_0",
+      "H1": "With x-known missing-at-random response probabilities, conditional IPW improves population risk MSE over the unweighted respondents-only mean."
+    },
+    {
+      "id": "C63",
+      "source": "anes96",
+      "A": {
+        "policy": "prop",
+        "estimator": "ipw",
+        "missing": "mar"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht",
+        "missing": "mar"
+      },
+      "primary": "delta_MSE_lt_0",
+      "H1": "With x-known missing-at-random response probabilities, conditional IPW improves population risk MSE over the unweighted respondents-only mean."
+    },
+    {
+      "id": "C64",
+      "source": "grunfeld",
+      "A": {
+        "policy": "prop",
+        "estimator": "ipw",
+        "missing": "mar"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht",
+        "missing": "mar"
+      },
+      "primary": "delta_MSE_lt_0",
+      "H1": "With x-known missing-at-random response probabilities, conditional IPW improves population risk MSE over the unweighted respondents-only mean."
+    },
+    {
+      "id": "C65",
+      "source": "macrodata",
+      "A": {
+        "policy": "prop",
+        "estimator": "ipw",
+        "missing": "mar"
+      },
+      "B": {
+        "policy": "prop",
+        "estimator": "ht",
+        "missing": "mar"
+      },
+      "primary": "delta_MSE_lt_0",
+      "H1": "With x-known missing-at-random response probabilities, conditional IPW improves population risk MSE over the unweighted respondents-only mean."
+    }
+  ],
+  "H0": "delta MSE A-B>=0",
+  "control_details": "E/G reflect only fresh acquisition draws and budgets in same historic source.",
+  "AB": "A explicit transformed finite source estimand; B H0/H1 and professional missingness/longitudinal rivals; C same budget, response mechanism, same-source G; D positivity and true-label leakage check; E raw per-draw paired result; F alternative estimator prior art and hidden oracle restrictions; G same source new RNG and budget not external; H nonduplicative priors; I CT2, 0-3; J close 75 including negatives, no 2/3 without novelty/independent field evidence",
+  "external_replication": false
+}
