@@ -1,0 +1,263 @@
+[
+  {
+    "cycle": "Q01",
+    "project": "PySnooper",
+    "bug_id": 1,
+    "upstream": "cool-RR/PySnooper",
+    "buggy_commit": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+    "fixed_commit": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+    "python": "3.8.1",
+    "official_test": "tests/test_chinese.py",
+    "fix_message": "Fix unicode issues and add test, fix #124",
+    "files": [
+      {
+        "name": "pysnooper/pycompat.py",
+        "changes": 1,
+        "additions": 1,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "name": "pysnooper/tracer.py",
+        "changes": 7,
+        "additions": 5,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_chinese.py",
+        "changes": 48,
+        "additions": 48,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "name": "tests/utils.py",
+        "changes": 4,
+        "additions": 2,
+        "deletions": 2,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 8,
+    "test_changed_lines": 52,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q02",
+    "project": "PySnooper",
+    "bug_id": 2,
+    "upstream": "cool-RR/PySnooper",
+    "buggy_commit": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+    "fixed_commit": "814abc34a098c1b98cb327105ac396f985d2413e",
+    "python": "3.8.1",
+    "official_test": "tests/test_pysnooper.py",
+    "fix_message": "Support single tuple to `custom_repr`, fix #144",
+    "files": [
+      {
+        "name": "pysnooper/tracer.py",
+        "changes": 3,
+        "additions": 3,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_pysnooper.py",
+        "changes": 24,
+        "additions": 24,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 3,
+    "test_changed_lines": 24,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q03",
+    "project": "PySnooper",
+    "bug_id": 3,
+    "upstream": "cool-RR/PySnooper",
+    "buggy_commit": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+    "fixed_commit": "15555ed760000b049aff8fecc79d29339c1224c3",
+    "python": "3.8.1",
+    "official_test": "tests/test_pysnooper.py",
+    "fix_message": "Fix #2",
+    "files": [
+      {
+        "name": "pysnooper/pysnooper.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_pysnooper.py",
+        "changes": 28,
+        "additions": 28,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 2,
+    "test_changed_lines": 28,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q04",
+    "project": "cookiecutter",
+    "bug_id": 1,
+    "upstream": "cookiecutter/cookiecutter",
+    "buggy_commit": "c15633745df6abdb24e02746b82aadb20b8cdf8c",
+    "fixed_commit": "7f6804c4953a18386809f11faf4d86898570debc",
+    "python": "3.6.9",
+    "official_test": "tests/test_generate_context.py",
+    "fix_message": "Fix default values being loaded with wrong encoding on Windows (#1414)",
+    "files": [
+      {
+        "name": "cookiecutter/generate.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test-generate-context/non_ascii.json",
+        "changes": 3,
+        "additions": 3,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "name": "tests/test_generate_context.py",
+        "changes": 11,
+        "additions": 11,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 2,
+    "test_changed_lines": 14,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q05",
+    "project": "cookiecutter",
+    "bug_id": 2,
+    "upstream": "cookiecutter/cookiecutter",
+    "buggy_commit": "d7e7b28811e474e14d1bed747115e47dcdd15ba3",
+    "fixed_commit": "90434ff4ea4477941444f1e83313beb414838535",
+    "python": "3.6.9",
+    "official_test": "tests/test_hooks.py",
+    "fix_message": "Changed: Generated projects can use multiple type hooks at same time. (sh + py) (#974)",
+    "files": [
+      {
+        "name": "cookiecutter/hooks.py",
+        "changes": 14,
+        "additions": 9,
+        "deletions": 5,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_hooks.py",
+        "changes": 31,
+        "additions": 27,
+        "deletions": 4,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 14,
+    "test_changed_lines": 31,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
