@@ -1,0 +1,79 @@
+{
+  "campaign": "AB30_COMPOSITION_20261024",
+  "block": "B03",
+  "status": "PRE_RUN",
+  "source_sha256": "e2b2668649c415a57b79039d4e05bb8216f6740ceb4a2795547eea226ae42904",
+  "question": "Given EXACT same six purchased pilot labels and remaining sample budget, does shrinking pilot stratum variances 70% toward auxiliary x variances reduce expected true design variance relative to raw pilot estimate?",
+  "A": "pilot_shrink_70pct",
+  "B": "pilot_raw",
+  "H1": "mean E difference A-B<0",
+  "H0": "mean E difference>=0",
+  "falsifier": "nonnegative effect or no different implemented allocation",
+  "controls": [
+    "identical pilot indices",
+    "same remaining budget and population strata",
+    "same offline target design variance",
+    "BLS 2026 heteroscedastic Bayesian optimal design is stronger published rival"
+  ],
+  "E": [
+    18,
+    24
+  ],
+  "G": [
+    36,
+    48
+  ],
+  "pilot_seeds": [
+    201,
+    203,
+    207,
+    211,
+    223,
+    227,
+    229,
+    233,
+    239,
+    241,
+    251,
+    257
+  ],
+  "AB": "A source-specific finite pop variance estimand; B rivals of bias from shrink-to-wrong x; C fixed shrink=0.7, no tuned validation; D identical pilot labels and nonzero treatment contrast; E execute; F strong alternative prior and no benefit assumed; G larger budgets same sources; H update priors; I CT2, uniqueness grades; J PIVOT or BRANCH continue until 30",
+  "specs": [
+    {
+      "id": "Q13",
+      "source": "diabetes",
+      "family": "pilot_shrink_vs_raw",
+      "hypothesis": "Shrinkage of noisy stratum pilot variance yields better final risk variance in diabetes"
+    },
+    {
+      "id": "Q14",
+      "source": "breast",
+      "family": "pilot_shrink_vs_raw",
+      "hypothesis": "Shrinkage of noisy stratum pilot variance yields better final risk variance in breast"
+    },
+    {
+      "id": "Q15",
+      "source": "wine",
+      "family": "pilot_shrink_vs_raw",
+      "hypothesis": "Shrinkage of noisy stratum pilot variance yields better final risk variance in wine"
+    },
+    {
+      "id": "Q16",
+      "source": "digits",
+      "family": "pilot_shrink_vs_raw",
+      "hypothesis": "Shrinkage of noisy stratum pilot variance yields better final risk variance in digits"
+    },
+    {
+      "id": "Q17",
+      "source": "nile",
+      "family": "pilot_shrink_vs_raw",
+      "hypothesis": "Shrinkage of noisy stratum pilot variance yields better final risk variance in nile"
+    },
+    {
+      "id": "Q18",
+      "source": "sunspots",
+      "family": "pilot_shrink_vs_raw",
+      "hypothesis": "Shrinkage of noisy stratum pilot variance yields better final risk variance in sunspots"
+    }
+  ]
+}
