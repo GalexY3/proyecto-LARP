@@ -1,3 +1,5 @@
+**AVISO DE INVALIDACIÓN:** Este informe histórico procede del motor v1 MAL ETIQUETADO Hamilton. Sus números han sido sustituidos por los 30 resultados R1 en [DICTAMEN_R1](DICTAMEN_R1.md) y [RESULTS_R1_30_ROUNDED.json](../results/RESULTS_R1_30_ROUNDED.json). Conservar solo para auditoría del error de instrumentación.
+
 # B03 Q13–Q18 — dependent stochastic rounding versus Hamilton integer allocation
 Precommit 809504bc. Actual finite population variance A(randomized round expectation over 200 allocations)−B(deterministic rounding), fixed continuous 50/50 proxy/proportional target, same integer label budget.
 | Dataset cycle | E10/14/18 | G26/34 |
