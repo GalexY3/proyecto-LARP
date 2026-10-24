@@ -3,7 +3,7 @@
   "policy": "Persistent append-only, novelty/evidence-specific, nonduplicated; 1/3 does NOT mean original science, N2 requires independent strong confirmation",
   "last_review": "2026-10-24",
   "historical_n1_total_status": "NOT_AUDITED",
-  "confirmed_in_current_inventory": 3,
+  "confirmed_in_current_inventory": 4,
   "findings": [
     {
       "id": "LARP-1-001",
@@ -146,6 +146,54 @@
       "duplicate_of": null,
       "external_confirmation": false,
       "novelty_assessed": "NO 2/3; known category of design and acquisition cost"
+    },
+    {
+      "id": "LARP-1-004",
+      "short_name": "TEMPO-COST-04",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COMPUTATIONAL_POST_EXPOSURE_REPAIRED",
+      "claim": "When pilot labels are acquired before an induced change in the outcome, reusing them as if contemporaneous can increase bias, but paying to refresh them may worsen the mean squared error at fixed total label-action budget.",
+      "date": "2026-10-24",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab75-information-20261024",
+      "source_path": "research/AB75_INFORMATION_20261024/DICTAMEN.md",
+      "experiment_ids": [
+        "C51",
+        "C52",
+        "C53",
+        "C54",
+        "C55",
+        "C56",
+        "C57",
+        "C58",
+        "C59",
+        "C60"
+      ],
+      "evidence": "B10 finite-population MC: stale-pilot HT greater absolute bias in 5/5 exploratory sources E and 4/5 G while lower MSE than stage2-only; B11 buying another six labels to refresh stale pilot led to worse MSE in 5/5 E and G. B=30 and 48, same historical data, outcome shifts constructed post-pilot. R1 no-leakage fixed transformation selected after observing earlier invalid results.",
+      "adversarial_limits": [
+        "All label changes are artificially constructed; no naturally observed temporal drift",
+        "Public historical datasets reused, no outside prospective deployment",
+        "R1 repair after exposure, not blind confirmation",
+        "Conditional unbiasedness and missing-label methods predate study",
+        "The cost tradeoff overlaps COST-PILOT-03, but temporal validity is a distinct operational failure mode",
+        "No field measurements of real labels and price",
+        "No claim of a new statistical theorem"
+      ],
+      "prior_art": [
+        "https://www.usgs.gov/publications/efficient-estimators-adaptive-stratified-sequential-sampling",
+        "https://proceedings.mlr.press/v236/cook24a.html",
+        "https://www3.stat.sinica.edu.tw/sstest/oldpdf/A24n119.pdf"
+      ],
+      "connections": [
+        "LARP-1-001",
+        "LARP-1-002",
+        "LARP-1-003"
+      ],
+      "possible_composition": "Explicit time-indexed estimand and label-age-aware acquisition with equivalence-class compression, honest proxy-target gap and actual remeasurement costs",
+      "falsifier": "A preregistered real-time independent stream finds refreshed pilot labels improve net risk estimation enough to offset measured reacquisition cost, or there is no temporal bias in production outcome under detected drift.",
+      "duplicate_of": null,
+      "external_confirmation": false,
+      "novelty_assessed": "NOT 2/3; classical sequential survey principles cover broad effect"
     }
   ],
   "pending_historical_audit": "Many older LARP reports predate explicit 1/3 grading. Do not infer that no other 1/3 exist; enumerate and assess before adding to historical total.",
