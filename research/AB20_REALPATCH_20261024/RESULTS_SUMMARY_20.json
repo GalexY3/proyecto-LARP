@@ -1,0 +1,370 @@
+{
+  "schema": "AB20_REALPATCH_SUMMARY_v1",
+  "note": "Derived remote summary; exact 20 A-J outputs and engine exist only in local ZIP. This is NOT RAW. Repair after upload: correct null-control status mapping, mistaken TQ03/TQ04 swap.",
+  "n": 20,
+  "distinct_external_fixes": 10,
+  "n_null_controls_executed": 12,
+  "n_null_controls_analytical": 8,
+  "source_sha256": "846e2f2652c7f6825986d3afdd90a373050cfb2bdb4d348df0d89e5f1ddb0f2c",
+  "raw_sha256": "8ee2c2eb69ce737308898c21372cdbfa3951afdf761ce1481e767d85343dbbcf",
+  "rows": [
+    {
+      "id": "C01",
+      "defect": "TQ01",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "c0dcf39b046d1b4ff6de14ac99ad9a1b10487512",
+      "input": {
+        "values": [
+          0,
+          1,
+          2
+        ],
+        "start": 42
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C02",
+      "defect": "TQ01",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "c0dcf39b046d1b4ff6de14ac99ad9a1b10487512",
+      "input": {
+        "values": [
+          4
+        ],
+        "start": -3
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C03",
+      "defect": "TQ03",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "73962a47026dd980ac0758820efc9c41cbf938e0",
+      "input": {
+        "generator_n": 3
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C04",
+      "defect": "TQ03",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "73962a47026dd980ac0758820efc9c41cbf938e0",
+      "input": {
+        "generator_n": 0
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C05",
+      "defect": "TQ04",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+      "input": {
+        "total": null,
+        "n": 3,
+        "scale": 10
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C06",
+      "defect": "TQ04",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+      "input": {
+        "total": null,
+        "n": 7,
+        "scale": 0.5
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C07",
+      "defect": "TQ05",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "4f340697af69b71850aad496387c9c5aa1904136",
+      "input": {
+        "values": [
+          0
+        ],
+        "disable": true
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C08",
+      "defect": "TQ05",
+      "repository": "tqdm/tqdm",
+      "fix_commit": "4f340697af69b71850aad496387c9c5aa1904136",
+      "input": {
+        "values": [],
+        "disable": true
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C09",
+      "defect": "PS01",
+      "repository": "cool-RR/PySnooper",
+      "fix_commit": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+      "input": {
+        "source": "x = \"失败\""
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C10",
+      "defect": "PS01",
+      "repository": "cool-RR/PySnooper",
+      "fix_commit": "56f22f8ffe1c6b2be4d2cf3ad1987fdb66113da2",
+      "input": {
+        "source": "x = \"mañana\""
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C11",
+      "defect": "PS02",
+      "repository": "cool-RR/PySnooper",
+      "fix_commit": "814abc34a098c1b98cb327105ac396f985d2413e",
+      "input": {
+        "kind": "list"
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C12",
+      "defect": "PS02",
+      "repository": "cool-RR/PySnooper",
+      "fix_commit": "814abc34a098c1b98cb327105ac396f985d2413e",
+      "input": {
+        "kind": "dict"
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C13",
+      "defect": "PS03",
+      "repository": "cool-RR/PySnooper",
+      "fix_commit": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "input": {
+        "filename": "alpha.log"
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C14",
+      "defect": "PS03",
+      "repository": "cool-RR/PySnooper",
+      "fix_commit": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "input": {
+        "filename": "beta.log"
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C15",
+      "defect": "YT01",
+      "repository": "ytdl-org/youtube-dl",
+      "fix_commit": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+      "input": {
+        "value": false,
+        "op": ""
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C16",
+      "defect": "YT01",
+      "repository": "ytdl-org/youtube-dl",
+      "fix_commit": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+      "input": {
+        "value": false,
+        "op": "!"
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C17",
+      "defect": "YT03",
+      "repository": "ytdl-org/youtube-dl",
+      "fix_commit": "95f3f7c20a05e7ac490e768b8470b20538ef8581",
+      "input": {
+        "source": "&a&quot;"
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C18",
+      "defect": "YT03",
+      "repository": "ytdl-org/youtube-dl",
+      "fix_commit": "95f3f7c20a05e7ac490e768b8470b20538ef8581",
+      "input": {
+        "source": "&q&amp;"
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "EXECUTED",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C19",
+      "defect": "CC02",
+      "repository": "cookiecutter/cookiecutter",
+      "fix_commit": "90434ff4ea4477941444f1e83313beb414838535",
+      "input": {
+        "n": 2
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    },
+    {
+      "id": "C20",
+      "defect": "CC02",
+      "repository": "cookiecutter/cookiecutter",
+      "fix_commit": "90434ff4ea4477941444f1e83313beb414838535",
+      "input": {
+        "n": 3
+      },
+      "old_differs": true,
+      "fixed_returns": true,
+      "null_control": {
+        "status": "ANALYTICAL_ONLY",
+        "old_equals_fixed": true
+      },
+      "grade": 0,
+      "scope": "EXPERIMENTAL_PATCH_HUNK_POST_EXPOSURE_NOT_FULL_RUNTIME"
+    }
+  ]
+}
