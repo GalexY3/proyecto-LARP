@@ -1,3 +1,5 @@
+**AVISO DE INVALIDACIÓN:** Este informe histórico procede del motor v1 MAL ETIQUETADO Hamilton. Sus números han sido sustituidos por los 30 resultados R1 en [DICTAMEN_R1](DICTAMEN_R1.md) y [RESULTS_R1_30_ROUNDED.json](../results/RESULTS_R1_30_ROUNDED.json). Conservar solo para auditoría del error de instrumentación.
+
 # B04 Q19–Q24 — guarded allocation under constructed stress
 Prereg 295a2c1 before running. Four scoring conditions per source: original observed y plus each of three *synthetic, mean-centered, Gaussian within-stratum* volatility shocks (σ=2 standardized y), with policies seeing ONLY x proxy. Δ=max Var_A(guard)-max Var_B(exact proxy) across those four worlds; lower=guard better.
 | ID source | E budgets10/14/18 | G budgets26/34 |
