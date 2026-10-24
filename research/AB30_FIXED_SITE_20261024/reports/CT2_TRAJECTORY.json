@@ -1,0 +1,37 @@
+[
+  {
+    "cycle": 0,
+    "stage": "Inicio",
+    "CT2": 10
+  },
+  {
+    "cycle": 6,
+    "stage": "B01",
+    "CT2": 11
+  },
+  {
+    "cycle": 12,
+    "stage": "B02",
+    "CT2": 9
+  },
+  {
+    "cycle": 18,
+    "stage": "B03",
+    "CT2": 12
+  },
+  {
+    "cycle": 24,
+    "stage": "B04",
+    "CT2": 9
+  },
+  {
+    "cycle": 30,
+    "stage": "B05",
+    "CT2": 8
+  },
+  {
+    "cycle": 31,
+    "stage": "Auditoría de imágenes, no ciclo",
+    "CT2": 7
+  }
+]
