@@ -1,0 +1,206 @@
+[
+  {
+    "cycle": "X07",
+    "project": "fastapi",
+    "bug_id": 1,
+    "upstream": "tiangolo/fastapi",
+    "buggy_sha": "766157bfb4e7dfccba09ab398e8ec444d14e947c",
+    "fixed_sha": "3397d4d69a9c2d64c1219fcbf291ea5697a4abb8",
+    "python": "3.8.3",
+    "official_test": "tests/test_jsonable_encoder.py",
+    "files": [],
+    "test_cochange": false,
+    "code_changed_lines": 0,
+    "test_changed_lines": 0,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix provenance and code/test distribution",
+      "B": {
+        "H1": "Regression tests accompany the fix",
+        "H0": "No regression-test cochange, suggesting already-present test or missing test commit"
+      },
+      "C": "BugsInPy/authoritative upstream fix metadata parity",
+      "D": "Exact SHA and changed paths verified; environment version not executed",
+      "E": "Observed implementation/test patch files attached",
+      "F": "Selection conditioning and code path semantics cannot be inferred from headline",
+      "G": "Prospectively selected case, no runtime or field replication",
+      "H": "Update whether bugfix-test coupling transfers between projects",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X08",
+    "project": "fastapi",
+    "bug_id": 2,
+    "upstream": "tiangolo/fastapi",
+    "buggy_sha": "210af1fd3dc0f612a08fa02a0cb3f5adb81e5bfb",
+    "fixed_sha": "02441ff0313d5b471b662293244c53e712f1243f",
+    "python": "3.8.3",
+    "official_test": "tests/test_ws_router.py",
+    "files": [],
+    "test_cochange": false,
+    "code_changed_lines": 0,
+    "test_changed_lines": 0,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix provenance and code/test distribution",
+      "B": {
+        "H1": "Regression tests accompany the fix",
+        "H0": "No regression-test cochange, suggesting already-present test or missing test commit"
+      },
+      "C": "BugsInPy/authoritative upstream fix metadata parity",
+      "D": "Exact SHA and changed paths verified; environment version not executed",
+      "E": "Observed implementation/test patch files attached",
+      "F": "Selection conditioning and code path semantics cannot be inferred from headline",
+      "G": "Prospectively selected case, no runtime or field replication",
+      "H": "Update whether bugfix-test coupling transfers between projects",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X09",
+    "project": "fastapi",
+    "bug_id": 3,
+    "upstream": "tiangolo/fastapi",
+    "buggy_sha": "869c7389e22dc9ad659940fa271da76c4f3ba3b1",
+    "fixed_sha": "aea04ee32ee1942e6e1a904527bb8da6ba76abd9",
+    "python": "3.8.3",
+    "official_test": "tests/test_serialize_response_model.py",
+    "files": [],
+    "test_cochange": false,
+    "code_changed_lines": 0,
+    "test_changed_lines": 0,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix provenance and code/test distribution",
+      "B": {
+        "H1": "Regression tests accompany the fix",
+        "H0": "No regression-test cochange, suggesting already-present test or missing test commit"
+      },
+      "C": "BugsInPy/authoritative upstream fix metadata parity",
+      "D": "Exact SHA and changed paths verified; environment version not executed",
+      "E": "Observed implementation/test patch files attached",
+      "F": "Selection conditioning and code path semantics cannot be inferred from headline",
+      "G": "Prospectively selected case, no runtime or field replication",
+      "H": "Update whether bugfix-test coupling transfers between projects",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X10",
+    "project": "fastapi",
+    "bug_id": 4,
+    "upstream": "tiangolo/fastapi",
+    "buggy_sha": "7ccd81f70653857bd8f3a15ee946aa3fb0edc2cb",
+    "fixed_sha": "74c4d1c1dbe6bfdb05d6e4fc767ffe062398f0a3",
+    "python": "3.8.3",
+    "official_test": "tests/test_param_in_path_and_dependency.py",
+    "files": [],
+    "test_cochange": false,
+    "code_changed_lines": 0,
+    "test_changed_lines": 0,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix provenance and code/test distribution",
+      "B": {
+        "H1": "Regression tests accompany the fix",
+        "H0": "No regression-test cochange, suggesting already-present test or missing test commit"
+      },
+      "C": "BugsInPy/authoritative upstream fix metadata parity",
+      "D": "Exact SHA and changed paths verified; environment version not executed",
+      "E": "Observed implementation/test patch files attached",
+      "F": "Selection conditioning and code path semantics cannot be inferred from headline",
+      "G": "Prospectively selected case, no runtime or field replication",
+      "H": "Update whether bugfix-test coupling transfers between projects",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X11",
+    "project": "fastapi",
+    "bug_id": 5,
+    "upstream": "tiangolo/fastapi",
+    "buggy_sha": "7cea84b74ca3106a7f861b774e9d215e5228728f",
+    "fixed_sha": "75a07f24bf01a31225ee687f3e2b3fc1981b67ab",
+    "python": "3.8.3",
+    "official_test": "tests/test_filter_pydantic_sub_model.py",
+    "files": [],
+    "test_cochange": false,
+    "code_changed_lines": 0,
+    "test_changed_lines": 0,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix provenance and code/test distribution",
+      "B": {
+        "H1": "Regression tests accompany the fix",
+        "H0": "No regression-test cochange, suggesting already-present test or missing test commit"
+      },
+      "C": "BugsInPy/authoritative upstream fix metadata parity",
+      "D": "Exact SHA and changed paths verified; environment version not executed",
+      "E": "Observed implementation/test patch files attached",
+      "F": "Selection conditioning and code path semantics cannot be inferred from headline",
+      "G": "Prospectively selected case, no runtime or field replication",
+      "H": "Update whether bugfix-test coupling transfers between projects",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X12",
+    "project": "fastapi",
+    "bug_id": 6,
+    "upstream": "tiangolo/fastapi",
+    "buggy_sha": "5db99a27cf640864b4793807811848698c5ff4a2",
+    "fixed_sha": "874d24181e779ebc6e1c52afb7d6598f863fd6a8",
+    "python": "3.8.3",
+    "official_test": "tests/test_forms_from_non_typing_sequences.py",
+    "files": [],
+    "test_cochange": false,
+    "code_changed_lines": 0,
+    "test_changed_lines": 0,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix provenance and code/test distribution",
+      "B": {
+        "H1": "Regression tests accompany the fix",
+        "H0": "No regression-test cochange, suggesting already-present test or missing test commit"
+      },
+      "C": "BugsInPy/authoritative upstream fix metadata parity",
+      "D": "Exact SHA and changed paths verified; environment version not executed",
+      "E": "Observed implementation/test patch files attached",
+      "F": "Selection conditioning and code path semantics cannot be inferred from headline",
+      "G": "Prospectively selected case, no runtime or field replication",
+      "H": "Update whether bugfix-test coupling transfers between projects",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
