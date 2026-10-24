@@ -1,0 +1,332 @@
+{
+  "campaign": "LARP_AB55_BUGSINPY_20261024",
+  "authorized": {
+    "initial_documentary_ab": 20,
+    "special_planning_ab": 5,
+    "exploratory_patch_audit_ab": 30
+  },
+  "status": "CONTRACT_FROZEN",
+  "start_CT2": 11,
+  "CT2_metric": "Per scientific line and ordinal judgment, not calibrated probability",
+  "drift_scale": "0..5 per O5",
+  "bug_index_source": "soarsmu/BugsInPy master",
+  "bug_sample_initial": [
+    {
+      "cycle": "Q01",
+      "project": "PySnooper",
+      "bug_id": 1,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q02",
+      "project": "PySnooper",
+      "bug_id": 2,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q03",
+      "project": "PySnooper",
+      "bug_id": 3,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q04",
+      "project": "cookiecutter",
+      "bug_id": 1,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q05",
+      "project": "cookiecutter",
+      "bug_id": 2,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q06",
+      "project": "cookiecutter",
+      "bug_id": 3,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q07",
+      "project": "cookiecutter",
+      "bug_id": 4,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q08",
+      "project": "tqdm",
+      "bug_id": 1,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q09",
+      "project": "tqdm",
+      "bug_id": 2,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q10",
+      "project": "tqdm",
+      "bug_id": 3,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q11",
+      "project": "tqdm",
+      "bug_id": 4,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q12",
+      "project": "tqdm",
+      "bug_id": 5,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q13",
+      "project": "black",
+      "bug_id": 1,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q14",
+      "project": "black",
+      "bug_id": 2,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q15",
+      "project": "black",
+      "bug_id": 3,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q16",
+      "project": "black",
+      "bug_id": 4,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q17",
+      "project": "matplotlib",
+      "bug_id": 1,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q18",
+      "project": "matplotlib",
+      "bug_id": 2,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q19",
+      "project": "matplotlib",
+      "bug_id": 3,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    },
+    {
+      "cycle": "Q20",
+      "project": "matplotlib",
+      "bug_id": 4,
+      "status": "PREREG_AFTER_METADATA_EXPOSURE"
+    }
+  ],
+  "bug_sample_exploratory": [
+    {
+      "cycle": "X01",
+      "project": "pandas",
+      "bug_id": 1,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X02",
+      "project": "pandas",
+      "bug_id": 2,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X03",
+      "project": "pandas",
+      "bug_id": 3,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X04",
+      "project": "pandas",
+      "bug_id": 4,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X05",
+      "project": "pandas",
+      "bug_id": 5,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X06",
+      "project": "pandas",
+      "bug_id": 6,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X07",
+      "project": "fastapi",
+      "bug_id": 1,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X08",
+      "project": "fastapi",
+      "bug_id": 2,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X09",
+      "project": "fastapi",
+      "bug_id": 3,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X10",
+      "project": "fastapi",
+      "bug_id": 4,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X11",
+      "project": "fastapi",
+      "bug_id": 5,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X12",
+      "project": "fastapi",
+      "bug_id": 6,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X13",
+      "project": "spacy",
+      "bug_id": 1,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X14",
+      "project": "spacy",
+      "bug_id": 2,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X15",
+      "project": "spacy",
+      "bug_id": 3,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X16",
+      "project": "spacy",
+      "bug_id": 4,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X17",
+      "project": "spacy",
+      "bug_id": 5,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X18",
+      "project": "spacy",
+      "bug_id": 6,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X19",
+      "project": "matplotlib",
+      "bug_id": 5,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X20",
+      "project": "matplotlib",
+      "bug_id": 6,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X21",
+      "project": "matplotlib",
+      "bug_id": 7,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X22",
+      "project": "matplotlib",
+      "bug_id": 8,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X23",
+      "project": "matplotlib",
+      "bug_id": 9,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X24",
+      "project": "matplotlib",
+      "bug_id": 10,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X25",
+      "project": "black",
+      "bug_id": 5,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X26",
+      "project": "black",
+      "bug_id": 6,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X27",
+      "project": "black",
+      "bug_id": 7,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X28",
+      "project": "black",
+      "bug_id": 8,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X29",
+      "project": "black",
+      "bug_id": 9,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    },
+    {
+      "cycle": "X30",
+      "project": "black",
+      "bug_id": 10,
+      "status": "PREREG_BEFORE_INFO_AND_FIX_FETCH"
+    }
+  ],
+  "method": "Each case A–J. Read BugsInPy bug.info then upstream fixed commit metadata (files, patches, test file). Static/documentary audit only unless independently executed in matching environment. The source itself and test file are NOT dynamically executed by merely inspecting commits.",
+  "results_expected": "For each patch: existence and SHAs, test file path, fix file paths, test-path cochanges and executable version prereqs; compare 20 vs 30 source-heterogeneous patches; summarize heterogeneity, selection leakage and uncertainty; NO synthetic detection rates.",
+  "exposure_statement": "The initial 20 bug.info and upstream fixed commit filename summaries were inspected BEFORE this prereg; initial 20 are EXPLORATORY_POST_EXPOSURE. The further 30 projects/IDs are selected before reading their bug.info or upstream patches, giving an independent-from-inspection descriptive second cohort, but not external reproduction.",
+  "A_J": "A data/estimand; B null/other; C comparator and budgets; D verify provenance, source/test file diff coverage; E fetch actual documented patch and extract line/file summaries; F prior art/selection/exposure and runtime blockers; G fresh uninspected bugs as cohort (not independent field data); H priors; I grade 0-3, CT2, D; J continue or branch within grant",
+  "strong_benchmark_limits": [
+    "Known real bug fixes in public repositories, not a dynamic fault-detection experiment",
+    "Fix commits include tests and may leak oracle",
+    "BugsInPy tests often depend on Python 3.6-3.8 and old deps",
+    "No matching computation budget for metamorphic testing vs developer fix oracle can be established from metadata alone"
+  ],
+  "source_refs": [
+    "https://github.com/soarsmu/BugsInPy",
+    "https://doi.org/10.1145/3368089.3417943"
+  ],
+  "grade_contract": "No 1/3 from mere extraction; only a new, nonduplicated, operationally useful validated insight. No 2/3 absent strong independent executed controls."
+}
