@@ -1,0 +1,96 @@
+{
+  "block": "B14",
+  "status": "PRE_EXECUTION",
+  "source_v1_sha256": "e20d7220103548b03aca7cc04eb42ea8c953453360574ec7e6e61a9dd3c969da",
+  "source_v2_sha256": "4e776e1002d5f026062809e15e38db4564f46c9ad9dae180ff17e8923b26b397",
+  "E_budget": 30,
+  "G_budget": 48,
+  "E_draws": 550,
+  "G_draws": 650,
+  "contracts": [
+    {
+      "id": "C71",
+      "source": "engel",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "flip"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "flip"
+      },
+      "primary": "abs_bias_A_gt_B",
+      "H1": "If all labels reverse only AFTER the pilot, stale stage-conditional HT has larger absolute bias than a stage2-only estimator."
+    },
+    {
+      "id": "C72",
+      "source": "fair",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "flip"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "flip"
+      },
+      "primary": "abs_bias_A_gt_B",
+      "H1": "If all labels reverse only AFTER the pilot, stale stage-conditional HT has larger absolute bias than a stage2-only estimator."
+    },
+    {
+      "id": "C73",
+      "source": "anes96",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "flip"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "flip"
+      },
+      "primary": "abs_bias_A_gt_B",
+      "H1": "If all labels reverse only AFTER the pilot, stale stage-conditional HT has larger absolute bias than a stage2-only estimator."
+    },
+    {
+      "id": "C74",
+      "source": "grunfeld",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "flip"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "flip"
+      },
+      "primary": "abs_bias_A_gt_B",
+      "H1": "If all labels reverse only AFTER the pilot, stale stage-conditional HT has larger absolute bias than a stage2-only estimator."
+    },
+    {
+      "id": "C75",
+      "source": "macrodata",
+      "A": {
+        "policy": "shrink",
+        "estimator": "ht",
+        "shift": "flip"
+      },
+      "B": {
+        "policy": "shrink",
+        "estimator": "second",
+        "shift": "flip"
+      },
+      "primary": "abs_bias_A_gt_B",
+      "H1": "If all labels reverse only AFTER the pilot, stale stage-conditional HT has larger absolute bias than a stage2-only estimator."
+    }
+  ],
+  "H0": "abs bias(A) <= abs bias(B)",
+  "control_details": "E/G reflect only fresh acquisition draws and budgets in same historic source.",
+  "AB": "A explicit transformed finite source estimand; B H0/H1 and professional missingness/longitudinal rivals; C same budget, response mechanism, same-source G; D positivity and true-label leakage check; E raw per-draw paired result; F alternative estimator prior art and hidden oracle restrictions; G same source new RNG and budget not external; H nonduplicative priors; I CT2, 0-3; J close 75 including negatives, no 2/3 without novelty/independent field evidence",
+  "external_replication": false
+}
