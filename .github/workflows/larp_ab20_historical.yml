@@ -1,0 +1,53 @@
+name: LARP AB20 Full Historical Runtime Attempt
+on:
+  push:
+    branches:
+      - research/ab20-fullruntime-pivot-20261024
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  historical:
+    name: "${{ matrix.project }} / Python ${{ matrix.python }}"
+    runs-on: ubuntu-22.04
+    timeout-minutes: 28
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: tqdm
+            python: "3.6"
+          - project: PySnooper
+            python: "3.8"
+          - project: cookiecutter
+            python: "3.6"
+          - project: youtube-dl
+            python: "3.7"
+          - project: black
+            python: "3.8"
+    steps:
+      - name: Checkout LARP campaign code and prereg
+        uses: actions/checkout@v4
+      - name: Configure historical Python minor
+        uses: actions/setup-python@v5
+        with:
+          python-version: "${{ matrix.python }}"
+      - name: Display interpreter and freeze data
+        run: |
+          python --version
+          git rev-parse HEAD
+          sha256sum research/AB20_FULLRUNTIME_20261024/PREREG_COHORT_20.json
+          sha256sum research/AB20_FULLRUNTIME_20261024/run_full_runtime.py
+      - name: Attempt full upstream buggy and fixed checkouts and tests
+        run: |
+          python -u research/AB20_FULLRUNTIME_20261024/run_full_runtime.py --project "${{ matrix.project }}"
+      - name: Preserve all attempts including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-${{ matrix.project }}
+          path: research/AB20_FULLRUNTIME_20261024/results/
+          if-no-files-found: warn
+          retention-days: 30
