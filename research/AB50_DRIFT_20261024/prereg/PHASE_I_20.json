@@ -1,0 +1,244 @@
+{
+  "status": "FROZEN_BEFORE_RUN",
+  "phase": "I",
+  "source_sha256": "4c2224a09052bae02dd907abed6bf28954c26456a11e8e6ca02098294ab7582d",
+  "E_seeds": [
+    101,
+    109,
+    127,
+    139
+  ],
+  "G_seeds": [
+    211,
+    223,
+    227,
+    229,
+    233,
+    239,
+    241,
+    251
+  ],
+  "AB": "A fixed sites and rare-sensor coverage, B rival direction and null, C paired designs, D exact quotas/no target field, E all seeds, F adversarial geometric comparator and control, G new same-generator seeds not external, H prior update, I novelty and CT2, J mandatory 20 then 10 meta DRIFT.",
+  "cycles": [
+    {
+      "id": "P01",
+      "geometry": "grid",
+      "failure": "iid",
+      "H1": "Farthest improves on zones (zone−farthest positive)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P02",
+      "geometry": "grid",
+      "failure": "disk",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P03",
+      "geometry": "grid",
+      "failure": "stripe",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P04",
+      "geometry": "grid",
+      "failure": "rare",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P05",
+      "geometry": "grid",
+      "failure": "hybrid",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P06",
+      "geometry": "iid",
+      "failure": "iid",
+      "H1": "Farthest improves on zones (zone−farthest positive)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P07",
+      "geometry": "iid",
+      "failure": "disk",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P08",
+      "geometry": "iid",
+      "failure": "stripe",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P09",
+      "geometry": "iid",
+      "failure": "rare",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P10",
+      "geometry": "iid",
+      "failure": "hybrid",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P11",
+      "geometry": "halton",
+      "failure": "iid",
+      "H1": "Farthest improves on zones (zone−farthest positive)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P12",
+      "geometry": "halton",
+      "failure": "disk",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P13",
+      "geometry": "halton",
+      "failure": "stripe",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P14",
+      "geometry": "halton",
+      "failure": "rare",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P15",
+      "geometry": "halton",
+      "failure": "hybrid",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P16",
+      "geometry": "cluster",
+      "failure": "iid",
+      "H1": "Farthest improves on zones (zone−farthest positive)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P17",
+      "geometry": "cluster",
+      "failure": "disk",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P18",
+      "geometry": "cluster",
+      "failure": "stripe",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P19",
+      "geometry": "cluster",
+      "failure": "rare",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    },
+    {
+      "id": "P20",
+      "geometry": "cluster",
+      "failure": "hybrid",
+      "H1": "Zones improves on farthest (zone−farthest negative)",
+      "H0": "No directional improvement",
+      "primary": "paired mean CVaR95 squared distance",
+      "strong_control": "farthest-first",
+      "weak_control": "random",
+      "secondary": "periodic-IDW MSE"
+    }
+  ]
+}
