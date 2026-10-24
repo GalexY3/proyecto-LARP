@@ -1,0 +1,249 @@
+[
+  {
+    "cycle": "Q11",
+    "project": "tqdm",
+    "bug_id": 4,
+    "upstream": "tqdm/tqdm",
+    "buggy_commit": "03b347646492131d889871939b40457d29147216",
+    "fixed_commit": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+    "python": "3.6.9",
+    "official_test": "tqdm/tests/tests_tqdm.py",
+    "fix_message": "fix `TypeError` when `unit_scale` and unknown `total`",
+    "files": [
+      {
+        "name": "tqdm/_tqdm.py",
+        "changes": 3,
+        "additions": 2,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "tqdm/tests/tests_tqdm.py",
+        "changes": 9,
+        "additions": 9,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 3,
+    "test_changed_lines": 9,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q12",
+    "project": "tqdm",
+    "bug_id": 5,
+    "upstream": "tqdm/tqdm",
+    "buggy_commit": "19b08ab34fdbfa0275bc5cb2430436c724c7e759",
+    "fixed_commit": "4f340697af69b71850aad496387c9c5aa1904136",
+    "python": "3.6.9",
+    "official_test": "tqdm/tests/tests_tqdm.py",
+    "fix_message": "support `bool()` cast when `disable=True`",
+    "files": [
+      {
+        "name": "tqdm/_tqdm.py",
+        "changes": 13,
+        "additions": 7,
+        "deletions": 6,
+        "status": "modified"
+      },
+      {
+        "name": "tqdm/tests/tests_tqdm.py",
+        "changes": 31,
+        "additions": 31,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 13,
+    "test_changed_lines": 31,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q13",
+    "project": "black",
+    "bug_id": 1,
+    "upstream": "psf/black",
+    "buggy_commit": "26c9465a22c732ab1e17b0dec578fa3432e9b558",
+    "fixed_commit": "c0a7582e3d4cc8bec3b7f5a6c52b36880dcb57d7",
+    "python": "3.8.3",
+    "official_test": "tests/test_black.py",
+    "fix_message": "permits black to run in AWS Lambda: (#1141)",
+    "files": [
+      {
+        "name": "black.py",
+        "changes": 14,
+        "additions": 11,
+        "deletions": 3,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_black.py",
+        "changes": 21,
+        "additions": 21,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 14,
+    "test_changed_lines": 21,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q14",
+    "project": "black",
+    "bug_id": 2,
+    "upstream": "psf/black",
+    "buggy_commit": "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2",
+    "fixed_commit": "892eddacd215d685e136686b7f629ade70adca83",
+    "python": "3.8.3",
+    "official_test": "tests/test_black.py",
+    "fix_message": "Fix for \"# fmt: on\" with decorators (#1325)",
+    "files": [
+      {
+        "name": "black.py",
+        "changes": 49,
+        "additions": 40,
+        "deletions": 9,
+        "status": "modified"
+      },
+      {
+        "name": "tests/data/fmtonoff4.py",
+        "changes": 31,
+        "additions": 31,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "name": "tests/test_black.py",
+        "changes": 8,
+        "additions": 8,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 49,
+    "test_changed_lines": 39,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "Q15",
+    "project": "black",
+    "bug_id": 3,
+    "upstream": "psf/black",
+    "buggy_commit": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+    "fixed_commit": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+    "python": "3.8.3",
+    "official_test": "tests/test_black.py",
+    "fix_message": "Change exit code to 2 when config file doesn't exist (#1361)",
+    "files": [
+      {
+        "name": "black.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "name": "tests/test_black.py",
+        "changes": 10,
+        "additions": 10,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "source_changed_lines": 2,
+    "test_changed_lines": 10,
+    "test_cochange": true,
+    "dynamic_reproduction": "NOT_EXECUTED",
+    "status": "DOCUMENTARY_AUDIT_POST_EXPOSURE",
+    "AB": {
+      "A": "Historical upstream bug fix and affected tests",
+      "B": "H1: fix contains changed regression tests; null: no test cochange",
+      "C": "BugsInPy provenance crosschecked against upstream commit",
+      "D": "Upstream commit/file metadata verified",
+      "E": "Exact commit and files above",
+      "F": "Fix history is oracle exposed; cannot claim MR detection",
+      "G": "No independent runtime replication",
+      "H": "Do not update scientific prior from mere cochange",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
