@@ -1,3 +1,9 @@
+# INVALIDADO PARA REIVINDICACIÓN CIENTÍFICA — VERSIÓN v1/V2 CON FILTRACIÓN DE RESPUESTA
+
+Los números en este readout pertenecen a los 75 primeros contratos ejecutados con preprocesado de y global. **No** son resultados válidos para una política que solo compra etiquetas del piloto. Se preservan EXCLUSIVAMENTE para auditoría del error. El [dictamen R1 corregido](../DICTAMEN_R1.md) resume las 75 reparaciones; contrato [R1](../prereg/REPAIR_R1_NO_FULL_Y_PREPROCESSING.md). La segunda ejecución está etiquetada POST-EXPOSURE/EXPLORATORY, no confirmación ciega.
+
+---
+
 # B01 C01–C06 — AB post-execution, exploratory
 
 Six transformed observed finite populations; 650 independent *sampling trajectories* E at total B=30 labels, 750 G at B=48 on the SAME sources (not outside confirmation). A=p1/p2 pooled stratum sample mean; B=stage-conditional HT estimator. Stage2 is chosen adaptively from pilot **stratum means**. Source engine frozen SHA256 e20d7220.
