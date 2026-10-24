@@ -1,0 +1,309 @@
+[
+  {
+    "cycle": "X19",
+    "project": "matplotlib",
+    "bug_id": 5,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_sha": "49593b73854e10ace8f3c05343220328def6a328",
+    "fixed_sha": "66289c4f1895b8c65ca92a03d92f6b1cfa552267",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_axes.py",
+    "headline": "Correctly set default linewidth for unfilled markers.",
+    "files": [
+      {
+        "path": "lib/matplotlib/axes/_axes.py",
+        "changes": 7,
+        "additions": 6,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "lib/matplotlib/tests/test_axes.py",
+        "changes": 14,
+        "additions": 14,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 7,
+    "test_changed_lines": 14,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "matplotlib source/test change provenance",
+      "B": {
+        "H1": "Test regression cochange",
+        "H0": "No test cochange"
+      },
+      "C": "Compare BugsInPy SHA with authoritative upstream",
+      "D": "Commit identity/file list verified",
+      "E": "Patch change sizes and test paths",
+      "F": "Backend/window/X11 renders and old deps may affect runtime portability",
+      "G": "No bug reproduction or dynamic MR detection",
+      "H": "Document conditional nature of source patches",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X20",
+    "project": "matplotlib",
+    "bug_id": 6,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_sha": "fb9e72309aeefb51d1a56ecbdb1e7399d105ff06",
+    "fixed_sha": "d84f4a7ac8d43d1288cb8ce11ab60ae557306b7e",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_axes.py",
+    "headline": "FIX: fix support for single color 2D array as c to mean single color",
+    "files": [
+      {
+        "path": "lib/matplotlib/axes/_axes.py",
+        "changes": 8,
+        "additions": 7,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "lib/matplotlib/tests/test_axes.py",
+        "changes": 16,
+        "additions": 16,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 8,
+    "test_changed_lines": 16,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "matplotlib source/test change provenance",
+      "B": {
+        "H1": "Test regression cochange",
+        "H0": "No test cochange"
+      },
+      "C": "Compare BugsInPy SHA with authoritative upstream",
+      "D": "Commit identity/file list verified",
+      "E": "Patch change sizes and test paths",
+      "F": "Backend/window/X11 renders and old deps may affect runtime portability",
+      "G": "No bug reproduction or dynamic MR detection",
+      "H": "Document conditional nature of source patches",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X21",
+    "project": "matplotlib",
+    "bug_id": 7,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_sha": "969513e2a5227331a2eb9e4bc4ba8448a0f9831d",
+    "fixed_sha": "ac400b51bb31b91920ee9aae02a0606a67983a8f",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_colors.py",
+    "headline": "Fix LightSource.shade on fully unmasked array.",
+    "files": [
+      {
+        "path": "lib/matplotlib/colors.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "lib/matplotlib/tests/test_colors.py",
+        "changes": 13,
+        "additions": 13,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 2,
+    "test_changed_lines": 13,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "matplotlib source/test change provenance",
+      "B": {
+        "H1": "Test regression cochange",
+        "H0": "No test cochange"
+      },
+      "C": "Compare BugsInPy SHA with authoritative upstream",
+      "D": "Commit identity/file list verified",
+      "E": "Patch change sizes and test paths",
+      "F": "Backend/window/X11 renders and old deps may affect runtime portability",
+      "G": "No bug reproduction or dynamic MR detection",
+      "H": "Document conditional nature of source patches",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X22",
+    "project": "matplotlib",
+    "bug_id": 8,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_sha": "54bd6f19b23dc940a4d572583c449613b6b1ae3c",
+    "fixed_sha": "2f41868de465b86d2fc357f7ed58ff323d58030f",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_axes.py",
+    "headline": "FIX: cancel pending autoscale on manually setting limits",
+    "files": [
+      {
+        "path": "lib/matplotlib/axes/_base.py",
+        "changes": 6,
+        "additions": 6,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "lib/matplotlib/tests/test_axes.py",
+        "changes": 30,
+        "additions": 30,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 6,
+    "test_changed_lines": 30,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "matplotlib source/test change provenance",
+      "B": {
+        "H1": "Test regression cochange",
+        "H0": "No test cochange"
+      },
+      "C": "Compare BugsInPy SHA with authoritative upstream",
+      "D": "Commit identity/file list verified",
+      "E": "Patch change sizes and test paths",
+      "F": "Backend/window/X11 renders and old deps may affect runtime portability",
+      "G": "No bug reproduction or dynamic MR detection",
+      "H": "Document conditional nature of source patches",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X23",
+    "project": "matplotlib",
+    "bug_id": 9,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_sha": "8673167d4c44dc2ede02fedd718dadf7f88e102d",
+    "fixed_sha": "c01f9d3eff9b6239446c1bb2d205eccd69054aeb",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_polar.py",
+    "headline": "Unstale viewlims before draw()ing polar axes.",
+    "files": [
+      {
+        "path": "lib/matplotlib/projections/polar.py",
+        "changes": 1,
+        "additions": 1,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "lib/matplotlib/tests/test_polar.py",
+        "changes": 6,
+        "additions": 5,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 1,
+    "test_changed_lines": 6,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "matplotlib source/test change provenance",
+      "B": {
+        "H1": "Test regression cochange",
+        "H0": "No test cochange"
+      },
+      "C": "Compare BugsInPy SHA with authoritative upstream",
+      "D": "Commit identity/file list verified",
+      "E": "Patch change sizes and test paths",
+      "F": "Backend/window/X11 renders and old deps may affect runtime portability",
+      "G": "No bug reproduction or dynamic MR detection",
+      "H": "Document conditional nature of source patches",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X24",
+    "project": "matplotlib",
+    "bug_id": 10,
+    "upstream": "matplotlib/matplotlib",
+    "buggy_sha": "b31d64ce3910e8d297d8300690e459587f77181f",
+    "fixed_sha": "1986da3968ee76c6bce8f4c04aed80e23bd4ecfa",
+    "python": "3.8.1",
+    "official_test": "lib/matplotlib/tests/test_axes.py",
+    "headline": "set_tick_params(label1On=False) should also make offset text invisible.",
+    "files": [
+      {
+        "path": "doc/api/next_api_changes/behaviour.rst",
+        "changes": 5,
+        "additions": 5,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "lib/matplotlib/axis.py",
+        "changes": 6,
+        "additions": 5,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "lib/matplotlib/tests/test_axes.py",
+        "changes": 10,
+        "additions": 10,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 6,
+    "test_changed_lines": 10,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "matplotlib source/test change provenance",
+      "B": {
+        "H1": "Test regression cochange",
+        "H0": "No test cochange"
+      },
+      "C": "Compare BugsInPy SHA with authoritative upstream",
+      "D": "Commit identity/file list verified",
+      "E": "Patch change sizes and test paths",
+      "F": "Backend/window/X11 renders and old deps may affect runtime portability",
+      "G": "No bug reproduction or dynamic MR detection",
+      "H": "Document conditional nature of source patches",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
