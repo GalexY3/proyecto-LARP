@@ -1,0 +1,351 @@
+[
+  {
+    "cycle": "X01",
+    "project": "pandas",
+    "bug_id": 1,
+    "upstream": "pandas-dev/pandas",
+    "buggy_sha": "3fd150c",
+    "fixed_sha": "e41ee47a90bb1d8a1fa28fcefcd45ed8ef5cb946",
+    "python": "3.8.3",
+    "official_test": "pandas/tests/dtypes/test_dtypes.py",
+    "headline": "Fixes is_string_dtype (#34294)",
+    "files": [
+      {
+        "path": "doc/source/whatsnew/v1.1.0.rst",
+        "changes": 1,
+        "additions": 1,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/core/dtypes/common.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/tests/dtypes/test_dtypes.py",
+        "changes": 4,
+        "additions": 4,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 2,
+    "test_changed_lines": 4,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Pandas defect-specific fix provenance",
+      "B": {
+        "H1": "At least one official regression test file is modified by this fix",
+        "H0": "No test change; any association is benchmark dependent"
+      },
+      "C": "Cross-compare BugsInPy fixed hash and upstream commit",
+      "D": "Verify commit and changed paths; separate tests from implementation",
+      "E": "Observed source/test changes in attached files",
+      "F": "Selection bias, preexisting regression tests and disabled historical Python reproduction",
+      "G": "No external runtime replication, full patch review after cohort freeze",
+      "H": "Case-specific prior updated only if test cochange differs",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY_OR_PIVOT"
+    }
+  },
+  {
+    "cycle": "X02",
+    "project": "pandas",
+    "bug_id": 2,
+    "upstream": "pandas-dev/pandas",
+    "buggy_sha": "2740fb4",
+    "fixed_sha": "55e8891f6d33be14e0db73ac06513129503f995c",
+    "python": "3.8.3",
+    "official_test": "pandas/tests/indexing/test_scalar.py",
+    "headline": "BUG: Multiindexed series .at fix (#32520)",
+    "files": [
+      {
+        "path": "doc/source/whatsnew/v1.1.0.rst",
+        "changes": 1,
+        "additions": 1,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/core/indexing.py",
+        "changes": 8,
+        "additions": 7,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/tests/indexing/test_scalar.py",
+        "changes": 62,
+        "additions": 62,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 8,
+    "test_changed_lines": 62,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Pandas defect-specific fix provenance",
+      "B": {
+        "H1": "At least one official regression test file is modified by this fix",
+        "H0": "No test change; any association is benchmark dependent"
+      },
+      "C": "Cross-compare BugsInPy fixed hash and upstream commit",
+      "D": "Verify commit and changed paths; separate tests from implementation",
+      "E": "Observed source/test changes in attached files",
+      "F": "Selection bias, preexisting regression tests and disabled historical Python reproduction",
+      "G": "No external runtime replication, full patch review after cohort freeze",
+      "H": "Case-specific prior updated only if test cochange differs",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY_OR_PIVOT"
+    }
+  },
+  {
+    "cycle": "X03",
+    "project": "pandas",
+    "bug_id": 3,
+    "upstream": "pandas-dev/pandas",
+    "buggy_sha": "45fee32",
+    "fixed_sha": "d3a6a3a58e1a6eb68b8b8399ff252b8f4501950e",
+    "python": "3.8.3",
+    "official_test": "pandas/tests/series/methods/test_to_period.py;pandas/tests/series/methods/test_to_timestamp.py",
+    "headline": "BUG : Series.to_timestamp and Series.to_period raise user-facing AssertionError (#34067)",
+    "files": [
+      {
+        "path": "doc/source/whatsnew/v1.1.0.rst",
+        "changes": 2,
+        "additions": 2,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/core/series.py",
+        "changes": 6,
+        "additions": 4,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/tests/series/methods/test_to_period.py",
+        "changes": 10,
+        "additions": 10,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/tests/series/methods/test_to_timestamp.py",
+        "changes": 13,
+        "additions": 12,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 6,
+    "test_changed_lines": 23,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Pandas defect-specific fix provenance",
+      "B": {
+        "H1": "At least one official regression test file is modified by this fix",
+        "H0": "No test change; any association is benchmark dependent"
+      },
+      "C": "Cross-compare BugsInPy fixed hash and upstream commit",
+      "D": "Verify commit and changed paths; separate tests from implementation",
+      "E": "Observed source/test changes in attached files",
+      "F": "Selection bias, preexisting regression tests and disabled historical Python reproduction",
+      "G": "No external runtime replication, full patch review after cohort freeze",
+      "H": "Case-specific prior updated only if test cochange differs",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY_OR_PIVOT"
+    }
+  },
+  {
+    "cycle": "X04",
+    "project": "pandas",
+    "bug_id": 4,
+    "upstream": "pandas-dev/pandas",
+    "buggy_sha": "cca710b",
+    "fixed_sha": "2250ddfaff92abaff20a5bcd78315f5d4bd44981",
+    "python": "3.8.3",
+    "official_test": "pandas/tests/indexes/multi/test_join.py",
+    "headline": "BUG: Fixed __join_multi always returning indexers (#34074) (#34075)",
+    "files": [
+      {
+        "path": "doc/source/whatsnew/v1.1.0.rst",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/core/indexes/base.py",
+        "changes": 5,
+        "additions": 4,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/tests/indexes/multi/test_join.py",
+        "changes": 12,
+        "additions": 11,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 5,
+    "test_changed_lines": 12,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Pandas defect-specific fix provenance",
+      "B": {
+        "H1": "At least one official regression test file is modified by this fix",
+        "H0": "No test change; any association is benchmark dependent"
+      },
+      "C": "Cross-compare BugsInPy fixed hash and upstream commit",
+      "D": "Verify commit and changed paths; separate tests from implementation",
+      "E": "Observed source/test changes in attached files",
+      "F": "Selection bias, preexisting regression tests and disabled historical Python reproduction",
+      "G": "No external runtime replication, full patch review after cohort freeze",
+      "H": "Case-specific prior updated only if test cochange differs",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY_OR_PIVOT"
+    }
+  },
+  {
+    "cycle": "X05",
+    "project": "pandas",
+    "bug_id": 5,
+    "upstream": "pandas-dev/pandas",
+    "buggy_sha": "4f4282f8a7c1033fc3efe9f4eab5368a70ae5041",
+    "fixed_sha": "0babe10f1f3f19bb6183b6fb4cc958583c6860c8",
+    "python": "3.8.3",
+    "official_test": "pandas/tests/groupby/test_function.py",
+    "headline": "BUG: DataFrameGroupby std/sem modify grouped column when as_index=False (#33630)",
+    "files": [
+      {
+        "path": "doc/source/whatsnew/v1.1.0.rst",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/core/groupby/groupby.py",
+        "changes": 30,
+        "additions": 26,
+        "deletions": 4,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/tests/groupby/test_function.py",
+        "changes": 22,
+        "additions": 22,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 30,
+    "test_changed_lines": 22,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Pandas defect-specific fix provenance",
+      "B": {
+        "H1": "At least one official regression test file is modified by this fix",
+        "H0": "No test change; any association is benchmark dependent"
+      },
+      "C": "Cross-compare BugsInPy fixed hash and upstream commit",
+      "D": "Verify commit and changed paths; separate tests from implementation",
+      "E": "Observed source/test changes in attached files",
+      "F": "Selection bias, preexisting regression tests and disabled historical Python reproduction",
+      "G": "No external runtime replication, full patch review after cohort freeze",
+      "H": "Case-specific prior updated only if test cochange differs",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY_OR_PIVOT"
+    }
+  },
+  {
+    "cycle": "X06",
+    "project": "pandas",
+    "bug_id": 6,
+    "upstream": "pandas-dev/pandas",
+    "buggy_sha": "21a10d1",
+    "fixed_sha": "8cd8ed3657e52ad9f67e17b7f5c20f7340ab6a2c",
+    "python": "3.8.3",
+    "official_test": "pandas/tests/groupby/test_size.py",
+    "headline": "Bug in Series.groupby would raise ValueError when grouping by PeriodIndex level (#34049)",
+    "files": [
+      {
+        "path": "doc/source/whatsnew/v1.1.0.rst",
+        "changes": 1,
+        "additions": 1,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/core/groupby/grouper.py",
+        "changes": 4,
+        "additions": 3,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "pandas/tests/groupby/test_size.py",
+        "changes": 10,
+        "additions": 9,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 4,
+    "test_changed_lines": 10,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Pandas defect-specific fix provenance",
+      "B": {
+        "H1": "At least one official regression test file is modified by this fix",
+        "H0": "No test change; any association is benchmark dependent"
+      },
+      "C": "Cross-compare BugsInPy fixed hash and upstream commit",
+      "D": "Verify commit and changed paths; separate tests from implementation",
+      "E": "Observed source/test changes in attached files",
+      "F": "Selection bias, preexisting regression tests and disabled historical Python reproduction",
+      "G": "No external runtime replication, full patch review after cohort freeze",
+      "H": "Case-specific prior updated only if test cochange differs",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY_OR_PIVOT"
+    }
+  }
+]
