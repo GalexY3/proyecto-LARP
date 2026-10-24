@@ -1,0 +1,372 @@
+[
+  {
+    "cycle": "X25",
+    "project": "black",
+    "bug_id": 5,
+    "upstream": "psf/black",
+    "buggy_sha": "1bbb01b854d168d76ebe4bf78961c2152ae075d9",
+    "fixed_sha": "9394de150ebf0adc426523f46dc08e8b2b2b0b63",
+    "python": "3.8.3",
+    "official_test": "tests/test_black.py",
+    "headline": "Fix trailing comma for function with one arg (#880) (#891)",
+    "files": [
+      {
+        "path": "black.py",
+        "changes": 15,
+        "additions": 11,
+        "deletions": 4,
+        "status": "modified"
+      },
+      {
+        "path": "tests/data/function_trailing_comma.py",
+        "changes": 14,
+        "additions": 14,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "tests/test_black.py",
+        "changes": 8,
+        "additions": 8,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 15,
+    "test_changed_lines": 22,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Black upstream fix and test path cochange",
+      "B": {
+        "H1": "Regression test modified",
+        "H0": "No test cochange"
+      },
+      "C": "Match BugsInPy exact bug fix with upstream git",
+      "D": "Verify SHA and nonempty file list",
+      "E": "Record patch paths and line deltas",
+      "F": "Formatter integration and golden-output tests are an informative oracle, not blind MR",
+      "G": "No runtime reproduction or new independently observed production bug",
+      "H": "Keep scope of descriptive cochange narrow",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X26",
+    "project": "black",
+    "bug_id": 6,
+    "upstream": "psf/black",
+    "buggy_sha": "8c8adedc2a74a494c24f93e405b6418ac32f54cd",
+    "fixed_sha": "f8617f975d56e81cfb4070ce65584f7b29a77e7a",
+    "python": "3.8.3",
+    "official_test": "tests/test_black.py;tests/data/comment_after_escaped_newline.py",
+    "headline": "Add support for always tokenizing async/await as keywords",
+    "files": [
+      {
+        "path": "black.py",
+        "changes": 82,
+        "additions": 70,
+        "deletions": 12,
+        "status": "modified"
+      },
+      {
+        "path": "blib2to3/pgen2/driver.py",
+        "changes": 16,
+        "additions": 13,
+        "deletions": 3,
+        "status": "modified"
+      },
+      {
+        "path": "blib2to3/pgen2/driver.pyi",
+        "changes": 9,
+        "additions": 8,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "blib2to3/pgen2/tokenize.py",
+        "changes": 12,
+        "additions": 10,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "path": "blib2to3/pgen2/tokenize.pyi",
+        "changes": 4,
+        "additions": 4,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "tests/data/async_as_identifier.py",
+        "changes": 49,
+        "additions": 49,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "tests/data/python37.py",
+        "changes": 16,
+        "additions": 16,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_black.py",
+        "changes": 20,
+        "additions": 20,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 110,
+    "test_changed_lines": 85,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Black upstream fix and test path cochange",
+      "B": {
+        "H1": "Regression test modified",
+        "H0": "No test cochange"
+      },
+      "C": "Match BugsInPy exact bug fix with upstream git",
+      "D": "Verify SHA and nonempty file list",
+      "E": "Record patch paths and line deltas",
+      "F": "Formatter integration and golden-output tests are an informative oracle, not blind MR",
+      "G": "No runtime reproduction or new independently observed production bug",
+      "H": "Keep scope of descriptive cochange narrow",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X27",
+    "project": "black",
+    "bug_id": 7,
+    "upstream": "psf/black",
+    "buggy_sha": "18119d38466652ae818436cb497f601294ed4558",
+    "fixed_sha": "de806405d2934b629d67e2a6317ad7e826765a20",
+    "python": "3.8.3",
+    "official_test": "tests/data/tupleassign.py;tests/test_black.py",
+    "headline": "Add parentheses around tuple unpack assignment (#832)",
+    "files": [
+      {
+        "path": "black.py",
+        "changes": 14,
+        "additions": 13,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "tests/data/tupleassign.py",
+        "changes": 10,
+        "additions": 10,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "tests/test_black.py",
+        "changes": 8,
+        "additions": 8,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 14,
+    "test_changed_lines": 18,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Black upstream fix and test path cochange",
+      "B": {
+        "H1": "Regression test modified",
+        "H0": "No test cochange"
+      },
+      "C": "Match BugsInPy exact bug fix with upstream git",
+      "D": "Verify SHA and nonempty file list",
+      "E": "Record patch paths and line deltas",
+      "F": "Formatter integration and golden-output tests are an informative oracle, not blind MR",
+      "G": "No runtime reproduction or new independently observed production bug",
+      "H": "Keep scope of descriptive cochange narrow",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X28",
+    "project": "black",
+    "bug_id": 8,
+    "upstream": "psf/black",
+    "buggy_sha": "e6ddb68c786256e1cb0c76b42d10c212ef34cb2a",
+    "fixed_sha": "6b994fdb8ab70ce4c2eafb8f2f0ff2648f3ff1ef",
+    "python": "3.8.3",
+    "official_test": "tests/data/comments7.py;tests/test_black.py",
+    "headline": "fix handling of comments in from imports (#829)",
+    "files": [
+      {
+        "path": "black.py",
+        "changes": 13,
+        "additions": 10,
+        "deletions": 3,
+        "status": "modified"
+      },
+      {
+        "path": "tests/data/comments7.py",
+        "changes": 51,
+        "additions": 51,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "tests/test_black.py",
+        "changes": 8,
+        "additions": 8,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 13,
+    "test_changed_lines": 59,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Black upstream fix and test path cochange",
+      "B": {
+        "H1": "Regression test modified",
+        "H0": "No test cochange"
+      },
+      "C": "Match BugsInPy exact bug fix with upstream git",
+      "D": "Verify SHA and nonempty file list",
+      "E": "Record patch paths and line deltas",
+      "F": "Formatter integration and golden-output tests are an informative oracle, not blind MR",
+      "G": "No runtime reproduction or new independently observed production bug",
+      "H": "Keep scope of descriptive cochange narrow",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X29",
+    "project": "black",
+    "bug_id": 9,
+    "upstream": "psf/black",
+    "buggy_sha": "026c81b83454f176a9f9253cbfb70be2c159d822",
+    "fixed_sha": "d6db1c12a8e14833fe22da377cddc2bd1f43dc14",
+    "python": "3.8.3",
+    "official_test": "tests/data/python2_print_function.py;tests/test_black.py",
+    "headline": "Fix print() function on Python 2 (#754)",
+    "files": [
+      {
+        "path": "black.py",
+        "changes": 4,
+        "additions": 2,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "path": "tests/data/python2_print_function.py",
+        "changes": 16,
+        "additions": 16,
+        "deletions": 0,
+        "status": "added"
+      },
+      {
+        "path": "tests/test_black.py",
+        "changes": 8,
+        "additions": 8,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 4,
+    "test_changed_lines": 24,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Black upstream fix and test path cochange",
+      "B": {
+        "H1": "Regression test modified",
+        "H0": "No test cochange"
+      },
+      "C": "Match BugsInPy exact bug fix with upstream git",
+      "D": "Verify SHA and nonempty file list",
+      "E": "Record patch paths and line deltas",
+      "F": "Formatter integration and golden-output tests are an informative oracle, not blind MR",
+      "G": "No runtime reproduction or new independently observed production bug",
+      "H": "Keep scope of descriptive cochange narrow",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X30",
+    "project": "black",
+    "bug_id": 10,
+    "upstream": "psf/black",
+    "buggy_sha": "f6643c4f0cfbae1f2493fdfce46cfbae3d26f46b",
+    "fixed_sha": "66aa676278948368dff251dffd58c850cb8b889e",
+    "python": "3.8.3",
+    "official_test": "tests/test_black.py",
+    "headline": "Fix indent calculation with tabs when computing prefixes (#595)",
+    "files": [
+      {
+        "path": "blib2to3/pgen2/driver.py",
+        "changes": 4,
+        "additions": 1,
+        "deletions": 3,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_black.py",
+        "changes": 13,
+        "additions": 13,
+        "deletions": 0,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 4,
+    "test_changed_lines": 13,
+    "status": "AB_DOCUMENTARY_AUDIT_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "Black upstream fix and test path cochange",
+      "B": {
+        "H1": "Regression test modified",
+        "H0": "No test cochange"
+      },
+      "C": "Match BugsInPy exact bug fix with upstream git",
+      "D": "Verify SHA and nonempty file list",
+      "E": "Record patch paths and line deltas",
+      "F": "Formatter integration and golden-output tests are an informative oracle, not blind MR",
+      "G": "No runtime reproduction or new independently observed production bug",
+      "H": "Keep scope of descriptive cochange narrow",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "CONTINUE_DOCUMENTARY"
+    }
+  }
+]
