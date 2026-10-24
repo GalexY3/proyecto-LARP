@@ -1,0 +1,336 @@
+[
+  {
+    "cycle": "X07",
+    "project": "fastapi",
+    "bug_id": 1,
+    "historic_url": "tiangolo/fastapi",
+    "upstream": "fastapi/fastapi",
+    "buggy_sha": "766157bfb4e7dfccba09ab398e8ec444d14e947c",
+    "fixed_sha": "3397d4d69a9c2d64c1219fcbf291ea5697a4abb8",
+    "python": "3.8.3",
+    "official_test": "tests/test_jsonable_encoder.py",
+    "headline": ":sparkles: Implement response_model_exclude_defaults and response_model_exclude_none (#1166)",
+    "files": [
+      {
+        "path": "fastapi/applications.py",
+        "changes": 40,
+        "additions": 40,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "fastapi/encoders.py",
+        "changes": 22,
+        "additions": 15,
+        "deletions": 7,
+        "status": "modified"
+      },
+      {
+        "path": "fastapi/openapi/utils.py",
+        "changes": 4,
+        "additions": 2,
+        "deletions": 2,
+        "status": "modified"
+      },
+      {
+        "path": "fastapi/routing.py",
+        "changes": 93,
+        "additions": 87,
+        "deletions": 6,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_jsonable_encoder.py",
+        "changes": 16,
+        "additions": 16,
+        "deletions": 0,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_skip_defaults.py",
+        "changes": 64,
+        "additions": 63,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 159,
+    "test_changed_lines": 80,
+    "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix and test provenance at canonical redirect",
+      "B": {
+        "H1": "Test cochange present",
+        "H0": "No test path cochange"
+      },
+      "C": "Authoritative upstream SHA-match and changed-file audit",
+      "D": "Redirect isolated, original invalid preserved",
+      "E": "Exact file and line changes included",
+      "F": "Post-exposure instrument repair and benchmark selection bias",
+      "G": "Not external execution",
+      "H": "Update dependency on archive redirect risk",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "REPAIR_COMPLETED_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X08",
+    "project": "fastapi",
+    "bug_id": 2,
+    "historic_url": "tiangolo/fastapi",
+    "upstream": "fastapi/fastapi",
+    "buggy_sha": "210af1fd3dc0f612a08fa02a0cb3f5adb81e5bfb",
+    "fixed_sha": "02441ff0313d5b471b662293244c53e712f1243f",
+    "python": "3.8.3",
+    "official_test": "tests/test_ws_router.py",
+    "headline": ":bug: Fix dependency overrides in WebSockets (#1122)",
+    "files": [
+      {
+        "path": "fastapi/routing.py",
+        "changes": 7,
+        "additions": 6,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_ws_router.py",
+        "changes": 28,
+        "additions": 27,
+        "deletions": 1,
+        "status": "modified"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 7,
+    "test_changed_lines": 28,
+    "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix and test provenance at canonical redirect",
+      "B": {
+        "H1": "Test cochange present",
+        "H0": "No test path cochange"
+      },
+      "C": "Authoritative upstream SHA-match and changed-file audit",
+      "D": "Redirect isolated, original invalid preserved",
+      "E": "Exact file and line changes included",
+      "F": "Post-exposure instrument repair and benchmark selection bias",
+      "G": "Not external execution",
+      "H": "Update dependency on archive redirect risk",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "REPAIR_COMPLETED_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X09",
+    "project": "fastapi",
+    "bug_id": 3,
+    "historic_url": "tiangolo/fastapi",
+    "upstream": "fastapi/fastapi",
+    "buggy_sha": "869c7389e22dc9ad659940fa271da76c4f3ba3b1",
+    "fixed_sha": "aea04ee32ee1942e6e1a904527bb8da6ba76abd9",
+    "python": "3.8.3",
+    "official_test": "tests/test_serialize_response_model.py",
+    "headline": ":bug: Fix exclude_unset and aliases in response model validation (#1074)",
+    "files": [
+      {
+        "path": "fastapi/routing.py",
+        "changes": 32,
+        "additions": 25,
+        "deletions": 7,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_serialize_response_model.py",
+        "changes": 154,
+        "additions": 154,
+        "deletions": 0,
+        "status": "added"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 32,
+    "test_changed_lines": 154,
+    "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix and test provenance at canonical redirect",
+      "B": {
+        "H1": "Test cochange present",
+        "H0": "No test path cochange"
+      },
+      "C": "Authoritative upstream SHA-match and changed-file audit",
+      "D": "Redirect isolated, original invalid preserved",
+      "E": "Exact file and line changes included",
+      "F": "Post-exposure instrument repair and benchmark selection bias",
+      "G": "Not external execution",
+      "H": "Update dependency on archive redirect risk",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "REPAIR_COMPLETED_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X10",
+    "project": "fastapi",
+    "bug_id": 4,
+    "historic_url": "tiangolo/fastapi",
+    "upstream": "fastapi/fastapi",
+    "buggy_sha": "7ccd81f70653857bd8f3a15ee946aa3fb0edc2cb",
+    "fixed_sha": "74c4d1c1dbe6bfdb05d6e4fc767ffe062398f0a3",
+    "python": "3.8.3",
+    "official_test": "tests/test_param_in_path_and_dependency.py",
+    "headline": ":bug: Fix declaring a single parameter per name (#994)",
+    "files": [
+      {
+        "path": "fastapi/openapi/utils.py",
+        "changes": 4,
+        "additions": 3,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_param_in_path_and_dependency.py",
+        "changes": 93,
+        "additions": 93,
+        "deletions": 0,
+        "status": "added"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 4,
+    "test_changed_lines": 93,
+    "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix and test provenance at canonical redirect",
+      "B": {
+        "H1": "Test cochange present",
+        "H0": "No test path cochange"
+      },
+      "C": "Authoritative upstream SHA-match and changed-file audit",
+      "D": "Redirect isolated, original invalid preserved",
+      "E": "Exact file and line changes included",
+      "F": "Post-exposure instrument repair and benchmark selection bias",
+      "G": "Not external execution",
+      "H": "Update dependency on archive redirect risk",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "REPAIR_COMPLETED_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X11",
+    "project": "fastapi",
+    "bug_id": 5,
+    "historic_url": "tiangolo/fastapi",
+    "upstream": "fastapi/fastapi",
+    "buggy_sha": "7cea84b74ca3106a7f861b774e9d215e5228728f",
+    "fixed_sha": "75a07f24bf01a31225ee687f3e2b3fc1981b67ab",
+    "python": "3.8.3",
+    "official_test": "tests/test_filter_pydantic_sub_model.py",
+    "headline": ":lock: Fix clone field implementation to handle sub-models in response_model (#889)",
+    "files": [
+      {
+        "path": "fastapi/utils.py",
+        "changes": 2,
+        "additions": 1,
+        "deletions": 1,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_filter_pydantic_sub_model.py",
+        "changes": 91,
+        "additions": 91,
+        "deletions": 0,
+        "status": "added"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 2,
+    "test_changed_lines": 91,
+    "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix and test provenance at canonical redirect",
+      "B": {
+        "H1": "Test cochange present",
+        "H0": "No test path cochange"
+      },
+      "C": "Authoritative upstream SHA-match and changed-file audit",
+      "D": "Redirect isolated, original invalid preserved",
+      "E": "Exact file and line changes included",
+      "F": "Post-exposure instrument repair and benchmark selection bias",
+      "G": "Not external execution",
+      "H": "Update dependency on archive redirect risk",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "REPAIR_COMPLETED_DOCUMENTARY"
+    }
+  },
+  {
+    "cycle": "X12",
+    "project": "fastapi",
+    "bug_id": 6,
+    "historic_url": "tiangolo/fastapi",
+    "upstream": "fastapi/fastapi",
+    "buggy_sha": "5db99a27cf640864b4793807811848698c5ff4a2",
+    "fixed_sha": "874d24181e779ebc6e1c52afb7d6598f863fd6a8",
+    "python": "3.8.3",
+    "official_test": "tests/test_forms_from_non_typing_sequences.py",
+    "headline": ":bug: Fix validating form params declared with classes (list, tuple, set, etc) (#856)",
+    "files": [
+      {
+        "path": "fastapi/dependencies/utils.py",
+        "changes": 6,
+        "additions": 3,
+        "deletions": 3,
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_forms_from_non_typing_sequences.py",
+        "changes": 46,
+        "additions": 46,
+        "deletions": 0,
+        "status": "added"
+      }
+    ],
+    "test_cochange": true,
+    "code_changed_lines": 6,
+    "test_changed_lines": 46,
+    "status": "REPAIRED_DOCUMENTARY_AUDIT_AFTER_EXPOSURE_NOT_DYNAMICALLY_EXECUTED",
+    "AB": {
+      "A": "FastAPI fix and test provenance at canonical redirect",
+      "B": {
+        "H1": "Test cochange present",
+        "H0": "No test path cochange"
+      },
+      "C": "Authoritative upstream SHA-match and changed-file audit",
+      "D": "Redirect isolated, original invalid preserved",
+      "E": "Exact file and line changes included",
+      "F": "Post-exposure instrument repair and benchmark selection bias",
+      "G": "Not external execution",
+      "H": "Update dependency on archive redirect risk",
+      "I": {
+        "grade": 0,
+        "CT2_before": 11,
+        "CT2_after": 11
+      },
+      "J": "REPAIR_COMPLETED_DOCUMENTARY"
+    }
+  }
+]
