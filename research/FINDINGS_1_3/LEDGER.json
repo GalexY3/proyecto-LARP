@@ -3,7 +3,7 @@
   "policy": "Persistent append-only, novelty/evidence-specific, nonduplicated; 1/3 does NOT mean original science, N2 requires independent strong confirmation",
   "last_review": "2026-10-24",
   "historical_n1_total_status": "NOT_AUDITED",
-  "confirmed_in_current_inventory": 5,
+  "confirmed_in_current_inventory": 6,
   "findings": [
     {
       "id": "LARP-1-001",
@@ -267,6 +267,69 @@
       "external_confirmation": false,
       "novelty_assessed": "NOT 2/3; diagnostic mechanism already anticipated by published spectral blue noise work",
       "CT2_after_project_audit": 7
+    },
+    {
+      "id": "LARP-1-006",
+      "short_name": "QB-MR-06",
+      "date": "2026-10-24",
+      "grade": "1/3",
+      "status": "EXPLORATORY_POST_EXPOSURE_REPAIRED_EXTERNAL_CHALLENGE_CORPUS",
+      "claim": "En veinte programas defectuosos escritos para desafíos Quixey y elegidos deliberadamente de QuixBugs, tres pares de pruebas metamórficas manuales detectaron fallos en 13/20, frente a comprobaciones superficiales en 8/20, con seis ejecuciones del código defectuoso por método; las referencias reparadas detectaron 20/20, con mayor acceso informativo.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab20-quixbugs-20261024",
+      "source_path": "research/AB20_QUIXBUGS_20261024/reports/DICTAMEN.md",
+      "source_code_sha256": "db5dc62aa1c5fe2f08b3ac233582493808d75c95793ed87f6fdcbb05a70f8a57",
+      "source_upstream": "https://github.com/jkoppel/QuixBugs",
+      "source_upstream_commit": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+      "experiment_ids": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18",
+        "Q19",
+        "Q20"
+      ],
+      "evidence": "20 preselected external human-crafted Quixey Challenge algorithms, E 3 seeds and G 5 seeds each drawn from a fixed hand-crafted pool of 12 cases per program. Program-level M>S difference +5/20, exact bilateral paired p=0.0625 (exploratory), corrected negative controls zero FP in 480 program-seed-method triples. Source R1 repair committed before replay after seeing invalid E results; 40 E/G JSONs reproduced byte-for-byte in same environment.",
+      "adversarial_limits": [
+        "QuixBugs are toy challenges with intentionally inserted defects, NOT production bugs",
+        "case inputs and metamorphic relations hand-built with knowledge of the algorithmic contract and likely defect type; not blind",
+        "baseline sanity checks shallow and not a competent Hypothesis/industry fuzzing suite",
+        "differential reference had unequal privileged access and additional queries; not equal total information budget",
+        "E and G reuse same twelve inputs/program, not external confirmation",
+        "first E had faulty sanity types in gcd/get_factors and invalid LCS relation; R1 repaired after E exposure and archived",
+        "paired two-sided exact 0.0625 on deliberately selected 20 programs, no population-level novelty inference",
+        "meta underdetects 7/20 detected by repaired reference",
+        "metamorphic testing and MR synthesis already widely published"
+      ],
+      "prior_art": [
+        "https://doi.org/10.1145/3656340",
+        "https://doi.org/10.1016/j.infsof.2024.107528",
+        "https://www.nist.gov/publications/metamorphic-testing-cybersecurity"
+      ],
+      "falsifier": "On truly blind defect cases from independent production repositories and equal total test cost versus strong contemporary property-testing baselines, program-specific metamorphic testing does not improve credible detection or exhibits unacceptable false-positive rates",
+      "connections": [
+        "LARP-1-002",
+        "LARP-1-003",
+        "LARP-1-004"
+      ],
+      "possible_composition": "Audit model scientific pipelines using verified metamorphic relations chosen on held-out operations, with explicit cost, alias-free test designs and nonleaky reference checks",
+      "duplicate_of": null,
+      "external_confirmation": false,
+      "novelty_assessed": "1/3 only; existing metamorphic testing principle, not novel scientific 2/3"
     }
   ],
   "pending_historical_audit": "Many older LARP reports predate explicit 1/3 grading. Do not infer that no other 1/3 exist; enumerate and assess before adding to historical total.",
