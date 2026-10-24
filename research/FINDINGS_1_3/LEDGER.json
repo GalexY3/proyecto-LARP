@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "policy": "Persistent append-only, novelty/evidence-specific, nonduplicated; 1/3 does NOT mean original science, N2 requires independent strong confirmation",
+  "last_review": "2026-10-24",
+  "historical_n1_total_status": "NOT_AUDITED",
+  "confirmed_in_current_inventory": 2,
+  "findings": [
+    {
+      "id": "LARP-1-001",
+      "short_name": "ALIAS-01",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COMPUTATIONAL_REPAIRED",
+      "claim": "At small integer label budgets, many nominally different continuous allocation mixtures map to identical three-stratum allocation vectors; 81-90% redundant across observed sources on the preselected grid.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab30-o4-integer-20261024",
+      "source_path": "research/AB30_O4_INTEGER_20261024/reports/DICTAMEN_R1.md",
+      "pr": "https://github.com/GalexY3/proyecto-LARP/pull/14",
+      "dataset_scope": [
+        "diabetes",
+        "breast",
+        "wine",
+        "digits",
+        "nile",
+        "sunspots"
+      ],
+      "experiment_ids": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06"
+      ],
+      "evidence": "Post-exposure R1 repaired experiments, exact enumeration",
+      "adversarial_limits": [
+        "discretization already known",
+        "grid/budget/strata-dependent",
+        "not external replication"
+      ],
+      "prior_art": [
+        "https://www.census.gov/library/working-papers/2014/adrm/rrs2014-07.html"
+      ],
+      "falsifier": "Alternative integer budgets and constraints with more distinct treatment vectors",
+      "connections": [
+        "LARP-1-002"
+      ],
+      "possible_composition": "Optimize unique implementable policies and protect against auxiliary-objective misspecification",
+      "duplicate_of": null,
+      "external_confirmation": false
+    },
+    {
+      "id": "LARP-1-002",
+      "short_name": "PROXY-GAP-02",
+      "grade": "1/3",
+      "status": "EXPLORATORY_COMPUTATIONAL_REPAIRED",
+      "claim": "Exact optimal integer allocation on an imperfect auxiliary variance proxy can worsen true outcome variance relative to a less exact Hamilton approximation; five of six observed populations in one study.",
+      "source_repository": "GalexY3/proyecto-LARP",
+      "source_branch": "research/ab30-o4-integer-20261024",
+      "source_path": "research/AB30_O4_INTEGER_20261024/reports/DICTAMEN_R1.md",
+      "pr": "https://github.com/GalexY3/proyecto-LARP/pull/14",
+      "dataset_scope": [
+        "diabetes",
+        "breast",
+        "wine",
+        "digits",
+        "nile",
+        "sunspots"
+      ],
+      "experiment_ids": [
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12"
+      ],
+      "evidence": "Post-exposure R1 repaired finite population design variance comparisons",
+      "adversarial_limits": [
+        "Goodhart/proxy mismatch known",
+        "dataset reuse",
+        "proxy selection and scoring not field validated",
+        "no external replication"
+      ],
+      "prior_art": [
+        "https://www.bls.gov/osmr/research-papers/2026/st260020.htm"
+      ],
+      "falsifier": "Proxy calibrated strongly predicts within-stratum target variance, reversing outcome",
+      "connections": [
+        "LARP-1-001"
+      ],
+      "possible_composition": "Policy equivalence classes under bounded auxiliary uncertainty and fixed integer budgets",
+      "duplicate_of": null,
+      "external_confirmation": false
+    }
+  ],
+  "pending_historical_audit": "Many older LARP reports predate explicit 1/3 grading. Do not infer that no other 1/3 exist; enumerate and assess before adding to historical total.",
+  "new_entries_must_include": [
+    "unique_id",
+    "claim",
+    "evidence",
+    "source_commit",
+    "falsifier",
+    "prior_art",
+    "adversarial_limits",
+    "duplicate_of",
+    "connections",
+    "grade_decision",
+    "date"
+  ]
+}
