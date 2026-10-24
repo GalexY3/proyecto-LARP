@@ -1,0 +1,3 @@
+# AB20 QuixBugs — PRE-RUN source and evidence lock
+
+Local executable source SHA256 **7999be6213a8223ecd904ee39cee5816a215589275ca735a6c3b4f91cc3a608a** (16,433 bytes). Benchmark upstream frozen revision **4257f44b0ff1181dedaedee6a447e133219fcebf**. Twenty human-authored Quixey Challenge defects in toy algorithms, not actual production regressions. Program sources manually transcribed with minimal formatting changes and corrected by exact upstream one-line repair. Full source byte upload may follow experiments; before execution its hash and full experiment design are frozen. More limitations and A–J details in prereg/ALL_20.json. No external independent test, all 20 cases share benchmark and handwritten tests. CT2 starting 13/100 ordinal, N1 prior=5.

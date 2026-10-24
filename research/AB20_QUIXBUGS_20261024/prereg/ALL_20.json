@@ -1,0 +1,251 @@
+{
+  "campaign": "AB20_QUIXBUGS_20261024",
+  "status": "PRE_EXECUTION",
+  "date": "2026-10-24",
+  "repo_external": "https://github.com/jkoppel/QuixBugs",
+  "upstream_commit": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+  "source_engine_local_sha256": "7999be6213a8223ecd904ee39cee5816a215589275ca735a6c3b4f91cc3a608a",
+  "source_file_size_bytes": 16433,
+  "disclosure": "Full source is frozen locally and identified by this pre-run SHA. Remote executable bytes may be uploaded after results; not valid to claim full GitHub source was committed before execution. Entire source and raw results must be contained in ZIP.",
+  "dataset_description": "QuixBugs human-crafted Quixey Challenge bugs, externally authored toy algorithmic tasks; NOT observed production software defects and NOT scientific production bug reports.",
+  "selection": "20 preselected by literal name in list, chosen for local execution and varied algorithm classes, NOT random sample of 40. Handcrafted input candidates inspect known algorithm contracts and may be bug-aware; no blind claim.",
+  "test_design": "All methods have six executions of defective program per seed. Sanity: 6 well-formedness checks, metamorphic: 3 base/follow-up pairs, differential reference: 6 queries on fixed reference in addition to 6 defective calls. Strong oracle has MUCH more information; no informational parity, only defective execution parity.",
+  "E_seeds": [
+    101,
+    103,
+    107
+  ],
+  "G_seeds": [
+    211,
+    223,
+    227,
+    229,
+    233
+  ],
+  "primary_estimand": "Within benchmark, count 20 distinct defects detected by ANY of 3 exploratory seeds by each strategy (not independent population generalization). Binary per case, plus per-seed detection, false positives on repaired source.",
+  "hypotheses": {
+    "H1": "Metamorphic catches more buggy programs than shallow sanity with same defective-function evaluation budget and zero FP on reference.",
+    "H2": "Differential reference dominates or ties both without implying cost-fairness (reference access required).",
+    "H0": "No advantage over sanity, or metamorphic false positives destroy usefulness.",
+    "Hother": [
+      "Properties invalid for some inputs",
+      "Input set selected with bug-specific knowledge",
+      "Correct variants are benchmark reference but could be imperfect",
+      "Time limits cause apparent detection that might also occur on valid expensive tasks"
+    ]
+  },
+  "adversarial": [
+    "False-positive rate on fixed correct versions with same inputs",
+    "Status exceptions/StepLimit tracked, not assumed semantic errors",
+    "Reference program queries not budget-matched informationally",
+    "Benchmark described as synthetic challenge, not production incident",
+    "Bug signature selection known before detector design => overfitting/contamination",
+    "Simple sanity may not detect semantic failures"
+  ],
+  "grading": "1/3 only if distinct from prior synthetic-mutation findings and source evidence improves epistemic position; 2/3 requires original method + strong matched-information baseline + independent real production failures.",
+  "ct2_initial_ordinal": 13,
+  "grade_1_3_prior_count": 5,
+  "external_independent_confirmation": false,
+  "contracts": [
+    {
+      "id": "Q01",
+      "name": "bitcount",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q02",
+      "name": "bucketsort",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q03",
+      "name": "find_first_in_sorted",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q04",
+      "name": "find_in_sorted",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q05",
+      "name": "flatten",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q06",
+      "name": "gcd",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q07",
+      "name": "get_factors",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q08",
+      "name": "is_valid_parenthesization",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q09",
+      "name": "kth",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q10",
+      "name": "lcs_length",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q11",
+      "name": "lis",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q12",
+      "name": "max_sublist_sum",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q13",
+      "name": "mergesort",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q14",
+      "name": "next_palindrome",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q15",
+      "name": "next_permutation",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q16",
+      "name": "pascal",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q17",
+      "name": "possible_change",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q18",
+      "name": "powerset",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q19",
+      "name": "quicksort",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    },
+    {
+      "id": "Q20",
+      "name": "sieve",
+      "A": "metamorphic paired property checks",
+      "B": "shallow input/output sanity checks",
+      "C": "differential repaired reference upper-bound, not fair deployable control",
+      "p": "Detection in 3 exploratory and 5 extra same-program input-order seeds",
+      "falsifier": "Meta fails to beat sanity or produces FP on correct code",
+      "AB_A_J": "A target case detection; B H1,H0,Hother; C equal defective eval budget and declared oracle info imbalance; D source hash and step-limit audit; E execute; F corrected-source negative control; G new shuffles same frozen cases, NOT independent dataset; H qualitative update; I 0-3 and CT2; J branching/pivot or complete, no level inflation"
+    }
+  ]
+}
