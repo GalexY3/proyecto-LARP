@@ -1,6 +1,6 @@
 {
   "schema": "AB20_REALPATCH_SUMMARY_v1",
-  "note": "Derived remote summary; exact 20 A-J outputs and engine exist only in local ZIP. This is NOT RAW.",
+  "note": "Derived remote summary; exact 20 A-J outputs and engine exist only in local ZIP. This is NOT RAW. Repair after upload: correct null-control status mapping, mistaken TQ03/TQ04 swap.",
   "n": 20,
   "distinct_external_fixes": 10,
   "n_null_controls_executed": 12,
@@ -61,7 +61,7 @@
       "old_differs": true,
       "fixed_returns": true,
       "null_control": {
-        "status": "EXECUTED",
+        "status": "ANALYTICAL_ONLY",
         "old_equals_fixed": true
       },
       "grade": 0,
@@ -78,7 +78,7 @@
       "old_differs": true,
       "fixed_returns": true,
       "null_control": {
-        "status": "EXECUTED",
+        "status": "ANALYTICAL_ONLY",
         "old_equals_fixed": true
       },
       "grade": 0,
@@ -97,7 +97,7 @@
       "old_differs": true,
       "fixed_returns": true,
       "null_control": {
-        "status": "ANALYTICAL_ONLY",
+        "status": "EXECUTED",
         "old_equals_fixed": true
       },
       "grade": 0,
@@ -116,7 +116,7 @@
       "old_differs": true,
       "fixed_returns": true,
       "null_control": {
-        "status": "ANALYTICAL_ONLY",
+        "status": "EXECUTED",
         "old_equals_fixed": true
       },
       "grade": 0,
