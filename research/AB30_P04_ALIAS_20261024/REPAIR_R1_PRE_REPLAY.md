@@ -1,0 +1,8 @@
+# R1 — reparación adversarial de paridad del presupuesto (antes del replay)
+24-10-2026, POST-EXPOSURE. En la primera ejecución de C01–C30 el brazo DEDUP elegía menos de cuatro MRs cuando había menos de cuatro firmas únicas en TRAIN. Se observaron 18/180 repeticiones con solo 2–3 MRs. La comparación se había anunciado con cuota exacta de cuatro; por tanto **se invalida V0 para conclusiones de paridad** y se conserva su historial en `campaign_results_V0_INVALID_BUDGET.json`.
+
+Código V0 local SHA256: `3324c4978699454fec6f5d69fb5e5ba952e897bf7895f5819f5ef38549d0bf7b`; JSON V0 SHA256: `ad62e41ac472332427d7a44bc8b4a9df3b9e19cdab6f83d45dd881acc11ee700`.
+
+**R1 código completo local SHA256: `f78e5e07e3e0a68878d7cdb82b0328a01fa1ba010790cf30655afed28f84e9cf`.** Se cambia solo `select_class_greedy`: después de elegir representantes únicos, completar los huecos hasta exactamente cuatro MRs mediante una regla determinista de diversidad categórica entre candidatos no elegidos, con empate por índice. NUNCA consultar HOLDOUT para completar. La comparación primaria de novedad frente a `GREEDY` orden-de-índice es demasiado débil: comparar con `DIVERSITY` (greedy de cobertura + diversidad prospectiva) y RANDOM también. No se cambian semillas, programas, familias de mutantes, estimando ni policy de branching. Se repite **la campaña completa**, conservando V0 inválida como una versión y contabilizando **solo 30 ciclos R1 válidos exploratorios**.
+
+El fallo fue descubierto DESPUÉS de ver V0; R1 es una reparación exploratoria post-exposición, NO un nuevo holdout confirmatorio. La ausencia de bytes fuente pre-run remotos sigue siendo incumplimiento de O3, aunque se fija su SHA en este commit. No atribuir niveles 1/3 o 2/3 basándose en este replay.
