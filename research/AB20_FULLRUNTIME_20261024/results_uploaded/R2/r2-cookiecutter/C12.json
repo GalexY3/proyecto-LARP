@@ -1,0 +1,295 @@
+{
+  "cycle_id": "C12",
+  "id": 4,
+  "project": "cookiecutter",
+  "buggy_sha": "9568ab6ecd2d6836646006c59473c4a4ac0dee04",
+  "fixed_sha": "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "9568ab6ecd2d6836646006c59473c4a4ac0dee04",
+      "test_script_sha256": "b9237865af67323bdf738c16108241b4f88e448db1fab9dddb057ac78630c6b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.021,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "9568ab6ecd2d6836646006c59473c4a4ac0dee04"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 457a1a4 using custom exception instead of exit status and cleanup project dir\nHEAD is now at 9568ab6 stop project generation if pre hook script fails\n"
+      },
+      "sha_actual": "9568ab6ecd2d6836646006c59473c4a4ac0dee04",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_hooks.py": "c74875f38e1948d6b5bb1e8ea04d165df54d188d04be14e79439b907ca266d0f"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 2.571,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.411,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_failing_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter\nplugins: mock-3.6.1, cov-2.12.1\ncollected 1 item\n\ntests/test_hooks.py F                                                    [100%]\n\n=================================== FAILURES ===================================\n___________________ TestExternalHooks.test_run_failing_hook ____________________\n\nself = <tests.test_hooks.TestExternalHooks object at 0x7fa4af8cf080>\n\n    def test_run_failing_hook(self):\n        hook_path = os.path.join(self.hooks_path, 'pre_gen_project.py')\n        tests_dir = os.path.join(self.repo_path, 'input{{hooks}}')\n    \n        with open(hook_path, 'w') as f:\n            f.write(\"#!/usr/bin/env python\\n\")\n            f.write(\"import sys; sys.exit(1)\\n\")\n    \n        with utils.work_in(self.repo_path):\n>           with pytest.raises(exceptions.FailedHookException) as excinfo:\nE           AttributeError: module 'cookiecutter.exceptions' has no attribute 'FailedHookException'\n\ntests/test_hooks.py:180: AttributeError\n=========================== short test summary info ============================\nFAILED tests/test_hooks.py::TestExternalHooks::test_run_failing_hook - Attrib...\n============================== 1 failed in 0.07s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_failing_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c",
+      "test_script_sha256": "b9237865af67323bdf738c16108241b4f88e448db1fab9dddb057ac78630c6b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 9568ab6 stop project generation if pre hook script fails\nHEAD is now at 457a1a4 using custom exception instead of exit status and cleanup project dir\n"
+      },
+      "sha_actual": "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_hooks.py": "c74875f38e1948d6b5bb1e8ea04d165df54d188d04be14e79439b907ca266d0f"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.205,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.411,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_failing_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter\nplugins: mock-3.6.1, cov-2.12.1\ncollected 1 item\n\ntests/test_hooks.py .                                                    [100%]\n\n============================== 1 passed in 0.06s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_failing_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "b9237865af67323bdf738c16108241b4f88e448db1fab9dddb057ac78630c6b2",
+  "official_commands": [
+    {
+      "source": "tox tests/test_hooks.py::TestExternalHooks::test_run_failing_hook",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_hooks.py::TestExternalHooks::test_run_failing_hook"
+      ],
+      "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_hooks.py": "c74875f38e1948d6b5bb1e8ea04d165df54d188d04be14e79439b907ca266d0f"
+  },
+  "result": "CANDIDATE_REPRODUCED_AUDIT_TRACE_REQUIRED",
+  "E": {
+    "buggy": {
+      "sha_expected": "9568ab6ecd2d6836646006c59473c4a4ac0dee04",
+      "test_script_sha256": "b9237865af67323bdf738c16108241b4f88e448db1fab9dddb057ac78630c6b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.021,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "9568ab6ecd2d6836646006c59473c4a4ac0dee04"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 457a1a4 using custom exception instead of exit status and cleanup project dir\nHEAD is now at 9568ab6 stop project generation if pre hook script fails\n"
+      },
+      "sha_actual": "9568ab6ecd2d6836646006c59473c4a4ac0dee04",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_hooks.py": "c74875f38e1948d6b5bb1e8ea04d165df54d188d04be14e79439b907ca266d0f"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 2.571,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.411,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_failing_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter\nplugins: mock-3.6.1, cov-2.12.1\ncollected 1 item\n\ntests/test_hooks.py F                                                    [100%]\n\n=================================== FAILURES ===================================\n___________________ TestExternalHooks.test_run_failing_hook ____________________\n\nself = <tests.test_hooks.TestExternalHooks object at 0x7fa4af8cf080>\n\n    def test_run_failing_hook(self):\n        hook_path = os.path.join(self.hooks_path, 'pre_gen_project.py')\n        tests_dir = os.path.join(self.repo_path, 'input{{hooks}}')\n    \n        with open(hook_path, 'w') as f:\n            f.write(\"#!/usr/bin/env python\\n\")\n            f.write(\"import sys; sys.exit(1)\\n\")\n    \n        with utils.work_in(self.repo_path):\n>           with pytest.raises(exceptions.FailedHookException) as excinfo:\nE           AttributeError: module 'cookiecutter.exceptions' has no attribute 'FailedHookException'\n\ntests/test_hooks.py:180: AttributeError\n=========================== short test summary info ============================\nFAILED tests/test_hooks.py::TestExternalHooks::test_run_failing_hook - Attrib...\n============================== 1 failed in 0.07s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_failing_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c",
+      "test_script_sha256": "b9237865af67323bdf738c16108241b4f88e448db1fab9dddb057ac78630c6b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 9568ab6 stop project generation if pre hook script fails\nHEAD is now at 457a1a4 using custom exception instead of exit status and cleanup project dir\n"
+      },
+      "sha_actual": "457a1a4e862aab4102b644ff1d2b2e2b5a766b3c",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_hooks.py": "c74875f38e1948d6b5bb1e8ea04d165df54d188d04be14e79439b907ca266d0f"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 1.205,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_cookiecutter"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.411,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tests/test_hooks.py::TestExternalHooks::test_run_failing_hook"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_cookiecutter\nplugins: mock-3.6.1, cov-2.12.1\ncollected 1 item\n\ntests/test_hooks.py .                                                    [100%]\n\n============================== 1 passed in 0.06s ===============================\n",
+          "stderr_tail": "",
+          "source_command": "tox tests/test_hooks.py::TestExternalHooks::test_run_failing_hook",
+          "adaptation": "tox interpreted as pytest with same test selector; NOT identical tox env",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

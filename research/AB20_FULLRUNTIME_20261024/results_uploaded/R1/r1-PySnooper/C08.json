@@ -1,0 +1,225 @@
+{
+  "cycle_id": "C08",
+  "id": 3,
+  "project": "PySnooper",
+  "buggy_sha": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+  "fixed_sha": "15555ed760000b049aff8fecc79d29339c1224c3",
+  "documented_python": "3.8.1",
+  "actual_python": "3.8.18",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.007,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 15555ed Fix #2\nHEAD is now at 6e3d797 Remove tests package, add docstsring\n"
+      },
+      "sha_actual": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.772,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [12 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info\n      writing /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/dependency_links.txt\n      writing requirements to /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "15555ed760000b049aff8fecc79d29339c1224c3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 6e3d797 Remove tests package, add docstsring\nHEAD is now at 15555ed Fix #2\n"
+      },
+      "sha_actual": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.773,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [12 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info\n      writing /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/dependency_links.txt\n      writing requirements to /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+  "official_commands": [
+    {
+      "source": "pytest -q -s tests/test_pysnooper.py::test_file_output",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-s",
+        "tests/test_pysnooper.py::test_file_output"
+      ],
+      "adaptation": "pytest executable -> python -m pytest"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+  },
+  "result": "INSTRUMENT_BLOCKED",
+  "E": {
+    "buggy": {
+      "sha_expected": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.007,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 15555ed Fix #2\nHEAD is now at 6e3d797 Remove tests package, add docstsring\n"
+      },
+      "sha_actual": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.772,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [12 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info\n      writing /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/dependency_links.txt\n      writing requirements to /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-an8y1u9b/PySnooper.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_script_sha256": "1ae367298efe7af9c8225d1cd43a628471e2edb41f70bff4a71f7e36fb384ed8",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "15555ed760000b049aff8fecc79d29339c1224c3"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 6e3d797 Remove tests package, add docstsring\nHEAD is now at 15555ed Fix #2\n"
+      },
+      "sha_actual": "15555ed760000b049aff8fecc79d29339c1224c3",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_pysnooper.py": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.773,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_PySnooper"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [12 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info\n      writing /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/dependency_links.txt\n      writing requirements to /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/SOURCES.txt'\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-6nr6t_u6/PySnooper.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  }
+}

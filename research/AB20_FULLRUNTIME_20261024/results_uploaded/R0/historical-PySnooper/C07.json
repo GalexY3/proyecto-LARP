@@ -1,0 +1,254 @@
+{
+  "cycle_id": "C07",
+  "project": "PySnooper",
+  "bug_id": 2,
+  "repo": "https://github.com/cool-RR/PySnooper",
+  "expected_buggy": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+  "expected_fixed": "814abc34a098c1b98cb327105ac396f985d2413e",
+  "documented_python": "3.8.1",
+  "actual_python": "3.8.18",
+  "case_source": "BugsInPy bug.info",
+  "test_file": "tests/test_pysnooper.py",
+  "status": "ATTEMPTED_FULL_CHECKOUT",
+  "versions": {
+    "buggy": {
+      "sha_requested": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.005,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 56f22f8 Fix unicode issues and add test, fix #124\nHEAD is now at e21a311 Formatting\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "e21a31162f4c54be693d8ca8260e42393b39abd3"
+        ]
+      },
+      "sha_actual": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 1.823,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/PySnooper"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 2,
+        "seconds": 0.184,
+        "stdout": "\n==================================== ERRORS ====================================\n___________________ ERROR collecting tests/test_pysnooper.py ___________________\nImportError while importing test module '/tmp/larp_abhistorical/PySnooper/tests/test_pysnooper.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/importlib/__init__.py:127: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntests/test_pysnooper.py:11: in <module>\n    from python_toolbox import sys_tools, temp_file_tools\nE   ModuleNotFoundError: No module named 'python_toolbox'\n=========================== short test summary info ============================\nERROR tests/test_pysnooper.py\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n3 warnings, 1 error in 0.07s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "tests/test_pysnooper.py",
+          "--disable-warnings"
+        ]
+      }
+    },
+    "fixed": {
+      "sha_requested": "814abc34a098c1b98cb327105ac396f985d2413e",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.005,
+        "stdout": "",
+        "stderr": "Previous HEAD position was e21a311 Formatting\nHEAD is now at 814abc3 Support single tuple to `custom_repr`, fix #144\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "814abc34a098c1b98cb327105ac396f985d2413e"
+        ]
+      },
+      "sha_actual": "814abc34a098c1b98cb327105ac396f985d2413e",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 1.648,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/PySnooper"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.181,
+        "stdout": "...............................                                          [100%]\n31 passed, 1 warning in 0.08s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "tests/test_pysnooper.py",
+          "--disable-warnings"
+        ]
+      }
+    }
+  },
+  "retrospective_fix_exposure": true,
+  "AB": {
+    "A": "Whole historical package and test-file buggy/fixed parity",
+    "B": "Repair should address a failing test; H0 no separable status; rival missing deps",
+    "C": "Identical test selection and instrument in both upstream revisions",
+    "D": "Workflow Python version approximation, git checkout and editable install",
+    "F": "Known patch and developer's test file; unblinded, selected bugs",
+    "G": "No external independent confirmation; same runner two revisions",
+    "H": "Metadata and patch-level execution cannot establish historical full-package parity",
+    "I": {
+      "grade": 0,
+      "CT2_before": 8,
+      "CT2_after": 8
+    },
+    "J": "Stop or repair instrumentation based on observed errors",
+    "E": {
+      "buggy": {
+        "sha_requested": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.005,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 56f22f8 Fix unicode issues and add test, fix #124\nHEAD is now at e21a311 Formatting\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "e21a31162f4c54be693d8ca8260e42393b39abd3"
+          ]
+        },
+        "sha_actual": "e21a31162f4c54be693d8ca8260e42393b39abd3",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 1.823,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/PySnooper"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 2,
+          "seconds": 0.184,
+          "stdout": "\n==================================== ERRORS ====================================\n___________________ ERROR collecting tests/test_pysnooper.py ___________________\nImportError while importing test module '/tmp/larp_abhistorical/PySnooper/tests/test_pysnooper.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/importlib/__init__.py:127: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntests/test_pysnooper.py:11: in <module>\n    from python_toolbox import sys_tools, temp_file_tools\nE   ModuleNotFoundError: No module named 'python_toolbox'\n=========================== short test summary info ============================\nERROR tests/test_pysnooper.py\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n3 warnings, 1 error in 0.07s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "tests/test_pysnooper.py",
+            "--disable-warnings"
+          ]
+        }
+      },
+      "fixed": {
+        "sha_requested": "814abc34a098c1b98cb327105ac396f985d2413e",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.005,
+          "stdout": "",
+          "stderr": "Previous HEAD position was e21a311 Formatting\nHEAD is now at 814abc3 Support single tuple to `custom_repr`, fix #144\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "814abc34a098c1b98cb327105ac396f985d2413e"
+          ]
+        },
+        "sha_actual": "814abc34a098c1b98cb327105ac396f985d2413e",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 1.648,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/PySnooper"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.181,
+          "stdout": "...............................                                          [100%]\n31 passed, 1 warning in 0.08s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "tests/test_pysnooper.py",
+            "--disable-warnings"
+          ]
+        }
+      }
+    }
+  },
+  "result": "CANDIDATE_BUGGY_FAIL_FIXED_PASS_CHECK_FAILURE_CAUSE"
+}

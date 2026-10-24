@@ -1,0 +1,224 @@
+{
+  "cycle_id": "C18",
+  "id": 2,
+  "project": "black",
+  "buggy_sha": "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2",
+  "fixed_sha": "892eddacd215d685e136686b7f629ade70adca83",
+  "documented_python": "3.8.3",
+  "actual_python": "3.8.18",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2",
+      "test_script_sha256": "661c7eff06a036821b9e66a3ef8b7c0e46e6a6e815f65db6427aad3f8f6adcec",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.027,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 892eddac Fix for \"# fmt: on\" with decorators (#1325)\nHEAD is now at c8ca6b2b Issue 1144: Fix type annotations for --config option (#1166)\n"
+      },
+      "sha_actual": "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "a903d77e94a0bc7d2944f1d7a27531c6305048a7617441791bb706449150d01c"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.766,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info\n      writing /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-d_1v9vt_/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "892eddacd215d685e136686b7f629ade70adca83",
+      "test_script_sha256": "661c7eff06a036821b9e66a3ef8b7c0e46e6a6e815f65db6427aad3f8f6adcec",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "892eddacd215d685e136686b7f629ade70adca83"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was c8ca6b2b Issue 1144: Fix type annotations for --config option (#1166)\nHEAD is now at 892eddac Fix for \"# fmt: on\" with decorators (#1325)\n"
+      },
+      "sha_actual": "892eddacd215d685e136686b7f629ade70adca83",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "a903d77e94a0bc7d2944f1d7a27531c6305048a7617441791bb706449150d01c"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.76,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-00s7wejc/black.egg-info\n      writing /tmp/pip-modern-metadata-00s7wejc/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-00s7wejc/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-00s7wejc/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-00s7wejc/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-00s7wejc/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "661c7eff06a036821b9e66a3ef8b7c0e46e6a6e815f65db6427aad3f8f6adcec",
+  "official_commands": [
+    {
+      "source": "python -m unittest -q tests.test_black.BlackTestCase.test_fmtonoff4",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "tests.test_black.BlackTestCase.test_fmtonoff4"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_black.py": "a903d77e94a0bc7d2944f1d7a27531c6305048a7617441791bb706449150d01c"
+  },
+  "result": "INSTRUMENT_BLOCKED",
+  "E": {
+    "buggy": {
+      "sha_expected": "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2",
+      "test_script_sha256": "661c7eff06a036821b9e66a3ef8b7c0e46e6a6e815f65db6427aad3f8f6adcec",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.027,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 892eddac Fix for \"# fmt: on\" with decorators (#1325)\nHEAD is now at c8ca6b2b Issue 1144: Fix type annotations for --config option (#1166)\n"
+      },
+      "sha_actual": "c8ca6b2b9ff3510bee12129824cebfc2fc51e5b2",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "a903d77e94a0bc7d2944f1d7a27531c6305048a7617441791bb706449150d01c"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.766,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info\n      writing /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-d_1v9vt_/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-d_1v9vt_/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "892eddacd215d685e136686b7f629ade70adca83",
+      "test_script_sha256": "661c7eff06a036821b9e66a3ef8b7c0e46e6a6e815f65db6427aad3f8f6adcec",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.011,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "892eddacd215d685e136686b7f629ade70adca83"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was c8ca6b2b Issue 1144: Fix type annotations for --config option (#1166)\nHEAD is now at 892eddac Fix for \"# fmt: on\" with decorators (#1325)\n"
+      },
+      "sha_actual": "892eddacd215d685e136686b7f629ade70adca83",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "a903d77e94a0bc7d2944f1d7a27531c6305048a7617441791bb706449150d01c"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.76,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [16 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-00s7wejc/black.egg-info\n      writing /tmp/pip-modern-metadata-00s7wejc/black.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/entry_points.txt\n      writing requirements to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/requires.txt\n      writing top-level names to /tmp/pip-modern-metadata-00s7wejc/black.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-00s7wejc/black.egg-info/SOURCES.txt'\n      /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py:274: UserWarning: Unknown distribution option: 'use_scm_version'\n        warnings.warn(msg)\n      file _black_version.py (for module _black_version) not found\n      adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')\n      reading manifest file '/tmp/pip-modern-metadata-00s7wejc/black.egg-info/SOURCES.txt'\n      writing manifest file '/tmp/pip-modern-metadata-00s7wejc/black.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-00s7wejc/black.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  }
+}

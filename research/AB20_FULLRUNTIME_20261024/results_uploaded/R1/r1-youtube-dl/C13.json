@@ -1,0 +1,224 @@
+{
+  "cycle_id": "C13",
+  "id": 1,
+  "project": "youtube-dl",
+  "buggy_sha": "99036a1298089068dcf80c0985bfcc3f8c24f281",
+  "fixed_sha": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+  "documented_python": "3.7.0",
+  "actual_python": "3.7.17",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "99036a1298089068dcf80c0985bfcc3f8c24f281",
+      "test_script_sha256": "43b0f0eb4ca881a13b89390a9fc36dda5c2a08a379b25746e58bf787451290f9",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.128,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "99036a1298089068dcf80c0985bfcc3f8c24f281"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 1cc47c667 [utils] Fix match_str for boolean meta fields\nHEAD is now at 99036a129 [pornflip] Relax _VALID_URL (closes #16258)\n"
+      },
+      "sha_actual": "99036a1298089068dcf80c0985bfcc3f8c24f281",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "test/test_utils.py": "9f89df328fda10e6249c7fd89d85f62eec7888508c6c1e5c5fc7aefe44949054"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 2.22,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [25 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info\n      writing /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/entry_points.txt\n      writing top-level names to /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest file '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      setup.py:73: UserWarning: Skipping file youtube-dl.bash-completion since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.fish since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file README.txt since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.1 since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      /opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/setuptools/dist.py:454: UserWarning: Normalizing '2018.04.16' to '2018.4.16'\n        warnings.warn(tmpl.format(**locals()))\n      warning: no files found matching 'youtube-dl.bash-completion'\n      warning: no files found matching 'youtube-dl.fish'\n      warning: no files found matching 'youtube-dl.1'\n      writing manifest file '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+      "test_script_sha256": "43b0f0eb4ca881a13b89390a9fc36dda5c2a08a379b25746e58bf787451290f9",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.074,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "1cc47c667419e0eadc0a6989256ab7b276852adf"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 99036a129 [pornflip] Relax _VALID_URL (closes #16258)\nHEAD is now at 1cc47c667 [utils] Fix match_str for boolean meta fields\n"
+      },
+      "sha_actual": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "test/test_utils.py": "9f89df328fda10e6249c7fd89d85f62eec7888508c6c1e5c5fc7aefe44949054"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.934,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [25 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info\n      writing /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/entry_points.txt\n      writing top-level names to /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest file '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      setup.py:73: UserWarning: Skipping file youtube-dl.bash-completion since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.fish since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file README.txt since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.1 since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      /opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/setuptools/dist.py:454: UserWarning: Normalizing '2018.04.16' to '2018.4.16'\n        warnings.warn(tmpl.format(**locals()))\n      warning: no files found matching 'youtube-dl.bash-completion'\n      warning: no files found matching 'youtube-dl.fish'\n      warning: no files found matching 'youtube-dl.1'\n      writing manifest file '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "43b0f0eb4ca881a13b89390a9fc36dda5c2a08a379b25746e58bf787451290f9",
+  "official_commands": [
+    {
+      "source": "python -m unittest -q test.test_utils.TestUtil.test_match_str",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "test.test_utils.TestUtil.test_match_str"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "test/test_utils.py": "9f89df328fda10e6249c7fd89d85f62eec7888508c6c1e5c5fc7aefe44949054"
+  },
+  "result": "INSTRUMENT_BLOCKED",
+  "E": {
+    "buggy": {
+      "sha_expected": "99036a1298089068dcf80c0985bfcc3f8c24f281",
+      "test_script_sha256": "43b0f0eb4ca881a13b89390a9fc36dda5c2a08a379b25746e58bf787451290f9",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.128,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "99036a1298089068dcf80c0985bfcc3f8c24f281"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 1cc47c667 [utils] Fix match_str for boolean meta fields\nHEAD is now at 99036a129 [pornflip] Relax _VALID_URL (closes #16258)\n"
+      },
+      "sha_actual": "99036a1298089068dcf80c0985bfcc3f8c24f281",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "test/test_utils.py": "9f89df328fda10e6249c7fd89d85f62eec7888508c6c1e5c5fc7aefe44949054"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 2.22,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [25 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info\n      writing /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/entry_points.txt\n      writing top-level names to /tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest file '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      setup.py:73: UserWarning: Skipping file youtube-dl.bash-completion since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.fish since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file README.txt since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.1 since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      /opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/setuptools/dist.py:454: UserWarning: Normalizing '2018.04.16' to '2018.4.16'\n        warnings.warn(tmpl.format(**locals()))\n      warning: no files found matching 'youtube-dl.bash-completion'\n      warning: no files found matching 'youtube-dl.fish'\n      warning: no files found matching 'youtube-dl.1'\n      writing manifest file '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-oumwvc8g/youtube_dl.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+      "test_script_sha256": "43b0f0eb4ca881a13b89390a9fc36dda5c2a08a379b25746e58bf787451290f9",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.074,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "1cc47c667419e0eadc0a6989256ab7b276852adf"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 99036a129 [pornflip] Relax _VALID_URL (closes #16258)\nHEAD is now at 1cc47c667 [utils] Fix match_str for boolean meta fields\n"
+      },
+      "sha_actual": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "test/test_utils.py": "9f89df328fda10e6249c7fd89d85f62eec7888508c6c1e5c5fc7aefe44949054"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 0.934,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_youtube-dl"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  error: subprocess-exited-with-error\n  \n  × Preparing metadata (pyproject.toml) did not run successfully.\n  │ exit code: 1\n  ╰─> [25 lines of output]\n      running dist_info\n      creating /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info\n      writing /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/PKG-INFO\n      writing dependency_links to /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/dependency_links.txt\n      writing entry points to /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/entry_points.txt\n      writing top-level names to /tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/top_level.txt\n      writing manifest file '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest file '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/SOURCES.txt'\n      reading manifest template 'MANIFEST.in'\n      setup.py:73: UserWarning: Skipping file youtube-dl.bash-completion since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.fish since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file README.txt since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      setup.py:73: UserWarning: Skipping file youtube-dl.1 since it is not present. Type  make  to build all automatically generated files.\n        warnings.warn('Skipping file %s since it is not present. Type  make  to build all automatically generated files.' % fn)\n      /opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/setuptools/dist.py:454: UserWarning: Normalizing '2018.04.16' to '2018.4.16'\n        warnings.warn(tmpl.format(**locals()))\n      warning: no files found matching 'youtube-dl.bash-completion'\n      warning: no files found matching 'youtube-dl.fish'\n      warning: no files found matching 'youtube-dl.1'\n      writing manifest file '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.egg-info/SOURCES.txt'\n      creating '/tmp/pip-modern-metadata-r3lwpydq/youtube_dl.dist-info'\n      error: invalid command 'bdist_wheel'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> See above for output.\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  }
+}

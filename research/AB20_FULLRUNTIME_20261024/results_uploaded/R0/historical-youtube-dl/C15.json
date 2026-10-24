@@ -1,0 +1,254 @@
+{
+  "cycle_id": "C15",
+  "project": "youtube-dl",
+  "bug_id": 3,
+  "repo": "https://github.com/ytdl-org/youtube-dl",
+  "expected_buggy": "f5469da9e6e259c1690c7ef54f1da1c19f65036f",
+  "expected_fixed": "95f3f7c20a05e7ac490e768b8470b20538ef8581",
+  "documented_python": "3.7.0",
+  "actual_python": "3.7.17",
+  "case_source": "BugsInPy bug.info",
+  "test_file": "test/test_utils.py",
+  "status": "ATTEMPTED_FULL_CHECKOUT",
+  "versions": {
+    "buggy": {
+      "sha_requested": "f5469da9e6e259c1690c7ef54f1da1c19f65036f",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.089,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 9d6ac71c2 [extractor/common] Fix extraction of DASH formats with the same representation id (closes #15111)\nHEAD is now at f5469da9e [laola1tv] Add support for tv.ittf.com (closes #13965)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "f5469da9e6e259c1690c7ef54f1da1c19f65036f"
+        ]
+      },
+      "sha_actual": "f5469da9e6e259c1690c7ef54f1da1c19f65036f",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 3.651,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/youtube-dl"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.84,
+        "stdout": "........................................................................ [ 94%]\n....                                                                     [100%]\n76 passed, 1 warning in 0.63s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "test/test_utils.py",
+          "--disable-warnings"
+        ]
+      }
+    },
+    "fixed": {
+      "sha_requested": "95f3f7c20a05e7ac490e768b8470b20538ef8581",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.044,
+        "stdout": "",
+        "stderr": "Previous HEAD position was f5469da9e [laola1tv] Add support for tv.ittf.com (closes #13965)\nHEAD is now at 95f3f7c20 [utils] Fix unescapeHTML for misformed string like \"&a&quot;\" (#13935)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "95f3f7c20a05e7ac490e768b8470b20538ef8581"
+        ]
+      },
+      "sha_actual": "95f3f7c20a05e7ac490e768b8470b20538ef8581",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 3.636,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/youtube-dl"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.593,
+        "stdout": "........................................................................ [ 94%]\n....                                                                     [100%]\n76 passed in 0.38s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "test/test_utils.py",
+          "--disable-warnings"
+        ]
+      }
+    }
+  },
+  "retrospective_fix_exposure": true,
+  "AB": {
+    "A": "Whole historical package and test-file buggy/fixed parity",
+    "B": "Repair should address a failing test; H0 no separable status; rival missing deps",
+    "C": "Identical test selection and instrument in both upstream revisions",
+    "D": "Workflow Python version approximation, git checkout and editable install",
+    "F": "Known patch and developer's test file; unblinded, selected bugs",
+    "G": "No external independent confirmation; same runner two revisions",
+    "H": "Metadata and patch-level execution cannot establish historical full-package parity",
+    "I": {
+      "grade": 0,
+      "CT2_before": 8,
+      "CT2_after": 8
+    },
+    "J": "Stop or repair instrumentation based on observed errors",
+    "E": {
+      "buggy": {
+        "sha_requested": "f5469da9e6e259c1690c7ef54f1da1c19f65036f",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.089,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 9d6ac71c2 [extractor/common] Fix extraction of DASH formats with the same representation id (closes #15111)\nHEAD is now at f5469da9e [laola1tv] Add support for tv.ittf.com (closes #13965)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "f5469da9e6e259c1690c7ef54f1da1c19f65036f"
+          ]
+        },
+        "sha_actual": "f5469da9e6e259c1690c7ef54f1da1c19f65036f",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 3.651,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/youtube-dl"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.84,
+          "stdout": "........................................................................ [ 94%]\n....                                                                     [100%]\n76 passed, 1 warning in 0.63s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "test/test_utils.py",
+            "--disable-warnings"
+          ]
+        }
+      },
+      "fixed": {
+        "sha_requested": "95f3f7c20a05e7ac490e768b8470b20538ef8581",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.044,
+          "stdout": "",
+          "stderr": "Previous HEAD position was f5469da9e [laola1tv] Add support for tv.ittf.com (closes #13965)\nHEAD is now at 95f3f7c20 [utils] Fix unescapeHTML for misformed string like \"&a&quot;\" (#13935)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "95f3f7c20a05e7ac490e768b8470b20538ef8581"
+          ]
+        },
+        "sha_actual": "95f3f7c20a05e7ac490e768b8470b20538ef8581",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 3.636,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/youtube-dl"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.593,
+          "stdout": "........................................................................ [ 94%]\n....                                                                     [100%]\n76 passed in 0.38s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "test/test_utils.py",
+            "--disable-warnings"
+          ]
+        }
+      }
+    }
+  },
+  "result": "BOTH_PASS_BUG_NOT_REPRODUCED"
+}

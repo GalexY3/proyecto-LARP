@@ -1,0 +1,224 @@
+{
+  "cycle_id": "C19",
+  "id": 3,
+  "project": "black",
+  "buggy_sha": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+  "fixed_sha": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+  "documented_python": "3.8.3",
+  "actual_python": "3.8.18",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.027,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "8126b4f6a9342290de4655e6a8a78cd288ce7daa"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\nHEAD is now at 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\n"
+      },
+      "sha_actual": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 1.427,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of black==0.0.0 from file:///tmp/larp_historical_r2/upstream_black (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n    error: subprocess-exited-with-error\n    \n    × python setup.py develop did not run successfully.\n    │ exit code: 1\n    ╰─> [37 lines of output]\n        running develop\n        running egg_info\n        writing black.egg-info/PKG-INFO\n        writing dependency_links to black.egg-info/dependency_links.txt\n        writing entry points to black.egg-info/entry_points.txt\n        writing requirements to black.egg-info/requires.txt\n        writing top-level names to black.egg-info/top_level.txt\n        Traceback (most recent call last):\n          File \"<string>\", line 2, in <module>\n          File \"<pip-setuptools-caller>\", line 34, in <module>\n          File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n            setup(\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n            return distutils.core.setup(**attrs)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n            dist.run_commands()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n            self.run_command(cmd)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n            self.install_for_development()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n            self.run_command('egg_info')\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n            self.distribution.run_command(command)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n            super().run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n            self.find_sources()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n            mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n            raise AttributeError(attr)\n        AttributeError: ignore_egg_info_in_manifest\n        [end of output]\n    \n    note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: subprocess-exited-with-error\n\n× python setup.py develop did not run successfully.\n│ exit code: 1\n╰─> [37 lines of output]\n    running develop\n    running egg_info\n    writing black.egg-info/PKG-INFO\n    writing dependency_links to black.egg-info/dependency_links.txt\n    writing entry points to black.egg-info/entry_points.txt\n    writing requirements to black.egg-info/requires.txt\n    writing top-level names to black.egg-info/top_level.txt\n    Traceback (most recent call last):\n      File \"<string>\", line 2, in <module>\n      File \"<pip-setuptools-caller>\", line 34, in <module>\n      File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n        setup(\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n        return distutils.core.setup(**attrs)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n        dist.run_commands()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n        self.run_command(cmd)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n        self.install_for_development()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n        self.run_command('egg_info')\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n        self.distribution.run_command(command)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n        super().run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n        self.find_sources()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n        mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n        raise AttributeError(attr)\n    AttributeError: ignore_egg_info_in_manifest\n    [end of output]\n\nnote: This error originates from a subprocess, and is likely not a problem with pip.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.01,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7a14a37981862ef418f3cdb4a7e2375856f97529"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\nHEAD is now at 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\n"
+      },
+      "sha_actual": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 1.388,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of black==0.0.0 from file:///tmp/larp_historical_r2/upstream_black (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n    error: subprocess-exited-with-error\n    \n    × python setup.py develop did not run successfully.\n    │ exit code: 1\n    ╰─> [37 lines of output]\n        running develop\n        running egg_info\n        writing black.egg-info/PKG-INFO\n        writing dependency_links to black.egg-info/dependency_links.txt\n        writing entry points to black.egg-info/entry_points.txt\n        writing requirements to black.egg-info/requires.txt\n        writing top-level names to black.egg-info/top_level.txt\n        Traceback (most recent call last):\n          File \"<string>\", line 2, in <module>\n          File \"<pip-setuptools-caller>\", line 34, in <module>\n          File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n            setup(\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n            return distutils.core.setup(**attrs)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n            dist.run_commands()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n            self.run_command(cmd)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n            self.install_for_development()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n            self.run_command('egg_info')\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n            self.distribution.run_command(command)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n            super().run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n            self.find_sources()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n            mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n            raise AttributeError(attr)\n        AttributeError: ignore_egg_info_in_manifest\n        [end of output]\n    \n    note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: subprocess-exited-with-error\n\n× python setup.py develop did not run successfully.\n│ exit code: 1\n╰─> [37 lines of output]\n    running develop\n    running egg_info\n    writing black.egg-info/PKG-INFO\n    writing dependency_links to black.egg-info/dependency_links.txt\n    writing entry points to black.egg-info/entry_points.txt\n    writing requirements to black.egg-info/requires.txt\n    writing top-level names to black.egg-info/top_level.txt\n    Traceback (most recent call last):\n      File \"<string>\", line 2, in <module>\n      File \"<pip-setuptools-caller>\", line 34, in <module>\n      File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n        setup(\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n        return distutils.core.setup(**attrs)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n        dist.run_commands()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n        self.run_command(cmd)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n        self.install_for_development()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n        self.run_command('egg_info')\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n        self.distribution.run_command(command)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n        super().run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n        self.find_sources()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n        mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n        raise AttributeError(attr)\n    AttributeError: ignore_egg_info_in_manifest\n    [end of output]\n\nnote: This error originates from a subprocess, and is likely not a problem with pip.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+  "official_commands": [
+    {
+      "source": "python -m unittest -q tests.test_black.BlackTestCase.test_invalid_config_return_code",
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "tests.test_black.BlackTestCase.test_invalid_config_return_code"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+  },
+  "result": "INSTRUMENT_BLOCKED",
+  "E": {
+    "buggy": {
+      "sha_expected": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.027,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "8126b4f6a9342290de4655e6a8a78cd288ce7daa"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\nHEAD is now at 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\n"
+      },
+      "sha_actual": "8126b4f6a9342290de4655e6a8a78cd288ce7daa",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 1.427,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of black==0.0.0 from file:///tmp/larp_historical_r2/upstream_black (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n    error: subprocess-exited-with-error\n    \n    × python setup.py develop did not run successfully.\n    │ exit code: 1\n    ╰─> [37 lines of output]\n        running develop\n        running egg_info\n        writing black.egg-info/PKG-INFO\n        writing dependency_links to black.egg-info/dependency_links.txt\n        writing entry points to black.egg-info/entry_points.txt\n        writing requirements to black.egg-info/requires.txt\n        writing top-level names to black.egg-info/top_level.txt\n        Traceback (most recent call last):\n          File \"<string>\", line 2, in <module>\n          File \"<pip-setuptools-caller>\", line 34, in <module>\n          File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n            setup(\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n            return distutils.core.setup(**attrs)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n            dist.run_commands()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n            self.run_command(cmd)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n            self.install_for_development()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n            self.run_command('egg_info')\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n            self.distribution.run_command(command)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n            super().run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n            self.find_sources()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n            mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n            raise AttributeError(attr)\n        AttributeError: ignore_egg_info_in_manifest\n        [end of output]\n    \n    note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: subprocess-exited-with-error\n\n× python setup.py develop did not run successfully.\n│ exit code: 1\n╰─> [37 lines of output]\n    running develop\n    running egg_info\n    writing black.egg-info/PKG-INFO\n    writing dependency_links to black.egg-info/dependency_links.txt\n    writing entry points to black.egg-info/entry_points.txt\n    writing requirements to black.egg-info/requires.txt\n    writing top-level names to black.egg-info/top_level.txt\n    Traceback (most recent call last):\n      File \"<string>\", line 2, in <module>\n      File \"<pip-setuptools-caller>\", line 34, in <module>\n      File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n        setup(\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n        return distutils.core.setup(**attrs)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n        dist.run_commands()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n        self.run_command(cmd)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n        self.install_for_development()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n        self.run_command('egg_info')\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n        self.distribution.run_command(command)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n        super().run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n        self.find_sources()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n        mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n        raise AttributeError(attr)\n    AttributeError: ignore_egg_info_in_manifest\n    [end of output]\n\nnote: This error originates from a subprocess, and is likely not a problem with pip.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    },
+    "fixed": {
+      "sha_expected": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_script_sha256": "41745e9452aa678f675d1f6c66d963586276803f86ada6a9daffe7a8e5adae90",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.01,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "7a14a37981862ef418f3cdb4a7e2375856f97529"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 8126b4f6 Fixing the documentation of how to install the vim plugin (#1318)\nHEAD is now at 7a14a379 Change exit code to 2 when config file doesn't exist (#1361)\n"
+      },
+      "sha_actual": "7a14a37981862ef418f3cdb4a7e2375856f97529",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tests/test_black.py": "bfe05145b8c4361ae744ccb71ab8780dd392ac712596c77075c779f6749fbc15"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 1,
+        "elapsed": 1.388,
+        "cmd": [
+          "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_black"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "  DEPRECATION: Legacy editable install of black==0.0.0 from file:///tmp/larp_historical_r2/upstream_black (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457\n    error: subprocess-exited-with-error\n    \n    × python setup.py develop did not run successfully.\n    │ exit code: 1\n    ╰─> [37 lines of output]\n        running develop\n        running egg_info\n        writing black.egg-info/PKG-INFO\n        writing dependency_links to black.egg-info/dependency_links.txt\n        writing entry points to black.egg-info/entry_points.txt\n        writing requirements to black.egg-info/requires.txt\n        writing top-level names to black.egg-info/top_level.txt\n        Traceback (most recent call last):\n          File \"<string>\", line 2, in <module>\n          File \"<pip-setuptools-caller>\", line 34, in <module>\n          File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n            setup(\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n            return distutils.core.setup(**attrs)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n            dist.run_commands()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n            self.run_command(cmd)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n            self.install_for_development()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n            self.run_command('egg_info')\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n            self.distribution.run_command(command)\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n            cmd_obj.run()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n            super().run()\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n            self.find_sources()\n          File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n            mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n          File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n            raise AttributeError(attr)\n        AttributeError: ignore_egg_info_in_manifest\n        [end of output]\n    \n    note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: subprocess-exited-with-error\n\n× python setup.py develop did not run successfully.\n│ exit code: 1\n╰─> [37 lines of output]\n    running develop\n    running egg_info\n    writing black.egg-info/PKG-INFO\n    writing dependency_links to black.egg-info/dependency_links.txt\n    writing entry points to black.egg-info/entry_points.txt\n    writing requirements to black.egg-info/requires.txt\n    writing top-level names to black.egg-info/top_level.txt\n    Traceback (most recent call last):\n      File \"<string>\", line 2, in <module>\n      File \"<pip-setuptools-caller>\", line 34, in <module>\n      File \"/tmp/larp_historical_r2/upstream_black/setup.py\", line 48, in <module>\n        setup(\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/__init__.py\", line 153, in setup\n        return distutils.core.setup(**attrs)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/core.py\", line 148, in setup\n        dist.run_commands()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 966, in run_commands\n        self.run_command(cmd)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 34, in run\n        self.install_for_development()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/develop.py\", line 132, in install_for_development\n        self.run_command('egg_info')\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 313, in run_command\n        self.distribution.run_command(command)\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/dist.py\", line 985, in run_command\n        cmd_obj.run()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 182, in run\n        super().run()\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/setuptools/command/egg_info.py\", line 299, in run\n        self.find_sources()\n      File \"/tmp/larp_historical_r2/upstream_black/.eggs/setuptools_scm-10.3.4-py3.8.egg/setuptools_scm/_integration/egg_info.py\", line 162, in find_sources\n        mm.ignore_egg_info_dir = self.ignore_egg_info_in_manifest  # type: ignore[attr-defined]\n      File \"/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/distutils/cmd.py\", line 103, in __getattr__\n        raise AttributeError(attr)\n    AttributeError: ignore_egg_info_in_manifest\n    [end of output]\n\nnote: This error originates from a subprocess, and is likely not a problem with pip.\n"
+      },
+      "reason": "INSTALL_FAILED"
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "cycle_id": "C16",
+  "project": "youtube-dl",
+  "bug_id": 4,
+  "repo": "https://github.com/ytdl-org/youtube-dl",
+  "expected_buggy": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+  "expected_fixed": "189935f15960300d316e8b07108b076ac6c2186a",
+  "documented_python": "3.7.0",
+  "actual_python": "3.7.17",
+  "case_source": "BugsInPy bug.info",
+  "test_file": "test/test_jsinterp.py",
+  "status": "ATTEMPTED_FULL_CHECKOUT",
+  "versions": {
+    "buggy": {
+      "sha_requested": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.12,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 95f3f7c20 [utils] Fix unescapeHTML for misformed string like \"&a&quot;\" (#13935)\nHEAD is now at bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5"
+        ]
+      },
+      "sha_actual": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 3.696,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/youtube-dl"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.915,
+        "stdout": "...........                                                              [100%]\n11 passed, 525 warnings in 0.69s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "test/test_jsinterp.py",
+          "--disable-warnings"
+        ]
+      }
+    },
+    "fixed": {
+      "sha_requested": "189935f15960300d316e8b07108b076ac6c2186a",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.054,
+        "stdout": "",
+        "stderr": "Previous HEAD position was bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\nHEAD is now at 189935f15 [jsinterp] Fix function calls without arguments.\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "189935f15960300d316e8b07108b076ac6c2186a"
+        ]
+      },
+      "sha_actual": "189935f15960300d316e8b07108b076ac6c2186a",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 3.748,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/youtube-dl"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.435,
+        "stdout": "............                                                             [100%]\n12 passed in 0.23s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "test/test_jsinterp.py",
+          "--disable-warnings"
+        ]
+      }
+    }
+  },
+  "retrospective_fix_exposure": true,
+  "AB": {
+    "A": "Whole historical package and test-file buggy/fixed parity",
+    "B": "Repair should address a failing test; H0 no separable status; rival missing deps",
+    "C": "Identical test selection and instrument in both upstream revisions",
+    "D": "Workflow Python version approximation, git checkout and editable install",
+    "F": "Known patch and developer's test file; unblinded, selected bugs",
+    "G": "No external independent confirmation; same runner two revisions",
+    "H": "Metadata and patch-level execution cannot establish historical full-package parity",
+    "I": {
+      "grade": 0,
+      "CT2_before": 8,
+      "CT2_after": 8
+    },
+    "J": "Stop or repair instrumentation based on observed errors",
+    "E": {
+      "buggy": {
+        "sha_requested": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.12,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 95f3f7c20 [utils] Fix unescapeHTML for misformed string like \"&a&quot;\" (#13935)\nHEAD is now at bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5"
+          ]
+        },
+        "sha_actual": "bc40b3a5ba44006c23daf7fe0ed872af5e33bdc5",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 3.696,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/youtube-dl"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.915,
+          "stdout": "...........                                                              [100%]\n11 passed, 525 warnings in 0.69s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "test/test_jsinterp.py",
+            "--disable-warnings"
+          ]
+        }
+      },
+      "fixed": {
+        "sha_requested": "189935f15960300d316e8b07108b076ac6c2186a",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.054,
+          "stdout": "",
+          "stderr": "Previous HEAD position was bc40b3a5b [eagleplatform] Fix extraction (closes #11160)\nHEAD is now at 189935f15 [jsinterp] Fix function calls without arguments.\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "189935f15960300d316e8b07108b076ac6c2186a"
+          ]
+        },
+        "sha_actual": "189935f15960300d316e8b07108b076ac6c2186a",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 3.748,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/youtube-dl"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.435,
+          "stdout": "............                                                             [100%]\n12 passed in 0.23s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "test/test_jsinterp.py",
+            "--disable-warnings"
+          ]
+        }
+      }
+    }
+  },
+  "result": "BOTH_PASS_BUG_NOT_REPRODUCED"
+}

@@ -1,0 +1,68 @@
+{
+  "project": "tqdm",
+  "runner": "3.6.15 (default, Dec 21 2021, 12:20:05) \n[GCC 8.3.0]",
+  "bench_clone": {
+    "state": "EXIT",
+    "code": 0,
+    "elapsed": 0.518,
+    "cmd": [
+      "git",
+      "clone",
+      "--quiet",
+      "--depth",
+      "1",
+      "https://github.com/soarsmu/BugsInPy.git",
+      "/tmp/larp_historical_r1/BugsInPy"
+    ],
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "repo_clone": {
+    "state": "EXIT",
+    "code": 0,
+    "elapsed": 0.742,
+    "cmd": [
+      "git",
+      "clone",
+      "--quiet",
+      "--no-checkout",
+      "https://github.com/tqdm/tqdm.git",
+      "/tmp/larp_historical_r1/upstream_tqdm"
+    ],
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "setup": {
+    "state": "EXIT",
+    "code": 0,
+    "elapsed": 2.16,
+    "cmd": [
+      "/usr/local/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "-q",
+      "pytest==5.4.3",
+      "pytest-mock==3.6.1",
+      "six",
+      "nose",
+      "mock"
+    ],
+    "stdout_tail": "",
+    "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+  },
+  "installed_test_dependencies": [
+    "pytest==5.4.3",
+    "pytest-mock==3.6.1",
+    "six",
+    "nose",
+    "mock"
+  ],
+  "deviations": [
+    "Python micro may differ from bug.info",
+    "Curated full requirements were not installed exactly",
+    "Fixed version's test files overlaid onto buggy per BugsInPy",
+    "tox test command translated to pytest when necessary"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "clone": {
+    "status": "EXIT",
+    "code": 0,
+    "seconds": 0.398,
+    "stdout": "",
+    "stderr": "",
+    "command": [
+      "git",
+      "clone",
+      "--quiet",
+      "--no-checkout",
+      "https://github.com/cool-RR/PySnooper.git",
+      "/tmp/larp_abhistorical/PySnooper"
+    ]
+  },
+  "pytest_setup": {
+    "status": "EXIT",
+    "code": 0,
+    "seconds": 1.312,
+    "stdout": "",
+    "stderr": "",
+    "command": [
+      "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "-q",
+      "pytest==6.2.5",
+      "six",
+      "mock",
+      "nose",
+      "pytest-mock==3.6.1"
+    ]
+  }
+}

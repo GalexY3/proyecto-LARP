@@ -1,0 +1,254 @@
+{
+  "cycle_id": "C14",
+  "project": "youtube-dl",
+  "bug_id": 2,
+  "repo": "https://github.com/ytdl-org/youtube-dl",
+  "expected_buggy": "84f085d4bdb66ee025fb337bcd571eab7469da97",
+  "expected_fixed": "9d6ac71c27b1dfb662c795ef598dbfd0286682da",
+  "documented_python": "3.7.0",
+  "actual_python": "3.7.17",
+  "case_source": "BugsInPy bug.info",
+  "test_file": "test/test_InfoExtractor.py",
+  "status": "ATTEMPTED_FULL_CHECKOUT",
+  "versions": {
+    "buggy": {
+      "sha_requested": "84f085d4bdb66ee025fb337bcd571eab7469da97",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.086,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 1cc47c667 [utils] Fix match_str for boolean meta fields\nHEAD is now at 84f085d4b [aws] fix canonical/signed headers generation in python 2(closes #15102)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "84f085d4bdb66ee025fb337bcd571eab7469da97"
+        ]
+      },
+      "sha_actual": "84f085d4bdb66ee025fb337bcd571eab7469da97",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 3.663,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/youtube-dl"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.713,
+        "stdout": ".........                                                                [100%]\n9 passed, 1 warning in 0.50s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "test/test_InfoExtractor.py",
+          "--disable-warnings"
+        ]
+      }
+    },
+    "fixed": {
+      "sha_requested": "9d6ac71c27b1dfb662c795ef598dbfd0286682da",
+      "eligible": true,
+      "checkout": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.044,
+        "stdout": "",
+        "stderr": "Previous HEAD position was 84f085d4b [aws] fix canonical/signed headers generation in python 2(closes #15102)\nHEAD is now at 9d6ac71c2 [extractor/common] Fix extraction of DASH formats with the same representation id (closes #15111)\n",
+        "command": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "9d6ac71c27b1dfb662c795ef598dbfd0286682da"
+        ]
+      },
+      "sha_actual": "9d6ac71c27b1dfb662c795ef598dbfd0286682da",
+      "checkout_verified": true,
+      "test_file_exists": true,
+      "install": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 3.688,
+        "stdout": "",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "-e",
+          "/tmp/larp_abhistorical/youtube-dl"
+        ]
+      },
+      "test": {
+        "status": "EXIT",
+        "code": 0,
+        "seconds": 0.52,
+        "stdout": ".........                                                                [100%]\n9 passed, 1 warning in 0.29s\n",
+        "stderr": "",
+        "command": [
+          "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+          "-m",
+          "pytest",
+          "-x",
+          "-q",
+          "test/test_InfoExtractor.py",
+          "--disable-warnings"
+        ]
+      }
+    }
+  },
+  "retrospective_fix_exposure": true,
+  "AB": {
+    "A": "Whole historical package and test-file buggy/fixed parity",
+    "B": "Repair should address a failing test; H0 no separable status; rival missing deps",
+    "C": "Identical test selection and instrument in both upstream revisions",
+    "D": "Workflow Python version approximation, git checkout and editable install",
+    "F": "Known patch and developer's test file; unblinded, selected bugs",
+    "G": "No external independent confirmation; same runner two revisions",
+    "H": "Metadata and patch-level execution cannot establish historical full-package parity",
+    "I": {
+      "grade": 0,
+      "CT2_before": 8,
+      "CT2_after": 8
+    },
+    "J": "Stop or repair instrumentation based on observed errors",
+    "E": {
+      "buggy": {
+        "sha_requested": "84f085d4bdb66ee025fb337bcd571eab7469da97",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.086,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 1cc47c667 [utils] Fix match_str for boolean meta fields\nHEAD is now at 84f085d4b [aws] fix canonical/signed headers generation in python 2(closes #15102)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "84f085d4bdb66ee025fb337bcd571eab7469da97"
+          ]
+        },
+        "sha_actual": "84f085d4bdb66ee025fb337bcd571eab7469da97",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 3.663,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/youtube-dl"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.713,
+          "stdout": ".........                                                                [100%]\n9 passed, 1 warning in 0.50s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "test/test_InfoExtractor.py",
+            "--disable-warnings"
+          ]
+        }
+      },
+      "fixed": {
+        "sha_requested": "9d6ac71c27b1dfb662c795ef598dbfd0286682da",
+        "eligible": true,
+        "checkout": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.044,
+          "stdout": "",
+          "stderr": "Previous HEAD position was 84f085d4b [aws] fix canonical/signed headers generation in python 2(closes #15102)\nHEAD is now at 9d6ac71c2 [extractor/common] Fix extraction of DASH formats with the same representation id (closes #15111)\n",
+          "command": [
+            "git",
+            "-c",
+            "advice.detachedHead=false",
+            "checkout",
+            "-f",
+            "9d6ac71c27b1dfb662c795ef598dbfd0286682da"
+          ]
+        },
+        "sha_actual": "9d6ac71c27b1dfb662c795ef598dbfd0286682da",
+        "checkout_verified": true,
+        "test_file_exists": true,
+        "install": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 3.688,
+          "stdout": "",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-e",
+            "/tmp/larp_abhistorical/youtube-dl"
+          ]
+        },
+        "test": {
+          "status": "EXIT",
+          "code": 0,
+          "seconds": 0.52,
+          "stdout": ".........                                                                [100%]\n9 passed, 1 warning in 0.29s\n",
+          "stderr": "",
+          "command": [
+            "/opt/hostedtoolcache/Python/3.7.17/x64/bin/python",
+            "-m",
+            "pytest",
+            "-x",
+            "-q",
+            "test/test_InfoExtractor.py",
+            "--disable-warnings"
+          ]
+        }
+      }
+    }
+  },
+  "result": "BOTH_PASS_BUG_NOT_REPRODUCED"
+}

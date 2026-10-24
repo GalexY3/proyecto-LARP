@@ -1,0 +1,295 @@
+{
+  "cycle_id": "C05",
+  "id": 5,
+  "project": "tqdm",
+  "buggy_sha": "19b08ab34fdbfa0275bc5cb2430436c724c7e759",
+  "fixed_sha": "4f340697af69b71850aad496387c9c5aa1904136",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "19b08ab34fdbfa0275bc5cb2430436c724c7e759",
+      "test_script_sha256": "38962eab7ed15017209aa152e2d83cec769dbcc4b3831d7fd4d72151829883b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "19b08ab34fdbfa0275bc5cb2430436c724c7e759"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 4f34069 support `bool()` cast when `disable=True`\nHEAD is now at 19b08ab autonotebook tests\n"
+      },
+      "sha_actual": "19b08ab34fdbfa0275bc5cb2430436c724c7e759",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "cbc1a3367ec5b91d19279b2852b1a642bb4ed675a13f67df9b3d86d3ab27e6d0"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.572,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.317,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_bool"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py F                                               [100%]\n\n=================================== FAILURES ===================================\n__________________________________ test_bool ___________________________________\n\n    @with_setup(pretest, posttest)\n    def test_bool():\n        \"\"\"Test boolean cast\"\"\"\n        def internal(our_file, disable):\n            with tqdm(total=10, file=our_file, disable=disable) as t:\n                assert t\n            with tqdm(total=0, file=our_file, disable=disable) as t:\n                assert not t\n            with trange(10, file=our_file, disable=disable) as t:\n                assert t\n            with trange(0, file=our_file, disable=disable) as t:\n                assert not t\n            with tqdm([], file=our_file, disable=disable) as t:\n                assert not t\n            with tqdm([0], file=our_file, disable=disable) as t:\n                assert t\n            with tqdm(file=our_file, disable=disable) as t:\n                try:\n                    print(bool(t))\n                except TypeError:\n                    pass\n                else:\n                    raise TypeError(\n                        \"Expected tqdm() with neither total nor iterable to fail\")\n    \n        # test with and without disable\n        with closing(StringIO()) as our_file:\n            internal(our_file, False)\n>           internal(our_file, True)\n\ntqdm/tests/tests_tqdm.py:1591: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntqdm/tests/tests_tqdm.py:1568: in internal\n    assert t\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <[AttributeError(\"'tqdm' object has no attribute 'total'\",) raised in repr()] tqdm object at 0x7f71cc17b4a8>\n\n    def __len__(self):\n>       return self.total if self.iterable is None else \\\n            (self.iterable.shape[0] if hasattr(self.iterable, \"shape\")\n             else len(self.iterable) if hasattr(self.iterable, \"__len__\")\n             else getattr(self, \"total\", None))\nE       AttributeError: 'tqdm' object has no attribute 'total'\n\ntqdm/_tqdm.py:869: AttributeError\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n=========================== short test summary info ============================\nFAILED tqdm/tests/tests_tqdm.py::test_bool - AttributeError: 'tqdm' object ha...\n========================= 1 failed, 1 warning in 0.14s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_bool",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "4f340697af69b71850aad496387c9c5aa1904136",
+      "test_script_sha256": "38962eab7ed15017209aa152e2d83cec769dbcc4b3831d7fd4d72151829883b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "4f340697af69b71850aad496387c9c5aa1904136"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 19b08ab autonotebook tests\nHEAD is now at 4f34069 support `bool()` cast when `disable=True`\n"
+      },
+      "sha_actual": "4f340697af69b71850aad496387c9c5aa1904136",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "cbc1a3367ec5b91d19279b2852b1a642bb4ed675a13f67df9b3d86d3ab27e6d0"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.568,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.288,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_bool"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py .                                               [100%]\n\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n========================= 1 passed, 1 warning in 0.11s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_bool",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "38962eab7ed15017209aa152e2d83cec769dbcc4b3831d7fd4d72151829883b2",
+  "official_commands": [
+    {
+      "source": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_bool",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tqdm/tests/tests_tqdm.py::test_bool"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tqdm/tests/tests_tqdm.py": "cbc1a3367ec5b91d19279b2852b1a642bb4ed675a13f67df9b3d86d3ab27e6d0"
+  },
+  "result": "CANDIDATE_REPRODUCED_AUDIT_TRACE_REQUIRED",
+  "E": {
+    "buggy": {
+      "sha_expected": "19b08ab34fdbfa0275bc5cb2430436c724c7e759",
+      "test_script_sha256": "38962eab7ed15017209aa152e2d83cec769dbcc4b3831d7fd4d72151829883b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "19b08ab34fdbfa0275bc5cb2430436c724c7e759"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 4f34069 support `bool()` cast when `disable=True`\nHEAD is now at 19b08ab autonotebook tests\n"
+      },
+      "sha_actual": "19b08ab34fdbfa0275bc5cb2430436c724c7e759",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "cbc1a3367ec5b91d19279b2852b1a642bb4ed675a13f67df9b3d86d3ab27e6d0"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.572,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.317,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_bool"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py F                                               [100%]\n\n=================================== FAILURES ===================================\n__________________________________ test_bool ___________________________________\n\n    @with_setup(pretest, posttest)\n    def test_bool():\n        \"\"\"Test boolean cast\"\"\"\n        def internal(our_file, disable):\n            with tqdm(total=10, file=our_file, disable=disable) as t:\n                assert t\n            with tqdm(total=0, file=our_file, disable=disable) as t:\n                assert not t\n            with trange(10, file=our_file, disable=disable) as t:\n                assert t\n            with trange(0, file=our_file, disable=disable) as t:\n                assert not t\n            with tqdm([], file=our_file, disable=disable) as t:\n                assert not t\n            with tqdm([0], file=our_file, disable=disable) as t:\n                assert t\n            with tqdm(file=our_file, disable=disable) as t:\n                try:\n                    print(bool(t))\n                except TypeError:\n                    pass\n                else:\n                    raise TypeError(\n                        \"Expected tqdm() with neither total nor iterable to fail\")\n    \n        # test with and without disable\n        with closing(StringIO()) as our_file:\n            internal(our_file, False)\n>           internal(our_file, True)\n\ntqdm/tests/tests_tqdm.py:1591: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntqdm/tests/tests_tqdm.py:1568: in internal\n    assert t\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <[AttributeError(\"'tqdm' object has no attribute 'total'\",) raised in repr()] tqdm object at 0x7f71cc17b4a8>\n\n    def __len__(self):\n>       return self.total if self.iterable is None else \\\n            (self.iterable.shape[0] if hasattr(self.iterable, \"shape\")\n             else len(self.iterable) if hasattr(self.iterable, \"__len__\")\n             else getattr(self, \"total\", None))\nE       AttributeError: 'tqdm' object has no attribute 'total'\n\ntqdm/_tqdm.py:869: AttributeError\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n=========================== short test summary info ============================\nFAILED tqdm/tests/tests_tqdm.py::test_bool - AttributeError: 'tqdm' object ha...\n========================= 1 failed, 1 warning in 0.14s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_bool",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "4f340697af69b71850aad496387c9c5aa1904136",
+      "test_script_sha256": "38962eab7ed15017209aa152e2d83cec769dbcc4b3831d7fd4d72151829883b2",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.006,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "4f340697af69b71850aad496387c9c5aa1904136"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 19b08ab autonotebook tests\nHEAD is now at 4f34069 support `bool()` cast when `disable=True`\n"
+      },
+      "sha_actual": "4f340697af69b71850aad496387c9c5aa1904136",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "cbc1a3367ec5b91d19279b2852b1a642bb4ed675a13f67df9b3d86d3ab27e6d0"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.568,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r1/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.288,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_bool"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r1/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py .                                               [100%]\n\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n========================= 1 passed, 1 warning in 0.11s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_bool",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "cycle_id": "C04",
+  "id": 4,
+  "project": "tqdm",
+  "buggy_sha": "03b347646492131d889871939b40457d29147216",
+  "fixed_sha": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+  "documented_python": "3.6.9",
+  "actual_python": "3.6.15",
+  "full_repo": true,
+  "full_bugsinpy_env": false,
+  "retrospectively_exposed_fix": true,
+  "status": "EXECUTION_ATTEMPT",
+  "versions": {
+    "buggy": {
+      "sha_expected": "03b347646492131d889871939b40457d29147216",
+      "test_script_sha256": "05c0562d3d33fbfa2faaddf5cd369639570f4a99ba5626a8be18c7d7ce1d451d",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.022,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "03b347646492131d889871939b40457d29147216"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 964dee6 fix `TypeError` when `unit_scale` and unknown `total`\nHEAD is now at 03b3476 minor flake8 linting\n"
+      },
+      "sha_actual": "03b347646492131d889871939b40457d29147216",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "9d0914f40b0fbbb69e37e2a949a1e3b962de3e1919d7be2a414b5bedc2b9839e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.9,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.558,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_nototal"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py FE                                              [100%]\n\n==================================== ERRORS ====================================\n______________________ ERROR at teardown of test_nototal _______________________\n\n    def posttest():\n        if getattr(tqdm, \"_instances\", False):\n            n = len(tqdm._instances)\n            if n:\n                tqdm._instances.clear()\n                raise EnvironmentError(\n>                   \"{0} `tqdm` instances still in existence POST-test\".format(n))\nE               OSError: 1 `tqdm` instances still in existence POST-test\n\ntqdm/tests/tests_tqdm.py:132: OSError\n=================================== FAILURES ===================================\n_________________________________ test_nototal _________________________________\n\n    @with_setup(pretest, posttest)\n    def test_nototal():\n        \"\"\"Test unknown total length\"\"\"\n        with closing(StringIO()) as our_file:\n>           for i in tqdm((i for i in range(10)), file=our_file, unit_scale=10):\n\ntqdm/tests/tests_tqdm.py:779: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntqdm/_tqdm.py:927: in __init__\n    self.display()\ntqdm/_tqdm.py:1297: in display\n    self.sp(self.__repr__() if msg is None else msg)\ntqdm/_tqdm.py:966: in __repr__\n    return self.format_meter(**self.format_dict)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nn = 0, total = None, elapsed = 0, ncols = None, prefix = '', ascii = True\nunit = 'it', unit_scale = 10, rate = None, bar_format = None, postfix = None\nunit_divisor = 1000, extra_kwargs = {}\n\n    @staticmethod\n    def format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False,\n                     unit='it', unit_scale=False, rate=None, bar_format=None,\n                     postfix=None, unit_divisor=1000, **extra_kwargs):\n        \"\"\"\n        Return a string-based progress bar given some parameters\n    \n        Parameters\n        ----------\n        n  : int\n            Number of finished iterations.\n        total  : int\n            The expected total number of iterations. If meaningless (), only\n            basic progress statistics are displayed (no ETA).\n        elapsed  : float\n            Number of seconds passed since start.\n        ncols  : int, optional\n            The width of the entire output message. If specified,\n            dynamically resizes the progress meter to stay within this bound\n            [default: None]. The fallback meter width is 10 for the progress\n            bar + no limit for the iterations counter and statistics. If 0,\n            will not print any meter (only stats).\n        prefix  : str, optional\n            Prefix message (included in total width) [default: ''].\n            Use as {desc} in bar_format string.\n        ascii  : bool, optional\n            If not set, use unicode (smooth blocks) to fill the meter\n            [default: False]. The fallback is to use ASCII characters\n            (1-9 #).\n        unit  : str, optional\n            The iteration unit [default: 'it'].\n        unit_scale  : bool or int or float, optional\n            If 1 or True, the number of iterations will be printed with an\n            appropriate SI metric prefix (k = 10^3, M = 10^6, etc.)\n            [default: False]. If any other non-zero number, will scale\n            `total` and `n`.\n        rate  : float, optional\n            Manual override for iteration rate.\n            If [default: None], uses n/elapsed.\n        bar_format  : str, optional\n            Specify a custom bar string formatting. May impact performance.\n            [default: '{l_bar}{bar}{r_bar}'], where\n            l_bar='{desc}: {percentage:3.0f}%|' and\n            r_bar='| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, '\n              '{rate_fmt}{postfix}]'\n            Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,\n              percentage, rate, rate_fmt, rate_noinv, rate_noinv_fmt,\n              rate_inv, rate_inv_fmt, elapsed, elapsed_s,\n              remaining, remaining_s, desc, postfix, unit.\n            Note that a trailing \": \" is automatically removed after {desc}\n            if the latter is empty.\n        postfix  : *, optional\n            Similar to `prefix`, but placed at the end\n            (e.g. for additional stats).\n            Note: postfix is usually a string (not a dict) for this method,\n            and will if possible be set to postfix = ', ' + postfix.\n            However other types are supported (#382).\n        unit_divisor  : float, optional\n            [default: 1000], ignored unless `unit_scale` is True.\n    \n        Returns\n        -------\n        out  : Formatted meter and stats, ready to display.\n        \"\"\"\n    \n        # sanity check: total\n        if total and n > total:\n            total = None\n    \n        # apply custom scale if necessary\n        if unit_scale and unit_scale not in (True, 1):\n>           total *= unit_scale\nE           TypeError: unsupported operand type(s) for *=: 'NoneType' and 'int'\n\ntqdm/_tqdm.py:323: TypeError\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n=========================== short test summary info ============================\nFAILED tqdm/tests/tests_tqdm.py::test_nototal - TypeError: unsupported operan...\nERROR tqdm/tests/tests_tqdm.py::test_nototal - OSError: 1 `tqdm` instances st...\n==================== 1 failed, 1 warning, 1 error in 0.28s =====================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_nototal",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+      "test_script_sha256": "05c0562d3d33fbfa2faaddf5cd369639570f4a99ba5626a8be18c7d7ce1d451d",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "964dee631d0ed30e2f799b42fc58ba5e73795a08"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 03b3476 minor flake8 linting\nHEAD is now at 964dee6 fix `TypeError` when `unit_scale` and unknown `total`\n"
+      },
+      "sha_actual": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "9d0914f40b0fbbb69e37e2a949a1e3b962de3e1919d7be2a414b5bedc2b9839e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.9,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.521,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_nototal"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py .                                               [100%]\n\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n========================= 1 passed, 1 warning in 0.17s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_nototal",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  },
+  "A": "Can official targeted fixed-test find bug in original upstream full source?",
+  "B": {
+    "H1": "Fail on buggy and pass on fixed with relevant assertion",
+    "H0": "No change in outcome",
+    "rival": "Dependency, test fixture or Python ABI mismatch"
+  },
+  "C": "Twenty fixed BugsInPy IDs, two revisions, fixed-test overlay exactly as BugsInPy checkout",
+  "D": "Commit SHA verification, full repo source, test bytes hashes, exact test command",
+  "F": "Post-exposure and selected benchmark; installation and failure-cause adverse audit",
+  "G": "No independent external environment; GitHub hosted runner only",
+  "H": "A failure during test collection is not evidence of bug detection",
+  "I": {
+    "grade": 0,
+    "CT2_before": 8,
+    "CT2_after": 8
+  },
+  "J": "Continue/repair/stop depending on genuine test outcome",
+  "official_run_test_sha256": "05c0562d3d33fbfa2faaddf5cd369639570f4a99ba5626a8be18c7d7ce1d451d",
+  "official_commands": [
+    {
+      "source": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_nototal",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "tqdm/tests/tests_tqdm.py::test_nototal"
+      ],
+      "adaptation": "python shell name -> pinned interpreter"
+    }
+  ],
+  "overlaid_fixed_test_sha256": {
+    "tqdm/tests/tests_tqdm.py": "9d0914f40b0fbbb69e37e2a949a1e3b962de3e1919d7be2a414b5bedc2b9839e"
+  },
+  "result": "CANDIDATE_REPRODUCED_AUDIT_TRACE_REQUIRED",
+  "E": {
+    "buggy": {
+      "sha_expected": "03b347646492131d889871939b40457d29147216",
+      "test_script_sha256": "05c0562d3d33fbfa2faaddf5cd369639570f4a99ba5626a8be18c7d7ce1d451d",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.022,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "03b347646492131d889871939b40457d29147216"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 964dee6 fix `TypeError` when `unit_scale` and unknown `total`\nHEAD is now at 03b3476 minor flake8 linting\n"
+      },
+      "sha_actual": "03b347646492131d889871939b40457d29147216",
+      "test_overlay_from_fixed": true,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "9d0914f40b0fbbb69e37e2a949a1e3b962de3e1919d7be2a414b5bedc2b9839e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.9,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 1,
+          "elapsed": 0.558,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_nototal"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py FE                                              [100%]\n\n==================================== ERRORS ====================================\n______________________ ERROR at teardown of test_nototal _______________________\n\n    def posttest():\n        if getattr(tqdm, \"_instances\", False):\n            n = len(tqdm._instances)\n            if n:\n                tqdm._instances.clear()\n                raise EnvironmentError(\n>                   \"{0} `tqdm` instances still in existence POST-test\".format(n))\nE               OSError: 1 `tqdm` instances still in existence POST-test\n\ntqdm/tests/tests_tqdm.py:132: OSError\n=================================== FAILURES ===================================\n_________________________________ test_nototal _________________________________\n\n    @with_setup(pretest, posttest)\n    def test_nototal():\n        \"\"\"Test unknown total length\"\"\"\n        with closing(StringIO()) as our_file:\n>           for i in tqdm((i for i in range(10)), file=our_file, unit_scale=10):\n\ntqdm/tests/tests_tqdm.py:779: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntqdm/_tqdm.py:927: in __init__\n    self.display()\ntqdm/_tqdm.py:1297: in display\n    self.sp(self.__repr__() if msg is None else msg)\ntqdm/_tqdm.py:966: in __repr__\n    return self.format_meter(**self.format_dict)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nn = 0, total = None, elapsed = 0, ncols = None, prefix = '', ascii = True\nunit = 'it', unit_scale = 10, rate = None, bar_format = None, postfix = None\nunit_divisor = 1000, extra_kwargs = {}\n\n    @staticmethod\n    def format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False,\n                     unit='it', unit_scale=False, rate=None, bar_format=None,\n                     postfix=None, unit_divisor=1000, **extra_kwargs):\n        \"\"\"\n        Return a string-based progress bar given some parameters\n    \n        Parameters\n        ----------\n        n  : int\n            Number of finished iterations.\n        total  : int\n            The expected total number of iterations. If meaningless (), only\n            basic progress statistics are displayed (no ETA).\n        elapsed  : float\n            Number of seconds passed since start.\n        ncols  : int, optional\n            The width of the entire output message. If specified,\n            dynamically resizes the progress meter to stay within this bound\n            [default: None]. The fallback meter width is 10 for the progress\n            bar + no limit for the iterations counter and statistics. If 0,\n            will not print any meter (only stats).\n        prefix  : str, optional\n            Prefix message (included in total width) [default: ''].\n            Use as {desc} in bar_format string.\n        ascii  : bool, optional\n            If not set, use unicode (smooth blocks) to fill the meter\n            [default: False]. The fallback is to use ASCII characters\n            (1-9 #).\n        unit  : str, optional\n            The iteration unit [default: 'it'].\n        unit_scale  : bool or int or float, optional\n            If 1 or True, the number of iterations will be printed with an\n            appropriate SI metric prefix (k = 10^3, M = 10^6, etc.)\n            [default: False]. If any other non-zero number, will scale\n            `total` and `n`.\n        rate  : float, optional\n            Manual override for iteration rate.\n            If [default: None], uses n/elapsed.\n        bar_format  : str, optional\n            Specify a custom bar string formatting. May impact performance.\n            [default: '{l_bar}{bar}{r_bar}'], where\n            l_bar='{desc}: {percentage:3.0f}%|' and\n            r_bar='| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, '\n              '{rate_fmt}{postfix}]'\n            Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,\n              percentage, rate, rate_fmt, rate_noinv, rate_noinv_fmt,\n              rate_inv, rate_inv_fmt, elapsed, elapsed_s,\n              remaining, remaining_s, desc, postfix, unit.\n            Note that a trailing \": \" is automatically removed after {desc}\n            if the latter is empty.\n        postfix  : *, optional\n            Similar to `prefix`, but placed at the end\n            (e.g. for additional stats).\n            Note: postfix is usually a string (not a dict) for this method,\n            and will if possible be set to postfix = ', ' + postfix.\n            However other types are supported (#382).\n        unit_divisor  : float, optional\n            [default: 1000], ignored unless `unit_scale` is True.\n    \n        Returns\n        -------\n        out  : Formatted meter and stats, ready to display.\n        \"\"\"\n    \n        # sanity check: total\n        if total and n > total:\n            total = None\n    \n        # apply custom scale if necessary\n        if unit_scale and unit_scale not in (True, 1):\n>           total *= unit_scale\nE           TypeError: unsupported operand type(s) for *=: 'NoneType' and 'int'\n\ntqdm/_tqdm.py:323: TypeError\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n=========================== short test summary info ============================\nFAILED tqdm/tests/tests_tqdm.py::test_nototal - TypeError: unsupported operan...\nERROR tqdm/tests/tests_tqdm.py::test_nototal - OSError: 1 `tqdm` instances st...\n==================== 1 failed, 1 warning, 1 error in 0.28s =====================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_nototal",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": true
+        }
+      ]
+    },
+    "fixed": {
+      "sha_expected": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+      "test_script_sha256": "05c0562d3d33fbfa2faaddf5cd369639570f4a99ba5626a8be18c7d7ce1d451d",
+      "checkout": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.012,
+        "cmd": [
+          "git",
+          "-c",
+          "advice.detachedHead=false",
+          "checkout",
+          "-f",
+          "964dee631d0ed30e2f799b42fc58ba5e73795a08"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "Previous HEAD position was 03b3476 minor flake8 linting\nHEAD is now at 964dee6 fix `TypeError` when `unit_scale` and unknown `total`\n"
+      },
+      "sha_actual": "964dee631d0ed30e2f799b42fc58ba5e73795a08",
+      "test_overlay_from_fixed": false,
+      "test_bytes": {
+        "tqdm/tests/tests_tqdm.py": "9d0914f40b0fbbb69e37e2a949a1e3b962de3e1919d7be2a414b5bedc2b9839e"
+      },
+      "editable_install": {
+        "state": "EXIT",
+        "code": 0,
+        "elapsed": 0.9,
+        "cmd": [
+          "/usr/local/bin/python",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-q",
+          "--no-build-isolation",
+          "-e",
+          "/tmp/larp_historical_r2/upstream_tqdm"
+        ],
+        "stdout_tail": "",
+        "stderr_tail": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n"
+      },
+      "tests": [
+        {
+          "state": "EXIT",
+          "code": 0,
+          "elapsed": 0.521,
+          "cmd": [
+            "/usr/local/bin/python",
+            "-m",
+            "pytest",
+            "tqdm/tests/tests_tqdm.py::test_nototal"
+          ],
+          "stdout_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.6.15, pytest-5.4.3, py-1.11.0, pluggy-0.13.1\nrootdir: /tmp/larp_historical_r2/upstream_tqdm\nplugins: mock-3.6.1\ncollected 1 item\n\ntqdm/tests/tests_tqdm.py .                                               [100%]\n\n=============================== warnings summary ===============================\n/usr/local/lib/python3.6/site-packages/nose/importer.py:12\n  /usr/local/lib/python3.6/site-packages/nose/importer.py:12: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\n    from imp import find_module, load_module, acquire_lock, release_lock\n\n-- Docs: https://docs.pytest.org/en/latest/warnings.html\n========================= 1 passed, 1 warning in 0.17s =========================\n",
+          "stderr_tail": "",
+          "source_command": "python3 -m pytest tqdm/tests/tests_tqdm.py::test_nototal",
+          "adaptation": "python shell name -> pinned interpreter",
+          "environment_error": false,
+          "assertion_failure": false
+        }
+      ]
+    }
+  }
+}
