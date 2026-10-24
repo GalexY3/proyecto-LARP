@@ -1,0 +1,102 @@
+{
+  "block": "B02",
+  "status": "FROZEN_BEFORE_ANY_B02_RESULTS",
+  "engine_sha256": "e20d7220103548b03aca7cc04eb42ea8c953453360574ec7e6e61a9dd3c969da",
+  "source_labels": "historic statsmodels, preprocessed per SOURCE_LOCK",
+  "E": {
+    "budget": 30,
+    "draws": 650
+  },
+  "G": {
+    "budget": 48,
+    "draws": 750
+  },
+  "specs": [
+    {
+      "id": "C07",
+      "source": "engel",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "var",
+        "estimator": "pool"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C08",
+      "source": "fair",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "var",
+        "estimator": "pool"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C09",
+      "source": "anes96",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "var",
+        "estimator": "pool"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C10",
+      "source": "randhie",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "var",
+        "estimator": "pool"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C11",
+      "source": "grunfeld",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "var",
+        "estimator": "pool"
+      },
+      "primary": "delta_MSE_lt_0"
+    },
+    {
+      "id": "C12",
+      "source": "macrodata",
+      "A": {
+        "policy": "var",
+        "estimator": "ht"
+      },
+      "B": {
+        "policy": "var",
+        "estimator": "pool"
+      },
+      "primary": "delta_MSE_lt_0"
+    }
+  ],
+  "H1": "Under variance-adaptive stage two, stage-conditional HT lowers population MSE compared with pooled estimator",
+  "H0": "MSE difference >=0",
+  "strong_rivals": [
+    "Bias variance tradeoff",
+    "Naive pooled estimator can dominate MSE",
+    "corrected estimator optimal for conditional unbiasedness, not unconditional MSE"
+  ],
+  "AB_contract": "A finite pop MSE; B explicit directional H1 vs rival; C equal labels/queries in arms; D check no y leakage; E raw simulation for every draw; F strong comparisons and prior art; G fresh draw/budget sensitivity not outside data; H update priors; I separate N1/CT2/2-3 novelty; J continue branching even if H1 fails"
+}
