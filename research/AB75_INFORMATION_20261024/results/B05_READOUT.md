@@ -1,3 +1,9 @@
+# INVALIDADO PARA REIVINDICACIÓN CIENTÍFICA — VERSIÓN v1/V2 CON FILTRACIÓN DE RESPUESTA
+
+Los números en este readout pertenecen a los 75 primeros contratos ejecutados con preprocesado de y global. **No** son resultados válidos para una política que solo compra etiquetas del piloto. Se preservan EXCLUSIVAMENTE para auditoría del error. El [dictamen R1 corregido](../DICTAMEN_R1.md) resume las 75 reparaciones; contrato [R1](../prereg/REPAIR_R1_NO_FULL_Y_PREPROCESSING.md). La segunda ejecución está etiquetada POST-EXPOSURE/EXPLORATORY, no confirmación ciega.
+
+---
+
 # B05 A–J readout, six distinct historical finite populations
 
 A: population transformed mean MSE. B: H1 A more precise vs matched conventional B, alternatives involving pilot noise and label opportunity cost. C: 650 E trajectories/B30 and 750 G trajectories/B48 per source, prereg GitHub **before execution**, same finite populations. D: no unpurchased outcomes influence allocation; total paid labels equal B. E primary MSE A−B values by source:
