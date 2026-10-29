@@ -1,0 +1,287 @@
+{
+  "schema": "AB_O7_versioned_typed_graph",
+  "date": "2026-10-29",
+  "branch": "research/ab-mhu-formal-20261029",
+  "disclaimer": "Process status answered does not imply scientific novelty or external confirmation",
+  "nodes": [
+    {
+      "id": "MHU_UNIVERSAL",
+      "type": "research_goal",
+      "mode": "AB-R",
+      "state": "refuted",
+      "label": "Universal superiority of MHU",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "MHU_CONDITIONAL",
+      "type": "research_goal",
+      "mode": "AB-R",
+      "state": "proposed",
+      "label": "Multimodal covariance-conditioned advantages",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M01",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M02",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M03",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M04",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M05",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M06",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M07",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M08",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M09",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M10",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M11",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M12",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M13",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M14",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M15",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M16",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M17",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    },
+    {
+      "id": "M18",
+      "type": "proof_question",
+      "mode": "AB-R",
+      "state": "answered",
+      "source": "RESULTADOS_AJ_M01_M18.md"
+    }
+  ],
+  "edges": [
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M01",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M02",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M03",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M04",
+      "relation": "tests"
+    },
+    {
+      "from": "M01",
+      "to": "M04",
+      "relation": "supports"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M05",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M06",
+      "relation": "tests"
+    },
+    {
+      "from": "M05",
+      "to": "M06",
+      "relation": "supports"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M07",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M08",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M09",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M10",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M11",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M12",
+      "relation": "tests"
+    },
+    {
+      "from": "M05",
+      "to": "M12",
+      "relation": "supports"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M13",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M14",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M15",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M16",
+      "relation": "tests"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M17",
+      "relation": "tests"
+    },
+    {
+      "from": "M11",
+      "to": "M17",
+      "relation": "supports"
+    },
+    {
+      "from": "MHU_UNIVERSAL",
+      "to": "M18",
+      "relation": "tests"
+    },
+    {
+      "from": "M12",
+      "to": "M18",
+      "relation": "supports"
+    },
+    {
+      "from": "M11",
+      "to": "MHU_CONDITIONAL",
+      "relation": "supports"
+    },
+    {
+      "from": "M12",
+      "to": "MHU_CONDITIONAL",
+      "relation": "supports"
+    },
+    {
+      "from": "M16",
+      "to": "MHU_CONDITIONAL",
+      "relation": "supports"
+    },
+    {
+      "from": "M18",
+      "to": "MHU_CONDITIONAL",
+      "relation": "supports"
+    }
+  ]
+}
