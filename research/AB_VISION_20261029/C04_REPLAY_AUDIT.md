@@ -1,0 +1,6 @@
+# C04 — Auditoría de reproducibilidad local, 2026-10-29
+**POST-HOC AUDIT**, no ciclo científico adicional ni nueva validación externa.
+Código íntegro congelado antes de outcomes: commit 4e4f4e1742015756b1216e7a0cd84f77c4a017ef; git blob 979e61cdaacd2b30ca08a0968eb2e0f8d2dbebbf; SHA256 d57d21ce76d4513419fbf38df9ec62b771872a4d50f1856a3a16133b268b31ae.
+
+Se copió **solo el código fuente local** a un directorio temporal nuevo, se ejecutó en otro proceso Python y se compararon ambos JSON parseados, ignorando únicamente `elapsed_sec`, y también el fichero resumen completo. Resultado: **LOCAL_FRESH_DIR_REPLAY_IDENTICAL**, 32.400 predicciones y 21 registros geométricos iguales, cero diferencias, sin reparación. Mismas librerías y dataset local, no reproducibilidad en otro ordenador ni clon GitHub verificado. Logs de progreso simples, no conservados. Fuente de LFW via skimage; no redistribuir rostros.
+El ZIP adjunto en conversación incluye raw y auditorías, SHA256 del ZIP final `dd6f72fc47a3f685b7b82e095660a852637fd2e1735c4e67cdf47a3b161be99b` (reempacado tras añadir este recibo). Anterior hash de ZIP en C04_DICTAMEN.md es el estado previo; mantener ambas huellas con cronología, no sustituir silenciosamente.
