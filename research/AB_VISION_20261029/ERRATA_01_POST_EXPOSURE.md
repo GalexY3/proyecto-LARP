@@ -1,0 +1,6 @@
+# VISION C01 — ERRATA-01 / auditoría POST-EXPOSURE
+2026-10-29. El experimento original SE EJECUTÓ después del prerregistro e50994d. En la auditoría ANTES de este documento se observaron resultados del test; **esta reparación NO ES CONFIRMATORIA** y no constituye otro ciclo válido.
+Problema: el comparador PoissonDisk de SciPy llamaba random(N) después de una radius demasiado pequeña (.03), lo que concentró muestras en un fragmento de la imagen; mean_distance ~0.195 frente a ~0.03 en rivales. Declarar **INVALID** todas las filas originales poisson_disk para interpretación comparada.
+Datos brutos originales preservados en entorno local: SHA256 results_original.json = `71cc4ca2b18360f83de5c61aaf2286fe25e6c19e76d14a30044bee6ca2cd9c18`.
+Reparación única: radius=.062, ncandidates=50, fill_space(), eliminar iterativamente punto de mayor densidad local gaussiana (sigma=.09) hasta N=160. Validar cobertura y 160 puntos. El código que se ejecutará después de este documento tiene SHA256 `85438d783f220761e1b5b8d2c678e2a77ee2787a2c7e5cbefac3b8d6d13c9570` (`repair_poisson.py`).
+No se toca ningún otro brazo ni la elección del análisis. El resultado Poisson queda `EXPLORATORY_POSTEXPOSURE_REPAIR`. El resultado original MHU-grid y MHU-subtypes no cambia, pero el mismo conjunto de datos está ya expuesto. No promover a N2/3.
