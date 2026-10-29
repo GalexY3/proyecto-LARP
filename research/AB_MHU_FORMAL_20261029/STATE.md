@@ -1,0 +1,8 @@
+# Formal MHU campaign state — 2026-10-29
+Parent: research/ab-vision-mhu-20261029, C04 latest executed experiment.
+Before new grant: 20 authorized, C02+C04 counted = 2, remaining = 18. User authorizes mathematical pivot and explicitly requests exhaustion. Research contract frozen **BEFORE** deriving outcomes at commit 1c27c5d2679f876cbda60987b1152246a72a75c9. Results commit 35d3340eb6245ca61f148d99448649231f64bd6d.
+Formal questions M01..M18 completed using 18 proof/counterexample dossiers; 18 local SymPy/NumPy sanity checks pass, but numerical checks are not proofs nor independent review. Overlaps are correlated/corollaries and do not create 18 novel contributions. New N1=0, N2=N3=0. No visual dataset, hardware or neural architecture trained in this pivot.
+Proven impossibility universal MHU supremacy under unrestricted task class. Proven conditional geometric benefits and known failure modes. Novelty scientific 2/3 NO.
+CT2 per branch: VISION 11/100 historical; UNIVERSAL 1/100; CONDITIONAL_MULTIMODAL 24/100. Do not connect as increasing history. D≈2 shift to mathematical theory.
+R5 final STOP on universal claim; conditional future work only with independently acquired multiband source and competent comparator. 0 authorizations left in this 20 cycle block; no merge to main nor CI.
+User-visible artifact contains complete 18 proofs and exact independent verification code; GitHub RESULTS_AJ_M01_M18.md is the versioned inspectable proof ledger. Raw hashes and manifest in local bundle. CLEAN_CLONE_NOT_VERIFIED. No formal proof assistant verification, no external independent mathematician signoff.
