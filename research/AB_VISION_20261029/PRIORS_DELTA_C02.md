@@ -1,0 +1,8 @@
+# C02 — priors acumulativos adicionales LARP Vision (no sobrescribir históricos)
+Fecha: 2026-10-29. Fuente: ejecución C02, SHA256 código 42b7bcef08ed0b02909ec4b95bbd3bbb46a338762ed011f1e8a64735b1e60729, resultados aaf9b227855ea05fff1351c0bf5d5fd91faf15e8c4622f4d7d9a6669dac3006e; contrato A–J en C02_PREREG.md. N1 nuevo = 0, originalidad no demostrada.
+
+P-VIS06 / contra ganancia visual genérica: MHU_PROXY_JOINT obtiene MSE .015477 frente a Poisson+maximin .014835 en cuatro imágenes test RGB. Restringido a 160 lecturas escalares y decodificador RBF, sin reconstrucción espectral física. Falsador: datos multiespectrales nuevos y comparador Wei auténtico.
+P-VIS07 / coordinación intertipo: romper fases relativas de cinco subtipos preserva exactamente |A_i(k)|²; en C02 no empeora clean de forma general (.015351 broken frente .015477 joint). Falsador: ablación espacial que preserve más aspectos de la cobertura e incorpore bandas genuinamente heterogéneas.
+P-VIS08 / heterogeneidad entre escenas: JOINT mejora frente Poisson en retina, pero empeora en stereo_motorcycle; con solo dos escenas nuevas es una pista, no una prueba de nicho visual robusto.
+P-VIS09 / prior art: Wei 2010 multi-class blue noise for imaging sensors, Bian et al. 2021 MSFA demosaicing y Li/Dai/Van Gool 2023 joint filter array & decoder; controlar esas técnicas antes de reivindicar ciencia original.
+R5 STOP_LOCAL RGB; PLANNING A–J C03 localiza fuente primaria CAVE/31 canales y código Wei; ejecución bloqueada, no cuenta. CT2 Vision 17→13 ordinal, no probabilidad. La fuente literal no se depositó en GitHub antes de outcomes, solo SHA del código; CLEAN_CLONE_NOT_VERIFIED.
