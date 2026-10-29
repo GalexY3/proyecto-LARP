@@ -1,0 +1,13 @@
+# CURRENT · MHU hermanas · 2026-10-30
+Authorized: 20 free AB cycles. Completed: **20 deductive A–J questions S01–S20**, invalid 0, planning counted 0; full numerical/symbolic sanity checks 20/20 PASS. **N1 unique new 0, N2 0, N3 0.** Questions are mathematically distinct in scope, but not 20 independent novel theorems or independent experimental replications.
+Frozen prereg BEFORE checks: f2c86270196df6eda87533953cc0169df81ec5a0. Frozen COMPLETE audit code BEFORE checks: e4a3605e0fad53418d7ca08f187c4d3ce1c440ce, Git blob 56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d, SHA256 78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296.
+Results SHA256 checks_20.json 87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e, exact local independent-process replay bytes identical (same host and versions). No formal theorem-prover/peer review; checks are finite sanity checks, while general proofs are text. CLEAN_CLONE_NOT_VERIFIED.
+Full proof report in INFORME_S01_S20.md. Complete A-J ledger GitHub LEDGER_S01_S20_GITHUB.json; source archive provided to user with all raw checks, 20 proof dossiers, graphs, and manifest.
+Four daughter branches **not merged**:
+- B01 research/ab-mhu-phase-theory-20261030, results commit 4d6d7d57933c091e83a8d17aeffd47ad72d83dbf (S01–S05).
+- B02 research/ab-local-cvt-geometry-20261030, results commit a36f73e8a4775163a5aca3f9a4116add06b8c36e (S06–S10).
+- B03 research/ab-sampling-perturbations-20261030, results commit 2f857a2bf668eb9831d2792308e1d03ab251f24c (S11–S15).
+- B04 research/ab-mhu-labels-objectives-20261030, results commit e475c7200ed90088fc6b683a1115865203818856 (S16–S20).
+Additional documentary AFTER-outcome review of older model families ANEXO_MODELOS_HISTORICOS.md is NOT another counted cycle. Historical q=0.50 infeasibility with ±5% variance gate is a prior mathematical result, not discovered by this run; old neuronal BALANCED does not validate MHU; multi-plane attention NOT_RUN.
+CT2 ordinal nonprobabilistic and separated: B01 24→24, B02 17→17, B03 15→15, B04 21→21. No increase on cycle count. R5 STOP generic superiority, conditional PIVOT to constrained coverage+frequency+covariance risk with strong Wei/CVT and independent data. Grant remaining **0**. main untouched, no costly CI, no new data or multi-spectral vision trials.
+Local ZIP: LARP_MHU_HERMANAS_AB20_20261030.zip SHA256 6c234a97d8cd38a7c01442536bb0ea049ae5b9c1c5ebb89f9ed02aef5cfdc7fb (171450 bytes), not in GitHub. User archive contains exact file manifest.
