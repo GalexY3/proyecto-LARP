@@ -1,0 +1,11 @@
+# LARP VISION C01 — Apéndice de priors, 2026-10-29
+
+Se añade, no sustituye, al historial docs/02_PRIORS_LARP.md y al ledger research/FINDINGS_1_3/LEDGER.json. No conceder N1 adicional: conocimiento no independiente de LARP-1-005/AB08.
+
+- P-VIS01 (inferencias internas): la coordinación de cinco clases mediante penalización espectral conjunta podría mejorar la reconstrucción frente a optimización por subtipo. C01: MHU_JOINT - SUB_ONLY en MSE normal -0.000012, 30% pérdida +0.000411 (peor), ruido -0.000124, con resultados por imagen heterogéneos. Actualización: sin evidencia de ganancia consistente sobre este fenómeno; no extrapolar a cinco modalidades sensoriales genuinas. Falsador: corpus independiente, geometría nativa y Wei con condiciones equiparadas.
+- P-VIS02 (proxy vs outcome): energía Fourier low-k y error de reconstrucción están relacionados pero no son equivalentes. Joint reduce low-k union a 6.24e-08 vs subtype-only 2.04e-07; no gana en MSE de forma robusta. Actualización: separar formalmente score geométrico del rendimiento downstream.
+- P-VIS03 (heterogeneidad funcional, NO VALIDADA): la disposición MHU podría beneficiar sensores con canales diferentes y correlaciones estructuradas. C01 mide en todos los tipos la MISMA intensidad gris, sin ninguna observación que confirme H. Estado: NO ACTUALIZADO POSITIVAMENTE. Falsador: cinco modalidades funcionales en benchmark nuevo, ablación de fases que mantiene espectros individuales, medición de coste real.
+- P-VIS04 (baseline competente): un sampler PoissonDisk mal parametrizado puede aparentar una ventaja. C01 invalidó todas las observaciones Poisson originales, registró errata tras ver outcomes y reparó posthoc. Actualización: exigir auditoría de cobertura y Poisson fill_space antes de abrir TEST, sin usar el repaired como confirmación.
+- P-VIS05 (originalidad): Wei SIGGRAPH 2010 antecede los multi-class blue noise con sensor imaging; TokenLearner, DynamicViT y ToMe anteceden selección/reducción inteligente de tokens. Conclusión: C01 no acredita 2/3. Próxima ruta requiere diferencia funcional y rival real.
+
+CT2 de nueva rama VISION_C01: 22 al diseño, 17 tras auditoría; escala ordinal NO probabilística, no transferida a otras ramas. N1 nuevos 0; N2/N3 0. R5 STOP_LOCAL hasta fuente de evidencia nueva.
