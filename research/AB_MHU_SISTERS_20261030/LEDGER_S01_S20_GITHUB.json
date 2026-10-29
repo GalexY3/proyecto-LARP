@@ -1,0 +1,973 @@
+{
+  "schema_version": "AB_3_2_1_MHU_SISTERS_20261030",
+  "grant": 20,
+  "completed_deductive": 20,
+  "invalid": 0,
+  "planning": 0,
+  "new_unique_N1": 0,
+  "new_N2": 0,
+  "new_N3": 0,
+  "warning": "Twenty documented mathematical analyses, not twenty independent scientific theorems or experimental validations. Same fixed audit code yielded 20 sanity checks, not distinct blind experiments.",
+  "cycles": [
+    {
+      "id": "S01",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B01_PHASING",
+      "A": {
+        "question": "¿Qué diferencia matemáticamente LOCAL, MHU-v1 y MHU-v2?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "**Resultado:** en el código recuperado, la pérdida es `J_LOCAL=λ L`, `J_MHUv1=λ L+S_w` con `λ=0.15` habitual. Tanto L como S contienen `0.5·(union + mean(types))`. En MHU-v2, cada peso de modo `w(k)` se sustituye por `w(k)/|k|²` y vuelve a normalizarse dentro de cada componente. Para modos con cuadrados de frecuencia `(1,4,9,16)`, el objetivo uniforme les da `(25%,25%,25%,25%)`, mientras que el objetivo inverso al cuadrado da `(70.24%,17.56%,7.80%,4.39%)`. Es un ejemplo de perfil, **no** el espectro real completo del generador 3D.\n\n**Demostración:** sustitución y normalización de pesos positivos; identidad directa del código fuente, no un teorema físico nuevo. **Adversario:** LOCAL puede tener excelentes distancias mínimas sin optimizar explícitamente la energía de los modos escogidos. **J:** distinción entre fines de optimización, no ranking de calidad.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S02",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B01_PHASING",
+      "A": {
+        "question": "¿Cuánta cancelación conjunta permiten las fases relativas?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Para un modo, escribe las contribuciones como `q_c exp(iθ_c)`, `q_c=√f_c·√S_c`. Si sus magnitudes son fijas, el valor máximo de `|Σ q_c exp(iθ_c)|` es `Σq_c` (alinear fases) y el mínimo es `max(0,2 max q_c−Σq_c)` (desigualdad poligonal: si el mayor lado no supera la suma restante, puede cerrarse un polígono). Por tanto el espectro de unión ocupa exactamente el intervalo entre los **cuadrados** de ambos extremos, al permitir variar libremente fases de ese modo.\n\n**Demostración:** desigualdad triangular para cotas; igualdad superior por alineación; igualdad inferior construyendo antiparalelo si domina un segmento, o cerrando un polígono si no. Las traslaciones por especie permiten orientar amplitudes de un modo recíproco en el toro. **Límite:** no se garantiza cancelar SIMULTÁNEAMENTE todos los modos. **J:** las fases son un recurso de optimización real, sin ventaja universal.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S03",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B01_PHASING",
+      "A": {
+        "question": "¿Podemos cancelar todas las parejas de especies sin cancelar cada especie?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Para tres contribuciones complejas `a,b,c`, exigir `a+b=a+c=b+c=0` obliga a `a=b=c=0`, porque `a+b=0` y `a+c=0` implican `b=c=−a` y `b+c=−2a=0`. Esto refuta la existencia de una cancelación exacta en TODAS las uniones de pares de tres especies no nulas en un modo compartido.\n\n**Interpretación:** mantener una unión de cinco impecable no equivale a que todas sus 10 uniones de parejas lo sean. **Límite:** exige las tres parejas de una triple, no solo algunas parejas ni correlaciones promedio. **J:** incompatibilidad combinatoria exacta, sin afirmar que LARP alcance esos límites.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S04",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B01_PHASING",
+      "A": {
+        "question": "¿Qué hace desplazar cada especie independientemente?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Para un modo no nulo `k` y traslaciones uniformes independientes `t_c`, `a_c→a_c exp(2πi k·t_c)`. Se conserva `S_c`, pero para `c≠d` se tiene `E exp(2πi k·(t_c−t_d))=0`. En consecuencia, `E S_total=Σ_c f_c S_c`. El término cruzado desaparece en promedio, pudiendo aumentar el error si las fases originales cancelaban beneficiosamente o reducirlo si se reforzaban.\n\n**Límite:** promedio sobre traslaciones, no resultado determinista para cada movimiento; un modo k=0 no cumple. **J:** conecta directamente con la ablación de fases histórica AB08; no es un nuevo resultado causal neuronal.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S05",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B01_PHASING",
+      "A": {
+        "question": "¿Permiten las proporciones de cinco especies del generador una cancelación exacta?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Con proporciones programadas `(163,85,68,50,34)/400` y factores espectrales por especie iguales `S_c`, las longitudes relativas son `√f_c`. La mayor es `√(163/400)≈0.63836`, menor que la suma de las otras cuatro `≈1.51839`. Por la cota S02 el mínimo conjunto por fases es cero para un modo. **Esto revela compatibilidad algebraica, no demuestra que el generador obtenga tal fase, ni que el valor sea cero en todas las frecuencias.**\n\n**J:** las proporciones desiguales no impiden por sí mismas coordinación espectral fuerte.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S06",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B02_LOCAL_CVT",
+      "A": {
+        "question": "¿Existe un patrón simultáneamente óptimo para todos los tipos y su unión?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "**Sí, bajo presupuestos iguales en un círculo unidimensional.** Si hay `m` clases con `n` puntos cada una, coloca los `mn` puntos de la retícula circular uniforme de paso `1/(mn)` y asigna clases por residuo del índice módulo `m`. Cada clase forma por sí sola una retícula de paso `1/n`. Como un radio de cobertura `r` de n puntos debe cubrir longitud total 1 mediante n arcos de longitud 2r, `r≥1/(2n)`; ambas escalas alcanzan sus respectivas cotas. **Resultado:** un diseño intercalado tiene minimax de cobertura global y de cada tipo simultáneamente. **J:** no hay incompatibilidad inevitable de cobertura en el caso equilibrado 1D.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S07",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B02_LOCAL_CVT",
+      "A": {
+        "question": "¿Qué cambia con presupuestos de tipos desiguales?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "**Existe una obstrucción aritmética.** Si la unión óptima en círculo son N puntos equidistantes, una subespecie de n puntos exactamente equidistantes debe seleccionar puntos a saltos de tamaño `N/n` de la rejilla base; por tanto `N/n` ha de ser un entero. Para N=3 y tipos de tamaños 1 y 2, ninguna pareja de los tres vértices equidistantes es antipodal, así que no pueden ser óptimas a la vez unión y especie de dos puntos. Las cuotas originales con N=400 incluyen 163,85,68,34, que no dividen 400: esa construcción exacta de retícula única no puede cumplir todas las especies a la vez.\n\n**Límite:** es 1D, rejilla óptima y cuotas exactas; NO prohíbe buenos patrones irregulares ni traslada automáticamente una incompatibilidad a 3D. **J:** el desbalance hace relevantes compromisos entre objetivos.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S08",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B02_LOCAL_CVT",
+      "A": {
+        "question": "¿Qué minimiza exactamente CVT en el círculo 1D?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Sea `g_i` la longitud del intervalo entre dos sensores consecutivos, suma de gaps 1. El error de cuantización cuadrático integrado por distancia al punto más próximo en ese intervalo es `∫_0^{g_i} min(t,g_i−t)² dt=g_i³/12`. Globalmente `E=Σg_i³/12≥1/(12n²)` por convexidad de x³, con igualdad en gaps iguales. Por su parte el máximo hueco/cobertura también se minimiza en gaps iguales. **Así la retícula es óptima a la vez para cobertura y cuantización L2 en 1D homogénea.**\n\n**Límite:** no se deduce optimalidad de CVT en 3D o en problemas funcionales de varias modalidades. Antecedente directo: literatura clásica de centroidal Voronoi y cuantización. **J:** rival fuerte con óptimos exactos bajo hipótesis explícitas.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S09",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B02_LOCAL_CVT",
+      "A": {
+        "question": "¿Puede una geometría con espectro baja-k perfecto tener huecos peores?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Sí. Para un número par de puntos `n`, construye `x_j=j/n+(-1)^j ε` módulo 1 con `0<ε<1/(2n)`. Los puntos pares e impares forman sendas retículas de tamaño n/2, cuyas amplitudes se anulan en todo modo entero `1≤|k|<n/2`. Pero los huecos alternan entre `1/n−2ε` y `1/n+2ε`: el radio máximo pasa de `1/(2n)` a `1/(2n)+ε`. **Ejemplo verificado:** con ocho puntos y `ε=.017`, primeras tres potencias espectrales cero dentro de precisión flotante, pero radio máximo `.0795` frente a `.0625` de la rejilla original.\n\n**J:** reducir una banda espectral no garantiza mejor cobertura local, incluso sin ruido ni optimizador imperfecto. Este es un contraejemplo formal al uso de S_low como único indicador de cobertura.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S10",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B02_LOCAL_CVT",
+      "A": {
+        "question": "¿Qué garantía básica ofrece un muestreo IID por especie?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Para n sensores colocados IID uniformemente y una región fija de volumen relativo `v∈[0,1]`, la probabilidad de no encontrar ninguno es `(1−v)^n`. Para `m` especies y `q` consultas/regiones predeterminadas, por unión de eventos adversos, `P(existe región sin algún tipo)≤Σ_c q(1−v)^{n_c}≤mq exp(−n_min v)`. Esto aporta un control probabilístico para disponibilidad de especies, a diferencia de una cobertura minimax determinista.\n\n**Límite:** q regiones fijas antes de observar, no garantiza un continuo infinito de posiciones ni toma en cuenta restricciones repulsivas. **J:** un control IID tiene garantías explícitas, pero no óptimos deterministas.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S11",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B03_FOURIER",
+      "A": {
+        "question": "¿Cuál es el espectro esperado de puntos IID?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Con n puntos IID uniformes sobre el toro, `A(k)=Σ_j exp(2πikx_j)` tiene `E|A|²=Σ_j1+Σ_{i≠j}E exp(ik(x_i−x_j))=n` para k entero distinto de cero. Luego `E S(k)=E|A|²/n=1`. **Consecuencia:** el valor 1 es la referencia de potencia blanca esperada para un conjunto desestructurado, no una cota inferior para todas las geometrías. **J:** confirma el significado de los scores espectrales bajos en LARP.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S12",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B03_FOURIER",
+      "A": {
+        "question": "¿Por qué la retícula puede ser simultáneamente excepcional y peligrosa?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Para los n puntos equiespaciados `x_j=j/n`, la suma geométrica cumple `Σ exp(2πik j/n)=0` cuando `n` NO divide k, y n cuando sí. Así, `S(k)=0` en todos los modos no resonantes y `S(k)=n` en los resonantes (la potencia de amplitud media es 1). **En un problema condicionado a frecuencias no resonantes, vence exactamente; para modos resonantes puede producir aliasing máximo.** No existe orden total de calidad sin distribución de frecuencias de la señal.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S13",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B03_FOURIER",
+      "A": {
+        "question": "¿Qué mejora pretende conseguir MHU-v2 al ponderar por 1/|k|²?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Para un campo estacionario periódico con modos de Fourier no correlacionados, la varianza del error de la media de muestras es una suma de la forma `R(P)=Σ_{k≠0} V_f(k) |a_P(k)|²`, donde `V_f(k)` es la energía esperada de cada modo. Por tanto, minimizar `Σ|k|^{-2}|a_P(k)|²` se alinea exactamente con una familia cuyo espectro tenga `V_f(k)∝|k|^{-2}` dentro de la banda. La ponderación uniforme de v1 se alinea con espectro plano dentro de banda. **No es una prueba de mejora de v2 sin especificar la señal**.\n\n**Límite:** no confundir el perfil del código con la densidad espectral real de fotos o entradas neuronales; la suma puede requerir normalizaciones distintas por especie y dimensión. **J:** garantía de adecuación a una familia de señales, no de supremacía de v2.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S14",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B03_FOURIER",
+      "A": {
+        "question": "¿Cuál es el daño matemático de desplazar sensores aleatoriamente?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Sea `p_j` una nube fija y añade desplazamientos IID `U_j`, con función característica `φ(k)=E exp(2πikU_j)`. Para la amplitud media `a=n^{-1}Σe^{2πik(p_j+U_j)}`, por expansión diagonal/cruzada se demuestra `E|a'|²=|φ|² |a|²+(1−|φ|²)/n`. En convención factor estructura S=n|a|², `E S'=|φ|² S+(1−|φ|²)`. Así aparece un piso de ruido aunque el S original se anule. Ejemplo de dos puntos con desplazamiento ±.12 verifica exactamente ambos lados de la ecuación.\n\n**Límite:** IID de desplazamientos, no errores correlacionados ni cambios de coordenadas globales. **J:** robustez espectral depende del perfil de jitter.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S15",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B03_FOURIER",
+      "A": {
+        "question": "¿Determina la geometría el rendimiento de un grafo neuronal?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "No sin fijar constructor de aristas. Sobre las mismas cuatro coordenadas circulares puede construirse un camino de cuatro vértices con autovalor de Fiedler del Laplaciano combinatorio `2−√2≈.585786`, o un ciclo de cuatro con Fiedler `2`. Ambos conservan coordenadas, pero alteran las aristas (y el presupuesto de conexiones). **Esto prueba no-identificación entre geometría y capacidad de mezcla del grafo; NO que la segunda arquitectura tenga mejor aprendizaje ni que los FLOPs estén igualados.**\n\n**J:** para comparar LOCAL/MHU como red hay que fijar kNN/Delaunay/routing y coste, no basta con espectro de posiciones.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S16",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B04_LABELS",
+      "A": {
+        "question": "¿Cuánta heterocoordinación se obtiene gratis de las proporciones?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Si las etiquetas con cuotas fijas `n_c` se permutan uniformemente entre N posiciones, para cualquiera de las aristas fijas entre dos nodos diferentes, `P(mismo tipo)=Σn_c(n_c−1)/[N(N−1)]`. Por tanto, `P(tipo distinto)=1−Σn_c(n_c−1)/[N(N−1)]`. Para cuotas `(163,85,68,50,34)` el nulo exacto es **0.7388847118** o **73.89%** aristas heterotípicas. Una medición del 85% no debe interpretarse como organización extraordinaria sin descontar que el nulo ya alcanza 74%; tampoco podemos atribuir el residuo al mecanismo MHU sin controlar el grafo.\n\n**Límite:** aristas fijadas previamente y etiquetas aleatorias sin alterar posiciones; con dependencias por posición cambia el nulo. **J:** baseline combinatorio adecuado para LOCAL y otras variantes.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S17",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B04_LABELS",
+      "A": {
+        "question": "¿Puede un patrón unido con S(k)=0 seguir teniendo especies mal distribuidas?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Para N puntos fijos con fases complejas `z_i` de módulo 1 y una especie de n puntos elegidos sin reemplazo, la esperanza exacta del factor de estructura de la especie es `E S_tipo=(N−n)/(N−1)+[(n−1)/(N−1)] S_union`. Se deduce expandiendo los productos y usando probabilidad de inclusión `n(n−1)/(N(N−1))` para cada par distinto. Incluso cuando `S_union=0`, queda **(N−n)/(N−1)>0** si n<N. Ejemplo N=4, n=2, unión cuadrada con S_total=0: `E S_tipo=2/3`.\n\n**J:** imponer espectro bajo únicamente a la unión NO garantiza multihiperuniformidad marcada; las clases deben organizarse también. Relación matemática con S02–S04 y con el experimento `UNION-ONLY`.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S18",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B04_LABELS",
+      "A": {
+        "question": "¿Qué podemos afirmar, de verdad, al añadir un término espectral a LOCAL?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Sea `x_L` un **mínimo global** de `L(x)` y `x_J` un **mínimo global** de `J(x)=λ L(x)+S(x)` con λ>0 en el mismo dominio de geometrías admisibles. De `L(x_L)≤L(x_J)` y `J(x_J)≤J(x_L)` resulta `S(x_J)≤S(x_L)−λ[L(x_J)−L(x_L)]≤S(x_L)`. **Teorema:** frente al mínimo global de LOCAL, el óptimo conjunto no puede mejorar L, pero sí tiene que mejorar/no empeorar S. Es un compromiso de optimización, no una contradicción.\n\n**Límite fundamental:** Adam/L-BFGS-B en un paisaje no convexo NO garantiza mínimos globales, y el término λ local y el conjunto factible tienen que ser idénticos. Esto explica por qué resultados locales empíricos pueden violar un orden que se esperaba de los óptimos matemáticos. **J:** separar comparación de objetivos vs comparación de salidas de algoritmo.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S19",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B04_LABELS",
+      "A": {
+        "question": "¿Qué tipo protege más el objetivo de Scale3D?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "El código aplica `mean(types)` con el mismo coeficiente para los cinco tipos, aunque `n_c` y sus cortes espectrales son diferentes. Frente a un promedio ponderado por cuota de especie `Σf_c S_c`, el peso de un coste individual de especie es `1/5` y su peso proporcional por población sería f_c. El cociente relativo entre la clase de 34 sensores y la de 163 es `(163/34)≈4.7941`. **Es la prioridad relativa de los TÉRMINOS agregados POR TIPO, no 4.79 veces la derivada por sensor ni una ganancia neuronal demostrada.**\n\n**J:** posible sesgo normativo arquitectónico a favor de especies escasas, útil en problemas que exigen presencia de todas las modalidades; perjudicial si el coste real crece con el número de sensores.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    },
+    {
+      "id": "S20",
+      "mode": "AB-R",
+      "status": "RUN_VALID_DEDUCTIVE",
+      "branch": "B04_LABELS",
+      "A": {
+        "question": "¿Qué estabilidad espectral garantiza desplazar poco cada punto?",
+        "estimand": "exact conditional mathematical property of one of the LARP model families"
+      },
+      "B": {
+        "rivals": "negation of frozen proposition, regular lattice/CVT/LOCAL/IID/phase countercase as relevant"
+      },
+      "C": {
+        "proof_or_counterexample": "Si cada punto cambia a lo sumo una distancia δ, para un modo k, `|e^{2πik·(p+Δ)}−e^{2πik·p}|≤2π||k||δ`. Promediando, `|a'_k−a_k|≤b=2π||k||δ`. Como `|a_k|≤1`, el cambio de potencia normalizada satisface `||a'_k|²−|a_k|²|≤2b+b²`. Así las frecuencias bajas son relativamente más estables frente a perturbaciones pequeñas, mientras que la cota crece con frecuencia. No es una garantía de desempeño downstream ni evita efectos de aliasing.\n\n**J:** existe una garantía analítica local de estabilidad del score, condicionada a error posicional pequeño.",
+        "prereg": "PREREG_S01_S20.md"
+      },
+      "D": {
+        "frozen_before_outcome": true,
+        "prereg_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+        "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+        "code_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+        "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      },
+      "E": {
+        "internal_check": "PASS",
+        "check_file_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+      },
+      "F": {
+        "adversarial_caveats": "Assumptions and boundary cases in C and full report; source code changes, finite vs asymptotic, prior art and powerful baselines are not silently collapsed"
+      },
+      "G": {
+        "independent_empirical_replication": false,
+        "independent_formal_proof_assistant": false
+      },
+      "H": {
+        "prior_change": "Clarifies conditional mechanism only; no increase in CT2 without distinct external evidence"
+      },
+      "I": {
+        "grade": "0/3 (known theorem or analytical diagnostic; not scientifically novel 2/3)",
+        "n1_new": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_CYCLE",
+        "r5": "Do not spend future runs on the same algebra or claim neural performance"
+      }
+    }
+  ]
+}
