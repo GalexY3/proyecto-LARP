@@ -1,0 +1,419 @@
+{
+  "schema": "AB_O7_TYPED_GRAPH",
+  "date": "2026-10-30",
+  "warning": "Closed research cycle is not an original theorem or external validation",
+  "nodes": [
+    {
+      "id": "MHU_SISTERS_20",
+      "type": "research_goal",
+      "mode": "AB-R",
+      "state": "closed",
+      "finding_level": 0
+    },
+    {
+      "id": "THEOREM_SCOPE",
+      "type": "assertion",
+      "mode": "AB-R",
+      "state": "answered",
+      "label": "No universal geometric supremacy"
+    },
+    {
+      "id": "B01_PHASES",
+      "type": "branch",
+      "mode": "AB-R",
+      "state": "closed",
+      "github_branch": "research/ab-mhu-phase-theory-20261030",
+      "ct2_before": 24,
+      "ct2_after": 24
+    },
+    {
+      "id": "S01",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S02",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S03",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S04",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S05",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "B02_LOCAL_CVT",
+      "type": "branch",
+      "mode": "AB-R",
+      "state": "closed",
+      "github_branch": "research/ab-local-cvt-geometry-20261030",
+      "ct2_before": 17,
+      "ct2_after": 17
+    },
+    {
+      "id": "S06",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S07",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S08",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S09",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S10",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "B03_FOURIER_GRAPH",
+      "type": "branch",
+      "mode": "AB-R",
+      "state": "closed",
+      "github_branch": "research/ab-sampling-perturbations-20261030",
+      "ct2_before": 15,
+      "ct2_after": 15
+    },
+    {
+      "id": "S11",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S12",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S13",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S14",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S15",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "B04_LABELS_OBJECTIVES",
+      "type": "branch",
+      "mode": "AB-R",
+      "state": "closed",
+      "github_branch": "research/ab-mhu-labels-objectives-20261030",
+      "ct2_before": 21,
+      "ct2_after": 21
+    },
+    {
+      "id": "S16",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S17",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S18",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S19",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    },
+    {
+      "id": "S20",
+      "type": "math_proposition",
+      "mode": "AB-R",
+      "state": "answered",
+      "grade": "0/3",
+      "source": "INFORME_S01_S20.md",
+      "independent_scientific_confirmation": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "MHU_SISTERS_20",
+      "target": "THEOREM_SCOPE",
+      "relation": "answers"
+    },
+    {
+      "source": "MHU_SISTERS_20",
+      "target": "B01_PHASES",
+      "relation": "branches_from"
+    },
+    {
+      "source": "B01_PHASES",
+      "target": "S01",
+      "relation": "tests"
+    },
+    {
+      "source": "B01_PHASES",
+      "target": "S02",
+      "relation": "tests"
+    },
+    {
+      "source": "B01_PHASES",
+      "target": "S03",
+      "relation": "tests"
+    },
+    {
+      "source": "B01_PHASES",
+      "target": "S04",
+      "relation": "tests"
+    },
+    {
+      "source": "B01_PHASES",
+      "target": "S05",
+      "relation": "tests"
+    },
+    {
+      "source": "MHU_SISTERS_20",
+      "target": "B02_LOCAL_CVT",
+      "relation": "branches_from"
+    },
+    {
+      "source": "B02_LOCAL_CVT",
+      "target": "S06",
+      "relation": "tests"
+    },
+    {
+      "source": "B02_LOCAL_CVT",
+      "target": "S07",
+      "relation": "tests"
+    },
+    {
+      "source": "B02_LOCAL_CVT",
+      "target": "S08",
+      "relation": "tests"
+    },
+    {
+      "source": "B02_LOCAL_CVT",
+      "target": "S09",
+      "relation": "tests"
+    },
+    {
+      "source": "B02_LOCAL_CVT",
+      "target": "S10",
+      "relation": "tests"
+    },
+    {
+      "source": "MHU_SISTERS_20",
+      "target": "B03_FOURIER_GRAPH",
+      "relation": "branches_from"
+    },
+    {
+      "source": "B03_FOURIER_GRAPH",
+      "target": "S11",
+      "relation": "tests"
+    },
+    {
+      "source": "B03_FOURIER_GRAPH",
+      "target": "S12",
+      "relation": "tests"
+    },
+    {
+      "source": "B03_FOURIER_GRAPH",
+      "target": "S13",
+      "relation": "tests"
+    },
+    {
+      "source": "B03_FOURIER_GRAPH",
+      "target": "S14",
+      "relation": "tests"
+    },
+    {
+      "source": "B03_FOURIER_GRAPH",
+      "target": "S15",
+      "relation": "tests"
+    },
+    {
+      "source": "MHU_SISTERS_20",
+      "target": "B04_LABELS_OBJECTIVES",
+      "relation": "branches_from"
+    },
+    {
+      "source": "B04_LABELS_OBJECTIVES",
+      "target": "S16",
+      "relation": "tests"
+    },
+    {
+      "source": "B04_LABELS_OBJECTIVES",
+      "target": "S17",
+      "relation": "tests"
+    },
+    {
+      "source": "B04_LABELS_OBJECTIVES",
+      "target": "S18",
+      "relation": "tests"
+    },
+    {
+      "source": "B04_LABELS_OBJECTIVES",
+      "target": "S19",
+      "relation": "tests"
+    },
+    {
+      "source": "B04_LABELS_OBJECTIVES",
+      "target": "S20",
+      "relation": "tests"
+    },
+    {
+      "source": "S02",
+      "target": "S03",
+      "relation": "related_to"
+    },
+    {
+      "source": "S02",
+      "target": "S05",
+      "relation": "related_to"
+    },
+    {
+      "source": "S06",
+      "target": "S07",
+      "relation": "related_to"
+    },
+    {
+      "source": "S08",
+      "target": "S09",
+      "relation": "related_to"
+    },
+    {
+      "source": "S11",
+      "target": "S12",
+      "relation": "related_to"
+    },
+    {
+      "source": "S11",
+      "target": "S13",
+      "relation": "related_to"
+    },
+    {
+      "source": "S11",
+      "target": "S14",
+      "relation": "related_to"
+    },
+    {
+      "source": "S04",
+      "target": "S17",
+      "relation": "related_to"
+    },
+    {
+      "source": "S01",
+      "target": "S18",
+      "relation": "related_to"
+    },
+    {
+      "source": "S01",
+      "target": "S19",
+      "relation": "related_to"
+    },
+    {
+      "source": "S14",
+      "target": "S20",
+      "relation": "related_to"
+    }
+  ]
+}
