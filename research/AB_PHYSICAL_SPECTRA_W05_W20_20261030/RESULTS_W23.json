@@ -1,0 +1,39 @@
+{
+  "prereg_commit": "4e694fff551b9fcd391c0d094137b749c211dae0",
+  "code_freeze_commit": "775d937193df53de6dac609949b24b4602c136df",
+  "code_blob": "b9e55868ef0b7867408582f816ca7d0f99b7e086",
+  "w22_reused_blob": "c6daf40fa5a0ce72e22c00412ea995243e81d1ca",
+  "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+  "cie_blob": "9b4e3f73b4bb412a762a6d03cb8060bfea652a6e",
+  "original_w22_values_reproduced": true,
+  "result": {
+    "id": "W23",
+    "status": "COMPUTED_POST_HOC_MOTIVATED_EXPLORATORY",
+    "original_fixed_xyz_mse": 0.0012029531840972165,
+    "original_greedy_xyz_mse": 0.0012722403574552366,
+    "clipped_fixed_xyz_mse": 0.001232315348149989,
+    "clipped_greedy_xyz_mse": 0.0013045078909762536,
+    "original_relative_greedy_advantage": -0.057597564289268766,
+    "clipped_relative_greedy_advantage": -0.05858284807914105,
+    "original_greedy_better_patches": 8,
+    "clipped_greedy_better_patches": 7,
+    "mean_ranking_reversed": false,
+    "changed_entries_all_24x401": 308,
+    "changed_entries_heldout12x31": 26,
+    "nonfinite_source_values": 0,
+    "source_git_blobs": {
+      "lab": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+      "CIE": "9b4e3f73b4bb412a762a6d03cb8060bfea652a6e",
+      "original_W22_code": "c6daf40fa5a0ce72e22c00412ea995243e81d1ca"
+    },
+    "grade": "0/3",
+    "selection_exposure": "W20_ABOVE_ONE_ALREADY_SEEN",
+    "scientific_replication": false,
+    "caution": [
+      "CLIPPING_IS_NOT_A_CALIBRATION_CORRECTION",
+      "EQUAL_ENERGY_CIE_NOT_MEASURED_APPEARANCE",
+      "SAME_12_HELDOUT_PATCHES_AS_W13_W22",
+      "NO_MHU_NEURAL_EVIDENCE"
+    ]
+  }
+}
