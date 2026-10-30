@@ -1,0 +1,86 @@
+{
+  "campaign": "LARP_ABR_WEI_AUTH_20261030",
+  "date": "2026-10-30",
+  "authorization": {
+    "new_grant": 20,
+    "prior_grant_unspent_kept_separate": 9,
+    "new_grant_executed_exploratory": 2,
+    "new_grant_remaining": 18,
+    "prior_grant_remaining": 9,
+    "invalid_initial_instrumentation_attempts": 1,
+    "planning_only_consumed": 0
+  },
+  "parent_head": "a233bf404e7466552a17c6c74191db0e169a9e4e",
+  "W03": {
+    "status": "EXECUTED_DOCUMENTARY_POST_EXPOSURE_ERRATA_NOT_CONFIRMATORY",
+    "prereg_commit": "cb035778b2b74a1037418b5a3b9b1513e3ca9d0a",
+    "code_commit": "35eef1363a35af875790ecf595d9689b0276f06c",
+    "outcome_commit": "cddd1750fd004cf5e1e797611b5b7c8e40deff32",
+    "frozen_checks_passed": 6,
+    "frozen_checks_total": 8,
+    "known_weak_predicates": [
+      "utility_has_quota_terms",
+      "main_report_counts"
+    ],
+    "source_original": "1iyiwei/noise@0d1be2030518517199dff5c7e7514ee072037d59",
+    "main_uses_clock_seed": true,
+    "library_accepts_explicit_seed": true,
+    "priority_group_target_is_density_based_ceiling": true,
+    "exact_five_quota_runtime_status": "NOT_VERIFIED",
+    "tool_execution": "FROZEN_PREDICATES_APPLIED_INLINE_AGAINST_FETCHED_PRIMARY_TEXT",
+    "clean_clone_verified": false
+  },
+  "W04": {
+    "status": "EXECUTED_TECHNICAL_QA_NOT_WEI",
+    "pre_commit": "83ce863cc8e568378b9b1ab98dc17897d3646f32",
+    "code_commit": "68cf528397aa1abf1662f30ff8ef5a5f2edfcbb5",
+    "tests_commit": "8a9ae0eb8f751853cb4b0a55b3befdeca972e9c6",
+    "gate_git_blob_sha": "9c066fbdd4a1f6f06be16207722ff99a5f3ac483",
+    "test_git_blob_sha": "8b1292b876c0e9ff05b3546eb63725eb5990a36b",
+    "tested_local_git_blobs_equal_to_frozen": true,
+    "python_unittest_tests": 7,
+    "python_unittest_pass": 7,
+    "time_sec_log_reported": 0.004,
+    "fixtures": [
+      "valid_400",
+      "short_n",
+      "class_imbalance_same_n",
+      "nan_coordinate",
+      "out_of_bounds",
+      "illegal_class",
+      "bad_column_count"
+    ],
+    "actual_weirun": false,
+    "independent_empirical_data": false,
+    "quota_policy": [
+      163,
+      85,
+      68,
+      50,
+      34
+    ],
+    "side": 20,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0
+  },
+  "evidence": {
+    "math_CT2_before": 24,
+    "math_CT2_after": 24,
+    "functional_CT2_before": 18,
+    "functional_CT2_after": 18,
+    "new_2_3": false,
+    "new_3_3": false,
+    "external_replication": false,
+    "R5": "STOP_LOCAL: no repeat old N400 synthetic tasks; authentic Wei executable and external data missing",
+    "blocked_by": [
+      "original Windows wei-build.log not supplied",
+      "no real compiled Wei executable",
+      "31-band optical scene data not loaded"
+    ],
+    "GitHub_repo_publicly_reported": true,
+    "new_original_geometry_private_data_published": false,
+    "CI_launched": false,
+    "main_merged": false
+  }
+}
