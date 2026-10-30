@@ -1,0 +1,304 @@
+{
+  "status": "EXECUTED_POST_SHA_CORRECTION_PRE_OUTCOMES",
+  "prereg_commit": "7dbd6fa76b814bbac6643a7029da93c0c67b1c8b",
+  "initial_invalid_code_commit": "3673e12c0b28f8e60be7ba6cd8b9f5b4891606ed",
+  "errata_commit": "30206922301094fba25bebb3ec4280079b9f6a53",
+  "code_freeze_commit": "b7c9704956b5976ec7f27c70f85db238e8409b42",
+  "code_blob": "cfa30dd016f2e1ce05c56048d30171088162a5c8",
+  "result": {
+    "protocol": "R01_HSI_SPARSE_GEOMETRY_QA",
+    "upstream_repo": "szkymm/Gra_Desi",
+    "upstream_commit": "8157f619f11bef20564067d55450c53120d1a712",
+    "upstream_license_scope": "README_ASSERTS_GPL3_FOR_PROJECT_BUT_RAW_SPECTRAL_DATA_RIGHTS_NOT_CONFIRMED",
+    "coordinate_origin": "image_tag.py: HSV green segmentation + contour centroid, then obtain_reflectance.py extracts values from original image at those selected centers",
+    "scenes": [
+      {
+        "scene_id": "1722",
+        "git_blob": "b5ab7469b273213cbf800870738f6e73a708287e",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 61,
+        "valid_finite_points": 61,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          82,
+          465
+        ],
+        "y_range": [
+          45,
+          441
+        ],
+        "bbox_area_pixels": 152448,
+        "observed_occupancy_within_bbox": 0.0004001364399664148,
+        "median_nearest_sample_distance_pixels": 23.769728648009426,
+        "bands_checked_cells": 12444,
+        "negative_band_values": 0,
+        "above_one_band_values": 12,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1723",
+        "git_blob": "74c1026341b8c28d9fbb168127e89b233e28c8e8",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 61,
+        "valid_finite_points": 61,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          100,
+          454
+        ],
+        "y_range": [
+          46,
+          442
+        ],
+        "bbox_area_pixels": 140935,
+        "observed_occupancy_within_bbox": 0.00043282364210451624,
+        "median_nearest_sample_distance_pixels": 22.022715545545243,
+        "bands_checked_cells": 12444,
+        "negative_band_values": 0,
+        "above_one_band_values": 0,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1724",
+        "git_blob": "ea8e7b0e65e68218b2c4fcb307438955f4d08c7c",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 60,
+        "valid_finite_points": 60,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          103,
+          502
+        ],
+        "y_range": [
+          126,
+          480
+        ],
+        "bbox_area_pixels": 142000,
+        "observed_occupancy_within_bbox": 0.00042253521126760566,
+        "median_nearest_sample_distance_pixels": 25.01999200639361,
+        "bands_checked_cells": 12240,
+        "negative_band_values": 0,
+        "above_one_band_values": 3,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1725",
+        "git_blob": "d965d15025ac1594952b1620fed5627ab46de2f7",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 60,
+        "valid_finite_points": 60,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          73,
+          494
+        ],
+        "y_range": [
+          94,
+          444
+        ],
+        "bbox_area_pixels": 148122,
+        "observed_occupancy_within_bbox": 0.0004050714951188885,
+        "median_nearest_sample_distance_pixels": 24.351591323771842,
+        "bands_checked_cells": 12240,
+        "negative_band_values": 0,
+        "above_one_band_values": 130,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1726",
+        "git_blob": "877d9cf02fbfad9f98eb6cdf21c066c26820f10c",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 60,
+        "valid_finite_points": 60,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          103,
+          502
+        ],
+        "y_range": [
+          126,
+          480
+        ],
+        "bbox_area_pixels": 142000,
+        "observed_occupancy_within_bbox": 0.00042253521126760566,
+        "median_nearest_sample_distance_pixels": 25.01999200639361,
+        "bands_checked_cells": 12240,
+        "negative_band_values": 0,
+        "above_one_band_values": 52,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1727",
+        "git_blob": "864a65a5960435227dcfb9d033089cde15062842",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 60,
+        "valid_finite_points": 60,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          109,
+          499
+        ],
+        "y_range": [
+          126,
+          479
+        ],
+        "bbox_area_pixels": 138414,
+        "observed_occupancy_within_bbox": 0.0004334821622090251,
+        "median_nearest_sample_distance_pixels": 24.17579566188592,
+        "bands_checked_cells": 12240,
+        "negative_band_values": 0,
+        "above_one_band_values": 23,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1728",
+        "git_blob": "5802465683f2616c87eaa9c6ef3819d787328107",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 60,
+        "valid_finite_points": 60,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          109,
+          499
+        ],
+        "y_range": [
+          126,
+          479
+        ],
+        "bbox_area_pixels": 138414,
+        "observed_occupancy_within_bbox": 0.0004334821622090251,
+        "median_nearest_sample_distance_pixels": 24.17579566188592,
+        "bands_checked_cells": 12240,
+        "negative_band_values": 0,
+        "above_one_band_values": 159,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1729",
+        "git_blob": "15ce357543777fdd9a50b0a6723a6bd19f3c840b",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 60,
+        "valid_finite_points": 60,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          49,
+          452
+        ],
+        "y_range": [
+          101,
+          470
+        ],
+        "bbox_area_pixels": 149480,
+        "observed_occupancy_within_bbox": 0.0004013914905004014,
+        "median_nearest_sample_distance_pixels": 25.96150997149434,
+        "bands_checked_cells": 12240,
+        "negative_band_values": 0,
+        "above_one_band_values": 57,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      },
+      {
+        "scene_id": "1730",
+        "git_blob": "bfb836529be7958476353093085677f629d95f7e",
+        "bands": 204,
+        "physical_source": "REPORTED_2D_IMAGE_EXTRACTED_CENTROIDS",
+        "raw_data_lines": 60,
+        "valid_finite_points": 60,
+        "malformed": 0,
+        "nonfiniteRows": 0,
+        "duplicateIds": 0,
+        "duplicateXY": 0,
+        "badCoordinate": 0,
+        "x_range": [
+          45,
+          466
+        ],
+        "y_range": [
+          99,
+          470
+        ],
+        "bbox_area_pixels": 156984,
+        "observed_occupancy_within_bbox": 0.0003822045558783061,
+        "median_nearest_sample_distance_pixels": 27.459060435491963,
+        "bands_checked_cells": 12240,
+        "negative_band_values": 0,
+        "above_one_band_values": 208,
+        "eligible_for_original_N400_with_400_unique_observed_pixels": false
+      }
+    ],
+    "totals": {
+      "scenes": 9,
+      "valid_finite_points": 542,
+      "scenes_with_400_unique_observed_pixels": 0,
+      "passed_original_N400_parity_gate": false,
+      "scenes_204bands": 9,
+      "all_scene_ids_checked": [
+        "1722",
+        "1723",
+        "1724",
+        "1725",
+        "1726",
+        "1727",
+        "1728",
+        "1729",
+        "1730"
+      ]
+    },
+    "evidence_boundary": [
+      "NOT_FULL_2D_HSI_CUBE",
+      "NON_RANDOM_CONTOUR_SELECTED_POINTS",
+      "NO_ORIGINAL_WEI_RUN",
+      "NO_MHU_LOCAL_CVT_GEOMETRY_COMPARE",
+      "NO_RAW_SPECTRAL_DATA_REPUBLISHED"
+    ],
+    "recommendation": "STOP_HSI_SPARSE_FOR_N400_PARITY",
+    "grade": "0/3",
+    "CT2_math_before_after": [
+      24,
+      24
+    ],
+    "CT2_functional_before_after": [
+      18,
+      18
+    ]
+  }
+}
