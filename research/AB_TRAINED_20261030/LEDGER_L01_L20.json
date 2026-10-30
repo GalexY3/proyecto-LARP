@@ -1,0 +1,2373 @@
+{
+  "date": "2026-10-30",
+  "grant": 20,
+  "completed_condition_cycles": 20,
+  "invalid_scientific_cycles": 0,
+  "incomplete_runs_documented": 1,
+  "new_unique_N1": 0,
+  "N2": 0,
+  "N3": 0,
+  "dependent_design": true,
+  "cycles": [
+    {
+      "id": "L01",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "low",
+        "shift": "clean",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.3999229187640947,
+          "cvt_knn": 0.18743178791093748,
+          "mhu_knn": 0.3578287277149232,
+          "grid_type": 0.21733950145270617,
+          "cvt_type": 0.12153012363245316,
+          "mhu_type": 0.19157060782186197,
+          "grid_learned": 0.8352185838556647,
+          "cvt_learned": 0.7762510526720525,
+          "mhu_learned": 0.798165785935372
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.021914733263319497,
+        "primary_delta_mhu_type_minus_cvt_type": 0.07004048418940881
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L02",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "low",
+        "shift": "drop20",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.47427394331982453,
+          "cvt_knn": 0.3127488025787482,
+          "mhu_knn": 0.4384382889564377,
+          "grid_type": 0.35265061704548484,
+          "cvt_type": 0.2618215651760094,
+          "mhu_type": 0.33063824978898904,
+          "grid_learned": 0.8775846628902108,
+          "cvt_learned": 0.8414632388390243,
+          "mhu_learned": 0.8468471816061357
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.005383942767111405,
+        "primary_delta_mhu_type_minus_cvt_type": 0.06881668461297963
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L03",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "low",
+        "shift": "rare_drop40",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.43843380333095316,
+          "cvt_knn": 0.2439013108826393,
+          "mhu_knn": 0.38575020458458914,
+          "grid_type": 0.28788628187737736,
+          "cvt_type": 0.19851405397235322,
+          "mhu_type": 0.24868484541481575,
+          "grid_learned": 0.8545136918009077,
+          "cvt_learned": 0.8075560797342278,
+          "mhu_learned": 0.8097940185846281
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.002237938850400245,
+        "primary_delta_mhu_type_minus_cvt_type": 0.05017079144246253
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L04",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "low",
+        "shift": "noise15",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.41959233732528467,
+          "cvt_knn": 0.2124539112530655,
+          "mhu_knn": 0.3757566246552955,
+          "grid_type": 0.23971083837340704,
+          "cvt_type": 0.14733937979950618,
+          "mhu_type": 0.2122944519061046,
+          "grid_learned": 0.8431779819796775,
+          "cvt_learned": 0.7838915988182865,
+          "mhu_learned": 0.802260264809063
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.018368665990776467,
+        "primary_delta_mhu_type_minus_cvt_type": 0.06495507210659843
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L05",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "high",
+        "shift": "clean",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.679876379533933,
+          "cvt_knn": 0.5299584397639061,
+          "mhu_knn": 0.6727173628548564,
+          "grid_type": 0.7430111766437019,
+          "cvt_type": 0.5442737786866566,
+          "mhu_type": 0.7250886553496345,
+          "grid_learned": 0.9636631520452222,
+          "cvt_learned": 0.9308182576104185,
+          "mhu_learned": 0.9659464185664205
+        },
+        "winner": "cvt_knn",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.03512816095600202,
+        "primary_delta_mhu_type_minus_cvt_type": 0.1808148766629779
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L06",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "high",
+        "shift": "drop20",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.7328932227988799,
+          "cvt_knn": 0.6359601184922212,
+          "mhu_knn": 0.7319772892144669,
+          "grid_type": 0.7904371734863405,
+          "cvt_type": 0.653254292869156,
+          "mhu_type": 0.7766398095221039,
+          "grid_learned": 0.9821428195678757,
+          "cvt_learned": 0.965217898110769,
+          "mhu_learned": 0.9842702841173142
+        },
+        "winner": "cvt_knn",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.01905238600654524,
+        "primary_delta_mhu_type_minus_cvt_type": 0.12338551665294784
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L07",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "high",
+        "shift": "rare_drop40",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.6885982916655499,
+          "cvt_knn": 0.5520250630073026,
+          "mhu_knn": 0.6864246491452235,
+          "grid_type": 0.75192437784314,
+          "cvt_type": 0.564271760651441,
+          "mhu_type": 0.7323583157743393,
+          "grid_learned": 0.9641561136241092,
+          "cvt_learned": 0.9320459048826798,
+          "mhu_learned": 0.9668741200475872
+        },
+        "winner": "cvt_knn",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.03482821516490742,
+        "primary_delta_mhu_type_minus_cvt_type": 0.16808655512289827
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L08",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "high",
+        "shift": "noise15",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.6879117952868828,
+          "cvt_knn": 0.5430013766603932,
+          "mhu_knn": 0.6851644030444893,
+          "grid_type": 0.7500499176417589,
+          "cvt_type": 0.5567215393159196,
+          "mhu_type": 0.733843855405384,
+          "grid_learned": 0.9645187343437197,
+          "cvt_learned": 0.9322261933483829,
+          "mhu_learned": 0.9687021328346523
+        },
+        "winner": "cvt_knn",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.03647593948626948,
+        "primary_delta_mhu_type_minus_cvt_type": 0.17712231608946438
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L09",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "correlated",
+        "shift": "clean",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.03370144111505322,
+          "cvt_knn": 0.019285884898487097,
+          "mhu_knn": 0.02490610644221656,
+          "grid_type": 0.032930826010567724,
+          "cvt_type": 0.018061282899410572,
+          "mhu_type": 0.02715485172933594,
+          "grid_learned": 0.029234044806634482,
+          "cvt_learned": 0.020536280117801804,
+          "mhu_learned": 0.029322894042799516
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.008786613924997713,
+        "primary_delta_mhu_type_minus_cvt_type": 0.009093568829925368
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L10",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "correlated",
+        "shift": "drop20",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.052705518768818724,
+          "cvt_knn": 0.052550598340090994,
+          "mhu_knn": 0.03964389739688486,
+          "grid_type": 0.09779151177759798,
+          "cvt_type": 0.07721526916308476,
+          "mhu_type": 0.08342906695404559,
+          "grid_learned": 0.05190260714311683,
+          "cvt_learned": 0.06799851595779646,
+          "mhu_learned": 0.050300492583987604
+        },
+        "winner": "mhu_knn",
+        "primary_delta_mhu_learned_minus_cvt_learned": -0.01769802337380886,
+        "primary_delta_mhu_type_minus_cvt_type": 0.006213797790960832
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L11",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "correlated",
+        "shift": "rare_drop40",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.036450581878453854,
+          "cvt_knn": 0.020645435236558565,
+          "mhu_knn": 0.027194018692879622,
+          "grid_type": 0.04526402807021149,
+          "cvt_type": 0.031175405216454087,
+          "mhu_type": 0.03574517243941924,
+          "grid_learned": 0.03229534879812423,
+          "cvt_learned": 0.023036751436379354,
+          "mhu_learned": 0.03215921359899302
+        },
+        "winner": "cvt_knn",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.009122462162613667,
+        "primary_delta_mhu_type_minus_cvt_type": 0.004569767222965156
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L12",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "correlated",
+        "shift": "noise15",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.04065769709133343,
+          "cvt_knn": 0.02524689568356875,
+          "mhu_knn": 0.0320256046675885,
+          "grid_type": 0.038262836142608066,
+          "cvt_type": 0.023253845350905914,
+          "mhu_type": 0.033034023422118926,
+          "grid_learned": 0.03555745574983281,
+          "cvt_learned": 0.02622598078058855,
+          "mhu_learned": 0.03558434508221824
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.009358364301629691,
+        "primary_delta_mhu_type_minus_cvt_type": 0.009780178071213012
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L13",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "anticorrelated",
+        "shift": "clean",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.08184039100799867,
+          "cvt_knn": 0.05941641773555547,
+          "mhu_knn": 0.07343812446991743,
+          "grid_type": 0.07153032404828918,
+          "cvt_type": 0.058044950906433364,
+          "mhu_type": 0.06463026021940732,
+          "grid_learned": 0.07391769923108911,
+          "cvt_learned": 0.05658146863500225,
+          "mhu_learned": 0.07135747756066547
+        },
+        "winner": "cvt_learned",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.014776008925663227,
+        "primary_delta_mhu_type_minus_cvt_type": 0.006585309312973957
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L14",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "anticorrelated",
+        "shift": "drop20",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.11291973128505835,
+          "cvt_knn": 0.09917078079009727,
+          "mhu_knn": 0.09859190053537367,
+          "grid_type": 0.1366031332505246,
+          "cvt_type": 0.11009117676816316,
+          "mhu_type": 0.11977251305093468,
+          "grid_learned": 0.10906954637379915,
+          "cvt_learned": 0.09997684042841232,
+          "mhu_learned": 0.10304085077485572
+        },
+        "winner": "mhu_knn",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.0030640103464434076,
+        "primary_delta_mhu_type_minus_cvt_type": 0.009681336282771527
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L15",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "anticorrelated",
+        "shift": "rare_drop40",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.0862131896749776,
+          "cvt_knn": 0.06323431119042812,
+          "mhu_knn": 0.07835252457918618,
+          "grid_type": 0.08566261658241253,
+          "cvt_type": 0.07384611661236859,
+          "mhu_type": 0.07904775631212402,
+          "grid_learned": 0.07922577233477426,
+          "cvt_learned": 0.06282479789117225,
+          "mhu_learned": 0.07644160466558736
+        },
+        "winner": "cvt_learned",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.01361680677441511,
+        "primary_delta_mhu_type_minus_cvt_type": 0.005201639699755428
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L16",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "anticorrelated",
+        "shift": "noise15",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.08856690549394013,
+          "cvt_knn": 0.06528661876205263,
+          "mhu_knn": 0.08012647722019199,
+          "grid_type": 0.0765248939561216,
+          "cvt_type": 0.06353541944989326,
+          "mhu_type": 0.06982988799269117,
+          "grid_learned": 0.07972258671573972,
+          "cvt_learned": 0.06216772330828325,
+          "mhu_learned": 0.07740244394506697
+        },
+        "winner": "cvt_learned",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.015234720636783723,
+        "primary_delta_mhu_type_minus_cvt_type": 0.006294468542797915
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L17",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "localized",
+        "shift": "clean",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.4277938318249605,
+          "cvt_knn": 0.22770440199824826,
+          "mhu_knn": 0.404180936026868,
+          "grid_type": 0.28138132797873816,
+          "cvt_type": 0.17256984871349565,
+          "mhu_type": 0.2710571726643332,
+          "grid_learned": 0.8196973946150105,
+          "cvt_learned": 0.7953662161251325,
+          "mhu_learned": 0.831949784563296
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.03658356843816357,
+        "primary_delta_mhu_type_minus_cvt_type": 0.09848732395083756
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L18",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "localized",
+        "shift": "drop20",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.508717054456582,
+          "cvt_knn": 0.35394998552112344,
+          "mhu_knn": 0.4871613181288035,
+          "grid_type": 0.4113962607261596,
+          "cvt_type": 0.31707126567713473,
+          "mhu_type": 0.3960245641845177,
+          "grid_learned": 0.8570337135400081,
+          "cvt_learned": 0.8405129906263267,
+          "mhu_learned": 0.8658472653669727
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.02533427474064598,
+        "primary_delta_mhu_type_minus_cvt_type": 0.07895329850738297
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L19",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "localized",
+        "shift": "rare_drop40",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.45405885609662733,
+          "cvt_knn": 0.2708828046801977,
+          "mhu_knn": 0.43614648719919163,
+          "grid_type": 0.33565387109767675,
+          "cvt_type": 0.23583989424280016,
+          "mhu_type": 0.32649150815590144,
+          "grid_learned": 0.8246271630738474,
+          "cvt_learned": 0.8048292174467215,
+          "mhu_learned": 0.832208171646747
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.02737895420002545,
+        "primary_delta_mhu_type_minus_cvt_type": 0.09065161391310128
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    },
+    {
+      "id": "L20",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC_CONDITION",
+      "grade": "0/3",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "A": {
+        "estimand": "heldout normalized MSE per field seed and geometry for five-mode distributed sensing",
+        "context": "localized",
+        "shift": "noise15",
+        "primary_unit": "synthetic field seed, not 400 node positions"
+      },
+      "B": {
+        "rivals": [
+          "grid_knn",
+          "cvt_knn",
+          "mhu_knn",
+          "grid_type",
+          "cvt_type",
+          "mhu_type",
+          "grid_learned",
+          "cvt_learned",
+          "mhu_learned"
+        ],
+        "hypothesis": "task-supervised router vs fixed-nearest and class-covered; finite MHU proxy vs CVT/grid"
+      },
+      "C": {
+        "preregister": "PREREG_L01_L20.md",
+        "predeclared_pairings": [
+          [
+            "mhu_type",
+            "cvt_type"
+          ],
+          [
+            "mhu_learned",
+            "cvt_learned"
+          ],
+          [
+            "mhu_learned",
+            "mhu_type"
+          ],
+          [
+            "mhu_type",
+            "mhu_knn"
+          ],
+          [
+            "cvt_type",
+            "cvt_knn"
+          ]
+        ],
+        "geometry_seeds": [
+          3011,
+          3023
+        ],
+        "heldout_field_seeds": [
+          52101,
+          52102,
+          52103,
+          52104,
+          52105,
+          52106,
+          52107,
+          52108,
+          52109,
+          52110,
+          52111,
+          52112,
+          52113,
+          52114,
+          52115,
+          52116
+        ]
+      },
+      "D": {
+        "freeze_code_sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+        "freeze_wrapper_sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+        "resource_errata": "ERRATA_RESOURCE_CAP.md"
+      },
+      "E": {
+        "all_nmse": {
+          "grid_knn": 0.4405732037421285,
+          "cvt_knn": 0.2449242746664926,
+          "mhu_knn": 0.41521578293507505,
+          "grid_type": 0.3025521555020099,
+          "cvt_type": 0.19316889015715163,
+          "mhu_type": 0.2883817709419088,
+          "grid_learned": 0.8280023289073645,
+          "cvt_learned": 0.8023777339591935,
+          "mhu_learned": 0.8372282323272866
+        },
+        "winner": "cvt_type",
+        "primary_delta_mhu_learned_minus_cvt_learned": 0.034850498368093064,
+        "primary_delta_mhu_type_minus_cvt_type": 0.09521288078475718
+      },
+      "F": {
+        "adversarial": "Same synthetic source and shared field seeds; graph design training cost differs; geometry families are proxies; long edges on learned graph; no actual trained MoE, no new external baseline implementation."
+      },
+      "G": {
+        "replay": "IDENTICAL_AFTER_ELAPSED_SEC_REMOVAL",
+        "external_replication": false,
+        "holdout": "new_field_seeds_same_generating_process"
+      },
+      "H": {
+        "updated_prior": "MHU geometric spectral criterion not transferred to superior learned network performance; learned correlation graph overfits and takes longer edges in this finite scenario."
+      },
+      "I": {
+        "internal_status": "VALID_WITHIN_SIMULATOR",
+        "causal_external": "NONE",
+        "novelty": "NOT_ORIGINAL",
+        "information_parity": "Same 1 scalar/sensor + six incoming edges; learned graph has additional supervised training and edge length not matched"
+      },
+      "J": {
+        "decision": "STOP_LOCAL_FOR_THIS_GENERATOR",
+        "next_evidence": "native LARP NPZ and real five-channel dataset; compare learned graph attention strong baseline before novelty claim"
+      }
+    }
+  ]
+}

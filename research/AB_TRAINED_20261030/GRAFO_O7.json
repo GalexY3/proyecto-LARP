@@ -1,0 +1,370 @@
+{
+  "parent": "research/ab-r-functional-routing-20261030",
+  "project": "GalexY3/proyecto-LARP",
+  "branch": "research/ab-r-native-trained-20261030",
+  "nodes": [
+    {
+      "id": "BRANCH_LOW",
+      "type": "conditional_task_family",
+      "state": "explored",
+      "new_discovery_level": 0
+    },
+    {
+      "id": "L01",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L02",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L03",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L04",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "BRANCH_HIGH",
+      "type": "conditional_task_family",
+      "state": "explored",
+      "new_discovery_level": 0
+    },
+    {
+      "id": "L05",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L06",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L07",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L08",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "BRANCH_CORRELATED",
+      "type": "conditional_task_family",
+      "state": "explored",
+      "new_discovery_level": 0
+    },
+    {
+      "id": "L09",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L10",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L11",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L12",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "BRANCH_ANTICORRELATED",
+      "type": "conditional_task_family",
+      "state": "explored",
+      "new_discovery_level": 0
+    },
+    {
+      "id": "L13",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L14",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L15",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L16",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "BRANCH_LOCALIZED",
+      "type": "conditional_task_family",
+      "state": "explored",
+      "new_discovery_level": 0
+    },
+    {
+      "id": "L17",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L18",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L19",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "L20",
+      "type": "AB_R_synthetic_condition",
+      "state": "completed",
+      "n2": 0
+    },
+    {
+      "id": "NATIVE_400_BENCHMARK",
+      "type": "gate",
+      "state": "blocked_by_binary_access"
+    },
+    {
+      "id": "LEARNED_CORRELATION_ROUTER",
+      "type": "hypothesis",
+      "state": "locally_disfavored_against_type_routing"
+    }
+  ],
+  "edges": [
+    {
+      "source": "BRANCH_LOW",
+      "target": "L01",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_LOW",
+      "target": "L02",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_LOW",
+      "target": "L03",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_LOW",
+      "target": "L04",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_HIGH",
+      "target": "L05",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_HIGH",
+      "target": "L06",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_HIGH",
+      "target": "L07",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_HIGH",
+      "target": "L08",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_CORRELATED",
+      "target": "L09",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_CORRELATED",
+      "target": "L10",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_CORRELATED",
+      "target": "L11",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_CORRELATED",
+      "target": "L12",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_ANTICORRELATED",
+      "target": "L13",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_ANTICORRELATED",
+      "target": "L14",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_ANTICORRELATED",
+      "target": "L15",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_ANTICORRELATED",
+      "target": "L16",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_LOCALIZED",
+      "target": "L17",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_LOCALIZED",
+      "target": "L18",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_LOCALIZED",
+      "target": "L19",
+      "relation": "contains"
+    },
+    {
+      "source": "BRANCH_LOCALIZED",
+      "target": "L20",
+      "relation": "contains"
+    },
+    {
+      "source": "L01",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L02",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L03",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L04",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L05",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L06",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L07",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L08",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L09",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L10",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L11",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L12",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L13",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L14",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L15",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L16",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L17",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L18",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L19",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    },
+    {
+      "source": "L20",
+      "target": "LEARNED_CORRELATION_ROUTER",
+      "relation": "adversarial_result"
+    }
+  ],
+  "version": "AB_O7_TYPED_GRAPH_LARP_TRAINED"
+}

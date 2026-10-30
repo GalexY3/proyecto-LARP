@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-30",
+  "scope": "L01-L20 finite synthetic trained graph experiment; not native LARP geometry",
+  "code_frozen_github": true,
+  "clean_clone_verified": false,
+  "artifacts": [
+    {
+      "archive_path": "original_cells/cell_3011_anticorrelated.json",
+      "sha256": "3e2f1b24f40cbc2ccfec2a31691983a7511174cb6c9b032862f4aaa956f8fae2",
+      "size": 88828
+    },
+    {
+      "archive_path": "original_cells/cell_3011_correlated.json",
+      "sha256": "0baa60e90cb13b73e42159e1802e0362586e01ada0239c63b1282d0d34808867",
+      "size": 86713
+    },
+    {
+      "archive_path": "original_cells/cell_3011_high.json",
+      "sha256": "d04e7e26115b2aec1cacdba2792212564dacfe44038512bfa29e3356b9487722",
+      "size": 82292
+    },
+    {
+      "archive_path": "original_cells/cell_3011_localized.json",
+      "sha256": "12f79f02c51239af13712eaa69639a6a371caf7afa1923d89b79510406652972",
+      "size": 85456
+    },
+    {
+      "archive_path": "original_cells/cell_3011_low.json",
+      "sha256": "4fad0fbdd23044d7eb0e622e86e0d1d2c5ed6e277263723cecb840719887a882",
+      "size": 81895
+    },
+    {
+      "archive_path": "original_cells/cell_3023_anticorrelated.json",
+      "sha256": "bdd20d20e93db1ca7b070ef82c5b73369408ba378bdf1818ac3cef4d76332384",
+      "size": 88835
+    },
+    {
+      "archive_path": "original_cells/cell_3023_correlated.json",
+      "sha256": "ab1aa7fc4a063a91a0922f439fc8a6f4b92d4f5e47ceca5b9583c49da2ed4b20",
+      "size": 86679
+    },
+    {
+      "archive_path": "original_cells/cell_3023_high.json",
+      "sha256": "34bcfd6e80777cfbe5f3ac73ed184f0b79bcdaa29848efe34b67f12ac5a419e9",
+      "size": 82212
+    },
+    {
+      "archive_path": "original_cells/cell_3023_localized.json",
+      "sha256": "72f3b979f113727abc23b76455c0ef3eaf98b5a9a05541a53a32cbf809845da2",
+      "size": 85401
+    },
+    {
+      "archive_path": "original_cells/cell_3023_low.json",
+      "sha256": "b91964ebb5163b24613658f60c2faf42be841cdcd96204f5a0d42467b81987e2",
+      "size": 81906
+    },
+    {
+      "archive_path": "local_replay/cell_3011_anticorrelated.json",
+      "sha256": "a87fdd87994a491a5b5a692b76aa2ec9df91146e2dbb3127916b609376087a7f",
+      "size": 88828
+    },
+    {
+      "archive_path": "local_replay/cell_3011_correlated.json",
+      "sha256": "c1dcc2db2a504c310fa0181333e8ea7e6877a6e1626c3dbb2ada1ce73b352312",
+      "size": 86712
+    },
+    {
+      "archive_path": "local_replay/cell_3011_high.json",
+      "sha256": "3bc57156f0a899a72a134850f94196efa8a3b24de043b839baae8b2d6a214633",
+      "size": 82292
+    },
+    {
+      "archive_path": "local_replay/cell_3011_localized.json",
+      "sha256": "fdaced49daad1bc32ee8c9671dd993c0539ff6a9a5b203048f9c191bd164e5a6",
+      "size": 85455
+    },
+    {
+      "archive_path": "local_replay/cell_3011_low.json",
+      "sha256": "769ddc32d61f6c2264f07767e5fbc06f516e53e3b015b6dc845c141fb0ea506d",
+      "size": 81895
+    },
+    {
+      "archive_path": "local_replay/cell_3023_anticorrelated.json",
+      "sha256": "d587ef7529af2b704d49942f8c905a574323a9f38f2a377a107164099826a4dd",
+      "size": 88834
+    },
+    {
+      "archive_path": "local_replay/cell_3023_correlated.json",
+      "sha256": "cc3818bacae7fc29f1eeb3fde5ed6407b78b22a09f8dc217d9fdbda83c54d74e",
+      "size": 86680
+    },
+    {
+      "archive_path": "local_replay/cell_3023_high.json",
+      "sha256": "da64b8cedc4cbdd37c5166c742cd7459cf5ca788424bfe781565cf299ac0bb41",
+      "size": 82211
+    },
+    {
+      "archive_path": "local_replay/cell_3023_localized.json",
+      "sha256": "c0d6faf8568f5604eea1726f79b55a0f8bdabdf407e17e34f1fd23a0fd216e33",
+      "size": 85400
+    },
+    {
+      "archive_path": "local_replay/cell_3023_low.json",
+      "sha256": "f209124b1405e8aaa1be63342cf5d75a55cce0d0ed193e9f30bb818ffa17d34f",
+      "size": 81905
+    },
+    {
+      "archive_path": "portable_replay/cell_3011_low.json",
+      "sha256": "2c9aa31ea8662112706c0862813570d29f7704c4ca88725222d262b4832f7894",
+      "size": 81895
+    },
+    {
+      "archive_path": "docs/PREREG_L01_L20.md",
+      "sha256": "7ff0831b90594684fe4e9c9c6b5a1c76d51a366fe8fc0bd1528892b1fa87b502",
+      "size": 8950
+    },
+    {
+      "archive_path": "docs/ERRATA_RESOURCE_CAP.md",
+      "sha256": "2a81f644bf7416a53b2f583112a107788f25c3a325c945a64a79e705a8764783",
+      "size": 1539
+    },
+    {
+      "archive_path": "docs/ERRATA_PORTABILITY.md",
+      "sha256": "9ef548fe7ae081a29409f07623151acccf66a776b13b76e5e6fa1c19861a176c",
+      "size": 1388
+    },
+    {
+      "archive_path": "docs/audit_build.py",
+      "sha256": "686843317fa45bf11ab5fd7df44751894a2109d0bec4a3ec3138179f215b32fe",
+      "size": 8267
+    },
+    {
+      "archive_path": "docs/build_report.py",
+      "sha256": "75bb8435123fa86259a11671b20bb83ec77a9f7b3d6afdccdcb2c80840630803",
+      "size": 14513
+    },
+    {
+      "archive_path": "docs/audit.json",
+      "sha256": "fc10aae008dd2d56da8eae3f3d011b91c88aef4294c07c550d900c3e5759c930",
+      "size": 13572
+    },
+    {
+      "archive_path": "docs/LEDGER_L01_L20.json",
+      "sha256": "ae60c104bfdcba6a5a278e47b809f5697d726b0c263d7e2cac8f16dd352d304e",
+      "size": 75224
+    },
+    {
+      "archive_path": "docs/DICTAMEN_L01_L20.md",
+      "sha256": "28525bd8547d32d73b2836958a12a8940128c46d0d45039ebbd4b4f1f316503d",
+      "size": 9853
+    },
+    {
+      "archive_path": "docs/PRIORS_DELTA.md",
+      "sha256": "22f629dffef96736a38c93cdc40204dd7c8e3f612c0625b87cbaf14f4759d0a5",
+      "size": 1437
+    },
+    {
+      "archive_path": "docs/CURRENT.md",
+      "sha256": "255c4d0afc914a4de122bee922a88786adc149f87b72236cd71da8ad06a6ce7f",
+      "size": 1469
+    },
+    {
+      "archive_path": "docs/README.md",
+      "sha256": "11f6ea1061a396b8fb67cd38594f2cf9ae878ee6021aecab7e5c15e9245a7ad9",
+      "size": 1372
+    },
+    {
+      "archive_path": "docs/GRAFO_O7.json",
+      "sha256": "24fdccf235a5d69a6768504834a05ac69b671f81e2322c0c33d1121c3b57ce9f",
+      "size": 7940
+    },
+    {
+      "archive_path": "docs/method_means.csv",
+      "sha256": "8477462670eea3cb52b4635b769f42bb46aa8d24730516ef74511fd6967c56b8",
+      "size": 458
+    },
+    {
+      "archive_path": "docs/per_condition.csv",
+      "sha256": "21e390502d8b1b211c4429e6e41be7ed604af2d2a734063756c2b20cf033f0af",
+      "size": 9177
+    },
+    {
+      "archive_path": "docs/paired_conditions.csv",
+      "sha256": "a4424427a32a6fb9257855f445bb056b25f4b2c4cbd6da2dab24e8eb9566280f",
+      "size": 6279
+    },
+    {
+      "archive_path": "docs/geometry_means.csv",
+      "sha256": "6a02abcf67a2bb169494cc5f043048f308f030fa475f6f49596f8b02d36c30ea",
+      "size": 404
+    },
+    {
+      "archive_path": "docs/training_diagnostics.csv",
+      "sha256": "e423e299859a77ca3759948b25feea6acef74292f825798eee002f766c2819ef",
+      "size": 4725
+    },
+    {
+      "archive_path": "docs/all_predictions.csv",
+      "sha256": "45d4930b94f990b922b10f81481ec8592e528c69f81e9a11e8582abe30907b60",
+      "size": 356015
+    },
+    {
+      "archive_path": "docs/run1.log",
+      "sha256": "59dad0ef4c870e31d376608fe9078a12e30c10a200def9938e9390bc13180416",
+      "size": 80
+    },
+    {
+      "archive_path": "docs/NMSE_METHODS_TRAINED.png",
+      "sha256": "b74204d328b5d1bc877b391efc65355cd142c43e669d4369ce5a0d33aed59730",
+      "size": 100846
+    },
+    {
+      "archive_path": "docs/CT2_full.png",
+      "sha256": "4df3842d043f30829a73549be0acb8285c0ee9c1e4d81c598cc46c8ec82db26a",
+      "size": 29941
+    },
+    {
+      "archive_path": "docs/CT2_zoom.png",
+      "sha256": "ee007a57d8bd4dd9fc20028e2e069029af2347e00b42628807a71493e5453723",
+      "size": 30519
+    },
+    {
+      "archive_path": "code/ab30_functional.py",
+      "sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+      "size": 10212
+    },
+    {
+      "archive_path": "code/learned_followup.py",
+      "sha256": "320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031",
+      "size": 8244
+    },
+    {
+      "archive_path": "docs/run_one_cell.py",
+      "sha256": "4291e004a747718b0d30f3ca28d4a7dd8175960adee336c8ab56af55ccf6f634",
+      "size": 3453
+    },
+    {
+      "archive_path": "code/run_one_cell_portable.py",
+      "sha256": "9e7ea38268650fa7a95c0718c4f02140715d5390a83c2a4c30613a8a677ca8da",
+      "size": 3427
+    }
+  ]
+}
