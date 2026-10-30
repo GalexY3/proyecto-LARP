@@ -1,3 +1,5 @@
+> **WIP · Trabajo en curso.** Consulta el estado y los límites de cada informe antes de reutilizar resultados.
+
 # LARP — laboratorio de investigación
 
 **Estado (23 de octubre de 2026):** programa exploratorio abierto. La hipótesis inicial MHU (multihiperuniformidad) **no tiene una ventaja computacional específica confirmada**. Tras varios contrastes adversariales, el programa permite DRIFT hacia selección de información, decisiones bajo incertidumbre y monitorización del riesgo. No se ha acreditado ningún descubrimiento interno de nivel 2/3.
