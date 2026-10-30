@@ -1,0 +1,6 @@
+# W02 E01 — Errata obligatoria por error del autor antes de interpretar resultados
+Fecha: 2026-10-30. Pre-reg 235c532ae9d5aa0528834139a0018612c67368ed. Código congelado inicial 58e930b0f2edafeb0aba2caac100625fea72acc3, blob 764b40495b9f717ed1db4130a06a50fa0f1c4c17. CMake 3.31.6, g++ 14.2.0, Linux.
+**PRE-REPAIR invalid:** los 3 brazos pasaron CMake CONFIG (exit=0); todos fallaron compilación (exit=2) porque el fuente C++ sintético empezó por `# W02 synthetic source, NOT Wei` en vez de `// W02...`. Error común del instrumento, no de Wei ni efecto de versión de CMake. NO interpretar como fallo CMake ni como fallo auténtico Wei.
+El brazo legacy_no_flag emitió advertencia de obsolescencia CMake <3.10; legacy_policy_flag emitió esa advertencia y además `Manually-specified variables were not used by the project: CMAKE_POLICY_VERSION_MINIMUM` en CMake 3.31.6. No equivale a que la política funcione o no en CMake 4.
+**REPAIR tras exposición:** cambiar exactamente una línea en SOURCE (comentario), mantener intactos los 3 brazos y todos los endpoints; ejecutar una sola vez con código nuevo congelado, guardar pre y post; etiquetar POST_EXPOSURE_REPAIR_EXPLORATORY. La reparación no contará como nueva prueba independiente ni validación científica.
+La prueba genuina de Wei y su Windows CMake log siguen NO_VERIFICADOS; R5 STOP_LOCAL permanece.
