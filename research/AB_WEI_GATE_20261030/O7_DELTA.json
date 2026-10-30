@@ -1,0 +1,55 @@
+{
+  "batch": "LARP_WEI_20261030",
+  "root": "LARP",
+  "source_branch": "research/ab-r-wei-source-gate-20261030",
+  "edges": [
+    {
+      "from": "LARP_NATIVE_N400",
+      "to": "LARP_WEI_GATE",
+      "type": "depends_on"
+    },
+    {
+      "from": "LARP_WEI_GATE",
+      "to": "W01",
+      "type": "tests"
+    },
+    {
+      "from": "LARP_WEI_GATE",
+      "to": "W02",
+      "type": "tests"
+    },
+    {
+      "from": "LARP_WEI_GATE",
+      "to": "REAL_HYPERSPECTRAL",
+      "type": "depends_on"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "LARP_WEI_GATE",
+      "mode": "AB-R",
+      "status": "blocked",
+      "reason": "No authentic Wei binary or original Windows failure log"
+    },
+    {
+      "id": "W01",
+      "mode": "AB-R",
+      "status": "refuted",
+      "reason": "Original checker false-negative, not a substantive source claim"
+    },
+    {
+      "id": "W02",
+      "mode": "AB-R",
+      "status": "answered",
+      "reason": "Synthetic CMake gate only; post-exposure repair; no Wei experiment"
+    },
+    {
+      "id": "REAL_HYPERSPECTRAL",
+      "mode": "AB-R",
+      "status": "proposed",
+      "reason": "Harvard candidate primary source; samples not acquired or verified"
+    }
+  ],
+  "evidence_grade": "0/3",
+  "note": "Stand-alone partial delta, not applied to canonical Atlas; no invalid referential claims of merge."
+}
