@@ -33,13 +33,14 @@ Rama: research/ab-r-native-recovery-20261030
 ```powershell
 & {
   $ErrorActionPreference = 'Stop'
-  if (-not (Get-Command winget -ErrorAction SilentlyContinue)) { throw 'Necesitas winget (Administrador de aplicaciones de Windows).' }
   if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+    if (-not (Get-Command winget -ErrorAction SilentlyContinue)) { throw 'Para instalar Git automaticamente, falta winget.' }
     winget install --id Git.Git --exact --silent --accept-package-agreements --accept-source-agreements
     if ($LASTEXITCODE -ne 0) { throw 'No se pudo instalar Git.' }
     $env:Path += ';' + (Join-Path $env:ProgramFiles 'Git\cmd')
   }
   if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
+    if (-not (Get-Command winget -ErrorAction SilentlyContinue)) { throw 'Para instalar GitHub CLI automaticamente, falta winget.' }
     winget install --id GitHub.cli --exact --silent --accept-package-agreements --accept-source-agreements
     if ($LASTEXITCODE -ne 0) { throw 'No se pudo instalar GitHub CLI.' }
     $env:Path += ';' + (Join-Path $env:ProgramFiles 'GitHub CLI')
