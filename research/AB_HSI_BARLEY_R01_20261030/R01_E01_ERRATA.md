@@ -1,0 +1,5 @@
+# R01 E01 — integridad SHA, intento inválido sin exposición a resultados
+
+Prereg `7dbd6fa76b814bbac6643a7029da93c0c67b1c8b`; programa original `3673e12c0b28f8e60be7ba6cd8b9f5b4891606ed`, Git blob `c925f4a822b26e9f3375436cb1817ec789960b4f`.
+**Fallo**: el verificador abortó con SOURCE_SHA_OR_SCENE_SET_MISMATCH **antes de empezar el cálculo** porque los Git SHA de escenas 1723 y 1730 fueron copiados truncados (39 caracteres) del listado previo. Fuente sha correcto 1723 `74c1026341b8c28d9fbb168127e89b233e28c8e8`, 1730 `bfb836529be7958476353093085677f629d95f7e`. No se analizaron resultados ni se generaron estadísticas: **INVALID_INSTRUMENTATION**, 0 ciclo válido consumido.
+**Reparación pre-outcomes**: cambiar solo dos literales SHA de 39 a 40 caracteres, sin tocar ninguna condición ni fórmula ni selección de escenas. Crear archivo nuevo R01_DATA_GATE_REPAIRED.js, comprometer SHA antes de volver a cargar las nueve tablas completas. Contrato A–J inicial intacto; error conservado en lugar de sobreescribir. No usar este intento como validación científica.
