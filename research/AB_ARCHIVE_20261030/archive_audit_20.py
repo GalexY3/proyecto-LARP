@@ -167,7 +167,7 @@ def c04_audit():
 check('A16','C04 cluster bootstrap was reported as descriptive and has complete contrasts',c04_audit)
 
 def formal_math():
- r=get('M','AUDITORIA_M01_M18.json');assert_true(isinstance(r,dict) and len(r)==18 and all(v['verified'] for v in r.values()))
+ r=get('M','AUDITORIA_M01_M18.json')['tests'];assert_true(isinstance(r,dict) and len(r)==18 and all(v['verified'] for v in r.values()))
  return {'recorded_checks':len(r),'all_true':True,'source_verifier_sha256':hashlib.sha256(read('M','auditoria_formal.py')).hexdigest()}
 check('A17','Formal M01–M18 recorded mathematical checker is 18/18 true',formal_math)
 
