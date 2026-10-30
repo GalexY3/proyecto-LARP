@@ -1,0 +1,3386 @@
+{
+  "status": "EXECUTED_PRE_OUTCOME_FROZEN_CODE_REAL_AVIRIS",
+  "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+  "source_manifest_commit": "4c4dc612655b3e9b7ac0f6c9d779e04712a293e7",
+  "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+  "frozen_code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+  "source_git_blob": "0ed4500533a7c27e479944ce01996e676cabff1d",
+  "source_repo_commit": "7b334bb459c5e91c5667e146a56548983b166bb2",
+  "n_original_native": 6,
+  "n_estimands": 15,
+  "runtime_seconds_approx": 39.605,
+  "code_run_type": "GitHub-fetched frozen JavaScript evaluated on text Git blob; no native Wei binary",
+  "results": {
+    "schema": "AB_IP15_REAL_2D_HSI_V1",
+    "source_manifest": "SOURCE_MANIFEST_PRE_OUTCOME.json",
+    "scene": "AVIRIS_IndianPines_145x145x220",
+    "prior_claims": "ONE_REAL_SCENE_15_DEPENDENT_ESTIMANDS_NOT_15_INDEPENDENT_REPLICATIONS",
+    "source_metadata": {
+      "pixels": 21025,
+      "spectral_bands": 220,
+      "channels_tested": [
+        20,
+        60,
+        90,
+        130,
+        190
+      ],
+      "sample_quota": [
+        163,
+        85,
+        68,
+        50,
+        34
+      ],
+      "test_pixels_common": 4289,
+      "gt_test_categories": 9,
+      "grid_map": "X_OUTER_Y_INNER",
+      "source_git_blob": "0ed4500533a7c27e479944ce01996e676cabff1d"
+    },
+    "input_integrity": {
+      "rows": 21025,
+      "columns": 223,
+      "spectral_bands": 220,
+      "finite_band_cells": 4625500,
+      "zero_band_cells": 0,
+      "negative_band_cells": 0,
+      "max_abs_band_value": 9604,
+      "label_counts": [
+        10659,
+        54,
+        1434,
+        834,
+        234,
+        497,
+        747,
+        26,
+        489,
+        20,
+        968,
+        2468,
+        614,
+        212,
+        1294,
+        380,
+        95
+      ],
+      "physical_scene": "INDIAN_PINES_AVIRIS_1992_145X145",
+      "row_major": "X_OUTER_Y_INNER",
+      "raw_source_git_blob": "0ed4500533a7c27e479944ce01996e676cabff1d"
+    },
+    "geometric_mapping": [
+      {
+        "seed": 1101,
+        "method": "MHU",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1101,
+        "method": "LOCAL",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1101,
+        "method": "RANDOM",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1101,
+        "method": "CVT",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1102,
+        "method": "MHU",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1102,
+        "method": "LOCAL",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1102,
+        "method": "RANDOM",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1102,
+        "method": "CVT",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1103,
+        "method": "MHU",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1103,
+        "method": "LOCAL",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1103,
+        "method": "RANDOM",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      },
+      {
+        "seed": 1103,
+        "method": "CVT",
+        "initial_collisions": 0,
+        "total_shift_pixels": 0,
+        "max_shift_pixels": 0,
+        "moved_points": 0,
+        "quota_actual": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "average_shift_pixels": 0
+      }
+    ],
+    "judge": {
+      "NN1": {
+        "ranked_methods": [
+          "LOCAL",
+          "MHU",
+          "CVT",
+          "RANDOM"
+        ],
+        "MHU_vs_LOCAL_mean": 1.0164154156503318,
+        "paired_MHU_win_count": 0
+      },
+      "IDW4": {
+        "ranked_methods": [
+          "LOCAL",
+          "MHU",
+          "CVT",
+          "RANDOM"
+        ],
+        "MHU_vs_LOCAL_mean": 1.0034816345276134,
+        "paired_MHU_win_count": 1
+      },
+      "IDW8": {
+        "ranked_methods": [
+          "MHU",
+          "LOCAL",
+          "CVT",
+          "RANDOM"
+        ],
+        "MHU_vs_LOCAL_mean": 0.9973366166944931,
+        "paired_MHU_win_count": 2
+      },
+      "GAUSS": {
+        "ranked_methods": [
+          "MHU",
+          "LOCAL",
+          "CVT",
+          "RANDOM"
+        ],
+        "MHU_vs_LOCAL_mean": 0.9963746424714963,
+        "paired_MHU_win_count": 2
+      },
+      "BUDGET200": {
+        "ranked_methods": [
+          "MHU",
+          "LOCAL",
+          "CVT",
+          "RANDOM"
+        ],
+        "MHU_vs_LOCAL_mean": 0.9913310659485671,
+        "paired_MHU_win_count": 2
+      },
+      "BUDGET100": {
+        "ranked_methods": [
+          "LOCAL",
+          "MHU",
+          "RANDOM",
+          "CVT"
+        ],
+        "MHU_vs_LOCAL_mean": 1.0316854175731254,
+        "paired_MHU_win_count": 1
+      },
+      "PLACEBO": {
+        "ranked_methods": [
+          "CVT",
+          "RANDOM",
+          "LOCAL",
+          "MHU"
+        ],
+        "MHU_vs_LOCAL_mean": 1.0002098304454166,
+        "paired_MHU_win_count": 1
+      }
+    },
+    "run": [
+      {
+        "seed": 1101,
+        "method": "MHU",
+        "metric": {
+          "NN1": {
+            "normalized": 0.013798577887567007,
+            "raw": 132398.88025180696,
+            "n": 21445,
+            "perType": [
+              0.02435770414642328,
+              0.008445108578681583,
+              0.0077361712280411355,
+              0.02210195940394371,
+              0.006351946080745188
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.009684735443296563,
+            "raw": 94992.54989964936,
+            "n": 21445,
+            "perType": [
+              0.017639899854655132,
+              0.006210244473505919,
+              0.005787426008628583,
+              0.01405572254217667,
+              0.004730384337516286
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.009358784096639533,
+            "raw": 92272.56429978607,
+            "n": 21445,
+            "perType": [
+              0.017497525624904503,
+              0.005815041078449381,
+              0.005364682469020758,
+              0.013482564328116824,
+              0.00463410698270635
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.011089250564443372,
+            "raw": 116360.7016420472,
+            "n": 21445,
+            "perType": [
+              0.024862057461767763,
+              0.005884113571898919,
+              0.005072434692709382,
+              0.014736605554781306,
+              0.004891041541059521
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.012251328612704858,
+            "raw": 115349.05859603728,
+            "n": 21445,
+            "perType": [
+              0.021037501841599915,
+              0.007764519187305918,
+              0.006343133813892672,
+              0.019212131534557912,
+              0.006899356686167654
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.015355734090895653,
+            "raw": 153190.42931454108,
+            "n": 21445,
+            "perType": [
+              0.030909173619098444,
+              0.008242208638610185,
+              0.006800016101776388,
+              0.025355032382200108,
+              0.00547223971279322
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.022101723420891485,
+            "raw": 236130.19998207164,
+            "n": 21445,
+            "perType": [
+              0.052993254733204744,
+              0.010984052287386206,
+              0.007112035656559546,
+              0.02860726626955993,
+              0.010812008157747629
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011489457350301548,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.007880854898485879,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010816677156674658,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.008484833732717438,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010816677156674658
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.00840535487807975
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.00944058043310631
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.010441207160968352
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.013621135518324029
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.007457042656228759
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.008619778983279314
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.006313599882615953
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.002397707761808482
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.0026601574012448826
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.0036923189043221844
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.006627300732683177
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.01172725477566673
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.028611287280206794
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.005591628970502318
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.020551066828471725
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.021072996263031316
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1101,
+        "method": "LOCAL",
+        "metric": {
+          "NN1": {
+            "normalized": 0.013600135767008328,
+            "raw": 134590.8096992306,
+            "n": 21445,
+            "perType": [
+              0.02585334952128048,
+              0.00852419705848096,
+              0.007782507773072193,
+              0.01779542158914182,
+              0.008045202893065493
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.009774428378158295,
+            "raw": 97657.35419044082,
+            "n": 21445,
+            "perType": [
+              0.018592525465424704,
+              0.006670891488400404,
+              0.00545429394698552,
+              0.012722935581945009,
+              0.005431495408036071
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.009453180120036061,
+            "raw": 94997.77910367848,
+            "n": 21445,
+            "perType": [
+              0.018292579915302178,
+              0.006429495582976036,
+              0.005126832242010095,
+              0.012195439601297672,
+              0.005221553258594295
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.011188094921021671,
+            "raw": 118480.48303865732,
+            "n": 21445,
+            "perType": [
+              0.025120101444319733,
+              0.006545254923004975,
+              0.005201899707338222,
+              0.013916945522606838,
+              0.005156273007838734
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.012354798983616353,
+            "raw": 130173.81067032155,
+            "n": 21445,
+            "perType": [
+              0.026658740567946725,
+              0.007301827164074869,
+              0.007415075291417028,
+              0.014348961079669612,
+              0.006049390814973558
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.014192788866088985,
+            "raw": 153121.22729846105,
+            "n": 21445,
+            "perType": [
+              0.033602984328088545,
+              0.008461516441080412,
+              0.005732447093687208,
+              0.015410770298162506,
+              0.0077562261694265056
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.02237323615653709,
+            "raw": 232561.2011077713,
+            "n": 21445,
+            "perType": [
+              0.0516425844906525,
+              0.010201791734537842,
+              0.007544322115628113,
+              0.030430372345728058,
+              0.012047110096139789
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011389842599319711,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.008159767263859957,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010260955387403892,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.009258691053756334,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010260955387403892
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.006129428847396448
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.011237569769158219
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.015604318481384358
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.012968942496624645
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.005345988148846252
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.00945793527277845
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.009119954493368138
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.0033282349414864385
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.008346886351812677
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.005227341735965296
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.006620141741821526
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.014359256977289096
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.027086758179579718
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.005315586427443337
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.02041153009264668
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.01095144307151294
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1101,
+        "method": "RANDOM",
+        "metric": {
+          "NN1": {
+            "normalized": 0.014718110055281812,
+            "raw": 147673.49368151085,
+            "n": 21445,
+            "perType": [
+              0.029522822500141797,
+              0.00869123044660334,
+              0.007173199543573052,
+              0.02089510081623151,
+              0.0073081969698596235
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.010702961244382988,
+            "raw": 106030.14673843083,
+            "n": 21445,
+            "perType": [
+              0.020622676028551862,
+              0.006513560730787556,
+              0.00595729544409156,
+              0.014016497570917967,
+              0.006404776447565985
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.010203830956942881,
+            "raw": 100887.5062806926,
+            "n": 21445,
+            "perType": [
+              0.019675207281679926,
+              0.006118129583774231,
+              0.005669949732292853,
+              0.013303435621971747,
+              0.006252432564995385
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.01138497702334467,
+            "raw": 116246.54717197084,
+            "n": 21445,
+            "perType": [
+              0.024164709056312263,
+              0.006334197229297374,
+              0.005393090256277591,
+              0.01465076952397835,
+              0.006382119050857797
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.012312756422612509,
+            "raw": 128290.16569360958,
+            "n": 21445,
+            "perType": [
+              0.026163397747498113,
+              0.00784892110439717,
+              0.006268243566928949,
+              0.015090925607098545,
+              0.006192294087139515
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.01286735482053498,
+            "raw": 134460.84623095038,
+            "n": 21445,
+            "perType": [
+              0.02706145827467237,
+              0.008801652898102601,
+              0.006657018060260581,
+              0.015248879611155024,
+              0.006567765258484723
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.021785180177934727,
+            "raw": 232592.00639618936,
+            "n": 21445,
+            "perType": [
+              0.052242286609051315,
+              0.01076883070053497,
+              0.006745752856134326,
+              0.0289973116576068,
+              0.010171719066346004
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011913226553998726,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.009493260161018827,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010427357708211531,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.010995111582678138,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010427357708211531
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.004985665754368134
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.01278718637292448
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.02473342301238913
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.017428350678872693
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.0074749650270384315
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.00928133943032965
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.007855486369055855
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.0087007073299487
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.006367981383240394
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.007094761055314962
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.007511389831339672
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.011735287253602112
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.02222634197399802
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.006130393088001831
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.014870043680830532
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.045247836273730975
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1101,
+        "method": "CVT",
+        "metric": {
+          "NN1": {
+            "normalized": 0.013630930395113438,
+            "raw": 131665.30020983913,
+            "n": 21445,
+            "perType": [
+              0.0250059041101005,
+              0.00802001685026715,
+              0.007711418463378589,
+              0.01917091729741232,
+              0.008246395254407958
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.010075830180422737,
+            "raw": 99149.1368581638,
+            "n": 21445,
+            "perType": [
+              0.018825278667747247,
+              0.006407737465269816,
+              0.005557660215752466,
+              0.014295630591092746,
+              0.005292843962251051
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.009748270555561997,
+            "raw": 95768.97122063774,
+            "n": 21445,
+            "perType": [
+              0.01832942719548279,
+              0.006129259437169265,
+              0.005125207471878218,
+              0.013991546065524907,
+              0.005165912607755231
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.01135991838924264,
+            "raw": 119142.27668881112,
+            "n": 21445,
+            "perType": [
+              0.025441469184258013,
+              0.006338972854453688,
+              0.004981853808256232,
+              0.014504607211203575,
+              0.0055326888880418
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.012096079008073449,
+            "raw": 115680.17634218092,
+            "n": 21445,
+            "perType": [
+              0.023000858865521223,
+              0.006078705269127002,
+              0.006195161494694391,
+              0.016573186930923446,
+              0.00863248248010103
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.015078738733082884,
+            "raw": 157897.19775085233,
+            "n": 21445,
+            "perType": [
+              0.03585987820558708,
+              0.006460987214493474,
+              0.005578940953618261,
+              0.01842182283044002,
+              0.00907206446127533
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.021520730906895255,
+            "raw": 232826.27885907222,
+            "n": 21445,
+            "perType": [
+              0.05282132178264661,
+              0.009869496823410673,
+              0.007908991816341021,
+              0.026764530507979226,
+              0.010239313604099003
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011342108988167983,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.008810141712447844,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010511013212051216,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.009614519445166083,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010511013212051216
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.0050358241154301545
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.011027755584943726
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.012434923639832394
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.018656681763104796
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.004993194280171625
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.009517361812123256
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.007290300527840583
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.006438917924654315
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.004828632148422582
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.004073264250969918
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.007808471059208353
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.011815475741822063
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.029462548844003532
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.008516811577885634
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.018316394062911554
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.011994635353124223
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1102,
+        "method": "MHU",
+        "metric": {
+          "NN1": {
+            "normalized": 0.013926891566163401,
+            "raw": 133054.72608999768,
+            "n": 21445,
+            "perType": [
+              0.02560255921310195,
+              0.008538555921684274,
+              0.006445140753620362,
+              0.019655832749508138,
+              0.009392369192902079
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.009682355522089193,
+            "raw": 90976.31102466826,
+            "n": 21445,
+            "perType": [
+              0.01642195031178552,
+              0.006563224404126829,
+              0.005111083094546789,
+              0.013791573374360478,
+              0.00652394642562635
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.00923508723176377,
+            "raw": 87295.65321661778,
+            "n": 21445,
+            "perType": [
+              0.01590505122837289,
+              0.006190655592223292,
+              0.00488907462882172,
+              0.013048963885683777,
+              0.006141690823717455
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.011037167024006365,
+            "raw": 113682.48908571237,
+            "n": 21445,
+            "perType": [
+              0.024081942154128125,
+              0.006123477517103765,
+              0.004798821363713082,
+              0.01389197146419393,
+              0.006289622620892997
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.011738122479712839,
+            "raw": 114502.30614187439,
+            "n": 21445,
+            "perType": [
+              0.022104469656865355,
+              0.00785234699615698,
+              0.005486814762398576,
+              0.01523177902070728,
+              0.008015201962436238
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.013592017865321564,
+            "raw": 132304.56292901008,
+            "n": 21445,
+            "perType": [
+              0.026179742167483006,
+              0.008018384370943345,
+              0.006201956861776263,
+              0.018824749064916817,
+              0.008735256861488697
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.02274259003022162,
+            "raw": 240373.9523886655,
+            "n": 21445,
+            "perType": [
+              0.053337428466411416,
+              0.012114892646199868,
+              0.006795484791597656,
+              0.029438368998951907,
+              0.012026775247946962
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.01124147540299479,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.008123962503599006,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.009927009731749455,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.009423012659111179,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.009927009731749455
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.0030005308679990164
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.010487605734739306
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.015732620342631787
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.01863150631492354
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.004106146724048724
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.006099875469654817
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.007327825932942339
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.004230277062310618
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.004611251703179784
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.006017417438790923
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.007232200011738338
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.01405514518598625
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.016615703605521837
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.011212876023368358
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.011566002556229924
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.01286734810143477
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1102,
+        "method": "LOCAL",
+        "metric": {
+          "NN1": {
+            "normalized": 0.013687959439245369,
+            "raw": 135704.1599440429,
+            "n": 21445,
+            "perType": [
+              0.02609638080271537,
+              0.008823116607624932,
+              0.00790102560053966,
+              0.01664395689583917,
+              0.008975317289507886
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.009680555979804469,
+            "raw": 94989.71811948666,
+            "n": 21445,
+            "perType": [
+              0.017859139936863444,
+              0.006210508577917197,
+              0.005876094415025353,
+              0.01243496059899767,
+              0.006022076370218896
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.009332341015977212,
+            "raw": 92067.83500532921,
+            "n": 21445,
+            "perType": [
+              0.017527440168648916,
+              0.005889513976827607,
+              0.005526378633632164,
+              0.012066074746815376,
+              0.0056522975539619325
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.01110151333068687,
+            "raw": 117785.18320714364,
+            "n": 21445,
+            "perType": [
+              0.02543948358894995,
+              0.006066176606214768,
+              0.005097789883524995,
+              0.013303448853321864,
+              0.005600667721422746
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.01240388067550059,
+            "raw": 123678.56992239207,
+            "n": 21445,
+            "perType": [
+              0.024022813864011398,
+              0.007370660540974085,
+              0.007231848104807396,
+              0.016820867988419985,
+              0.006573212879289988
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.014464668384058691,
+            "raw": 148979.79249774409,
+            "n": 21445,
+            "perType": [
+              0.029471386814779996,
+              0.009400309809832925,
+              0.008242068580524889,
+              0.017868145524631444,
+              0.007341431190523966
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.022655946664277317,
+            "raw": 231890.35303164407,
+            "n": 21445,
+            "perType": [
+              0.05051012645844514,
+              0.01143073381158585,
+              0.0066567824424031904,
+              0.03261938984601529,
+              0.012062700762936682
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011585559750569824,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.007776440322685228,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010664592762711906,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.008637439178710992,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010664592762711906
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.003362413234652672
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.007393781305014594
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.010486802915764367
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.014211560238713297
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.007863671724398905
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.008997199332328312
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.0035494915471874664
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.004634007138713716
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.019523304126492523
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.004630050377459994
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.006326497046383817
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.012915710767102866
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.02683505355608548
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.007465119366593303
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.02123984056406941
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.016615766639524358
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1102,
+        "method": "RANDOM",
+        "metric": {
+          "NN1": {
+            "normalized": 0.015149967163873432,
+            "raw": 136831.37868967126,
+            "n": 21445,
+            "perType": [
+              0.02462027574271161,
+              0.0078743518118288,
+              0.008455062115834524,
+              0.025552058633839594,
+              0.009248087515152636
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.01155052579688826,
+            "raw": 104548.36571973143,
+            "n": 21445,
+            "perType": [
+              0.019275137959613397,
+              0.005690506832169003,
+              0.006237046909100007,
+              0.019035965980960513,
+              0.007513971302598382
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.010966689439709507,
+            "raw": 100407.66294977242,
+            "n": 21445,
+            "perType": [
+              0.018772523205993923,
+              0.005593366437802814,
+              0.005611062572435118,
+              0.017860719948856487,
+              0.006995775033459421
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.012197926268302005,
+            "raw": 118757.00251942486,
+            "n": 21445,
+            "perType": [
+              0.024224640285576818,
+              0.0061109917297339335,
+              0.005335661560960148,
+              0.01816106078609426,
+              0.007157276979144693
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.014412270892947755,
+            "raw": 135598.700981251,
+            "n": 21445,
+            "perType": [
+              0.02639257513605097,
+              0.00819441681911569,
+              0.005815339286246696,
+              0.022403038240276524,
+              0.009255984983048996
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.017446362804749847,
+            "raw": 168328.29024971847,
+            "n": 21445,
+            "perType": [
+              0.03453471198453172,
+              0.009208883744985104,
+              0.005880836823681095,
+              0.0274796532420611,
+              0.010127728228489969
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.022149286250121657,
+            "raw": 230582.84156322715,
+            "n": 21445,
+            "perType": [
+              0.050955221720806174,
+              0.010935455201357372,
+              0.006594796472115799,
+              0.03121848989627619,
+              0.011042467960052703
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.012662514098419664,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.01043905590482148,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.012893728295975366,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.010126679535848285,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.012893728295975366
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.005284781838173996
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.007928311957247613
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.01396396630281563
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.013336888550436798
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.016029121843303015
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.008643946224694044
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.010530876454366421
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.008239042098679938
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.014879017366334995
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.0033453007602053915
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.006330522496950197
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.013259104766975748
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.01943793142684222
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.013038427392590838
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.026606817005637374
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.010199802306761693
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1102,
+        "method": "CVT",
+        "metric": {
+          "NN1": {
+            "normalized": 0.014106043451439006,
+            "raw": 140301.39496386104,
+            "n": 21445,
+            "perType": [
+              0.02692779372259774,
+              0.009006843009047711,
+              0.007722420524247192,
+              0.019730550691395038,
+              0.007142609309906716
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.010166747775023076,
+            "raw": 99973.60895305789,
+            "n": 21445,
+            "perType": [
+              0.01874806113447262,
+              0.006473309708070755,
+              0.0058288613424443865,
+              0.014960993581860203,
+              0.00482251310826744
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.009722462188896268,
+            "raw": 95840.08182551026,
+            "n": 21445,
+            "perType": [
+              0.018147113889901128,
+              0.006141546093139361,
+              0.0054334511841950634,
+              0.014191245661273048,
+              0.004698954115972562
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.01155110376444879,
+            "raw": 120856.51079834357,
+            "n": 21445,
+            "perType": [
+              0.025742770382602385,
+              0.006138005432168488,
+              0.00522665032440899,
+              0.01570877717024787,
+              0.00493931551281595
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.012870319920285051,
+            "raw": 129653.15856122314,
+            "n": 21445,
+            "perType": [
+              0.026309282390535673,
+              0.006803383968877131,
+              0.007294840727372491,
+              0.016369154532563053,
+              0.007574937982076038
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.015733495843551625,
+            "raw": 161236.30210537295,
+            "n": 21445,
+            "perType": [
+              0.03380478050517719,
+              0.006986424933976957,
+              0.009209387583470015,
+              0.02073567743032842,
+              0.007931208764805667
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.02178668448185246,
+            "raw": 225744.0819706253,
+            "n": 21445,
+            "perType": [
+              0.05012177440267515,
+              0.01021272333661406,
+              0.0069826681917146425,
+              0.029176053348239434,
+              0.012440203130019237
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011579657361349124,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.00875449688780486,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010386170723480758,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.009934151018420724,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010386170723480758
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.006437173394469254
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.010661388234595089
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.011832956082004745
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.020174191087363392
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.009461328977470318
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.011102349989110208
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.01231045176074173
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.006119225844996046
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.013586009186240245
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.0065189428779327385
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.006854717601657488
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.010606143526648609
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.04039065590583037
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.008098912987738661
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.016988163558459658
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.010566536759792291
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1103,
+        "method": "MHU",
+        "metric": {
+          "NN1": {
+            "normalized": 0.014254393184844236,
+            "raw": 138804.1001632082,
+            "n": 21445,
+            "perType": [
+              0.026781572203082103,
+              0.008708650628930803,
+              0.007083337474564441,
+              0.02056204568390189,
+              0.008136359933741998
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.009947045548280008,
+            "raw": 94804.29458300708,
+            "n": 21445,
+            "perType": [
+              0.017415893717890204,
+              0.006337904397932662,
+              0.005316628735275617,
+              0.015255490477849808,
+              0.005409310412451845
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.00949627817860291,
+            "raw": 90969.00114438047,
+            "n": 21445,
+            "perType": [
+              0.016893441566953882,
+              0.005975227393773936,
+              0.005053727537006901,
+              0.014332858872654206,
+              0.0052261355226260004
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.011074024263110912,
+            "raw": 115999.71637666953,
+            "n": 21445,
+            "perType": [
+              0.024682378705719533,
+              0.006091706048153742,
+              0.00500374445652108,
+              0.014430097935426097,
+              0.005162194169733863
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.012506223522400484,
+            "raw": 121651.24890414612,
+            "n": 21445,
+            "perType": [
+              0.02399486157344622,
+              0.006878881137304367,
+              0.005985215089736824,
+              0.018950578222993047,
+              0.006721581588521884
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.016373018081932835,
+            "raw": 173324.2074314158,
+            "n": 21445,
+            "perType": [
+              0.038177578760587014,
+              0.00919531455122232,
+              0.0060878872187340735,
+              0.01871852095489514,
+              0.009685788924224639
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.023123923018388698,
+            "raw": 240733.07519829329,
+            "n": 21445,
+            "perType": [
+              0.05239892053920827,
+              0.0126781694355985,
+              0.0072402626918026056,
+              0.030606054180790487,
+              0.012696208244542971
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011586415488077909,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.008308439883512377,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010944274988645638,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.008889944023358368,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010944274988645638
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.004937421361817185
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.011496523568711977
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.018939454234749093
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.012816041069028752
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.004847185388222287
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.009294794803529556
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.016878913471748296
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.004466984443425263
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.005696468124627835
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.004754584592623676
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.0074470849047109065
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.009590791985231353
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.011110105406784814
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.006359306984395165
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.010602062541423703
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.011370581369811252
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1103,
+        "method": "LOCAL",
+        "metric": {
+          "NN1": {
+            "normalized": 0.014013779983935867,
+            "raw": 137757.02853812077,
+            "n": 21445,
+            "perType": [
+              0.026311403881476042,
+              0.00862202740918981,
+              0.0084535720085263,
+              0.017580422774982063,
+              0.009101473845505147
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.009757445152483953,
+            "raw": 96175.30231182242,
+            "n": 21445,
+            "perType": [
+              0.018374862874536955,
+              0.006062708578009037,
+              0.005894535384032923,
+              0.012157314261055673,
+              0.006297804664784861
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.009379642998946853,
+            "raw": 92418.07180083678,
+            "n": 21445,
+            "perType": [
+              0.017735853909620524,
+              0.005747783408418913,
+              0.005553920597818074,
+              0.011927466888296039,
+              0.0059331901905809465
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.011031635020006317,
+            "raw": 114188.24516937326,
+            "n": 21445,
+            "perType": [
+              0.024206878623727265,
+              0.005929419325783546,
+              0.005152064480392648,
+              0.013845688978129623,
+              0.006024123691998756
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.012056140201185575,
+            "raw": 124035.91923507758,
+            "n": 21445,
+            "perType": [
+              0.02452296818579573,
+              0.007681461411757565,
+              0.007240556700409009,
+              0.01424518449144118,
+              0.0065905302165246826
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.015271408338318141,
+            "raw": 153256.91813336962,
+            "n": 21445,
+            "perType": [
+              0.031187374658969563,
+              0.008554543415153309,
+              0.007262771155302291,
+              0.021092184123779074,
+              0.008260168338386619
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.022924794835287997,
+            "raw": 240554.03363850105,
+            "n": 21445,
+            "perType": [
+              0.05342424291162886,
+              0.010972002547086914,
+              0.007330035257168891,
+              0.03190764239922641,
+              0.010990051061329196
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.01144778889663852,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.008067889447370817,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010174434051233167,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.009315420897181416,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010174434051233167
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.0075164069041158636
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.01026831988035045
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.015894248855935916
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.016535871299671382
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.01233627222701366
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.006287718799618807
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.011517195732570018
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.003541816406723151
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.011114384540025633
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.004472689258934686
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.006621255182749743
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.013077443348046676
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.024394454736691273
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.0072409054806238165
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.0168485161841233
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.013077586867678622
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1103,
+        "method": "RANDOM",
+        "metric": {
+          "NN1": {
+            "normalized": 0.015102856426452115,
+            "raw": 151893.48799253904,
+            "n": 21445,
+            "perType": [
+              0.029754281377605534,
+              0.009606956988110543,
+              0.008426234201325702,
+              0.018683411471530086,
+              0.009043398093688317
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.010455335320680246,
+            "raw": 104170.51590962838,
+            "n": 21445,
+            "perType": [
+              0.020005963756226264,
+              0.006758101074401094,
+              0.006242463407491943,
+              0.01254721745365517,
+              0.006722930911626771
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.009925162822545417,
+            "raw": 98268.06276491299,
+            "n": 21445,
+            "perType": [
+              0.018696291706806593,
+              0.006485704635911082,
+              0.00586714433423369,
+              0.012284572211590303,
+              0.006292101224185789
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.011536919688042187,
+            "raw": 118993.5750214949,
+            "n": 21445,
+            "perType": [
+              0.024844855995367173,
+              0.006714493860794447,
+              0.0055066160231233025,
+              0.013735338959184001,
+              0.006883293601742306
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.01255432532875026,
+            "raw": 122038.39543344303,
+            "n": 21445,
+            "perType": [
+              0.023127787085071173,
+              0.007686041243016313,
+              0.007215306291948606,
+              0.016965602694884646,
+              0.007776889328830137
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.015307920842408266,
+            "raw": 152060.8505185536,
+            "n": 21445,
+            "perType": [
+              0.031191227476618774,
+              0.007736396797859946,
+              0.0069485828497191544,
+              0.023177354280437282,
+              0.007486042807405907
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.02299906348176965,
+            "raw": 237743.9781184132,
+            "n": 21445,
+            "perType": [
+              0.05242683954971488,
+              0.010325637295852641,
+              0.007258350080602296,
+              0.03494597386668043,
+              0.01003851661599745
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011665963169725891,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.009245271866902213,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010423913264183916,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.01048864390794602,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010423913264183916
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.008946807357241304
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.00928462047267782
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.018895809097361372
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.019947237198908487
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.00850170484052044
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.007770564210328235
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.005884812174763228
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.006778088686966781
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.004039770243831727
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.0047475410710433675
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.007825984733382231
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.013527795507092507
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.03691193169253331
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.011702613509469065
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.012178113983711982
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.00943519790033622
+            }
+          ]
+        },
+        "sampling_count": 400
+      },
+      {
+        "seed": 1103,
+        "method": "CVT",
+        "metric": {
+          "NN1": {
+            "normalized": 0.014944505215662986,
+            "raw": 142931.95145721614,
+            "n": 21445,
+            "perType": [
+              0.027782283790539708,
+              0.007575469539109029,
+              0.008375407402756755,
+              0.021518842108661253,
+              0.009470523237247891
+            ]
+          },
+          "IDW4": {
+            "normalized": 0.010351635676303837,
+            "raw": 101392.61790755132,
+            "n": 21445,
+            "perType": [
+              0.019993571340302402,
+              0.005788510048117318,
+              0.005494396378322731,
+              0.014049812121991969,
+              0.0064318884927848366
+            ]
+          },
+          "IDW8": {
+            "normalized": 0.00997501797060501,
+            "raw": 98016.94648930695,
+            "n": 21445,
+            "perType": [
+              0.01939887062403553,
+              0.0056358169680651125,
+              0.005190166465726181,
+              0.013500426273683577,
+              0.006149809521514784
+            ]
+          },
+          "GAUSS": {
+            "normalized": 0.011591748928420716,
+            "raw": 120304.82016710195,
+            "n": 21445,
+            "perType": [
+              0.025916351902641247,
+              0.006118391260360814,
+              0.004845658163938415,
+              0.014797218625357598,
+              0.006281124689805269
+            ]
+          },
+          "BUDGET200": {
+            "normalized": 0.01261714293782755,
+            "raw": 126811.1596988724,
+            "n": 21445,
+            "perType": [
+              0.026041107448966382,
+              0.006936220035233963,
+              0.006119012558198628,
+              0.016346550610238198,
+              0.007642824036500668
+            ]
+          },
+          "BUDGET100": {
+            "normalized": 0.014907269974730636,
+            "raw": 155283.37377012274,
+            "n": 21445,
+            "perType": [
+              0.033004868349911995,
+              0.008681377756910401,
+              0.007253428897344401,
+              0.015008147462899829,
+              0.010588527406586395
+            ]
+          },
+          "PLACEBO": {
+            "normalized": 0.021740723910081944,
+            "raw": 229682.55016826474,
+            "n": 21445,
+            "perType": [
+              0.05236157050296506,
+              0.009719425914200466,
+              0.00659256264760578,
+              0.02754515345941426,
+              0.012484907026223869
+            ]
+          }
+        },
+        "segments": {
+          "highGradient": {
+            "mse": 0.011285018382130006,
+            "test_pixels": 2144
+          },
+          "lowGradient": {
+            "mse": 0.009418688113930271,
+            "test_pixels": 2145
+          },
+          "background": {
+            "mse": 0.010270575465556705,
+            "test_pixels": 2207
+          },
+          "labeled": {
+            "mse": 0.010437562614401302,
+            "test_pixels": 2082
+          },
+          "perCover": [
+            {
+              "label": 0,
+              "test_pixel_count": 2207,
+              "normalized_mse": 0.010270575465556705
+            },
+            {
+              "label": 1,
+              "test_pixel_count": 11,
+              "normalized_mse": 0.009368802461542177
+            },
+            {
+              "label": 2,
+              "test_pixel_count": 284,
+              "normalized_mse": 0.011495875942197338
+            },
+            {
+              "label": 3,
+              "test_pixel_count": 170,
+              "normalized_mse": 0.010563542546906292
+            },
+            {
+              "label": 4,
+              "test_pixel_count": 42,
+              "normalized_mse": 0.012560771098916741
+            },
+            {
+              "label": 5,
+              "test_pixel_count": 103,
+              "normalized_mse": 0.015404884156180418
+            },
+            {
+              "label": 6,
+              "test_pixel_count": 139,
+              "normalized_mse": 0.008192451340605353
+            },
+            {
+              "label": 7,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.016829011020498216
+            },
+            {
+              "label": 8,
+              "test_pixel_count": 92,
+              "normalized_mse": 0.010298765738352362
+            },
+            {
+              "label": 9,
+              "test_pixel_count": 5,
+              "normalized_mse": 0.006067632564882235
+            },
+            {
+              "label": 10,
+              "test_pixel_count": 192,
+              "normalized_mse": 0.004755328263880799
+            },
+            {
+              "label": 11,
+              "test_pixel_count": 508,
+              "normalized_mse": 0.009194442174003966
+            },
+            {
+              "label": 12,
+              "test_pixel_count": 122,
+              "normalized_mse": 0.011076005999164494
+            },
+            {
+              "label": 13,
+              "test_pixel_count": 44,
+              "normalized_mse": 0.024895991098523144
+            },
+            {
+              "label": 14,
+              "test_pixel_count": 265,
+              "normalized_mse": 0.007139525817027917
+            },
+            {
+              "label": 15,
+              "test_pixel_count": 79,
+              "normalized_mse": 0.020690179614671105
+            },
+            {
+              "label": 16,
+              "test_pixel_count": 21,
+              "normalized_mse": 0.03311176936877574
+            }
+          ]
+        },
+        "sampling_count": 400
+      }
+    ],
+    "tasks": {
+      "IP01": {
+        "endpoint": "source_integrity",
+        "outcome": {
+          "rows": 21025,
+          "columns": 223,
+          "spectral_bands": 220,
+          "finite_band_cells": 4625500,
+          "zero_band_cells": 0,
+          "negative_band_cells": 0,
+          "max_abs_band_value": 9604,
+          "label_counts": [
+            10659,
+            54,
+            1434,
+            834,
+            234,
+            497,
+            747,
+            26,
+            489,
+            20,
+            968,
+            2468,
+            614,
+            212,
+            1294,
+            380,
+            95
+          ],
+          "physical_scene": "INDIAN_PINES_AVIRIS_1992_145X145",
+          "row_major": "X_OUTER_Y_INNER",
+          "raw_source_git_blob": "0ed4500533a7c27e479944ce01996e676cabff1d"
+        },
+        "status": "DONE"
+      },
+      "IP02": {
+        "endpoint": "pixel_mapping_400_quota",
+        "outcome": [
+          {
+            "seed": 1101,
+            "method": "MHU",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1101,
+            "method": "LOCAL",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1101,
+            "method": "RANDOM",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1101,
+            "method": "CVT",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1102,
+            "method": "MHU",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1102,
+            "method": "LOCAL",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1102,
+            "method": "RANDOM",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1102,
+            "method": "CVT",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1103,
+            "method": "MHU",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1103,
+            "method": "LOCAL",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1103,
+            "method": "RANDOM",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          },
+          {
+            "seed": 1103,
+            "method": "CVT",
+            "initial_collisions": 0,
+            "total_shift_pixels": 0,
+            "max_shift_pixels": 0,
+            "moved_points": 0,
+            "quota_actual": [
+              163,
+              85,
+              68,
+              50,
+              34
+            ],
+            "average_shift_pixels": 0
+          }
+        ],
+        "status": "DONE"
+      },
+      "IP03": {
+        "endpoint": "Cvt_vs_random_discrete_density",
+        "outcome": {
+          "mean_snap_shift_CVT": 0,
+          "mean_snap_shift_RANDOM": 0,
+          "common_test_pixels": 4289,
+          "selected_band_ids": [
+            20,
+            60,
+            90,
+            130,
+            190
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP04": {
+        "endpoint": "real_2D_IDW_k4",
+        "outcome": {
+          "method_mean_normalized_mse": {
+            "MHU": 0.009771378837888587,
+            "LOCAL": 0.009737476503482239,
+            "RANDOM": 0.010902940787317164,
+            "CVT": 0.010198071210583215
+          },
+          "paired": [
+            {
+              "seed": 1101,
+              "ratio_MHU_to_LOCAL": 0.9908237155778687,
+              "difference_MHU_minus_LOCAL": -0.00008969293486173202
+            },
+            {
+              "seed": 1102,
+              "ratio_MHU_to_LOCAL": 1.0001858924516813,
+              "difference_MHU_minus_LOCAL": 0.0000017995422847243148
+            },
+            {
+              "seed": 1103,
+              "ratio_MHU_to_LOCAL": 1.0194313565521596,
+              "difference_MHU_minus_LOCAL": 0.0001896003957960555
+            }
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP05": {
+        "endpoint": "real_2D_nearest1",
+        "outcome": {
+          "method_mean_normalized_mse": {
+            "MHU": 0.013993287546191549,
+            "LOCAL": 0.013767291730063186,
+            "RANDOM": 0.014990311215202452,
+            "CVT": 0.014227159687405143
+          },
+          "paired": [
+            {
+              "seed": 1101,
+              "ratio_MHU_to_LOCAL": 1.0145911867321256,
+              "difference_MHU_minus_LOCAL": 0.00019844212055867942
+            },
+            {
+              "seed": 1102,
+              "ratio_MHU_to_LOCAL": 1.017455642528643,
+              "difference_MHU_minus_LOCAL": 0.00023893212691803237
+            },
+            {
+              "seed": 1103,
+              "ratio_MHU_to_LOCAL": 1.0171697572806329,
+              "difference_MHU_minus_LOCAL": 0.0002406132009083687
+            }
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP06": {
+        "endpoint": "real_2D_IDW_k8",
+        "outcome": {
+          "method_mean_normalized_mse": {
+            "MHU": 0.00936338316900207,
+            "LOCAL": 0.009388388044986708,
+            "RANDOM": 0.010365227739732601,
+            "CVT": 0.009815250238354424
+          },
+          "paired": [
+            {
+              "seed": 1101,
+              "ratio_MHU_to_LOCAL": 0.9900143631880604,
+              "difference_MHU_minus_LOCAL": -0.00009439602339652783
+            },
+            {
+              "seed": 1102,
+              "ratio_MHU_to_LOCAL": 0.9895788437170331,
+              "difference_MHU_minus_LOCAL": -0.00009725378421344098
+            },
+            {
+              "seed": 1103,
+              "ratio_MHU_to_LOCAL": 1.0124349273921356,
+              "difference_MHU_minus_LOCAL": 0.00011663517965605774
+            }
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP07": {
+        "endpoint": "real_2D_gaussian_h18",
+        "outcome": {
+          "method_mean_normalized_mse": {
+            "MHU": 0.011066813950520215,
+            "LOCAL": 0.01110708109057162,
+            "RANDOM": 0.011706607659896286,
+            "CVT": 0.011500923694037381
+          },
+          "paired": [
+            {
+              "seed": 1101,
+              "ratio_MHU_to_LOCAL": 0.9911652200597103,
+              "difference_MHU_minus_LOCAL": -0.00009884435657829885
+            },
+            {
+              "seed": 1102,
+              "ratio_MHU_to_LOCAL": 0.9942038256619807,
+              "difference_MHU_minus_LOCAL": -0.00006434630668050549
+            },
+            {
+              "seed": 1103,
+              "ratio_MHU_to_LOCAL": 1.003842516818923,
+              "difference_MHU_minus_LOCAL": 0.00004238924310459406
+            }
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP08": {
+        "endpoint": "high_gradient_IDW4",
+        "outcome": {
+          "source_gradient_median": 0.001148837345945577,
+          "mean_mse_by_method": {
+            "MHU": 0.011439116080458082,
+            "LOCAL": 0.011474397082176018,
+            "RANDOM": 0.012080567940714762,
+            "CVT": 0.011402261577215703
+          },
+          "n": 2144
+        },
+        "status": "DONE"
+      },
+      "IP09": {
+        "endpoint": "low_gradient_IDW4",
+        "outcome": {
+          "source_gradient_median": 0.001148837345945577,
+          "mean_mse_by_method": {
+            "MHU": 0.008104419095199086,
+            "LOCAL": 0.008001365677972001,
+            "RANDOM": 0.009725862644247506,
+            "CVT": 0.008994442238060991
+          },
+          "n": 2145
+        },
+        "status": "DONE"
+      },
+      "IP10": {
+        "endpoint": "GT_coverage_macro_class_IDW4",
+        "outcome": {
+          "per_cover_eligible": [
+            {
+              "class_id": 0,
+              "heldout_pixels": 2207,
+              "by_method": {
+                "MHU": 0.01056265395902325,
+                "LOCAL": 0.010366660733782987,
+                "RANDOM": 0.01124833308945694,
+                "CVT": 0.010389253133696227
+              }
+            },
+            {
+              "class_id": 2,
+              "heldout_pixels": 284,
+              "by_method": {
+                "MHU": 0.010474903245519198,
+                "LOCAL": 0.009633223651507754,
+                "RANDOM": 0.01000003960094997,
+                "CVT": 0.01106167325391205
+              }
+            },
+            {
+              "class_id": 3,
+              "heldout_pixels": 170,
+              "by_method": {
+                "MHU": 0.015037760579449744,
+                "LOCAL": 0.013995123417694882,
+                "RANDOM": 0.01919773280418871,
+                "CVT": 0.011610474089581144
+              }
+            },
+            {
+              "class_id": 5,
+              "heldout_pixels": 103,
+              "by_method": {
+                "MHU": 0.0054701249228332575,
+                "LOCAL": 0.008515310700086272,
+                "RANDOM": 0.010668597236953964,
+                "CVT": 0.009953135804607454
+              }
+            },
+            {
+              "class_id": 6,
+              "heldout_pixels": 139,
+              "by_method": {
+                "MHU": 0.008004816418821227,
+                "LOCAL": 0.008247617801575189,
+                "RANDOM": 0.008565283288450644,
+                "CVT": 0.00960405438061294
+              }
+            },
+            {
+              "class_id": 10,
+              "heldout_pixels": 192,
+              "by_method": {
+                "MHU": 0.0048214403119122605,
+                "LOCAL": 0.004776693790786659,
+                "RANDOM": 0.00506253429552124,
+                "CVT": 0.005115845130927818
+              }
+            },
+            {
+              "class_id": 11,
+              "heldout_pixels": 508,
+              "by_method": {
+                "MHU": 0.007102195216377474,
+                "LOCAL": 0.006522631323651696,
+                "RANDOM": 0.0072226323538907,
+                "CVT": 0.00795254361162327
+              }
+            },
+            {
+              "class_id": 12,
+              "heldout_pixels": 122,
+              "by_method": {
+                "MHU": 0.011791063982294778,
+                "LOCAL": 0.013450803697479545,
+                "RANDOM": 0.012840729175890122,
+                "CVT": 0.011165875089211722
+              }
+            },
+            {
+              "class_id": 14,
+              "heldout_pixels": 265,
+              "by_method": {
+                "MHU": 0.007721270659421946,
+                "LOCAL": 0.006673870424886819,
+                "RANDOM": 0.010290477996687244,
+                "CVT": 0.007918416794217405
+              }
+            }
+          ],
+          "eligible_class_count": 9
+        },
+        "status": "DONE"
+      },
+      "IP11": {
+        "endpoint": "GT_unlabeled_background_vs_labeled_IDW4",
+        "outcome": {
+          "background": {
+            "MHU": 0.01056265395902325,
+            "LOCAL": 0.010366660733782987,
+            "RANDOM": 0.01124833308945694,
+            "CVT": 0.010389253133696227
+          },
+          "labeled": {
+            "MHU": 0.008932596805062329,
+            "LOCAL": 0.009070517043216248,
+            "RANDOM": 0.010536811675490814,
+            "CVT": 0.009995411025996036
+          }
+        },
+        "status": "DONE"
+      },
+      "IP12": {
+        "endpoint": "5_channel_type_loss_IDW4",
+        "outcome": {
+          "per_type_normalized_mse": {
+            "MHU": [
+              0.017159247961443618,
+              0.006370457758521803,
+              0.005405045946150329,
+              0.014367595464795652,
+              0.005554547058531493
+            ],
+            "LOCAL": [
+              0.018275509425608367,
+              0.006314702881442213,
+              0.005741641248681265,
+              0.012438403480666117,
+              0.005917125481013276
+            ],
+            "RANDOM": [
+              0.019967925914797176,
+              0.006320722879119218,
+              0.006145601920227836,
+              0.015199893668511216,
+              0.0068805595539303795
+            ],
+            "CVT": [
+              0.019188970380840758,
+              0.006223185740485963,
+              0.0056269726455065285,
+              0.01443547876498164,
+              0.0055157485211011084
+            ]
+          },
+          "bands": [
+            20,
+            60,
+            90,
+            130,
+            190
+          ],
+          "quotas": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP13": {
+        "endpoint": "200_budget_IDW4",
+        "outcome": {
+          "method_mean_normalized_mse": {
+            "MHU": 0.01216522487160606,
+            "LOCAL": 0.012271606620100841,
+            "RANDOM": 0.013093117548103508,
+            "CVT": 0.012527847288728683
+          },
+          "paired": [
+            {
+              "seed": 1101,
+              "ratio_MHU_to_LOCAL": 0.9916250866526678,
+              "difference_MHU_minus_LOCAL": -0.00010347037091149557
+            },
+            {
+              "seed": 1102,
+              "ratio_MHU_to_LOCAL": 0.946326620417857,
+              "difference_MHU_minus_LOCAL": -0.0006657581957877513
+            },
+            {
+              "seed": 1103,
+              "ratio_MHU_to_LOCAL": 1.0373322899123758,
+              "difference_MHU_minus_LOCAL": 0.00045008332121490927
+            }
+          ],
+          "quotas": [
+            81,
+            43,
+            34,
+            25,
+            17
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP14": {
+        "endpoint": "100_budget_IDW4",
+        "outcome": {
+          "method_mean_normalized_mse": {
+            "MHU": 0.015106923346050016,
+            "LOCAL": 0.014642955196155272,
+            "RANDOM": 0.015207212822564363,
+            "CVT": 0.015239834850455047
+          },
+          "paired": [
+            {
+              "seed": 1101,
+              "ratio_MHU_to_LOCAL": 1.0819391619067418,
+              "difference_MHU_minus_LOCAL": 0.0011629452248066684
+            },
+            {
+              "seed": 1102,
+              "ratio_MHU_to_LOCAL": 0.9396702022081016,
+              "difference_MHU_minus_LOCAL": -0.000872650518737127
+            },
+            {
+              "seed": 1103,
+              "ratio_MHU_to_LOCAL": 1.07213543893333,
+              "difference_MHU_minus_LOCAL": 0.001101609743614694
+            }
+          ],
+          "quotas": [
+            41,
+            21,
+            17,
+            13,
+            8
+          ]
+        },
+        "status": "DONE"
+      },
+      "IP15": {
+        "endpoint": "placebo_spatial_permutation",
+        "outcome": {
+          "method_mean_normalized_mse": {
+            "MHU": 0.022656078823167267,
+            "LOCAL": 0.022651325885367463,
+            "RANDOM": 0.02231117663660868,
+            "CVT": 0.021682713099609886
+          },
+          "paired": [
+            {
+              "seed": 1101,
+              "ratio_MHU_to_LOCAL": 0.9878643959351283,
+              "difference_MHU_minus_LOCAL": -0.000271512735645605
+            },
+            {
+              "seed": 1102,
+              "ratio_MHU_to_LOCAL": 1.0038243101128463,
+              "difference_MHU_minus_LOCAL": 0.00008664336594430347
+            },
+            {
+              "seed": 1103,
+              "ratio_MHU_to_LOCAL": 1.0086861489723862,
+              "difference_MHU_minus_LOCAL": 0.00019912818310070107
+            }
+          ],
+          "field_permutation": "(97*idx+1337)%21025",
+          "rankings_on_real": {
+            "MHU": 0.009771378837888587,
+            "LOCAL": 0.009737476503482239,
+            "RANDOM": 0.010902940787317164,
+            "CVT": 0.010198071210583215
+          }
+        },
+        "status": "DONE"
+      }
+    },
+    "critical_limitations": [
+      "SOURCE_1992_AVIRIS_2D_NOT_RETINAL_5_PHOTORECEPTOR_EXPERIMENT",
+      "SOURCE_SAME_IMAGE_FOR_ALL_15_TASKS",
+      "SOURCE_LICENSE_NOT_VERIFIED_NO_REDISTRIBUTION",
+      "NO_WEI_ORIGINAL_COMPILED_OR_RUN",
+      "CVT_DETERMINISTIC_LLOYD_PROXY_NOT_AUTHENTIC_AUTHOR_SOLVER",
+      "NATIVE_GEOMETRY_FROM_VERIFIED_EXPORT_JSON_NOT_INDEPENDENT_NPZ_REOPEN",
+      "PIXEL_SNAP_NEAREST_FREE_MODIFIES_ORIGINAL_CONTINUOUS_PATTERN",
+      "TEST_PIXELS_CHECKERBOARD_COMMON_EXCLUDED_ALL_SAMPLERS",
+      "ORIGINAL_N400_NEURAL_BENCHMARK_NOT_EXECUTED",
+      "NO_CAUSAL_OR_BIOLOGICAL_EFFICACY_CLAIM"
+    ],
+    "grade": "0/3",
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0,
+    "CT2_math_before_after": [
+      24,
+      24
+    ],
+    "CT2_functional_before_after": [
+      18,
+      18
+    ]
+  }
+}
