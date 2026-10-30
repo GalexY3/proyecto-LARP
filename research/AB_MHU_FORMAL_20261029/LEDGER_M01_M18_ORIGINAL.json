@@ -1,0 +1,1067 @@
+{
+  "date": "2026-10-29",
+  "branch": "research/ab-mhu-formal-20261029",
+  "method": "AB3.2.1 O1-O7",
+  "prereg_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+  "base_grant": 20,
+  "prior_executed": 2,
+  "formal_budget": 18,
+  "formal_questions_addressed": 18,
+  "mathematical_external_validation": "NONE",
+  "original_novel_theorems_verified": 0,
+  "N1_new": 0,
+  "N2": 0,
+  "N3": 0,
+  "overlapping_theorems": {
+    "M04": "corollary_of_M01",
+    "M02": "same_thinning_logic_M03",
+    "M17": "application_of_M11"
+  },
+  "note": "18 mathematical contracts addressed, not 18 independent scientific discoveries. Symbolic checks not formal proof assistant certification.",
+  "cycles": [
+    {
+      "id": "M01",
+      "title": "finite union HU",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "closure",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "finite union HU",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "Cauchy bound"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "Var(sum) ≤ (Σ√Var)² = o(V)"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "Var(sum) ≤ (Σ√Var)² = o(V)"
+      },
+      "F": {
+        "adversarial_limit": "Cauchy bound",
+        "prior_art": "Torquato 2018",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m01",
+      "numerical_audit_key": "M01"
+    },
+    {
+      "id": "M02",
+      "title": "converse fails",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "counterexample",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "converse fails",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "random labels independent"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "random marking of HU lattice gives color Var Θ(V)"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "random marking of HU lattice gives color Var Θ(V)"
+      },
+      "F": {
+        "adversarial_limit": "random labels independent",
+        "prior_art": "Jiao 2014; Kim/Torquato 2018",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m02",
+      "numerical_audit_key": "M02"
+    },
+    {
+      "id": "M03",
+      "title": "independent vacancies",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "formula",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "independent vacancies",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "p∈(0,1),ρ>0"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "Var Np = p²Var N + p(1-p) EN; S_p(0)=1-p"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "Var Np = p²Var N + p(1-p) EN; S_p(0)=1-p"
+      },
+      "F": {
+        "adversarial_limit": "p∈(0,1),ρ>0",
+        "prior_art": "Kim/Torquato 2018",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m03",
+      "numerical_audit_key": "M03"
+    },
+    {
+      "id": "M04",
+      "title": "full species removal",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "corollary",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "full species removal",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "complete classes removed; surviving modes still functionally limited"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "any nonempty finite subset of HU classes HU"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "any nonempty finite subset of HU classes HU"
+      },
+      "F": {
+        "adversarial_limit": "complete classes removed; surviving modes still functionally limited",
+        "prior_art": "Jiao 2014",
+        "dependency": "M01"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m04",
+      "numerical_audit_key": "M04"
+    },
+    {
+      "id": "M05",
+      "title": "spectral PSD union",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "identity",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "spectral PSD union",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "normalization and spectral cross terms"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "S_all=v*Hv, 0≤S_all≤(Σ√f_i S_i)²"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "S_all=v*Hv, 0≤S_all≤(Σ√f_i S_i)²"
+      },
+      "F": {
+        "adversarial_limit": "normalization and spectral cross terms",
+        "prior_art": "Torquato 2018",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m05",
+      "numerical_audit_key": "M05"
+    },
+    {
+      "id": "M06",
+      "title": "relative phase",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "constructive",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "relative phase",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "may violate sensor packing"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "fixed individual spectra, joint |A|² cos²(φ/2)"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "fixed individual spectra, joint |A|² cos²(φ/2)"
+      },
+      "F": {
+        "adversarial_limit": "may violate sensor packing",
+        "prior_art": "Wei 2010; AB08 LARP",
+        "dependency": "M05"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m06",
+      "numerical_audit_key": "M06"
+    },
+    {
+      "id": "M07",
+      "title": "Lipschitz minimax",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "theorem",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "Lipschitz minimax",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "1D bounded Lip, exact point measurements"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "radius 1/(2n) midpoint samples; minimax sup-error L/(2n)"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "radius 1/(2n) midpoint samples; minimax sup-error L/(2n)"
+      },
+      "F": {
+        "adversarial_limit": "1D bounded Lip, exact point measurements",
+        "prior_art": "classical covering",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m07",
+      "numerical_audit_key": "M07"
+    },
+    {
+      "id": "M08",
+      "title": "isotropic Gaussian tie",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "theorem",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "isotropic Gaussian tie",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "noiseless, isotropic, linear"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "tr(Cov(X|AX))=d−n for any full-rank n×d A"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "tr(Cov(X|AX))=d−n for any full-rank n×d A"
+      },
+      "F": {
+        "adversarial_limit": "noiseless, isotropic, linear",
+        "prior_art": "classical Gaussian conditioning",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m08",
+      "numerical_audit_key": "M08"
+    },
+    {
+      "id": "M09",
+      "title": "slope endpoint design",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "counterexample",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "slope endpoint design",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "repeated x allowed, independent noise"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "n=4 endpoints Fisher 1 vs grid .3125, ratio 3.2"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "n=4 endpoints Fisher 1 vs grid .3125, ratio 3.2"
+      },
+      "F": {
+        "adversarial_limit": "repeated x allowed, independent noise",
+        "prior_art": "classical design of experiments",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m09",
+      "numerical_audit_key": "M09"
+    },
+    {
+      "id": "M10",
+      "title": "smooth bump indistinguishability",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "constructive",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "smooth bump indistinguishability",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "unbounded smooth function class beyond amplitude [0,1]"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "polynomial φ(x)=Π(x−p_i)² vanishes at any finite P"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "polynomial φ(x)=Π(x−p_i)² vanishes at any finite P"
+      },
+      "F": {
+        "adversarial_limit": "unbounded smooth function class beyond amplitude [0,1]",
+        "prior_art": "classical approximation",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m10",
+      "numerical_audit_key": "M10"
+    },
+    {
+      "id": "M11",
+      "title": "random-phase Fourier risk",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "identity",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "random-phase Fourier risk",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "random independent phases"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "E err² = 1/2 Σ b_k²|A_P(k)|²"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "E err² = 1/2 Σ b_k²|A_P(k)|²"
+      },
+      "F": {
+        "adversarial_limit": "random independent phases",
+        "prior_art": "classical spectral quadrature",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m11",
+      "numerical_audit_key": "M11"
+    },
+    {
+      "id": "M12",
+      "title": "multimodal covariance risk",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "identity",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "multimodal covariance risk",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "Cov PSD, fixed a"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "E|a*ξ|²=a*Ca; signs of correlations change risk 0/2/4"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "E|a*ξ|²=a*Ca; signs of correlations change risk 0/2/4"
+      },
+      "F": {
+        "adversarial_limit": "Cov PSD, fixed a",
+        "prior_art": "classical covariance matrices",
+        "dependency": "M05"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m12",
+      "numerical_audit_key": "M12"
+    },
+    {
+      "id": "M13",
+      "title": "five RGB filter rank",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "exact rank",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "five RGB filter rank",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "linear pointwise filters, spatial data remain useful"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "rank F=3, not five independent spectral dimensions"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "rank F=3, not five independent spectral dimensions"
+      },
+      "F": {
+        "adversarial_limit": "linear pointwise filters, spatial data remain useful",
+        "prior_art": "linear algebra",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m13",
+      "numerical_audit_key": "M13"
+    },
+    {
+      "id": "M14",
+      "title": "data processing Bayes",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "theorem",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "data processing Bayes",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "same cost, unrestricted classifiers"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "all decisions on T(X) are decisions on X; inf-risk_X≤inf-risk_T"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "all decisions on T(X) are decisions on X; inf-risk_X≤inf-risk_T"
+      },
+      "F": {
+        "adversarial_limit": "same cost, unrestricted classifiers",
+        "prior_art": "data processing inequality",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m14",
+      "numerical_audit_key": "M14"
+    },
+    {
+      "id": "M15",
+      "title": "independent expert bases",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "counterexample",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "independent expert bases",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "naive hidden-state fusion; output-level not ruled out"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "hidden x and −x both decode x, unaligned average hides x"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "hidden x and −x both decode x, unaligned average hides x"
+      },
+      "F": {
+        "adversarial_limit": "naive hidden-state fusion; output-level not ruled out",
+        "prior_art": "representation gauge symmetry",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m15",
+      "numerical_audit_key": "M15"
+    },
+    {
+      "id": "M16",
+      "title": "inverse variance experts",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "optimum",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "inverse variance experts",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "unbiased same target, independent errors"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "w_i ∝ σ_i^−2, var=1/Σσ_i^−2; two sample risk .8"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "w_i ∝ σ_i^−2, var=1/Σσ_i^−2; two sample risk .8"
+      },
+      "F": {
+        "adversarial_limit": "unbiased same target, independent errors",
+        "prior_art": "BLUE/generalized least squares",
+        "dependency": "none"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m16",
+      "numerical_audit_key": "M16"
+    },
+    {
+      "id": "M17",
+      "title": "spectral crossing",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "constructive",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "spectral crossing",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "finite point sets; neither certified MHU"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "P={0,1/2} beats Q={0,1/4} at k=1 and loses at k=2"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "P={0,1/2} beats Q={0,1/4} at k=1 and loses at k=2"
+      },
+      "F": {
+        "adversarial_limit": "finite point sets; neither certified MHU",
+        "prior_art": "classical aliasing",
+        "dependency": "M11"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m17",
+      "numerical_audit_key": "M17"
+    },
+    {
+      "id": "M18",
+      "title": "adversarial covariance",
+      "mode": "AB-R-FORMAL",
+      "status": "ANALYTIC_AB_COMPLETED",
+      "counted_authorization_slot": true,
+      "type": "minimax identity",
+      "parent": "VISION_C04",
+      "A": {
+        "claim": "adversarial covariance",
+        "estimand": "mathematical functional/risk defined in proof",
+        "truth_contract": "deductive conditional mathematical claim"
+      },
+      "B": {
+        "rivals": "negation of frozen hypothesis, alternate signal and cost models",
+        "falsifier": "adversarial correlations, same variances"
+      },
+      "C": {
+        "test": "formal derivation or exact counterexample under explicit assumptions",
+        "primary_evidence": "sup_{C PSD,diag σ²} a*Ca=(Σσ_i|a_i|)²"
+      },
+      "D": {
+        "frozen_contract_sha_or_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+        "source_code_freeze_status": "not applicable as mathematical proof; audit script authored after prereg"
+      },
+      "E": {
+        "observation": "proof argument completed; no human data or numerical inference",
+        "result": "sup_{C PSD,diag σ²} a*Ca=(Σσ_i|a_i|)²"
+      },
+      "F": {
+        "adversarial_limit": "adversarial correlations, same variances",
+        "prior_art": "Cauchy-Schwarz PSD",
+        "dependency": "M12"
+      },
+      "G": {
+        "verification": "written proof plus targeted SymPy/NumPy sanity check",
+        "external_replication": "NONE",
+        "reviewer_independence": "NOT_ATTESTED"
+      },
+      "H": {
+        "prior_update": "No universal advantage MHU; see report for claim-specific inference",
+        "new_original_discovery": false
+      },
+      "I": {
+        "mathematical_status": "proved conditional to assumptions, internally reviewed",
+        "novelty": "known or elementary derivation",
+        "grade": "0/3",
+        "N1_new": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "decision": "PROVED / AUDITED; no novel 2/3; pivot to covariance-aware conditional visual design",
+        "cost": "one distinct mathematical question; no training/GPU"
+      },
+      "proof_source": "INFORME_MHU_FORMAL.md#m18",
+      "numerical_audit_key": "M18"
+    }
+  ]
+}
