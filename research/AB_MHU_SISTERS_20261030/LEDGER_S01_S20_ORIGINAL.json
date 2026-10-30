@@ -1,0 +1,1436 @@
+{
+  "schema": "LARP_AB321_SISTERS20_V1",
+  "date": "2026-10-30",
+  "grant": 20,
+  "valid_formal_questions": 20,
+  "invalid": 0,
+  "planning": 0,
+  "n1_new_unique": 0,
+  "n2": 0,
+  "n3": 0,
+  "baseline": "The prior 18 formal cycles are historical and not counted in this grant.",
+  "mathematical_independence": "Many results share elementary Fourier, packing or combinatorial ancestry; 20 cycles do NOT mean 20 independent original findings.",
+  "data": "Original source-code analysis; no new independent observational data",
+  "frozen_code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+  "raw_checks_sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e",
+  "CT2_by_branch": {
+    "B01_PHASING": {
+      "before": 24,
+      "after": 24,
+      "reason": "Phase cancellation and weights are rigorously characterized but existing AB08 and Wei overlap heavily; no new independent functionality."
+    },
+    "B02_COVERAGE": {
+      "before": 17,
+      "after": 17,
+      "reason": "1D coverage/quantization establishes useful exact adversarial cases but is classical and does not resolve 3D sensors."
+    },
+    "B03_SAMPLING": {
+      "before": 15,
+      "after": 15,
+      "reason": "Exact Fourier/noise/graph results clarify failure modes but are well known and lack a novel algorithmic advance."
+    },
+    "B04_LABELS": {
+      "before": 21,
+      "after": 21,
+      "reason": "Exact biological-count reference and fairness of objectives clarify mechanism but no verified superior optimizer."
+    }
+  },
+  "cycles": [
+    {
+      "id": "S01",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B01_PHASING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué diferencia matemáticamente LOCAL, MHU-v1 y MHU-v2?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S01 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "**Resultado:** en el código recuperado, la pérdida es `J_LOCAL=λ L`, `J_MHUv1=λ L+S_w` con `λ=0.15` habitual. Tanto L como S contienen `0.5·(union + mean(types))`. En MHU-v2, cada peso de modo `w(k)` se sustituye por `w(k)/|k|²` y vuelve a normalizarse dentro de cada componente. Para modos con cuadrados de frecuencia `(1,4,9,16)`, el objetivo uniforme les da `(25%,25%,25%,25%)`, mientras que el objetivo inverso al cuadrado da `(70.24%,17.56%,7.80%,4.39%)`. Es un ejemplo de perfil, **no** el espectro real completo del generador 3D.\n\n**Demostración:** sustitución y normalización de pesos positivos; identidad directa del código fuente, no un teorema físico nuevo. **Adversario:** LOCAL puede tener excelentes distancias mínimas sin optimizar explícitamente la energía de los modos escogidos. **J:** distinción entre fines de optimización, no ranking de calidad."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "v1": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "v2": [
+            0.7024390243902439,
+            0.17560975609756097,
+            0.07804878048780486,
+            0.04390243902439024
+          ]
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 24,
+        "ct2_after": 24,
+        "ct2_reason": "Phase cancellation and weights are rigorously characterized but existing AB08 and Wei overlap heavily; no new independent functionality."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S02",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B01_PHASING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Cuánta cancelación conjunta permiten las fases relativas?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S02 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Para un modo, escribe las contribuciones como `q_c exp(iθ_c)`, `q_c=√f_c·√S_c`. Si sus magnitudes son fijas, el valor máximo de `|Σ q_c exp(iθ_c)|` es `Σq_c` (alinear fases) y el mínimo es `max(0,2 max q_c−Σq_c)` (desigualdad poligonal: si el mayor lado no supera la suma restante, puede cerrarse un polígono). Por tanto el espectro de unión ocupa exactamente el intervalo entre los **cuadrados** de ambos extremos, al permitir variar libremente fases de ese modo.\n\n**Demostración:** desigualdad triangular para cotas; igualdad superior por alineación; igualdad inferior construyendo antiparalelo si domina un segmento, o cerrando un polígono si no. Las traslaciones por especie permiten orientar amplitudes de un modo recíproco en el toro. **Límite:** no se garantiza cancelar SIMULTÁNEAMENTE todos los modos. **J:** las fases son un recurso de optimización real, sin ventaja universal."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "min_power": 1.60237371373018e-31,
+          "max_power": 9
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 24,
+        "ct2_after": 24,
+        "ct2_reason": "Phase cancellation and weights are rigorously characterized but existing AB08 and Wei overlap heavily; no new independent functionality."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S03",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B01_PHASING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Podemos cancelar todas las parejas de especies sin cancelar cada especie?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S03 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Para tres contribuciones complejas `a,b,c`, exigir `a+b=a+c=b+c=0` obliga a `a=b=c=0`, porque `a+b=0` y `a+c=0` implican `b=c=−a` y `b+c=−2a=0`. Esto refuta la existencia de una cancelación exacta en TODAS las uniones de pares de tres especies no nulas en un modo compartido.\n\n**Interpretación:** mantener una unión de cinco impecable no equivale a que todas sus 10 uniones de parejas lo sean. **Límite:** exige las tres parejas de una triple, no solo algunas parejas ni correlaciones promedio. **J:** incompatibilidad combinatoria exacta, sin afirmar que LARP alcance esos límites."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": "{a: 0, b: 0, c: 0}",
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S02",
+        "ct2_before": 24,
+        "ct2_after": 24,
+        "ct2_reason": "Phase cancellation and weights are rigorously characterized but existing AB08 and Wei overlap heavily; no new independent functionality."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S04",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B01_PHASING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué hace desplazar cada especie independientemente?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S04 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Para un modo no nulo `k` y traslaciones uniformes independientes `t_c`, `a_c→a_c exp(2πi k·t_c)`. Se conserva `S_c`, pero para `c≠d` se tiene `E exp(2πi k·(t_c−t_d))=0`. En consecuencia, `E S_total=Σ_c f_c S_c`. El término cruzado desaparece en promedio, pudiendo aumentar el error si las fases originales cancelaban beneficiosamente o reducirlo si se reforzaban.\n\n**Límite:** promedio sobre traslaciones, no resultado determinista para cada movimiento; un modo k=0 no cumple. **J:** conecta directamente con la ablación de fases histórica AB08; no es un nuevo resultado causal neuronal."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "mean_phase_modulus": 5.658387411740342e-17
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 24,
+        "ct2_after": 24,
+        "ct2_reason": "Phase cancellation and weights are rigorously characterized but existing AB08 and Wei overlap heavily; no new independent functionality."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S05",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B01_PHASING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Permiten las proporciones de cinco especies del generador una cancelación exacta?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S05 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Con proporciones programadas `(163,85,68,50,34)/400` y factores espectrales por especie iguales `S_c`, las longitudes relativas son `√f_c`. La mayor es `√(163/400)≈0.63836`, menor que la suma de las otras cuatro `≈1.51839`. Por la cota S02 el mínimo conjunto por fases es cero para un modo. **Esto revela compatibilidad algebraica, no demuestra que el generador obtenga tal fase, ni que el valor sea cero en todas las frecuencias.**\n\n**J:** las proporciones desiguales no impiden por sí mismas coordinación espectral fuerte.\n\n## Rama B02 — LOCAL, CVT y cobertura (S06–S10)"
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "fractions": [
+            0.4075,
+            0.2125,
+            0.17,
+            0.125,
+            0.085
+          ],
+          "max_length": 0.6383572667401852,
+          "sum_other": 1.5183887707619492
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S02",
+        "ct2_before": 24,
+        "ct2_after": 24,
+        "ct2_reason": "Phase cancellation and weights are rigorously characterized but existing AB08 and Wei overlap heavily; no new independent functionality."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S06",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B02_COVERAGE",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Existe un patrón simultáneamente óptimo para todos los tipos y su unión?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S06 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "**Sí, bajo presupuestos iguales en un círculo unidimensional.** Si hay `m` clases con `n` puntos cada una, coloca los `mn` puntos de la retícula circular uniforme de paso `1/(mn)` y asigna clases por residuo del índice módulo `m`. Cada clase forma por sí sola una retícula de paso `1/n`. Como un radio de cobertura `r` de n puntos debe cubrir longitud total 1 mediante n arcos de longitud 2r, `r≥1/(2n)`; ambas escalas alcanzan sus respectivas cotas. **Resultado:** un diseño intercalado tiene minimax de cobertura global y de cada tipo simultáneamente. **J:** no hay incompatibilidad inevitable de cobertura en el caso equilibrado 1D."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "type_radius": 0.1,
+          "union_radius": 0.03333333333333333
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 17,
+        "ct2_after": 17,
+        "ct2_reason": "1D coverage/quantization establishes useful exact adversarial cases but is classical and does not resolve 3D sensors."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S07",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B02_COVERAGE",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué cambia con presupuestos de tipos desiguales?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S07 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "**Existe una obstrucción aritmética.** Si la unión óptima en círculo son N puntos equidistantes, una subespecie de n puntos exactamente equidistantes debe seleccionar puntos a saltos de tamaño `N/n` de la rejilla base; por tanto `N/n` ha de ser un entero. Para N=3 y tipos de tamaños 1 y 2, ninguna pareja de los tres vértices equidistantes es antipodal, así que no pueden ser óptimas a la vez unión y especie de dos puntos. Las cuotas originales con N=400 incluyen 163,85,68,34, que no dividen 400: esa construcción exacta de retícula única no puede cumplir todas las especies a la vez.\n\n**Límite:** es 1D, rejilla óptima y cuotas exactas; NO prohíbe buenos patrones irregulares ni traslada automáticamente una incompatibilidad a 3D. **J:** el desbalance hace relevantes compromisos entre objetivos."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "union_N": 3,
+          "class_n": 2,
+          "ideal_spacing": 0.5
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S06",
+        "ct2_before": 17,
+        "ct2_after": 17,
+        "ct2_reason": "1D coverage/quantization establishes useful exact adversarial cases but is classical and does not resolve 3D sensors."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S08",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B02_COVERAGE",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué minimiza exactamente CVT en el círculo 1D?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S08 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Sea `g_i` la longitud del intervalo entre dos sensores consecutivos, suma de gaps 1. El error de cuantización cuadrático integrado por distancia al punto más próximo en ese intervalo es `∫_0^{g_i} min(t,g_i−t)² dt=g_i³/12`. Globalmente `E=Σg_i³/12≥1/(12n²)` por convexidad de x³, con igualdad en gaps iguales. Por su parte el máximo hueco/cobertura también se minimiza en gaps iguales. **Así la retícula es óptima a la vez para cobertura y cuantización L2 en 1D homogénea.**\n\n**Límite:** no se deduce optimalidad de CVT en 3D o en problemas funcionales de varias modalidades. Antecedente directo: literatura clásica de centroidal Voronoi y cuantización. **J:** rival fuerte con óptimos exactos bajo hipótesis explícitas."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": "g**3/12",
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 17,
+        "ct2_after": 17,
+        "ct2_reason": "1D coverage/quantization establishes useful exact adversarial cases but is classical and does not resolve 3D sensors."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S09",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B02_COVERAGE",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Puede una geometría con espectro baja-k perfecto tener huecos peores?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S09 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Sí. Para un número par de puntos `n`, construye `x_j=j/n+(-1)^j ε` módulo 1 con `0<ε<1/(2n)`. Los puntos pares e impares forman sendas retículas de tamaño n/2, cuyas amplitudes se anulan en todo modo entero `1≤|k|<n/2`. Pero los huecos alternan entre `1/n−2ε` y `1/n+2ε`: el radio máximo pasa de `1/(2n)` a `1/(2n)+ε`. **Ejemplo verificado:** con ocho puntos y `ε=.017`, primeras tres potencias espectrales cero dentro de precisión flotante, pero radio máximo `.0795` frente a `.0625` de la rejilla original.\n\n**J:** reducir una banda espectral no garantiza mejor cobertura local, incluso sin ruido ni optimizador imperfecto. Este es un contraejemplo formal al uso de S_low como único indicador de cobertura."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "max_lowk_power": 2.128152588547896e-32,
+          "radius_regular": 0.0625,
+          "radius_alternate": 0.07950000000000002
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S08",
+        "ct2_before": 17,
+        "ct2_after": 17,
+        "ct2_reason": "1D coverage/quantization establishes useful exact adversarial cases but is classical and does not resolve 3D sensors."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S10",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B02_COVERAGE",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué garantía básica ofrece un muestreo IID por especie?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S10 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Para n sensores colocados IID uniformemente y una región fija de volumen relativo `v∈[0,1]`, la probabilidad de no encontrar ninguno es `(1−v)^n`. Para `m` especies y `q` consultas/regiones predeterminadas, por unión de eventos adversos, `P(existe región sin algún tipo)≤Σ_c q(1−v)^{n_c}≤mq exp(−n_min v)`. Esto aporta un control probabilístico para disponibilidad de especies, a diferencia de una cobertura minimax determinista.\n\n**Límite:** q regiones fijas antes de observar, no garantiza un continuo infinito de posiciones ni toma en cuenta restricciones repulsivas. **J:** un control IID tiene garantías explícitas, pero no óptimos deterministas.\n\n## Rama B03 — Fourier, ruido y grafos (S11–S15)"
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "empty_prob": "43046721/100000000"
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 17,
+        "ct2_after": 17,
+        "ct2_reason": "1D coverage/quantization establishes useful exact adversarial cases but is classical and does not resolve 3D sensors."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S11",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B03_SAMPLING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Cuál es el espectro esperado de puntos IID?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S11 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Con n puntos IID uniformes sobre el toro, `A(k)=Σ_j exp(2πikx_j)` tiene `E|A|²=Σ_j1+Σ_{i≠j}E exp(ik(x_i−x_j))=n` para k entero distinto de cero. Luego `E S(k)=E|A|²/n=1`. **Consecuencia:** el valor 1 es la referencia de potencia blanca esperada para un conjunto desestructurado, no una cota inferior para todas las geometrías. **J:** confirma el significado de los scores espectrales bajos en LARP."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "n": 7,
+          "E_power": "1/7",
+          "E_S": 1.0
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 15,
+        "ct2_after": 15,
+        "ct2_reason": "Exact Fourier/noise/graph results clarify failure modes but are well known and lack a novel algorithmic advance."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S12",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B03_SAMPLING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Por qué la retícula puede ser simultáneamente excepcional y peligrosa?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S12 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Para los n puntos equiespaciados `x_j=j/n`, la suma geométrica cumple `Σ exp(2πik j/n)=0` cuando `n` NO divide k, y n cuando sí. Así, `S(k)=0` en todos los modos no resonantes y `S(k)=n` en los resonantes (la potencia de amplitud media es 1). **En un problema condicionado a frecuencias no resonantes, vence exactamente; para modos resonantes puede producir aliasing máximo.** No existe orden total de calidad sin distribución de frecuencias de la señal."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "p1to4": [
+            3.8518598887744724e-33,
+            3.7493994566546427e-33,
+            1.9259299443872359e-32,
+            1.0
+          ]
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S11",
+        "ct2_before": 15,
+        "ct2_after": 15,
+        "ct2_reason": "Exact Fourier/noise/graph results clarify failure modes but are well known and lack a novel algorithmic advance."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S13",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B03_SAMPLING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué mejora pretende conseguir MHU-v2 al ponderar por 1/|k|²?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S13 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Para un campo estacionario periódico con modos de Fourier no correlacionados, la varianza del error de la media de muestras es una suma de la forma `R(P)=Σ_{k≠0} V_f(k) |a_P(k)|²`, donde `V_f(k)` es la energía esperada de cada modo. Por tanto, minimizar `Σ|k|^{-2}|a_P(k)|²` se alinea exactamente con una familia cuyo espectro tenga `V_f(k)∝|k|^{-2}` dentro de la banda. La ponderación uniforme de v1 se alinea con espectro plano dentro de banda. **No es una prueba de mejora de v2 sin especificar la señal**.\n\n**Límite:** no confundir el perfil del código con la densidad espectral real de fotos o entradas neuronales; la suma puede requerir normalizaciones distintas por especie y dimensión. **J:** garantía de adecuación a una familia de señales, no de supremacía de v2."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "normalized_weights": [
+            0.7024390243902439,
+            0.17560975609756097,
+            0.07804878048780486,
+            0.04390243902439024
+          ]
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S11",
+        "ct2_before": 15,
+        "ct2_after": 15,
+        "ct2_reason": "Exact Fourier/noise/graph results clarify failure modes but are well known and lack a novel algorithmic advance."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S14",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B03_SAMPLING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Cuál es el daño matemático de desplazar sensores aleatoriamente?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S14 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Sea `p_j` una nube fija y añade desplazamientos IID `U_j`, con función característica `φ(k)=E exp(2πikU_j)`. Para la amplitud media `a=n^{-1}Σe^{2πik(p_j+U_j)}`, por expansión diagonal/cruzada se demuestra `E|a'|²=|φ|² |a|²+(1−|φ|²)/n`. En convención factor estructura S=n|a|², `E S'=|φ|² S+(1−|φ|²)`. Así aparece un piso de ruido aunque el S original se anule. Ejemplo de dos puntos con desplazamiento ±.12 verifica exactamente ambos lados de la ecuación.\n\n**Límite:** IID de desplazamientos, no errores correlacionados ni cambios de coordenadas globales. **J:** robustez espectral depende del perfil de jitter."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "analytical": 0.23430237011767163,
+          "enumerated": 0.23430237011767174
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S11",
+        "ct2_before": 15,
+        "ct2_after": 15,
+        "ct2_reason": "Exact Fourier/noise/graph results clarify failure modes but are well known and lack a novel algorithmic advance."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S15",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B03_SAMPLING",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Determina la geometría el rendimiento de un grafo neuronal?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S15 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "No sin fijar constructor de aristas. Sobre las mismas cuatro coordenadas circulares puede construirse un camino de cuatro vértices con autovalor de Fiedler del Laplaciano combinatorio `2−√2≈.585786`, o un ciclo de cuatro con Fiedler `2`. Ambos conservan coordenadas, pero alteran las aristas (y el presupuesto de conexiones). **Esto prueba no-identificación entre geometría y capacidad de mezcla del grafo; NO que la segunda arquitectura tenga mejor aprendizaje ni que los FLOPs estén igualados.**\n\n**J:** para comparar LOCAL/MHU como red hay que fijar kNN/Delaunay/routing y coste, no basta con espectro de posiciones.\n\n## Rama B04 — Marcas, presupuesto y objetivos (S16–S20)"
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "path_gap": 0.585786437626905,
+          "cycle_gap": 2.0,
+          "positions": [
+            0.0,
+            0.25,
+            0.5,
+            0.75
+          ]
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 15,
+        "ct2_after": 15,
+        "ct2_reason": "Exact Fourier/noise/graph results clarify failure modes but are well known and lack a novel algorithmic advance."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S16",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B04_LABELS",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Cuánta heterocoordinación se obtiene gratis de las proporciones?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S16 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Si las etiquetas con cuotas fijas `n_c` se permutan uniformemente entre N posiciones, para cualquiera de las aristas fijas entre dos nodos diferentes, `P(mismo tipo)=Σn_c(n_c−1)/[N(N−1)]`. Por tanto, `P(tipo distinto)=1−Σn_c(n_c−1)/[N(N−1)]`. Para cuotas `(163,85,68,50,34)` el nulo exacto es **0.7388847118** o **73.89%** aristas heterotípicas. Una medición del 85% no debe interpretarse como organización extraordinaria sin descontar que el nulo ya alcanza 74%; tampoco podemos atribuir el residuo al mecanismo MHU sin controlar el grafo.\n\n**Límite:** aristas fijadas previamente y etiquetas aleatorias sin alterar posiciones; con dependencias por posición cambia el nulo. **J:** baseline combinatorio adecuado para LOCAL y otras variantes."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "N": 400,
+          "counts": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "expected_heterotypic_edge_fraction": 0.7388847117794486
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": null,
+        "ct2_before": 21,
+        "ct2_after": 21,
+        "ct2_reason": "Exact biological-count reference and fairness of objectives clarify mechanism but no verified superior optimizer."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S17",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B04_LABELS",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Puede un patrón unido con S(k)=0 seguir teniendo especies mal distribuidas?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S17 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Para N puntos fijos con fases complejas `z_i` de módulo 1 y una especie de n puntos elegidos sin reemplazo, la esperanza exacta del factor de estructura de la especie es `E S_tipo=(N−n)/(N−1)+[(n−1)/(N−1)] S_union`. Se deduce expandiendo los productos y usando probabilidad de inclusión `n(n−1)/(N(N−1))` para cada par distinto. Incluso cuando `S_union=0`, queda **(N−n)/(N−1)>0** si n<N. Ejemplo N=4, n=2, unión cuadrada con S_total=0: `E S_tipo=2/3`.\n\n**J:** imponer espectro bajo únicamente a la unión NO garantiza multihiperuniformidad marcada; las clases deben organizarse también. Relación matemática con S02–S04 y con el experimento `UNION-ONLY`."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "exact": 0.6666666666666669,
+          "formula": 0.6666666666666666
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S02",
+        "ct2_before": 21,
+        "ct2_after": 21,
+        "ct2_reason": "Exact biological-count reference and fairness of objectives clarify mechanism but no verified superior optimizer."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S18",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B04_LABELS",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué podemos afirmar, de verdad, al añadir un término espectral a LOCAL?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S18 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Sea `x_L` un **mínimo global** de `L(x)` y `x_J` un **mínimo global** de `J(x)=λ L(x)+S(x)` con λ>0 en el mismo dominio de geometrías admisibles. De `L(x_L)≤L(x_J)` y `J(x_J)≤J(x_L)` resulta `S(x_J)≤S(x_L)−λ[L(x_J)−L(x_L)]≤S(x_L)`. **Teorema:** frente al mínimo global de LOCAL, el óptimo conjunto no puede mejorar L, pero sí tiene que mejorar/no empeorar S. Es un compromiso de optimización, no una contradicción.\n\n**Límite fundamental:** Adam/L-BFGS-B en un paisaje no convexo NO garantiza mínimos globales, y el término λ local y el conjunto factible tienen que ser idénticos. Esto explica por qué resultados locales empíricos pueden violar un orden que se esperaba de los óptimos matemáticos. **J:** separar comparación de objetivos vs comparación de salidas de algoritmo."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "LOCAL_opt": 0,
+          "joint_opt": 1,
+          "L_joint": 1.0,
+          "S_joint": 1.0
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S01",
+        "ct2_before": 21,
+        "ct2_after": 21,
+        "ct2_reason": "Exact biological-count reference and fairness of objectives clarify mechanism but no verified superior optimizer."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S19",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B04_LABELS",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué tipo protege más el objetivo de Scale3D?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S19 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "El código aplica `mean(types)` con el mismo coeficiente para los cinco tipos, aunque `n_c` y sus cortes espectrales son diferentes. Frente a un promedio ponderado por cuota de especie `Σf_c S_c`, el peso de un coste individual de especie es `1/5` y su peso proporcional por población sería f_c. El cociente relativo entre la clase de 34 sensores y la de 163 es `(163/34)≈4.7941`. **Es la prioridad relativa de los TÉRMINOS agregados POR TIPO, no 4.79 veces la derivada por sensor ni una ganancia neuronal demostrada.**\n\n**J:** posible sesgo normativo arquitectónico a favor de especies escasas, útil en problemas que exigen presencia de todas las modalidades; perjudicial si el coste real crece con el número de sensores."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "relative_per_particle_weight_small_over_large": 4.7941176470588225
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S01",
+        "ct2_before": 21,
+        "ct2_after": 21,
+        "ct2_reason": "Exact biological-count reference and fairness of objectives clarify mechanism but no verified superior optimizer."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    },
+    {
+      "id": "S20",
+      "kind": "DEDUCTIVE_AB",
+      "campaign": "MHU_SISTERS_20261030",
+      "branch": "B04_LABELS",
+      "status": "RUN_VALID_MATHEMATICAL_ANALYSIS",
+      "pre_commit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+      "code_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+      "code_git_blob_sha": "56ec9c33fbb92f09fafac46270c48c1d6a6e7b7d",
+      "code_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296",
+      "A": {
+        "question": "¿Qué estabilidad espectral garantiza desplazar poco cada punto?",
+        "unit": "mathematical model/point pattern under stated conditional assumptions",
+        "truth_contract": "algebraic identity, exact counterexample, source-code derivation; not causal/real data"
+      },
+      "B": {
+        "preferred": "claim S20 of the frozen preregistration",
+        "null": "claim false or dependent on unacknowledged assumptions",
+        "rivals": "strong lattice/CVT/LOCAL, phase disorder, IID or structural counterexample as appropriate"
+      },
+      "C": {
+        "discriminating_design": "direct analytic derivation plus model-specific finite exact/symbolic check, as written in complete report",
+        "proof_or_counterexample": "Si cada punto cambia a lo sumo una distancia δ, para un modo k, `|e^{2πik·(p+Δ)}−e^{2πik·p}|≤2π||k||δ`. Promediando, `|a'_k−a_k|≤b=2π||k||δ`. Como `|a_k|≤1`, el cambio de potencia normalizada satisface `||a'_k|²−|a_k|²|≤2b+b²`. Así las frecuencias bajas son relativamente más estables frente a perturbaciones pequeñas, mientras que la cota crece con frecuencia. No es una garantía de desempeño downstream ni evita efectos de aliasing.\n\n**J:** existe una garantía analítica local de estabilidad del score, condicionada a error posicional pequeño.\n\n## Integración, priors, controles adversariales y madurez\n\n1. **MHU puede adquirir una ventaja exclusiva SOLO al definir un entorno funcional**: distribución espectral de las señales, covarianza entre modalidades y tipo de error. La cancelación de fases S02–S05 da grados de libertad, no una ventaja media obligatoria (S04).\n2. **LOCAL/CVT tienen fundamentos fuertes de cobertura** S06/S08; S09 demuestra que espectro finito casi perfecto puede tener huecos peores. Los resultados históricos favorables a CVT no contradicen MHU, porque optimizan objetivos diferentes.\n3. **El ruido importa**: S14 muestra un piso espectral de jitter y los resultados anteriores de fallos de sensores no pueden transferirse automáticamente entre mecanismos de daño.\n4. **Las cuotas importan**: S07 y S19 señalan limitaciones reales de equilibrio cuando las cinco proporciones son distintas; S16 y S17 proporcionan nulos exactos antes de explicar la heterocoordinación por geometría.\n5. **No existe nueva prueba de originalidad 2/3**. La base técnica combina Fourier, desigualdades poligonales, diseño óptimo 1D, cuantización, combinatoria sin reemplazo y propiedades de mínimos ponderados, con claros antecedentes. Algunas cuestiones son corolarios o versiones relacionadas. La clasificación de 20 cuestiones examinadas no equivale a 20 teoremas científicamente originales ni a 20 validaciones independientes.\n6. **Auditoría interna:** fuente Python íntegra congelada en GitHub antes de ejecutar; `20/20 PASS` (ejemplos simbólicos o finitos), `checks_20.json` SHA256 `87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e`. La auditoría verifica instancias/identidades concretas, no es un asistente de pruebas formal. El juicio general se sostiene en las demostraciones escritas. `CLEAN_CLONE_NOT_VERIFIED` (no se han descargado desde un clon privado limpio para replicación). No hay datos nuevos ni prueba neuronal.\n7. **CT2:** trayectoria precedente VISION=11/100 y nueva rama matemática condicionada=24/100, valor inicial de la rama anterior formal; tras este lote conservamos **24/100**, porque no aparece un mecanismo nuevo con confirmación externa ni primacía sobre Wei/CVT. CT2 es ordinal, no probabilidad. 0 nuevos 1/3 no duplicados, 0 de nivel 2/3 y 0 de 3/3. Ningún resultado se agregará al inventario de 1/3 como original salvo auditoría de novedad adicional.\n\n## AB-DECIDE y contabilidad\n\n**20/20 preguntas matemáticas examinadas, 20/20 verificaciones auxiliares superadas**. En tanto que ciclos AB deductivos terminados con contrato individual A–J, se consume el cupo de 20 preguntas formales; **nuevos hallazgos originales cero**. No ha habido branching adaptativo entre las 20 verificaciones (el lote entero quedó congelado antes de ver resultados). Se han desarrollado cuatro subramas temáticas distintas para los modelos hermanos, pero no se han fusionado a main. Resultado: **STOP** respecto a proclamar superioridad universal; **BRANCH** hacia objetivos de diseño espectral-cobertura con restricciones explícitas; **PIVOT condicionado** a selección de distribución según densidad espectral observada y modalidades ópticas reales, con competidores originales Wei 2010 y CVT/farthest-first.\n\n### Prior art y documentación primaria\n\n- Generadores LARP originales: `GalexY3/proyecto-LARP/src/BR30_dynamic/original/scale3d_geometry.py` y `_v2.py`; informes `docs/00_DICTAMEN.md`, `docs/06_BR12_DICTAMEN.md`, `docs/AB08_CROSSPHASE_20261022/DICTAMEN_AB08.md`, `research/AB30_INTENSIVE_20261022/reports/DICTAMEN.md`, `research/AB30_DISCOVERY_20261022/reports/DICTAMEN.md`.\n- Jiao et al. (2014), *Avian photoreceptor patterns...*, https://doi.org/10.1103/PhysRevE.89.022721.\n- Lomba et al. (2020), *Minimal statistical-mechanical model for multihyperuniform patterns*, https://doi.org/10.1103/PhysRevE.102.012134.\n- Wei (2010), *Multi-Class Blue Noise Sampling*, https://www.liyiwei.org/papers/noise-sig10/.\n- Torquato (2016), *Hyperuniformity and its generalizations*, https://doi.org/10.1103/PhysRevE.94.022122.\n- Du, Faber & Gunzburger (1999), *Centroidal Voronoi Tessellations: Applications and Algorithms*, https://doi.org/10.1137/S0036144599352836.\n- Christogeorgos et al. (2024), *Computational model generating multihyperuniform antenna arrays and metasurfaces*, https://doi.org/10.1051/epjam/2024003.\n\n**Siguiente objetivo lógico:** diseño robusto `min_P max_{C∈C_admisible} Tr(K(P) C)` sujeto a cobertura por especie y presupuesto de posiciones y cómputo, contra diseño convencional con el mismo conjunto de restricciones. Esa propuesta es diseño, NO un resultado ejecutado en este lote."
+      },
+      "D": {
+        "freeze_order": "prospective full prereg and COMPLETE code in GitHub BEFORE first audit execution",
+        "code_status": "frozen and blob identity checked before run",
+        "check_is_not_proof": true
+      },
+      "E": {
+        "execution": "derivation documented and fixed verification program run once",
+        "check_result": {
+          "amplitude_change": 0.012437869787257411,
+          "amplitude_bound": 0.01884955592153876,
+          "power_change": 0.016114527814050095,
+          "power_bound": 0.03805441760151673
+        },
+        "passed": true
+      },
+      "F": {
+        "adversarial": "domain restrictions and rival explanations documented in cycle proof; finite code check cannot certify generality",
+        "prior_art": "Jiao 2014, Wei 2010, Lomba 2020, Du et al CVT, Torquato HU and elementary Fourier/combinatorial identities"
+      },
+      "G": {
+        "internal_symbolic_or_numeric_verification": true,
+        "independent_peer_review": false,
+        "external_replication": false,
+        "formal_proof_assistant": false
+      },
+      "H": {
+        "prior_update": "conditional model mechanism clarified; no update supporting universal MHU superiority",
+        "duplicate_or_dependency": "S14",
+        "ct2_before": 21,
+        "ct2_after": 21,
+        "ct2_reason": "Exact biological-count reference and fairness of objectives clarify mechanism but no verified superior optimizer."
+      },
+      "I": {
+        "internal_grade": "0/3 known/elementary mathematical identity or source-specific analytic corollary",
+        "new_n1": false,
+        "new_n2": false,
+        "new_n3": false,
+        "novelty_audited": "not certified beyond prior-art review",
+        "validity": "mathematical conditional only"
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL_QUESTION",
+        "next": "advance only to matched-cost physically grounded modalities or constrained multiobjective theorem with genuinely new prediction",
+        "no_main_merge": true
+      }
+    }
+  ]
+}
