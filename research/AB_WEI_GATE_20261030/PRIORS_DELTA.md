@@ -1,0 +1,8 @@
+# Priors LARP — anexo local W01/W02 (no modificar ledger maestro)
+2026-10-30. Sólo nueva evidencia documental/técnica, no nuevo hallazgo 1/3.
+| ID | Proposición acotada | Observación | Evidencia contraria / límite | Falsador | Decisión |
+|---|---|---|---|---|---|
+| W01-P | El objetivo original `DartThrowing` está definido en la configuración de `RainbowNoise/src/Main` | Un bucle `foreach(project)` enumera `DartThrowing` y genera `ADD_EXECUTABLE(${project} ${project}.cpp)`, código original congelado commit 0d1be20 | Verificador literal inicial dio 2 falsos FAIL. No se ha compilado y upstream advierte dependencias Windows | Fallo real de target en logs de compilación de SHA original | DOCUMENTAL_ACOTADO, W01 INVALID |
+| W02-P | La declaración CMake 2.6 impide necesariamente construir | En Linux CMake 3.31.6 tres proyectos mínimos se configuraron y compilaron tras corregir C++ | Error inicial común no era CMake sino un comentario inválido; override aparece unused; no es el proyecto Wei ni Windows | Log auténtico falla específicamente por versiones de política en Windows | HIPÓTESIS GENERAL DEBILITADA EN ESTA CONFIGURACIÓN |
+| W03-OPEN | Harvard puede proporcionar 31 bandas reales y masks para una comparación óptica reproducible | Fuente primaria académica declara 75 imágenes en dos regímenes de iluminación y uso para investigación no comercial | No se han descargado archivos, no hay checksum, licencias por archivo/splits ni test de calidad | Dataset con calidad/bandas insuficientes o uso no autorizado | CANDIDATO, NO EVIDENCIA |
+No se cambian prior scores ni CT2: math 24, functional 18. Conserva STOP_LOCAL para tareas ya agotadas. Publicar datos de geometrías originales requiere revisar permisos de repositorio.
