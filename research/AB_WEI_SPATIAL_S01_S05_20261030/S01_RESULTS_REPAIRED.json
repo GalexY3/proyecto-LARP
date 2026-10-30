@@ -1,0 +1,67 @@
+{
+  "status": "EXECUTED_POST_EXPOSURE_REPAIR_EXPLORATORY",
+  "code_precommit": "431e9cd428672657d0e86e216d7f1224a88b2a84",
+  "code_blob": "89ec0cf01f22e1daf83d83b11fdd6ef30dd79175",
+  "original_invalid_result_commit": "96fc59f4dc2e83a1b30cb6636ca411b86b3609a8",
+  "source_sha": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+  "result": {
+    "protocol": "S01_7_BAND_FIELD_QC",
+    "source": "chuishun-kong/id-dbo@26b8f243bdf3574ea2bb25eee927c720fa309dcb",
+    "source_git_blob": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+    "csv_lines": 398,
+    "parsed_records": 397,
+    "issues": {
+      "bad_shape": 0,
+      "bad_coordinates": 0,
+      "bad_spectral_nonfinite": 0,
+      "bad_pixel_counts": 0,
+      "zero_valid_pixel": 4,
+      "bad_cloud_range": 0,
+      "bad_time_difference": 0,
+      "bad_iso_date": 0
+    },
+    "exact_duplicates": 0,
+    "duplicated_in_situ_ids": 0,
+    "instrument_types": [
+      "S2A",
+      "S2B"
+    ],
+    "site_count_all": 63,
+    "filters": {
+      "A": {
+        "rows": 397,
+        "unique_sites": 63,
+        "sites_with_at_least_2_rows": 37,
+        "unique_in_situ_ids": 397,
+        "unique_satellite_products": 123,
+        "median_valid_pixel_fraction": 0.6551724137931034
+      },
+      "B": {
+        "rows": 388,
+        "unique_sites": 57,
+        "sites_with_at_least_2_rows": 37,
+        "unique_in_situ_ids": 388,
+        "unique_satellite_products": 118,
+        "median_valid_pixel_fraction": 0.6551724137931034
+      },
+      "C": {
+        "rows": 329,
+        "unique_sites": 52,
+        "sites_with_at_least_2_rows": 34,
+        "unique_in_situ_ids": 329,
+        "unique_satellite_products": 93,
+        "median_valid_pixel_fraction": 0.6551724137931034
+      }
+    },
+    "eligible_S02": true,
+    "unit": "satellite_in_situ_matchup_not_imagery_pixel",
+    "scientific_novelty": "0/3",
+    "caveats": [
+      "SOURCE_OWNERS_WARN_INSITU_DEVELOPMENT_OVERLAP",
+      "SITE_AND_SATELLITE_ID_DEPENDENCE",
+      "NO_2D_FULL_MULTIBAND_CUBE",
+      "NO_WEI_BINARY",
+      "DATA_LICENSE_NOT_VERIFIED"
+    ]
+  }
+}
