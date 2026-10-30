@@ -1,0 +1,416 @@
+{
+  "receipt": {
+    "protocol": "W05_W20_20261030",
+    "frozen_code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+    "frozen_code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+    "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+    "upstream_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+    "upstream_csv_git_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+    "source_access": "GitHub connector, 402 text lines (header + 350-750nm)",
+    "code_execution": "exact frozen JS source evaluated in V8 against connector-fetched original text",
+    "repeat": "two independent fetch+evaluation invocations in one execution",
+    "raw_json_equal": true,
+    "checks": {
+      "exact_json_replay": true,
+      "cycles_16": true,
+      "source_401": true,
+      "peak_and_width_7": true,
+      "filter_probability_bounds": true,
+      "pair_count_276": true,
+      "jacobi_converged": true,
+      "effective_rank_range": true,
+      "five_unique_selection": true,
+      "heldout_no_leakage_names": true,
+      "five_dropout_scenarios": true,
+      "QA_7224": true,
+      "categorical_all_descriptive": true
+    },
+    "limitations": [
+      "NO_CLEAN_CLONE_ORIGINAL_CSV_DOWNLOADED",
+      "NO_INDEPENDENT_LABORATORY_REPLICATION",
+      "NO_SPATIAL_HYPERSPECTRAL_SCENES",
+      "NO_AUTHENTIC_WEI_BUILD",
+      "NO_CAUSAL_NOVELTY_VALIDATION",
+      "NO_RAW_ORIGINAL_SOURCE_CSV_REPUBLISHED"
+    ]
+  },
+  "results": {
+    "source": {
+      "repo": "bllanos/chromatic-aberration",
+      "commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+      "git_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+      "wavelength_min": 350,
+      "wavelength_max": 750,
+      "wavelength_step": 1,
+      "material_patches": 24,
+      "filters": 7,
+      "source_data_published_here": false
+    },
+    "cycles": {
+      "W05": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "filter_peak_nominal_deviation",
+        "details": {
+          "nominal": [
+            400,
+            442,
+            500,
+            550,
+            600,
+            650,
+            700
+          ],
+          "peaks": [
+            398,
+            438,
+            498,
+            544,
+            595,
+            640,
+            692
+          ],
+          "absolute_errors_nm": [
+            2,
+            4,
+            2,
+            6,
+            5,
+            10,
+            8
+          ],
+          "median_absolute_error_nm": 5,
+          "n_filters": 7
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W06": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "filter_sampled_FWHM",
+        "details": {
+          "width_nm": [
+            8,
+            11,
+            10,
+            12,
+            11,
+            11,
+            10
+          ],
+          "median_width_nm": 11,
+          "n_censored": 0,
+          "not_true_interpolated_FWHM": true
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W07": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "filter_energy_containment_pm10",
+        "details": {
+          "fractions": [
+            0.790287097391609,
+            0.5348421685487373,
+            0.8421671734010311,
+            0.8032793550342898,
+            0.7019657685109117,
+            0.4712990080428088,
+            0.670189941469831
+          ],
+          "median": 0.7019657685109117,
+          "assumes_nonnegative_clipped": true
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W08": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "adjacent_filter_overlap",
+        "details": {
+          "adjacent_pairs": [
+            "400 nm vs 442 nm",
+            "442 nm vs 500 nm",
+            "500 nm vs 550 nm",
+            "550 nm vs 600 nm",
+            "600 nm vs 650 nm",
+            "650 nm vs 700 nm"
+          ],
+          "overlap": [
+            0.8270228559053449,
+            0.14104048864661273,
+            0.13857060049422532,
+            0.10911541700471661,
+            0.09209366927165509,
+            0.08219145568316248
+          ],
+          "median": 0.12384300874947096
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W09": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "filter_normalized_cosine_cross_talk",
+        "details": {
+          "max_off_diagonal_cosine": 0.16544888328385024,
+          "pair": [
+            "400 nm",
+            "442 nm"
+          ],
+          "median_pair_cosine": 0.00888665180911009,
+          "n_pairs": 21
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W10": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "ColorChecker_pairwise_spectral_correlation",
+        "details": {
+          "n_patches": 24,
+          "n_pairs": 276,
+          "median_pearson": 0.03397097402594633,
+          "p10_pearson": -0.7983305855359777,
+          "negative_fraction": 0.4782608695652174
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W11": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "ColorChecker_centered_Gram_effective_rank",
+        "details": {
+          "effective_rank": 1.7378277351756801,
+          "max_eigen": 16.812088248310683,
+          "trace": 23.054623139372307,
+          "offdiag_max_after_Jacobi": 9.786573151531839e-12,
+          "iterations": 1067
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W12": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "five_uniform_spectral_interpolation_vs_constant",
+        "details": {
+          "fixed_wavelengths": [
+            400,
+            470,
+            550,
+            620,
+            700
+          ],
+          "mse_piecewise_linear": 0.0021262111302584245,
+          "mse_constant": 0.03162815550135537,
+          "relative_improvement": 0.9327747351511754,
+          "n_patches": 24
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W13": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "greedy_band_selection_12_dev_to_12_heldout",
+        "details": {
+          "selected": [
+            400,
+            470,
+            530,
+            610,
+            700
+          ],
+          "greedy_stages": [
+            {
+              "added": 530,
+              "dev_mse": 0.009139029768023195
+            },
+            {
+              "added": 610,
+              "dev_mse": 0.005320043486427505
+            },
+            {
+              "added": 470,
+              "dev_mse": 0.001930579479834127
+            }
+          ],
+          "heldout_greedy_mse": 0.0030513101287263783,
+          "heldout_uniform_mse": 0.0026176786869239626,
+          "relative_advantage": -0.16565495374528827,
+          "dev_n": 12,
+          "test_n": 12,
+          "selection_bias_warning": true
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W14": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "fixed_band_dropout_stress_test",
+        "details": {
+          "basemse": 0.0026176786869239626,
+          "ablations": [
+            {
+              "drop": 400,
+              "heldout_mse": 0.003395700863949308
+            },
+            {
+              "drop": 470,
+              "heldout_mse": 0.009270764836258771
+            },
+            {
+              "drop": 550,
+              "heldout_mse": 0.009324933128216079
+            },
+            {
+              "drop": 620,
+              "heldout_mse": 0.0035651447649405186
+            },
+            {
+              "drop": 700,
+              "heldout_mse": 0.003930061093705718
+            }
+          ],
+          "worst_mse": 0.009324933128216079,
+          "mean_mse": 0.00589732093741408,
+          "worst_ratio": 3.5622909621401315
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W15": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "ridge_5_band_train12_test12_vs_interpolation",
+        "details": {
+          "ridge_lambda": 0.01,
+          "dev_n": 12,
+          "test_n": 12,
+          "heldout_ridge_mse": 0.00283234679562879,
+          "heldout_interpolation_mse": 0.0026176786869239626,
+          "ridge_minus_interpolation": 0.00021466810870482758
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W16": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "large_vs_small_checkerboard_black_white_contrast",
+        "details": {
+          "pairs": [
+            {
+              "size": "Large",
+              "mean_abs_white_minus_black": 0.8880123548387097,
+              "mean_signed_white_minus_black": 0.8880123548387097,
+              "mean_normalized_contrast": 0.8778719750692173
+            },
+            {
+              "size": "Small",
+              "mean_abs_white_minus_black": 0.7631891774193548,
+              "mean_signed_white_minus_black": 0.7631891774193548,
+              "mean_normalized_contrast": 0.8624965691135823
+            }
+          ],
+          "n_band_observations_per_pair": 31,
+          "not_independent_pixels": true
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W17": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "printer_paper_white_vs_toner_contrast",
+        "details": {
+          "mean_white": 0.928884129032258,
+          "mean_toner": 0.05407241935483871,
+          "mean_difference": 0.8748117096774194,
+          "mean_ratio_white_to_toner": 17.137507013871204,
+          "bands": 31
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W18": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "ColorChecker_six_neutral_density_monotonicity",
+        "details": {
+          "neutral_names": [
+            "white 9.5 (.05 D)",
+            "neutral 8 (.23 D)",
+            "neutral 6.5 (.44 D)",
+            "neutral 5 (.70 D)",
+            "neutral 3.5 (1.05 D)",
+            "black 2 (1.5 D)"
+          ],
+          "monotone_wavelength_count": 31,
+          "grid_band_count": 31,
+          "fraction_monotone": 1
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W19": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "spectral_1nm_roughness_patches_vs_filters",
+        "details": {
+          "patch_median": 0.0006253364552463602,
+          "filter_median": 0.04549139252179941,
+          "filter_to_patch_roughness_ratio": 72.74706622353789,
+          "patch_n": 24,
+          "filter_n": 7
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      },
+      "W20": {
+        "status": "EXECUTED_EXPLORATORY_REAL_LAB_SPECTRA",
+        "endpoint": "reflectance_physical_range_QA",
+        "details": {
+          "n_observations": 7224,
+          "negative": 0,
+          "above_one": 258,
+          "nonfinite": 0,
+          "negative_fraction": 0,
+          "above_one_fraction": 0.03571428571428571,
+          "not_independent_observations": true
+        },
+        "novelty": "0/3",
+        "external_replication": false,
+        "claim_limited_to_this_source": true
+      }
+    },
+    "audit": {
+      "precommitted_endpoints": 16,
+      "completed": 16,
+      "all_finite_endpoints_checked": true,
+      "n_data_lines": 401,
+      "source_wavelengths": 31,
+      "original_image_data": false,
+      "spatial_sensor_coordinates": false,
+      "novel_scientific_1_3": 0,
+      "novel_scientific_2_3": 0,
+      "novel_scientific_3_3": 0,
+      "CT2_math_before_after": [
+        24,
+        24
+      ],
+      "CT2_functional_before_after": [
+        18,
+        18
+      ]
+    }
+  }
+}
