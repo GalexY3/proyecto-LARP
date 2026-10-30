@@ -1,0 +1,463 @@
+{
+  "schema": "AB_3_2_1_O1_O7",
+  "campaign": "LARP-AB-R-HYBRID-20261030",
+  "grant": 30,
+  "formal_valid": 5,
+  "experimental_valid": 0,
+  "invalid": 0,
+  "planning": 0,
+  "remaining": 25,
+  "preregistered_commit": "12083759d28527968d75e7879568315793c44fad",
+  "code_frozen_commit": "3738712ff153307fa0683a3e6322fcec69c2065c",
+  "checks_json_sha256": "57a86c7774be32ef3ad732721eb75f3ac7d6f803abd549352dea1142cde35f7a",
+  "N1_new_unique": 0,
+  "N2_new": 0,
+  "N3_new": 0,
+  "scope": "five mathematical questions and five diagnostic tests, not five scientific discoveries",
+  "cycles": [
+    {
+      "id": "H01",
+      "mode": "AB-R",
+      "state": "RUN_VALID_DEDUCTIVE",
+      "grade_0_3": 0,
+      "A": {
+        "question": "CVT versus spectral aliasing",
+        "estimand": "quantization versus Fourier resonance on alternating even-n torus",
+        "unit": "finite geometric configuration under stated mathematical assumptions",
+        "external_population": "none"
+      },
+      "B": {
+        "rival": "Regular grid minimizes quantization; hybrid with spectral term can leave grid",
+        "null": "no claimed universal superiority of MHU; negation/counterexamples in frozen contract"
+      },
+      "C": {
+        "discriminant": "n=8 ε=0,1/128,1/32; exact gap-power identities",
+        "registered_hypothesis": "research/AB_HYBRID_MATH_20261030/PREREG_H01_H05.md"
+      },
+      "D": {
+        "prereg_commit": "12083759d28527968d75e7879568315793c44fad",
+        "frozen_code_commit": "3738712ff153307fa0683a3e6322fcec69c2065c",
+        "code_git_blob": "4e42be1b22095ea88767e0fb00abfb865b85ceb9",
+        "code_sha256": "5e6487a901111d346a7859633afbfac1d7ac5c5d3868d4d3337f744e1f7e2086",
+        "frozen_before_outcomes": true
+      },
+      "E": {
+        "executed": true,
+        "result": "Q=1/(12n²)+ε²; S_n=cos²(2πnε); λ<4π²n² w destabilizes grid",
+        "test_evidence": {
+          "n": 8,
+          "tested_eps": [
+            0.0,
+            0.0078125,
+            0.03125
+          ],
+          "quantization_formula": "1/(12n^2)+epsilon^2",
+          "alias_formula": "cos^2(2*pi*n*epsilon)",
+          "local_instability_criterion": "lambda < 4*pi^2*n^2*w",
+          "negative_second_derivative": -5051.237453357751
+        },
+        "test_passed": true
+      },
+      "F": {
+        "adversarial_limits": "Known convex quantization and Fourier aliasing, only a conditional extension of S08/S09"
+      },
+      "G": {
+        "local_independent_process_replay": "exact_byte_match",
+        "external_independent_replication": false,
+        "mechanized_proof": false
+      },
+      "H": {
+        "prior_revision": "Maintain task-specific spectral/coverage tradeoff",
+        "n1_new_unique": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "I": {
+        "validity": "conditional mathematical derivation plus finite/symbolic checks",
+        "original_scientific_discovery": false,
+        "ct2_change": 0
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL",
+        "next_evidence": "Investigate 2D band priorities after strong controls",
+        "r5": "do not repeat numerical checks as independent confirmation"
+      }
+    },
+    {
+      "id": "H02",
+      "mode": "AB-R",
+      "state": "RUN_VALID_DEDUCTIVE",
+      "grade_0_3": 0,
+      "A": {
+        "question": "fixed-quota concentration covariance",
+        "estimand": "randomly relabel fixed coordinates with n_c quotas",
+        "unit": "finite geometric configuration under stated mathematical assumptions",
+        "external_population": "none"
+      },
+      "B": {
+        "rival": "Independent colors versus hypergeometric negative correlations",
+        "null": "no claimed universal superiority of MHU; negation/counterexamples in frozen contract"
+      },
+      "C": {
+        "discriminant": "N=4 quotas 2,1,1; 12 colorings",
+        "registered_hypothesis": "research/AB_HYBRID_MATH_20261030/PREREG_H01_H05.md"
+      },
+      "D": {
+        "prereg_commit": "12083759d28527968d75e7879568315793c44fad",
+        "frozen_code_commit": "3738712ff153307fa0683a3e6322fcec69c2065c",
+        "code_git_blob": "4e42be1b22095ea88767e0fb00abfb865b85ceb9",
+        "code_sha256": "5e6487a901111d346a7859633afbfac1d7ac5c5d3868d4d3337f744e1f7e2086",
+        "frozen_before_outcomes": true
+      },
+      "E": {
+        "executed": true,
+        "result": "C_cd=N/(N−1)(n_c δ_cd−n_c n_d/N)(1−|Z|²/N²)",
+        "test_evidence": {
+          "N": 4,
+          "quotas": [
+            2,
+            1,
+            1
+          ],
+          "labelings": 12,
+          "empirical_cov": [
+            [
+              1.3333333333333333,
+              -0.6666666666666666,
+              -0.6666666666666666
+            ],
+            [
+              -0.6666666666666666,
+              1.0,
+              -0.3333333333333333
+            ],
+            [
+              -0.6666666666666666,
+              -0.3333333333333333,
+              1.0
+            ]
+          ],
+          "predicted_cov": [
+            [
+              1.3333333333333333,
+              -0.6666666666666666,
+              -0.6666666666666666
+            ],
+            [
+              -0.6666666666666666,
+              1.0,
+              -0.3333333333333333
+            ],
+            [
+              -0.6666666666666666,
+              -0.3333333333333333,
+              1.0
+            ]
+          ],
+          "max_absolute_error": 0.0,
+          "eigenvalues": [
+            2.2204460492503118e-16,
+            1.3333333333333335,
+            2.0
+          ]
+        },
+        "test_passed": true
+      },
+      "F": {
+        "adversarial_limits": "Bhatia-Thornton/partial spectral structure; extension of S17"
+      },
+      "G": {
+        "local_independent_process_replay": "exact_byte_match",
+        "external_independent_replication": false,
+        "mechanized_proof": false
+      },
+      "H": {
+        "prior_revision": "Need full concentration cross spectrum as null",
+        "n1_new_unique": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "I": {
+        "validity": "conditional mathematical derivation plus finite/symbolic checks",
+        "original_scientific_discovery": false,
+        "ct2_change": 0
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL",
+        "next_evidence": "Test label effect holding X and physical radii fixed",
+        "r5": "do not repeat numerical checks as independent confirmation"
+      }
+    },
+    {
+      "id": "H03",
+      "mode": "AB-R",
+      "state": "RUN_VALID_DEDUCTIVE",
+      "grade_0_3": 0,
+      "A": {
+        "question": "robust Fourier minimax",
+        "estimand": "two samples, unknown mix of Fourier k=1 or k=2",
+        "unit": "finite geometric configuration under stated mathematical assumptions",
+        "external_population": "none"
+      },
+      "B": {
+        "rival": "v2-like inverse-square prior versus minimax spectral risk",
+        "null": "no claimed universal superiority of MHU; negation/counterexamples in frozen contract"
+      },
+      "C": {
+        "discriminant": "symbolic minimax x∈[0,1]",
+        "registered_hypothesis": "research/AB_HYBRID_MATH_20261030/PREREG_H01_H05.md"
+      },
+      "D": {
+        "prereg_commit": "12083759d28527968d75e7879568315793c44fad",
+        "frozen_code_commit": "3738712ff153307fa0683a3e6322fcec69c2065c",
+        "code_git_blob": "4e42be1b22095ea88767e0fb00abfb865b85ceb9",
+        "code_sha256": "5e6487a901111d346a7859633afbfac1d7ac5c5d3868d4d3337f744e1f7e2086",
+        "frozen_before_outcomes": true
+      },
+      "E": {
+        "executed": true,
+        "result": "Min max(S1,S2)=1/4 at Δ=1/3; v2 weight optimum Δ=1/2 worst-case1",
+        "test_evidence": {
+          "S1": "x",
+          "S2": "(2*x-1)^2",
+          "crossings": [
+            "1/4",
+            "1"
+          ],
+          "minimax_x": "1/4",
+          "minimax_value": "1/4",
+          "delta_for_minimax": "1/3",
+          "v2_like_weighted_loss": "4*x**2/5 + 1/5",
+          "weighted_optimal_x": "0",
+          "weighted_design_worst_case": 1,
+          "robust_design_worst_case": 0.25
+        },
+        "test_passed": true
+      },
+      "F": {
+        "adversarial_limits": "Only two points, two modes, not a trained v2 network; S13 antecedent"
+      },
+      "G": {
+        "local_independent_process_replay": "exact_byte_match",
+        "external_independent_replication": false,
+        "mechanized_proof": false
+      },
+      "H": {
+        "prior_revision": "Unknown frequency spectrum requires robust family of priors",
+        "n1_new_unique": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "I": {
+        "validity": "conditional mathematical derivation plus finite/symbolic checks",
+        "original_scientific_discovery": false,
+        "ct2_change": 0
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL",
+        "next_evidence": "Optimize risk under credible uncertainty set and test real spectra",
+        "r5": "do not repeat numerical checks as independent confirmation"
+      }
+    },
+    {
+      "id": "H04",
+      "mode": "AB-R",
+      "state": "RUN_VALID_DEDUCTIVE",
+      "grade_0_3": 0,
+      "A": {
+        "question": "local modality coverage",
+        "estimand": "fixed quota five types, random 6-neighbor sample without replacement",
+        "unit": "finite geometric configuration under stated mathematical assumptions",
+        "external_population": "none"
+      },
+      "B": {
+        "rival": "high heterotypic edge fraction does not imply complete five-type availability",
+        "null": "no claimed universal superiority of MHU; negation/counterexamples in frozen contract"
+      },
+      "C": {
+        "discriminant": "exact inclusion-exclusion vs 6=2+1+1+1+1 hypergeometric composition",
+        "registered_hypothesis": "research/AB_HYBRID_MATH_20261030/PREREG_H01_H05.md"
+      },
+      "D": {
+        "prereg_commit": "12083759d28527968d75e7879568315793c44fad",
+        "frozen_code_commit": "3738712ff153307fa0683a3e6322fcec69c2065c",
+        "code_git_blob": "4e42be1b22095ea88767e0fb00abfb865b85ceb9",
+        "code_sha256": "5e6487a901111d346a7859633afbfac1d7ac5c5d3868d4d3337f744e1f7e2086",
+        "frozen_before_outcomes": true
+      },
+      "E": {
+        "executed": true,
+        "result": "P(all five types)=0.05773846225940983 weighted by focal class",
+        "test_evidence": {
+          "N": 400,
+          "quotas": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "d": 6,
+          "p_by_focal_class": [
+            0.05811062133120691,
+            0.05778145441299093,
+            0.05760948579866655,
+            0.05729994229288267,
+            0.05674964272704466
+          ],
+          "overall_probability": 0.05773846225940983,
+          "overall_fraction": "20020475/346744167",
+          "combinatorial_form": "sum_c C(nc_prime,2) prod_{j!=c} n_j_prime / C(399,6)",
+          "exact_methods_agree": true
+        },
+        "test_passed": true
+      },
+      "F": {
+        "adversarial_limits": "Random labels not actual geometric kNN/learned router; general hypergeometric identity"
+      },
+      "G": {
+        "local_independent_process_replay": "exact_byte_match",
+        "external_independent_replication": false,
+        "mechanized_proof": false
+      },
+      "H": {
+        "prior_revision": "Degree-6 random routing is a weak baseline for specialist cooperation",
+        "n1_new_unique": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "I": {
+        "validity": "conditional mathematical derivation plus finite/symbolic checks",
+        "original_scientific_discovery": false,
+        "ct2_change": 0
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL",
+        "next_evidence": "Compare label-aware routing to random/expander at same edge/FLOPs budget",
+        "r5": "do not repeat numerical checks as independent confirmation"
+      }
+    },
+    {
+      "id": "H05",
+      "mode": "AB-R",
+      "state": "RUN_VALID_DEDUCTIVE",
+      "grade_0_3": 0,
+      "A": {
+        "question": "coset incompatibility",
+        "estimand": "1D N12 grid union, class quotas 6,4,2",
+        "unit": "finite geometric configuration under stated mathematical assumptions",
+        "external_population": "none"
+      },
+      "B": {
+        "rival": "each n_c|N insufficient for simultaneous subgrid optimality",
+        "null": "no claimed universal superiority of MHU; negation/counterexamples in frozen contract"
+      },
+      "C": {
+        "discriminant": "enumerate 2x3 possible residues",
+        "registered_hypothesis": "research/AB_HYBRID_MATH_20261030/PREREG_H01_H05.md"
+      },
+      "D": {
+        "prereg_commit": "12083759d28527968d75e7879568315793c44fad",
+        "frozen_code_commit": "3738712ff153307fa0683a3e6322fcec69c2065c",
+        "code_git_blob": "4e42be1b22095ea88767e0fb00abfb865b85ceb9",
+        "code_sha256": "5e6487a901111d346a7859633afbfac1d7ac5c5d3868d4d3337f744e1f7e2086",
+        "frozen_before_outcomes": true
+      },
+      "E": {
+        "executed": true,
+        "result": "q6=2 and q4=3 coprime ⇒ every pair overlaps on 2 sites",
+        "test_evidence": {
+          "N": 12,
+          "quotas": [
+            6,
+            4,
+            2
+          ],
+          "steps": [
+            2,
+            3,
+            6
+          ],
+          "gcd_2_3": 1,
+          "intersections": [
+            {
+              "r6": 0,
+              "r4": 0,
+              "intersection": [
+                0,
+                6
+              ]
+            },
+            {
+              "r6": 0,
+              "r4": 1,
+              "intersection": [
+                4,
+                10
+              ]
+            },
+            {
+              "r6": 0,
+              "r4": 2,
+              "intersection": [
+                2,
+                8
+              ]
+            },
+            {
+              "r6": 1,
+              "r4": 0,
+              "intersection": [
+                3,
+                9
+              ]
+            },
+            {
+              "r6": 1,
+              "r4": 1,
+              "intersection": [
+                1,
+                7
+              ]
+            },
+            {
+              "r6": 1,
+              "r4": 2,
+              "intersection": [
+                5,
+                11
+              ]
+            }
+          ],
+          "necessary_pairwise_criterion": "gcd(N/n_i,N/n_j)>1 for disjoint nonempty cosets",
+          "scope": "1D circular optimal union grid and equal-spacing species grids"
+        },
+        "test_passed": true
+      },
+      "F": {
+        "adversarial_limits": "Circle-specific CRT and regular sublattices; extends S07"
+      },
+      "G": {
+        "local_independent_process_replay": "exact_byte_match",
+        "external_independent_replication": false,
+        "mechanized_proof": false
+      },
+      "H": {
+        "prior_revision": "Test coset intersection constraints before requesting exact species optima",
+        "n1_new_unique": false,
+        "n2_new": false,
+        "n3_new": false
+      },
+      "I": {
+        "validity": "conditional mathematical derivation plus finite/symbolic checks",
+        "original_scientific_discovery": false,
+        "ct2_change": 0
+      },
+      "J": {
+        "decision": "CLOSE_FORMAL",
+        "next_evidence": "Quantify best feasible relaxed multi-class coverage for unequal quotas",
+        "r5": "do not repeat numerical checks as independent confirmation"
+      }
+    }
+  ]
+}

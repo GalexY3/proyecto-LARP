@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "id": "SRC-H01",
+      "kind": "internal_original",
+      "url": "https://github.com/GalexY3/proyecto-LARP/blob/research/ab-archive-audit-20261030/research/AB_MHU_SISTERS_20261030/INFORME_S01_S20.md",
+      "relevance": "S07-S17 prior derived geometry and Fourier cases"
+    },
+    {
+      "id": "SRC-H02",
+      "kind": "published_prior_art",
+      "url": "https://journals.iucr.org/j/issues/2021/01/00/gj5253/index.html",
+      "relevance": "Bhatia-Thornton and partial concentration structure factors, not novel claim"
+    },
+    {
+      "id": "SRC-H03",
+      "kind": "published_prior_art",
+      "url": "https://www.liyiwei.org/papers/noise-sig10/",
+      "relevance": "2010 multi-class blue-noise competitor and independent prior art"
+    },
+    {
+      "id": "SRC-H04",
+      "kind": "published_prior_art",
+      "url": "https://jmlr.org/papers/v9/krause08a.html",
+      "relevance": "strong submodular/data-aware sensor placement comparator"
+    },
+    {
+      "id": "SRC-H05",
+      "kind": "original_repository",
+      "url": "https://github.com/GalexY3/proyecto-LARP",
+      "relevance": "LARP original 400 nodes count quotas and geometry models"
+    }
+  ],
+  "new_original_human_data": false,
+  "license_acceptance": false
+}

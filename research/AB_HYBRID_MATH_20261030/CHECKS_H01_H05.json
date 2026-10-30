@@ -1,0 +1,208 @@
+{
+  "campaign": "AB-R-MHU-HYBRID-20261030",
+  "preregistered": [
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05"
+  ],
+  "checks": [
+    {
+      "id": "H01",
+      "claim": "exact CVT-aliasing tradeoff and curvature threshold",
+      "pass": true,
+      "evidence": {
+        "n": 8,
+        "tested_eps": [
+          0.0,
+          0.0078125,
+          0.03125
+        ],
+        "quantization_formula": "1/(12n^2)+epsilon^2",
+        "alias_formula": "cos^2(2*pi*n*epsilon)",
+        "local_instability_criterion": "lambda < 4*pi^2*n^2*w",
+        "negative_second_derivative": -5051.237453357751
+      }
+    },
+    {
+      "id": "H02",
+      "claim": "fixed-quota random-label covariance has structured negative off-diagonals",
+      "pass": true,
+      "evidence": {
+        "N": 4,
+        "quotas": [
+          2,
+          1,
+          1
+        ],
+        "labelings": 12,
+        "empirical_cov": [
+          [
+            1.3333333333333333,
+            -0.6666666666666666,
+            -0.6666666666666666
+          ],
+          [
+            -0.6666666666666666,
+            1.0,
+            -0.3333333333333333
+          ],
+          [
+            -0.6666666666666666,
+            -0.3333333333333333,
+            1.0
+          ]
+        ],
+        "predicted_cov": [
+          [
+            1.3333333333333333,
+            -0.6666666666666666,
+            -0.6666666666666666
+          ],
+          [
+            -0.6666666666666666,
+            1.0,
+            -0.3333333333333333
+          ],
+          [
+            -0.6666666666666666,
+            -0.3333333333333333,
+            1.0
+          ]
+        ],
+        "max_absolute_error": 0.0,
+        "eigenvalues": [
+          2.2204460492503118e-16,
+          1.3333333333333335,
+          2.0
+        ]
+      }
+    },
+    {
+      "id": "H03",
+      "claim": "v2-like inverse band weighting is not minimax under unknown band",
+      "pass": true,
+      "evidence": {
+        "S1": "x",
+        "S2": "(2*x-1)^2",
+        "crossings": [
+          "1/4",
+          "1"
+        ],
+        "minimax_x": "1/4",
+        "minimax_value": "1/4",
+        "delta_for_minimax": "1/3",
+        "v2_like_weighted_loss": "4*x**2/5 + 1/5",
+        "weighted_optimal_x": "0",
+        "weighted_design_worst_case": 1,
+        "robust_design_worst_case": 0.25
+      }
+    },
+    {
+      "id": "H04",
+      "claim": "exact chance of all five modalities within six distinct random neighbors",
+      "pass": true,
+      "evidence": {
+        "N": 400,
+        "quotas": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "d": 6,
+        "p_by_focal_class": [
+          0.05811062133120691,
+          0.05778145441299093,
+          0.05760948579866655,
+          0.05729994229288267,
+          0.05674964272704466
+        ],
+        "overall_probability": 0.05773846225940983,
+        "overall_fraction": "20020475/346744167",
+        "combinatorial_form": "sum_c C(nc_prime,2) prod_{j!=c} n_j_prime / C(399,6)",
+        "exact_methods_agree": true
+      }
+    },
+    {
+      "id": "H05",
+      "claim": "divisibility of each quota does not suffice for optimal multicolor lattice partition",
+      "pass": true,
+      "evidence": {
+        "N": 12,
+        "quotas": [
+          6,
+          4,
+          2
+        ],
+        "steps": [
+          2,
+          3,
+          6
+        ],
+        "gcd_2_3": 1,
+        "intersections": [
+          {
+            "r6": 0,
+            "r4": 0,
+            "intersection": [
+              0,
+              6
+            ]
+          },
+          {
+            "r6": 0,
+            "r4": 1,
+            "intersection": [
+              4,
+              10
+            ]
+          },
+          {
+            "r6": 0,
+            "r4": 2,
+            "intersection": [
+              2,
+              8
+            ]
+          },
+          {
+            "r6": 1,
+            "r4": 0,
+            "intersection": [
+              3,
+              9
+            ]
+          },
+          {
+            "r6": 1,
+            "r4": 1,
+            "intersection": [
+              1,
+              7
+            ]
+          },
+          {
+            "r6": 1,
+            "r4": 2,
+            "intersection": [
+              5,
+              11
+            ]
+          }
+        ],
+        "necessary_pairwise_criterion": "gcd(N/n_i,N/n_j)>1 for disjoint nonempty cosets",
+        "scope": "1D circular optimal union grid and equal-spacing species grids"
+      }
+    }
+  ],
+  "checks_run": 5,
+  "pass_count": 5,
+  "scope": "Local internal verification of exact finite examples, not novelty or external replication",
+  "versions": {
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  }
+}
