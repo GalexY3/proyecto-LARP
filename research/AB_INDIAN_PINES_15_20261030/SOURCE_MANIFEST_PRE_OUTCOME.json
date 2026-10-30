@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-30",
+  "source": {
+    "repo": "helmenov/IndianPines",
+    "commit": "7b334bb459c5e91c5667e146a56548983b166bb2",
+    "path": "IndianPines/data/IndianPines.csv",
+    "git_blob": "0ed4500533a7c27e479944ce01996e676cabff1d",
+    "license": "CSV raw redistribution permission NOT VERIFIED, derived summaries only",
+    "n_pixels": 21025,
+    "spectral_bands": 220
+  },
+  "native": {
+    "repo": "GalexY3/proyecto-LARP",
+    "commit": "c961f90cab756009607a7febf14157d90fea66b7",
+    "files": [
+      {
+        "basename": "avian_full_spectral_N400_g1101.json",
+        "git_blob": "18f4567d4c72aa7bdd9e2de6cb4f7f5a007df8ad",
+        "npz_sha256": "427e9e7ddfb7cbfeea6d53a5ffd25465f90c788f5ce2cfaa41a421a95bb29680"
+      },
+      {
+        "basename": "avian_full_spectral_N400_g1102.json",
+        "git_blob": "5642a47b34d1ac3ae840c06a989855db2b5dc6d9",
+        "npz_sha256": "009acff5a4b0fd5baecf2817b9bd4cdf9b9bcda900b9d603c79f2413c6b7485f"
+      },
+      {
+        "basename": "avian_full_spectral_N400_g1103.json",
+        "git_blob": "5e2d9ba161bba318ed219c5116e383d443656453",
+        "npz_sha256": "de129159097d2e1307c1167e4b2c9d0111fcdac57f6217dd8c57331ab1a203b5"
+      },
+      {
+        "basename": "avian_local_only_N400_g1101.json",
+        "git_blob": "de57ad4d700303aabb495affa08ecd986371a5f1",
+        "npz_sha256": "0b53f51f2a70406c46c5d15962fc1b29372db96efaa0f64615442813e1cb0643"
+      },
+      {
+        "basename": "avian_local_only_N400_g1102.json",
+        "git_blob": "05febd925bb0e61a94d4a5d9230d34e0dd3af24b",
+        "npz_sha256": "7e3a4f44cc030cc93c56e1487f55a5275bc2ad8b751cf1018526e9c088d1167a"
+      },
+      {
+        "basename": "avian_local_only_N400_g1103.json",
+        "git_blob": "931c4f73495121fc7034ae6ebdf6b2218ecdcccc",
+        "npz_sha256": "ba1736cfbb86bb86873e3eb872c5d4335736cc3bfdc38ecf96a2c8479787c4c1"
+      }
+    ]
+  },
+  "Note": "Do not publish original LARP native coords, raw AVIRIS table or user private data."
+}
