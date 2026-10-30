@@ -1,0 +1,87 @@
+{
+  "batch_id": "LARP_ABR_S01_S03_20261030",
+  "schema": "STANDALONE_O7_DELTA_NOT_CANONICAL",
+  "root": "LARP",
+  "base_head": "ca8ebaf77c0720f1fb142d82d6b7070f72ef03e1",
+  "nodes": [
+    {
+      "id": "LARP_ABR_S01",
+      "mode": "AB-R",
+      "type": "evidence_quality",
+      "status": "answered",
+      "grade": "0/3",
+      "summary": "397 matchups; 329 QC; original CSV parser invalid and repaired after exposure"
+    },
+    {
+      "id": "LARP_ABR_S02",
+      "mode": "AB-R",
+      "type": "empirical_exploratory",
+      "status": "answered",
+      "grade": "0/3",
+      "summary": "34 site and satellite-product separated folds, ridge against ordinal interpolation"
+    },
+    {
+      "id": "LARP_ABR_S03",
+      "mode": "AB-R",
+      "type": "adversarial_control",
+      "status": "answered",
+      "grade": "0/3",
+      "summary": "Sentinel2A/B native wavelength interpolation vs ridge, no independent data"
+    },
+    {
+      "id": "LARP_WEI_ORIGINAL_BUILD",
+      "mode": "AB-R",
+      "type": "blocker",
+      "status": "blocked",
+      "summary": "Original Wei source not locally cloned, Windows build log absent"
+    },
+    {
+      "id": "LARP_TRUE_SPATIAL_DATACUBES",
+      "mode": "AB-R",
+      "type": "blocker",
+      "status": "blocked",
+      "summary": "No external genuine 2D hyperspectral cubes acquired"
+    }
+  ],
+  "edges": [
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_S01",
+      "relation": "branches_from"
+    },
+    {
+      "from": "LARP_ABR_S01",
+      "to": "LARP_ABR_S02",
+      "relation": "supports"
+    },
+    {
+      "from": "LARP_ABR_S02",
+      "to": "LARP_ABR_S03",
+      "relation": "tests"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_WEI_ORIGINAL_BUILD",
+      "relation": "depends_on"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_TRUE_SPATIAL_DATACUBES",
+      "relation": "depends_on"
+    }
+  ],
+  "counts": {
+    "new_authorized": 5,
+    "valid_executed_exploratory": 3,
+    "invalid_instrumental_attempts": 1,
+    "planning": 0,
+    "remaining_new": 2,
+    "remaining_old": 9,
+    "N1": 0,
+    "N2": 0,
+    "N3": 0,
+    "CT2_math": 24,
+    "CT2_functional": 18
+  },
+  "limitations": "Partial stand-alone graph, not applied to canonical AB Atlas; do not claim integration."
+}
