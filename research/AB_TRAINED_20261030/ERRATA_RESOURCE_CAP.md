@@ -1,0 +1,7 @@
+# AB-R L01–L20 — Errata de instrumentación antes de cualquier outcome
+
+Primer intento con fuente completa congelada `learned_followup.py` GitHub `daee73553a74e0155962a186bb372cddc7e1289f`, SHA256 `320bab4445e5e381b9378b681940ada89fe6df74086c4c0f9a1b8e51b2d7b031`. El proceso emitió marcas `DONE 3011 low` y `DONE 3011 high` pero fue interrumpido por el límite de ejecución del contenedor antes de escribir el JSON final; **NO hay outcomes persistentes de esa corrida, se declara INCOMPLETE_RESOURCE_LIMIT**. El mecanismo de datos, arquitecturas, métodos y criterios no cambia.
+
+Para adaptar el cálculo al límite, se introduce `run_one_cell.py`, envoltorio que importa exactamente las funciones congeladas y ejecuta por separado una sola semilla geométrica y un solo contexto. Se esperan 2×5=10 archivos de 576 registros cada uno, agregados después sin eliminar filas. El cambio es exclusivamente de instrumentación, no de selección de parámetros o método. Los resultados por condición se obtienen con las mismas fórmulas, índices y semillas definidas en la fuente anterior. Antes del primer resultado completo, el envoltorio se congelará en GitHub con SHA256 y firma de código. Repetir una celda sin modificar parámetros verificará igualdad local. El resultado nuevo sigue siendo proxy sintético, sin geometrías nativas.
+
+La fecha de este documento y su commit deben preceder a la primera ejecución final de las diez celdas. Si el código se altera por un bug posterior, nueva errata/commit y no inflar ciclos.
