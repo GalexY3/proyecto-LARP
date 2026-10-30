@@ -1,0 +1,26 @@
+{
+  "verification": "SAME_SOURCE_AND_CODE_REPLAY",
+  "date": "2026-10-30",
+  "original_result_commit": "58faddfcdecac349ccc68919ae1721755b0bc362",
+  "preregistered_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+  "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+  "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+  "source_git_blob": "0ed4500533a7c27e479944ce01996e676cabff1d",
+  "checks": {
+    "pre_frozen_code_blob_matches": true,
+    "all_15_object_output_equal": true,
+    "n_tasks_15": true,
+    "source_complete": true,
+    "ground_truth_labels": true,
+    "common_test_4289": true,
+    "all_classes_400": true,
+    "all_snap_collision_zero": true,
+    "all_four_baselines_present": true,
+    "all_predictions_finite": true,
+    "no_Wei_false_claim": true,
+    "CT2_unchanged": true
+  },
+  "identical_results_json": true,
+  "not_external_replication": true,
+  "notes": "Re-execution of same single real AVIRIS scene and six native source exports, not additional experiment. No Wei binary. IP03 CVT competence check lacks quantization-distance endpoint; needs errata."
+}
