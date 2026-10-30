@@ -1,0 +1,42 @@
+{
+  "format": "AB_O4_CT2",
+  "date": "2026-10-30",
+  "ordinal_not_probability": true,
+  "series": [
+    {
+      "branch": "LARP_MATH_NATIVE_N400",
+      "points": [
+        {
+          "cycle": "W03_PRE",
+          "score": 24
+        },
+        {
+          "cycle": "W03_POST",
+          "score": 24
+        },
+        {
+          "cycle": "W04_POST",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "branch": "LARP_FUNCTIONAL_N400",
+      "points": [
+        {
+          "cycle": "W03_PRE",
+          "score": 18
+        },
+        {
+          "cycle": "W03_POST",
+          "score": 18
+        },
+        {
+          "cycle": "W04_POST",
+          "score": 18
+        }
+      ]
+    }
+  ],
+  "note": "No original Wei runtime, no external real optical/multiband observations, no neural training; software checks do not change CT2."
+}
