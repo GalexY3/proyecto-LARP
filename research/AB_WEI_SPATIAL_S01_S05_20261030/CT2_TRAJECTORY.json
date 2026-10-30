@@ -1,0 +1,52 @@
+{
+  "kind": "AB_O4_CT2",
+  "ordinal_not_probability": true,
+  "date": "2026-10-30",
+  "source_lineages": [
+    {
+      "id": "LARP_N400_MATH",
+      "values": [
+        {
+          "stage": "PRE_S01",
+          "score": 24
+        },
+        {
+          "stage": "S01_REPAIRED",
+          "score": 24
+        },
+        {
+          "stage": "S02",
+          "score": 24
+        },
+        {
+          "stage": "S03",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "id": "LARP_N400_FUNCTIONAL",
+      "values": [
+        {
+          "stage": "PRE_S01",
+          "score": 18
+        },
+        {
+          "stage": "S01_REPAIRED",
+          "score": 18
+        },
+        {
+          "stage": "S02",
+          "score": 18
+        },
+        {
+          "stage": "S03",
+          "score": 18
+        }
+      ]
+    }
+  ],
+  "reason": "No original Wei binary, no 2D full hyperspectral scene, no geometric or neural MHU test; satellite point match-up reconstruction is a distinct estimand.",
+  "source": "LEDGER_S01_S03_AJ.json",
+  "error_notes": "S01 original failed CSV parser and repaired after exposure; not independent confirmation"
+}
