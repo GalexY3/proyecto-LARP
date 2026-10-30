@@ -1,0 +1,2687 @@
+{
+  "schema": "AB3.2.1_O1_O7_ROUTING",
+  "grant": 30,
+  "completed_contrasts": 30,
+  "invalid": 0,
+  "planning": 0,
+  "new_n1": 0,
+  "new_n2": 0,
+  "new_n3": 0,
+  "warnings": [
+    "Thirty pre-registered task×failure contrasts all rely on the same simulator: not thirty independent source samples or novel mechanisms",
+    "Do not claim native Scale3D MHU, authentic CVT LOCAL or trained MoE",
+    "mhu_type and mhu_hybrid are the same underlying neighbor sets"
+  ],
+  "cycles": [
+    {
+      "id": "R01",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At low field mechanism under clean intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "low",
+        "intervention": "clean",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.1407712126688405,
+          "mhu_knn": 0.2683793938358612,
+          "cvt_type": 0.0830005699512374,
+          "cvt_knn": 0.1340410783875871,
+          "grid_type": 0.1546646059647851,
+          "pseudo_expander": 1.1272935673311608
+        },
+        "mhu_type_minus_cvt_type": 0.057770642717603,
+        "mhu_knn_minus_mhu_type": 0.1276081811670207,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R07",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At low field mechanism under random_drop15 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "low",
+        "intervention": "random_drop15",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.2526182677891457,
+          "mhu_knn": 0.3726721062944517,
+          "cvt_type": 0.199290554649379,
+          "cvt_knn": 0.2414810650795927,
+          "grid_type": 0.2656404465229932,
+          "pseudo_expander": 1.1014135141387948
+        },
+        "mhu_type_minus_cvt_type": 0.0533277131397666,
+        "mhu_knn_minus_mhu_type": 0.120053838505306,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R13",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At low field mechanism under random_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "low",
+        "intervention": "random_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.4368441398924059,
+          "mhu_knn": 0.5268512138953575,
+          "cvt_type": 0.3967501206852934,
+          "cvt_knn": 0.4320381592691758,
+          "grid_type": 0.4283609087236724,
+          "pseudo_expander": 1.082701136802507
+        },
+        "mhu_type_minus_cvt_type": 0.0400940192071124,
+        "mhu_knn_minus_mhu_type": 0.0900070740029516,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R19",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At low field mechanism under rare_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "low",
+        "intervention": "rare_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.1910495273839731,
+          "mhu_knn": 0.3039838613475302,
+          "cvt_type": 0.1365069406632786,
+          "cvt_knn": 0.1756006180117763,
+          "grid_type": 0.200508987222632,
+          "pseudo_expander": 1.1066777827166183
+        },
+        "mhu_type_minus_cvt_type": 0.0545425867206944,
+        "mhu_knn_minus_mhu_type": 0.1129343339635571,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R25",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At low field mechanism under noise25 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "low",
+        "intervention": "noise25",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.1940813313073114,
+          "mhu_knn": 0.3041830701352295,
+          "cvt_type": 0.132842032263984,
+          "cvt_knn": 0.1801881750332055,
+          "grid_type": 0.2023555435465008,
+          "pseudo_expander": 1.1629322089244398
+        },
+        "mhu_type_minus_cvt_type": 0.0612392990433273,
+        "mhu_knn_minus_mhu_type": 0.1101017388279181,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R02",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At high field mechanism under clean intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "high",
+        "intervention": "clean",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.0586282622047951,
+          "mhu_knn": 0.8012341876501688,
+          "cvt_type": 0.6869390422452716,
+          "cvt_knn": 0.6146130023394352,
+          "grid_type": 1.0720889188105127,
+          "pseudo_expander": 1.4681646640624806
+        },
+        "mhu_type_minus_cvt_type": 0.3716892199595237,
+        "mhu_knn_minus_mhu_type": -0.2573940745546265,
+        "winner": "cvtlocal",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "opposes class routing vs MHU kNN in this generator; high-frequency or severe dropout can reverse gains",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R08",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At high field mechanism under random_drop15 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "high",
+        "intervention": "random_drop15",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.0360386480974382,
+          "mhu_knn": 0.8285512485347409,
+          "cvt_type": 0.7494209975509342,
+          "cvt_knn": 0.6833090676945107,
+          "grid_type": 1.0866061938377682,
+          "pseudo_expander": 1.405142874546345
+        },
+        "mhu_type_minus_cvt_type": 0.286617650546504,
+        "mhu_knn_minus_mhu_type": -0.2074873995626972,
+        "winner": "cvtlocal",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "opposes class routing vs MHU kNN in this generator; high-frequency or severe dropout can reverse gains",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R14",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At high field mechanism under random_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "high",
+        "intervention": "random_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.0507452723366215,
+          "mhu_knn": 0.8979572661742395,
+          "cvt_type": 0.8556416715720636,
+          "cvt_knn": 0.8185272597657435,
+          "grid_type": 1.0767860899942625,
+          "pseudo_expander": 1.278080174106038
+        },
+        "mhu_type_minus_cvt_type": 0.1951036007645579,
+        "mhu_knn_minus_mhu_type": -0.1527880061623819,
+        "winner": "cvtlocal",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "opposes class routing vs MHU kNN in this generator; high-frequency or severe dropout can reverse gains",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R20",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At high field mechanism under rare_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "high",
+        "intervention": "rare_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.027270298263786,
+          "mhu_knn": 0.8244931967445531,
+          "cvt_type": 0.684381830093526,
+          "cvt_knn": 0.6329705072045634,
+          "grid_type": 1.038065402739935,
+          "pseudo_expander": 1.4467574513731003
+        },
+        "mhu_type_minus_cvt_type": 0.34288846817026,
+        "mhu_knn_minus_mhu_type": -0.2027771015192329,
+        "winner": "cvtlocal",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "opposes class routing vs MHU kNN in this generator; high-frequency or severe dropout can reverse gains",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R26",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At high field mechanism under noise25 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "high",
+        "intervention": "noise25",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.1371505975721636,
+          "mhu_knn": 0.8652244577735854,
+          "cvt_type": 0.7597820790538036,
+          "cvt_knn": 0.6784178050642081,
+          "grid_type": 1.142569879236702,
+          "pseudo_expander": 1.519532671986232
+        },
+        "mhu_type_minus_cvt_type": 0.37736851851836,
+        "mhu_knn_minus_mhu_type": -0.2719261397985782,
+        "winner": "cvtlocal",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "opposes class routing vs MHU kNN in this generator; high-frequency or severe dropout can reverse gains",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R03",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At correlated field mechanism under clean intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "correlated",
+        "intervention": "clean",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.0357289944455428,
+          "mhu_knn": 0.1121323858907381,
+          "cvt_type": 0.0233522921672721,
+          "cvt_knn": 0.0432337213400186,
+          "grid_type": 0.0434836645051937,
+          "pseudo_expander": 0.696872791655004
+        },
+        "mhu_type_minus_cvt_type": 0.0123767022782707,
+        "mhu_knn_minus_mhu_type": 0.0764033914451952,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R09",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At correlated field mechanism under random_drop15 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "correlated",
+        "intervention": "random_drop15",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.1011702653442911,
+          "mhu_knn": 0.203515186245219,
+          "cvt_type": 0.0874680521500798,
+          "cvt_knn": 0.1212007831451534,
+          "grid_type": 0.1077011685431903,
+          "pseudo_expander": 0.7433932611618973
+        },
+        "mhu_type_minus_cvt_type": 0.0137022131942113,
+        "mhu_knn_minus_mhu_type": 0.1023449209009278,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R15",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At correlated field mechanism under random_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "correlated",
+        "intervention": "random_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.2662014865405747,
+          "mhu_knn": 0.374186322951245,
+          "cvt_type": 0.2460217007261923,
+          "cvt_knn": 0.2854496752151575,
+          "grid_type": 0.27600247266445,
+          "pseudo_expander": 0.815163922442791
+        },
+        "mhu_type_minus_cvt_type": 0.0201797858143823,
+        "mhu_knn_minus_mhu_type": 0.1079848364106703,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R21",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At correlated field mechanism under rare_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "correlated",
+        "intervention": "rare_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.0563600406861114,
+          "mhu_knn": 0.1354930320162472,
+          "cvt_type": 0.0431979156009387,
+          "cvt_knn": 0.061393649544643,
+          "grid_type": 0.0632114840371689,
+          "pseudo_expander": 0.7049581989192424
+        },
+        "mhu_type_minus_cvt_type": 0.0131621250851726,
+        "mhu_knn_minus_mhu_type": 0.0791329913301358,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R27",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At correlated field mechanism under noise25 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "correlated",
+        "intervention": "noise25",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.0479535454642866,
+          "mhu_knn": 0.1219908402928068,
+          "cvt_type": 0.0359145316658813,
+          "cvt_knn": 0.0546654121268014,
+          "grid_type": 0.0560527442991979,
+          "pseudo_expander": 0.706737087424087
+        },
+        "mhu_type_minus_cvt_type": 0.0120390137984053,
+        "mhu_knn_minus_mhu_type": 0.0740372948285201,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R04",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At anticorrelated field mechanism under clean intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "anticorrelated",
+        "intervention": "clean",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.8355725064641027,
+          "mhu_knn": 1.170945783323298,
+          "cvt_type": 0.4659771978678062,
+          "cvt_knn": 0.7133993801191756,
+          "grid_type": 0.9395082106435478,
+          "pseudo_expander": 3.6004989242754584
+        },
+        "mhu_type_minus_cvt_type": 0.3695953085962965,
+        "mhu_knn_minus_mhu_type": 0.3353732768591954,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R10",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At anticorrelated field mechanism under random_drop15 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "anticorrelated",
+        "intervention": "random_drop15",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.2677845816072266,
+          "mhu_knn": 1.4003779744480234,
+          "cvt_type": 1.0372188206962407,
+          "cvt_knn": 1.1895990760596111,
+          "grid_type": 1.297174167353608,
+          "pseudo_expander": 3.143703788014759
+        },
+        "mhu_type_minus_cvt_type": 0.2305657609109859,
+        "mhu_knn_minus_mhu_type": 0.1325933928407967,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R16",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At anticorrelated field mechanism under random_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "anticorrelated",
+        "intervention": "random_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.6108428904799172,
+          "mhu_knn": 1.5339663683179945,
+          "cvt_type": 1.5609532868103948,
+          "cvt_knn": 1.5756928414421278,
+          "grid_type": 1.6976051516469937,
+          "pseudo_expander": 2.5977240805714623
+        },
+        "mhu_type_minus_cvt_type": 0.0498896036695224,
+        "mhu_knn_minus_mhu_type": -0.0768765221619229,
+        "winner": "mhu_local",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "opposes class routing vs MHU kNN in this generator; high-frequency or severe dropout can reverse gains",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R22",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At anticorrelated field mechanism under rare_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "anticorrelated",
+        "intervention": "rare_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.124930204208417,
+          "mhu_knn": 1.2738503248670443,
+          "cvt_type": 0.7937482286870153,
+          "cvt_knn": 0.904837780905692,
+          "grid_type": 1.1450689582271834,
+          "pseudo_expander": 3.484667465873194
+        },
+        "mhu_type_minus_cvt_type": 0.3311819755214017,
+        "mhu_knn_minus_mhu_type": 0.1489201206586274,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R28",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At anticorrelated field mechanism under noise25 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "anticorrelated",
+        "intervention": "noise25",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 1.121791654540949,
+          "mhu_knn": 1.3788297980677786,
+          "cvt_type": 0.7638020666939839,
+          "cvt_knn": 0.9769726936922698,
+          "grid_type": 1.2511329244136022,
+          "pseudo_expander": 3.806201191458746
+        },
+        "mhu_type_minus_cvt_type": 0.3579895878469651,
+        "mhu_knn_minus_mhu_type": 0.2570381435268296,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R05",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At rare field mechanism under clean intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "rare",
+        "intervention": "clean",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.2829120058404066,
+          "mhu_knn": 0.5317401201749848,
+          "cvt_type": 0.1944896158756434,
+          "cvt_knn": 0.3890585455377227,
+          "grid_type": 0.3371538606081485,
+          "pseudo_expander": 1.3036940185851107
+        },
+        "mhu_type_minus_cvt_type": 0.0884223899647631,
+        "mhu_knn_minus_mhu_type": 0.2488281143345782,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R11",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At rare field mechanism under random_drop15 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "rare",
+        "intervention": "random_drop15",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.3951332288864391,
+          "mhu_knn": 0.6105051133677074,
+          "cvt_type": 0.3040830632899996,
+          "cvt_knn": 0.4706653069675818,
+          "grid_type": 0.4117260545870364,
+          "pseudo_expander": 1.2538588845769243
+        },
+        "mhu_type_minus_cvt_type": 0.0910501655964395,
+        "mhu_knn_minus_mhu_type": 0.2153718844812682,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R17",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At rare field mechanism under random_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "rare",
+        "intervention": "random_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.5742147575109919,
+          "mhu_knn": 0.7229264748198762,
+          "cvt_type": 0.5191762749823542,
+          "cvt_knn": 0.632625886689653,
+          "grid_type": 0.6252718220270262,
+          "pseudo_expander": 1.1892185458690003
+        },
+        "mhu_type_minus_cvt_type": 0.0550384825286377,
+        "mhu_knn_minus_mhu_type": 0.1487117173088842,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R23",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At rare field mechanism under rare_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "rare",
+        "intervention": "rare_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.5698262974406311,
+          "mhu_knn": 0.7165132477903371,
+          "cvt_type": 0.5264826598447455,
+          "cvt_knn": 0.640222943286611,
+          "grid_type": 0.6008080189178292,
+          "pseudo_expander": 1.171063314939577
+        },
+        "mhu_type_minus_cvt_type": 0.0433436375958855,
+        "mhu_knn_minus_mhu_type": 0.146686950349706,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R29",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At rare field mechanism under noise25 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "rare",
+        "intervention": "noise25",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.3473892067610603,
+          "mhu_knn": 0.5623251815214126,
+          "cvt_type": 0.2536198993567475,
+          "cvt_knn": 0.4279884411682857,
+          "grid_type": 0.4026792016918397,
+          "pseudo_expander": 1.329180468224062
+        },
+        "mhu_type_minus_cvt_type": 0.0937693074043127,
+        "mhu_knn_minus_mhu_type": 0.2149359747603523,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R06",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At localized field mechanism under clean intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "localized",
+        "intervention": "clean",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.2982474502069466,
+          "mhu_knn": 0.4257876542050451,
+          "cvt_type": 0.1740861345639456,
+          "cvt_knn": 0.2278849518312375,
+          "grid_type": 0.3234187826154712,
+          "pseudo_expander": 1.3402827355953473
+        },
+        "mhu_type_minus_cvt_type": 0.1241613156430009,
+        "mhu_knn_minus_mhu_type": 0.1275402039980985,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R12",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At localized field mechanism under random_drop15 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "localized",
+        "intervention": "random_drop15",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.4546404739136526,
+          "mhu_knn": 0.5524285359218981,
+          "cvt_type": 0.3083282475422479,
+          "cvt_knn": 0.3523396982625531,
+          "grid_type": 0.4528881505911986,
+          "pseudo_expander": 1.282562755174053
+        },
+        "mhu_type_minus_cvt_type": 0.1463122263714047,
+        "mhu_knn_minus_mhu_type": 0.0977880620082454,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R18",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At localized field mechanism under random_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "localized",
+        "intervention": "random_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.6357263090652622,
+          "mhu_knn": 0.6937215565607328,
+          "cvt_type": 0.5425683804254712,
+          "cvt_knn": 0.568196596202628,
+          "grid_type": 0.6213797830771169,
+          "pseudo_expander": 1.2042197973027224
+        },
+        "mhu_type_minus_cvt_type": 0.093157928639791,
+        "mhu_knn_minus_mhu_type": 0.0579952474954705,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R24",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At localized field mechanism under rare_drop40 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "localized",
+        "intervention": "rare_drop40",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.369859366851133,
+          "mhu_knn": 0.4689010774776723,
+          "cvt_type": 0.2461260188606986,
+          "cvt_knn": 0.2850607414238703,
+          "grid_type": 0.3729401754224492,
+          "pseudo_expander": 1.309672572591553
+        },
+        "mhu_type_minus_cvt_type": 0.1237333479904344,
+        "mhu_knn_minus_mhu_type": 0.0990417106265393,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    },
+    {
+      "id": "R30",
+      "parent": "AB_ROUTING_20261030",
+      "mode": "AB-R",
+      "status": "RUN_VALID_SYNTHETIC",
+      "A": {
+        "question": "At localized field mechanism under noise25 intervention, a six-edge type-aware routing policy improves a finite spectral MHU proxy's local kNN access to distinct sensor modalities",
+        "unit": "one synthetic field realization and one geometry seed (paired)",
+        "population": "scripted five-modal torus fields; no physical/human data",
+        "truth": "five latent fields over all nodes; observable only to simulation for loss calculation",
+        "primary": "normalized MSE at one hop",
+        "secondary": "two-hop normalized MSE and geometric coverage"
+      },
+      "B": {
+        "preferred": "mhu_type < mhu_knn",
+        "null": "mhu_type >= mhu_knn",
+        "rivals": [
+          "cvt_type",
+          "grid_type",
+          "cvt_knn",
+          "grid_knn",
+          "expander_deg6",
+          "random_deg6",
+          "mhu_hybrid (DUPLICATE GRAPH)"
+        ],
+        "hypothesis_status": "operational, not presumed causal"
+      },
+      "C": {
+        "design": "fixed 3 geometries ×8 field realizations ×9 method labels ×2 hops; exact outdegree 6",
+        "scenario": "localized",
+        "intervention": "noise25",
+        "falsifier": "type routing worse than purely geometric MHU or matched CVT/grid stronger"
+      },
+      "D": {
+        "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+        "full_code_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+        "full_code_git_blob": "bad703f26481a4a9b0b935f5602cf2cb6321b07d",
+        "full_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+        "data_origin": "synthetic parameters precommitted; finite geometry MHU proxy"
+      },
+      "E": {
+        "executed": true,
+        "paired_blocks": 24,
+        "hop1_nmse": {
+          "mhu_type": 0.3802649435732559,
+          "mhu_knn": 0.4868923429190465,
+          "cvt_type": 0.2525562515088351,
+          "cvt_knn": 0.3009101008172763,
+          "grid_type": 0.4054886231804533,
+          "pseudo_expander": 1.3937387566499695
+        },
+        "mhu_type_minus_cvt_type": 0.1277086920644208,
+        "mhu_knn_minus_mhu_type": 0.1066273993457905,
+        "winner": "cvt",
+        "negative_outcome_logged": true
+      },
+      "F": {
+        "audit": "same 6 directed out edges and estimator, but CVT has different geometry/coverage; MHU only finite spectral surrogate; duplicate mhu_hybrid must be removed as independent comparison",
+        "adversarial_result": "cvt_type superior to mhu_type in this cell"
+      },
+      "G": {
+        "exact_same_environment_replay": true,
+        "independent_dataset": false,
+        "independent_scientific_replication": false,
+        "holdout": "No external holdout; 8 fixed seeds reused across cells"
+      },
+      "H": {
+        "prior": "low-frequency spectral suppression alone is insufficient to guarantee cross-modal delivery",
+        "update": "supports class routing vs MHU kNN for this generator",
+        "CVT_vs_MHU": "negative for finite MHU proxy; no inference to native certified avian MHU"
+      },
+      "I": {
+        "internal_validity": "conditional on exact synthetic generator and nearest class decoder",
+        "transportability": "NOT_ESTABLISHED",
+        "scientific_novelty": "UNVERIFIED, likely known geometric design tradeoffs",
+        "grade_0_3": 0,
+        "N1_new": 0,
+        "N2_new": 0,
+        "N3_new": 0,
+        "CT2_before": 24,
+        "CT2_after": 24,
+        "external_replication": false
+      },
+      "J": {
+        "decision": "STOP_LOCAL after complete factorial audit; pivot to native multi-type geometry/learned router and independent modalities",
+        "next_evidence": "native 400-point original MHU data (NPZ unavailable through connector), then trained task-aware router and independent labels",
+        "no_new_cycle_from_seed_replay": true
+      }
+    }
+  ]
+}

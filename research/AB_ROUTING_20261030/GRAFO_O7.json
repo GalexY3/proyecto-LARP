@@ -1,0 +1,413 @@
+{
+  "schema": "AB3.2.1-O7",
+  "nodes": [
+    {
+      "id": "ROUTING_AB30",
+      "type": "research_line",
+      "status": "STOP_LOCAL"
+    },
+    {
+      "id": "PARENT_H30",
+      "type": "prior_work",
+      "status": "CLOSED"
+    },
+    {
+      "id": "R01",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "low",
+      "shift": "clean"
+    },
+    {
+      "id": "R07",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "low",
+      "shift": "random_drop15"
+    },
+    {
+      "id": "R13",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "low",
+      "shift": "random_drop40"
+    },
+    {
+      "id": "R19",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "low",
+      "shift": "rare_drop40"
+    },
+    {
+      "id": "R25",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "low",
+      "shift": "noise25"
+    },
+    {
+      "id": "R02",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "high",
+      "shift": "clean"
+    },
+    {
+      "id": "R08",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "high",
+      "shift": "random_drop15"
+    },
+    {
+      "id": "R14",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "high",
+      "shift": "random_drop40"
+    },
+    {
+      "id": "R20",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "high",
+      "shift": "rare_drop40"
+    },
+    {
+      "id": "R26",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "high",
+      "shift": "noise25"
+    },
+    {
+      "id": "R03",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "correlated",
+      "shift": "clean"
+    },
+    {
+      "id": "R09",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "correlated",
+      "shift": "random_drop15"
+    },
+    {
+      "id": "R15",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "correlated",
+      "shift": "random_drop40"
+    },
+    {
+      "id": "R21",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "correlated",
+      "shift": "rare_drop40"
+    },
+    {
+      "id": "R27",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "correlated",
+      "shift": "noise25"
+    },
+    {
+      "id": "R04",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "anticorrelated",
+      "shift": "clean"
+    },
+    {
+      "id": "R10",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "anticorrelated",
+      "shift": "random_drop15"
+    },
+    {
+      "id": "R16",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "anticorrelated",
+      "shift": "random_drop40"
+    },
+    {
+      "id": "R22",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "anticorrelated",
+      "shift": "rare_drop40"
+    },
+    {
+      "id": "R28",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "anticorrelated",
+      "shift": "noise25"
+    },
+    {
+      "id": "R05",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "rare",
+      "shift": "clean"
+    },
+    {
+      "id": "R11",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "rare",
+      "shift": "random_drop15"
+    },
+    {
+      "id": "R17",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "rare",
+      "shift": "random_drop40"
+    },
+    {
+      "id": "R23",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "rare",
+      "shift": "rare_drop40"
+    },
+    {
+      "id": "R29",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "rare",
+      "shift": "noise25"
+    },
+    {
+      "id": "R06",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "localized",
+      "shift": "clean"
+    },
+    {
+      "id": "R12",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "localized",
+      "shift": "random_drop15"
+    },
+    {
+      "id": "R18",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "localized",
+      "shift": "random_drop40"
+    },
+    {
+      "id": "R24",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "localized",
+      "shift": "rare_drop40"
+    },
+    {
+      "id": "R30",
+      "type": "AB-R_synthetic_contrast",
+      "status": "RUN_VALID_SYNTHETIC",
+      "grade": "0/3",
+      "context": "localized",
+      "shift": "noise25"
+    }
+  ],
+  "edges": [
+    {
+      "from": "PARENT_H30",
+      "to": "ROUTING_AB30",
+      "relation": "pivots_to"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R01",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R07",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R13",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R19",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R25",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R02",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R08",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R14",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R20",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R26",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R03",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R09",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R15",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R21",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R27",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R04",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R10",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R16",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R22",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R28",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R05",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R11",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R17",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R23",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R29",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R06",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R12",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R18",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R24",
+      "relation": "tests"
+    },
+    {
+      "from": "ROUTING_AB30",
+      "to": "R30",
+      "relation": "tests"
+    }
+  ],
+  "warning": "Not 30 independent scientific replications or novel discoveries"
+}

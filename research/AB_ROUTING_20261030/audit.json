@@ -1,0 +1,238 @@
+{
+  "source_code_sha256": "cf187e6a367239dd46e2e25351158f5c1d8020423750987c4b8dc3fdcd9118d2",
+  "prereg_commit": "4bb177d378eb12fe3f376c58a574cd0d75939f34",
+  "source_frozen_commit": "a620c5c912cf1c34e7f898287451439c28908157",
+  "raw_results_sha256": "c968c85880b16e1cf8caf5ca41104c49683ff601a54be8b3e5be1d51790c057a",
+  "exact_replay_match": true,
+  "data_rows": 12960,
+  "total_cells": 30,
+  "n_geom_seeds": 3,
+  "n_field_seeds": 8,
+  "mhu_routing_better_than_knn_cells": 24,
+  "mhu_routing_worse_than_knn_cells": 6,
+  "mhu_type_beats_cvt_type_cells": 0,
+  "cvt_type_wins_all_methods_cells": 24,
+  "cell_winners": {
+    "cvt": 24,
+    "cvtlocal": 5,
+    "mhu_local": 1
+  },
+  "nmse_means_hop1": {
+    "cvt_knn": 0.4937528321209289,
+    "cvt_type": 0.43545754926817554,
+    "expander_deg6": 1.5258702869097562,
+    "grid_knn": 0.6645159535401309,
+    "grid_type": 0.6032780798550823,
+    "mhu_hybrid": 0.576724925578256,
+    "mhu_knn": 0.6490186441188275,
+    "mhu_type": 0.576724925578256,
+    "random_deg6": 1.5180506613399491
+  },
+  "nmse_means_hop2": {
+    "cvt_knn": 0.4368346106487447,
+    "cvt_type": 0.43545754926817554,
+    "expander_deg6": 1.5897053041016664,
+    "grid_knn": 0.5999297797223181,
+    "grid_type": 0.6032780798550823,
+    "mhu_hybrid": 0.576724925578256,
+    "mhu_knn": 0.5785363111520956,
+    "mhu_type": 0.576724925578256,
+    "random_deg6": 1.4592034361803106
+  },
+  "structural": [
+    {
+      "method": "cvt_knn",
+      "hop": 1,
+      "availability": 0.9045,
+      "edge_dist": 0.05352749215926592
+    },
+    {
+      "method": "cvt_knn",
+      "hop": 2,
+      "availability": 0.9998333333333335,
+      "edge_dist": 0.05352749215926592
+    },
+    {
+      "method": "cvt_type",
+      "hop": 1,
+      "availability": 1.0,
+      "edge_dist": 0.05458931293164367
+    },
+    {
+      "method": "cvt_type",
+      "hop": 2,
+      "availability": 1.0,
+      "edge_dist": 0.05458931293164367
+    },
+    {
+      "method": "expander_deg6",
+      "hop": 1,
+      "availability": 0.713,
+      "edge_dist": 0.38405779988831673
+    },
+    {
+      "method": "expander_deg6",
+      "hop": 2,
+      "availability": 0.9791666666666666,
+      "edge_dist": 0.38405779988831673
+    },
+    {
+      "method": "grid_knn",
+      "hop": 1,
+      "availability": 0.7336666666666667,
+      "edge_dist": 0.05690355937288492
+    },
+    {
+      "method": "grid_knn",
+      "hop": 2,
+      "availability": 0.956,
+      "edge_dist": 0.05690355937288492
+    },
+    {
+      "method": "grid_type",
+      "hop": 1,
+      "availability": 1.0,
+      "edge_dist": 0.06470027148446358
+    },
+    {
+      "method": "grid_type",
+      "hop": 2,
+      "availability": 1.0,
+      "edge_dist": 0.06470027148446358
+    },
+    {
+      "method": "mhu_hybrid",
+      "hop": 1,
+      "availability": 1.0,
+      "edge_dist": 0.06264375581206282
+    },
+    {
+      "method": "mhu_hybrid",
+      "hop": 2,
+      "availability": 1.0,
+      "edge_dist": 0.06264375581206282
+    },
+    {
+      "method": "mhu_knn",
+      "hop": 1,
+      "availability": 0.7466666666666666,
+      "edge_dist": 0.055145534823061525
+    },
+    {
+      "method": "mhu_knn",
+      "hop": 2,
+      "availability": 0.9741666666666667,
+      "edge_dist": 0.055145534823061525
+    },
+    {
+      "method": "mhu_type",
+      "hop": 1,
+      "availability": 1.0,
+      "edge_dist": 0.06264375581206283
+    },
+    {
+      "method": "mhu_type",
+      "hop": 2,
+      "availability": 1.0,
+      "edge_dist": 0.06264375581206283
+    },
+    {
+      "method": "random_deg6",
+      "hop": 1,
+      "availability": 0.7195,
+      "edge_dist": 0.38337875694702844
+    },
+    {
+      "method": "random_deg6",
+      "hop": 2,
+      "availability": 0.9948333333333332,
+      "edge_dist": 0.38337875694702844
+    }
+  ],
+  "geometry_audit": [
+    {
+      "seed": 1103,
+      "geometry": "grid",
+      "S_union": 2.4623428413928857e-30,
+      "S_type_mean": 0.5770747639138414,
+      "CVT_class_Q": 0.004389935817244723,
+      "class_r95": 0.10687638182505003
+    },
+    {
+      "seed": 1103,
+      "geometry": "cvt",
+      "S_union": 0.03036597585509121,
+      "S_type_mean": 0.06480612488071488,
+      "CVT_class_Q": 0.002776011065096153,
+      "class_r95": 0.07456044674812046
+    },
+    {
+      "seed": 1103,
+      "geometry": "mhu_proxy",
+      "S_union": 2.9780730002173913e-05,
+      "S_type_mean": 9.158090789679461e-05,
+      "CVT_class_Q": 0.004079511168274525,
+      "class_r95": 0.1010434647390146
+    },
+    {
+      "seed": 1109,
+      "geometry": "grid",
+      "S_union": 2.4623428413928857e-30,
+      "S_type_mean": 0.603988945012893,
+      "CVT_class_Q": 0.004782279116940754,
+      "class_r95": 0.11656637202576947
+    },
+    {
+      "seed": 1109,
+      "geometry": "cvt",
+      "S_union": 0.049851578775142055,
+      "S_type_mean": 0.0800711141569426,
+      "CVT_class_Q": 0.002754621667811287,
+      "class_r95": 0.074958174834439
+    },
+    {
+      "seed": 1109,
+      "geometry": "mhu_proxy",
+      "S_union": 1.4036542184378298e-05,
+      "S_type_mean": 8.154800152195303e-05,
+      "CVT_class_Q": 0.004163468351399323,
+      "class_r95": 0.1047673572829561
+    },
+    {
+      "seed": 1117,
+      "geometry": "grid",
+      "S_union": 2.4623428413928857e-30,
+      "S_type_mean": 0.5739936389755571,
+      "CVT_class_Q": 0.004349453058248393,
+      "class_r95": 0.107654619971481
+    },
+    {
+      "seed": 1117,
+      "geometry": "cvt",
+      "S_union": 0.018817919609120284,
+      "S_type_mean": 0.06126197904310989,
+      "CVT_class_Q": 0.002771977588453169,
+      "class_r95": 0.07457332762968938
+    },
+    {
+      "seed": 1117,
+      "geometry": "mhu_proxy",
+      "S_union": 2.856923816919552e-05,
+      "S_type_mean": 9.246355275394381e-05,
+      "CVT_class_Q": 0.004011756223241196,
+      "class_r95": 0.10105079699625094
+    }
+  ],
+  "adversarial_flags": [
+    "mhu_type and mhu_hybrid have EXACTLY identical unordered neighbor sets for all 1200 nodes, although row ordering differs: remove independent-hybrid claim",
+    "MHU is optimized finite spectral SURROGATE, not LARP native Scale3D MHU geometry",
+    "CVT is type-Lloyd proxy; LOCAL original was not executed",
+    "degree-regular randomly-relabeled circulant is not a validated expander",
+    "all fields, targets, shifts are synthetic and scripted; no independent replication",
+    "same estimator used in all arms, but no trainable learned routing baseline or hardware-equated link geometry",
+    "each context/shift cell uses identical geometry/field seeds: 30 related contrasts not 30 independent datasets",
+    "dropout nearest accessible class chosen BEFORE failure, so algorithms do not recover by trying alternate reachable sources",
+    "5 modality weights known to all estimators; anti-correlated targets can have small variance and relatively high NMSE",
+    "geometry optimization and link-construction costs differ and are not budget matched"
+  ]
+}
