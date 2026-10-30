@@ -1,0 +1,9 @@
+# E01 — invalidar el objetivo IP03 (control CVT insuficiente), conservar la ejecución íntegra
+
+Fecha 2026-10-30. Se congelaron PREREG IP01–IP15 en commit `4b9dd26385b9cb641f8bd6693d3e37ad10460ebd` y el código en `9adb7ecb742d39acddb8dda86d35623537797364` antes de outcomes `58faddfcdecac349ccc68919ae1721755b0bc362`; replay `4840f9032cb28270b1f663737f414872127cdcbc` 12/12 PASS.
+
+**Fallo metodológico identificado en auditoría posterior:** IP03 había prometido comparar cobertura/energía de Voronoi de CVT aproximado frente a aleatorio, pero el código congelado devolvía solo desplazamiento de snapping y tamaño de test común. Ambos desplazamientos cero son compatibles con un CVT incompetente y no prueban que la iteración Lloyd haya mejorado la energía. Por consiguiente, `IP03.status=DONE` registra **ejecución de una rutina**, no cumplimiento del estimando IP03. Clasificación de esa plaza: **INVALID_INSTRUMENTATION_IP03**, conservar sin tocar ni borrar el JSON original; no atribuir utilidad científica ni contarlo como ciclo A–J válido. Otros 14 endpoints congelados y reproducidos no dependen de interpretar el desplazamiento como eficacia CVT. La fuente es una sola escena, no 15 confirmaciones.
+
+**Acción correctiva:** R5 autoriza **una** nueva prueba distinta IP16, prerregistrada AHORA DESPUÉS de ver los resultados originales y claramente `POST_EXPOSURE_ADVERSARIAL_BASELINE_QA`. Congelar código IP16 y SHA antes de medir cuantización CVT vs RAND en 3 semillas, incluyendo energía Lloyd inicial/final, y comparar MHU/LOCAL en el mismo dominio como contexto geométrico (no eficacia física). Si completa sus contratos A–J, reemplaza a IP03 en la contabilidad: 15 válidos, 1 inválido, 0 planificación; no exceder el presupuesto de 15.
+
+N1/N2/N3 nuevos 0; CT2 matemática 24/100, funcional 18/100 inalterados; no Wei original, no CI costosa, no merge.
