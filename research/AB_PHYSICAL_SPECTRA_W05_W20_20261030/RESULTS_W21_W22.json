@@ -1,0 +1,184 @@
+{
+  "receipt": {
+    "frozen_code_git_blobs": [
+      "ec3a9532288be78e3b5a63c188146ca883bfa47e",
+      "c6daf40fa5a0ce72e22c00412ea995243e81d1ca"
+    ],
+    "prereg_commit": "bd918566d832d1647a25d76581f24c04c6d6e4da",
+    "source_git_blobs": [
+      "ab00192d9b537d4b7942357ee7f2ed30ee623b12",
+      "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+      "9b4e3f73b4bb412a762a6d03cb8060bfea652a6e"
+    ],
+    "run_modes": [
+      "SOURCE_CONSISTENCY_AUDIT",
+      "CIE_WEIGHTED_REAL_SPECTROMETRY"
+    ],
+    "technical_replay": "SECOND_EXECUTION_PENDING",
+    "novelty_grade": "0/3",
+    "selection_exposure": "W22 follows after W13 seen, source input weights independent but exploratory only"
+  },
+  "W21": {
+    "id": "W21",
+    "status": "CONSISTENT_WITH_SIMPLE_PAIR_AVERAGING",
+    "source_named_git_blob": "ab00192d9b537d4b7942357ee7f2ed30ee623b12",
+    "source_averaged_git_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+    "pairResults": [
+      {
+        "name": "550 nm",
+        "maximum_absolute_averaging_discrepancy": 1.1102230246251565e-16,
+        "rmse_averaging": 8.567368868136748e-18,
+        "replicate_pair_rms_difference": 0.0606884919511249
+      },
+      {
+        "name": "Large chequerboard (white)",
+        "maximum_absolute_averaging_discrepancy": 2.220446049250313e-16,
+        "rmse_averaging": 6.593201351125338e-17,
+        "replicate_pair_rms_difference": 0.01745397161542667
+      },
+      {
+        "name": "Large chequerboard (black)",
+        "maximum_absolute_averaging_discrepancy": 6.938893903907228e-18,
+        "rmse_averaging": 3.584346196859657e-18,
+        "replicate_pair_rms_difference": 0.008453843947358161
+      },
+      {
+        "name": "Small chequerboard (white)",
+        "maximum_absolute_averaging_discrepancy": 1.1102230246251565e-16,
+        "rmse_averaging": 4.889133284372322e-17,
+        "replicate_pair_rms_difference": 0.013545654416953847
+      },
+      {
+        "name": "Small chequerboard (black)",
+        "maximum_absolute_averaging_discrepancy": 6.938893903907228e-18,
+        "rmse_averaging": 3.764081901136015e-18,
+        "replicate_pair_rms_difference": 0.00987860856924391
+      }
+    ],
+    "global_max_average_error": 2.220446049250313e-16,
+    "max_direct_column_error": 0,
+    "comparison_tolerance": 0.00001,
+    "pair_positions_checked": 2005,
+    "direct_positions_checked": 12832,
+    "laboratory_replicate_sets": 5,
+    "source_independent_labs": 1,
+    "grade": "0/3",
+    "warnings": [
+      "WAVELENGTH_SAMPLES_NOT_INDEPENDENT",
+      "DOES_NOT_PROVE_RAW_INSTRUMENT_CALIBRATION",
+      "ONE_SOURCE_ONLY"
+    ]
+  },
+  "W22": {
+    "id": "W22",
+    "status": "COMPUTED_HYPOTHETICAL_EQUAL_ENERGY_CIE_XYZ_LOSS",
+    "cie_source_repo": "sblisesivdin/spectrum-to-rgb",
+    "cie_source_git_blob": "9b4e3f73b4bb412a762a6d03cb8060bfea652a6e",
+    "cie_official_doi": "10.25039/CIE.DS.xvudnb9b",
+    "measured_git_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+    "cie_row_count": 471,
+    "reflectance_wavelength_range": "400-700nm 10nm steps",
+    "hypothetical_illuminant": "E_equal_energy_not_actual_illumination",
+    "fixed_picks": [
+      400,
+      470,
+      550,
+      620,
+      700
+    ],
+    "greedy_picks": [
+      400,
+      470,
+      530,
+      610,
+      700
+    ],
+    "heldout_n": 12,
+    "heldout_per_patch": [
+      {
+        "name": "blue",
+        "xyz_error_fixed": 0.0004783665879284456,
+        "xyz_error_greedy": 0.000436010596352998,
+        "greedy_better": true
+      },
+      {
+        "name": "green",
+        "xyz_error_fixed": 0.00019828158908817,
+        "xyz_error_greedy": 0.0000615593788644276,
+        "greedy_better": true
+      },
+      {
+        "name": "red",
+        "xyz_error_fixed": 0.002251337333739298,
+        "xyz_error_greedy": 0.0015733378885990524,
+        "greedy_better": true
+      },
+      {
+        "name": "yellow",
+        "xyz_error_fixed": 0.00021549023856480315,
+        "xyz_error_greedy": 0.00031098231056027873,
+        "greedy_better": false
+      },
+      {
+        "name": "magenta",
+        "xyz_error_fixed": 0.0021478825462805167,
+        "xyz_error_greedy": 0.003525031893993283,
+        "greedy_better": false
+      },
+      {
+        "name": "cyan",
+        "xyz_error_fixed": 0.00011090898068144241,
+        "xyz_error_greedy": 0.0003717725197186711,
+        "greedy_better": false
+      },
+      {
+        "name": "white 9.5 (.05 D)",
+        "xyz_error_fixed": 0.006451315316057956,
+        "xyz_error_greedy": 0.006416450882439022,
+        "greedy_better": true
+      },
+      {
+        "name": "neutral 8 (.23 D)",
+        "xyz_error_fixed": 0.0021750787448013413,
+        "xyz_error_greedy": 0.0021683938006379334,
+        "greedy_better": true
+      },
+      {
+        "name": "neutral 6.5 (.44 D)",
+        "xyz_error_fixed": 0.00037469777504504155,
+        "xyz_error_greedy": 0.0003725989048814628,
+        "greedy_better": true
+      },
+      {
+        "name": "neutral 5 (.70 D)",
+        "xyz_error_fixed": 0.000029203890995506187,
+        "xyz_error_greedy": 0.0000280040509820368,
+        "greedy_better": true
+      },
+      {
+        "name": "neutral 3.5 (1.05 D)",
+        "xyz_error_fixed": 0.000002855342781708382,
+        "xyz_error_greedy": 0.00000272206583879772,
+        "greedy_better": true
+      },
+      {
+        "name": "black 2 (1.5 D)",
+        "xyz_error_fixed": 1.9863202368504955e-8,
+        "xyz_error_greedy": 1.999659487565176e-8,
+        "greedy_better": false
+      }
+    ],
+    "mean_xyz_squared_error_fixed": 0.0012029531840972165,
+    "mean_xyz_squared_error_greedy": 0.0012722403574552366,
+    "greedy_relative_advantage": -0.057597564289268766,
+    "greedy_better_patches": 8,
+    "grade": "0/3",
+    "independent_standard_not_independent_lab": true,
+    "warnings": [
+      "NOT_MEASURED_COLOR_APPEARANCE",
+      "NOT_CALIBRATED_ILLUMINANT",
+      "SAME_12_PATCHES_W13_HOLDOUT_EXPOSED",
+      "NO_SPATIAL_MHU_OUTCOME"
+    ]
+  }
+}
