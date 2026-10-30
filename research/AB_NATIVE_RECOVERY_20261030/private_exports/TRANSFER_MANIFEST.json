@@ -1,0 +1,45 @@
+{
+    "schema":  "larp-native-n400-private-transfer-v1",
+    "timestamp_utc":  "2026-10-30T04:31:19.4837208Z",
+    "source_repo":  "GalexY3/proyecto-LARP",
+    "source_branch":  "research/ab-r-native-recovery-20261030",
+    "source_commit":  "8df04986ee55f3bfc6fe019b6c0078cbbed764a5",
+    "source_verifier":  "research/AB_NATIVE_RECOVERY_20261030/verify_and_export.py",
+    "source_verifier_sha256":  "512e6bbb1fe34b35e4039759fca3322e219d03e7d15cdaf6bf9e9314ad760acf",
+    "python_version":  "Python 3.14.3",
+    "numpy_version":  "2.5.4",
+    "classification":  "ORIGINAL_BINARIES_VERIFIED; TRAINING_NOT_RUN; WEI_NOT_YET_EVALUATED",
+    "files":  [
+                  {
+                      "name":  "avian_full_spectral_N400_g1101.json",
+                      "sha256":  "119c9703600bcd5aa8c12ad8829017f2f60b188006deae61c84ab3ecb1484c3d",
+                      "bytes":  20502
+                  },
+                  {
+                      "name":  "avian_full_spectral_N400_g1102.json",
+                      "sha256":  "8b15078f5157cdfde0a0510b936c30f69c988d2002e3736b3436e61b3ed0feda",
+                      "bytes":  20503
+                  },
+                  {
+                      "name":  "avian_full_spectral_N400_g1103.json",
+                      "sha256":  "f766c3f6620050e22872f4641e854a862db1258097cc0dc82ebea819adc60511",
+                      "bytes":  20502
+                  },
+                  {
+                      "name":  "avian_local_only_N400_g1101.json",
+                      "sha256":  "f88aab652e27a24ffd84b55c555be1b589a1741073a7791ce5e98ae138fb4d96",
+                      "bytes":  20499
+                  },
+                  {
+                      "name":  "avian_local_only_N400_g1102.json",
+                      "sha256":  "0f2f71a0447d7ebf825155a2003c2f87b8c98697fda27965bb7d88d316792336",
+                      "bytes":  20499
+                  },
+                  {
+                      "name":  "avian_local_only_N400_g1103.json",
+                      "sha256":  "027b78abddf36f1001d3b58e2df69d44595db3f85cb6bf821cd9a0defdfcdeb3",
+                      "bytes":  20499
+                  }
+              ],
+    "wei":  "BUILD_FAILED_LOG_SAVED"
+}
