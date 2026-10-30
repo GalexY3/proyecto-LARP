@@ -1,0 +1,25 @@
+{
+  "protocol": "W21_W22_REPLAY",
+  "timestamp": "2026-10-30",
+  "precommitted_scripts": {
+    "W21": "dcce89daf08cf60f1ac0758af75c959f8ccc69f9",
+    "W22": "c4439ce160c9db081e1da316feed2b5e4faaae75",
+    "prereg": "bd918566d832d1647a25d76581f24c04c6d6e4da"
+  },
+  "outcome_commit": "8816b92c5bf9cec0a4d595c33d77235f4fb2bb14",
+  "checks": {
+    "W21_identical_JSON": true,
+    "W22_identical_JSON": true,
+    "W21_pair_recon_error_small": true,
+    "W21_direct_identical": true,
+    "W22_31bands": true,
+    "W22_external_reference_471": true,
+    "W22_12_heldout": true,
+    "W22_no_3_3": true,
+    "source_sha_unchanged": true,
+    "frozen_source_unchanged": true
+  },
+  "replicated_original_json_equal": true,
+  "replication_type": "same source and same frozen code independently refetched; NOT external experiment",
+  "raw_source_data_not_published": true
+}
