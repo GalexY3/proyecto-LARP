@@ -1,0 +1,319 @@
+{
+  "batch_id": "LARP_ABR_20261030_W03_W23",
+  "schema": "O7_STANDALONE_DELTA_NOT_APPLIED",
+  "project": "LARP",
+  "branch": "research/ab-r-physical-spectra-w05-w20-20261030",
+  "root": "LARP",
+  "nodes": [
+    {
+      "id": "LARP_ABR_W03",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "refuted",
+      "grade": "0/3",
+      "label": "Wei checker initial invalid"
+    },
+    {
+      "id": "LARP_ABR_W04",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "400-quota QA tested"
+    },
+    {
+      "id": "LARP_ABR_W05",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W06",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W07",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W08",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W09",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W10",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W11",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W12",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W13",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W14",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W15",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W16",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W17",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W18",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W19",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W20",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Dependent real one-lab spectrometry assay"
+    },
+    {
+      "id": "LARP_ABR_W21",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Averaged raw repeat provenance"
+    },
+    {
+      "id": "LARP_ABR_W22",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Hypothetical CIE XYZ loss"
+    },
+    {
+      "id": "LARP_ABR_W23",
+      "type": "research_cycle",
+      "mode": "AB-R",
+      "status": "answered",
+      "grade": "0/3",
+      "label": "Post-exposure clipping robustness"
+    },
+    {
+      "id": "LARP_WEI_ORIGINAL_BUILD",
+      "type": "research_blocker",
+      "mode": "AB-R",
+      "status": "blocked",
+      "label": "Wei binary not compiled"
+    },
+    {
+      "id": "LARP_SPATIAL_5BAND_DATA",
+      "type": "research_blocker",
+      "mode": "AB-R",
+      "status": "blocked",
+      "label": "Independent 5+ band spatial data not acquired"
+    }
+  ],
+  "edges": [
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W03",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W04",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W05",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W06",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W07",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W08",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W09",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W10",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W11",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W12",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W13",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W14",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W15",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W16",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W17",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W18",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W19",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W20",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W21",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W22",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_W23",
+      "rel": "branches_from"
+    },
+    {
+      "from": "LARP_ABR_W23",
+      "to": "LARP_WEI_ORIGINAL_BUILD",
+      "rel": "depends_on"
+    },
+    {
+      "from": "LARP_ABR_W23",
+      "to": "LARP_SPATIAL_5BAND_DATA",
+      "rel": "depends_on"
+    }
+  ],
+  "status_summary": {
+    "valid_executed": 20,
+    "invalid": 1,
+    "planning_only": 0,
+    "new_scientific_N1": 0,
+    "N2": 0,
+    "N3": 0,
+    "CT2_math": 24,
+    "CT2_functional": 18
+  },
+  "note": "This records completed tasks without claiming 21 independent discoveries; not applied to canonical Atlas JSON. Entity LARP root may need mapping by canonical Atlas administrator."
+}
