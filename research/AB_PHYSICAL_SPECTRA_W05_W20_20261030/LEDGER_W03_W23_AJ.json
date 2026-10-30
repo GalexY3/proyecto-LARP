@@ -1,0 +1,1272 @@
+{
+  "date": "2026-10-30",
+  "protocol": "AB_3_2_1_A_J",
+  "accounting": {
+    "tasks_attempted": 21,
+    "valid_executed": 20,
+    "invalid": 1,
+    "planning": 0,
+    "new_grant_total": 20,
+    "new_grant_valid_spent": 20,
+    "new_grant_remaining": 0,
+    "previous_grant_remaining": 9,
+    "independent_spatial_datacubes": 0,
+    "authentic_Wei_runs": 0,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0
+  },
+  "selection_exposure": "W22 source CIE weighted added after W13; W23 posthoc motivated by W20, not independent confirmatory",
+  "tasks": [
+    {
+      "id": "W03",
+      "status": "INVALID_INITIAL_INSTRUMENT",
+      "type": "SOURCE_AUDIT",
+      "A": "Genuine Wei source quota and RNG support",
+      "B": "exact vs stochastic quotas and clock-seeded randomness",
+      "C": "static original library source checks; two frozen regex false negatives",
+      "D": {
+        "prereg_commit": "cb035778b2b74a1037418b5a3b9b1513e3ca9d0a",
+        "code_commit": "35eef1363a35af875790ecf595d9689b0276f06c"
+      },
+      "E": {
+        "initial_patterns_passed": 6,
+        "patterns_total": 8,
+        "errata": "W03_RESULTS_AND_ERRATA.md"
+      },
+      "F": "checker invalid, source observations after exposure; NO genuine Wei build",
+      "G": "source read via GitHub, no original source binary execution",
+      "H": "absolute per-class quota remains unverified",
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "INVALID initial checker; preserve errata, 0 valid-cycle quota consumed"
+    },
+    {
+      "id": "W04",
+      "status": "EXECUTED_TECHNICAL_QA_VALID",
+      "type": "SOFTWARE_QA",
+      "A": "400-sample per-class quota gate [163,85,68,50,34], [0,20)^2",
+      "B": "one valid fixture vs six adversarial invalid fixtures",
+      "C": "seven prospective pass/reject cases",
+      "D": {
+        "prereg_commit": "83ce863cc8e568378b9b1ab98dc17897d3646f32",
+        "code_commit": "68cf528397aa1abf1662f30ff8ef5a5f2edfcbb5",
+        "test_code_commit": "8a9ae0eb8f751853cb4b0a55b3befdeca972e9c6"
+      },
+      "E": {
+        "tests": 7,
+        "pass": 7,
+        "authenticWeiRun": false
+      },
+      "F": "synthetic fixtures not original Wei samples",
+      "G": "frozen file hashes checked in previous campaign; no external independent binary",
+      "H": "software format input gate validated narrowly",
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "STOP repeating toy cases; next step genuine Wei"
+    },
+    {
+      "id": "W05",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "filter nominal wavelength vs measured spectral maxima",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "filter_peak_nominal_deviation"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "nominal center as comparator",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "nominal": [
+          400,
+          442,
+          500,
+          550,
+          600,
+          650,
+          700
+        ],
+        "peaks": [
+          398,
+          438,
+          498,
+          544,
+          595,
+          640,
+          692
+        ],
+        "absolute_errors_nm": [
+          2,
+          4,
+          2,
+          6,
+          5,
+          10,
+          8
+        ],
+        "median_absolute_error_nm": 5,
+        "n_filters": 7
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W06",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "measured filter passband half-height widths",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "filter_sampled_FWHM"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "1nm sampled half-height, no width fitting",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "width_nm": [
+          8,
+          11,
+          10,
+          12,
+          11,
+          11,
+          10
+        ],
+        "median_width_nm": 11,
+        "n_censored": 0,
+        "not_true_interpolated_FWHM": true
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W07",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "fraction of filter energy in nominal +/-10nm",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "filter_energy_containment_pm10"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "full 350-750nm energy",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "fractions": [
+          0.790287097391609,
+          0.5348421685487373,
+          0.8421671734010311,
+          0.8032793550342898,
+          0.7019657685109117,
+          0.4712990080428088,
+          0.670189941469831
+        ],
+        "median": 0.7019657685109117,
+        "assumes_nonnegative_clipped": true
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W08",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "normalized overlap of adjacent nominal filters",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "adjacent_filter_overlap"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "six pair minima and per-filter mass",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "adjacent_pairs": [
+          "400 nm vs 442 nm",
+          "442 nm vs 500 nm",
+          "500 nm vs 550 nm",
+          "550 nm vs 600 nm",
+          "600 nm vs 650 nm",
+          "650 nm vs 700 nm"
+        ],
+        "overlap": [
+          0.8270228559053449,
+          0.14104048864661273,
+          0.13857060049422532,
+          0.10911541700471661,
+          0.09209366927165509,
+          0.08219145568316248
+        ],
+        "median": 0.12384300874947096
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W09",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "maximum pairwise spectral cosine of filters",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "filter_normalized_cosine_cross_talk"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "21 distinct pairs, median pair",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "max_off_diagonal_cosine": 0.16544888328385024,
+        "pair": [
+          "400 nm",
+          "442 nm"
+        ],
+        "median_pair_cosine": 0.00888665180911009,
+        "n_pairs": 21
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W10",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "pairwise spectral correlation among 24 measured ColorChecker patches",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "ColorChecker_pairwise_spectral_correlation"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "276 patch pairs including negative values",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "n_patches": 24,
+        "n_pairs": 276,
+        "median_pearson": 0.03397097402594633,
+        "p10_pearson": -0.7983305855359777,
+        "negative_fraction": 0.4782608695652174
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W11",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "within-chart centered spectral shape effective dimension",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "ColorChecker_centered_Gram_effective_rank"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "24x24 Gram eigenvalues with Jacobi residual",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "effective_rank": 1.7378277351756801,
+        "max_eigen": 16.812088248310683,
+        "trace": 23.054623139372307,
+        "offdiag_max_after_Jacobi": 9.786573151531839e-12,
+        "iterations": 1067
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W12",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "five wavelength linear interpolation MSE over 24 measured patches",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "five_uniform_spectral_interpolation_vs_constant"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "same five-band mean-as-constant control",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "fixed_wavelengths": [
+          400,
+          470,
+          550,
+          620,
+          700
+        ],
+        "mse_piecewise_linear": 0.0021262111302584245,
+        "mse_constant": 0.03162815550135537,
+        "relative_improvement": 0.9327747351511754,
+        "n_patches": 24
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W13",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "12-dev band selection vs 12 heldout patch reconstruction",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "greedy_band_selection_12_dev_to_12_heldout"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "fixed five bands, same number of reads",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "selected": [
+          400,
+          470,
+          530,
+          610,
+          700
+        ],
+        "greedy_stages": [
+          {
+            "added": 530,
+            "dev_mse": 0.009139029768023195
+          },
+          {
+            "added": 610,
+            "dev_mse": 0.005320043486427505
+          },
+          {
+            "added": 470,
+            "dev_mse": 0.001930579479834127
+          }
+        ],
+        "heldout_greedy_mse": 0.0030513101287263783,
+        "heldout_uniform_mse": 0.0026176786869239626,
+        "relative_advantage": -0.16565495374528827,
+        "dev_n": 12,
+        "test_n": 12,
+        "selection_bias_warning": true
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W14",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "fixed five-band sensitivity to losing each one band",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "fixed_band_dropout_stress_test"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "five one-dropout perturbations",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "basemse": 0.0026176786869239626,
+        "ablations": [
+          {
+            "drop": 400,
+            "heldout_mse": 0.003395700863949308
+          },
+          {
+            "drop": 470,
+            "heldout_mse": 0.009270764836258771
+          },
+          {
+            "drop": 550,
+            "heldout_mse": 0.009324933128216079
+          },
+          {
+            "drop": 620,
+            "heldout_mse": 0.0035651447649405186
+          },
+          {
+            "drop": 700,
+            "heldout_mse": 0.003930061093705718
+          }
+        ],
+        "worst_mse": 0.009324933128216079,
+        "mean_mse": 0.00589732093741408,
+        "worst_ratio": 3.5622909621401315
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W15",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "supervised 5-band ridge decoder trained on 12 patches",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "ridge_5_band_train12_test12_vs_interpolation"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "fixed linear interpolation on same 12 heldout patches",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "ridge_lambda": 0.01,
+        "dev_n": 12,
+        "test_n": 12,
+        "heldout_ridge_mse": 0.00283234679562879,
+        "heldout_interpolation_mse": 0.0026176786869239626,
+        "ridge_minus_interpolation": 0.00021466810870482758
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W16",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "white-black contrast across two checkerboard physical scales",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "large_vs_small_checkerboard_black_white_contrast"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "large and small white-black pairs",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "pairs": [
+          {
+            "size": "Large",
+            "mean_abs_white_minus_black": 0.8880123548387097,
+            "mean_signed_white_minus_black": 0.8880123548387097,
+            "mean_normalized_contrast": 0.8778719750692173
+          },
+          {
+            "size": "Small",
+            "mean_abs_white_minus_black": 0.7631891774193548,
+            "mean_signed_white_minus_black": 0.7631891774193548,
+            "mean_normalized_contrast": 0.8624965691135823
+          }
+        ],
+        "n_band_observations_per_pair": 31,
+        "not_independent_pixels": true
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W17",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "printer paper white vs toner visible reflectance contrast",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "printer_paper_white_vs_toner_contrast"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "paired measured material",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "mean_white": 0.928884129032258,
+        "mean_toner": 0.05407241935483871,
+        "mean_difference": 0.8748117096774194,
+        "mean_ratio_white_to_toner": 17.137507013871204,
+        "bands": 31
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W18",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "six neutral density reflectances preserve monotonic ordering",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "ColorChecker_six_neutral_density_monotonicity"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "31 wavelengths and all six patches",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "neutral_names": [
+          "white 9.5 (.05 D)",
+          "neutral 8 (.23 D)",
+          "neutral 6.5 (.44 D)",
+          "neutral 5 (.70 D)",
+          "neutral 3.5 (1.05 D)",
+          "black 2 (1.5 D)"
+        ],
+        "monotone_wavelength_count": 31,
+        "grid_band_count": 31,
+        "fraction_monotone": 1
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W19",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "spectral curvature roughness of filters vs material surfaces",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "spectral_1nm_roughness_patches_vs_filters"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "different spectral object classes in same lab",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "patch_median": 0.0006253364552463602,
+        "filter_median": 0.04549139252179941,
+        "filter_to_patch_roughness_ratio": 72.74706622353789,
+        "patch_n": 24,
+        "filter_n": 7
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W20",
+      "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+      "type": "REAL_1D_LAB_SPECTROMETRY",
+      "A": {
+        "question": "out-of-[0,1] measured reflectance fraction",
+        "unit": "one laboratory's finite filter/material measurements, not independent wavelength rows",
+        "estimand": "reflectance_physical_range_QA"
+      },
+      "B": {
+        "null": "physical/estimator outcome may be absent; no MHU causal alternative tested",
+        "rivals": "broadband vs narrow spectral behavior; geometric MHU effectiveness untested"
+      },
+      "C": {
+        "controlled_contrast": "24 patches times 301 one-nm wavelengths",
+        "data_window": "350–750 1nm or 400–700 10nm as preregistered",
+        "fixed_budget": true
+      },
+      "D": {
+        "prereg_commit": "e9dbaf3fcc7dece6c1aacf742c15b660c03acc9b",
+        "code_commit": "4d793876a675bbea359ec71f876aa1f502edb209",
+        "code_blob": "8d368695aa57fa885132e77c16c5127911595c48",
+        "lab_source_commit": "9350e51a1ca96d541a6a82627fd0bf7636cf6638",
+        "lab_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "n_observations": 7224,
+        "negative": 0,
+        "above_one": 258,
+        "nonfinite": 0,
+        "negative_fraction": 0,
+        "above_one_fraction": 0.03571428571428571,
+        "not_independent_observations": true
+      },
+      "F": "one physical lab and chart, associated wavelength points and color patches; no 2D imaging, true field, Wei comparator or neural outcomes",
+      "G": "two refetch+V8 executions yielded exact JSON and 13/13 structural controls; NOT external source replication",
+      "H": {
+        "prior_update": "estimand-dependent performance and spectral reality; no change in MHU causal prior",
+        "result_type": "descriptive conditional"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "J": "CLOSED_ASSOCIATED_ESTIMAND; stop resampling same laboratory source under R5"
+    },
+    {
+      "id": "W21",
+      "status": "EXECUTED_PREREGISTERED_PROVENANCE_AUDIT",
+      "type": "LAB_REPLICATE_SOURCE_QA",
+      "A": "does averaged output equal arithmetic mean of duplicated original spectra?",
+      "B": "mean of pairs vs alternative averaging/processing",
+      "C": "5 duplicated pair groups plus 32 direct singletons with 1e-5 tolerance",
+      "D": {
+        "prereg_commit": "bd918566d832d1647a25d76581f24c04c6d6e4da",
+        "code_commit": "dcce89daf08cf60f1ac0758af75c959f8ccc69f9",
+        "raw_blob": "ab00192d9b537d4b7942357ee7f2ed30ee623b12",
+        "average_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d"
+      },
+      "E": {
+        "id": "W21",
+        "status": "CONSISTENT_WITH_SIMPLE_PAIR_AVERAGING",
+        "source_named_git_blob": "ab00192d9b537d4b7942357ee7f2ed30ee623b12",
+        "source_averaged_git_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+        "pairResults": [
+          {
+            "name": "550 nm",
+            "maximum_absolute_averaging_discrepancy": 1.1102230246251565e-16,
+            "rmse_averaging": 8.567368868136748e-18,
+            "replicate_pair_rms_difference": 0.0606884919511249
+          },
+          {
+            "name": "Large chequerboard (white)",
+            "maximum_absolute_averaging_discrepancy": 2.220446049250313e-16,
+            "rmse_averaging": 6.593201351125338e-17,
+            "replicate_pair_rms_difference": 0.01745397161542667
+          },
+          {
+            "name": "Large chequerboard (black)",
+            "maximum_absolute_averaging_discrepancy": 6.938893903907228e-18,
+            "rmse_averaging": 3.584346196859657e-18,
+            "replicate_pair_rms_difference": 0.008453843947358161
+          },
+          {
+            "name": "Small chequerboard (white)",
+            "maximum_absolute_averaging_discrepancy": 1.1102230246251565e-16,
+            "rmse_averaging": 4.889133284372322e-17,
+            "replicate_pair_rms_difference": 0.013545654416953847
+          },
+          {
+            "name": "Small chequerboard (black)",
+            "maximum_absolute_averaging_discrepancy": 6.938893903907228e-18,
+            "rmse_averaging": 3.764081901136015e-18,
+            "replicate_pair_rms_difference": 0.00987860856924391
+          }
+        ],
+        "global_max_average_error": 2.220446049250313e-16,
+        "max_direct_column_error": 0,
+        "comparison_tolerance": 0.00001,
+        "pair_positions_checked": 2005,
+        "direct_positions_checked": 12832,
+        "laboratory_replicate_sets": 5,
+        "source_independent_labs": 1,
+        "grade": "0/3",
+        "warnings": [
+          "WAVELENGTH_SAMPLES_NOT_INDEPENDENT",
+          "DOES_NOT_PROVE_RAW_INSTRUMENT_CALIBRATION",
+          "ONE_SOURCE_ONLY"
+        ]
+      },
+      "F": "same source and instrument, 401 wavelength positions are not independent 401 measurements",
+      "G": "exact JSON replay via independently refetched same source, 10/10 combined W21/W22 QA",
+      "H": "source averaging arithmetic confirmed, not instrument calibration",
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "CLOSED; original lab provenance scoped"
+    },
+    {
+      "id": "W22",
+      "status": "EXECUTED_PREREGISTERED_CIE_EXPLORATORY",
+      "type": "STANDARD_WEIGHTED_LAB_EVALUATION",
+      "A": "equal-energy hypothetical XYZ squared error for fixed vs greedy five-band reconstruction in 12 heldout ColorChecker patches",
+      "B": "greedy may improve colorimetric endpoint though spectral MSE worse",
+      "C": "same 12 patches, same 5 observations, independent CIE weighting standard",
+      "D": {
+        "prereg_commit": "bd918566d832d1647a25d76581f24c04c6d6e4da",
+        "code_commit": "c4439ce160c9db081e1da316feed2b5e4faaae75",
+        "cie_ref": "sblisesivdin/spectrum-to-rgb@4761ef5690ee01be438003ab4c98d3b7469dc7e1",
+        "cie_blob": "9b4e3f73b4bb412a762a6d03cb8060bfea652a6e"
+      },
+      "E": {
+        "id": "W22",
+        "status": "COMPUTED_HYPOTHETICAL_EQUAL_ENERGY_CIE_XYZ_LOSS",
+        "cie_source_repo": "sblisesivdin/spectrum-to-rgb",
+        "cie_source_git_blob": "9b4e3f73b4bb412a762a6d03cb8060bfea652a6e",
+        "cie_official_doi": "10.25039/CIE.DS.xvudnb9b",
+        "measured_git_blob": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+        "cie_row_count": 471,
+        "reflectance_wavelength_range": "400-700nm 10nm steps",
+        "hypothetical_illuminant": "E_equal_energy_not_actual_illumination",
+        "fixed_picks": [
+          400,
+          470,
+          550,
+          620,
+          700
+        ],
+        "greedy_picks": [
+          400,
+          470,
+          530,
+          610,
+          700
+        ],
+        "heldout_n": 12,
+        "heldout_per_patch": [
+          {
+            "name": "blue",
+            "xyz_error_fixed": 0.0004783665879284456,
+            "xyz_error_greedy": 0.000436010596352998,
+            "greedy_better": true
+          },
+          {
+            "name": "green",
+            "xyz_error_fixed": 0.00019828158908817,
+            "xyz_error_greedy": 0.0000615593788644276,
+            "greedy_better": true
+          },
+          {
+            "name": "red",
+            "xyz_error_fixed": 0.002251337333739298,
+            "xyz_error_greedy": 0.0015733378885990524,
+            "greedy_better": true
+          },
+          {
+            "name": "yellow",
+            "xyz_error_fixed": 0.00021549023856480315,
+            "xyz_error_greedy": 0.00031098231056027873,
+            "greedy_better": false
+          },
+          {
+            "name": "magenta",
+            "xyz_error_fixed": 0.0021478825462805167,
+            "xyz_error_greedy": 0.003525031893993283,
+            "greedy_better": false
+          },
+          {
+            "name": "cyan",
+            "xyz_error_fixed": 0.00011090898068144241,
+            "xyz_error_greedy": 0.0003717725197186711,
+            "greedy_better": false
+          },
+          {
+            "name": "white 9.5 (.05 D)",
+            "xyz_error_fixed": 0.006451315316057956,
+            "xyz_error_greedy": 0.006416450882439022,
+            "greedy_better": true
+          },
+          {
+            "name": "neutral 8 (.23 D)",
+            "xyz_error_fixed": 0.0021750787448013413,
+            "xyz_error_greedy": 0.0021683938006379334,
+            "greedy_better": true
+          },
+          {
+            "name": "neutral 6.5 (.44 D)",
+            "xyz_error_fixed": 0.00037469777504504155,
+            "xyz_error_greedy": 0.0003725989048814628,
+            "greedy_better": true
+          },
+          {
+            "name": "neutral 5 (.70 D)",
+            "xyz_error_fixed": 0.000029203890995506187,
+            "xyz_error_greedy": 0.0000280040509820368,
+            "greedy_better": true
+          },
+          {
+            "name": "neutral 3.5 (1.05 D)",
+            "xyz_error_fixed": 0.000002855342781708382,
+            "xyz_error_greedy": 0.00000272206583879772,
+            "greedy_better": true
+          },
+          {
+            "name": "black 2 (1.5 D)",
+            "xyz_error_fixed": 1.9863202368504955e-8,
+            "xyz_error_greedy": 1.999659487565176e-8,
+            "greedy_better": false
+          }
+        ],
+        "mean_xyz_squared_error_fixed": 0.0012029531840972165,
+        "mean_xyz_squared_error_greedy": 0.0012722403574552366,
+        "greedy_relative_advantage": -0.057597564289268766,
+        "greedy_better_patches": 8,
+        "grade": "0/3",
+        "independent_standard_not_independent_lab": true,
+        "warnings": [
+          "NOT_MEASURED_COLOR_APPEARANCE",
+          "NOT_CALIBRATED_ILLUMINANT",
+          "SAME_12_PATCHES_W13_HOLDOUT_EXPOSED",
+          "NO_SPATIAL_MHU_OUTCOME"
+        ]
+      },
+      "F": "same heldout as already-exposed W13; illuminant equal-energy hypothetical; not measured perception",
+      "G": "10/10 replay verification same source, not external",
+      "H": "greedy worse on mean despite winning majority of 12 patches",
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "CLOSED, no MHU comparison"
+    },
+    {
+      "id": "W23",
+      "status": "EXECUTED_PREREGISTERED_POST_HOC_MOTIVATED",
+      "type": "PHYSICAL_CALIBRATION_SENSITIVITY",
+      "A": "does clipping reflectances >1 to [0,1] reverse previously seen W22 ranking?",
+      "B": "ranking stable vs ranking reversal",
+      "C": "fixed band comparator vs greedy same 12 patches with/without clipping",
+      "D": {
+        "prereg_commit": "4e694fff551b9fcd391c0d094137b749c211dae0",
+        "code_commit": "775d937193df53de6dac609949b24b4602c136df",
+        "source_blob": "b9e55868ef0b7867408582f816ca7d0f99b7e086"
+      },
+      "E": {
+        "id": "W23",
+        "status": "COMPUTED_POST_HOC_MOTIVATED_EXPLORATORY",
+        "original_fixed_xyz_mse": 0.0012029531840972165,
+        "original_greedy_xyz_mse": 0.0012722403574552366,
+        "clipped_fixed_xyz_mse": 0.001232315348149989,
+        "clipped_greedy_xyz_mse": 0.0013045078909762536,
+        "original_relative_greedy_advantage": -0.057597564289268766,
+        "clipped_relative_greedy_advantage": -0.05858284807914105,
+        "original_greedy_better_patches": 8,
+        "clipped_greedy_better_patches": 7,
+        "mean_ranking_reversed": false,
+        "changed_entries_all_24x401": 308,
+        "changed_entries_heldout12x31": 26,
+        "nonfinite_source_values": 0,
+        "source_git_blobs": {
+          "lab": "82b83444716930c75e1d2a77ac6eed9fd6ccdc8d",
+          "CIE": "9b4e3f73b4bb412a762a6d03cb8060bfea652a6e",
+          "original_W22_code": "c6daf40fa5a0ce72e22c00412ea995243e81d1ca"
+        },
+        "grade": "0/3",
+        "selection_exposure": "W20_ABOVE_ONE_ALREADY_SEEN",
+        "scientific_replication": false,
+        "caution": [
+          "CLIPPING_IS_NOT_A_CALIBRATION_CORRECTION",
+          "EQUAL_ENERGY_CIE_NOT_MEASURED_APPEARANCE",
+          "SAME_12_HELDOUT_PATCHES_AS_W13_W22",
+          "NO_MHU_NEURAL_EVIDENCE"
+        ]
+      },
+      "F": "post-exposure motivation after W20 and W22; not real instrument recalibration",
+      "G": "exact JSON replay + 7/7 checks; same data, not external",
+      "H": "ranking held under this particular clipping stress",
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "CLOSED; STOP source exploration and move to new external spatial data"
+    }
+  ]
+}
