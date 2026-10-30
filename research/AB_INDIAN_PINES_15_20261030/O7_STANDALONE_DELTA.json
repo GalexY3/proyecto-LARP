@@ -1,0 +1,282 @@
+{
+  "id": "LARP_O7_AVIRIS_IP15_20261030",
+  "schema": "STANDALONE_DELTA_NOT_APPLIED_CANONICAL_ATLAS",
+  "branch": "research/ab-r-indian-pines-native-15-20261030",
+  "base_head": "c961f90cab756009607a7febf14157d90fea66b7",
+  "nodes": [
+    {
+      "id": "LARP_ABR_IP01",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP02",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP03",
+      "mode": "AB-R",
+      "type": "invalid_instrumentation",
+      "status": "refuted",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP04",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP05",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP06",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP07",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP08",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP09",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP10",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP11",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP12",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP13",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP14",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP15",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_ABR_IP16",
+      "mode": "AB-R",
+      "type": "exploratory_real_2D_hyperspectral",
+      "status": "answered",
+      "grade": "0/3",
+      "source": "AVIRIS Indian Pines 145x145x220",
+      "independent_source": false
+    },
+    {
+      "id": "LARP_REAL_INDEPENDENT_SCENE",
+      "mode": "AB-R",
+      "status": "blocked",
+      "type": "future_source",
+      "reason": "No independent second scene actually processed"
+    },
+    {
+      "id": "LARP_WEI_ORIGINAL_EXECUTABLE",
+      "mode": "AB-R",
+      "status": "blocked",
+      "type": "future_comparator",
+      "reason": "No compiled/tested Wei SHA and quota/seed parity"
+    }
+  ],
+  "edges": [
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP01",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP02",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP03",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP04",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP05",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP06",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP07",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP08",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP09",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP10",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP11",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP12",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP13",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP14",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP15",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_ABR_IP16",
+      "rel": "same_scene_dependent_measurement"
+    },
+    {
+      "from": "LARP_ABR_IP03",
+      "to": "LARP_ABR_IP16",
+      "rel": "repaired_by_new_exploratory_gate"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_REAL_INDEPENDENT_SCENE",
+      "rel": "depends_on"
+    },
+    {
+      "from": "LARP",
+      "to": "LARP_WEI_ORIGINAL_EXECUTABLE",
+      "rel": "depends_on"
+    }
+  ],
+  "accounting": {
+    "valid": 15,
+    "invalid": 1,
+    "planning": 0,
+    "spent_pools": {
+      "newest": 4,
+      "previous": 2,
+      "historical": 9
+    },
+    "remaining": 0
+  },
+  "scientific_confidence": {
+    "math": 24,
+    "functional": 18,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0
+  },
+  "limitations": "This is NOT canonical Atlas write, original Wei missing; multiple tests one original 1992 AVIRIS scene. No raw data distributed or CI/merge."
+}
