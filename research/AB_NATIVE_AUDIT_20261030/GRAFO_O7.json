@@ -1,0 +1,329 @@
+{
+  "schema": "AB_O7_TYPED_GRAPH",
+  "date": "2026-10-30",
+  "branch": "research/ab-r-native-certificates-20261030",
+  "legend": "Documentary AB questions, not independent trials",
+  "nodes": [
+    {
+      "id": "NATIVE_N400",
+      "type": "project",
+      "state": "historical_source",
+      "mode": "AB-R"
+    },
+    {
+      "id": "NATIVE_BINARY_BLOCKED",
+      "type": "gate",
+      "state": "blocked",
+      "reason": "NPZ unavailable in text-only GitHub connector"
+    },
+    {
+      "id": "NATIVE_ORIGINAL_WEI",
+      "type": "competitor",
+      "state": "not_run",
+      "source_commit": "0d1be2030518517199dff5c7e7514ee072037d59"
+    },
+    {
+      "id": "native_provenance",
+      "type": "research_branch",
+      "state": "closed",
+      "source": "RESULTADOS_N01_N20.json"
+    },
+    {
+      "id": "N01",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N02",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N03",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N04",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N19",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N20",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "native_fourier",
+      "type": "research_branch",
+      "state": "closed",
+      "source": "RESULTADOS_N01_N20.json"
+    },
+    {
+      "id": "N05",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N06",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N07",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N08",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N09",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N10",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N11",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N12",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "native_windows_local",
+      "type": "research_branch",
+      "state": "closed",
+      "source": "RESULTADOS_N01_N20.json"
+    },
+    {
+      "id": "N13",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N14",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N15",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N16",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N17",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    },
+    {
+      "id": "N18",
+      "type": "ab_cycle",
+      "status": "complete_documentary",
+      "grade": "0/3"
+    }
+  ],
+  "edges": [
+    {
+      "from": "NATIVE_N400",
+      "to": "native_provenance",
+      "relation": "evaluates"
+    },
+    {
+      "from": "native_provenance",
+      "to": "N01",
+      "relation": "contains"
+    },
+    {
+      "from": "native_provenance",
+      "to": "N02",
+      "relation": "contains"
+    },
+    {
+      "from": "native_provenance",
+      "to": "N03",
+      "relation": "contains"
+    },
+    {
+      "from": "native_provenance",
+      "to": "N04",
+      "relation": "contains"
+    },
+    {
+      "from": "native_provenance",
+      "to": "N19",
+      "relation": "contains"
+    },
+    {
+      "from": "native_provenance",
+      "to": "N20",
+      "relation": "contains"
+    },
+    {
+      "from": "NATIVE_N400",
+      "to": "native_fourier",
+      "relation": "evaluates"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N05",
+      "relation": "contains"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N06",
+      "relation": "contains"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N07",
+      "relation": "contains"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N08",
+      "relation": "contains"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N09",
+      "relation": "contains"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N10",
+      "relation": "contains"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N11",
+      "relation": "contains"
+    },
+    {
+      "from": "native_fourier",
+      "to": "N12",
+      "relation": "contains"
+    },
+    {
+      "from": "NATIVE_N400",
+      "to": "native_windows_local",
+      "relation": "evaluates"
+    },
+    {
+      "from": "native_windows_local",
+      "to": "N13",
+      "relation": "contains"
+    },
+    {
+      "from": "native_windows_local",
+      "to": "N14",
+      "relation": "contains"
+    },
+    {
+      "from": "native_windows_local",
+      "to": "N15",
+      "relation": "contains"
+    },
+    {
+      "from": "native_windows_local",
+      "to": "N16",
+      "relation": "contains"
+    },
+    {
+      "from": "native_windows_local",
+      "to": "N17",
+      "relation": "contains"
+    },
+    {
+      "from": "native_windows_local",
+      "to": "N18",
+      "relation": "contains"
+    },
+    {
+      "from": "N20",
+      "to": "NATIVE_BINARY_BLOCKED",
+      "relation": "identifies"
+    },
+    {
+      "from": "N20",
+      "to": "NATIVE_ORIGINAL_WEI",
+      "relation": "requires"
+    }
+  ],
+  "source_refs": [
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/avian_full_spectral_N400_g1101_certificate.json",
+      "blob": "4720267fa65181f7d06fafab4a8f1734e9e5ece3"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/avian_local_only_N400_g1101_certificate.json",
+      "blob": "e12acfafedbd9b4de57df70b7a808adfdb9aba73"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/avian_full_spectral_N400_g1102_certificate.json",
+      "blob": "b100f7472c70d8a38cc1eb6c7a25b98fa3963099"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/avian_local_only_N400_g1102_certificate.json",
+      "blob": "e4425f7bf9f8a3b985544cd3885718af65fb9824"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/avian_full_spectral_N400_g1103_certificate.json",
+      "blob": "5793d1e03d8d3a9071d1e0429068ae8cea3fad68"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/avian_local_only_N400_g1103_certificate.json",
+      "blob": "bb67e82684d47daf10bfd2ee2aef3ae8e3daef2a"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/summary_full_spectral.json",
+      "blob": "c26548d3201349fb99f65b59c89703ad25d41c4b"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/summary_local_only.json",
+      "blob": "e45d7e6411bb915506343bcb52fade1869f7874e"
+    },
+    {
+      "path": "legacy/local_lab_20261022/artifacts/avian_v1/provenance_audit.json",
+      "blob": "da36784f72799f33ba8dc5721c2573b4ff8beb0c"
+    }
+  ]
+}
