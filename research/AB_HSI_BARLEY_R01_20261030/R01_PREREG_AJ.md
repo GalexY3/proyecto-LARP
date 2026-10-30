@@ -1,0 +1,18 @@
+# R01 — AB-R preregistro de elegibilidad geométrica de nueve imágenes hiperespectrales
+
+Fecha 2026-10-30. Concesión NUEVA: 5 plazas; otras 2+9 anteriores separadas. Base c67eaec720a0bfa830832a9f84f334f03d01a06d. Ninguna CI ni merge.
+
+FUENTE: szkymm/Gra_Desi, upstream commit 8157f619f11bef20564067d55450c53120d1a712. Nueve tablas results/1722..1730/reflectance_ID.csv con ID,X,Y,Band_1..Band_204. Exposiciones: encabezado y dos filas 1729 y TODOS los tamaños/blob SHA de nueve CSV ya vistos. Proveniencia fuente obtain_reflectance.py extrae valores de .dat mediante rasterio en las coordenadas obtenidas por image_tag.py, que segmenta zonas verdes en HSV, detecta contornos y devuelve centroides. Por ello la falta de un cubo 2D completo y el muestreo endógeno son conocidos antes del freeze; no son un descubrimiento ciego. README dice GPLv3 para código, pero no se ha encontrado un LICENSE en raíz ni verificado derechos específicos de los espectros; no redistribuir archivos brutos.
+
+Git blob SHA por escena: 1722=b5ab7469b273213cbf800870738f6e73a708287e; 1723=74c1026341b8c28d9fbb168127e89b233e28c8e; 1724=ea8e7b0e65e68218b2c4fcb307438955f4d08c7c; 1725=d965d15025ac1594952b1620fed5627ab46de2f7; 1726=877d9cf02fbfad9f98eb6cdf21c066c26820f10c; 1727=864a65a5960435227dcfb9d033089cde15062842; 1728=5802465683f2616c87eaa9c6ef3819d787328107; 1729=15ce357543777fdd9a50b0a6723a6bd19f3c840b; 1730=bfb836529be7958476353093085677f629d95f7.
+
+A. Pregunta y estimando: número de puntos X/Y con 204 reflectancias en cada imagen y viabilidad de emparejar los 400 originales N400 sin duplicados. Unidad imagen, subunidad centroide seleccionado; no afirmar que son TODOS los píxeles de una imagen hiperespectral.
+B. Rivales: H0 al menos tres escenas con >=400 coordenadas únicas finitas y bbox 2D; H1 insuficiencia por muestreo de centroides, esperable dada fuente; H2 otros defectos (NaN, duplicados, bandas inconsistentes). No hay hipótesis positiva de superioridad MHU.
+C. Nueve tablas fijas; verificar n filas, 204 bandas, numericidad, X/Y positivos enteros, duplicados, bbox, densidad ocupación n_unique/(bbox width*height), rango de bandas, valores <0/>1 y distancia NN mediana. N400 elegible solo si al menos tres escenas tienen >=400 coordenadas únicas con todas las 204 bandas finitas y bbox no degenerado. No imputar ni generar coordenadas.
+D. Congelar prereg y código R01_DATA_GATE.js mediante commits SHA ANTES de abrir datasets completos. Metadata y dos primeras filas 1729 ya expuestas; transparencia obligatoria.
+E. Una ejecución real sobre las nueve fuentes, log de todos los fallos y salida resumen sin coordenadas/spectros originales. Segundo replay solo prueba repetibilidad técnica.
+F. Adversarial: X/Y provienen de centroides verdes, no de muestreo aleatorio controlado, por lo que topología reflejaría fenotipo y algoritmo de segmentación. MHU/LOCAL/CVT/Wei deben tener mismas oportunidades y presupuesto, imposible sin campo completo. No inventar Wei proxy ni reciclar N400 como geometría equivalente.
+G. Independencia: nuevo estudio agrícola ajeno a otras fuentes revisadas; nueve escenas no son nueve laboratorios ni validación externa de MHU.
+H. Actualizar prior solo de accesibilidad geométrica. Sin actualizar prior de eficacia MHU.
+I. Grado 0/3; CT2 matemática 24/100, funcional 18/100. Un ciclo técnico AB-R solo si se inspeccionan efectivamente nueve fuentes con SHA y resultados adversos conservados.
+J. Si falla elegibilidad N400, STOP_HSI_SPARSE. Conservar otras 4 plazas nuevas y 2+9 previas; no repetir análisis en dataset insuficiente. Si supera gate, exigir además Wei auténtico y controles MHU/LOCAL/CVT/Wei antes de experimento funcional.
