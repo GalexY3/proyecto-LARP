@@ -1,0 +1,482 @@
+{
+  "status": "EXECUTED_PREREGISTERED_EXPLORATORY",
+  "prereg_commit": "f73c3faa16d59f1a416005b9c7ec20293c5211c4",
+  "code_freeze_commit": "a813f0dc636f3dccfcf6d9849f7a4721c7f2929e",
+  "source_sha": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+  "code_blob": "8bb4f26aba7f755bd2ca9bb8bda7d6faac1d8183",
+  "results": {
+    "protocol": "S02_5_TO_7_FIELD_RECONSTRUCTION",
+    "source_commit": "26b8f243bdf3574ea2bb25eee927c720fa309dcb",
+    "source_blob": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+    "qualified_rows": 329,
+    "quarantined_rows": 68,
+    "qualified_sites": 52,
+    "test_units_sites": 34,
+    "folds": [
+      {
+        "site": "Baltic Sea",
+        "train_rows": 327,
+        "test_rows": 2,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000004129495169164842,
+          "interpolation": 0.000005305246877891993,
+          "train_mean": 0.000850175014673331
+        }
+      },
+      {
+        "site": "Burrinjuck Dam",
+        "train_rows": 320,
+        "test_rows": 9,
+        "train_sites": 51,
+        "held_satellite_products": 3,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.00002111203552868262,
+          "interpolation": 0.00005918594523844021,
+          "train_mean": 0.003132520502741859
+        }
+      },
+      {
+        "site": "English Channel",
+        "train_rows": 313,
+        "test_rows": 16,
+        "train_sites": 51,
+        "held_satellite_products": 8,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.0000012559416867728095,
+          "interpolation": 0.000021557915655739664,
+          "train_mean": 0.00039268527317765187
+        }
+      },
+      {
+        "site": "Garda",
+        "train_rows": 310,
+        "test_rows": 19,
+        "train_sites": 51,
+        "held_satellite_products": 6,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.00002845799790706757,
+          "interpolation": 0.0002370436328619865,
+          "train_mean": 0.0049948353047482436
+        }
+      },
+      {
+        "site": "Gulf of Mexico, FL",
+        "train_rows": 327,
+        "test_rows": 2,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.00013607108628444593,
+          "interpolation": 0.0005740721102920639,
+          "train_mean": 0.0011138845999338742
+        }
+      },
+      {
+        "site": "High Rock Lake",
+        "train_rows": 283,
+        "test_rows": 46,
+        "train_sites": 51,
+        "held_satellite_products": 5,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000023471795826787614,
+          "interpolation": 0.000150172803513275,
+          "train_mean": 0.0006187139078728296
+        }
+      },
+      {
+        "site": "Hou Lake",
+        "train_rows": 316,
+        "test_rows": 13,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.00018048603749506152,
+          "interpolation": 0.00053552676332164,
+          "train_mean": 0.0011274082518223513
+        }
+      },
+      {
+        "site": "Iseo",
+        "train_rows": 324,
+        "test_rows": 5,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.0000057000175685020574,
+          "interpolation": 0.0003258900590140941,
+          "train_mean": 0.00036506553394891246
+        }
+      },
+      {
+        "site": "Lac Vieux Desert",
+        "train_rows": 326,
+        "test_rows": 3,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000008681343874572667,
+          "interpolation": 0.00000891310025208486,
+          "train_mean": 0.00031763991201964295
+        }
+      },
+      {
+        "site": "Lake Bonney",
+        "train_rows": 326,
+        "test_rows": 3,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000016206580550387203,
+          "interpolation": 0.0001296899534518833,
+          "train_mean": 0.00042820512406991826
+        }
+      },
+      {
+        "site": "Lake Brunner",
+        "train_rows": 327,
+        "test_rows": 2,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000006112780635337713,
+          "interpolation": 0.0000034255366637955407,
+          "train_mean": 0.00031394965294711933
+        }
+      },
+      {
+        "site": "Lake Constance",
+        "train_rows": 296,
+        "test_rows": 33,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.0000010526228903325732,
+          "interpolation": 0.00009717406705785611,
+          "train_mean": 0.000628658040955264
+        }
+      },
+      {
+        "site": "Lake Hume",
+        "train_rows": 320,
+        "test_rows": 9,
+        "train_sites": 51,
+        "held_satellite_products": 7,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000011624414316115293,
+          "interpolation": 0.00005090232003239111,
+          "train_mean": 0.00043451258961142817
+        }
+      },
+      {
+        "site": "Lake Kasumigaura",
+        "train_rows": 327,
+        "test_rows": 2,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000012976018108444502,
+          "interpolation": 0.00011419764642109858,
+          "train_mean": 0.00014472492179721155
+        }
+      },
+      {
+        "site": "Lake Kegonsa",
+        "train_rows": 319,
+        "test_rows": 2,
+        "train_sites": 48,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 8,
+        "mse": {
+          "ridge": 0.0000031626235951255863,
+          "interpolation": 0.00003407159229282437,
+          "train_mean": 0.00037229132015426683
+        }
+      },
+      {
+        "site": "Lake Mendota",
+        "train_rows": 319,
+        "test_rows": 2,
+        "train_sites": 48,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 8,
+        "mse": {
+          "ridge": 0.000008419031322923485,
+          "interpolation": 0.00003054952833229486,
+          "train_mean": 0.0005319134619638035
+        }
+      },
+      {
+        "site": "Lake Michigan",
+        "train_rows": 316,
+        "test_rows": 12,
+        "train_sites": 50,
+        "held_satellite_products": 4,
+        "blocked_by_shared_products": 1,
+        "mse": {
+          "ridge": 0.00003394903349691764,
+          "interpolation": 0.0001360623176455592,
+          "train_mean": 0.00031703956256206537
+        }
+      },
+      {
+        "site": "Lake Monona",
+        "train_rows": 319,
+        "test_rows": 3,
+        "train_sites": 48,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 7,
+        "mse": {
+          "ridge": 0.000006610995312279253,
+          "interpolation": 0.000040229781618428865,
+          "train_mean": 0.000546086818059812
+        }
+      },
+      {
+        "site": "Lake Pamamaroo",
+        "train_rows": 323,
+        "test_rows": 6,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.0004028764909219885,
+          "interpolation": 0.0012483634541410708,
+          "train_mean": 0.02127180622529505
+        }
+      },
+      {
+        "site": "Lake Peipsi",
+        "train_rows": 325,
+        "test_rows": 4,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.0010674255103314916,
+          "interpolation": 0.000008137090840861248,
+          "train_mean": 0.006442761358454395
+        }
+      },
+      {
+        "site": "Lake Rotoehu",
+        "train_rows": 313,
+        "test_rows": 12,
+        "train_sites": 50,
+        "held_satellite_products": 6,
+        "blocked_by_shared_products": 4,
+        "mse": {
+          "ridge": 0.000008026994908471567,
+          "interpolation": 0.00004302374301566953,
+          "train_mean": 0.0005037868270033222
+        }
+      },
+      {
+        "site": "Lake Rotoiti",
+        "train_rows": 322,
+        "test_rows": 2,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 5,
+        "mse": {
+          "ridge": 0.0000022955476235911857,
+          "interpolation": 0.000013170875860689935,
+          "train_mean": 0.0007013284612201652
+        }
+      },
+      {
+        "site": "Lake Rotoma",
+        "train_rows": 321,
+        "test_rows": 3,
+        "train_sites": 51,
+        "held_satellite_products": 3,
+        "blocked_by_shared_products": 5,
+        "mse": {
+          "ridge": 0.0000017479276771185113,
+          "interpolation": 0.000005488476242934936,
+          "train_mean": 0.0009043832547575746
+        }
+      },
+      {
+        "site": "Lake Vortsjarv",
+        "train_rows": 325,
+        "test_rows": 4,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 7.849834733063287e-7,
+          "interpolation": 0.000018278000633451215,
+          "train_mean": 0.00019889348397171409
+        }
+      },
+      {
+        "site": "Lake Waubesa",
+        "train_rows": 319,
+        "test_rows": 3,
+        "train_sites": 48,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 7,
+        "mse": {
+          "ridge": 6.048786220648244e-7,
+          "interpolation": 0.00011103072811520722,
+          "train_mean": 0.00033390822302986243
+        }
+      },
+      {
+        "site": "Liangzi Lake",
+        "train_rows": 283,
+        "test_rows": 37,
+        "train_sites": 51,
+        "held_satellite_products": 3,
+        "blocked_by_shared_products": 9,
+        "mse": {
+          "ridge": 0.00006290024118296308,
+          "interpolation": 0.0005242400351680998,
+          "train_mean": 0.001087442306374123
+        }
+      },
+      {
+        "site": "Maggiore",
+        "train_rows": 327,
+        "test_rows": 2,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000024106272045498663,
+          "interpolation": 0.002028099855909987,
+          "train_mean": 0.027875488307603745
+        }
+      },
+      {
+        "site": "North Sea",
+        "train_rows": 324,
+        "test_rows": 5,
+        "train_sites": 51,
+        "held_satellite_products": 3,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.00000296607268038875,
+          "interpolation": 0.000009563090208897079,
+          "train_mean": 0.0006837543802547837
+        }
+      },
+      {
+        "site": "Pelican Lake",
+        "train_rows": 326,
+        "test_rows": 3,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000009555063513355337,
+          "interpolation": 0.00000187082463058142,
+          "train_mean": 0.00032289049124598643
+        }
+      },
+      {
+        "site": "Poyang Lake",
+        "train_rows": 313,
+        "test_rows": 16,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.00004553228832181512,
+          "interpolation": 0.00017830962975257428,
+          "train_mean": 0.000546154772566871
+        }
+      },
+      {
+        "site": "Rotoroa",
+        "train_rows": 326,
+        "test_rows": 3,
+        "train_sites": 51,
+        "held_satellite_products": 1,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.0000025660237523785164,
+          "interpolation": 0.000006076310613570314,
+          "train_mean": 0.0007842076653114486
+        }
+      },
+      {
+        "site": "Trasimeno",
+        "train_rows": 319,
+        "test_rows": 10,
+        "train_sites": 51,
+        "held_satellite_products": 6,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.00001826923896740078,
+          "interpolation": 0.0003587945803544914,
+          "train_mean": 0.0004054740047025457
+        }
+      },
+      {
+        "site": "Western Treatment Plant",
+        "train_rows": 327,
+        "test_rows": 2,
+        "train_sites": 51,
+        "held_satellite_products": 2,
+        "blocked_by_shared_products": 0,
+        "mse": {
+          "ridge": 0.000155777966452098,
+          "interpolation": 0.0005612824928624601,
+          "train_mean": 0.009166437218957824
+        }
+      },
+      {
+        "site": "Wuhan East Lake",
+        "train_rows": 296,
+        "test_rows": 16,
+        "train_sites": 51,
+        "held_satellite_products": 3,
+        "blocked_by_shared_products": 17,
+        "mse": {
+          "ridge": 0.00006631929655337284,
+          "interpolation": 0.0002932672837243645,
+          "train_mean": 0.00031466298830440116
+        }
+      }
+    ],
+    "mean_site_mse": {
+      "ridge": 0.00007003631319400662,
+      "interpolation": 0.00023420490566524287,
+      "train_mean": 0.0025933438165327465
+    },
+    "median_site_mse": {
+      "ridge": 0.000011624414316115293,
+      "interpolation": 0.00009717406705785611,
+      "train_mean": 0.000546154772566871
+    },
+    "ridge_to_interpolation_ratio": 0.29903862600603226,
+    "site_wins_ridge": 31,
+    "shared_product_excluded_total_across_folds": 71,
+    "primary_unit": "site_mean_not_satellite_row",
+    "scientific_grade": "0/3",
+    "caveats": [
+      "SITE_NAME_MAY_NOT_IDENTIFY_UNIQUE_WATERBODY",
+      "SEVEN_BANDS_ORDINAL_NOT_CALIBRATED_WAVELENGTH_INTERPOLATION",
+      "SOURCE_GLORIA_OVERLAP",
+      "NOT_FULL_2D_HYPERSPECTRAL_IMAGE",
+      "NO_MHU_GEOMETRY_OR_WEI_COMPARISON"
+    ]
+  }
+}
