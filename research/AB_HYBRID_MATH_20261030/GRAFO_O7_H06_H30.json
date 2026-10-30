@@ -1,0 +1,425 @@
+{
+  "schema": "LARP_AB_O7_TYPED_GRAPH_20261030",
+  "root": "LARP_ABR_HYBRIDS",
+  "mode": "AB-R",
+  "authorized": 30,
+  "completed_historical": 5,
+  "completed_new_deductive": 25,
+  "invalid_instrument_runs": 2,
+  "external_confirmations": 0,
+  "remaining": 0,
+  "notes": "Relationships denote mathematical dependence or complementary scope, NOT 30 independent new discoveries; entire source uploaded after results, frozen SHA previously.",
+  "nodes": [
+    {
+      "id": "LARP_ABR_HYBRIDS",
+      "type": "campaign",
+      "granted": 30,
+      "status": "closed",
+      "main_untouched": true
+    },
+    {
+      "id": "H01_H05",
+      "type": "historical_completed_batch",
+      "count": 5,
+      "status": "closed",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H01_H05.json"
+    },
+    {
+      "id": "B1_ROUTING",
+      "type": "mathematical_branch",
+      "status": "closed",
+      "new_discovery_2_3": false
+    },
+    {
+      "id": "H06",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H07",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H08",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H09",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H10",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "B2_COVERAGE",
+      "type": "mathematical_branch",
+      "status": "closed",
+      "new_discovery_2_3": false
+    },
+    {
+      "id": "H11",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H12",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H13",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H14",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H15",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "B3_SPECTRAL_RISK",
+      "type": "mathematical_branch",
+      "status": "closed",
+      "new_discovery_2_3": false
+    },
+    {
+      "id": "H16",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H17",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H18",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H19",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H20",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "B4_PARETO",
+      "type": "mathematical_branch",
+      "status": "closed",
+      "new_discovery_2_3": false
+    },
+    {
+      "id": "H21",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H22",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H23",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H24",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "B5_INFORMATION_GNN",
+      "type": "mathematical_branch",
+      "status": "closed",
+      "new_discovery_2_3": false
+    },
+    {
+      "id": "H25",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H26",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H27",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H28",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H29",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    },
+    {
+      "id": "H30",
+      "type": "AB_R_DEDUCTIVE_CYCLE",
+      "status": "verified_internal",
+      "scientific_novelty": "0/3",
+      "source": "research/AB_HYBRID_MATH_20261030/LEDGER_H06_H30_GITHUB.json"
+    }
+  ],
+  "edges": [
+    {
+      "from": "LARP_ABR_HYBRIDS",
+      "to": "B1_ROUTING",
+      "kind": "branches_to"
+    },
+    {
+      "from": "B1_ROUTING",
+      "to": "H06",
+      "kind": "contains"
+    },
+    {
+      "from": "B1_ROUTING",
+      "to": "H07",
+      "kind": "contains"
+    },
+    {
+      "from": "B1_ROUTING",
+      "to": "H08",
+      "kind": "contains"
+    },
+    {
+      "from": "B1_ROUTING",
+      "to": "H09",
+      "kind": "contains"
+    },
+    {
+      "from": "B1_ROUTING",
+      "to": "H10",
+      "kind": "contains"
+    },
+    {
+      "from": "LARP_ABR_HYBRIDS",
+      "to": "B2_COVERAGE",
+      "kind": "branches_to"
+    },
+    {
+      "from": "B2_COVERAGE",
+      "to": "H11",
+      "kind": "contains"
+    },
+    {
+      "from": "B2_COVERAGE",
+      "to": "H12",
+      "kind": "contains"
+    },
+    {
+      "from": "B2_COVERAGE",
+      "to": "H13",
+      "kind": "contains"
+    },
+    {
+      "from": "B2_COVERAGE",
+      "to": "H14",
+      "kind": "contains"
+    },
+    {
+      "from": "B2_COVERAGE",
+      "to": "H15",
+      "kind": "contains"
+    },
+    {
+      "from": "LARP_ABR_HYBRIDS",
+      "to": "B3_SPECTRAL_RISK",
+      "kind": "branches_to"
+    },
+    {
+      "from": "B3_SPECTRAL_RISK",
+      "to": "H16",
+      "kind": "contains"
+    },
+    {
+      "from": "B3_SPECTRAL_RISK",
+      "to": "H17",
+      "kind": "contains"
+    },
+    {
+      "from": "B3_SPECTRAL_RISK",
+      "to": "H18",
+      "kind": "contains"
+    },
+    {
+      "from": "B3_SPECTRAL_RISK",
+      "to": "H19",
+      "kind": "contains"
+    },
+    {
+      "from": "B3_SPECTRAL_RISK",
+      "to": "H20",
+      "kind": "contains"
+    },
+    {
+      "from": "LARP_ABR_HYBRIDS",
+      "to": "B4_PARETO",
+      "kind": "branches_to"
+    },
+    {
+      "from": "B4_PARETO",
+      "to": "H21",
+      "kind": "contains"
+    },
+    {
+      "from": "B4_PARETO",
+      "to": "H22",
+      "kind": "contains"
+    },
+    {
+      "from": "B4_PARETO",
+      "to": "H23",
+      "kind": "contains"
+    },
+    {
+      "from": "B4_PARETO",
+      "to": "H24",
+      "kind": "contains"
+    },
+    {
+      "from": "LARP_ABR_HYBRIDS",
+      "to": "B5_INFORMATION_GNN",
+      "kind": "branches_to"
+    },
+    {
+      "from": "B5_INFORMATION_GNN",
+      "to": "H25",
+      "kind": "contains"
+    },
+    {
+      "from": "B5_INFORMATION_GNN",
+      "to": "H26",
+      "kind": "contains"
+    },
+    {
+      "from": "B5_INFORMATION_GNN",
+      "to": "H27",
+      "kind": "contains"
+    },
+    {
+      "from": "B5_INFORMATION_GNN",
+      "to": "H28",
+      "kind": "contains"
+    },
+    {
+      "from": "B5_INFORMATION_GNN",
+      "to": "H29",
+      "kind": "contains"
+    },
+    {
+      "from": "B5_INFORMATION_GNN",
+      "to": "H30",
+      "kind": "contains"
+    },
+    {
+      "from": "H12",
+      "to": "H13",
+      "kind": "closely_related_not_independent_discovery"
+    },
+    {
+      "from": "H16",
+      "to": "H17",
+      "kind": "closely_related_not_independent_discovery"
+    },
+    {
+      "from": "H21",
+      "to": "H22",
+      "kind": "closely_related_not_independent_discovery"
+    },
+    {
+      "from": "H25",
+      "to": "H26",
+      "kind": "closely_related_not_independent_discovery"
+    },
+    {
+      "from": "H27",
+      "to": "H28",
+      "kind": "closely_related_not_independent_discovery"
+    },
+    {
+      "from": "H06",
+      "to": "H07",
+      "kind": "closely_related_not_independent_discovery"
+    },
+    {
+      "from": "H11",
+      "to": "H14",
+      "kind": "closely_related_not_independent_discovery"
+    },
+    {
+      "from": "H24",
+      "to": "H23",
+      "kind": "closely_related_not_independent_discovery"
+    }
+  ]
+}
