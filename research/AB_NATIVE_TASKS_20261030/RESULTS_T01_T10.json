@@ -1,0 +1,3673 @@
+{
+  "schema": "AB_NATIVE_TASKS_T01_T10",
+  "date": "2026-10-30",
+  "source_kind": "Genuine original N400 IEEE754 exact coordinate exports",
+  "source_ref": "research/ab-r-native-export-20261030-053103",
+  "units": "3 paired native seeds only; 8x8 integration grid and 400 nodes are NOT independent replicas",
+  "parameters": {
+    "box": 20,
+    "nodes": 400,
+    "type_counts": [
+      163,
+      85,
+      68,
+      50,
+      34
+    ],
+    "GP_ell": [
+      0.5,
+      0.8,
+      1.25,
+      2,
+      3.5
+    ],
+    "GP_sensor_noise_variance": 0.01,
+    "GP_queries": 64,
+    "graph_outdegree": 6,
+    "graph_hops": [
+      1,
+      2,
+      3
+    ],
+    "CVT_grid": "24x24",
+    "CVT_steps": 25,
+    "CVT_relaxation": 0.8
+  },
+  "rows": [
+    {
+      "task": "T01",
+      "seed": 1101,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9937581814626469,
+      "population_weighted": 0.994536074521988,
+      "by_type": [
+        0.9963502311765089,
+        0.9875327744972182,
+        0.9994992768270518,
+        0.9999507641811064,
+        0.9854578606313487
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1101,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9880063944585178,
+      "population_weighted": 0.9858718006463357,
+      "by_type": [
+        0.9803552559035464,
+        0.9852077140887283,
+        0.9912784575310577,
+        0.9982965134029824,
+        0.9848940313662734
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1101,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9752101105855134,
+      "population_weighted": 0.9696880090777391,
+      "by_type": [
+        0.9573053129054212,
+        0.9789938424868039,
+        0.9650365877220867,
+        0.991073094836318,
+        0.9836417149769375
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1101,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9386737005974511,
+      "population_weighted": 0.9245463250660653,
+      "by_type": [
+        0.8941468716904944,
+        0.9491532344952978,
+        0.9124408362098136,
+        0.966828192899485,
+        0.9707993676921655
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1101,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.807007622180118,
+      "population_weighted": 0.7521916133884967,
+      "by_type": [
+        0.6283958952215569,
+        0.8171247885563983,
+        0.78970227879464,
+        0.8811898378627354,
+        0.9186253104652591
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.10994348332918953,
+      "available_type_fraction": 0.8935,
+      "mean_edge_length": 1.104164834671432,
+      "by_type": [
+        0.00234203520625373,
+        0.00846016984746063,
+        0.028897018025095762,
+        0.14420069004456645,
+        0.36581750352257103
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.005067135328496518,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2407707474085656,
+      "by_type": [
+        0.00234203520625373,
+        0.0035248816624489305,
+        0.004229746005010245,
+        0.006224094729242336,
+        0.009014919039527346
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005067135328496518,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.104164834671432,
+      "by_type": [
+        0.00234203520625373,
+        0.0035248816624489305,
+        0.004229746005010245,
+        0.006224094729242336,
+        0.009014919039527346
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005067135328496518,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2407707474085656,
+      "by_type": [
+        0.00234203520625373,
+        0.0035248816624489305,
+        0.004229746005010245,
+        0.006224094729242336,
+        0.009014919039527346
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005067135328496518,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.104164834671432,
+      "by_type": [
+        0.00234203520625373,
+        0.0035248816624489305,
+        0.004229746005010245,
+        0.006224094729242336,
+        0.009014919039527346
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005067135328496518,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2407707474085656,
+      "by_type": [
+        0.00234203520625373,
+        0.0035248816624489305,
+        0.004229746005010245,
+        0.006224094729242336,
+        0.009014919039527346
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1101,
+      "model": "full_spectral",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.022886491845838505,
+        0.0281740157384796,
+        0.02463429647975614,
+        0.04521365867708185,
+        0.030047148287636556
+      ],
+      "union": 0.029509014537194678,
+      "equal_type": 0.03019112220575853,
+      "population_weighted": 0.02770676911224899
+    },
+    {
+      "task": "T10",
+      "seed": 1101,
+      "model": "full_spectral",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.09172840423628931,
+        0.3577593896206109,
+        0.9008433503471752,
+        1.2392517360893456,
+        1.0836433286887852
+      ],
+      "union": 0.2359951863568213,
+      "equal_type": 0.7346452417964413,
+      "population_weighted": 0.5135627145294025
+    },
+    {
+      "task": "T01",
+      "seed": 1101,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9955587132904622,
+      "population_weighted": 0.9942510107607495,
+      "by_type": [
+        0.9899210670469034,
+        0.9992988786818043,
+        0.9972711541779364,
+        0.9927589588155478,
+        0.9985435077301199
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1101,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.985370284826859,
+      "population_weighted": 0.9808337853324863,
+      "by_type": [
+        0.9685296709240871,
+        0.991797494651007,
+        0.9853236390532362,
+        0.9873476380131188,
+        0.9938529814928457
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1101,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9666619851191948,
+      "population_weighted": 0.9562748668137401,
+      "by_type": [
+        0.9323018575829581,
+        0.9717299738604862,
+        0.9616459527664606,
+        0.9785174103804261,
+        0.989114731005643
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1101,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9264946812455854,
+      "population_weighted": 0.9022921558697904,
+      "by_type": [
+        0.8493478213475524,
+        0.9323047967972627,
+        0.9080478659981537,
+        0.9641078438584226,
+        0.9786650782265358
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1101,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.8002055562334925,
+      "population_weighted": 0.7390159789690597,
+      "by_type": [
+        0.6045420863966591,
+        0.8109810417593232,
+        0.758390915503539,
+        0.9025121016197044,
+        0.9246016358882375
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.1129757343645026,
+      "available_type_fraction": 0.8905,
+      "mean_edge_length": 1.1047908084926126,
+      "by_type": [
+        0.0023407320254952278,
+        0.026012202859183788,
+        0.041408697251877395,
+        0.1318484824269216,
+        0.3632685572590344
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.005183951749380216,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2442541606093156,
+      "by_type": [
+        0.0023407320254952278,
+        0.0038276830981626583,
+        0.0044344324551937875,
+        0.006188579325972129,
+        0.009128331842077295
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005674476237372648,
+      "available_type_fraction": 0.9995,
+      "mean_edge_length": 1.1047908084926126,
+      "by_type": [
+        0.0023407320254952278,
+        0.0038276830981626583,
+        0.0044344324551937875,
+        0.006188579325972129,
+        0.011580954282039464
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005183951749380216,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2442541606093156,
+      "by_type": [
+        0.0023407320254952278,
+        0.0038276830981626583,
+        0.0044344324551937875,
+        0.006188579325972129,
+        0.009128331842077295
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005183951749380216,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1047908084926126,
+      "by_type": [
+        0.0023407320254952278,
+        0.0038276830981626583,
+        0.0044344324551937875,
+        0.006188579325972129,
+        0.009128331842077295
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005183951749380216,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2442541606093156,
+      "by_type": [
+        0.0023407320254952278,
+        0.0038276830981626583,
+        0.0044344324551937875,
+        0.006188579325972129,
+        0.009128331842077295
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1101,
+      "model": "local_only",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.014882994498451062,
+        0.03398190772770751,
+        0.02973578349925221,
+        0.04185869213785651,
+        0.05028088321087042
+      ],
+      "union": 0.02270975760639886,
+      "equal_type": 0.03414805221482754,
+      "population_weighted": 0.02784727043528558
+    },
+    {
+      "task": "T10",
+      "seed": 1101,
+      "model": "local_only",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.07218929637635686,
+        0.34827214007006296,
+        0.8761208473506761,
+        1.338608161791061,
+        1.1086575546579982
+      ],
+      "union": 0.2224867306768526,
+      "equal_type": 0.7487696000492311,
+      "population_weighted": 0.5139274244576812
+    },
+    {
+      "task": "T01",
+      "seed": 1101,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9966779904804641,
+      "population_weighted": 0.9971913818858519,
+      "by_type": [
+        0.9999836162516875,
+        0.9998929735589719,
+        0.9840267595558245,
+        0.9994972749867865,
+        0.9999893280490498
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1101,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9938231262599228,
+      "population_weighted": 0.9945362927598106,
+      "by_type": [
+        0.9988453691263346,
+        0.9951430248518104,
+        0.9801987433044455,
+        0.9959050926654194,
+        0.999023401351604
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1101,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9830035870447527,
+      "population_weighted": 0.9830681627560258,
+      "by_type": [
+        0.9891303634789669,
+        0.9746096872972281,
+        0.9701993290886735,
+        0.989185448427634,
+        0.991893106931261
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1101,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.944131550540489,
+      "population_weighted": 0.9354921207826428,
+      "by_type": [
+        0.9235943211525672,
+        0.922386899382424,
+        0.9436432593392569,
+        0.9640759129034048,
+        0.9669573599247926
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1101,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.7961501805372155,
+      "population_weighted": 0.742413135018447,
+      "by_type": [
+        0.6229590742762084,
+        0.7746072597529761,
+        0.8244333588733359,
+        0.8576436428328827,
+        0.9011075669506743
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.10968426149414287,
+      "available_type_fraction": 0.8935,
+      "mean_edge_length": 1.0632203139917331,
+      "by_type": [
+        0.0010813840875456492,
+        0.008023923709060117,
+        0.02908284541934977,
+        0.15658171535302134,
+        0.3536514389017386
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.0048383094099050976,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1768388585006655,
+      "by_type": [
+        0.0010813840875456492,
+        0.003075331076687006,
+        0.004381123072718408,
+        0.006271890142386041,
+        0.009381818670188408
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.0068575323318909465,
+      "available_type_fraction": 0.998,
+      "mean_edge_length": 1.0632203139917331,
+      "by_type": [
+        0.0010813840875456492,
+        0.003075331076687006,
+        0.004381123072718408,
+        0.006291967422729752,
+        0.019457855999773933
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.0048383094099050976,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1768388585006655,
+      "by_type": [
+        0.0010813840875456492,
+        0.003075331076687006,
+        0.004381123072718408,
+        0.006271890142386041,
+        0.009381818670188408
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.004872021589960999,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.0632203139917331,
+      "by_type": [
+        0.0010813840875456492,
+        0.003075331076687006,
+        0.004381123072718408,
+        0.006278029224176165,
+        0.009544240488677785
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.0048383094099050976,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1768388585006655,
+      "by_type": [
+        0.0010813840875456492,
+        0.003075331076687006,
+        0.004381123072718408,
+        0.006271890142386041,
+        0.009381818670188408
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1101,
+      "model": "cvt_proxy",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.10950515171218933,
+        0.05732142558270081,
+        0.036403514487634465,
+        0.03418417707609027,
+        0.03772645625417295
+      ],
+      "union": 0.06007438205060208,
+      "equal_type": 0.055028145022557574,
+      "population_weighted": 0.07047252063805493
+    },
+    {
+      "task": "T10",
+      "seed": 1101,
+      "model": "cvt_proxy",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.1286455656822957,
+        0.6103459860413933,
+        0.8520307979315354,
+        1.1556910629420678,
+        1.092268856769076
+      ],
+      "union": 0.524988066300038,
+      "equal_type": 0.7677964538732736,
+      "population_weighted": 0.5642710613908225
+    },
+    {
+      "task": "T01",
+      "seed": 1101,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9973716022213391,
+      "population_weighted": 0.9980609680872083,
+      "by_type": [
+        0.9991862529897116,
+        0.9992419263709028,
+        0.9999983806743842,
+        0.9884315646086135,
+        0.9999998864630838
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1101,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9929902182408616,
+      "population_weighted": 0.9919314147899233,
+      "by_type": [
+        0.9895044498047073,
+        0.9920435250125199,
+        0.9992755671591853,
+        0.9842853581977963,
+        0.9998421910300997
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1101,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9778589158824726,
+      "population_weighted": 0.9704051644748213,
+      "by_type": [
+        0.9544259730726588,
+        0.9707804969119301,
+        0.9898849587958949,
+        0.9774503513728984,
+        0.996752799258981
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1101,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9363114349701107,
+      "population_weighted": 0.914249267960735,
+      "by_type": [
+        0.8667280990826884,
+        0.9210781319751254,
+        0.9522119853868879,
+        0.9605403889889237,
+        0.9809985694169276
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1101,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.8124874683443737,
+      "population_weighted": 0.756904554912182,
+      "by_type": [
+        0.6386092791447139,
+        0.7741458524554604,
+        0.8348981946950078,
+        0.899398640112652,
+        0.915385375314035
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.16353730007243775,
+      "available_type_fraction": 0.8395,
+      "mean_edge_length": 0.9969845984010338,
+      "by_type": [
+        0.0012462452161015585,
+        0.05031608849581226,
+        0.03414228416275236,
+        0.26904661530340834,
+        0.46293526718411043
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1101,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.006113536160872474,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.121597807859282,
+      "by_type": [
+        0.0012462452161015585,
+        0.0034595653332857466,
+        0.004651166129465444,
+        0.007977355589868021,
+        0.013233348535641372
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.05010270297529125,
+      "available_type_fraction": 0.955,
+      "mean_edge_length": 0.9969845984010338,
+      "by_type": [
+        0.0012462452161015585,
+        0.0034595653332857466,
+        0.004691495732498386,
+        0.05028499593057165,
+        0.19083121266399947
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1101,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.006113536160872474,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.121597807859282,
+      "by_type": [
+        0.0012462452161015585,
+        0.0034595653332857466,
+        0.004651166129465444,
+        0.007977355589868021,
+        0.013233348535641372
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.01783033119317268,
+      "available_type_fraction": 0.988,
+      "mean_edge_length": 0.9969845984010338,
+      "by_type": [
+        0.0012462452161015585,
+        0.0034595653332857466,
+        0.004651166129465444,
+        0.012895227853123721,
+        0.06689945143388702
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1101,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.006113536160872474,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.121597807859282,
+      "by_type": [
+        0.0012462452161015585,
+        0.0034595653332857466,
+        0.004651166129465444,
+        0.007977355589868021,
+        0.013233348535641372
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1101,
+      "model": "halton",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.42681954881380973,
+        0.3841403770556252,
+        0.28353252565237125,
+        0.38537188671201156,
+        0.5686899421994488
+      ],
+      "union": 0.17891684544363534,
+      "equal_type": 0.4097108560866533,
+      "population_weighted": 0.4002694565528055
+    },
+    {
+      "task": "T10",
+      "seed": 1101,
+      "model": "halton",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.6380661023210491,
+        0.6642111008664715,
+        0.7499657395077688,
+        0.8481447440681459,
+        0.8880417986070955
+      ],
+      "union": 0.9469154340611752,
+      "equal_type": 0.7576858970741062,
+      "population_weighted": 0.7101526172363947
+    },
+    {
+      "task": "T01",
+      "seed": 1102,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9997446284049094,
+      "population_weighted": 0.9998737790699262,
+      "by_type": [
+        0.9999987944937818,
+        0.9998756754661446,
+        0.9999829664901378,
+        1,
+        0.9988657055744823
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1102,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9973746956452333,
+      "population_weighted": 0.998198688405251,
+      "by_type": [
+        0.9992419204178863,
+        0.9973687290495878,
+        0.9987577713876323,
+        0.9999999974871804,
+        0.9915050598838799
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1102,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9884179207806051,
+      "population_weighted": 0.9876064028943832,
+      "by_type": [
+        0.9851589691295047,
+        0.9853965501881945,
+        0.9903419732708449,
+        0.9999472785336024,
+        0.9812448327808787
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1102,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9541114497954112,
+      "population_weighted": 0.9408084100152178,
+      "by_type": [
+        0.910941979858503,
+        0.9422968085815456,
+        0.9598405189512116,
+        0.9950742035700151,
+        0.9624037380157809
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1102,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.8223664557245005,
+      "population_weighted": 0.7627706577849495,
+      "by_type": [
+        0.6264992190049143,
+        0.7973090663884577,
+        0.847298324098328,
+        0.9385413115016383,
+        0.9021843576291647
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.10649193535409765,
+      "available_type_fraction": 0.897,
+      "mean_edge_length": 1.1046666674136099,
+      "by_type": [
+        0.0023161043216568694,
+        0.003490101230858356,
+        0.038940284060532876,
+        0.12931813721216476,
+        0.3583950499452758
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.005110342317296089,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2447380383695796,
+      "by_type": [
+        0.0023161043216568694,
+        0.003490101230858356,
+        0.004390031852160711,
+        0.006148824100688015,
+        0.009206650081116546
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005111699545765177,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1046666674136099,
+      "by_type": [
+        0.0023161043216568694,
+        0.003490101230858356,
+        0.004390031852160711,
+        0.0061514620723354405,
+        0.009210798251814556
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005110342317296089,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2447380383695796,
+      "by_type": [
+        0.0023161043216568694,
+        0.003490101230858356,
+        0.004390031852160711,
+        0.006148824100688015,
+        0.009206650081116546
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005110342317296089,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1046666674136099,
+      "by_type": [
+        0.0023161043216568694,
+        0.003490101230858356,
+        0.004390031852160711,
+        0.006148824100688015,
+        0.009206650081116546
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005110342317296089,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2447380383695796,
+      "by_type": [
+        0.0023161043216568694,
+        0.003490101230858356,
+        0.004390031852160711,
+        0.006148824100688015,
+        0.009206650081116546
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1102,
+      "model": "full_spectral",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.04698547403402055,
+        0.026412061125434996,
+        0.03013370236423528,
+        0.0528550204327496,
+        0.03596317432829474
+      ],
+      "union": 0.0229291289423063,
+      "equal_type": 0.03846988645694703,
+      "population_weighted": 0.03954562043193706
+    },
+    {
+      "task": "T10",
+      "seed": 1102,
+      "model": "full_spectral",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.07590315414438231,
+        0.29090290716751444,
+        0.8968838736602188,
+        1.3449661568953746,
+        1.0989317637156713
+      ],
+      "union": 0.20692808644737887,
+      "equal_type": 0.7415175711166324,
+      "population_weighted": 0.5067476311369237
+    },
+    {
+      "task": "T01",
+      "seed": 1102,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9937850740565531,
+      "population_weighted": 0.9928558405483696,
+      "by_type": [
+        0.9918941332216664,
+        0.9866882869633202,
+        0.9988475316272614,
+        0.9976632333551678,
+        0.9938321851153501
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1102,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9864448253750402,
+      "population_weighted": 0.9843382909565136,
+      "by_type": [
+        0.9811372924386472,
+        0.9784813756440032,
+        0.9908567270458463,
+        0.9925816541787637,
+        0.9891670775679404
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1102,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9729050154571718,
+      "population_weighted": 0.9662799093397478,
+      "by_type": [
+        0.9530080733398466,
+        0.9669799601755696,
+        0.9727223188620183,
+        0.9869708023173115,
+        0.984843922591113
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1102,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9376036559682298,
+      "population_weighted": 0.9189653744769515,
+      "by_type": [
+        0.8768409693663172,
+        0.9390501324352268,
+        0.9310913036837319,
+        0.9707738842802017,
+        0.970261990075671
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1102,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.8095626420715811,
+      "population_weighted": 0.748386957334596,
+      "by_type": [
+        0.6032025734458065,
+        0.8198450415723393,
+        0.8172143467612245,
+        0.8949135560681033,
+        0.9126376925104319
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.10853149198786015,
+      "available_type_fraction": 0.895,
+      "mean_edge_length": 1.106980364784506,
+      "by_type": [
+        0.0023303573441589833,
+        0.020910262185260767,
+        0.061262214593944445,
+        0.12446795484567556,
+        0.3336866709702613
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.00522908443517661,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2475688032902814,
+      "by_type": [
+        0.0023303573441589833,
+        0.003719972775427185,
+        0.004544142769624819,
+        0.006274131742384318,
+        0.009276817544287781
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.006196940350150654,
+      "available_type_fraction": 0.999,
+      "mean_edge_length": 1.106980364784506,
+      "by_type": [
+        0.0023303573441589833,
+        0.003719972775427185,
+        0.004544142769624819,
+        0.006274131742384318,
+        0.014116097119157973
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.00522908443517661,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2475688032902814,
+      "by_type": [
+        0.0023303573441589833,
+        0.003719972775427185,
+        0.004544142769624819,
+        0.006274131742384318,
+        0.009276817544287781
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.00522908443517661,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.106980364784506,
+      "by_type": [
+        0.0023303573441589833,
+        0.003719972775427185,
+        0.004544142769624819,
+        0.006274131742384318,
+        0.009276817544287781
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.00522908443517661,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2475688032902814,
+      "by_type": [
+        0.0023303573441589833,
+        0.003719972775427185,
+        0.004544142769624819,
+        0.006274131742384318,
+        0.009276817544287781
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1102,
+      "model": "local_only",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.036392150358016545,
+        0.031875895207789766,
+        0.044995810081149445,
+        0.04536648353454746,
+        0.054814364463608226
+      ],
+      "union": 0.02480437583961575,
+      "equal_type": 0.04268894072902228,
+      "population_weighted": 0.0395827481375676
+    },
+    {
+      "task": "T10",
+      "seed": 1102,
+      "model": "local_only",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.08648775144581425,
+        0.3952875706659304,
+        0.7629571534914245,
+        1.2950347726477487,
+        1.1155950243910675
+      ],
+      "union": 0.22214376366505648,
+      "equal_type": 0.7310724545283971,
+      "population_weighted": 0.5056500072284309
+    },
+    {
+      "task": "T01",
+      "seed": 1102,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9912450702867478,
+      "population_weighted": 0.9892487928774243,
+      "by_type": [
+        0.984513336546502,
+        0.9983959624682188,
+        0.983016552021731,
+        0.990304870819113,
+        0.999994629578174
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1102,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9842419840767134,
+      "population_weighted": 0.9827676127469026,
+      "by_type": [
+        0.9834540841004992,
+        0.9832959112213611,
+        0.9712253805724569,
+        0.984411034062652,
+        0.9988235104265977
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1102,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9668245903005935,
+      "population_weighted": 0.9656192911465579,
+      "by_type": [
+        0.9756050687404577,
+        0.9459319945769965,
+        0.9459358646328802,
+        0.9768831949411553,
+        0.9897668286114776
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1102,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9218326984368904,
+      "population_weighted": 0.9116894283252155,
+      "by_type": [
+        0.9093598946020225,
+        0.8783267251560499,
+        0.8979973395638681,
+        0.9581383540014922,
+        0.9653411788610196
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1102,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.7655280685737943,
+      "population_weighted": 0.7060784312990598,
+      "by_type": [
+        0.5948155569329662,
+        0.6934208261153151,
+        0.7684696177963487,
+        0.8792478050480819,
+        0.8916865369762598
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.10417391250449791,
+      "available_type_fraction": 0.899,
+      "mean_edge_length": 1.0526584287732335,
+      "by_type": [
+        0.0011093317940980196,
+        0.0028635867050385106,
+        0.051333656803387945,
+        0.1046534439582204,
+        0.36090954326174496
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.004800865355469305,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1639058320087028,
+      "by_type": [
+        0.0011093317940980196,
+        0.0028635867050385106,
+        0.0044429975045077695,
+        0.006132835145429175,
+        0.00945557562827308
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.006292426140416958,
+      "available_type_fraction": 0.9985,
+      "mean_edge_length": 1.0526584287732335,
+      "by_type": [
+        0.0011093317940980196,
+        0.0028635867050385106,
+        0.004451465189273051,
+        0.006155097301559894,
+        0.016882649712115352
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.004800865355469305,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1639058320087028,
+      "by_type": [
+        0.0011093317940980196,
+        0.0028635867050385106,
+        0.0044429975045077695,
+        0.006132835145429175,
+        0.00945557562827308
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.00480185180225517,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.0526584287732335,
+      "by_type": [
+        0.0011093317940980196,
+        0.0028635867050385106,
+        0.004446401531865644,
+        0.006132835145429175,
+        0.009457103834844533
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.004800865355469305,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1639058320087028,
+      "by_type": [
+        0.0011093317940980196,
+        0.0028635867050385106,
+        0.0044429975045077695,
+        0.006132835145429175,
+        0.00945557562827308
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1102,
+      "model": "cvt_proxy",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.06272293110619642,
+        0.03996332543306807,
+        0.056787850602360454,
+        0.03304972950127378,
+        0.05273101676026626
+      ],
+      "union": 0.062316951294347236,
+      "equal_type": 0.049050970680633,
+      "population_weighted": 0.05231908829498513
+    },
+    {
+      "task": "T10",
+      "seed": 1102,
+      "model": "cvt_proxy",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.15886868254787104,
+        0.5738456323858561,
+        0.8804520370441583,
+        1.1777687571875382,
+        1.069252227860935
+      ],
+      "union": 0.6147286520492157,
+      "equal_type": 0.7720374674052717,
+      "population_weighted": 0.5744655653343805
+    },
+    {
+      "task": "T01",
+      "seed": 1102,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9973763094790451,
+      "population_weighted": 0.9980768229934333,
+      "by_type": [
+        0.999238154205802,
+        0.9992446590662372,
+        0.9999251379579315,
+        0.9885063994024633,
+        0.9999671967627917
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1102,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.99329454829718,
+      "population_weighted": 0.9926324744848634,
+      "by_type": [
+        0.9911701505733275,
+        0.9925846054814481,
+        0.997988456950068,
+        0.986159046475583,
+        0.9985704820054733
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1102,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9800860356067919,
+      "population_weighted": 0.974180107688411,
+      "by_type": [
+        0.9615090658414867,
+        0.9732299714746119,
+        0.9899531251907817,
+        0.983100795435388,
+        0.9926372200916913
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1102,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9409901168724618,
+      "population_weighted": 0.9214450534271387,
+      "by_type": [
+        0.8797903334781253,
+        0.9212291871166207,
+        0.9585485402734107,
+        0.9714630982259513,
+        0.9739194252682007
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1102,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.811141940914306,
+      "population_weighted": 0.752030234554208,
+      "by_type": [
+        0.6251638503716407,
+        0.7640618494754023,
+        0.8474391831884569,
+        0.9057337885410329,
+        0.9133110329949968
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.16083775763998923,
+      "available_type_fraction": 0.842,
+      "mean_edge_length": 0.9879442532452758,
+      "by_type": [
+        0.0009839652176772014,
+        0.01806729517909697,
+        0.09147538989997062,
+        0.1989267290215388,
+        0.49473540888166523
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1102,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.005739030033251939,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.0985562705260241,
+      "by_type": [
+        0.0009839652176772014,
+        0.0032389094658672895,
+        0.005745404398921955,
+        0.007644022523901822,
+        0.011082848559891284
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.040029670617244315,
+      "available_type_fraction": 0.965,
+      "mean_edge_length": 0.9879442532452758,
+      "by_type": [
+        0.0009839652176772014,
+        0.0032389094658672895,
+        0.00827332839291517,
+        0.027152152338507297,
+        0.16049999767125475
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1102,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005739030033251939,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.0985562705260241,
+      "by_type": [
+        0.0009839652176772014,
+        0.0032389094658672895,
+        0.005745404398921955,
+        0.007644022523901822,
+        0.011082848559891284
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.013299308269383312,
+      "available_type_fraction": 0.9925,
+      "mean_edge_length": 0.9879442532452758,
+      "by_type": [
+        0.0009839652176772014,
+        0.0032389094658672895,
+        0.005745404398921955,
+        0.0077088944377880254,
+        0.04881936782666251
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1102,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005739030033251939,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.0985562705260241,
+      "by_type": [
+        0.0009839652176772014,
+        0.0032389094658672895,
+        0.005745404398921955,
+        0.007644022523901822,
+        0.011082848559891284
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1102,
+      "model": "halton",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.12902264234858704,
+        0.2097516988569854,
+        0.5488537269901819,
+        0.5419051526898632,
+        0.44397445179671274
+      ],
+      "union": 0.2566773786407987,
+      "equal_type": 0.37470153453646604,
+      "population_weighted": 0.29593006884144296
+    },
+    {
+      "task": "T10",
+      "seed": 1102,
+      "model": "halton",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.5047792859173355,
+        0.8314475421020169,
+        0.7713249106976588,
+        0.7603922139995882,
+        1.0705267299878534
+      ],
+      "union": 0.9789628682791387,
+      "equal_type": 0.7876941365408905,
+      "population_weighted": 0.6995491953255109
+    },
+    {
+      "task": "T01",
+      "seed": 1103,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9962309482527212,
+      "population_weighted": 0.9982809776687127,
+      "by_type": [
+        0.9999764182552989,
+        0.9999936956962587,
+        0.9987203957276786,
+        0.9999999983961663,
+        0.9824642331882031
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1103,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9915532708773174,
+      "population_weighted": 0.9949680487326625,
+      "by_type": [
+        0.9980862664062427,
+        0.9990789941973477,
+        0.9916910689292774,
+        0.999969376865978,
+        0.9689406479877414
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1103,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9782981832152373,
+      "population_weighted": 0.9815858989885541,
+      "by_type": [
+        0.9831300852316825,
+        0.9895559942330331,
+        0.9724923934222647,
+        0.997986898231411,
+        0.9483255449577948
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1103,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9365269653787595,
+      "population_weighted": 0.9343953211597835,
+      "by_type": [
+        0.9246892703563921,
+        0.9481974648464783,
+        0.9186033889432744,
+        0.9795651588942494,
+        0.9115795438534029
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1103,
+      "model": "full_spectral",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.8026528979566399,
+      "population_weighted": 0.7666812433560485,
+      "by_type": [
+        0.6823334894258708,
+        0.8114927082186938,
+        0.7733653524384673,
+        0.907495903237001,
+        0.8385770364631661
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.111437065472175,
+      "available_type_fraction": 0.892,
+      "mean_edge_length": 1.10543493929272,
+      "by_type": [
+        0.0023457931414596323,
+        0.010974265810495789,
+        0.0338726876025202,
+        0.15409196434445152,
+        0.35590061646194726
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.005109136555535609,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2423795118648122,
+      "by_type": [
+        0.0023457931414596323,
+        0.003557852761041243,
+        0.004281473157155573,
+        0.00619593785871761,
+        0.009164625859303973
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005120674428105825,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.10543493929272,
+      "by_type": [
+        0.0023457931414596323,
+        0.003557852761041243,
+        0.004281473157155573,
+        0.0061964217247513645,
+        0.009221831356121299
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005109136555535609,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2423795118648122,
+      "by_type": [
+        0.0023457931414596323,
+        0.003557852761041243,
+        0.004281473157155573,
+        0.00619593785871761,
+        0.009164625859303973
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "full_spectral_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005109136555535609,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.10543493929272,
+      "by_type": [
+        0.0023457931414596323,
+        0.003557852761041243,
+        0.004281473157155573,
+        0.00619593785871761,
+        0.009164625859303973
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "full_spectral_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005109136555535609,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2423795118648122,
+      "by_type": [
+        0.0023457931414596323,
+        0.003557852761041243,
+        0.004281473157155573,
+        0.00619593785871761,
+        0.009164625859303973
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1103,
+      "model": "full_spectral",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.02611459632515845,
+        0.027121008817011225,
+        0.03198082641739672,
+        0.042374540171039095,
+        0.062406904211879284
+      ],
+      "union": 0.016246300858284993,
+      "equal_type": 0.037999575188496955,
+      "population_weighted": 0.03244305724646402
+    },
+    {
+      "task": "T10",
+      "seed": 1103,
+      "model": "full_spectral",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.08058133253304899,
+        0.3259850221108977,
+        0.8056949743593063,
+        1.293863026988258,
+        1.135586466656435
+      ],
+      "union": 0.2323339380043864,
+      "equal_type": 0.7283421645295892,
+      "population_weighted": 0.49733458388619456
+    },
+    {
+      "task": "T01",
+      "seed": 1103,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9946516020316818,
+      "population_weighted": 0.996120103350052,
+      "by_type": [
+        0.9981989012368558,
+        0.9997438253627768,
+        0.9998683947021364,
+        0.9754468888566394,
+        0.9999999999999998
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1103,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9872403118903111,
+      "population_weighted": 0.9868361328954967,
+      "by_type": [
+        0.9832775812651022,
+        0.9965936562363276,
+        0.9962905348916422,
+        0.9600398437049399,
+        0.9999999433535436
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1103,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9717896134614815,
+      "population_weighted": 0.9653133625019962,
+      "by_type": [
+        0.9479531540338592,
+        0.9825637289751371,
+        0.9815183996779456,
+        0.9470486296997866,
+        0.9998641549206794
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1103,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9330169056684777,
+      "population_weighted": 0.915497399702849,
+      "by_type": [
+        0.8797265418517878,
+        0.9276083401868948,
+        0.94232533966427,
+        0.9221421950313119,
+        0.9932821116081245
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1103,
+      "model": "local_only",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.8030947935098347,
+      "population_weighted": 0.7503112100954488,
+      "by_type": [
+        0.643718416178077,
+        0.7653983312054553,
+        0.823797019647387,
+        0.8446424934403929,
+        0.9379177070778608
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.11643989519491486,
+      "available_type_fraction": 0.887,
+      "mean_edge_length": 1.1075505410758908,
+      "by_type": [
+        0.0023217860833263304,
+        0.02342033022457912,
+        0.04885959506193574,
+        0.11956734933520434,
+        0.3880304152695283
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.005218311688006689,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2496495206467408,
+      "by_type": [
+        0.0023217860833263304,
+        0.0036808084094645866,
+        0.0044352872741692155,
+        0.006366111792157197,
+        0.009287564880916106
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.008593661320995977,
+      "available_type_fraction": 0.9965,
+      "mean_edge_length": 1.1075505410758908,
+      "by_type": [
+        0.0023217860833263304,
+        0.0036808084094645866,
+        0.0044352872741692155,
+        0.006366799467269694,
+        0.026163625370750104
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005218311688006689,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2496495206467408,
+      "by_type": [
+        0.0023217860833263304,
+        0.0036808084094645866,
+        0.0044352872741692155,
+        0.006366111792157197,
+        0.009287564880916106
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "local_only_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.0052200481364155305,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.1075505410758908,
+      "by_type": [
+        0.0023217860833263304,
+        0.0036808084094645866,
+        0.0044352872741692155,
+        0.006366111792157197,
+        0.009296247122960311
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "local_only_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005218311688006689,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.2496495206467408,
+      "by_type": [
+        0.0023217860833263304,
+        0.0036808084094645866,
+        0.0044352872741692155,
+        0.006366111792157197,
+        0.009287564880916106
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1103,
+      "model": "local_only",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.029395009793440945,
+        0.06228415978794441,
+        0.03974908584435613,
+        0.0376704557882963,
+        0.06748664867752399
+      ],
+      "union": 0.02004885351364237,
+      "equal_type": 0.04731707197831236,
+      "population_weighted": 0.04241636715043249
+    },
+    {
+      "task": "T10",
+      "seed": 1103,
+      "model": "local_only",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.06839512187247443,
+        0.24687610141438207,
+        0.7616067071552772,
+        1.3263897109816232,
+        1.084985801636685
+      ],
+      "union": 0.1892429071351728,
+      "equal_type": 0.6976506886120883,
+      "population_weighted": 0.4678278309418078
+    },
+    {
+      "task": "T01",
+      "seed": 1103,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9871190071462035,
+      "population_weighted": 0.9899742155976646,
+      "by_type": [
+        0.9999672671594273,
+        0.9831897823376724,
+        0.9820156398869982,
+        0.9782791815791173,
+        0.9921431647678027
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1103,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9777834916967274,
+      "population_weighted": 0.982166421992776,
+      "by_type": [
+        0.9978623423461013,
+        0.9720412617039833,
+        0.963715321750435,
+        0.9736692349751078,
+        0.9816292977080096
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1103,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9610071125324676,
+      "population_weighted": 0.965468497685932,
+      "by_type": [
+        0.9869679753055945,
+        0.9486988215737645,
+        0.9292068496529787,
+        0.9700405213105224,
+        0.9701213948194787
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1103,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9195456291008638,
+      "population_weighted": 0.9167520914178793,
+      "by_type": [
+        0.927688379694192,
+        0.9035575188536391,
+        0.8655840515147939,
+        0.9496867141509685,
+        0.9512114812907252
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1103,
+      "model": "cvt_proxy",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.7734149921899982,
+      "population_weighted": 0.7226051077515951,
+      "by_type": [
+        0.625746563894963,
+        0.7541721526418831,
+        0.7270018975081778,
+        0.8537089616171327,
+        0.9064453852878344
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.09865712799887674,
+      "available_type_fraction": 0.9045,
+      "mean_edge_length": 1.049689270890713,
+      "by_type": [
+        0.0010449882084627984,
+        0.007985971045334519,
+        0.028820349344730496,
+        0.1070388070156513,
+        0.3483955243802059
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.00464950906248961,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.162197686742061,
+      "by_type": [
+        0.0010449882084627984,
+        0.003038729532988839,
+        0.004180828692142854,
+        0.005979147747873813,
+        0.009003851130979745
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.007152718303872194,
+      "available_type_fraction": 0.9975,
+      "mean_edge_length": 1.049689270890713,
+      "by_type": [
+        0.0010449882084627984,
+        0.003038729532988839,
+        0.004180828692142854,
+        0.005999320763753334,
+        0.021499724322013112
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.00464950906248961,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.162197686742061,
+      "by_type": [
+        0.0010449882084627984,
+        0.003038729532988839,
+        0.004180828692142854,
+        0.005979147747873813,
+        0.009003851130979745
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "cvt_proxy_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.0046563293968735035,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.049689270890713,
+      "by_type": [
+        0.0010449882084627984,
+        0.003038729532988839,
+        0.004180828692142854,
+        0.005979147747873813,
+        0.009037952802899216
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "cvt_proxy_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.00464950906248961,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.162197686742061,
+      "by_type": [
+        0.0010449882084627984,
+        0.003038729532988839,
+        0.004180828692142854,
+        0.005979147747873813,
+        0.009003851130979745
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1103,
+      "model": "cvt_proxy",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.06339396014741187,
+        0.05079676425201932,
+        0.02114687034922587,
+        0.033199398441780034,
+        0.0415778634871277
+      ],
+      "union": 0.024648999750322066,
+      "equal_type": 0.042022971335512964,
+      "population_weighted": 0.0479063623246212
+    },
+    {
+      "task": "T10",
+      "seed": 1103,
+      "model": "cvt_proxy",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.1512611654807722,
+        0.6072336849260321,
+        0.9066824174917589,
+        1.2073167382416923,
+        1.0595935430677264
+      ],
+      "union": 0.7258436982519221,
+      "equal_type": 0.7864175098415964,
+      "population_weighted": 0.5857921373947638
+    },
+    {
+      "task": "T01",
+      "seed": 1103,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.5,
+      "equal_type": 0.9948699812657396,
+      "population_weighted": 0.9928499562231772,
+      "by_type": [
+        0.987673172634752,
+        0.9999235345360997,
+        0.9884315532730518,
+        0.9999670832242029,
+        0.9983545626605914
+      ]
+    },
+    {
+      "task": "T02",
+      "seed": 1103,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 0.8,
+      "equal_type": 0.9894060372774804,
+      "population_weighted": 0.986005176149877,
+      "by_type": [
+        0.9759743132597629,
+        0.9973371415272958,
+        0.9842232720697541,
+        0.9984107652503732,
+        0.9910846942802166
+      ]
+    },
+    {
+      "task": "T03",
+      "seed": 1103,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 1.25,
+      "equal_type": 0.9735321259551041,
+      "population_weighted": 0.9652190291843178,
+      "by_type": [
+        0.9417094955693882,
+        0.9824109508596673,
+        0.9758216202570815,
+        0.9891082343952815,
+        0.9786103286941018
+      ]
+    },
+    {
+      "task": "T04",
+      "seed": 1103,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 2,
+      "equal_type": 0.9301733822385719,
+      "population_weighted": 0.9081814986491323,
+      "by_type": [
+        0.8526294488615057,
+        0.931529702411917,
+        0.9516228808969344,
+        0.9556708001536247,
+        0.9594140788688775
+      ]
+    },
+    {
+      "task": "T05",
+      "seed": 1103,
+      "model": "halton",
+      "metric": "GP_analytic_risk",
+      "parameter": 3.5,
+      "equal_type": 0.8025841159924199,
+      "population_weighted": 0.7442994781387335,
+      "by_type": [
+        0.610269492186852,
+        0.7804039879696639,
+        0.8505539506420335,
+        0.8647680835247598,
+        0.9069250656387902
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.17512652411096516,
+      "available_type_fraction": 0.8275,
+      "mean_edge_length": 0.9699516204256061,
+      "by_type": [
+        0.0008884000251061969,
+        0.03528652863237087,
+        0.07363112047556312,
+        0.2884954622464094,
+        0.4773311091753796
+      ]
+    },
+    {
+      "task": "T06",
+      "seed": 1103,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 1,
+      "mean_normalized_square": 0.005601758475209829,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.084673893535055,
+      "by_type": [
+        0.0008884000251061969,
+        0.0032946571082098823,
+        0.004860937226591862,
+        0.007921301611272724,
+        0.011043496404868338
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.04002371887003076,
+      "available_type_fraction": 0.965,
+      "mean_edge_length": 0.9699516204256061,
+      "by_type": [
+        0.0008884000251061969,
+        0.0033099536249765454,
+        0.005037304767698646,
+        0.05993563963850227,
+        0.1309472962938698
+      ]
+    },
+    {
+      "task": "T07",
+      "seed": 1103,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 2,
+      "mean_normalized_square": 0.005601758475209829,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.084673893535055,
+      "by_type": [
+        0.0008884000251061969,
+        0.0032946571082098823,
+        0.004860937226591862,
+        0.007921301611272724,
+        0.011043496404868338
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "halton_knn",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.011724670558360918,
+      "available_type_fraction": 0.994,
+      "mean_edge_length": 0.9699516204256061,
+      "by_type": [
+        0.0008884000251061969,
+        0.0032946571082098823,
+        0.004860937226591862,
+        0.023599268815886587,
+        0.02598008961601027
+      ]
+    },
+    {
+      "task": "T08",
+      "seed": 1103,
+      "model": "halton_typed",
+      "metric": "graph_reachable_modality_error",
+      "parameter": 3,
+      "mean_normalized_square": 0.005601758475209829,
+      "available_type_fraction": 1,
+      "mean_edge_length": 1.084673893535055,
+      "by_type": [
+        0.0008884000251061969,
+        0.0032946571082098823,
+        0.004860937226591862,
+        0.007921301611272724,
+        0.011043496404868338
+      ]
+    },
+    {
+      "task": "T09",
+      "seed": 1103,
+      "model": "halton",
+      "metric": "Fourier_S_k_mean",
+      "modes": 18,
+      "by_type": [
+        0.22137340898933558,
+        0.37952917070400105,
+        0.44226940094462175,
+        0.5053766167262255,
+        0.635522943753956
+      ],
+      "union": 0.19352103884791882,
+      "equal_type": 0.436814308223628,
+      "population_weighted": 0.3632369384082046
+    },
+    {
+      "task": "T10",
+      "seed": 1103,
+      "model": "halton",
+      "metric": "Fourier_S_k_mean",
+      "modes": 102,
+      "by_type": [
+        0.5953603033297968,
+        0.6267282587355126,
+        0.6852007490799363,
+        0.9317564825972969,
+        0.9437601646696745
+      ],
+      "union": 1.0719176474924177,
+      "equal_type": 0.7565611916824435,
+      "population_weighted": 0.6889623802533623
+    }
+  ],
+  "summary": [
+    {
+      "task": "T01",
+      "model": "full_spectral",
+      "metric": "equal_type",
+      "mean": 0.996577919373426,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9937581814626469
+        },
+        {
+          "seed": 1102,
+          "value": 0.9997446284049094
+        },
+        {
+          "seed": 1103,
+          "value": 0.9962309482527212
+        }
+      ]
+    },
+    {
+      "task": "T01",
+      "model": "local_only",
+      "metric": "equal_type",
+      "mean": 0.9946651297928991,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9955587132904622
+        },
+        {
+          "seed": 1102,
+          "value": 0.9937850740565531
+        },
+        {
+          "seed": 1103,
+          "value": 0.9946516020316818
+        }
+      ]
+    },
+    {
+      "task": "T01",
+      "model": "cvt_proxy",
+      "metric": "equal_type",
+      "mean": 0.9916806893044718,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9966779904804641
+        },
+        {
+          "seed": 1102,
+          "value": 0.9912450702867478
+        },
+        {
+          "seed": 1103,
+          "value": 0.9871190071462035
+        }
+      ]
+    },
+    {
+      "task": "T01",
+      "model": "halton",
+      "metric": "equal_type",
+      "mean": 0.9965392976553747,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9973716022213391
+        },
+        {
+          "seed": 1102,
+          "value": 0.9973763094790451
+        },
+        {
+          "seed": 1103,
+          "value": 0.9948699812657396
+        }
+      ]
+    },
+    {
+      "task": "T02",
+      "model": "full_spectral",
+      "metric": "equal_type",
+      "mean": 0.992311453660356,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9880063944585178
+        },
+        {
+          "seed": 1102,
+          "value": 0.9973746956452333
+        },
+        {
+          "seed": 1103,
+          "value": 0.9915532708773174
+        }
+      ]
+    },
+    {
+      "task": "T02",
+      "model": "local_only",
+      "metric": "equal_type",
+      "mean": 0.9863518073640701,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.985370284826859
+        },
+        {
+          "seed": 1102,
+          "value": 0.9864448253750402
+        },
+        {
+          "seed": 1103,
+          "value": 0.9872403118903111
+        }
+      ]
+    },
+    {
+      "task": "T02",
+      "model": "cvt_proxy",
+      "metric": "equal_type",
+      "mean": 0.9852828673444546,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9938231262599228
+        },
+        {
+          "seed": 1102,
+          "value": 0.9842419840767134
+        },
+        {
+          "seed": 1103,
+          "value": 0.9777834916967274
+        }
+      ]
+    },
+    {
+      "task": "T02",
+      "model": "halton",
+      "metric": "equal_type",
+      "mean": 0.9918969346051739,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9929902182408616
+        },
+        {
+          "seed": 1102,
+          "value": 0.99329454829718
+        },
+        {
+          "seed": 1103,
+          "value": 0.9894060372774804
+        }
+      ]
+    },
+    {
+      "task": "T03",
+      "model": "full_spectral",
+      "metric": "equal_type",
+      "mean": 0.9806420715271186,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9752101105855134
+        },
+        {
+          "seed": 1102,
+          "value": 0.9884179207806051
+        },
+        {
+          "seed": 1103,
+          "value": 0.9782981832152373
+        }
+      ]
+    },
+    {
+      "task": "T03",
+      "model": "local_only",
+      "metric": "equal_type",
+      "mean": 0.9704522046792827,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9666619851191948
+        },
+        {
+          "seed": 1102,
+          "value": 0.9729050154571718
+        },
+        {
+          "seed": 1103,
+          "value": 0.9717896134614815
+        }
+      ]
+    },
+    {
+      "task": "T03",
+      "model": "cvt_proxy",
+      "metric": "equal_type",
+      "mean": 0.9702784299592713,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9830035870447527
+        },
+        {
+          "seed": 1102,
+          "value": 0.9668245903005935
+        },
+        {
+          "seed": 1103,
+          "value": 0.9610071125324676
+        }
+      ]
+    },
+    {
+      "task": "T03",
+      "model": "halton",
+      "metric": "equal_type",
+      "mean": 0.9771590258147896,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9778589158824726
+        },
+        {
+          "seed": 1102,
+          "value": 0.9800860356067919
+        },
+        {
+          "seed": 1103,
+          "value": 0.9735321259551041
+        }
+      ]
+    },
+    {
+      "task": "T04",
+      "model": "full_spectral",
+      "metric": "equal_type",
+      "mean": 0.9431040385905406,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9386737005974511
+        },
+        {
+          "seed": 1102,
+          "value": 0.9541114497954112
+        },
+        {
+          "seed": 1103,
+          "value": 0.9365269653787595
+        }
+      ]
+    },
+    {
+      "task": "T04",
+      "model": "local_only",
+      "metric": "equal_type",
+      "mean": 0.932371747627431,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9264946812455854
+        },
+        {
+          "seed": 1102,
+          "value": 0.9376036559682298
+        },
+        {
+          "seed": 1103,
+          "value": 0.9330169056684777
+        }
+      ]
+    },
+    {
+      "task": "T04",
+      "model": "cvt_proxy",
+      "metric": "equal_type",
+      "mean": 0.9285032926927478,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.944131550540489
+        },
+        {
+          "seed": 1102,
+          "value": 0.9218326984368904
+        },
+        {
+          "seed": 1103,
+          "value": 0.9195456291008638
+        }
+      ]
+    },
+    {
+      "task": "T04",
+      "model": "halton",
+      "metric": "equal_type",
+      "mean": 0.9358249780270481,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.9363114349701107
+        },
+        {
+          "seed": 1102,
+          "value": 0.9409901168724618
+        },
+        {
+          "seed": 1103,
+          "value": 0.9301733822385719
+        }
+      ]
+    },
+    {
+      "task": "T05",
+      "model": "full_spectral",
+      "metric": "equal_type",
+      "mean": 0.8106756586204195,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.807007622180118
+        },
+        {
+          "seed": 1102,
+          "value": 0.8223664557245005
+        },
+        {
+          "seed": 1103,
+          "value": 0.8026528979566399
+        }
+      ]
+    },
+    {
+      "task": "T05",
+      "model": "local_only",
+      "metric": "equal_type",
+      "mean": 0.8042876639383026,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.8002055562334925
+        },
+        {
+          "seed": 1102,
+          "value": 0.8095626420715811
+        },
+        {
+          "seed": 1103,
+          "value": 0.8030947935098347
+        }
+      ]
+    },
+    {
+      "task": "T05",
+      "model": "cvt_proxy",
+      "metric": "equal_type",
+      "mean": 0.7783644137670027,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.7961501805372155
+        },
+        {
+          "seed": 1102,
+          "value": 0.7655280685737943
+        },
+        {
+          "seed": 1103,
+          "value": 0.7734149921899982
+        }
+      ]
+    },
+    {
+      "task": "T05",
+      "model": "halton",
+      "metric": "equal_type",
+      "mean": 0.8087378417503664,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.8124874683443737
+        },
+        {
+          "seed": 1102,
+          "value": 0.811141940914306
+        },
+        {
+          "seed": 1103,
+          "value": 0.8025841159924199
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "full_spectral_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.10929082805182073,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.10994348332918953
+        },
+        {
+          "seed": 1102,
+          "value": 0.10649193535409765
+        },
+        {
+          "seed": 1103,
+          "value": 0.111437065472175
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "full_spectral_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005095538067109406,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005067135328496518
+        },
+        {
+          "seed": 1102,
+          "value": 0.005110342317296089
+        },
+        {
+          "seed": 1103,
+          "value": 0.005109136555535609
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "local_only_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.1126490405157592,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.1129757343645026
+        },
+        {
+          "seed": 1102,
+          "value": 0.10853149198786015
+        },
+        {
+          "seed": 1103,
+          "value": 0.11643989519491486
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "local_only_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005210449290854505,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005183951749380216
+        },
+        {
+          "seed": 1102,
+          "value": 0.00522908443517661
+        },
+        {
+          "seed": 1103,
+          "value": 0.005218311688006689
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "cvt_proxy_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.10417176733250584,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.10968426149414287
+        },
+        {
+          "seed": 1102,
+          "value": 0.10417391250449791
+        },
+        {
+          "seed": 1103,
+          "value": 0.09865712799887674
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "cvt_proxy_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.004762894609288005,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.0048383094099050976
+        },
+        {
+          "seed": 1102,
+          "value": 0.004800865355469305
+        },
+        {
+          "seed": 1103,
+          "value": 0.00464950906248961
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "halton_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.16650052727446404,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.16353730007243775
+        },
+        {
+          "seed": 1102,
+          "value": 0.16083775763998923
+        },
+        {
+          "seed": 1103,
+          "value": 0.17512652411096516
+        }
+      ]
+    },
+    {
+      "task": "T06",
+      "model": "halton_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005818108223111414,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.006113536160872474
+        },
+        {
+          "seed": 1102,
+          "value": 0.005739030033251939
+        },
+        {
+          "seed": 1103,
+          "value": 0.005601758475209829
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "full_spectral_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.005099836434122506,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005067135328496518
+        },
+        {
+          "seed": 1102,
+          "value": 0.005111699545765177
+        },
+        {
+          "seed": 1103,
+          "value": 0.005120674428105825
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "full_spectral_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005095538067109406,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005067135328496518
+        },
+        {
+          "seed": 1102,
+          "value": 0.005110342317296089
+        },
+        {
+          "seed": 1103,
+          "value": 0.005109136555535609
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "local_only_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.006821692636173093,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005674476237372648
+        },
+        {
+          "seed": 1102,
+          "value": 0.006196940350150654
+        },
+        {
+          "seed": 1103,
+          "value": 0.008593661320995977
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "local_only_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005210449290854505,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005183951749380216
+        },
+        {
+          "seed": 1102,
+          "value": 0.00522908443517661
+        },
+        {
+          "seed": 1103,
+          "value": 0.005218311688006689
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "cvt_proxy_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.006767558925393366,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.0068575323318909465
+        },
+        {
+          "seed": 1102,
+          "value": 0.006292426140416958
+        },
+        {
+          "seed": 1103,
+          "value": 0.007152718303872194
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "cvt_proxy_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.004762894609288005,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.0048383094099050976
+        },
+        {
+          "seed": 1102,
+          "value": 0.004800865355469305
+        },
+        {
+          "seed": 1103,
+          "value": 0.00464950906248961
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "halton_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.043385364154188776,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.05010270297529125
+        },
+        {
+          "seed": 1102,
+          "value": 0.040029670617244315
+        },
+        {
+          "seed": 1103,
+          "value": 0.04002371887003076
+        }
+      ]
+    },
+    {
+      "task": "T07",
+      "model": "halton_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005818108223111414,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.006113536160872474
+        },
+        {
+          "seed": 1102,
+          "value": 0.005739030033251939
+        },
+        {
+          "seed": 1103,
+          "value": 0.005601758475209829
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "full_spectral_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.005095538067109406,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005067135328496518
+        },
+        {
+          "seed": 1102,
+          "value": 0.005110342317296089
+        },
+        {
+          "seed": 1103,
+          "value": 0.005109136555535609
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "full_spectral_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005095538067109406,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005067135328496518
+        },
+        {
+          "seed": 1102,
+          "value": 0.005110342317296089
+        },
+        {
+          "seed": 1103,
+          "value": 0.005109136555535609
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "local_only_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.005211028106990785,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005183951749380216
+        },
+        {
+          "seed": 1102,
+          "value": 0.00522908443517661
+        },
+        {
+          "seed": 1103,
+          "value": 0.0052200481364155305
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "local_only_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005210449290854505,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.005183951749380216
+        },
+        {
+          "seed": 1102,
+          "value": 0.00522908443517661
+        },
+        {
+          "seed": 1103,
+          "value": 0.005218311688006689
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "cvt_proxy_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.004776734263029891,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.004872021589960999
+        },
+        {
+          "seed": 1102,
+          "value": 0.00480185180225517
+        },
+        {
+          "seed": 1103,
+          "value": 0.0046563293968735035
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "cvt_proxy_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.004762894609288005,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.0048383094099050976
+        },
+        {
+          "seed": 1102,
+          "value": 0.004800865355469305
+        },
+        {
+          "seed": 1103,
+          "value": 0.00464950906248961
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "halton_knn",
+      "metric": "mean_normalized_square",
+      "mean": 0.014284770006972305,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.01783033119317268
+        },
+        {
+          "seed": 1102,
+          "value": 0.013299308269383312
+        },
+        {
+          "seed": 1103,
+          "value": 0.011724670558360918
+        }
+      ]
+    },
+    {
+      "task": "T08",
+      "model": "halton_typed",
+      "metric": "mean_normalized_square",
+      "mean": 0.005818108223111414,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.006113536160872474
+        },
+        {
+          "seed": 1102,
+          "value": 0.005739030033251939
+        },
+        {
+          "seed": 1103,
+          "value": 0.005601758475209829
+        }
+      ]
+    },
+    {
+      "task": "T09",
+      "model": "full_spectral",
+      "metric": "equal_type",
+      "mean": 0.035553527950400836,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.03019112220575853
+        },
+        {
+          "seed": 1102,
+          "value": 0.03846988645694703
+        },
+        {
+          "seed": 1103,
+          "value": 0.037999575188496955
+        }
+      ]
+    },
+    {
+      "task": "T09",
+      "model": "local_only",
+      "metric": "equal_type",
+      "mean": 0.041384688307387396,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.03414805221482754
+        },
+        {
+          "seed": 1102,
+          "value": 0.04268894072902228
+        },
+        {
+          "seed": 1103,
+          "value": 0.04731707197831236
+        }
+      ]
+    },
+    {
+      "task": "T09",
+      "model": "cvt_proxy",
+      "metric": "equal_type",
+      "mean": 0.04870069567956784,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.055028145022557574
+        },
+        {
+          "seed": 1102,
+          "value": 0.049050970680633
+        },
+        {
+          "seed": 1103,
+          "value": 0.042022971335512964
+        }
+      ]
+    },
+    {
+      "task": "T09",
+      "model": "halton",
+      "metric": "equal_type",
+      "mean": 0.4070755662822491,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.4097108560866533
+        },
+        {
+          "seed": 1102,
+          "value": 0.37470153453646604
+        },
+        {
+          "seed": 1103,
+          "value": 0.436814308223628
+        }
+      ]
+    },
+    {
+      "task": "T10",
+      "model": "full_spectral",
+      "metric": "equal_type",
+      "mean": 0.7348349924808876,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.7346452417964413
+        },
+        {
+          "seed": 1102,
+          "value": 0.7415175711166324
+        },
+        {
+          "seed": 1103,
+          "value": 0.7283421645295892
+        }
+      ]
+    },
+    {
+      "task": "T10",
+      "model": "local_only",
+      "metric": "equal_type",
+      "mean": 0.7258309143965723,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.7487696000492311
+        },
+        {
+          "seed": 1102,
+          "value": 0.7310724545283971
+        },
+        {
+          "seed": 1103,
+          "value": 0.6976506886120883
+        }
+      ]
+    },
+    {
+      "task": "T10",
+      "model": "cvt_proxy",
+      "metric": "equal_type",
+      "mean": 0.7754171437067138,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.7677964538732736
+        },
+        {
+          "seed": 1102,
+          "value": 0.7720374674052717
+        },
+        {
+          "seed": 1103,
+          "value": 0.7864175098415964
+        }
+      ]
+    },
+    {
+      "task": "T10",
+      "model": "halton",
+      "metric": "equal_type",
+      "mean": 0.7673137417658135,
+      "individual_seeds": [
+        {
+          "seed": 1101,
+          "value": 0.7576858970741062
+        },
+        {
+          "seed": 1102,
+          "value": 0.7876941365408905
+        },
+        {
+          "seed": 1103,
+          "value": 0.7565611916824435
+        }
+      ]
+    }
+  ],
+  "claims": "Mathematical task-conditioned analytic posterior and reachability risks, not empirical or neural results"
+}
