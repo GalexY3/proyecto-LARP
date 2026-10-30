@@ -1,0 +1,55 @@
+{
+  "schema": "O7_STANDALONE_NOT_APPLIED_TO_CANONICAL_ATLAS",
+  "root": "LARP",
+  "branch": "research/ab-r-hsi-barl-geometry-gate-r01-r05-20261030",
+  "base_head": "c67eaec720a0bfa830832a9f84f334f03d01a06d",
+  "nodes": [
+    {
+      "id": "R01_HSI_BARLEY_SPARSE",
+      "mode": "AB-R",
+      "status": "refuted",
+      "scientific_grade": "0/3",
+      "summary": "9 images 204 bands, 542 observed centroid positions, zero scenes >=400 positions"
+    },
+    {
+      "id": "R02_NEON_EX_H5",
+      "mode": "AB-R",
+      "status": "blocked",
+      "scientific_grade": "0/3",
+      "reason": "NEON 30x30x426 H5 769924 bytes unavailable as binary in execution environment"
+    },
+    {
+      "id": "R03_WEI_ORIGINAL",
+      "mode": "AB-R",
+      "status": "blocked",
+      "reason": "Original Wei binary not compiled and original Windows log absent"
+    }
+  ],
+  "edges": [
+    {
+      "from": "LARP",
+      "to": "R01_HSI_BARLEY_SPARSE",
+      "relation": "tests"
+    },
+    {
+      "from": "LARP",
+      "to": "R02_NEON_EX_H5",
+      "relation": "depends_on"
+    },
+    {
+      "from": "LARP",
+      "to": "R03_WEI_ORIGINAL",
+      "relation": "depends_on"
+    }
+  ],
+  "balances": {
+    "new_authorized": 5,
+    "new_executed_technical": 1,
+    "invalid_initial": 1,
+    "remaining_new": 4,
+    "remaining_previous": 2,
+    "remaining_historical": 9
+  },
+  "scientific_effectiveness_outcomes": 0,
+  "notes": "Standalone delta only, no claim of integration with canonical Atlas, no merging or CI."
+}
