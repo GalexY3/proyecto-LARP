@@ -1,0 +1,13 @@
+# CURRENT — LARP/MHU AB-R R01, 2026-10-30
+
+**Rama**: `research/ab-r-hsi-barl-geometry-gate-r01-r05-20261030`, base original `c67eaec720a0bfa830832a9f84f334f03d01a06d` de GalexY3/proyecto-LARP. NUEVA autorización 5 AB-R: **1 tarea técnica A–J ejecutada**, R01; **4 plazas nuevas intactas**. Un primer intento inválido por dos SHA truncados, corregido antes de primer análisis científico, preservado y no contado; **0 sólo planificación**. Las **2 plazas recientes anteriores y 9 históricas** siguen independientes; disponibles 15 en total, 4+2+9. El estudio no ha producido 1/3, 2/3 ni 3/3 nuevos. CT2 matemática 24/100; CT2 funcional 18/100 sin cambio.
+
+**R01**: 9 tablas originales de imágenes de cebada con 204 bandas extraídas de centroides de plantas (fuente `szkymm/Gra_Desi@8157f619f11bef20564067d55450c53120d1a712`). 542 posiciones físicas (60–61 por imagen), 110.568 valores de banda finitos, 0 colisiones X/Y, 0/9 escenas con 400 posiciones muestreadas. Densidad observada dentro de bbox 0,038–0,043 %. La selección de puntos es ENDÓGENA por segmentación verde del código fuente, no un patrón MHU/LOCAL/CVT/Wei ni una imagen 2D completa. Puerta original N400 = **FAIL**. Congelación prereg `7dbd6fa76b814bbac6643a7029da93c0c67b1c8b`; código SHA corregido y congelado `b7c9704956b5976ec7f27c70f85db238e8409b42`; outcomes `ceabc97341ceb68a74d56ddb4276bc49535aa9ac`; replay `e6686f5e042b5c2079573ebed43e1de87e07d686`, 10/10 PASS. Fallo inicial e instrumentación en R01_E01_ERRATA.md, archivo original inmutable.
+
+**STOP_HSI_SPARSE** ahora activo. **STOP_LOCAL** para GP/Fourier N400 anteriores, **STOP_WEI_BUILD** hasta código original compilado y verificado, licencia/semilla/cuotas. Ninguna ejecución nueva de Wei, MHU, LOCAL o CVT. No benchmark neuronal. CERO escenas reales 2D completas inspeccionadas.
+
+**Vía clara NEON**: `earthlab/neonhs/inst/extdata/ex.h5` (Git blob `b0768d9127de55b7c3064f65c906b5dd04401ebf`, 769.924 bytes), README especifica ~30×30×426. El GitHub conector rechaza su H5 binario con UnicodeDecodeError y el entorno no resuelve host GitHub; datos **NO_OBTENIDOS**. La adquisición/validación de `ex.h5` desbloquearía potencial experimento en 900 píxeles, pero no valida escenas múltiples ni Wei. Documentación en R01_PRIORS_AND_R5.md.
+
+**Protección**: no se redistribuyó material crudo original, no se aceptaron licencias ni se contactaron autores, no CI ni merge. `main` no modificado en esta campaña. Contar ejecutadas vs válidas independientes y planificación por separado.
+
+**Archivos**: R01_PREREG_AJ.md, R01_DATA_GATE.js (inválido), R01_E01_ERRATA.md, R01_DATA_GATE_REPAIRED.js, R01_RESULTS.json, R01_REPLAY.json, R01_LEDGER_AJ.json, R01_PRIORS_AND_R5.md, FINAL_RECEIPT.md.
