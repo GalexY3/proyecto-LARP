@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-30",
+  "ordinal_not_probability": true,
+  "series": [
+    {
+      "branch": "LARP_MATH_NATIVE_N400",
+      "points": [
+        {
+          "event": "BEFORE_W01_W02",
+          "score": 24
+        },
+        {
+          "event": "AFTER_W01_W02",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "branch": "LARP_FUNCTIONAL",
+      "points": [
+        {
+          "event": "BEFORE_W01_W02",
+          "score": 18
+        },
+        {
+          "event": "AFTER_W01_W02",
+          "score": 18
+        }
+      ]
+    }
+  ],
+  "reason": "No independent neural or optical data; Wei source-only and toy CMake test not evidence of scientific MHU superiority",
+  "source": "research/AB_NATIVE_TASKS_20261030/CURRENT.md and W01/W02 ledger"
+}
