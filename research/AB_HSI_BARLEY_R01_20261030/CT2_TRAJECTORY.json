@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-30",
+  "type": "O4_CT2",
+  "ordinal_not_probability": true,
+  "lines": [
+    {
+      "track": "LARP_N400_MATH",
+      "before": 24,
+      "after_R01": 24
+    },
+    {
+      "track": "LARP_N400_FUNCTIONAL",
+      "before": 18,
+      "after_R01": 18
+    }
+  ],
+  "reason": "One new 204-band sparse centroid data source fails 400 unique pixel gate; no MHU vs LOCAL/CVT/Wei effectiveness observed.",
+  "new_N1": 0,
+  "new_N2": 0,
+  "new_N3": 0
+}
