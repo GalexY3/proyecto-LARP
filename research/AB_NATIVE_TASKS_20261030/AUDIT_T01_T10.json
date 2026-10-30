@@ -1,0 +1,226 @@
+{
+  "schema": "AB_NATIVE_TASK_AUDIT",
+  "status": "PASS",
+  "second_replay": "second function execution on same six original JSON input files; not external replication",
+  "original_source_git_blob": "490406c937c1a04cd734cab6710b1e5ddc9ff91b",
+  "first_invalid_results_blob": "d3e6bc0519435d0e4fd7c5d3542a3133e99ba531",
+  "repaired_results_blob": "e2c47c6c54e8df1f8d3954266bf77047bb496fea",
+  "invariants": [
+    {
+      "name": "exact_second_run_rows",
+      "ok": true,
+      "evidence": {
+        "rows": 156
+      }
+    },
+    {
+      "name": "exact_second_run_summary",
+      "ok": true,
+      "evidence": {
+        "groups": 52
+      }
+    },
+    {
+      "name": "five_GP_cells_changed_on_repair",
+      "ok": true,
+      "evidence": {
+        "affected_rows": 60
+      }
+    },
+    {
+      "name": "sixteen_GP_and_graph_models_per_seed_postrepair",
+      "ok": true,
+      "evidence": {
+        "rows": 156,
+        "summary_groups": 52
+      }
+    },
+    {
+      "name": "T01_posterior_risk_in_unit_interval",
+      "ok": true,
+      "evidence": {
+        "records": 12
+      }
+    },
+    {
+      "name": "T02_posterior_risk_in_unit_interval",
+      "ok": true,
+      "evidence": {
+        "records": 12
+      }
+    },
+    {
+      "name": "T03_posterior_risk_in_unit_interval",
+      "ok": true,
+      "evidence": {
+        "records": 12
+      }
+    },
+    {
+      "name": "T04_posterior_risk_in_unit_interval",
+      "ok": true,
+      "evidence": {
+        "records": 12
+      }
+    },
+    {
+      "name": "T05_posterior_risk_in_unit_interval",
+      "ok": true,
+      "evidence": {
+        "records": 12
+      }
+    },
+    {
+      "name": "GP_ell_risk_monotone_full_spectral",
+      "ok": true,
+      "evidence": [
+        0.84808,
+        0.62857,
+        0.31588,
+        0.07672,
+        0.01011
+      ]
+    },
+    {
+      "name": "GP_ell_risk_monotone_local_only",
+      "ok": true,
+      "evidence": [
+        0.84104,
+        0.62375,
+        0.31613,
+        0.07915,
+        0.01049
+      ]
+    },
+    {
+      "name": "GP_ell_risk_monotone_cvt_proxy",
+      "ok": true,
+      "evidence": [
+        0.81929,
+        0.5946,
+        0.30372,
+        0.07713,
+        0.01028
+      ]
+    },
+    {
+      "name": "GP_ell_risk_monotone_halton",
+      "ok": true,
+      "evidence": [
+        0.84361,
+        0.64058,
+        0.35108,
+        0.10497,
+        0.01483
+      ]
+    },
+    {
+      "name": "typed_onehop_all_modalities_full_spectral",
+      "ok": true,
+      "evidence": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "typed_onehop_all_modalities_local_only",
+      "ok": true,
+      "evidence": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "typed_onehop_all_modalities_cvt_proxy",
+      "ok": true,
+      "evidence": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "typed_onehop_all_modalities_halton",
+      "ok": true,
+      "evidence": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_full_spectral_knn",
+      "ok": true,
+      "evidence": [
+        0.10929082805182073,
+        0.005099836434122506,
+        0.005095538067109406
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_full_spectral_typed",
+      "ok": true,
+      "evidence": [
+        0.005095538067109406,
+        0.005095538067109406,
+        0.005095538067109406
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_local_only_knn",
+      "ok": true,
+      "evidence": [
+        0.1126490405157592,
+        0.006821692636173093,
+        0.005211028106990785
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_local_only_typed",
+      "ok": true,
+      "evidence": [
+        0.005210449290854505,
+        0.005210449290854505,
+        0.005210449290854505
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_cvt_proxy_knn",
+      "ok": true,
+      "evidence": [
+        0.10417176733250584,
+        0.006767558925393366,
+        0.004776734263029891
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_cvt_proxy_typed",
+      "ok": true,
+      "evidence": [
+        0.004762894609288005,
+        0.004762894609288005,
+        0.004762894609288005
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_halton_knn",
+      "ok": true,
+      "evidence": [
+        0.16650052727446404,
+        0.043385364154188776,
+        0.014284770006972305
+      ]
+    },
+    {
+      "name": "graph_no_worse_extra_hops_halton_typed",
+      "ok": true,
+      "evidence": [
+        0.005818108223111414,
+        0.005818108223111414,
+        0.005818108223111414
+      ]
+    }
+  ]
+}
