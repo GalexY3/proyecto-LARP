@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-30",
+  "project": "LARP",
+  "mode": "AB-R",
+  "authorized": 10,
+  "branch": "research/ab-r-wei-source-gate-20261030",
+  "base_head": "e9c25783faf75aa4ecbad6ef11fd34d4fef9e883",
+  "accounting": {
+    "cycle_equivalents_addressed": 1,
+    "pre_frozen_valid_nonrepaired": 0,
+    "repaired_post_exposure_exploratory": 1,
+    "invalid_distinct_W01": 1,
+    "invalid_initial_attempts_W01_W02": 2,
+    "planning_only": 0,
+    "remaining_authorized": 9,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0
+  },
+  "W01": {
+    "status": "INVALID_INSTRUMENTATION",
+    "upstream_repo": "1iyiwei/noise",
+    "upstream_commit": "0d1be2030518517199dff5c7e7514ee072037d59",
+    "pre_sha": "340a11c17d2c3f5448f5f43c9e486a02b2b6fe40",
+    "source_checks_passed": 8,
+    "source_checks_total": 10,
+    "false_negative": [
+      "Main_declares_DartThrowing_target",
+      "Main_names_DartThrowing_cpp"
+    ],
+    "actual_cmake_target_rule": "foreach(project ${projects}) => ADD_EXECUTABLE(${project} ${project}.cpp)",
+    "status_of_authentic_Wei_build": "NOT_RUN"
+  },
+  "W02": {
+    "status": "POST_EXPOSURE_REPAIR_EXPLORATORY",
+    "prereg_commit": "235c532ae9d5aa0528834139a0018612c67368ed",
+    "initial_code_commit": "58e930b0f2edafeb0aba2caac100625fea72acc3",
+    "initial_script_git_blob": "764b40495b9f717ed1db4130a06a50fa0f1c4c17",
+    "initial_raw_json_sha256": "37bcc8bdfbc4fe1eaf1525069219b41254fcc2eb3cafa58f859e613b840a183b",
+    "errata_commit": "e59bc31ffb9570ee000e04965b3affddd2ec448c",
+    "repaired_code_commit": "6f5da11d5ada4ea0736370aaa232739b16190fd5",
+    "repaired_script_git_blob": "855a2b3de8b0146aadb58fb541d53ca6402f5301",
+    "repaired_script_sha256": "057c2753141889ade4e9e047b02bdd155c4890e1a314912d6ed284a4157e330c",
+    "repaired_raw_json_sha256": "01ce72c4060ffd7df658f2d833a1894089bbf7a2a5844cdc5c991bc36a81d92e",
+    "environment": {
+      "cmake": "3.31.6",
+      "gxx": "14.2.0",
+      "system": "Linux"
+    },
+    "arms": [
+      {
+        "id": "legacy_2_6_no_flag",
+        "configure_initial": 0,
+        "build_initial": 2,
+        "configure_repaired": 0,
+        "build_repaired": 0,
+        "run_repaired": 0,
+        "stdout_repaired": "W02_OK",
+        "configuration_warning": "CMake minimum compatibility <3.10 deprecated"
+      },
+      {
+        "id": "legacy_2_6_policy_min_3_5",
+        "configure_initial": 0,
+        "build_initial": 2,
+        "configure_repaired": 0,
+        "build_repaired": 0,
+        "run_repaired": 0,
+        "stdout_repaired": "W02_OK",
+        "configuration_warning": "same deprecation + unused CMAKE_POLICY_VERSION_MINIMUM variable in CMake 3.31.6"
+      },
+      {
+        "id": "modern_3_5_no_flag",
+        "configure_initial": 0,
+        "build_initial": 2,
+        "configure_repaired": 0,
+        "build_repaired": 0,
+        "run_repaired": 0,
+        "stdout_repaired": "W02_OK",
+        "configuration_warning": "same minimum compatibility deprecation"
+      }
+    ],
+    "invalid_cause": "C++ fixture used # rather than // in leading comment",
+    "inference_limit": "Minimal synthetic CMake C++ test only. Cannot establish whether authentic Wei builds on Windows or Linux; cannot establish scientific performance.",
+    "independent_external_replication": false
+  },
+  "R5": "STOP_LOCAL synthetic GP Fourier. STOP_WEI_BUILD until actual Windows log and original compiled binary; independent real 5+ band data still not loaded.",
+  "CT2": {
+    "math_before": 24,
+    "math_after": 24,
+    "functional_before": 18,
+    "functional_after": 18,
+    "ordinal_not_probability": true
+  },
+  "repository_visibility_observed": "public",
+  "data_privacy": "NO_RAW_NATIVE_COORDINATES_PUBLISHED_BY_THIS_BRANCH"
+}
