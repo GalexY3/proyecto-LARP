@@ -1,0 +1,1531 @@
+{
+  "campaign": "LARP_INDIAN_PINES_15_20261030",
+  "date": "2026-10-30",
+  "source_git_sha": "0ed4500533a7c27e479944ce01996e676cabff1d",
+  "original_json_manifest_sha": "4c4dc612655b3e9b7ac0f6c9d779e04712a293e7",
+  "accounting": {
+    "cycle_valid": 15,
+    "cycle_invalid": 1,
+    "planning_only": 0,
+    "valid_ids": [
+      "IP01",
+      "IP02",
+      "IP04",
+      "IP05",
+      "IP06",
+      "IP07",
+      "IP08",
+      "IP09",
+      "IP10",
+      "IP11",
+      "IP12",
+      "IP13",
+      "IP14",
+      "IP15",
+      "IP16"
+    ],
+    "invalid_ids": [
+      "IP03"
+    ],
+    "from_recent_4": 4,
+    "from_prior_2": 2,
+    "from_historical_9": 9,
+    "remaining_recent_4": 0,
+    "remaining_prior_2": 0,
+    "remaining_historical_9": 0,
+    "remaining_total": 0,
+    "analysis_15_dependent_estimands": true,
+    "independent_real_scenes": 1,
+    "independent_real_labs": 1,
+    "real_2d_full_cube": true,
+    "Wei_authentic_executions": 0,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0,
+    "CT2_math": 24,
+    "CT2_functional": 18
+  },
+  "tasks": [
+    {
+      "id": "IP03",
+      "status": "INVALID_INSTRUMENTATION_NOT_COUNTED",
+      "A": "CVT vs random spatial quantization competence",
+      "B": "Low CVT lattice energy vs random",
+      "C": "Pre-exposure checker omitted promised minimum-distance/quantization energy",
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "source_code_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "result_commit": "58faddfcdecac349ccc68919ae1721755b0bc362",
+        "errata_commit": "3c14c7121032e0f553d0d074b61a2c08fa2eeab5"
+      },
+      "E": {
+        "mean_snap_shift_CVT": 0,
+        "mean_snap_shift_RANDOM": 0,
+        "common_test_pixels": 4289,
+        "selected_band_ids": [
+          20,
+          60,
+          90,
+          130,
+          190
+        ]
+      },
+      "F": "Snapping=0 does not validate Lloyd competence; false adequacy, later fixed IP16",
+      "G": "Exact replay 12/12 does not repair missing endpoint",
+      "H": "No posterior or merit update",
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "Exclude from valid count; preserve raw output and prereg"
+    },
+    {
+      "id": "IP01",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "newest_4_remaining",
+      "A": {
+        "estimand": "Whole real 2D AVIRIS physical cube integrity, grid/raster ordering, 220 channels and cover labels",
+        "unit": "physical image/pixel grid/geometry validation",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Whole real 2D AVIRIS physical cube integrity, grid/raster ordering, 220 channels and cover labels"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "rows": 21025,
+        "columns": 223,
+        "spectral_bands": 220,
+        "finite_band_cells": 4625500,
+        "zero_band_cells": 0,
+        "negative_band_cells": 0,
+        "max_abs_band_value": 9604,
+        "label_counts": [
+          10659,
+          54,
+          1434,
+          834,
+          234,
+          497,
+          747,
+          26,
+          489,
+          20,
+          968,
+          2468,
+          614,
+          212,
+          1294,
+          380,
+          95
+        ],
+        "physical_scene": "INDIAN_PINES_AVIRIS_1992_145X145",
+        "row_major": "X_OUTER_Y_INNER",
+        "raw_source_git_blob": "0ed4500533a7c27e479944ce01996e676cabff1d"
+      },
+      "F": "Data one 1992 agricultural scene; spectral sensor values uncalibrated raw magnitude. No independent ground source re-download.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP02",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "newest_4_remaining",
+      "A": {
+        "estimand": "Exact 400-pixel per-type sample budget for each of six original and six control geometries",
+        "unit": "physical image/pixel grid/geometry validation",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Exact 400-pixel per-type sample budget for each of six original and six control geometries"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": [
+        {
+          "seed": 1101,
+          "method": "MHU",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1101,
+          "method": "LOCAL",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1101,
+          "method": "RANDOM",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1101,
+          "method": "CVT",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1102,
+          "method": "MHU",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1102,
+          "method": "LOCAL",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1102,
+          "method": "RANDOM",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1102,
+          "method": "CVT",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1103,
+          "method": "MHU",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1103,
+          "method": "LOCAL",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1103,
+          "method": "RANDOM",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        },
+        {
+          "seed": 1103,
+          "method": "CVT",
+          "initial_collisions": 0,
+          "total_shift_pixels": 0,
+          "max_shift_pixels": 0,
+          "moved_points": 0,
+          "quota_actual": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ],
+          "average_shift_pixels": 0
+        }
+      ],
+      "F": "Floor-snapping and nearest-free adaptation changes continuous geometry; report collisions and shifts. CVT not original solver.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP04",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "newest_4_remaining",
+      "A": {
+        "estimand": "Five-channel, 400-sample, k4 nearest IDW spatial reconstruction normalized MSE",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Five-channel, 400-sample, k4 nearest IDW spatial reconstruction normalized MSE"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "method_mean_normalized_mse": {
+          "MHU": 0.009771378837888587,
+          "LOCAL": 0.009737476503482239,
+          "RANDOM": 0.010902940787317164,
+          "CVT": 0.010198071210583215
+        },
+        "paired": [
+          {
+            "seed": 1101,
+            "ratio_MHU_to_LOCAL": 0.9908237155778687,
+            "difference_MHU_minus_LOCAL": -0.00008969293486173202
+          },
+          {
+            "seed": 1102,
+            "ratio_MHU_to_LOCAL": 1.0001858924516813,
+            "difference_MHU_minus_LOCAL": 0.0000017995422847243148
+          },
+          {
+            "seed": 1103,
+            "ratio_MHU_to_LOCAL": 1.0194313565521596,
+            "difference_MHU_minus_LOCAL": 0.0001896003957960555
+          }
+        ]
+      },
+      "F": "IDW only, spatial retrieval not trained network; native Wei missing; 3 paired geometry seeds on same field.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP05",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "newest_4_remaining",
+      "A": {
+        "estimand": "Single nearest-pixel reconstructed spectral fields on same heldout",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Single nearest-pixel reconstructed spectral fields on same heldout"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "method_mean_normalized_mse": {
+          "MHU": 0.013993287546191549,
+          "LOCAL": 0.013767291730063186,
+          "RANDOM": 0.014990311215202452,
+          "CVT": 0.014227159687405143
+        },
+        "paired": [
+          {
+            "seed": 1101,
+            "ratio_MHU_to_LOCAL": 1.0145911867321256,
+            "difference_MHU_minus_LOCAL": 0.00019844212055867942
+          },
+          {
+            "seed": 1102,
+            "ratio_MHU_to_LOCAL": 1.017455642528643,
+            "difference_MHU_minus_LOCAL": 0.00023893212691803237
+          },
+          {
+            "seed": 1103,
+            "ratio_MHU_to_LOCAL": 1.0171697572806329,
+            "difference_MHU_minus_LOCAL": 0.0002406132009083687
+          }
+        ]
+      },
+      "F": "Single nearest neighbor is weak/locally discontinuous; ranking not a universal spatial property.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP06",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "prior_recent_2_remaining",
+      "A": {
+        "estimand": "k8 inverse-distance weighted model on same heldout",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "k8 inverse-distance weighted model on same heldout"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "method_mean_normalized_mse": {
+          "MHU": 0.00936338316900207,
+          "LOCAL": 0.009388388044986708,
+          "RANDOM": 0.010365227739732601,
+          "CVT": 0.009815250238354424
+        },
+        "paired": [
+          {
+            "seed": 1101,
+            "ratio_MHU_to_LOCAL": 0.9900143631880604,
+            "difference_MHU_minus_LOCAL": -0.00009439602339652783
+          },
+          {
+            "seed": 1102,
+            "ratio_MHU_to_LOCAL": 0.9895788437170331,
+            "difference_MHU_minus_LOCAL": -0.00009725378421344098
+          },
+          {
+            "seed": 1103,
+            "ratio_MHU_to_LOCAL": 1.0124349273921356,
+            "difference_MHU_minus_LOCAL": 0.00011663517965605774
+          }
+        ]
+      },
+      "F": "Longer-range smoothing can alter apparent geometry benefit; same pixels and seeds as IP04.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP07",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "prior_recent_2_remaining",
+      "A": {
+        "estimand": "Gaussian distance weighting bandwidth 18 pixel model, all class-specific samples",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Gaussian distance weighting bandwidth 18 pixel model, all class-specific samples"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "method_mean_normalized_mse": {
+          "MHU": 0.011066813950520215,
+          "LOCAL": 0.01110708109057162,
+          "RANDOM": 0.011706607659896286,
+          "CVT": 0.011500923694037381
+        },
+        "paired": [
+          {
+            "seed": 1101,
+            "ratio_MHU_to_LOCAL": 0.9911652200597103,
+            "difference_MHU_minus_LOCAL": -0.00009884435657829885
+          },
+          {
+            "seed": 1102,
+            "ratio_MHU_to_LOCAL": 0.9942038256619807,
+            "difference_MHU_minus_LOCAL": -0.00006434630668050549
+          },
+          {
+            "seed": 1103,
+            "ratio_MHU_to_LOCAL": 1.003842516818923,
+            "difference_MHU_minus_LOCAL": 0.00004238924310459406
+          }
+        ]
+      },
+      "F": "Gaussian h18 fixed, not hyperparameter-tuned; bandwidth may blur material interfaces.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP08",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "High-ground-truth-gradient terrain subset and five-band reconstruction error",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "High-ground-truth-gradient terrain subset and five-band reconstruction error"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "source_gradient_median": 0.001148837345945577,
+        "mean_mse_by_method": {
+          "MHU": 0.011439116080458082,
+          "LOCAL": 0.011474397082176018,
+          "RANDOM": 0.012080567940714762,
+          "CVT": 0.011402261577215703
+        },
+        "n": 2144
+      },
+      "F": "High gradients from ground truth; selection is stratified after source decoding but threshold pre-declared.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP09",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Low-gradient complement and five-band reconstruction error",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Low-gradient complement and five-band reconstruction error"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "source_gradient_median": 0.001148837345945577,
+        "mean_mse_by_method": {
+          "MHU": 0.008104419095199086,
+          "LOCAL": 0.008001365677972001,
+          "RANDOM": 0.009725862644247506,
+          "CVT": 0.008994442238060991
+        },
+        "n": 2145
+      },
+      "F": "Complement of IP08, not a new independent sample; terrain labels dependent.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP10",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Cover-category differential error for nine labels with >=100 heldout pixels",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Cover-category differential error for nine labels with >=100 heldout pixels"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "per_cover_eligible": [
+          {
+            "class_id": 0,
+            "heldout_pixels": 2207,
+            "by_method": {
+              "MHU": 0.01056265395902325,
+              "LOCAL": 0.010366660733782987,
+              "RANDOM": 0.01124833308945694,
+              "CVT": 0.010389253133696227
+            }
+          },
+          {
+            "class_id": 2,
+            "heldout_pixels": 284,
+            "by_method": {
+              "MHU": 0.010474903245519198,
+              "LOCAL": 0.009633223651507754,
+              "RANDOM": 0.01000003960094997,
+              "CVT": 0.01106167325391205
+            }
+          },
+          {
+            "class_id": 3,
+            "heldout_pixels": 170,
+            "by_method": {
+              "MHU": 0.015037760579449744,
+              "LOCAL": 0.013995123417694882,
+              "RANDOM": 0.01919773280418871,
+              "CVT": 0.011610474089581144
+            }
+          },
+          {
+            "class_id": 5,
+            "heldout_pixels": 103,
+            "by_method": {
+              "MHU": 0.0054701249228332575,
+              "LOCAL": 0.008515310700086272,
+              "RANDOM": 0.010668597236953964,
+              "CVT": 0.009953135804607454
+            }
+          },
+          {
+            "class_id": 6,
+            "heldout_pixels": 139,
+            "by_method": {
+              "MHU": 0.008004816418821227,
+              "LOCAL": 0.008247617801575189,
+              "RANDOM": 0.008565283288450644,
+              "CVT": 0.00960405438061294
+            }
+          },
+          {
+            "class_id": 10,
+            "heldout_pixels": 192,
+            "by_method": {
+              "MHU": 0.0048214403119122605,
+              "LOCAL": 0.004776693790786659,
+              "RANDOM": 0.00506253429552124,
+              "CVT": 0.005115845130927818
+            }
+          },
+          {
+            "class_id": 11,
+            "heldout_pixels": 508,
+            "by_method": {
+              "MHU": 0.007102195216377474,
+              "LOCAL": 0.006522631323651696,
+              "RANDOM": 0.0072226323538907,
+              "CVT": 0.00795254361162327
+            }
+          },
+          {
+            "class_id": 12,
+            "heldout_pixels": 122,
+            "by_method": {
+              "MHU": 0.011791063982294778,
+              "LOCAL": 0.013450803697479545,
+              "RANDOM": 0.012840729175890122,
+              "CVT": 0.011165875089211722
+            }
+          },
+          {
+            "class_id": 14,
+            "heldout_pixels": 265,
+            "by_method": {
+              "MHU": 0.007721270659421946,
+              "LOCAL": 0.006673870424886819,
+              "RANDOM": 0.010290477996687244,
+              "CVT": 0.007918416794217405
+            }
+          }
+        ],
+        "eligible_class_count": 9
+      },
+      "F": "GT categories imbalanced; discard classes with <100 test pixels per prereg, no p-values.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP11",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Unlabeled-background versus labeled land-cover reconstruction error",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Unlabeled-background versus labeled land-cover reconstruction error"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "background": {
+          "MHU": 0.01056265395902325,
+          "LOCAL": 0.010366660733782987,
+          "RANDOM": 0.01124833308945694,
+          "CVT": 0.010389253133696227
+        },
+        "labeled": {
+          "MHU": 0.008932596805062329,
+          "LOCAL": 0.009070517043216248,
+          "RANDOM": 0.010536811675490814,
+          "CVT": 0.009995411025996036
+        }
+      },
+      "F": "Class 0 means unlabeled, not optical darkness; heterogeneity does not imply disease or physiology.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP12",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Per-band and per-photoreceptor-type error, fixed one AVIRIS band per class",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Per-band and per-photoreceptor-type error, fixed one AVIRIS band per class"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "per_type_normalized_mse": {
+          "MHU": [
+            0.017159247961443618,
+            0.006370457758521803,
+            0.005405045946150329,
+            0.014367595464795652,
+            0.005554547058531493
+          ],
+          "LOCAL": [
+            0.018275509425608367,
+            0.006314702881442213,
+            0.005741641248681265,
+            0.012438403480666117,
+            0.005917125481013276
+          ],
+          "RANDOM": [
+            0.019967925914797176,
+            0.006320722879119218,
+            0.006145601920227836,
+            0.015199893668511216,
+            0.0068805595539303795
+          ],
+          "CVT": [
+            0.019188970380840758,
+            0.006223185740485963,
+            0.0056269726455065285,
+            0.01443547876498164,
+            0.0055157485211011084
+          ]
+        },
+        "bands": [
+          20,
+          60,
+          90,
+          130,
+          190
+        ],
+        "quotas": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ]
+      },
+      "F": "Five chosen bands/quotas arbitrary target proxy, not evidence for real photoreceptor physiology.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP13",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Exact 200-sample budget subsample of native original and controls",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Exact 200-sample budget subsample of native original and controls"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "method_mean_normalized_mse": {
+          "MHU": 0.01216522487160606,
+          "LOCAL": 0.012271606620100841,
+          "RANDOM": 0.013093117548103508,
+          "CVT": 0.012527847288728683
+        },
+        "paired": [
+          {
+            "seed": 1101,
+            "ratio_MHU_to_LOCAL": 0.9916250866526678,
+            "difference_MHU_minus_LOCAL": -0.00010347037091149557
+          },
+          {
+            "seed": 1102,
+            "ratio_MHU_to_LOCAL": 0.946326620417857,
+            "difference_MHU_minus_LOCAL": -0.0006657581957877513
+          },
+          {
+            "seed": 1103,
+            "ratio_MHU_to_LOCAL": 1.0373322899123758,
+            "difference_MHU_minus_LOCAL": 0.00045008332121490927
+          }
+        ],
+        "quotas": [
+          81,
+          43,
+          34,
+          25,
+          17
+        ]
+      },
+      "F": "Downsampling previously optimized N400 not same as reoptimizing 200 samples, reduced density can bias native comparison.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP14",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Exact 100-sample budget subsample of native original and controls",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Exact 100-sample budget subsample of native original and controls"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "method_mean_normalized_mse": {
+          "MHU": 0.015106923346050016,
+          "LOCAL": 0.014642955196155272,
+          "RANDOM": 0.015207212822564363,
+          "CVT": 0.015239834850455047
+        },
+        "paired": [
+          {
+            "seed": 1101,
+            "ratio_MHU_to_LOCAL": 1.0819391619067418,
+            "difference_MHU_minus_LOCAL": 0.0011629452248066684
+          },
+          {
+            "seed": 1102,
+            "ratio_MHU_to_LOCAL": 0.9396702022081016,
+            "difference_MHU_minus_LOCAL": -0.000872650518737127
+          },
+          {
+            "seed": 1103,
+            "ratio_MHU_to_LOCAL": 1.07213543893333,
+            "difference_MHU_minus_LOCAL": 0.001101609743614694
+          }
+        ],
+        "quotas": [
+          41,
+          21,
+          17,
+          13,
+          8
+        ]
+      },
+      "F": "Very small types (8 samples) variable; do not generalize to original N400.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP15",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Permutation-null field preserving sample locations and breaking original spatial association",
+        "unit": "one source 145x145 image, test cell, 3 paired original seed layouts",
+        "output_type": "actual_measured_AVIRIS_5_channel_spatial_loss"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Permutation-null field preserving sample locations and breaking original spatial association"
+      },
+      "D": {
+        "prereg_commit": "4b9dd26385b9cb641f8bd6693d3e37ad10460ebd",
+        "code_freeze_commit": "9adb7ecb742d39acddb8dda86d35623537797364",
+        "code_git_blob": "773096dc8f95c6247fd0cdd96cd759387df86bfb",
+        "results_commit": "58faddfcdecac349ccc68919ae1721755b0bc362"
+      },
+      "E": {
+        "method_mean_normalized_mse": {
+          "MHU": 0.022656078823167267,
+          "LOCAL": 0.022651325885367463,
+          "RANDOM": 0.02231117663660868,
+          "CVT": 0.021682713099609886
+        },
+        "paired": [
+          {
+            "seed": 1101,
+            "ratio_MHU_to_LOCAL": 0.9878643959351283,
+            "difference_MHU_minus_LOCAL": -0.000271512735645605
+          },
+          {
+            "seed": 1102,
+            "ratio_MHU_to_LOCAL": 1.0038243101128463,
+            "difference_MHU_minus_LOCAL": 0.00008664336594430347
+          },
+          {
+            "seed": 1103,
+            "ratio_MHU_to_LOCAL": 1.0086861489723862,
+            "difference_MHU_minus_LOCAL": 0.00019912818310070107
+          }
+        ],
+        "field_permutation": "(97*idx+1337)%21025",
+        "rankings_on_real": {
+          "MHU": 0.009771378837888587,
+          "LOCAL": 0.009737476503482239,
+          "RANDOM": 0.010902940787317164,
+          "CVT": 0.010198071210583215
+        }
+      },
+      "F": "Permuted spatial field synthetic placebo, not a real physical scene; helps falsify over-general ranking only.",
+      "G": "Exact independent re-fetch of full GitHub scene and six native snapshots, 12/12 checks, identical JSON; NOT independent scene replication",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    },
+    {
+      "id": "IP16",
+      "status": "VALID_EXECUTED_EXPLORATORY",
+      "allocated_authorization": "old_historical_9_remaining",
+      "A": {
+        "estimand": "Quantization energy of Lloyd CVT control against seeded random and original native geometries; replacement for invalid IP03",
+        "unit": "physical image/pixel grid/geometry validation",
+        "output_type": "physical_lattice_technical"
+      },
+      "B": {
+        "rivals": "MHU can lose vs original LOCAL, random, centroidal proxy; performances may depend on technique, type, budget and terrain; no assumed superiority",
+        "falsifiers": "Any adverse paired seed or reversed ranking retained; no p-value or causal claim with one scene"
+      },
+      "C": {
+        "source": "helmenov/IndianPines@7b334bb459c5e91c5667e146a56548983b166bb2",
+        "original_native_sources": "six original 400-site exported LARP float64-hex snapshots, 3 paired seeds",
+        "baseline_controls": "original LOCAL, seeded uniform random, approximate 8-step Lloyd CVT; Wei original not run",
+        "metric": "Quantization energy of Lloyd CVT control against seeded random and original native geometries; replacement for invalid IP03"
+      },
+      "D": {
+        "prereg_commit": "824dc7bdeacf6c7837336c7dd8e22bbc04422b3e",
+        "code_freeze_commit": "6b6def74ae22c5b8524dfd89b7126a88f76d7a1f",
+        "code_git_blob": "8845356624e261b0b2c055c68a9d4a74d52000b5",
+        "results_commit": "cc1c63fd341c2f64576f0fd88777960d0a2df852"
+      },
+      "E": {
+        "protocol": "IP16_CVT_LLOYD_PIXEL_COMPETENCE",
+        "source": "145x145 lattice / original six exported MHU+LOCAL N400",
+        "original_geometry_sha_pinned": {
+          "MHU": [
+            "18f4567d4c72aa7bdd9e2de6cb4f7f5a007df8ad",
+            "5642a47b34d1ac3ae840c06a989855db2b5dc6d9",
+            "5e2d9ba161bba318ed219c5116e383d443656453"
+          ],
+          "LOCAL": [
+            "de57ad4d700303aabb495affa08ecd986371a5f1",
+            "05febd925bb0e61a94d4a5d9230d34e0dd3af24b",
+            "931c4f73495121fc7034ae6ebdf6b2218ecdcccc"
+          ]
+        },
+        "iterations": 8,
+        "source_scene": "AVIRIS_IndianPines grid dimensions",
+        "result_by_seed": [
+          {
+            "seed": 1101,
+            "initial": {
+              "mean_min_squared_pixel_distance": 9.385885109120752,
+              "p95_min_distance_pixels": 4.612382427140422,
+              "max_min_distance_pixels": 6.889209051637454
+            },
+            "after_lloyd_continuous": {
+              "mean_min_squared_pixel_distance": 8.829226086113934,
+              "p95_min_distance_pixels": 4.312999182710269,
+              "max_min_distance_pixels": 5.395437335292603
+            },
+            "after_lloyd_snapped": {
+              "mean_min_squared_pixel_distance": 8.785445897740784,
+              "p95_min_distance_pixels": 4.242640687119285,
+              "max_min_distance_pixels": 5
+            },
+            "random": {
+              "mean_min_squared_pixel_distance": 16.89346016646849,
+              "p95_min_distance_pixels": 7.211102550927978,
+              "max_min_distance_pixels": 13.45362404707371
+            },
+            "mhu": {
+              "mean_min_squared_pixel_distance": 10.719048751486326,
+              "p95_min_distance_pixels": 5.0990195135927845,
+              "max_min_distance_pixels": 10.770329614269007
+            },
+            "local": {
+              "mean_min_squared_pixel_distance": 10.689797859690843,
+              "p95_min_distance_pixels": 5.0990195135927845,
+              "max_min_distance_pixels": 12.083045973594572
+            },
+            "final_cvt_over_random_energy": 0.520050114728944,
+            "cvt_final_over_initial": 0.9360274279517348,
+            "cvt_continuous_over_initial": 0.9406918988955146
+          },
+          {
+            "seed": 1102,
+            "initial": {
+              "mean_min_squared_pixel_distance": 9.340208930487263,
+              "p95_min_distance_pixels": 4.594156953787363,
+              "max_min_distance_pixels": 6.325349025547474
+            },
+            "after_lloyd_continuous": {
+              "mean_min_squared_pixel_distance": 8.808746100038046,
+              "p95_min_distance_pixels": 4.304648650006172,
+              "max_min_distance_pixels": 5.315072906367325
+            },
+            "after_lloyd_snapped": {
+              "mean_min_squared_pixel_distance": 8.783923900118905,
+              "p95_min_distance_pixels": 4.242640687119285,
+              "max_min_distance_pixels": 5
+            },
+            "random": {
+              "mean_min_squared_pixel_distance": 16.210035671819263,
+              "p95_min_distance_pixels": 7.0710678118654755,
+              "max_min_distance_pixels": 13.416407864998739
+            },
+            "mhu": {
+              "mean_min_squared_pixel_distance": 10.664209274673007,
+              "p95_min_distance_pixels": 5.0990195135927845,
+              "max_min_distance_pixels": 9.433981132056603
+            },
+            "local": {
+              "mean_min_squared_pixel_distance": 10.85536266349584,
+              "p95_min_distance_pixels": 5.0990195135927845,
+              "max_min_distance_pixels": 9.848857801796104
+            },
+            "final_cvt_over_random_energy": 0.5418818365334961,
+            "cvt_final_over_initial": 0.9404419071876867,
+            "cvt_continuous_over_initial": 0.9430994708571802
+          },
+          {
+            "seed": 1103,
+            "initial": {
+              "mean_min_squared_pixel_distance": 9.360581440829563,
+              "p95_min_distance_pixels": 4.583179698561985,
+              "max_min_distance_pixels": 6.060792980755806
+            },
+            "after_lloyd_continuous": {
+              "mean_min_squared_pixel_distance": 8.811946007048768,
+              "p95_min_distance_pixels": 4.304743951904909,
+              "max_min_distance_pixels": 5.395437335292592
+            },
+            "after_lloyd_snapped": {
+              "mean_min_squared_pixel_distance": 8.775029726516053,
+              "p95_min_distance_pixels": 4.242640687119285,
+              "max_min_distance_pixels": 5
+            },
+            "random": {
+              "mean_min_squared_pixel_distance": 16.636004756242567,
+              "p95_min_distance_pixels": 7.0710678118654755,
+              "max_min_distance_pixels": 11.40175425099138
+            },
+            "mhu": {
+              "mean_min_squared_pixel_distance": 10.721093935790725,
+              "p95_min_distance_pixels": 5.0990195135927845,
+              "max_min_distance_pixels": 8.602325267042627
+            },
+            "local": {
+              "mean_min_squared_pixel_distance": 10.555576694411416,
+              "p95_min_distance_pixels": 5.0990195135927845,
+              "max_min_distance_pixels": 8.246211251235321
+            },
+            "final_cvt_over_random_energy": 0.5274721818784809,
+            "cvt_final_over_initial": 0.9374449420674431,
+            "cvt_continuous_over_initial": 0.9413887441449178
+          }
+        ],
+        "summary": {
+          "mean_cvt_over_random_ratio": 0.5298013777136403,
+          "mean_cvt_over_initial_ratio": 0.9379714257356215,
+          "mean_continuous_cvt_over_initial": 0.9417267046325376,
+          "CVT_better_than_random_seeds": 3,
+          "CVT_continuous_energy_improved_seeds": 3,
+          "three_seed_energy_MHU_vs_LOCAL": [
+            {
+              "seed": 1101,
+              "ratio": 1.00273633722353
+            },
+            {
+              "seed": 1102,
+              "ratio": 0.9823908795359148
+            },
+            {
+              "seed": 1103,
+              "ratio": 1.0156805493599361
+            }
+          ]
+        },
+        "code_coverage": "CVT_PROTOTYPE_CENTROIDAL_QUANTIZATION_NOT_AUTHENTIC_WEI_ORIGINAL",
+        "limitations": [
+          "AFTER_IP03_ENDPOINT_FAILURE",
+          "POST_EXPOSURE_BASELINE_INSTRUMENT_TEST",
+          "NO_OPTICAL_OUTCOME_USED",
+          "NO_NATIVE_WEI_BINARY",
+          "ONE_SCENE_GRID_ONLY",
+          "NO_CAUSAL_INFERENCE"
+        ],
+        "scientific_grade": "0/3",
+        "CT2_math_before_after": [
+          24,
+          24
+        ],
+        "CT2_functional_before_after": [
+          18,
+          18
+        ]
+      },
+      "F": "Post-exposure CVT source gate after IP03 invalid; geometry quantization not spectral efficacy; no original Wei binary.",
+      "G": "IP16 independent GitHub source re-fetch/JS replay 9/9 checks, same source only",
+      "H": {
+        "prior_update": "Scene-specific measured evidence of geometric layout × reconstruction/scene dependence; no universal MHU claim",
+        "novelty": "0/3, same AVIRIS source"
+      },
+      "I": {
+        "grade": "0/3",
+        "math_CT2_before_after": [
+          24,
+          24
+        ],
+        "functional_CT2_before_after": [
+          18,
+          18
+        ],
+        "independent_external_replication": false
+      },
+      "J": "CLOSE this endpoint, do not add seeds/hyperparameter variants to consume budget; STOP_PIVOT as needed, real multi-scene validation and authentic Wei remain."
+    }
+  ],
+  "scientific_prohibition": [
+    "DO_NOT_CLAIM_15_INDEPENDENT_EXPERIMENTS",
+    "DO_NOT_CLAIM_WEI_PARITY_COMPLETE",
+    "DO_NOT_CLAIM_ORIGINAL_NPZ_REOPENED",
+    "DO_NOT_CLAIM_NEURAL_RETINAL_VALIDATION",
+    "DO_NOT_UPDATE_CT2_FROM_ONE_SCENE"
+  ],
+  "errors_retained": "E01_INVALID_IP03.md",
+  "source_rights": "No external raw original data/geometry replicated in public GitHub repo."
+}
