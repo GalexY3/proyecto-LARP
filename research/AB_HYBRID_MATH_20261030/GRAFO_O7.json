@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-30",
+  "schema": "AB_O7_TYPED_GRAPH",
+  "warning": "No cycle count or novelty from graph nodes alone",
+  "nodes": [
+    {
+      "id": "LARP_MHU_HYBRID",
+      "type": "research_program",
+      "state": "active",
+      "mode": "AB-R",
+      "grant": 30,
+      "remaining": 25
+    },
+    {
+      "id": "H01",
+      "type": "mathematical_question",
+      "state": "completed",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "evidence": "LEDGER_H01_H05.json"
+    },
+    {
+      "id": "S08",
+      "type": "historical_math_result",
+      "state": "prior_art",
+      "source": "research/AB_MHU_SISTERS_20261030/INFORME_S01_S20.md"
+    },
+    {
+      "id": "S09",
+      "type": "historical_math_result",
+      "state": "prior_art",
+      "source": "research/AB_MHU_SISTERS_20261030/INFORME_S01_S20.md"
+    },
+    {
+      "id": "H02",
+      "type": "mathematical_question",
+      "state": "completed",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "evidence": "LEDGER_H01_H05.json"
+    },
+    {
+      "id": "S17",
+      "type": "historical_math_result",
+      "state": "prior_art",
+      "source": "research/AB_MHU_SISTERS_20261030/INFORME_S01_S20.md"
+    },
+    {
+      "id": "H03",
+      "type": "mathematical_question",
+      "state": "completed",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "evidence": "LEDGER_H01_H05.json"
+    },
+    {
+      "id": "S13",
+      "type": "historical_math_result",
+      "state": "prior_art",
+      "source": "research/AB_MHU_SISTERS_20261030/INFORME_S01_S20.md"
+    },
+    {
+      "id": "H04",
+      "type": "mathematical_question",
+      "state": "completed",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "evidence": "LEDGER_H01_H05.json"
+    },
+    {
+      "id": "S16",
+      "type": "historical_math_result",
+      "state": "prior_art",
+      "source": "research/AB_MHU_SISTERS_20261030/INFORME_S01_S20.md"
+    },
+    {
+      "id": "H05",
+      "type": "mathematical_question",
+      "state": "completed",
+      "new_n1": false,
+      "new_n2": false,
+      "new_n3": false,
+      "evidence": "LEDGER_H01_H05.json"
+    },
+    {
+      "id": "S07",
+      "type": "historical_math_result",
+      "state": "prior_art",
+      "source": "research/AB_MHU_SISTERS_20261030/INFORME_S01_S20.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "LARP_MHU_HYBRID",
+      "target": "H01",
+      "relation": "tests"
+    },
+    {
+      "source": "S08",
+      "target": "H01",
+      "relation": "extended_by"
+    },
+    {
+      "source": "S09",
+      "target": "H01",
+      "relation": "extended_by"
+    },
+    {
+      "source": "LARP_MHU_HYBRID",
+      "target": "H02",
+      "relation": "tests"
+    },
+    {
+      "source": "S17",
+      "target": "H02",
+      "relation": "extended_by"
+    },
+    {
+      "source": "LARP_MHU_HYBRID",
+      "target": "H03",
+      "relation": "tests"
+    },
+    {
+      "source": "S13",
+      "target": "H03",
+      "relation": "extended_by"
+    },
+    {
+      "source": "LARP_MHU_HYBRID",
+      "target": "H04",
+      "relation": "tests"
+    },
+    {
+      "source": "S16",
+      "target": "H04",
+      "relation": "extended_by"
+    },
+    {
+      "source": "LARP_MHU_HYBRID",
+      "target": "H05",
+      "relation": "tests"
+    },
+    {
+      "source": "S07",
+      "target": "H05",
+      "relation": "extended_by"
+    }
+  ]
+}
