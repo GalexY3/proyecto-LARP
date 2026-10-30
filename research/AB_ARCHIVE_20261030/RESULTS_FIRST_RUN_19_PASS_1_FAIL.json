@@ -1,0 +1,365 @@
+{
+  "schema": "AB_P_ARCHIVE_20261030",
+  "date": "2026-10-30",
+  "grant": 20,
+  "declared_scope": "post-exposure reproducibility/archival, not prospective causal confirmation",
+  "original_zip_sha256": {
+    "M": "fc22523748d7e1c42b6d56be25c3c66cf0bfb5fe46032b2a9622deb34452baac",
+    "S": "6c234a97d8cd38a7c01442536bb0ea049ae5b9c1c5ebb89f9ed02aef5cfdc7fb",
+    "C01": "2594f2c073a32251d6cd98576304b03a241d8ee710ef5815063bef697eb95f06",
+    "C02": "ded310f787f22352200223642b1af0328715ddafe965b0ae8143747f3f3a6cbd",
+    "C04": "dd6f72fc47a3f685b7b82e095660a852637fd2e1735c4e67cdf47a3b161be99b"
+  },
+  "total": 20,
+  "passed": 19,
+  "failed": 1,
+  "checks": [
+    {
+      "id": "A01",
+      "claim": "All 5 ZIP containers are readable and have unique entry names",
+      "status": "PASS",
+      "evidence": {
+        "M": {
+          "num_entries": 11,
+          "bad_crc_member": null
+        },
+        "S": {
+          "num_entries": 16,
+          "bad_crc_member": null
+        },
+        "C01": {
+          "num_entries": 13,
+          "bad_crc_member": null
+        },
+        "C02": {
+          "num_entries": 11,
+          "bad_crc_member": null
+        },
+        "C04": {
+          "num_entries": 14,
+          "bad_crc_member": null
+        }
+      }
+    },
+    {
+      "id": "A02",
+      "claim": "Five ZIP SHA256 digests equal the historical immutable bundle digests",
+      "status": "PASS",
+      "evidence": {
+        "M": "fc22523748d7e1c42b6d56be25c3c66cf0bfb5fe46032b2a9622deb34452baac",
+        "S": "6c234a97d8cd38a7c01442536bb0ea049ae5b9c1c5ebb89f9ed02aef5cfdc7fb",
+        "C01": "2594f2c073a32251d6cd98576304b03a241d8ee710ef5815063bef697eb95f06",
+        "C02": "ded310f787f22352200223642b1af0328715ddafe965b0ae8143747f3f3a6cbd",
+        "C04": "dd6f72fc47a3f685b7b82e095660a852637fd2e1735c4e67cdf47a3b161be99b"
+      }
+    },
+    {
+      "id": "A03",
+      "claim": "Embedded formal 18-file SHA manifest matches ZIP bytes",
+      "status": "PASS",
+      "evidence": {
+        "files_verified": 10,
+        "manifest_fields": [
+          "date",
+          "parent_branch",
+          "branch",
+          "prereg_commit",
+          "result_commit",
+          "new_original_discoveries",
+          "files"
+        ]
+      }
+    },
+    {
+      "id": "A04",
+      "claim": "Embedded sisters 20-file SHA manifest matches ZIP bytes",
+      "status": "PASS",
+      "evidence": {
+        "files_verified": 15,
+        "manifest_fields": [
+          "campaign",
+          "date",
+          "precommit",
+          "frozen_source_commit",
+          "science",
+          "files"
+        ]
+      }
+    },
+    {
+      "id": "A05",
+      "claim": "C01 frozen original and repair code SHA identities",
+      "status": "PASS",
+      "evidence": {
+        "original_source_SHA256": "5e47f6e6…",
+        "repair_SHA256": "85438d78…"
+      }
+    },
+    {
+      "id": "A06",
+      "claim": "C01 post-outcome Poisson repair touched no other method",
+      "status": "PASS",
+      "evidence": {
+        "results": {
+          "changed": 234,
+          "total": 1404,
+          "examples": [
+            [
+              1103,
+              "poisson_disk",
+              "astronaut",
+              "clean"
+            ],
+            [
+              1103,
+              "poisson_disk",
+              "astronaut",
+              "drop30"
+            ]
+          ]
+        },
+        "geometry": {
+          "changed": 6,
+          "total": 36,
+          "examples": [
+            [
+              1103,
+              "poisson_disk",
+              null,
+              null
+            ],
+            [
+              1109,
+              "poisson_disk",
+              null,
+              null
+            ]
+          ]
+        },
+        "repair_status": "POST_EXPOSURE_REPAIR"
+      }
+    },
+    {
+      "id": "A07",
+      "claim": "C01 exact 6×6×13×3 and finite metric rows",
+      "status": "PASS",
+      "evidence": {
+        "records": 1404,
+        "seeds": 6,
+        "images": 13,
+        "methods": 6,
+        "conditions": [
+          "clean",
+          "drop30",
+          "noise08"
+        ]
+      }
+    },
+    {
+      "id": "A08",
+      "claim": "C01 TEST MSE table reproduces from raw records",
+      "status": "PASS",
+      "evidence": {
+        "cells": 18,
+        "clean_joint": 0.013213986226245882
+      }
+    },
+    {
+      "id": "A09",
+      "claim": "C02 code SHA frozen and sensor matrix shape verified",
+      "status": "PASS",
+      "evidence": {
+        "source_sha256": "42b7bcef08ed0b02909ec4b95bbd3bbb46a338762ed011f1e8a64735b1e60729",
+        "filters": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.5,
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.5,
+            0.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A10",
+      "claim": "C02 full factorial and finite observations",
+      "status": "PASS",
+      "evidence": {
+        "n": 648,
+        "methods": [
+          "grid_balanced",
+          "joint_phase_broken",
+          "poisson_multiclass_proxy",
+          "sobol_balanced",
+          "spectral_joint",
+          "spectral_sub"
+        ],
+        "splits": {
+          "DEV": 288,
+          "TEST": 288,
+          "STRESS": 72
+        }
+      }
+    },
+    {
+      "id": "A11",
+      "claim": "C02 means CSV reproduces from all raw records",
+      "status": "PASS",
+      "evidence": {
+        "groups": 54,
+        "test_joint_clean": 0.015476779593810639
+      }
+    },
+    {
+      "id": "A12",
+      "claim": "C02 five virtual filters span only a three-dimensional RGB subspace",
+      "status": "PASS",
+      "evidence": {
+        "rank": 3,
+        "filters": 5,
+        "physical_bands": false
+      }
+    },
+    {
+      "id": "A13",
+      "claim": "C04 frozen code SHA and observation dimensions",
+      "status": "PASS",
+      "evidence": {
+        "code_sha256": "d57d21ce76d4513419fbf38df9ec62b771872a4d50f1856a3a16133b268b31ae",
+        "observations": 32400,
+        "seed_count": 3
+      }
+    },
+    {
+      "id": "A14",
+      "claim": "C04 images are repeated; 32,400 predictions are NOT 32,400 independent images",
+      "status": "PASS",
+      "evidence": {
+        "independent_images_upper_bound": 200,
+        "repeats_per_image_method_condition": 6,
+        "total_predictions": 32400
+      }
+    },
+    {
+      "id": "A15",
+      "claim": "C04 27 published means reproduce from 32,400 predictions",
+      "status": "PASS",
+      "evidence": {
+        "methods": 9,
+        "groups": 27,
+        "joint_clean": 0.9716666666666667
+      }
+    },
+    {
+      "id": "A16",
+      "claim": "C04 cluster bootstrap was reported as descriptive and has complete contrasts",
+      "status": "PASS",
+      "evidence": {
+        "contrasts": 24,
+        "bootstrap_resamples": 8000,
+        "scope": "descriptive posthoc clustered by image"
+      }
+    },
+    {
+      "id": "A17",
+      "claim": "Formal M01–M18 recorded mathematical checker is 18/18 true",
+      "status": "FAIL",
+      "error": "assertion failed",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/archive_audit_20.py\", line 43, in check\n    ev=fn()\n  File \"/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/archive_audit_20.py\", line 170, in formal_math\n    r=get('M','AUDITORIA_M01_M18.json');assert_true(isinstance(r,dict) and len(r)==18 and all(v['verified'] for v in r.values()))\n                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/archive_audit_20.py\", line 54, in assert_true\n    if not x:raise AssertionError(msg)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: assertion failed\n"
+    },
+    {
+      "id": "A18",
+      "claim": "S01–S20 recorded mathematical checker matches frozen digest",
+      "status": "PASS",
+      "evidence": {
+        "recorded_checks": 20,
+        "all_true": true,
+        "source_verifier_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+      }
+    },
+    {
+      "id": "A19",
+      "claim": "Original A–J ledgers identify 18+20 questions but zero original N1/N2/N3",
+      "status": "PASS",
+      "evidence": {
+        "M_ids": [
+          "M01",
+          "M02",
+          "M03",
+          "M04",
+          "M05",
+          "M06",
+          "M07",
+          "M08",
+          "M09",
+          "M10",
+          "M11",
+          "M12",
+          "M13",
+          "M14",
+          "M15",
+          "M16",
+          "M17",
+          "M18"
+        ],
+        "S_ids": [
+          "S01",
+          "S02",
+          "S03",
+          "S04",
+          "S05",
+          "S06",
+          "S07",
+          "S08",
+          "S09",
+          "S10",
+          "S11",
+          "S12",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S17",
+          "S18",
+          "S19",
+          "S20"
+        ],
+        "scientific_original_discoveries": 0
+      }
+    },
+    {
+      "id": "A20",
+      "claim": "Scientific source and outputs recoverable; external clean clone remains unverified",
+      "status": "PASS",
+      "evidence": {
+        "archive_containers": 5,
+        "raw_data_in_zips": {
+          "C01": 1404,
+          "C02": 648,
+          "C04": 32400
+        },
+        "clean_clone_verified": false,
+        "new_original_science": false
+      }
+    }
+  ]
+}
