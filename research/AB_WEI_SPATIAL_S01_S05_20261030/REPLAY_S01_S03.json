@@ -1,0 +1,27 @@
+{
+  "time": "2026-10-30",
+  "checks": {
+    "original_source_blob": true,
+    "S01_frozen_repaired_blob": true,
+    "S02_frozen_blob": true,
+    "S03_frozen_blob": true,
+    "S01_identical": true,
+    "S02_identical": true,
+    "S03_identical": true,
+    "sample_count_397": true,
+    "site_filter_329": true,
+    "folds_exact_34": true,
+    "no_duplicate_records": true,
+    "no_synthetic_cubes": true
+  },
+  "original_data_git_sha": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+  "software_replay": true,
+  "independent_external_replication": false,
+  "control_comparison": {
+    "ridge": 0.00007003631319400662,
+    "ordinal": 0.00023420490566524287,
+    "wavelength": 0.00023276954140307455,
+    "site_count": 34
+  },
+  "notes": "S01 original invalid parsing and repair preserved, not independent confirmatory. S02/S03 same scene source; new independent spatial cube still absent."
+}
