@@ -1,0 +1,291 @@
+{
+  "status": "EXECUTED_POST_S02_EXPLORATORY",
+  "prereg_sha": "b0a47295db6c6f3dc861dd9ed5183cb5a08d1398",
+  "code_freeze_sha": "2385f6acd05ed2392648e56ede8e75491041c132",
+  "code_blob": "95f45d651ba2df1def58a51659046492b69b95b1",
+  "source_sha": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+  "results": {
+    "protocol": "S03_PHYSICAL_WAVELENGTH_ADVERSARY",
+    "source_commit": "26b8f243bdf3574ea2bb25eee927c720fa309dcb",
+    "fold_count": 34,
+    "qualified_records": 329,
+    "folds": [
+      {
+        "site": "Baltic Sea",
+        "n": 2,
+        "wavelength_mse": 0.0000011246313141192784,
+        "ridge_mse": 0.000004129495169164842,
+        "ordinal_interpolation_mse": 0.000005305246877891993
+      },
+      {
+        "site": "Burrinjuck Dam",
+        "n": 9,
+        "wavelength_mse": 0.00005762439381526326,
+        "ridge_mse": 0.00002111203552868262,
+        "ordinal_interpolation_mse": 0.00005918594523844021
+      },
+      {
+        "site": "English Channel",
+        "n": 16,
+        "wavelength_mse": 0.000007077469359951785,
+        "ridge_mse": 0.0000012559416867728095,
+        "ordinal_interpolation_mse": 0.000021557915655739664
+      },
+      {
+        "site": "Garda",
+        "n": 19,
+        "wavelength_mse": 0.00031565438001026594,
+        "ridge_mse": 0.00002845799790706757,
+        "ordinal_interpolation_mse": 0.0002370436328619865
+      },
+      {
+        "site": "Gulf of Mexico, FL",
+        "n": 2,
+        "wavelength_mse": 0.00017200700898009389,
+        "ridge_mse": 0.00013607108628444593,
+        "ordinal_interpolation_mse": 0.0005740721102920639
+      },
+      {
+        "site": "High Rock Lake",
+        "n": 46,
+        "wavelength_mse": 0.00017039244268197517,
+        "ridge_mse": 0.000023471795826787614,
+        "ordinal_interpolation_mse": 0.000150172803513275
+      },
+      {
+        "site": "Hou Lake",
+        "n": 13,
+        "wavelength_mse": 0.0005537259586090806,
+        "ridge_mse": 0.00018048603749506152,
+        "ordinal_interpolation_mse": 0.00053552676332164
+      },
+      {
+        "site": "Iseo",
+        "n": 5,
+        "wavelength_mse": 0.00010077415478671113,
+        "ridge_mse": 0.0000057000175685020574,
+        "ordinal_interpolation_mse": 0.0003258900590140941
+      },
+      {
+        "site": "Lac Vieux Desert",
+        "n": 3,
+        "wavelength_mse": 0.0000034949951155174916,
+        "ridge_mse": 0.000008681343874572667,
+        "ordinal_interpolation_mse": 0.00000891310025208486
+      },
+      {
+        "site": "Lake Bonney",
+        "n": 3,
+        "wavelength_mse": 0.000043296167314554295,
+        "ridge_mse": 0.000016206580550387203,
+        "ordinal_interpolation_mse": 0.0001296899534518833
+      },
+      {
+        "site": "Lake Brunner",
+        "n": 2,
+        "wavelength_mse": 0.000001916312478472354,
+        "ridge_mse": 0.000006112780635337713,
+        "ordinal_interpolation_mse": 0.0000034255366637955407
+      },
+      {
+        "site": "Lake Constance",
+        "n": 33,
+        "wavelength_mse": 0.000019716937789565437,
+        "ridge_mse": 0.0000010526228903325732,
+        "ordinal_interpolation_mse": 0.00009717406705785611
+      },
+      {
+        "site": "Lake Hume",
+        "n": 9,
+        "wavelength_mse": 0.00003871531635961918,
+        "ridge_mse": 0.000011624414316115293,
+        "ordinal_interpolation_mse": 0.00005090232003239111
+      },
+      {
+        "site": "Lake Kasumigaura",
+        "n": 2,
+        "wavelength_mse": 0.00010216227259248496,
+        "ridge_mse": 0.000012976018108444502,
+        "ordinal_interpolation_mse": 0.00011419764642109858
+      },
+      {
+        "site": "Lake Kegonsa",
+        "n": 2,
+        "wavelength_mse": 0.000025048382359509433,
+        "ridge_mse": 0.0000031626235951255863,
+        "ordinal_interpolation_mse": 0.00003407159229282437
+      },
+      {
+        "site": "Lake Mendota",
+        "n": 2,
+        "wavelength_mse": 0.0000074431404152845375,
+        "ridge_mse": 0.000008419031322923485,
+        "ordinal_interpolation_mse": 0.00003054952833229486
+      },
+      {
+        "site": "Lake Michigan",
+        "n": 12,
+        "wavelength_mse": 0.00009806927292723093,
+        "ridge_mse": 0.00003394903349691764,
+        "ordinal_interpolation_mse": 0.0001360623176455592
+      },
+      {
+        "site": "Lake Monona",
+        "n": 3,
+        "wavelength_mse": 0.000013269690141918094,
+        "ridge_mse": 0.000006610995312279253,
+        "ordinal_interpolation_mse": 0.000040229781618428865
+      },
+      {
+        "site": "Lake Pamamaroo",
+        "n": 6,
+        "wavelength_mse": 0.001319410968139498,
+        "ridge_mse": 0.0004028764909219885,
+        "ordinal_interpolation_mse": 0.0012483634541410708
+      },
+      {
+        "site": "Lake Peipsi",
+        "n": 4,
+        "wavelength_mse": 0.00010283363731633599,
+        "ridge_mse": 0.0010674255103314916,
+        "ordinal_interpolation_mse": 0.000008137090840861248
+      },
+      {
+        "site": "Lake Rotoehu",
+        "n": 12,
+        "wavelength_mse": 0.00003141299053274396,
+        "ridge_mse": 0.000008026994908471567,
+        "ordinal_interpolation_mse": 0.00004302374301566953
+      },
+      {
+        "site": "Lake Rotoiti",
+        "n": 2,
+        "wavelength_mse": 0.000004070819325425764,
+        "ridge_mse": 0.0000022955476235911857,
+        "ordinal_interpolation_mse": 0.000013170875860689935
+      },
+      {
+        "site": "Lake Rotoma",
+        "n": 3,
+        "wavelength_mse": 0.0000013234077878109727,
+        "ridge_mse": 0.0000017479276771185113,
+        "ordinal_interpolation_mse": 0.000005488476242934936
+      },
+      {
+        "site": "Lake Vortsjarv",
+        "n": 4,
+        "wavelength_mse": 0.000020897564333386513,
+        "ridge_mse": 7.849834733063287e-7,
+        "ordinal_interpolation_mse": 0.000018278000633451215
+      },
+      {
+        "site": "Lake Waubesa",
+        "n": 3,
+        "wavelength_mse": 0.00007447821508504179,
+        "ridge_mse": 6.048786220648244e-7,
+        "ordinal_interpolation_mse": 0.00011103072811520722
+      },
+      {
+        "site": "Liangzi Lake",
+        "n": 37,
+        "wavelength_mse": 0.00043934683268866793,
+        "ridge_mse": 0.00006290024118296308,
+        "ordinal_interpolation_mse": 0.0005242400351680998
+      },
+      {
+        "site": "Maggiore",
+        "n": 2,
+        "wavelength_mse": 0.0027833083427901656,
+        "ridge_mse": 0.000024106272045498663,
+        "ordinal_interpolation_mse": 0.002028099855909987
+      },
+      {
+        "site": "North Sea",
+        "n": 5,
+        "wavelength_mse": 0.000002190128167029553,
+        "ridge_mse": 0.00000296607268038875,
+        "ordinal_interpolation_mse": 0.000009563090208897079
+      },
+      {
+        "site": "Pelican Lake",
+        "n": 3,
+        "wavelength_mse": 0.0000013994959480128461,
+        "ridge_mse": 0.000009555063513355337,
+        "ordinal_interpolation_mse": 0.00000187082463058142
+      },
+      {
+        "site": "Poyang Lake",
+        "n": 16,
+        "wavelength_mse": 0.00016000430384583615,
+        "ridge_mse": 0.00004553228832181512,
+        "ordinal_interpolation_mse": 0.00017830962975257428
+      },
+      {
+        "site": "Rotoroa",
+        "n": 3,
+        "wavelength_mse": 0.000002666023869371938,
+        "ridge_mse": 0.0000025660237523785164,
+        "ordinal_interpolation_mse": 0.000006076310613570314
+      },
+      {
+        "site": "Trasimeno",
+        "n": 10,
+        "wavelength_mse": 0.000176111061446157,
+        "ridge_mse": 0.00001826923896740078,
+        "ordinal_interpolation_mse": 0.0003587945803544914
+      },
+      {
+        "site": "Western Treatment Plant",
+        "n": 2,
+        "wavelength_mse": 0.0007906836947068231,
+        "ridge_mse": 0.000155777966452098,
+        "ordinal_interpolation_mse": 0.0005612824928624601
+      },
+      {
+        "site": "Wuhan East Lake",
+        "n": 16,
+        "wavelength_mse": 0.0002725139946706096,
+        "ridge_mse": 0.00006631929655337284,
+        "ordinal_interpolation_mse": 0.0002932672837243645
+      }
+    ],
+    "mean_site_mse": {
+      "physical_wavelength": 0.00023276954140307455,
+      "ordinal_band_index": 0.00023420490566524287,
+      "ridge": 0.00007003631319400662
+    },
+    "ridge_to_physical_ratio": 0.30088263598341025,
+    "physical_to_ordinal_ratio": 0.9938713313536655,
+    "ridge_site_wins": 26,
+    "physical_site_wins_over_ordinal": 26,
+    "wavelengths_nm": {
+      "S2A": [
+        443,
+        490,
+        560,
+        665,
+        705,
+        740,
+        783
+      ],
+      "S2B": [
+        442,
+        492,
+        559,
+        665,
+        704,
+        739,
+        780
+      ]
+    },
+    "grade": "0/3",
+    "caveats": [
+      "POST_S02_EXPLORATORY",
+      "CENTRAL_WAVELENGTH_NOT_FULL_SRF",
+      "S2B_SRF_PLACEHOLDER_IN_SOURCE_REPO",
+      "SAME_34_SITE_FOLDS_NOT_EXTERNAL_REPLICATION",
+      "NO_MHU_GEOMETRY",
+      "NO_WEI_BINARY"
+    ]
+  }
+}
