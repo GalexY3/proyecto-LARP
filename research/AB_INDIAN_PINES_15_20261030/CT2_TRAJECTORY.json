@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-30",
+  "kind": "AB_O4_CT2",
+  "ordinal_not_probability": true,
+  "context": "ONE_REAL_2D_AVIRIS_SOURCE;_NO_ORIGINAL_WEI;_NO_NEURAL_RETINA",
+  "trajectories": [
+    {
+      "track": "LARP_N400_MATH",
+      "points": [
+        {
+          "stage": "pre_IP01",
+          "score": 24
+        },
+        {
+          "stage": "IP01",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP02",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP03",
+          "score": 24,
+          "valid": false
+        },
+        {
+          "stage": "IP04",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP05",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP06",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP07",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP08",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP09",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP10",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP11",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP12",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP13",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP14",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP15",
+          "score": 24,
+          "valid": true
+        },
+        {
+          "stage": "IP16",
+          "score": 24,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "track": "LARP_N400_FUNCTIONAL",
+      "points": [
+        {
+          "stage": "pre_IP01",
+          "score": 18
+        },
+        {
+          "stage": "IP01",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP02",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP03",
+          "score": 18,
+          "valid": false
+        },
+        {
+          "stage": "IP04",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP05",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP06",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP07",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP08",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP09",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP10",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP11",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP12",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP13",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP14",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP15",
+          "score": 18,
+          "valid": true
+        },
+        {
+          "stage": "IP16",
+          "score": 18,
+          "valid": true
+        }
+      ]
+    }
+  ],
+  "reason": "Fifteen dependent exploratory technical/physical spatial endpoints do not constitute independent scientific/causal corroboration; Wei absent; changed rank by estimator and sampler budget; no CT2 inflation.",
+  "novelty": {
+    "N1": 0,
+    "N2": 0,
+    "N3": 0
+  },
+  "authorization": {
+    "source_pools": [
+      4,
+      2,
+      9
+    ],
+    "remaining_after_15": 0,
+    "invalid_not_counted": [
+      "IP03"
+    ],
+    "valid_replacement": "IP16"
+  }
+}
