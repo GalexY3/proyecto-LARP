@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-30",
+  "result_commit": "cc1c63fd341c2f64576f0fd88777960d0a2df852",
+  "code_freeze": "6b6def74ae22c5b8524dfd89b7126a88f76d7a1f",
+  "verification_checks": {
+    "frozen_code_blob": true,
+    "code_sha_pins": true,
+    "exact_replay": true,
+    "three_seeds": true,
+    "all_400_sites": true,
+    "cvt_better_than_random_all_seeds": true,
+    "lloyd_improved_all": true,
+    "only_quantization_not_optics": true,
+    "CT2_flat": true
+  },
+  "exact_same_source_replay": true,
+  "external_replication": false,
+  "adversarial_scope": "IP03 invalid, IP16 executed CVT competence on pixel grid only"
+}
