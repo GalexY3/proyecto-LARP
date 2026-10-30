@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "exact_json_replay": true,
+    "source_sha": true,
+    "original_W22_replayed": true,
+    "nonfinite_zero": true,
+    "clipped_finite": true,
+    "ranking_stable": true,
+    "patches_not_renamed": true
+  },
+  "replay_kind": "REFETCH_SAME_CODE_AND_DATA_NOT_EXTERNAL_REPLICATION",
+  "frozen_code_commit": "775d937193df53de6dac609949b24b4602c136df",
+  "outcome_commit": "2de6a3ade975dc1c59521d61d9729b86b3c6819c",
+  "compared_json_exact": true
+}
