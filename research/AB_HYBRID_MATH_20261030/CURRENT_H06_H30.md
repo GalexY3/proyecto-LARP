@@ -1,0 +1,8 @@
+# LARP MHU hybrid AB-R CURRENT · 2026-10-30
+
+- Grant: 30 free cycles. H01–H05: 5 valid formal questions already completed (see H01_H05 ledger). H06–H30: 25 A–J mathematical reviews and 25/25 finite/symbolic checks PASS with byte-identical local replay. **Total 30/30 addressed, remaining 0.**
+- Two instrument failures from first and second H06–H30 verifier runs are INVALID_RUN, not extra scientific cycles. Errors (1) NumPy negative integer exponent H18, (2) JSON serialization of numpy int64. Both repaired and SHA frozen before retry; erratas versioned. Complete source GitHub deposit occurred AFTER test due container transfer issue, but exact SHA256 was committed before outcomes. **O3 stronger full-code freeze was not achieved.**
+- Pre-outcome prospective H06–H30 prereg GitHub c24ae512e073237f75988037790913a2db056b0b. Final source SHA256 5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3, blob d948e32fe789741423bbea8a2ff6ca52f7473913, results SHA256 3d1993ea0605b67a740a869e10d0183166f6f184152e70902486a36b77a10c59.
+- New scientifically original N1=0, N2=0, N3=0. Some questions are dependent corollaries, none an externally peer-reviewed theorem. No neural model or independent physical dataset used in H06–H30. All finite checks are internal, not machine-checked proofs.
+- Conditional mathematical CT2 historical 24/100; not increased. R5 STOP on recycled identities, PIVOT proposal: functional multimodal routing versus graph expander / information submodularity / learned sparsity under same budgets. No authorization left; request new cycles only with meaningful adversarial benchmark.
+- All data and code preserved on research/ab-r-mhu-hybrids-20261030; no merge to main, no expensive CI. CLEAN_CLONE_NOT_VERIFIED.
