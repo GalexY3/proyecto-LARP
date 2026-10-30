@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-30",
+  "scale": "ordinal 1–100, not a probability",
+  "parent_trajectories_preserved": true,
+  "breaks": "New physical spectroscopy evidence class (D2 from N400 scientific outcome). No change to source CT2; calibration science not rated as its own 2/3 track.",
+  "points": [
+    {
+      "id": "BEGIN",
+      "math": 24,
+      "functional": 18,
+      "status": "baseline"
+    },
+    {
+      "id": "W03",
+      "math": 24,
+      "functional": 18,
+      "status": "INVALID_INITIAL_REPAIRED_SOURCE_AUDIT"
+    },
+    {
+      "id": "W04",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W05",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W06",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W07",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W08",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W09",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W10",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W11",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W12",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W13",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W14",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W15",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W16",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W17",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W18",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W19",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W20",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W21",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W22",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    },
+    {
+      "id": "W23",
+      "math": 24,
+      "functional": 18,
+      "status": "VALID_EXECUTED_EXPLORATORY"
+    }
+  ],
+  "reason": "No original Wei or independent spatial hyperspectral scenes; all other advances are technical or one lab's spectra"
+}
