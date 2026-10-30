@@ -1,0 +1,302 @@
+{
+  "nodes": [
+    {
+      "id": "LARP-VISION-MATH",
+      "type": "research_goal",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "Are MHU distributions universally better?",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "LARP-MULTIMODAL-COVARIANCE",
+      "type": "research_goal",
+      "mode": "AB-R",
+      "status": "proposed",
+      "name": "Under which signal covariances/costs can MHU help?",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M01",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "finite union HU",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M02",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "converse fails",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M03",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "independent vacancies",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M04",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "full species removal",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M05",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "spectral PSD union",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M06",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "relative phase",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M07",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "Lipschitz minimax",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M08",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "isotropic Gaussian tie",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M09",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "slope endpoint design",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M10",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "smooth bump indistinguishability",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M11",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "random-phase Fourier risk",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M12",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "multimodal covariance risk",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M13",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "five RGB filter rank",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M14",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "data processing Bayes",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M15",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "independent expert bases",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M16",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "inverse variance experts",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M17",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "spectral crossing",
+      "source": "INFORME_MHU_FORMAL.md"
+    },
+    {
+      "id": "M18",
+      "type": "theorem_question",
+      "mode": "AB-R",
+      "status": "answered",
+      "name": "adversarial covariance",
+      "source": "INFORME_MHU_FORMAL.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M01",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M02",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M03",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M04",
+      "relation": "branches_from"
+    },
+    {
+      "source": "M01",
+      "target": "M04",
+      "relation": "supports"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M05",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M06",
+      "relation": "branches_from"
+    },
+    {
+      "source": "M05",
+      "target": "M06",
+      "relation": "supports"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M07",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M08",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M09",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M10",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M11",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M12",
+      "relation": "branches_from"
+    },
+    {
+      "source": "M05",
+      "target": "M12",
+      "relation": "supports"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M13",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M14",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M15",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M16",
+      "relation": "branches_from"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M17",
+      "relation": "branches_from"
+    },
+    {
+      "source": "M11",
+      "target": "M17",
+      "relation": "supports"
+    },
+    {
+      "source": "LARP-VISION-MATH",
+      "target": "M18",
+      "relation": "branches_from"
+    },
+    {
+      "source": "M12",
+      "target": "M18",
+      "relation": "supports"
+    },
+    {
+      "source": "M11",
+      "target": "LARP-MULTIMODAL-COVARIANCE",
+      "relation": "supports"
+    },
+    {
+      "source": "M12",
+      "target": "LARP-MULTIMODAL-COVARIANCE",
+      "relation": "supports"
+    },
+    {
+      "source": "M16",
+      "target": "LARP-MULTIMODAL-COVARIANCE",
+      "relation": "supports"
+    },
+    {
+      "source": "M18",
+      "target": "LARP-MULTIMODAL-COVARIANCE",
+      "relation": "supports"
+    }
+  ],
+  "version": "2026-10-29"
+}

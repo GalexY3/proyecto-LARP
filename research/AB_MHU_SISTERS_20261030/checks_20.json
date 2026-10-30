@@ -1,0 +1,222 @@
+{
+  "schema": "MHU-SISTERS20",
+  "check_count": 20,
+  "checks": [
+    {
+      "id": "S01",
+      "claim": "v2 inverse-k2 reweights spectral modes; LOCAL omits spectral",
+      "pass_check": true,
+      "evidence": {
+        "v1": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "v2": [
+          0.7024390243902439,
+          0.17560975609756097,
+          0.07804878048780486,
+          0.04390243902439024
+        ]
+      }
+    },
+    {
+      "id": "S02",
+      "claim": "single-frequency three-phasor minimum and maximum",
+      "pass_check": true,
+      "evidence": {
+        "min_power": 1.60237371373018e-31,
+        "max_power": 9
+      }
+    },
+    {
+      "id": "S03",
+      "claim": "all pairwise sum zero implies all amplitudes zero",
+      "pass_check": true,
+      "evidence": "{a: 0, b: 0, c: 0}"
+    },
+    {
+      "id": "S04",
+      "claim": "uniform type translation averages nonzero-mode cross to zero",
+      "pass_check": true,
+      "evidence": {
+        "mean_phase_modulus": 5.658387411740342e-17
+      }
+    },
+    {
+      "id": "S05",
+      "claim": "avian counts satisfy polygon feasibility, equal normalized type amplitudes",
+      "pass_check": true,
+      "evidence": {
+        "fractions": [
+          0.4075,
+          0.2125,
+          0.17,
+          0.125,
+          0.085
+        ],
+        "max_length": 0.6383572667401852,
+        "sum_other": 1.5183887707619492
+      }
+    },
+    {
+      "id": "S06",
+      "claim": "equal-count interlaced grid achieves class+union circle cover minima",
+      "pass_check": true,
+      "evidence": {
+        "type_radius": 0.1,
+        "union_radius": 0.03333333333333333
+      }
+    },
+    {
+      "id": "S07",
+      "claim": "unequal 1+2 counts obstruct simultaneous exact two-type and union optimality",
+      "pass_check": true,
+      "evidence": {
+        "union_N": 3,
+        "class_n": 2,
+        "ideal_spacing": 0.5
+      }
+    },
+    {
+      "id": "S08",
+      "claim": "1D Voronoi gap squared-error integral equals g^3/12",
+      "pass_check": true,
+      "evidence": "g**3/12"
+    },
+    {
+      "id": "S09",
+      "claim": "low-k finite stealth may coexist with worse max gap",
+      "pass_check": true,
+      "evidence": {
+        "max_lowk_power": 2.128152588547896e-32,
+        "radius_regular": 0.0625,
+        "radius_alternate": 0.07950000000000002
+      }
+    },
+    {
+      "id": "S10",
+      "claim": "IID empty region probability exact binomial",
+      "pass_check": true,
+      "evidence": {
+        "empty_prob": "43046721/100000000"
+      }
+    },
+    {
+      "id": "S11",
+      "claim": "IID complex Fourier amplitude expected power=1/n",
+      "pass_check": true,
+      "evidence": {
+        "n": 7,
+        "E_power": "1/7",
+        "E_S": 1.0
+      }
+    },
+    {
+      "id": "S12",
+      "claim": "lattice zero low modes, aliases at multiples of n",
+      "pass_check": true,
+      "evidence": {
+        "p1to4": [
+          3.8518598887744724e-33,
+          3.7493994566546427e-33,
+          1.9259299443872359e-32,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "S13",
+      "claim": "inverse square weights match target Fourier energy profile if such a profile is assumed",
+      "pass_check": true,
+      "evidence": {
+        "normalized_weights": [
+          0.7024390243902439,
+          0.17560975609756097,
+          0.07804878048780486,
+          0.04390243902439024
+        ]
+      }
+    },
+    {
+      "id": "S14",
+      "claim": "random iid jitter damped power plus white floor",
+      "pass_check": true,
+      "evidence": {
+        "analytical": 0.23430237011767163,
+        "enumerated": 0.23430237011767174
+      }
+    },
+    {
+      "id": "S15",
+      "claim": "same coordinates different adjacency different graph spectral gap",
+      "pass_check": true,
+      "evidence": {
+        "path_gap": 0.585786437626905,
+        "cycle_gap": 2.0,
+        "positions": [
+          0.0,
+          0.25,
+          0.5,
+          0.75
+        ]
+      }
+    },
+    {
+      "id": "S16",
+      "claim": "heterotypic edge null under fixed-quotas random labeling",
+      "pass_check": true,
+      "evidence": {
+        "N": 400,
+        "counts": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ],
+        "expected_heterotypic_edge_fraction": 0.7388847117794486
+      }
+    },
+    {
+      "id": "S17",
+      "claim": "random labels leave positive subtype spectral floor even for stealthy union",
+      "pass_check": true,
+      "evidence": {
+        "exact": 0.6666666666666669,
+        "formula": 0.6666666666666666
+      }
+    },
+    {
+      "id": "S18",
+      "claim": "global weighted optimum cannot improve local optimum L but weakly improves S",
+      "pass_check": true,
+      "evidence": {
+        "LOCAL_opt": 0,
+        "joint_opt": 1,
+        "L_joint": 1.0,
+        "S_joint": 1.0
+      }
+    },
+    {
+      "id": "S19",
+      "claim": "unweighted 5-type mean upweights the smallest type relative to largest",
+      "pass_check": true,
+      "evidence": {
+        "relative_per_particle_weight_small_over_large": 4.7941176470588225
+      }
+    },
+    {
+      "id": "S20",
+      "claim": "low-k squared-amplitude sensitivity bounded by frequency×point displacement",
+      "pass_check": true,
+      "evidence": {
+        "amplitude_change": 0.012437869787257411,
+        "amplitude_bound": 0.01884955592153876,
+        "power_change": 0.016114527814050095,
+        "power_bound": 0.03805441760151673
+      }
+    }
+  ]
+}

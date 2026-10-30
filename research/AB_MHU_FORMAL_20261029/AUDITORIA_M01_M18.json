@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-29",
+  "type": "sanity_checks_not_proofs",
+  "python": "3.13.5",
+  "tests": {
+    "M01": {
+      "verified": true,
+      "evidence": "125 random PSD covariance tests of Var(sum)<=sum(sd)^2; mathematical proof in report"
+    },
+    "M02": {
+      "verified": true,
+      "evidence": "Binomial mark noise p(1-p)n grows with count; union fixed"
+    },
+    "M03": {
+      "verified": true,
+      "evidence": "Thinning variance formula; low-k floor 1-p follows for p∈(0,1)"
+    },
+    "M04": {
+      "verified": true,
+      "evidence": "Subset variance bound for PSD covariance; corollary of M01, do not assign independent novelty"
+    },
+    "M05": {
+      "verified": true,
+      "evidence": "Hermitian PSD spectral matrix quadratic form and spectral Cauchy upper bound"
+    },
+    "M06": {
+      "verified": true,
+      "evidence": "Individual Fourier magnitude identical, joint can cancel at selected mode"
+    },
+    "M07": {
+      "verified": true,
+      "evidence": "Midpoint grid covering radius 1/(2n), universal measure lower bound"
+    },
+    "M08": {
+      "verified": true,
+      "evidence": "Posterior trace for isotropic linear noiseless measurements = d-n"
+    },
+    "M09": {
+      "verified": true,
+      "evidence": {
+        "grid_information": 0.3125,
+        "endpoint_information": 1.0,
+        "ratio": 3.2
+      }
+    },
+    "M10": {
+      "verified": true,
+      "evidence": {
+        "poly": "(x - 4/5)**2*(x - 3/5)**2*(x - 1/5)**2",
+        "zero_at_samples": true
+      }
+    },
+    "M11": {
+      "verified": true,
+      "evidence": "Sampling Fourier risk depends on signal power at k; exact formula given in report"
+    },
+    "M12": {
+      "verified": true,
+      "evidence": "Risk a*Ca differs 0,2,4 for same geometry depending on channel correlation"
+    },
+    "M13": {
+      "verified": true,
+      "evidence": {
+        "matrix_rank": 3,
+        "n_filters": 5
+      }
+    },
+    "M14": {
+      "verified": true,
+      "evidence": "Finite example binary X=Y, T(X)=0, Bayes 0-1 loss 0 on X vs 0.5 on T; theorem in report"
+    },
+    "M15": {
+      "verified": true,
+      "evidence": {
+        "unaligned_average": 0,
+        "independent_output": 3
+      }
+    },
+    "M16": {
+      "verified": true,
+      "evidence": {
+        "weights": [
+          0.8,
+          0.2
+        ],
+        "optimal_var": 0.8000000000000002,
+        "equal_var": 1.25
+      }
+    },
+    "M17": {
+      "verified": true,
+      "evidence": {
+        "P_k1": 3.749399456654644e-33,
+        "Q_k1": 0.5000000000000001,
+        "P_k2": 1.0,
+        "Q_k2": 3.749399456654644e-33
+      }
+    },
+    "M18": {
+      "verified": true,
+      "evidence": {
+        "supremum": 23.509929615400416,
+        "attained": 23.509929615400416
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-29",
+  "parent_branch": "research/ab-vision-mhu-20261029",
+  "branch": "research/ab-mhu-formal-20261029",
+  "prereg_commit": "1c27c5d2679f876cbda60987b1152246a72a75c9",
+  "result_commit": "35d3340eb6245ca61f148d99448649231f64bd6d",
+  "new_original_discoveries": 0,
+  "files": [
+    {
+      "file": "AUDITORIA_M01_M18.json",
+      "bytes": 2783,
+      "sha256": "8be1a8a4a39c2a631cb06ebe664e7a7d42f39380355ef38493459fb504a4de6d"
+    },
+    {
+      "file": "CT2_ESCALA_COMPLETA.png",
+      "bytes": 67577,
+      "sha256": "8caae5342a86c0869f7af910362afdd68c5dd1fd59651987d335127261a5731b"
+    },
+    {
+      "file": "CT2_TRAYECTORIAS.json",
+      "bytes": 679,
+      "sha256": "1c74613d372b350835c56bc42e68bf952cf22706f4604086aeaad8a7e705a97d"
+    },
+    {
+      "file": "CT2_VISTA_AMPLIADA.png",
+      "bytes": 74184,
+      "sha256": "57aca41659204d295d933886ec85e498fe55b0eaedd50960e53be341f2a11636"
+    },
+    {
+      "file": "GRAFO_O7.json",
+      "bytes": 6829,
+      "sha256": "34a76f0301074d4ce33db62dee3a1054845829c21d4152b282f973267222a8a5"
+    },
+    {
+      "file": "INFORME_MHU_FORMAL.md",
+      "bytes": 23416,
+      "sha256": "0b7b617a04e96813f6567cb0d8d4ef3f93197a6daff19bdc8f7a130278bc148a"
+    },
+    {
+      "file": "LEDGER_M01_M18.json",
+      "bytes": 40987,
+      "sha256": "1d539afe285eab0823651f4f0992157a1fa9ea8d54bb3eced88b1d167b2b3b12"
+    },
+    {
+      "file": "auditoria_formal.py",
+      "bytes": 6283,
+      "sha256": "3b95aa680af636ac60027f8f09ebb4da9cc484d7ba8cce80239e8f24260fbee0"
+    },
+    {
+      "file": "build_ledger.py",
+      "bytes": 6732,
+      "sha256": "f1bb690b7d0e7a951891742e70bf14b16623d23f048c746b795623a9d7a45271"
+    },
+    {
+      "file": "plot_ct2.py",
+      "bytes": 1425,
+      "sha256": "2aab13881d8dc4a45d6592a603ed1a0d608115f30eeea4c9d78cd5b236fd0339"
+    }
+  ]
+}

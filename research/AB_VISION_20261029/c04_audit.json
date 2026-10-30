@@ -1,0 +1,360 @@
+{
+  "metrics": {
+    "grid": {
+      "clean": 0.9725,
+      "noise13": 0.97,
+      "occlusion6": 0.96
+    },
+    "sobol": {
+      "clean": 0.9716666666666667,
+      "noise13": 0.97,
+      "occlusion6": 0.9583333333333335
+    },
+    "poisson_disk": {
+      "clean": 0.9725,
+      "noise13": 0.9675,
+      "occlusion6": 0.9633333333333334
+    },
+    "spectral_joint": {
+      "clean": 0.9716666666666667,
+      "noise13": 0.9716666666666667,
+      "occlusion6": 0.9566666666666666
+    },
+    "spectral_sub": {
+      "clean": 0.9716666666666667,
+      "noise13": 0.9716666666666666,
+      "occlusion6": 0.9583333333333335
+    },
+    "joint_phase_broken": {
+      "clean": 0.97,
+      "noise13": 0.9658333333333333,
+      "occlusion6": 0.9575
+    },
+    "random": {
+      "clean": 0.9725,
+      "noise13": 0.9716666666666666,
+      "occlusion6": 0.96
+    },
+    "supervised_kbest": {
+      "clean": 0.935,
+      "noise13": 0.9325,
+      "occlusion6": 0.8975
+    },
+    "full_pixels": {
+      "clean": 0.9725,
+      "noise13": 0.9725,
+      "occlusion6": 0.9575
+    }
+  },
+  "contrasts": [
+    {
+      "condition": "clean",
+      "opponent": "grid",
+      "mhu_minus_rival_pp": -0.08333333333333331,
+      "bootstrap_95_pp": [
+        -0.24999999999999997,
+        0.0
+      ],
+      "per_image_positive": 0,
+      "per_image_negative": 1,
+      "per_image_equal": 199
+    },
+    {
+      "condition": "clean",
+      "opponent": "poisson_disk",
+      "mhu_minus_rival_pp": -0.08333333333333331,
+      "bootstrap_95_pp": [
+        -0.24999999999999997,
+        0.0
+      ],
+      "per_image_positive": 0,
+      "per_image_negative": 1,
+      "per_image_equal": 199
+    },
+    {
+      "condition": "clean",
+      "opponent": "sobol",
+      "mhu_minus_rival_pp": 0.0,
+      "bootstrap_95_pp": [
+        -0.24999999999999997,
+        0.24999999999999997
+      ],
+      "per_image_positive": 1,
+      "per_image_negative": 1,
+      "per_image_equal": 198
+    },
+    {
+      "condition": "clean",
+      "opponent": "spectral_sub",
+      "mhu_minus_rival_pp": 0.0,
+      "bootstrap_95_pp": [
+        -0.24999999999999997,
+        0.24999999999999997
+      ],
+      "per_image_positive": 1,
+      "per_image_negative": 1,
+      "per_image_equal": 198
+    },
+    {
+      "condition": "clean",
+      "opponent": "joint_phase_broken",
+      "mhu_minus_rival_pp": 0.16666666666666666,
+      "bootstrap_95_pp": [
+        0.0,
+        0.4166666666666667
+      ],
+      "per_image_positive": 2,
+      "per_image_negative": 0,
+      "per_image_equal": 198
+    },
+    {
+      "condition": "clean",
+      "opponent": "random",
+      "mhu_minus_rival_pp": -0.08333333333333331,
+      "bootstrap_95_pp": [
+        -0.24999999999999997,
+        0.0
+      ],
+      "per_image_positive": 0,
+      "per_image_negative": 1,
+      "per_image_equal": 199
+    },
+    {
+      "condition": "clean",
+      "opponent": "supervised_kbest",
+      "mhu_minus_rival_pp": 3.6666666666666665,
+      "bootstrap_95_pp": [
+        1.3333333333333335,
+        6.335416666666637
+      ],
+      "per_image_positive": 9,
+      "per_image_negative": 1,
+      "per_image_equal": 190
+    },
+    {
+      "condition": "clean",
+      "opponent": "full_pixels",
+      "mhu_minus_rival_pp": -0.08333333333333331,
+      "bootstrap_95_pp": [
+        -0.24999999999999997,
+        0.0
+      ],
+      "per_image_positive": 0,
+      "per_image_negative": 1,
+      "per_image_equal": 199
+    },
+    {
+      "condition": "noise13",
+      "opponent": "grid",
+      "mhu_minus_rival_pp": 0.16666666666666669,
+      "bootstrap_95_pp": [
+        -0.33333333333333326,
+        0.8333333333333334
+      ],
+      "per_image_positive": 2,
+      "per_image_negative": 2,
+      "per_image_equal": 196
+    },
+    {
+      "condition": "noise13",
+      "opponent": "poisson_disk",
+      "mhu_minus_rival_pp": 0.4166666666666667,
+      "bootstrap_95_pp": [
+        -0.08333333333333333,
+        1.0
+      ],
+      "per_image_positive": 4,
+      "per_image_negative": 1,
+      "per_image_equal": 195
+    },
+    {
+      "condition": "noise13",
+      "opponent": "sobol",
+      "mhu_minus_rival_pp": 0.16666666666666669,
+      "bootstrap_95_pp": [
+        0.0,
+        0.5
+      ],
+      "per_image_positive": 1,
+      "per_image_negative": 0,
+      "per_image_equal": 199
+    },
+    {
+      "condition": "noise13",
+      "opponent": "spectral_sub",
+      "mhu_minus_rival_pp": 2.7755575615628914e-17,
+      "bootstrap_95_pp": [
+        -0.33333333333333337,
+        0.41666666666666674
+      ],
+      "per_image_positive": 1,
+      "per_image_negative": 2,
+      "per_image_equal": 197
+    },
+    {
+      "condition": "noise13",
+      "opponent": "joint_phase_broken",
+      "mhu_minus_rival_pp": 0.5833333333333334,
+      "bootstrap_95_pp": [
+        -0.16666666666666663,
+        1.5833333333333335
+      ],
+      "per_image_positive": 3,
+      "per_image_negative": 2,
+      "per_image_equal": 195
+    },
+    {
+      "condition": "noise13",
+      "opponent": "random",
+      "mhu_minus_rival_pp": 5.551115123125783e-17,
+      "bootstrap_95_pp": [
+        -0.5,
+        0.5833333333333335
+      ],
+      "per_image_positive": 2,
+      "per_image_negative": 4,
+      "per_image_equal": 194
+    },
+    {
+      "condition": "noise13",
+      "opponent": "supervised_kbest",
+      "mhu_minus_rival_pp": 3.916666666666667,
+      "bootstrap_95_pp": [
+        1.0833333333333333,
+        6.916666666666668
+      ],
+      "per_image_positive": 11,
+      "per_image_negative": 2,
+      "per_image_equal": 187
+    },
+    {
+      "condition": "noise13",
+      "opponent": "full_pixels",
+      "mhu_minus_rival_pp": -0.08333333333333333,
+      "bootstrap_95_pp": [
+        -0.4166666666666667,
+        0.16666666666666669
+      ],
+      "per_image_positive": 1,
+      "per_image_negative": 2,
+      "per_image_equal": 197
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "grid",
+      "mhu_minus_rival_pp": -0.33333333333333337,
+      "bootstrap_95_pp": [
+        -1.5833333333333335,
+        0.5833333333333333
+      ],
+      "per_image_positive": 3,
+      "per_image_negative": 2,
+      "per_image_equal": 195
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "poisson_disk",
+      "mhu_minus_rival_pp": -0.6666666666666667,
+      "bootstrap_95_pp": [
+        -1.3333333333333333,
+        -0.16666666666666663
+      ],
+      "per_image_positive": 0,
+      "per_image_negative": 5,
+      "per_image_equal": 195
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "sobol",
+      "mhu_minus_rival_pp": -0.16666666666666674,
+      "bootstrap_95_pp": [
+        -0.6666666666666667,
+        0.24999999999999997
+      ],
+      "per_image_positive": 2,
+      "per_image_negative": 3,
+      "per_image_equal": 195
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "spectral_sub",
+      "mhu_minus_rival_pp": -0.16666666666666669,
+      "bootstrap_95_pp": [
+        -0.5833333333333335,
+        0.16666666666666663
+      ],
+      "per_image_positive": 1,
+      "per_image_negative": 2,
+      "per_image_equal": 197
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "joint_phase_broken",
+      "mhu_minus_rival_pp": -0.08333333333333337,
+      "bootstrap_95_pp": [
+        -0.6666666666666667,
+        0.49999999999999994
+      ],
+      "per_image_positive": 2,
+      "per_image_negative": 2,
+      "per_image_equal": 196
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "random",
+      "mhu_minus_rival_pp": -0.3333333333333334,
+      "bootstrap_95_pp": [
+        -1.5000000000000002,
+        0.6666666666666665
+      ],
+      "per_image_positive": 6,
+      "per_image_negative": 4,
+      "per_image_equal": 190
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "supervised_kbest",
+      "mhu_minus_rival_pp": 5.916666666666666,
+      "bootstrap_95_pp": [
+        2.75,
+        9.5
+      ],
+      "per_image_positive": 18,
+      "per_image_negative": 3,
+      "per_image_equal": 179
+    },
+    {
+      "condition": "occlusion6",
+      "opponent": "full_pixels",
+      "mhu_minus_rival_pp": -0.08333333333333336,
+      "bootstrap_95_pp": [
+        -0.5833333333333333,
+        0.33333333333333326
+      ],
+      "per_image_positive": 2,
+      "per_image_negative": 2,
+      "per_image_equal": 196
+    }
+  ],
+  "n_independent_images_upper_bound": 200,
+  "observations": 32400,
+  "geometric_seeds": [
+    4101,
+    4109,
+    4127
+  ],
+  "folds": [
+    13,
+    29
+  ],
+  "bootstrap_reps": 8000,
+  "notes": [
+    "CI descriptive and unadjusted for multiple contrasts",
+    "LFW 100 faces and 100 nonfaces from same wider source; nonindependence possible",
+    "The 160 bilinear samples may involve up to four nearby pixels each; not 160 original pixels",
+    "No independent external replication or geometric MHU certification",
+    "Grid already near accuracy ceiling; classification insensitive to sampling placement",
+    "ANOVA KBest is not a powerful modern learned sparse sampling rival",
+    "All methods use identical SVC except full_pixels (625 original pixels), supervised_kbest (training label-selected 160 exact original pixels)"
+  ]
+}

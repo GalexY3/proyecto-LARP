@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "type": "ordinal_subjective_not_probability",
+  "branches": {
+    "vision_legacy": [
+      {
+        "step": "Inicio C01",
+        "ct2": 22
+      },
+      {
+        "step": "Fin C01",
+        "ct2": 17
+      },
+      {
+        "step": "Fin C02",
+        "ct2": 13
+      },
+      {
+        "step": "Fin C04",
+        "ct2": 11
+      }
+    ],
+    "universal_MHU": [
+      {
+        "step": "Math Cierre",
+        "ct2": 1
+      }
+    ],
+    "conditional_multimodal": [
+      {
+        "step": "Math Inicio",
+        "ct2": 24
+      }
+    ]
+  },
+  "note": "New branches after D2 pivot are independent judgments, NOT a gain over 11 in same trajectory."
+}

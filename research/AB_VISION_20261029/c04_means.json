@@ -1,0 +1,164 @@
+[
+  {
+    "method": "grid",
+    "condition": "clean",
+    "accuracy": 0.9725,
+    "num_predictions": 1200
+  },
+  {
+    "method": "grid",
+    "condition": "noise13",
+    "accuracy": 0.97,
+    "num_predictions": 1200
+  },
+  {
+    "method": "grid",
+    "condition": "occlusion6",
+    "accuracy": 0.96,
+    "num_predictions": 1200
+  },
+  {
+    "method": "sobol",
+    "condition": "clean",
+    "accuracy": 0.9716666666666667,
+    "num_predictions": 1200
+  },
+  {
+    "method": "sobol",
+    "condition": "noise13",
+    "accuracy": 0.97,
+    "num_predictions": 1200
+  },
+  {
+    "method": "sobol",
+    "condition": "occlusion6",
+    "accuracy": 0.9583333333333334,
+    "num_predictions": 1200
+  },
+  {
+    "method": "poisson_disk",
+    "condition": "clean",
+    "accuracy": 0.9725,
+    "num_predictions": 1200
+  },
+  {
+    "method": "poisson_disk",
+    "condition": "noise13",
+    "accuracy": 0.9675,
+    "num_predictions": 1200
+  },
+  {
+    "method": "poisson_disk",
+    "condition": "occlusion6",
+    "accuracy": 0.9633333333333334,
+    "num_predictions": 1200
+  },
+  {
+    "method": "spectral_joint",
+    "condition": "clean",
+    "accuracy": 0.9716666666666667,
+    "num_predictions": 1200
+  },
+  {
+    "method": "spectral_joint",
+    "condition": "noise13",
+    "accuracy": 0.9716666666666667,
+    "num_predictions": 1200
+  },
+  {
+    "method": "spectral_joint",
+    "condition": "occlusion6",
+    "accuracy": 0.9566666666666667,
+    "num_predictions": 1200
+  },
+  {
+    "method": "spectral_sub",
+    "condition": "clean",
+    "accuracy": 0.9716666666666667,
+    "num_predictions": 1200
+  },
+  {
+    "method": "spectral_sub",
+    "condition": "noise13",
+    "accuracy": 0.9716666666666667,
+    "num_predictions": 1200
+  },
+  {
+    "method": "spectral_sub",
+    "condition": "occlusion6",
+    "accuracy": 0.9583333333333334,
+    "num_predictions": 1200
+  },
+  {
+    "method": "joint_phase_broken",
+    "condition": "clean",
+    "accuracy": 0.97,
+    "num_predictions": 1200
+  },
+  {
+    "method": "joint_phase_broken",
+    "condition": "noise13",
+    "accuracy": 0.9658333333333333,
+    "num_predictions": 1200
+  },
+  {
+    "method": "joint_phase_broken",
+    "condition": "occlusion6",
+    "accuracy": 0.9575,
+    "num_predictions": 1200
+  },
+  {
+    "method": "random",
+    "condition": "clean",
+    "accuracy": 0.9725,
+    "num_predictions": 1200
+  },
+  {
+    "method": "random",
+    "condition": "noise13",
+    "accuracy": 0.9716666666666667,
+    "num_predictions": 1200
+  },
+  {
+    "method": "random",
+    "condition": "occlusion6",
+    "accuracy": 0.96,
+    "num_predictions": 1200
+  },
+  {
+    "method": "supervised_kbest",
+    "condition": "clean",
+    "accuracy": 0.935,
+    "num_predictions": 1200
+  },
+  {
+    "method": "supervised_kbest",
+    "condition": "noise13",
+    "accuracy": 0.9325,
+    "num_predictions": 1200
+  },
+  {
+    "method": "supervised_kbest",
+    "condition": "occlusion6",
+    "accuracy": 0.8975,
+    "num_predictions": 1200
+  },
+  {
+    "method": "full_pixels",
+    "condition": "clean",
+    "accuracy": 0.9725,
+    "num_predictions": 1200
+  },
+  {
+    "method": "full_pixels",
+    "condition": "noise13",
+    "accuracy": 0.9725,
+    "num_predictions": 1200
+  },
+  {
+    "method": "full_pixels",
+    "condition": "occlusion6",
+    "accuracy": 0.9575,
+    "num_predictions": 1200
+  }
+]

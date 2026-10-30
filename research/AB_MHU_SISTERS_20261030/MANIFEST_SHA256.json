@@ -1,0 +1,84 @@
+{
+  "campaign": "LARP_MHU_SISTERS_20261030",
+  "date": "2026-10-30",
+  "precommit": "f2c86270196df6eda87533953cc0169df81ec5a0",
+  "frozen_source_commit": "e4a3605e0fad53418d7ca08f187c4d3ce1c440ce",
+  "science": "mathematical/deductive, not original discovery",
+  "files": [
+    {
+      "path": "ANEXO_MODELOS_HISTORICOS.md",
+      "size": 7188,
+      "sha256": "8f518b9c06defd7c2eb5b01652fb9b2847cc90a2e636408aeed1b1a77a9262e1"
+    },
+    {
+      "path": "CT2.json",
+      "size": 947,
+      "sha256": "2002940e9301561f377e1cb40309cce10bd94ab1fd0664b5133d4a58dd6990cf"
+    },
+    {
+      "path": "CT2_ESCALA_0_100.png",
+      "size": 56510,
+      "sha256": "4e071fef499fab981f54c1a32f792cdeee0827fcc3e575750c23bae075c5d535"
+    },
+    {
+      "path": "CT2_VISTA_AMPLIADA.png",
+      "size": 61629,
+      "sha256": "8add6328cb59417860f4924d85480769fd61d1217c9d4ba404dd819917941570"
+    },
+    {
+      "path": "GRAFO_O7.json",
+      "size": 8596,
+      "sha256": "ea5adb827e79444ab26643ec26e68b60b9ec4e255a2b1fcf2e33305f65a82053"
+    },
+    {
+      "path": "INFORME_S01_S20.md",
+      "size": 23118,
+      "sha256": "0620a55133133c31a17b6fcf7028258998f3d2884ff032862ccffc4c317827ca"
+    },
+    {
+      "path": "LEDGER_S01_S20.json",
+      "size": 84372,
+      "sha256": "bb70d3ba1681616754b64af80f9fd0d329c5f2fbf4d1402582a36125e9d1ee58"
+    },
+    {
+      "path": "PRIORS_DELTA.md",
+      "size": 2166,
+      "sha256": "23a6696d39a54dca84b116555948488c26b4f33a00f556527227c84efe294467"
+    },
+    {
+      "path": "S09_CONTRAEJEMPLO.png",
+      "size": 33956,
+      "sha256": "6b95b9e2217d5cacb349aa124473e7a8a09279b3daa3de4d57821582491b0dca"
+    },
+    {
+      "path": "SOURCES.json",
+      "size": 688,
+      "sha256": "db94dc39f21c4de0d4336d3e620721ba019cfe826dea585afc6574905c459e00"
+    },
+    {
+      "path": "STATE.md",
+      "size": 3464,
+      "sha256": "22f0c7df998882e3a12812adb9eec6595d8e949fde5b59b788d9a6de5269ae87"
+    },
+    {
+      "path": "audit_20.py",
+      "size": 7629,
+      "sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+    },
+    {
+      "path": "build_ledger.py",
+      "size": 9013,
+      "sha256": "06344b43e343c817c4be27ccc0eec8665e8d958f7f42d57e5a1d697183fa5b5d"
+    },
+    {
+      "path": "checks_20.json",
+      "size": 5518,
+      "sha256": "87a9e4d1fe9b3964aa13156376e3f47e9b0ef81c16c7a959392c1a4caa5e689e"
+    },
+    {
+      "path": "plots.py",
+      "size": 1470,
+      "sha256": "c3bf5f32904cc8e76415b2e6fc043bf838a56672f4ada501a489584fdd8de14e"
+    }
+  ]
+}
