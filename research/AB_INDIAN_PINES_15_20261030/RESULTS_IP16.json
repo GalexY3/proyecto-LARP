@@ -1,0 +1,199 @@
+{
+  "status": "EXECUTED_POST_EXPOSURE_FROZEN_BASELINE_QA_IP16",
+  "prereg_commit": "824dc7bdeacf6c7837336c7dd8e22bbc04422b3e",
+  "code_freeze_commit": "6b6def74ae22c5b8524dfd89b7126a88f76d7a1f",
+  "source_git_blobs": [
+    {
+      "key": "MHU1101",
+      "git_sha": "18f4567d4c72aa7bdd9e2de6cb4f7f5a007df8ad"
+    },
+    {
+      "key": "MHU1102",
+      "git_sha": "5642a47b34d1ac3ae840c06a989855db2b5dc6d9"
+    },
+    {
+      "key": "MHU1103",
+      "git_sha": "5e2d9ba161bba318ed219c5116e383d443656453"
+    },
+    {
+      "key": "LOCAL1101",
+      "git_sha": "de57ad4d700303aabb495affa08ecd986371a5f1"
+    },
+    {
+      "key": "LOCAL1102",
+      "git_sha": "05febd925bb0e61a94d4a5d9230d34e0dd3af24b"
+    },
+    {
+      "key": "LOCAL1103",
+      "git_sha": "931c4f73495121fc7034ae6ebdf6b2218ecdcccc"
+    }
+  ],
+  "code_blob": "8845356624e261b0b2c055c68a9d4a74d52000b5",
+  "results": {
+    "protocol": "IP16_CVT_LLOYD_PIXEL_COMPETENCE",
+    "source": "145x145 lattice / original six exported MHU+LOCAL N400",
+    "original_geometry_sha_pinned": {
+      "MHU": [
+        "18f4567d4c72aa7bdd9e2de6cb4f7f5a007df8ad",
+        "5642a47b34d1ac3ae840c06a989855db2b5dc6d9",
+        "5e2d9ba161bba318ed219c5116e383d443656453"
+      ],
+      "LOCAL": [
+        "de57ad4d700303aabb495affa08ecd986371a5f1",
+        "05febd925bb0e61a94d4a5d9230d34e0dd3af24b",
+        "931c4f73495121fc7034ae6ebdf6b2218ecdcccc"
+      ]
+    },
+    "iterations": 8,
+    "source_scene": "AVIRIS_IndianPines grid dimensions",
+    "result_by_seed": [
+      {
+        "seed": 1101,
+        "initial": {
+          "mean_min_squared_pixel_distance": 9.385885109120752,
+          "p95_min_distance_pixels": 4.612382427140422,
+          "max_min_distance_pixels": 6.889209051637454
+        },
+        "after_lloyd_continuous": {
+          "mean_min_squared_pixel_distance": 8.829226086113934,
+          "p95_min_distance_pixels": 4.312999182710269,
+          "max_min_distance_pixels": 5.395437335292603
+        },
+        "after_lloyd_snapped": {
+          "mean_min_squared_pixel_distance": 8.785445897740784,
+          "p95_min_distance_pixels": 4.242640687119285,
+          "max_min_distance_pixels": 5
+        },
+        "random": {
+          "mean_min_squared_pixel_distance": 16.89346016646849,
+          "p95_min_distance_pixels": 7.211102550927978,
+          "max_min_distance_pixels": 13.45362404707371
+        },
+        "mhu": {
+          "mean_min_squared_pixel_distance": 10.719048751486326,
+          "p95_min_distance_pixels": 5.0990195135927845,
+          "max_min_distance_pixels": 10.770329614269007
+        },
+        "local": {
+          "mean_min_squared_pixel_distance": 10.689797859690843,
+          "p95_min_distance_pixels": 5.0990195135927845,
+          "max_min_distance_pixels": 12.083045973594572
+        },
+        "final_cvt_over_random_energy": 0.520050114728944,
+        "cvt_final_over_initial": 0.9360274279517348,
+        "cvt_continuous_over_initial": 0.9406918988955146
+      },
+      {
+        "seed": 1102,
+        "initial": {
+          "mean_min_squared_pixel_distance": 9.340208930487263,
+          "p95_min_distance_pixels": 4.594156953787363,
+          "max_min_distance_pixels": 6.325349025547474
+        },
+        "after_lloyd_continuous": {
+          "mean_min_squared_pixel_distance": 8.808746100038046,
+          "p95_min_distance_pixels": 4.304648650006172,
+          "max_min_distance_pixels": 5.315072906367325
+        },
+        "after_lloyd_snapped": {
+          "mean_min_squared_pixel_distance": 8.783923900118905,
+          "p95_min_distance_pixels": 4.242640687119285,
+          "max_min_distance_pixels": 5
+        },
+        "random": {
+          "mean_min_squared_pixel_distance": 16.210035671819263,
+          "p95_min_distance_pixels": 7.0710678118654755,
+          "max_min_distance_pixels": 13.416407864998739
+        },
+        "mhu": {
+          "mean_min_squared_pixel_distance": 10.664209274673007,
+          "p95_min_distance_pixels": 5.0990195135927845,
+          "max_min_distance_pixels": 9.433981132056603
+        },
+        "local": {
+          "mean_min_squared_pixel_distance": 10.85536266349584,
+          "p95_min_distance_pixels": 5.0990195135927845,
+          "max_min_distance_pixels": 9.848857801796104
+        },
+        "final_cvt_over_random_energy": 0.5418818365334961,
+        "cvt_final_over_initial": 0.9404419071876867,
+        "cvt_continuous_over_initial": 0.9430994708571802
+      },
+      {
+        "seed": 1103,
+        "initial": {
+          "mean_min_squared_pixel_distance": 9.360581440829563,
+          "p95_min_distance_pixels": 4.583179698561985,
+          "max_min_distance_pixels": 6.060792980755806
+        },
+        "after_lloyd_continuous": {
+          "mean_min_squared_pixel_distance": 8.811946007048768,
+          "p95_min_distance_pixels": 4.304743951904909,
+          "max_min_distance_pixels": 5.395437335292592
+        },
+        "after_lloyd_snapped": {
+          "mean_min_squared_pixel_distance": 8.775029726516053,
+          "p95_min_distance_pixels": 4.242640687119285,
+          "max_min_distance_pixels": 5
+        },
+        "random": {
+          "mean_min_squared_pixel_distance": 16.636004756242567,
+          "p95_min_distance_pixels": 7.0710678118654755,
+          "max_min_distance_pixels": 11.40175425099138
+        },
+        "mhu": {
+          "mean_min_squared_pixel_distance": 10.721093935790725,
+          "p95_min_distance_pixels": 5.0990195135927845,
+          "max_min_distance_pixels": 8.602325267042627
+        },
+        "local": {
+          "mean_min_squared_pixel_distance": 10.555576694411416,
+          "p95_min_distance_pixels": 5.0990195135927845,
+          "max_min_distance_pixels": 8.246211251235321
+        },
+        "final_cvt_over_random_energy": 0.5274721818784809,
+        "cvt_final_over_initial": 0.9374449420674431,
+        "cvt_continuous_over_initial": 0.9413887441449178
+      }
+    ],
+    "summary": {
+      "mean_cvt_over_random_ratio": 0.5298013777136403,
+      "mean_cvt_over_initial_ratio": 0.9379714257356215,
+      "mean_continuous_cvt_over_initial": 0.9417267046325376,
+      "CVT_better_than_random_seeds": 3,
+      "CVT_continuous_energy_improved_seeds": 3,
+      "three_seed_energy_MHU_vs_LOCAL": [
+        {
+          "seed": 1101,
+          "ratio": 1.00273633722353
+        },
+        {
+          "seed": 1102,
+          "ratio": 0.9823908795359148
+        },
+        {
+          "seed": 1103,
+          "ratio": 1.0156805493599361
+        }
+      ]
+    },
+    "code_coverage": "CVT_PROTOTYPE_CENTROIDAL_QUANTIZATION_NOT_AUTHENTIC_WEI_ORIGINAL",
+    "limitations": [
+      "AFTER_IP03_ENDPOINT_FAILURE",
+      "POST_EXPOSURE_BASELINE_INSTRUMENT_TEST",
+      "NO_OPTICAL_OUTCOME_USED",
+      "NO_NATIVE_WEI_BINARY",
+      "ONE_SCENE_GRID_ONLY",
+      "NO_CAUSAL_INFERENCE"
+    ],
+    "scientific_grade": "0/3",
+    "CT2_math_before_after": [
+      24,
+      24
+    ],
+    "CT2_functional_before_after": [
+      18,
+      18
+    ]
+  }
+}
