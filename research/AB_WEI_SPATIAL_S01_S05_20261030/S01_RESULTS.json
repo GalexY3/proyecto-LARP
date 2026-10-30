@@ -1,0 +1,68 @@
+{
+  "prereg_commit": "3fc4b71888b662f6326cf571a738053a948a7059",
+  "code_freeze_commit": "2fc407de56ba22a0bc42576b0fe3c14f80e49613",
+  "code_blob": "68bca82bfc550c396ebc45293ad3a07a2518bf81",
+  "source_blob": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+  "result": {
+    "protocol": "S01_7_BAND_FIELD_QC",
+    "source": "chuishun-kong/id-dbo@26b8f243bdf3574ea2bb25eee927c720fa309dcb",
+    "source_git_blob": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+    "csv_lines": 398,
+    "parsed_records": 395,
+    "issues": {
+      "bad_shape": 2,
+      "bad_coordinates": 0,
+      "bad_spectral_nonfinite": 0,
+      "bad_pixel_counts": 0,
+      "zero_valid_pixel": 4,
+      "bad_cloud_range": 0,
+      "bad_time_difference": 0,
+      "bad_iso_date": 0
+    },
+    "exact_duplicates": 0,
+    "duplicated_in_situ_ids": 0,
+    "instrument_types": [
+      "S2A",
+      "S2B"
+    ],
+    "site_count_all": 62,
+    "filters": {
+      "A": {
+        "rows": 395,
+        "unique_sites": 62,
+        "sites_with_at_least_2_rows": 36,
+        "unique_in_situ_ids": 395,
+        "unique_satellite_products": 121,
+        "median_valid_pixel_fraction": 0.6551724137931034
+      },
+      "B": {
+        "rows": 386,
+        "unique_sites": 56,
+        "sites_with_at_least_2_rows": 36,
+        "unique_in_situ_ids": 386,
+        "unique_satellite_products": 116,
+        "median_valid_pixel_fraction": 0.6551724137931034
+      },
+      "C": {
+        "rows": 327,
+        "unique_sites": 51,
+        "sites_with_at_least_2_rows": 33,
+        "unique_in_situ_ids": 327,
+        "unique_satellite_products": 91,
+        "median_valid_pixel_fraction": 0.6551724137931034
+      }
+    },
+    "eligible_S02": true,
+    "unit": "satellite_in_situ_matchup_not_imagery_pixel",
+    "scientific_novelty": "0/3",
+    "caveats": [
+      "SOURCE_OWNERS_WARN_INSITU_DEVELOPMENT_OVERLAP",
+      "SITE_AND_SATELLITE_ID_DEPENDENCE",
+      "NO_2D_FULL_MULTIBAND_CUBE",
+      "NO_WEI_BINARY",
+      "DATA_LICENSE_NOT_VERIFIED"
+    ]
+  },
+  "replay": "NOT_YET",
+  "status": "EXECUTED_DATA_QC_ONLY"
+}
