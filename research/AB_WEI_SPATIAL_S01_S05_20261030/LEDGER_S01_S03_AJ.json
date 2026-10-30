@@ -1,0 +1,288 @@
+{
+  "campaign_id": "LARP_ABR_S01_S05_20261030",
+  "date": "2026-10-30",
+  "method": "AB3.2.1 A-J",
+  "new_authorization": 5,
+  "previous_historical_unspent": 9,
+  "accounting": {
+    "new_executed_valid_exploratory": 3,
+    "new_initial_attempts_invalid": 1,
+    "new_planning": 0,
+    "new_remaining": 2,
+    "previous_remaining": 9,
+    "independent_2d_5band_scenes": 0,
+    "original_wei_binaries_compiled": 0
+  },
+  "cycles": [
+    {
+      "id": "S01",
+      "status": "EXECUTED_REPAIRED_EXPLORATORY",
+      "parent": "LARP_N400_WEI_STOP",
+      "A": {
+        "question": "how many real Sentinel-2 7-band matchup observations survive QC",
+        "estimand": "usable records/sites by predeclared thresholds",
+        "unit": "satellite-in-situ matchups, clustered by Site_name and satellite_id"
+      },
+      "B": {
+        "rivals": [
+          "valid independently grouped observations",
+          "missing/zero-valid-pixel or malformed source",
+          "dependent sites/products and time drift"
+        ]
+      },
+      "C": {
+        "filters": [
+          "7 finite bands",
+          ">=10 valid pixels",
+          "cloud <=20%",
+          "time difference <=5d"
+        ],
+        "gate_S02": "at least 30 records, 6 sites and 4 with >=2"
+      },
+      "D": {
+        "prereg_commit": "3fc4b71888b662f6326cf571a738053a948a7059",
+        "initial_code_commit": "2fc407de56ba22a0bc42576b0fe3c14f80e49613",
+        "initial_result_commit": "96fc59f4dc2e83a1b30cb6636ca411b86b3609a8",
+        "errata_commit": "4dfd7f0c0d148cff38a14bcecdc1f00ed073180e",
+        "repair_code_commit": "431e9cd428672657d0e86e216d7f1224a88b2a84",
+        "repaired_result_commit": "2e8068f2772479013161ee519fb01b067139277c",
+        "source_sha": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a"
+      },
+      "E": {
+        "protocol": "S01_7_BAND_FIELD_QC",
+        "source": "chuishun-kong/id-dbo@26b8f243bdf3574ea2bb25eee927c720fa309dcb",
+        "source_git_blob": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+        "csv_lines": 398,
+        "parsed_records": 397,
+        "issues": {
+          "bad_shape": 0,
+          "bad_coordinates": 0,
+          "bad_spectral_nonfinite": 0,
+          "bad_pixel_counts": 0,
+          "zero_valid_pixel": 4,
+          "bad_cloud_range": 0,
+          "bad_time_difference": 0,
+          "bad_iso_date": 0
+        },
+        "exact_duplicates": 0,
+        "duplicated_in_situ_ids": 0,
+        "instrument_types": [
+          "S2A",
+          "S2B"
+        ],
+        "site_count_all": 63,
+        "filters": {
+          "A": {
+            "rows": 397,
+            "unique_sites": 63,
+            "sites_with_at_least_2_rows": 37,
+            "unique_in_situ_ids": 397,
+            "unique_satellite_products": 123,
+            "median_valid_pixel_fraction": 0.6551724137931034
+          },
+          "B": {
+            "rows": 388,
+            "unique_sites": 57,
+            "sites_with_at_least_2_rows": 37,
+            "unique_in_situ_ids": 388,
+            "unique_satellite_products": 118,
+            "median_valid_pixel_fraction": 0.6551724137931034
+          },
+          "C": {
+            "rows": 329,
+            "unique_sites": 52,
+            "sites_with_at_least_2_rows": 34,
+            "unique_in_situ_ids": 329,
+            "unique_satellite_products": 93,
+            "median_valid_pixel_fraction": 0.6551724137931034
+          }
+        },
+        "eligible_S02": true,
+        "unit": "satellite_in_situ_matchup_not_imagery_pixel",
+        "scientific_novelty": "0/3",
+        "caveats": [
+          "SOURCE_OWNERS_WARN_INSITU_DEVELOPMENT_OVERLAP",
+          "SITE_AND_SATELLITE_ID_DEPENDENCE",
+          "NO_2D_FULL_MULTIBAND_CUBE",
+          "NO_WEI_BINARY",
+          "DATA_LICENSE_NOT_VERIFIED"
+        ]
+      },
+      "F": {
+        "issue": "original parser failed two comma-in-quoted-site rows Gulf of Mexico, FL; repair after exposure",
+        "initial_status": "INVALID",
+        "external_validity": "NOT_TWO_DIMENSIONAL_IMAGE"
+      },
+      "G": "exact same source replay; independent field experiment not conducted",
+      "H": {
+        "prior": "S2 matching measurements available, 4 zero-valid-pixel records; site/product dependence remains"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18,
+        "external_replication": false
+      },
+      "J": "CONTINUE to S02 only because prereg data gate passed; original invalid not counted as separate valid cycle"
+    },
+    {
+      "id": "S02",
+      "status": "EXECUTED_PRE_FROZEN_EXPLORATORY",
+      "parent": "S01",
+      "A": {
+        "question": "can five measured Sentinel2 bands predict B4/B6 at unseen sites/products?",
+        "estimand": "site-average mean squared error, 34 sites",
+        "unit": "Site_name with >=2 data rows, source-product excluded in training"
+      },
+      "B": {
+        "rivals": [
+          "cross-site supervised ridge",
+          "ordinal band index interpolation",
+          "train-only constant mean"
+        ]
+      },
+      "C": {
+        "inputs": [
+          "B1",
+          "B2",
+          "B3",
+          "B5",
+          "B7"
+        ],
+        "targets": [
+          "B4",
+          "B6"
+        ],
+        "site_product_grouped": true,
+        "lambda": 1
+      },
+      "D": {
+        "prereg_commit": "f73c3faa16d59f1a416005b9c7ec20293c5211c4",
+        "code_freeze_commit": "a813f0dc636f3dccfcf6d9849f7a4721c7f2929e",
+        "code_git_blob": "8bb4f26aba7f755bd2ca9bb8bda7d6faac1d8183",
+        "results_commit": "1d6ffe5f6ee7a819958993b7381699267861a6d2"
+      },
+      "E": {
+        "qualified_rows": 329,
+        "folds": 34,
+        "site_avg_mse": {
+          "ridge": 0.00007003631319400662,
+          "interpolation": 0.00023420490566524287,
+          "train_mean": 0.0025933438165327465
+        },
+        "ridge_wins": 31,
+        "ratio": 0.29903862600603226
+      },
+      "F": {
+        "weak_control": "ordinal band-index interpolation may be physically incompetent due to unequal wavelength gaps",
+        "source_overlap": "upstream developers warn GLORIA development overlap, not clean generalization",
+        "stronger_control": "S03 native-wavelength comparison"
+      },
+      "G": "same-source exact JSON replay, no external replication",
+      "H": {
+        "prior": "ridge better than ordinal simple baseline on this dataset and split, no MHU effect"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "OPEN one adversarial source-informed wavelength control S03, then STOP_SOURCE"
+    },
+    {
+      "id": "S03",
+      "status": "EXECUTED_POST_S02_ADVERSARIAL_EXPLORATORY",
+      "parent": "S02",
+      "A": {
+        "question": "did interpolation by band index cause S02 ridge advantage?",
+        "estimand": "site-mean heldout B4/B6 error from native wavelength interpolator",
+        "unit": "same 34 sites, not new observation"
+      },
+      "B": {
+        "rivals": [
+          "ridge gain disappears under wavelength-aware rival",
+          "ridge retains advantage",
+          "full SRF/atmospheric corrections needed"
+        ]
+      },
+      "C": {
+        "sensor_wavelengths_nm": {
+          "S2A": [
+            443,
+            490,
+            560,
+            665,
+            705,
+            740,
+            783
+          ],
+          "S2B": [
+            442,
+            492,
+            559,
+            665,
+            704,
+            739,
+            780
+          ]
+        },
+        "test_identical_to_S02": true
+      },
+      "D": {
+        "prereg_commit": "b0a47295db6c6f3dc861dd9ed5183cb5a08d1398",
+        "code_freeze_commit": "2385f6acd05ed2392648e56ede8e75491041c132",
+        "code_git_blob": "95f45d651ba2df1def58a51659046492b69b95b1",
+        "results_commit": "1bc26f8252d2bc9d1ce532b331904b2644cb72ba"
+      },
+      "E": {
+        "site_mse": {
+          "physical_wavelength": 0.00023276954140307455,
+          "ordinal_band_index": 0.00023420490566524287,
+          "ridge": 0.00007003631319400662
+        },
+        "ratio_ridge_to_physical": 0.30088263598341025,
+        "wins_ridge": 26
+      },
+      "F": {
+        "post_exposure": true,
+        "physically_center_only": "not full spectral-response-function convolution",
+        "single_data_source": true
+      },
+      "G": "same-source exact JSON replay, no external field replication",
+      "H": {
+        "prior": "ridge still beats wavelength-centered interpolator in this dataset; cannot transfer to retina geometry"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_math": 24,
+        "CT2_functional": 18
+      },
+      "J": "STOP_SOURCE, preserve 2 unspent of new grant"
+    }
+  ],
+  "status": {
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0,
+    "CT2_math_before_after": [
+      24,
+      24
+    ],
+    "CT2_functional_before_after": [
+      18,
+      18
+    ],
+    "STOP_LOCAL": true,
+    "STOP_WEI_BUILD": true,
+    "STOP_SATELLITE_MATCHUP_SOURCE": true,
+    "some_other_data_source_needed": true
+  },
+  "sources": {
+    "satellite_repo": "chuishun-kong/id-dbo",
+    "source_commit": "26b8f243bdf3574ea2bb25eee927c720fa309dcb",
+    "source_git_blob": "4e6e5794d7c8f78b607fb7aa48b71edd918bd28a",
+    "Upstream_Wei_repo": "1iyiwei/noise",
+    "Wei_source_sha": "0d1be2030518517199dff5c7e7514ee072037d59",
+    "raw_csv_republished": false
+  }
+}
