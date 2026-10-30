@@ -1,0 +1,5 @@
+# Errata H18 / primera ejecución interrumpida (2026-10-30)
+
+Prereg H06–H30 `c24ae512...`; identidad original fuente SHA256 `0eef4cc34d0c17aa64aa47b1b5f801546c3c9a515195f24e5fbdce6ebb56b1cd`, congelada antes de la ejecución en `37cc67a26d2b4a435d87fd2df01cec1ef2e98673`. Primera ejecución real **INVALID/INTERRUPTED** por un bug de instrumentación en H18, ANTES de llegar a H19–H30. Mensaje: `ValueError: Integers to negative integer powers are not allowed` en `(1+ks**2)**-2` con array NumPy entero. Se habían ejecutado checks parciales H06–H17 en memoria pero no se produjo archivo de resultados; no contarlos como corrida completa.
+
+Reparación estrictamente tipada y sin tocar supuestos/resultados: cambiar `(1+ks**2)**-2` por `(1+ks.astype(float)**2)**-2`, o equivalente. Congelar SHA256 de código **reparado** antes de la segunda ejecución. Este documento es POST-ERROR, PRE-REPAIR-OUTCOME. No solicitar nuevos ciclos ni contar un ciclo adicional por la reparación. No se ha demostrado resultado posterior a H17 en este run.
