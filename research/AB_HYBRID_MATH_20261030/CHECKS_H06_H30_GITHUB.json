@@ -1,0 +1,279 @@
+{
+  "schema": "AB_R_H06_H30_CHECKS_FROM_REPORT",
+  "derived_from": "research/AB_HYBRID_MATH_20261030/DICTAMEN_H06_H30.md",
+  "original_raw_output_sha256": "3d1993ea0605b67a740a869e10d0183166f6f184152e70902486a36b77a10c59",
+  "original_bytes_not_identical": true,
+  "total": 25,
+  "passed": 25,
+  "checks": [
+    {
+      "id": "H06",
+      "status": "PASS",
+      "evidence": {
+        "directed_edges": 2000,
+        "minimum_edges": 2000
+      }
+    },
+    {
+      "id": "H07",
+      "status": "PASS",
+      "evidence": {
+        "required_fanout": 12,
+        "weakest_population": 34
+      }
+    },
+    {
+      "id": "H08",
+      "status": "PASS",
+      "evidence": {
+        "moore_caps": [
+          1,
+          7,
+          43,
+          259,
+          1555
+        ],
+        "minimum_T": 4
+      }
+    },
+    {
+      "id": "H09",
+      "status": "PASS",
+      "evidence": {
+        "eigenvalues": [
+          -1.776356840581565e-15,
+          3.999999999999997,
+          3.999999999999999,
+          5,
+          5.000000000000001,
+          6.999999999999998,
+          7.000000000000003
+        ],
+        "predicted": [
+          0,
+          4,
+          4,
+          5,
+          5,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "id": "H10",
+      "status": "PASS",
+      "evidence": {
+        "stationary": [
+          0.32758679171683935,
+          0.227049166426403,
+          0.19144209080270677,
+          0.14839814799111306,
+          0.10552380306293778
+        ],
+        "max_balance_error": 1.3877787807814457e-17
+      }
+    },
+    {
+      "id": "H11",
+      "status": "PASS",
+      "evidence": {
+        "indices": [
+          0,
+          2,
+          5,
+          7,
+          10
+        ],
+        "gaps": [
+          2,
+          3,
+          2,
+          3,
+          3
+        ],
+        "max_gap": 3,
+        "enumerated": 3
+      }
+    },
+    {
+      "id": "H12",
+      "status": "PASS",
+      "evidence": {
+        "N": 12,
+        "n": 4,
+        "spectral_total": 8
+      }
+    },
+    {
+      "id": "H13",
+      "status": "PASS",
+      "evidence": {
+        "adjacent_pairs": 0,
+        "weighted_spectral_sum": -16.000000000000004,
+        "expected": -16
+      }
+    },
+    {
+      "id": "H14",
+      "status": "PASS",
+      "evidence": {
+        "union_size": 12,
+        "individual_alias_k": 4,
+        "union_alias_k": 12
+      }
+    },
+    {
+      "id": "H15",
+      "status": "PASS",
+      "evidence": {
+        "lower_bound": 0.010706018518518517,
+        "Q_3_perturbed": 0.00940925925925926,
+        "Q_3_optimum": 0.009259259259259259
+      }
+    },
+    {
+      "id": "H16",
+      "status": "PASS",
+      "evidence": {
+        "min_risk": 3.2,
+        "aligned": 12.8
+      }
+    },
+    {
+      "id": "H17",
+      "status": "PASS",
+      "evidence": {
+        "minimax": 8,
+        "aligned_worst": 13.6
+      }
+    },
+    {
+      "id": "H18",
+      "status": "PASS",
+      "evidence": {
+        "worst_case_RKHSrisk": 0.1302943725152286,
+        "saturating_norm": 1.0000000000000002,
+        "attained_error": 0.13029437251522863
+      }
+    },
+    {
+      "id": "H19",
+      "status": "PASS",
+      "evidence": {
+        "partial_sums_2d": [
+          12.7476395173454,
+          16.728637530527855,
+          20.89189693795325,
+          25.14997371352016
+        ],
+        "proof": "each new dyadic block has >=r^2 modes with |k|²<=5r², so >=1/5 per block"
+      }
+    },
+    {
+      "id": "H20",
+      "status": "PASS",
+      "evidence": {
+        "sample_min": 0.0000041903871413007115,
+        "sample_argmin": 0.49975012493753124,
+        "compact_domain": "circle"
+      }
+    },
+    {
+      "id": "H21",
+      "status": "PASS",
+      "evidence": {
+        "supported_candidates": [
+          0,
+          2
+        ],
+        "B_competitive_lambda_interval": "lambda<=0.5 and >=7/6 impossible"
+      }
+    },
+    {
+      "id": "H22",
+      "status": "PASS",
+      "evidence": {
+        "epsilon": 1,
+        "constrained_minimizer": "B"
+      }
+    },
+    {
+      "id": "H23",
+      "status": "PASS",
+      "evidence": {
+        "variance_ratio_to_balanced_equal_sigma": 1.3122771562612776,
+        "counts": [
+          163,
+          85,
+          68,
+          50,
+          34
+        ]
+      }
+    },
+    {
+      "id": "H24",
+      "status": "PASS",
+      "evidence": {
+        "original": 0.1863891919974286,
+        "balanced": 0.33045651793522485,
+        "one_unit_imbalanced": 0.3304147936827727,
+        "p_retention": 0.02
+      }
+    },
+    {
+      "id": "H25",
+      "status": "PASS",
+      "evidence": {
+        "marginal_before": 0.5493061443340549,
+        "after": 0.2027325540540822
+      }
+    },
+    {
+      "id": "H26",
+      "status": "PASS",
+      "evidence": {
+        "I_Y_X1": 0,
+        "I_Y_X2": 0,
+        "I_Y_X1X2": 1
+      }
+    },
+    {
+      "id": "H27",
+      "status": "PASS",
+      "evidence": {
+        "dist_0_3": 3,
+        "influence_T2": 0,
+        "influence_T3": 1
+      }
+    },
+    {
+      "id": "H28",
+      "status": "PASS",
+      "evidence": {
+        "cut_capacity": 4,
+        "linear_rank": 4,
+        "inputs": 10
+      }
+    },
+    {
+      "id": "H29",
+      "status": "PASS",
+      "evidence": {
+        "robust_weight": 0.8947368421052632,
+        "independent_weight": 0.8,
+        "robust_worst_variance": 0.9578947368421054,
+        "independent_assumed_worst": 0.992
+      }
+    },
+    {
+      "id": "H30",
+      "status": "PASS",
+      "evidence": {
+        "permutation_error": 2.220446049250313e-16,
+        "geometry_input": false
+      }
+    }
+  ]
+}
