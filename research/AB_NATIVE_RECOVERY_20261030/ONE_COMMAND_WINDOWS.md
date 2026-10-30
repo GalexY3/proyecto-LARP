@@ -55,7 +55,7 @@ Rama: research/ab-r-native-recovery-20261030
   $ruta = Join-Path $env:TEMP 'Run-LARP-N400.ps1'
   $respuesta = gh api 'repos/GalexY3/proyecto-LARP/contents/research/AB_NATIVE_RECOVERY_20261030/Run-LARP-N400.ps1?ref=research/ab-r-native-recovery-20261030'
   if ($LASTEXITCODE -ne 0) { throw 'No tengo acceso al script privado de LARP en GitHub.' }
-  $contenido = ($respuesta | ConvertFrom-Json).content
+  $contenido = (($respuesta -join "`n") | ConvertFrom-Json).content
   [IO.File]::WriteAllBytes($ruta, [Convert]::FromBase64String(($contenido -replace '\s', '')))
   if ((Get-FileHash $ruta -Algorithm SHA256).Hash.ToLowerInvariant() -ne '6c07c80428fcb738047db15c7b21bba79138b1a63563561d21ceb9878b542ab5') {
     throw 'El script descargado no coincide con el SHA-256 verificado. No se ejecuta.'
