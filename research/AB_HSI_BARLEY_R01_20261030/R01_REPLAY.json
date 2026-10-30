@@ -1,0 +1,22 @@
+{
+  "cycle": "R01",
+  "date": "2026-10-30",
+  "status": "EXACT_SAME_SOURCE_REPLAY",
+  "code_blob": "cfa30dd016f2e1ce05c56048d30171088162a5c8",
+  "data_source_commit": "8157f619f11bef20564067d55450c53120d1a712",
+  "checks": {
+    "code_sha_unchanged": true,
+    "dataset_gitsha_all_match": true,
+    "exact_json_replay": true,
+    "nine_scenes": true,
+    "full_band_column_contract": true,
+    "all_rows_finite": true,
+    "no_coordinate_collisions": true,
+    "all_scenes_below_400": true,
+    "n400_gate_failed": true,
+    "no_output_raw_data": true
+  },
+  "not_external_replication": true,
+  "original_invalid_gate_version_preserved": true,
+  "scientific_grade": "0/3"
+}
