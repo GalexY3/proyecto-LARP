@@ -1,0 +1,164 @@
+{
+  "schema": "AB_O7_GRAPH",
+  "nodes": [
+    {
+      "id": "T01_T10",
+      "type": "AB_CAMPAIGN",
+      "state": "closed",
+      "n": 10
+    },
+    {
+      "id": "GP_REPAIR",
+      "type": "ERRATA",
+      "state": "post_exposure_repair"
+    },
+    {
+      "id": "NATIVE_EXPORT",
+      "type": "SOURCE",
+      "state": "verified_original_npz_git_hashes",
+      "sha": "60ec5f489d18fc97be1d40d135c4142d194d0a1b"
+    },
+    {
+      "id": "WEI_TRUE",
+      "type": "UNEXECUTED_COMPETITOR",
+      "state": "BUILD_FAILED"
+    },
+    {
+      "id": "REAL_5_BANDS",
+      "type": "EXTERNAL_EVIDENCE",
+      "state": "NOT_AVAILABLE"
+    },
+    {
+      "id": "T01",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "originality": "0/3"
+    },
+    {
+      "id": "T02",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "originality": "0/3"
+    },
+    {
+      "id": "T03",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "originality": "0/3"
+    },
+    {
+      "id": "T04",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "originality": "0/3"
+    },
+    {
+      "id": "T05",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "originality": "0/3"
+    },
+    {
+      "id": "T06",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "originality": "0/3"
+    },
+    {
+      "id": "T07",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "originality": "0/3"
+    },
+    {
+      "id": "T08",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "originality": "0/3"
+    },
+    {
+      "id": "T09",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "originality": "0/3"
+    },
+    {
+      "id": "T10",
+      "type": "AB_ANALYSIS",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "originality": "0/3"
+    }
+  ],
+  "edges": [
+    {
+      "from": "NATIVE_EXPORT",
+      "to": "T01_T10",
+      "relation": "source_input"
+    },
+    {
+      "from": "GP_REPAIR",
+      "to": "T01_T10",
+      "relation": "invalidated_first_attempt_T01_T05"
+    },
+    {
+      "from": "T01_T10",
+      "to": "WEI_TRUE",
+      "relation": "unmet_strong_rival"
+    },
+    {
+      "from": "T01_T10",
+      "to": "REAL_5_BANDS",
+      "relation": "unmet_external_validity"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T01",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T02",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T03",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T04",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T05",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T06",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T07",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T08",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T09",
+      "relation": "contains"
+    },
+    {
+      "from": "T01_T10",
+      "to": "T10",
+      "relation": "contains"
+    }
+  ]
+}

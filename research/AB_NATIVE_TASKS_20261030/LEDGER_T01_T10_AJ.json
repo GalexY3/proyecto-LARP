@@ -1,0 +1,845 @@
+{
+  "schema": "AB_3_2_1_AJ_LARP_NATIVE_TASKS",
+  "date": "2026-10-30",
+  "authorization": 10,
+  "accounting": {
+    "addressed": 10,
+    "valid_initial_prereg": 5,
+    "repaired_post_exposure_exploratory": 5,
+    "invalid_first_attempt_GP": 5,
+    "independent_optical_experiments": 0,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0,
+    "remaining": 0
+  },
+  "trace": {
+    "source_branch": "research/ab-r-native-export-20261030-053103",
+    "source_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+    "unrepaired_results": "RESULTS_T01_T10.json",
+    "repaired_results": "RESULTS_T01_T10_REPAIRED.json",
+    "audit": "AUDIT_T01_T10.json"
+  },
+  "cycles": [
+    {
+      "id": "T01",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "analytic_GP",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "initial_attempt": "INVALID_ORIGINAL_ELL_SCALE_RETAINED",
+      "A": {
+        "estimand": "GP exact conditional Bayes risk at ell=0.5",
+        "metric": "equal_type",
+        "condition": "physically corrected periodic SE kernel with 0.01 sensor noise"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.8480800301905536,
+          "LOCAL_mean": 0.841042538031802,
+          "CVT_proxy_mean": 0.8192937651586739,
+          "Halton_mean": 0.8436119186741416,
+          "MHU_minus_LOCAL_pct": 0.8367581710219627,
+          "MHU_minus_CVT_pct": 3.5135462096803045,
+          "MHU_better_LOCAL_seeds": 0,
+          "MHU_better_CVT_seeds": 0,
+          "paired_differences_vs_LOCAL": [
+            0.008111834201428691,
+            0.012954920018155014,
+            0.00004572225667109908
+          ],
+          "paired_differences_vs_CVT": [
+            0.00743299631858696,
+            0.05209657918127686,
+            0.026829219595775
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "e6791e0c2178b37dbf3679bbb912ef58cbf96483",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": "ERRATA_E01_GP_LENGTHSCALE.md; repair after invalid first-run outcomes"
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.8442755813483315
+          },
+          {
+            "seed": 1102,
+            "value": 0.8597960469128519
+          },
+          {
+            "seed": 1103,
+            "value": 0.8401684623104773
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T02",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "analytic_GP",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "initial_attempt": "INVALID_ORIGINAL_ELL_SCALE_RETAINED",
+      "A": {
+        "estimand": "GP exact conditional Bayes risk at ell=0.8",
+        "metric": "equal_type",
+        "condition": "physically corrected periodic SE kernel with 0.01 sensor noise"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.6285715898620029,
+          "LOCAL_mean": 0.6237526490480133,
+          "CVT_proxy_mean": 0.5945952231268874,
+          "Halton_mean": 0.6405813315050287,
+          "MHU_minus_LOCAL_pct": 0.7725724005091407,
+          "MHU_minus_CVT_pct": 5.714201092373206,
+          "MHU_better_LOCAL_seeds": 1,
+          "MHU_better_CVT_seeds": 0,
+          "paired_differences_vs_LOCAL": [
+            0.0019715273796190314,
+            0.013767977066422077,
+            -0.001282682004072444
+          ],
+          "paired_differences_vs_CVT": [
+            0.014050851719498825,
+            0.06054320303948402,
+            0.02733504544636356
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "e6791e0c2178b37dbf3679bbb912ef58cbf96483",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": "ERRATA_E01_GP_LENGTHSCALE.md; repair after invalid first-run outcomes"
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.6248354584358182
+          },
+          {
+            "seed": 1102,
+            "value": 0.6415113676150153
+          },
+          {
+            "seed": 1103,
+            "value": 0.6193679435351752
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T03",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "analytic_GP",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "initial_attempt": "INVALID_ORIGINAL_ELL_SCALE_RETAINED",
+      "A": {
+        "estimand": "GP exact conditional Bayes risk at ell=1.25",
+        "metric": "equal_type",
+        "condition": "physically corrected periodic SE kernel with 0.01 sensor noise"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.315877554048688,
+          "LOCAL_mean": 0.31613053948230646,
+          "CVT_proxy_mean": 0.30371564957996344,
+          "Halton_mean": 0.3510828838148495,
+          "MHU_minus_LOCAL_pct": -0.08002562296978498,
+          "MHU_minus_CVT_pct": 4.004372012289912,
+          "MHU_better_LOCAL_seeds": 2,
+          "MHU_better_CVT_seeds": 0,
+          "paired_differences_vs_LOCAL": [
+            -0.002762197359645613,
+            0.005150497531915765,
+            -0.003147256473125526
+          ],
+          "paired_differences_vs_CVT": [
+            0.0030329566770177507,
+            0.026515132898235316,
+            0.0069376238309205585
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "e6791e0c2178b37dbf3679bbb912ef58cbf96483",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": "ERRATA_E01_GP_LENGTHSCALE.md; repair after invalid first-run outcomes"
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.3139407109702999
+          },
+          {
+            "seed": 1102,
+            "value": 0.3244044953809012
+          },
+          {
+            "seed": 1103,
+            "value": 0.30928745579486283
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T04",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "analytic_GP",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "initial_attempt": "INVALID_ORIGINAL_ELL_SCALE_RETAINED",
+      "A": {
+        "estimand": "GP exact conditional Bayes risk at ell=2",
+        "metric": "equal_type",
+        "condition": "physically corrected periodic SE kernel with 0.01 sensor noise"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.07672124932251488,
+          "LOCAL_mean": 0.07914659534160016,
+          "CVT_proxy_mean": 0.07713409820916874,
+          "Halton_mean": 0.1049700113757236,
+          "MHU_minus_LOCAL_pct": -3.064371889425419,
+          "MHU_minus_CVT_pct": -0.5352352542377692,
+          "MHU_better_LOCAL_seeds": 3,
+          "MHU_better_CVT_seeds": 1,
+          "paired_differences_vs_LOCAL": [
+            -0.0028384966148692486,
+            -0.002128158661384952,
+            -0.0023093827810016787
+          ],
+          "paired_differences_vs_CVT": [
+            -0.001403889822763349,
+            0.00009438574704746794,
+            0.00007095741575431636
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "e6791e0c2178b37dbf3679bbb912ef58cbf96483",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": "ERRATA_E01_GP_LENGTHSCALE.md; repair after invalid first-run outcomes"
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.0761637297211353
+          },
+          {
+            "seed": 1102,
+            "value": 0.07766981365126803
+          },
+          {
+            "seed": 1103,
+            "value": 0.07633020459514131
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T05",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "analytic_GP",
+      "status": "VALID_POST_EXPOSURE_REPAIR_EXPLORATORY",
+      "initial_attempt": "INVALID_ORIGINAL_ELL_SCALE_RETAINED",
+      "A": {
+        "estimand": "GP exact conditional Bayes risk at ell=3.5",
+        "metric": "equal_type",
+        "condition": "physically corrected periodic SE kernel with 0.01 sensor noise"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.010105030366178323,
+          "LOCAL_mean": 0.010490893556684297,
+          "CVT_proxy_mean": 0.010280203223768925,
+          "Halton_mean": 0.014827337169881155,
+          "MHU_minus_LOCAL_pct": -3.678077452803059,
+          "MHU_minus_CVT_pct": -1.703982438650472,
+          "MHU_better_LOCAL_seeds": 3,
+          "MHU_better_CVT_seeds": 2,
+          "paired_differences_vs_LOCAL": [
+            -0.0003972373474490972,
+            -0.00041671209263761597,
+            -0.0003436401314312141
+          ],
+          "paired_differences_vs_CVT": [
+            -0.00024801589127352794,
+            -0.00039612510662246844,
+            0.00011862242512418984
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "e6791e0c2178b37dbf3679bbb912ef58cbf96483",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": "ERRATA_E01_GP_LENGTHSCALE.md; repair after invalid first-run outcomes"
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.010024080931614927
+          },
+          {
+            "seed": 1102,
+            "value": 0.010081787576116885
+          },
+          {
+            "seed": 1103,
+            "value": 0.010209222590803155
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T06",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "graph_communication",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "initial_attempt": "VALID_FIRST_RUN",
+      "A": {
+        "estimand": "six-outdegree, nearest reachable per class, hop=1",
+        "metric": "mean_normalized_square",
+        "condition": "per-modality normalized squared nearest reachable distance, missing modality penalty 1"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.10929082805182073,
+          "LOCAL_mean": 0.1126490405157592,
+          "CVT_proxy_mean": 0.10417176733250584,
+          "Halton_mean": 0.16650052727446404,
+          "MHU_minus_LOCAL_pct": -2.981128333240147,
+          "MHU_minus_CVT_pct": 4.914057666867996,
+          "MHU_better_LOCAL_seeds": 3,
+          "MHU_better_CVT_seeds": 0,
+          "paired_differences_vs_LOCAL": [
+            -0.0030322510353130716,
+            -0.0020395566337624987,
+            -0.005002829722739868
+          ],
+          "paired_differences_vs_CVT": [
+            0.00025922183504666074,
+            0.0023180228495997407,
+            0.012779937473298253
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "not_needed",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": null
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.10994348332918953
+          },
+          {
+            "seed": 1102,
+            "value": 0.10649193535409765
+          },
+          {
+            "seed": 1103,
+            "value": 0.111437065472175
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T07",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "graph_communication",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "initial_attempt": "VALID_FIRST_RUN",
+      "A": {
+        "estimand": "six-outdegree, nearest reachable per class, hop=2",
+        "metric": "mean_normalized_square",
+        "condition": "per-modality normalized squared nearest reachable distance, missing modality penalty 1"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.005099836434122506,
+          "LOCAL_mean": 0.006821692636173093,
+          "CVT_proxy_mean": 0.006767558925393366,
+          "Halton_mean": 0.043385364154188776,
+          "MHU_minus_LOCAL_pct": -25.24089392301516,
+          "MHU_minus_CVT_pct": -24.642895756891,
+          "MHU_better_LOCAL_seeds": 3,
+          "MHU_better_CVT_seeds": 3,
+          "paired_differences_vs_LOCAL": [
+            -0.0006073409088761302,
+            -0.001085240804385477,
+            -0.0034729868928901524
+          ],
+          "paired_differences_vs_CVT": [
+            -0.0017903970033944288,
+            -0.001180726594651781,
+            -0.002032043875766369
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "not_needed",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": null
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.005067135328496518
+          },
+          {
+            "seed": 1102,
+            "value": 0.005111699545765177
+          },
+          {
+            "seed": 1103,
+            "value": 0.005120674428105825
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T08",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "graph_communication",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "initial_attempt": "VALID_FIRST_RUN",
+      "A": {
+        "estimand": "six-outdegree, nearest reachable per class, hop=3",
+        "metric": "mean_normalized_square",
+        "condition": "per-modality normalized squared nearest reachable distance, missing modality penalty 1"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.005095538067109406,
+          "LOCAL_mean": 0.005211028106990785,
+          "CVT_proxy_mean": 0.004776734263029891,
+          "Halton_mean": 0.014284770006972305,
+          "MHU_minus_LOCAL_pct": -2.216262079385922,
+          "MHU_minus_CVT_pct": 6.67409544941479,
+          "MHU_better_LOCAL_seeds": 3,
+          "MHU_better_CVT_seeds": 0,
+          "paired_differences_vs_LOCAL": [
+            -0.00011681642088369817,
+            -0.00011874211788052112,
+            -0.00011091158087992142
+          ],
+          "paired_differences_vs_CVT": [
+            0.00019511373853551856,
+            0.00030849051504091944,
+            0.00045280715866210554
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "not_needed",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": null
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.005067135328496518
+          },
+          {
+            "seed": 1102,
+            "value": 0.005110342317296089
+          },
+          {
+            "seed": 1103,
+            "value": 0.005109136555535609
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T09",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "heldout_Fourier",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "initial_attempt": "VALID_FIRST_RUN",
+      "A": {
+        "estimand": "Mean held-out low-frequency S excluding optimized six modes and negatives",
+        "metric": "equal_type",
+        "condition": "mean Fourier power under predeclared uniform wave weights"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.035553527950400836,
+          "LOCAL_mean": 0.041384688307387396,
+          "CVT_proxy_mean": 0.04870069567956784,
+          "Halton_mean": 0.4070755662822491,
+          "MHU_minus_LOCAL_pct": -14.09013960350564,
+          "MHU_minus_CVT_pct": -26.995852001109796,
+          "MHU_better_LOCAL_seeds": 3,
+          "MHU_better_CVT_seeds": 3,
+          "paired_differences_vs_LOCAL": [
+            -0.003956930009069014,
+            -0.004219054272075251,
+            -0.009317496789815402
+          ],
+          "paired_differences_vs_CVT": [
+            -0.024837022816799045,
+            -0.01058108422368597,
+            -0.004023396147016009
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "not_needed",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": null
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.03019112220575853
+          },
+          {
+            "seed": 1102,
+            "value": 0.03846988645694703
+          },
+          {
+            "seed": 1103,
+            "value": 0.037999575188496955
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    },
+    {
+      "id": "T10",
+      "unit": "three paired native N400 seeds, same labels",
+      "family": "heldout_Fourier",
+      "status": "VALID_PROSPECTIVE_ANALYTIC",
+      "initial_attempt": "VALID_FIRST_RUN",
+      "A": {
+        "estimand": "Mean high-frequency Fourier S in 16<|k|²<=81",
+        "metric": "equal_type",
+        "condition": "mean Fourier power under predeclared uniform wave weights"
+      },
+      "B": {
+        "primary_baseline": "ORIGINAL local_only N400 from identical geometry seed",
+        "controls": "periodic typewise Lloyd CVT proxy and Halton, both deterministic with same class counts",
+        "MHU_exact_orig": true
+      },
+      "C": {
+        "falsifier": "MHU may lose to either LOCAL or CVT; do not select favorable scales after outcomes",
+        "observed": {
+          "MHU_mean": 0.7348349924808876,
+          "LOCAL_mean": 0.7258309143965723,
+          "CVT_proxy_mean": 0.7754171437067138,
+          "Halton_mean": 0.7673137417658135,
+          "MHU_minus_LOCAL_pct": 1.240520058559491,
+          "MHU_minus_CVT_pct": -5.233589630457745,
+          "MHU_better_LOCAL_seeds": 1,
+          "MHU_better_CVT_seeds": 3,
+          "paired_differences_vs_LOCAL": [
+            -0.014124358252789793,
+            0.010445116588235326,
+            0.030691475917500877
+          ],
+          "paired_differences_vs_CVT": [
+            -0.03315121207683225,
+            -0.03051989628863927,
+            -0.0580753453120072
+          ]
+        }
+      },
+      "D": {
+        "prereg_commit": "17824ebbec971764896462e5cba2dee75e84973f",
+        "original_source_commit": "8781b77d2068e45a5e792a63e67f453838e64210",
+        "repaired_source_commit": "not_needed",
+        "original_n400_export_commit": "60ec5f489d18fc97be1d40d135c4142d194d0a1b",
+        "protocol_change": null
+      },
+      "E": {
+        "executed": true,
+        "three_seed_records": [
+          {
+            "seed": 1101,
+            "value": 0.7346452417964413
+          },
+          {
+            "seed": 1102,
+            "value": 0.7415175711166324
+          },
+          {
+            "seed": 1103,
+            "value": 0.7283421645295892
+          }
+        ],
+        "full_raw_rows": "RESULTS_T01_T10_REPAIRED.json"
+      },
+      "F": {
+        "limits": "3 dependent original geometry seeds, no real optical data, no training/Wei, no independent empirical task outcomes; CVT is proxy, not historic exact benchmark. Post-exposure semantic GP repair T01–T05."
+      },
+      "G": {
+        "local_replay": "exact 156/156 rows and 52/52 summaries using frozen repaired source; 25/25 consistency tests passed",
+        "external_replicated": false
+      },
+      "H": {
+        "prior": "conditional target-dependent tradeoff; retain negative and mixed per-seed results"
+      },
+      "I": {
+        "novelty": "0/3; analytically specified comparisons of historic geometries, no unique physical or AI discovery",
+        "CT2_update": 0
+      },
+      "J": {
+        "AB_decision": "CLOSE_CONDITIONAL_TASK; STOP if further repeated fixed tasks, pivot to genuine Wei + real independent 5-band scenes"
+      }
+    }
+  ]
+}
