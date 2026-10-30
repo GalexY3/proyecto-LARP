@@ -1,0 +1,108 @@
+{
+  "campaign": "LARP_ABR_20261030_R01_R05",
+  "branch": "research/ab-r-hsi-barl-geometry-gate-r01-r05-20261030",
+  "base": "c67eaec720a0bfa830832a9f84f334f03d01a06d",
+  "new_grant": {
+    "authorized": 5,
+    "valid_executed_technical": 1,
+    "invalid_instrumentation_attempts": 1,
+    "planning_consumed": 0,
+    "remaining": 4
+  },
+  "previous_other_grants": {
+    "recent_remaining": 2,
+    "historical_remaining": 9
+  },
+  "cycle": {
+    "id": "R01",
+    "method": "AB-R",
+    "A": {
+      "estimand": "sufficiency of spatially indexed 204-band real data in 9 images for original N400 fair comparison",
+      "unit": "coordinate centroid, source scene",
+      "threshold": "at least 3 source images with >=400 distinct valid measured point spectra"
+    },
+    "B": {
+      "rivals": [
+        "sampled sparse points inadequate for N400",
+        ">=400 measured pixel positions in at least 3 scenes",
+        "source QC/coordinate errors"
+      ]
+    },
+    "C": {
+      "images": 9,
+      "pinned_source": "szkymm/Gra_Desi@8157f619f11bef20564067d55450c53120d1a712",
+      "tests": "204 numeric bands, integer XY, duplicate, finite, bbox density, nearest-neighbor, >1/<0 reflectance",
+      "controls": "upstream image_tag.py and obtain_reflectance.py show centroid-from-segmentation origin"
+    },
+    "D": {
+      "prereg_commit": "7dbd6fa76b814bbac6643a7029da93c0c67b1c8b",
+      "initial_invalid_code_commit": "3673e12c0b28f8e60be7ba6cd8b9f5b4891606ed",
+      "sha_truncation_errata_commit": "30206922301094fba25bebb3ec4280079b9f6a53",
+      "repaired_code_freeze_before_outcomes": "b7c9704956b5976ec7f27c70f85db238e8409b42",
+      "repaired_code_git_blob": "cfa30dd016f2e1ce05c56048d30171088162a5c8",
+      "result_commit": "ceabc97341ceb68a74d56ddb4276bc49535aa9ac",
+      "replay_commit": "e6686f5e042b5c2079573ebed43e1de87e07d686"
+    },
+    "E": {
+      "source_images": 9,
+      "measured_rows": 542,
+      "finite_band_cells": 110568,
+      "band_count": 204,
+      "points_per_scene_min_max": [
+        60,
+        61
+      ],
+      "observed_bbox_occupancy_fraction_range": [
+        0.0003822045558783061,
+        0.0004334821622090251
+      ],
+      "reflectance_negative_values": 0,
+      "reflectance_above_one_values": 644,
+      "scenes_sufficient_N400": 0,
+      "gate_passed": false
+    },
+    "F": {
+      "instrumentation_issue": "two truncated source Git SHA literals, first attempt stopped before calculating scientific results",
+      "selection_bias": "green contour centroids selected before extraction, not arbitrary pixel access, invalid replacement for raster under matched sampling designs",
+      "ownership": "README GPLv3 assertion does not establish raw spectral-data redistribution rights",
+      "no_real_weirun": true
+    },
+    "G": {
+      "source_replay": "10/10 frozen code and source-hash checks passed with identical JSON",
+      "independent_external_scientific_replication": false
+    },
+    "H": {
+      "prior_delta": "new real 204-band sparse source physically measured but unsuitable for N400 fairness, cannot justify claim MHU>LOCAL/CVT/Wei"
+    },
+    "I": {
+      "scientific_novelty": "0/3",
+      "math_CT2_before_after": [
+        24,
+        24
+      ],
+      "functional_CT2_before_after": [
+        18,
+        18
+      ]
+    },
+    "J": {
+      "decision": "STOP_HSI_SPARSE",
+      "reason": "0/9 scenes has 400 unique measured points; no authentic Wei executable; avoid inventing missing pixels",
+      "do_not_open_more_cycles_from_this_source": true
+    },
+    "status": "EXECUTED_TECHNICAL_DATA_SUITABILITY_GATE_AFTER_PRE_OUTCOME_SHA_REPAIR"
+  },
+  "unopened_gate_status": {
+    "R02": "NOT_RUN",
+    "R03": "NOT_RUN",
+    "R04": "NOT_RUN",
+    "R05": "NOT_RUN"
+  },
+  "blocked": {
+    "authenticWei": "no cloning from container DNS; original Wei local build still not run",
+    "full_2d_cube": "none accessible to the execution environment; public MicaSense six-band GeoTIFFs are binary and GitHub connector cannot decode them",
+    "matched_controls": "cannot compare MHU/LOCAL/CVT/Wei with equal budgets and measured ground truth"
+  },
+  "no_merges": true,
+  "no_CI": true
+}
