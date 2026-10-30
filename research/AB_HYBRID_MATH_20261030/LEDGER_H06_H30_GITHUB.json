@@ -1,0 +1,1285 @@
+{
+  "schema": "AB_R_H06_H30_LEDGER_FROM_FULL_REPORT",
+  "authoritative_source": "research/AB_HYBRID_MATH_20261030/DICTAMEN_H06_H30.md",
+  "note": "Faithfully reconstructed from published full research report; not original byte-for-byte JSON. Original runner output SHA256 is separately frozen.",
+  "grant": 30,
+  "previous_completed_H01_H05": 5,
+  "completed_H06_H30": 25,
+  "remaining": 0,
+  "scientific_N1_new": 0,
+  "N2_new": 0,
+  "N3_new": 0,
+  "invalid_instrument_runs": 2,
+  "methodology_exception": "Full GitHub source upload occurred after outcomes; preoutcome SHA only.",
+  "cycles": [
+    {
+      "id": "H06",
+      "title": "Coste mínimo del enrutamiento multiespecialista",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "En un digrafo sin autoaristas, recibir al menos un mensaje de cada una de m especies exige grado de entrada >=m y >=mN aristas dirigidas; para n_c>=2 existe construcción alcanzable sin límite de salida. **Rival/falsador:** Una configuración con <mN aristas satisface todos los destinos",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Una configuración con <mN aristas satisface todos los destinos"
+      },
+      "C": {
+        "full_proof": "Cada receptor exige una arista entrante desde cada una de las m clases: indegree>=m y E>=mN. La construcción elige un donante de cada clase para cada receptor, sustituyendo al propio receptor cuando coinciden; con n_c>=2 no hay autoaristas. La cota es exacta sin limitar fan-out. Los 2000 enlaces de LARP se concentran en donantes; no es una topología eficiente en fan-out."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "directed_edges": 2000,
+          "minimum_edges": 2000
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H07",
+      "title": "Límite de fan-out de la especie escasa",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Si todo vértice necesita información de clase c en un paso, cada emisor c tiene fan-out como máximo D, luego D>=ceil(N/n_c); para (163,85,68,50,34) se requiere D>=12. **Rival/falsador:** Cobertura global de una clase con n_cD<N",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Cobertura global de una clase con n_cD<N"
+      },
+      "C": {
+        "full_proof": "Cada uno de los N receptores requiere una arista que provenga de la clase c. Los n_c emisores suministran como máximo n_cD aristas, de donde D>=ceil(N/n_c). Para los 34 sensores menos abundantes y 400 destinos, D>=12. Es una cota necesaria para un salto, no una predicción de generalización neuronal."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "required_fanout": 12,
+          "weakest_population": 34
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H08",
+      "title": "Profundidad mínima para comunicación global",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "En un digrafo con out-degree <=d la cantidad de nodos alcanzable por una fuente en T pasos es <=sum_{j=0}^T d^j; d=6,N=400 exige T>=4. **Rival/falsador:** Un grafo dirigido con d<=6 y diámetro<=3 y 400 nodos",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Un grafo dirigido con d<=6 y diámetro<=3 y 400 nodos"
+      },
+      "C": {
+        "full_proof": "Desde una fuente el número de nuevos receptores tras j saltos es a lo sumo d^j. Por inducción, el total accesible en <=T pasos no supera 1+d+...+d^T. Para d=6 y T=3 el máximo 259 es menor que 400; T>=4 es necesario para acceso global. Es la cota Moore, previa a LARP; no garantiza que exista un digrafo de grado 6 y diámetro 4."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "moore_caps": [
+            1,
+            7,
+            43,
+            259,
+            1555
+          ],
+          "minimum_T": 4
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H09",
+      "title": "Espectro del grafo completo multipartito",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Laplaciano de K_{n1,...,nm} tiene autovalores 0, N (m-1 veces), N-n_c (n_c-1 veces); conectividad algebraica N-max_c n_c si nmax>=2. **Rival/falsador:** Cálculo exacto de eigensistema contradice fórmula",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Cálculo exacto de eigensistema contradice fórmula"
+      },
+      "C": {
+        "full_proof": "El laplaciano completo multipartito es L=D-A. Los vectores de cada clase con suma cero son autovectores de autovalor N-n_c, dimensión n_c-1. Los vectores constantes por clase y ortogonales al vector global poseen autovalor N, dimensión m-1; la constante global tiene valor 0. La conectividad algebraica resulta N-max(n_c) cuando alguna clase tiene al menos dos nodos. El grafo es denso, NO control de coste frente a máscaras dispersas."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "eigenvalues": [
+            -1.776356840581565e-15,
+            3.999999999999997,
+            3.999999999999999,
+            5,
+            5.000000000000001,
+            6.999999999999998,
+            7.000000000000003
+          ],
+          "predicted": [
+            0,
+            4,
+            4,
+            5,
+            5,
+            7,
+            7
+          ]
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H10",
+      "title": "Sesgo estacionario de mezcla entre tipos",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "En paseo aleatorio de grafo completo multipartito, probabilidad estacionaria de cada clase proporcional n_c(N-n_c); flujo de c a d cumple balance detallado. **Rival/falsador:** Flujo dirigido no satisface reversibilidad",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Flujo dirigido no satisface reversibilidad"
+      },
+      "C": {
+        "full_proof": "El paseo uniforme sobre vecinos de tipos diferentes cumple P_cd=n_d/(N-n_c) y P_cc=0. Si π_c es proporcional a n_c(N-n_c), π_cP_cd es proporcional a n_cn_d, simétrico en c,d. Por balance detallado π es estacionaria; prioriza clases por número de extremos de aristas, no uniformemente por especialista. No equivale a entrenamiento de una GNN."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "stationary": [
+            0.32758679171683935,
+            0.227049166426403,
+            0.19144209080270677,
+            0.14839814799111306,
+            0.10552380306293778
+          ],
+          "max_balance_error": 1.3877787807814457e-17
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H11",
+      "title": "Cobertura óptima de subrejilla discreta",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Seleccionar n posiciones entre N equiespaciadas en círculo minimiza la máxima separación circular en ceil(N/n) / N; construcción índices floor(j*N/n). **Rival/falsador:** Selección con máximo gap inferior a ceil(N/n)",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Selección con máximo gap inferior a ceil(N/n)"
+      },
+      "C": {
+        "full_proof": "Para n índices sobre el círculo de N posiciones, los n huecos circulares son enteros positivos cuya suma es N; su máximo debe ser al menos ceil(N/n). Con los índices floor(jN/n), los huecos solo son floor(N/n) o ceil(N/n), alcanzando la cota. Es garantía de cobertura discreta para una clase; compatibilidad simultánea entre clases sigue condicionada."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "indices": [
+            0,
+            2,
+            5,
+            7,
+            10
+          ],
+          "gaps": [
+            2,
+            3,
+            2,
+            3,
+            3
+          ],
+          "max_gap": 3,
+          "enumerated": 3
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H12",
+      "title": "Presupuesto de energía espectral de una especie",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Para etiquetas binarias de cuota n sobre retícula de N, sum_{k=1}^{N-1} S_c(k)=N-n; una reducción de potencia en bajas frecuencias desplaza masa espectral a otras. **Rival/falsador:** DFT/Parseval incumple igualdad para alguna etiqueta",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " DFT/Parseval incumple igualdad para alguna etiqueta"
+      },
+      "C": {
+        "full_proof": "Defina b_j∈{0,1} con suma n y ρ_k=Σ_j b_j exp(2πijk/N). Parseval discreto: Σ_k |ρ_k|²=N Σ_jb_j²=Nn. El modo k=0 aporta n². Por tanto Σ_{k=1}^{N-1}|ρ_k|²/n=N-n. Si un algoritmo hace desaparecer bajas frecuencias de un subtipo etiquetado sobre rejilla, esa energía se conserva en otras. No extrapolar literalmente a posiciones continuas no reticulares."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "N": 12,
+          "n": 4,
+          "spectral_total": 8
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H13",
+      "title": "Restricción exacta de correlación al primer vecino",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "En etiquetado circular binario b_j, sum_{k=1}^{N-1} |rho(k)|² cos(2πk/N)=N*C1-n² donde C1=sum b_j b_{j+1}. **Rival/falsador:** Autocorrelación y DFT de la misma secuencia difieren",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Autocorrelación y DFT de la misma secuencia difieren"
+      },
+      "C": {
+        "full_proof": "El teorema de Wiener–Khinchin discreto da Σ_{k=0}^{N-1}|ρ_k|² exp(2πik/N)=N Σ_j b_j b_{j+1}. Tomando parte real y sustrayendo el modo k=0, queda Σ_{k=1}^{N-1}|ρ_k|² cos(2πk/N)=NC_1−n². Vincula exactamente frecuencia y vecinos homotípicos de una sucesión circular sobre rejilla. Es un control fuerte para emparejar estadísticas locales y espectrales."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "adjacent_pairs": 0,
+          "weighted_spectral_sum": -16.000000000000004,
+          "expected": -16
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H14",
+      "title": "Intercalación espectral de m especies iguales",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "m retículas n igualmente espaciadas, desplazadas c/(mn), generan unión de mn posiciones; cada especie anula modos k no múltiplos n, unión todos k no múltiplos mn, particularmente n..mn-1. **Rival/falsador:** La suma de raíces de unidad no se anula",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " La suma de raíces de unidad no se anula"
+      },
+      "C": {
+        "full_proof": "Al intercalar m retículas de n posiciones desplazadas por c/(mn), la unión es exactamente la retícula mn. La suma de raíces de unidad para una clase de n anula todos los k que no son múltiplos de n; la unión anula todo k que no sea múltiplo de mn. El alias individual k=n se cancela en la unión por fases entre especies, manteniendo óptima la cobertura. Es un ejemplo 1D equilibrado, no MHU desordenada original."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "union_size": 12,
+          "individual_alias_k": 4,
+          "union_alias_k": 12
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H15",
+      "title": "Cota del coste CVT multiespecie",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Para posiciones de cada clase sobre círculo con n_c puntos, Q_total=sum w_c Q_c>=sum w_c/(12 n_c²); igualdad simultánea requiere subretículas equiespaciadas compatibles. **Rival/falsador:** Coste inferior a la cota convexa",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Coste inferior a la cota convexa"
+      },
+      "C": {
+        "full_proof": "La cuantización cuadrática de n puntos en un círculo es Q=Σ_i g_i³/12, con Σg_i=1. Jensen aporta Q>=1/(12n²) con igualdad si todos los gaps son iguales. Para m modalidades, multiplicar por w_c>=0 y sumar establece la cota Σ w_c/(12n_c²). El mínimo conjunto puede ser inalcanzable si se exige que las retículas de especies distintas no coincidan, como ilustra H05."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "lower_bound": 0.010706018518518517,
+          "Q_3_perturbed": 0.00940925925925926,
+          "Q_3_optimum": 0.009259259259259259
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H16",
+      "title": "Fases óptimas con correlación conocida",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Para dos errores de módulo a y covarianza ρ real, riesgo=2a²(1+ρ cosδ), mínimo 2a²(1-|ρ|), alcanzable con δ opuesto al signo de ρ. **Rival/falsador:** Una fase obtiene riesgo inferior al mínimo declarado",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Una fase obtiene riesgo inferior al mínimo declarado"
+      },
+      "C": {
+        "full_proof": "Sean dos errores complejos de amplitud a, correlación real ρ y desfase δ. Expansión de E|e1+e2|²=2a²+2a²ρcosδ. Como cosδ∈[-1,1], el mínimo es 2a²(1−|ρ|), eligiendo fases opuestas al signo de ρ. No hay ganancia de fase si ρ=0 y no se pueden fijar δ arbitrariamente en todas las frecuencias con una única traslación espacial."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "min_risk": 3.2,
+          "aligned": 12.8
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H17",
+      "title": "Fases minimax con signo de correlación desconocido",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Si |ρ|<=r>0, riesgo peor caso=2a²(1+r|cosδ|), mínimo en δ=π/2 modulo π, frente a fase alineada peor 2a²(1+r). **Rival/falsador:** Otra fase reduce el peor riesgo bajo simetría del intervalo",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Otra fase reduce el peor riesgo bajo simetría del intervalo"
+      },
+      "C": {
+        "full_proof": "Si no conocemos el signo de ρ y |ρ|<=r, el adversario elige el signo que maximiza ρcosδ, con valor r|cosδ|. El riesgo peor es 2a²[1+r|cosδ|]. La fase en cuadratura δ=π/2 elimina el término cruzado y es minimax. Es distinto de H16 porque la condición es incertidumbre simétrica sobre correlación; objetivo robusto, no óptimo para un ρ observado."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "minimax": 8,
+          "aligned_worst": 13.6
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H18",
+      "title": "Justificación RKHS del score espectral",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Para funciones periódicas con norm²=sum |f_k|²/w_k<=1 y Fourier summable, error de cuadratura al cuadrado peor caso=sum w_k |a_P(k)|²; requiere sum w_k finita para evaluación puntual. **Rival/falsador:** Cauchy-Schwarz da un valor diferente o no se alcanza",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Cauchy-Schwarz da un valor diferente o no se alcanza"
+      },
+      "C": {
+        "full_proof": "Para una función periódica f(x)=Σ f_k e^{2πikx}, el error de la regla de muestras es Σ_{k≠0}f_ka_P(k). Con la norma RKHS Σ|f_k|²/w_k<=1, Cauchy–Schwarz da |error|²<=Σ w_k|a_P(k)|², con igualdad mediante f_k proporcional a w_k\\overline{a_P(k)}. Con pesos sumables y modos finitos o kernel regular existe evaluación puntual acotada. Así un score espectral ponderado es exactamente el peor error de cuadratura de una clase precisa de funciones, NO una garantía universal de reconocimiento visual."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "worst_case_RKHSrisk": 0.1302943725152286,
+          "saturating_norm": 1.0000000000000002,
+          "attained_error": 0.13029437251522863
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H19",
+      "title": "Obstrucción crítica de los pesos 1/|k|²",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "En dimensión d>=2, sum_{k in Z^d\\{0}} |k|^-2 diverge; por eso peso v2 no define kernel continuo acotado de evaluación puntual si se extiende a todos los modos sin truncamiento. **Rival/falsador:** Una prueba de convergencia de la serie en d=2",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Una prueba de convergencia de la serie en d=2"
+      },
+      "C": {
+        "full_proof": "En Z², para cada r=2^j, los r² pares de enteros r<=i<2r, 0<=j<r tienen i²+j²<=5r². Cada término 1/(i²+j²) es >=1/(5r²), y los bloques son disjuntos; cada escala aporta >=1/5. La suma infinita diverge. En d>2 contiene un subconjunto 2D divergente. Por tanto la extensión sin cutoff de pesos 1/|k|² no produce kernel diagonal finito ni continuidad de evaluación puntual. El código MHU-v2 usa banda finita y no está invalidado por esto."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "partial_sums_2d": [
+            12.7476395173454,
+            16.728637530527855,
+            20.89189693795325,
+            25.14997371352016
+          ],
+          "proof": "each new dyadic block has >=r^2 modes with |k|²<=5r², so >=1/5 per block"
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H20",
+      "title": "Existencia de óptimos híbridos",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Sobre (toro)^N compacto, score J=αCVT+β sum_{k∈K} w_k |a(k)|² continuo para K finito, por lo que existe un minimizador global; mínimos separados por especie si función objetivo lo permite. **Rival/falsador:** Secuencia sin subsecuencia convergente o discontinuidad del integrando fijo",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Secuencia sin subsecuencia convergente o discontinuidad del integrando fijo"
+      },
+      "C": {
+        "full_proof": "El espacio producto (T^d)^N es compacto. El coste de cuantización Q(P)=∫ min_j dist(x,p_j)² dx es continuo en P por continuidad uniforme y convergencia dominada en dominio compacto. Las amplitudes finitas a_P(k) y sus cuadrados son continuas; toda suma finita αQ+βΣ w_k|a_P(k)|² alcanza mínimo por Weierstrass. No demuestra unicidad, facilidad de optimización, ausencia de colisiones ni calidad funcional de un mínimo."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "sample_min": 0.0000041903871413007115,
+          "sample_argmin": 0.49975012493753124,
+          "compact_domain": "circle"
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H21",
+      "title": "Los pesos lineales omiten Pareto eficientes",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Con tres candidatos A=(0,4), B=(1,3.5), C=(4,0), B es Pareto eficiente pero nunca es mínimo de λL+S con λ>=0. **Rival/falsador:** Algún λ hace a B estrictamente preferido",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Algún λ hace a B estrictamente preferido"
+      },
+      "C": {
+        "full_proof": "A=(L,S)=(0,4), B=(1,3.5) y C=(4,0) son no dominados. Para minimizar λL+S, B<=A requiere λ<=0.5 y B<=C requiere λ>=7/6. No existe λ≥0 que satisfaga ambas, luego B es Pareto eficiente pero no puede obtenerse mediante escalarización lineal. El fenómeno requiere imagen de objetivos no convexa/discreta, plausible con topologías de LARP."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "supported_candidates": [
+            0,
+            2
+          ],
+          "B_competitive_lambda_interval": "lambda<=0.5 and >=7/6 impossible"
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H22",
+      "title": "La restricción epsilon recupera soluciones no soportadas",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "En el mismo conjunto A,B,C, minimizar S sujeto a L<=1 selecciona B, que ninguna ponderación positiva selecciona. **Rival/falsador:** Con L<=1 otro candidato tiene menor S",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Con L<=1 otro candidato tiene menor S"
+      },
+      "C": {
+        "full_proof": "Con el mismo conjunto finito, la restricción L<=1 deja A y B pero excluye C; como S(B)=3.5<S(A)=4, el óptimo es B. La técnica ε-restricción puede recuperar soluciones eficientes omitidas por barridos de λ. Es aplicación directa de H21 y no una segunda contribución original independiente."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "epsilon": 1,
+          "constrained_minimizer": "B"
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H23",
+      "title": "Penalización por cuotas sin compensar varianzas",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Para cinco canales con varianza igual σ² y estimador de media de canales, varianza es σ²/m² sum 1/n_c, mínima σ²/N si n_c=N/m; calcular ratio para cuotas reales. **Rival/falsador:** Una reasignación peor que balance tiene menor varianza",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Una reasignación peor que balance tiene menor varianza"
+      },
+      "C": {
+        "full_proof": "Para m modalidades de varianza común σ², cada media de canal usa n_c lecturas independientes y tiene varianza σ²/n_c. La media equilibrada de los m canales tiene varianza (σ²/m²)Σ_c1/n_c. Por Cauchy-Schwarz, Σ1/n_c>=m²/N, igualdad solo con cuotas iguales. Para (163,85,68,50,34), la varianza es 1.3123 veces la asignación equilibrada. No demuestra que las cuotas biológicas sean ineficientes cuando las varianzas, costes o importancias difieren."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "variance_ratio_to_balanced_equal_sigma": 1.3122771562612776,
+          "counts": [
+            163,
+            85,
+            68,
+            50,
+            34
+          ]
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H24",
+      "title": "Diversidad superviviente tras fallos iid",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Con retención independiente p, P(todas las m especies conservan al menos un sensor)=prod_c[1-(1-p)^n_c]; para cuota total fija, se maximiza cuando tamaños difieren como máximo 1. **Rival/falsador:** Trasladar un sensor desde clase mayor a menor reduce la probabilidad",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Trasladar un sensor desde clase mayor a menor reduce la probabilidad"
+      },
+      "C": {
+        "full_proof": "Si cada sensor sobrevive iid con probabilidad p, la probabilidad de supervivencia de al menos un elemento en cada clase es ∏_c[1−(1−p)^{n_c}]. La función log[1−q^n], q=1−p∈(0,1), es estrictamente cóncava en n>0, así que un intercambio de una unidad desde una clase de tamaño mayor a otra menor aumenta el producto hasta cuotas equilibradas. Solo supervivencia de clase, no precisión ni conectividad."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "original": 0.1863891919974286,
+          "balanced": 0.33045651793522485,
+          "one_unit_imbalanced": 0.3304147936827727,
+          "p_retention": 0.02
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H25",
+      "title": "Submodularidad informativa gaussiana",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Con variable latente gaussiana y lecturas lineales con ruido independiente, información mutua I(θ;Y_S)=0.5 logdet(I+sum H_iᵀR_i^-1 H_i) es monótona submodular; comprobar caso escalar. **Rival/falsador:** Retorno marginal de sensor mayor tras observar otros, manteniendo independencia de ruidos",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Retorno marginal de sensor mayor tras observar otros, manteniendo independencia de ruidos"
+      },
+      "C": {
+        "full_proof": "En observación gaussiana lineal con ruido de sensores condicionalmente independiente, la información mutua entre parámetro gaussiano y sensores seleccionados tiene forma 1/2 logdet[I+Σ_i H_iᵀR_i^-1H_i] en coordenadas blanqueadas. Añadir una matriz PSD proporciona ganancias decrecientes al aumentar la matriz previa, mediante orden de Loewner del inverso y fórmula integral para logdet. Es submodular y monótona; antecedente destacado Krause y colaboradores 2008. No se hereda para utilidad de etiquetas arbitrarias."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "marginal_before": 0.5493061443340549,
+          "after": 0.2027325540540822
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H26",
+      "title": "Contraejemplo XOR a selección submodular",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Para bits independientes X1,X2 y etiqueta XOR, I(Y;X1)=I(Y;X2)=0 pero I(Y;X1,X2)=1; la utilidad I(Y;observaciones) no siempre es submodular. **Rival/falsador:** XOR tiene información marginal >0 en observación aislada",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " XOR tiene información marginal >0 en observación aislada"
+      },
+      "C": {
+        "full_proof": "Para X1,X2 iid Bernoulli(1/2) e Y=X1 XOR X2, H(Y)=1 bit, pero Y es independiente de cada Xi aisladamente, así I(Y;Xi)=0. Con ambos bits, Y se conoce exactamente e I(Y;X1,X2)=1. El incremento marginal de observar X2 es 0 desde vacío y 1 tras X1: viola rendimientos decrecientes. Una tarea neuronal con sinergias puede no obedecer la selección greedy submodular de H25."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "I_Y_X1": 0,
+          "I_Y_X2": 0,
+          "I_Y_X1X2": 1
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H27",
+      "title": "Localidad exacta de redes por mensajes",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Con T rondas y aristas fijas, salida de nodo v depende solo de características dentro de T hops de entrada (y parámetros compartidos) si no hay readout global/atajos. **Rival/falsador:** Se observa dependencia de fuente a distancia>T sin ruta auxiliar",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Se observa dependencia de fuente a distancia>T sin ruta auxiliar"
+      },
+      "C": {
+        "full_proof": "Por inducción sobre T, un estado inicial en v depende solo de features en v; la regla local en la ronda t+1 combina estados de sus predecesores inmediatos y del propio nodo, luego su dependencia se limita al entorno de t+1 saltos. Por tanto ninguna fuente más lejana que T hops puede afectar el resultado si no hay readout global, saltos virtuales, coordenadas globales agregadas u otras rutas. Accesibilidad es condición necesaria, no suficiente para aprender."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "dist_0_3": 3,
+          "influence_T2": 0,
+          "influence_T3": 1
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H28",
+      "title": "Cuello de botella de rango a través de cortes",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "En redes lineales por mensajes, con b aristas dirigidas cruzando corte A→B por ronda, estados de ancho h y T rondas, rango de transmisión de entradas A a salidas B <=b h T. **Rival/falsador:** Una red lineal de rango>bhT sin caminos alternativos ni entrada directa",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Una red lineal de rango>bhT sin caminos alternativos ni entrada directa"
+      },
+      "C": {
+        "full_proof": "Descomponga el sistema lineal de mensajes a través de un corte A→B. Cada una de las T rondas transporta como máximo b mensajes de h coordenadas. Todas las dependencias de entradas de A en salidas B factorizan por un vector apilado de dimensión <=bhT de mensajes cruzados; por rango de una composición lineal el mapa tiene rango <=bhT. Con señales de dimensión superior la reconstrucción lineal exacta es imposible. El límite no es una cota literal del número de bits si se permiten precisión infinita y codificaciones no lineales arbitrarias."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "cut_capacity": 4,
+          "linear_rank": 4,
+          "inputs": 10
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H29",
+      "title": "Fusión minimax de estimadores correlacionados",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Para dos estimadores insesgados σ1,σ2 con ρ∈[-r,r], pesos convexos, peso óptimo w1=clip[(σ2²-rσ1σ2)/(σ1²+σ2²-2rσ1σ2),0,1], no siempre precisión inversa. **Rival/falsador:** Otro peso convexos da menos peor varianza",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Otro peso convexos da menos peor varianza"
+      },
+      "C": {
+        "full_proof": "Para dos estimadores insesgados y pesos w,1-w no negativos, la peor covarianza dentro de |ρ|<=r aparece en +r. V(w)=w²σ1²+(1−w)²σ2²+2rw(1−w)σ1σ2. Diferenciando, V′(w)=0 da w=(σ2²−rσ1σ2)/(σ1²+σ2²−2rσ1σ2), restringido al intervalo [0,1]. Frente a pesos inversos de varianza (ρ=0) es robusto a correlaciones positivas desconocidas. No equivale a fusionar modelos con representaciones sin alinear."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "robust_weight": 0.8947368421052632,
+          "independent_weight": 0.8,
+          "robust_worst_variance": 0.9578947368421054,
+          "independent_assumed_worst": 0.992
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    },
+    {
+      "id": "H30",
+      "title": "Invariancia al patrón sin acceso a posiciones",
+      "status": "AB_R_DEDUCTIVE_REVIEWED",
+      "A": {
+        "question": "Una arquitectura de atención o mensajes permutation-equivariant que recibe mismas features y grafo independientemente de coordenadas no puede distinguir patrón MHU de retícula tras relabeling; requiere canal geométrico. **Rival/falsador:** Cambio de coordenadas no usadas altera resultado",
+        "scope": "conditional mathematical proposition"
+      },
+      "B": {
+        "rival_and_falsifier": " Cambio de coordenadas no usadas altera resultado"
+      },
+      "C": {
+        "full_proof": "Sin codificación de coordenadas, distancias, topología derivada de posiciones ni otra señal geométrica, una arquitectura autocoherente con permutaciones cumple F(PX)=PF(X). Para atención, la matriz QKᵀ se transforma como P(QKᵀ)Pᵀ, softmax por filas conmuta con esa permutación y la salida también. Recolocar físicamente los mismos tokens en un patrón MHU o reticular no cambia ningún cálculo: una ventaja requiere que la geometría entre de algún modo al modelo."
+      },
+      "D": {
+        "prereg_commit": "c24ae512e073237f75988037790913a2db056b0b",
+        "preoutcome_exact_source_sha256": "5ab78742ba0d28c7bd57289d686da0e9043c72d74525a9d415f8f5861f2423c3",
+        "preoutcome_full_source_on_github": false,
+        "source_uploaded_after_outcomes": true
+      },
+      "E": {
+        "check": "PASS",
+        "evidence": {
+          "permutation_error": 2.220446049250313e-16,
+          "geometry_input": false
+        }
+      },
+      "F": {
+        "limitations": "Hypotheses of conditional exact model; adverse and prior art caveats in DICTAMEN_H06_H30.md"
+      },
+      "G": {
+        "independent_replay": "byte_identical_local",
+        "mechanized_proof": false,
+        "external_replication": false
+      },
+      "H": {
+        "prior": "Mathematical scope narrowed; does not imply AI superiority"
+      },
+      "I": {
+        "novelty": "0/3",
+        "new_N1": 0,
+        "new_N2": 0,
+        "new_N3": 0
+      },
+      "J": {
+        "decision": "CLOSE_DEDUCTIVE_QUESTION_R5"
+      }
+    }
+  ]
+}
