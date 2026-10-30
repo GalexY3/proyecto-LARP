@@ -1,0 +1,1236 @@
+{
+  "schema": "AB_3_2_1_ABP_ARCHIVE_A01_A20",
+  "date": "2026-10-30",
+  "authorized_max": 20,
+  "engineering_audits_completed": 20,
+  "scientific_cycles": 0,
+  "invalid_initial_audit_attempts": 1,
+  "post_repair_pass": 20,
+  "novel_scientific_findings": 0,
+  "n2": 0,
+  "n3": 0,
+  "github_branch": "research/ab-archive-audit-20261030",
+  "freeze": {
+    "preregister_commit": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+    "source_first_full_commit": "b4d9c09e154a0139d1157107f32466a4141fc583",
+    "first_code_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264",
+    "error_schema_commit": "0f252940ac0027a1682313f49c3fea6e9f5a1004",
+    "repair_code_commit": "bb5ab5b726c78d99ab459c509282e4cc98860184",
+    "repair_code_sha256": "0ee43ff7e8b07ea925e1b2e5c4e3d83d6065d5ce7fd91afac52f37fc727dc6b3",
+    "first_result_commit": "26230613181f066009aa11471551203d77a4d2df"
+  },
+  "data_grain": "files/results/image IDs; not IID repeated predictions",
+  "ct2_unchanged": true,
+  "cycles": [
+    {
+      "cycle_id": "A01",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "All 5 ZIP containers are readable and have unique entry names",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A01",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "M": {
+            "num_entries": 11,
+            "bad_crc_member": null
+          },
+          "S": {
+            "num_entries": 16,
+            "bad_crc_member": null
+          },
+          "C01": {
+            "num_entries": 13,
+            "bad_crc_member": null
+          },
+          "C02": {
+            "num_entries": 11,
+            "bad_crc_member": null
+          },
+          "C04": {
+            "num_entries": 14,
+            "bad_crc_member": null
+          }
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A02",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "Five ZIP SHA256 digests equal the historical immutable bundle digests",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A02",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "M": "fc22523748d7e1c42b6d56be25c3c66cf0bfb5fe46032b2a9622deb34452baac",
+          "S": "6c234a97d8cd38a7c01442536bb0ea049ae5b9c1c5ebb89f9ed02aef5cfdc7fb",
+          "C01": "2594f2c073a32251d6cd98576304b03a241d8ee710ef5815063bef697eb95f06",
+          "C02": "ded310f787f22352200223642b1af0328715ddafe965b0ae8143747f3f3a6cbd",
+          "C04": "dd6f72fc47a3f685b7b82e095660a852637fd2e1735c4e67cdf47a3b161be99b"
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A03",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "Embedded formal 18-file SHA manifest matches ZIP bytes",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A03",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "files_verified": 10,
+          "manifest_fields": [
+            "date",
+            "parent_branch",
+            "branch",
+            "prereg_commit",
+            "result_commit",
+            "new_original_discoveries",
+            "files"
+          ]
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A04",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "Embedded sisters 20-file SHA manifest matches ZIP bytes",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A04",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "files_verified": 15,
+          "manifest_fields": [
+            "campaign",
+            "date",
+            "precommit",
+            "frozen_source_commit",
+            "science",
+            "files"
+          ]
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A05",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C01 frozen original and repair code SHA identities",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A05",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "original_source_SHA256": "5e47f6e6…",
+          "repair_SHA256": "85438d78…"
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A06",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C01 post-outcome Poisson repair touched no other method",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A06",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "results": {
+            "changed": 234,
+            "total": 1404,
+            "examples": [
+              [
+                1103,
+                "poisson_disk",
+                "astronaut",
+                "clean"
+              ],
+              [
+                1103,
+                "poisson_disk",
+                "astronaut",
+                "drop30"
+              ]
+            ]
+          },
+          "geometry": {
+            "changed": 6,
+            "total": 36,
+            "examples": [
+              [
+                1103,
+                "poisson_disk",
+                null,
+                null
+              ],
+              [
+                1109,
+                "poisson_disk",
+                null,
+                null
+              ]
+            ]
+          },
+          "repair_status": "POST_EXPOSURE_REPAIR"
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A07",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C01 exact 6×6×13×3 and finite metric rows",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A07",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "records": 1404,
+          "seeds": 6,
+          "images": 13,
+          "methods": 6,
+          "conditions": [
+            "clean",
+            "drop30",
+            "noise08"
+          ]
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A08",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C01 TEST MSE table reproduces from raw records",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A08",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "cells": 18,
+          "clean_joint": 0.013213986226245882
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A09",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C02 code SHA frozen and sensor matrix shape verified",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A09",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "source_sha256": "42b7bcef08ed0b02909ec4b95bbd3bbb46a338762ed011f1e8a64735b1e60729",
+          "filters": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.5
+            ]
+          ]
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A10",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C02 full factorial and finite observations",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A10",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "n": 648,
+          "methods": [
+            "grid_balanced",
+            "joint_phase_broken",
+            "poisson_multiclass_proxy",
+            "sobol_balanced",
+            "spectral_joint",
+            "spectral_sub"
+          ],
+          "splits": {
+            "DEV": 288,
+            "TEST": 288,
+            "STRESS": 72
+          }
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A11",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C02 means CSV reproduces from all raw records",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A11",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "groups": 54,
+          "test_joint_clean": 0.015476779593810639
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A12",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C02 five virtual filters span only a three-dimensional RGB subspace",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A12",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "rank": 3,
+          "filters": 5,
+          "physical_bands": false
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A13",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C04 frozen code SHA and observation dimensions",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A13",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "code_sha256": "d57d21ce76d4513419fbf38df9ec62b771872a4d50f1856a3a16133b268b31ae",
+          "observations": 32400,
+          "seed_count": 3
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A14",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C04 images are repeated; 32,400 predictions are NOT 32,400 independent images",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A14",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "independent_images_upper_bound": 200,
+          "repeats_per_image_method_condition": 6,
+          "total_predictions": 32400
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A15",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C04 27 published means reproduce from 32,400 predictions",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A15",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "methods": 9,
+          "groups": 27,
+          "joint_clean": 0.9716666666666667
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A16",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "C04 cluster bootstrap was reported as descriptive and has complete contrasts",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A16",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "contrasts": 24,
+          "bootstrap_resamples": 8000,
+          "scope": "descriptive posthoc clustered by image"
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A17",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "Formal M01–M18 recorded mathematical checker is 18/18 true",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A17",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "bb5ab5b726c78d99ab459c509282e4cc98860184",
+        "source_sha256": "0ee43ff7e8b07ea925e1b2e5c4e3d83d6065d5ce7fd91afac52f37fc727dc6b3"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "recorded_checks": 18,
+          "all_true": true,
+          "source_verifier_sha256": "3b95aa680af636ac60027f8f09ebb4da9cc484d7ba8cce80239e8f24260fbee0"
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": true,
+        "initial_invalid_attempt": true
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS_AFTER_DOCUMENTED_REPAIR",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A18",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "S01–S20 recorded mathematical checker matches frozen digest",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A18",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "recorded_checks": 20,
+          "all_true": true,
+          "source_verifier_sha256": "78751d1064d5dffcdff06669748be641e9f2a7a70df0410e460a3241ee1c6296"
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A19",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "Original A–J ledgers identify 18+20 questions but zero original N1/N2/N3",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A19",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "M_ids": [
+            "M01",
+            "M02",
+            "M03",
+            "M04",
+            "M05",
+            "M06",
+            "M07",
+            "M08",
+            "M09",
+            "M10",
+            "M11",
+            "M12",
+            "M13",
+            "M14",
+            "M15",
+            "M16",
+            "M17",
+            "M18"
+          ],
+          "S_ids": [
+            "S01",
+            "S02",
+            "S03",
+            "S04",
+            "S05",
+            "S06",
+            "S07",
+            "S08",
+            "S09",
+            "S10",
+            "S11",
+            "S12",
+            "S13",
+            "S14",
+            "S15",
+            "S16",
+            "S17",
+            "S18",
+            "S19",
+            "S20"
+          ],
+          "scientific_original_discoveries": 0
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    },
+    {
+      "cycle_id": "A20",
+      "type": "AB-P_ARCHIVE_INTEGRITY",
+      "A": {
+        "question": "Scientific source and outputs recoverable; external clean clone remains unverified",
+        "estimand": "archival correctness and reproducibility, not MHU prediction"
+      },
+      "B": {
+        "positive": "archived original and derived audit consistent",
+        "adversarial": "corruption, missing provenance, altered repaired arms, duplicated observations, incompatible source hashes"
+      },
+      "C": {
+        "precommitted_gate": "A20",
+        "data": "five already exposed original archived ZIPs"
+      },
+      "D": {
+        "prereg": "467c5597b15d118dad68cd5f394ba1363798c1eb",
+        "frozen_run_code": "b4d9c09e154a0139d1157107f32466a4141fc583",
+        "source_sha256": "cde86a8d56a3c2754d1d4933f4743ccf3e1db8228528e7766ea0db5f17de5264"
+      },
+      "E": {
+        "result": "PASS",
+        "evidence": {
+          "archive_containers": 5,
+          "raw_data_in_zips": {
+            "C01": 1404,
+            "C02": 648,
+            "C04": 32400
+          },
+          "clean_clone_verified": false,
+          "new_original_science": false
+        }
+      },
+      "F": {
+        "known_limits": "Post-exposure integrity audit; shared original archives; numerical consistency cannot establish novelty or MHU effect",
+        "repair_needed": false,
+        "initial_invalid_attempt": false
+      },
+      "G": {
+        "technical_check": "executed locally",
+        "external_data_replication": false,
+        "independent_formal_proof": false
+      },
+      "H": {
+        "revised_prior": "increase confidence in archival integrity only; preserve original MHU scientific priors"
+      },
+      "I": {
+        "scientific_grade": "0/3 (no new physical result)",
+        "engineering_verification": true,
+        "scientific_original_N1": 0,
+        "N2": 0,
+        "N3": 0
+      },
+      "J": {
+        "status": "PASS",
+        "AB_decision": "ARCHIVE/VERIFY, no scientific CT2 change"
+      }
+    }
+  ]
+}

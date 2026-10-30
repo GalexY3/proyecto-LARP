@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-30",
+  "repo": "GalexY3/proyecto-LARP",
+  "branch": "research/ab-archive-audit-20261030",
+  "original_packages": {
+    "LARP_MHU_FORMAL_18_CICLOS.zip": {
+      "sha256": "fc22523748d7e1c42b6d56be25c3c66cf0bfb5fe46032b2a9622deb34452baac",
+      "git_blob_sha": "6a301ac7a179301b2af5a9bc047f2e7aa0ecc339",
+      "bytes": 146964,
+      "github_path": "research/AB_ARCHIVE_20261030/packages/LARP_MHU_FORMAL_18_CICLOS.zip"
+    },
+    "LARP_MHU_HERMANAS_AB20_20261030.zip": {
+      "sha256": "6c234a97d8cd38a7c01442536bb0ea049ae5b9c1c5ebb89f9ed02aef5cfdc7fb",
+      "git_blob_sha": "ffe1681035c9ebb2c2cb46ac1df03a956c3cfdc9",
+      "bytes": 171450,
+      "github_path": "research/AB_ARCHIVE_20261030/packages/LARP_MHU_HERMANAS_AB20_20261030.zip"
+    },
+    "LARP_VISION_C04_20261029.zip": {
+      "sha256": "dd6f72fc47a3f685b7b82e095660a852637fd2e1735c4e67cdf47a3b161be99b",
+      "git_blob_sha": "6a14de9be42f703647573cd34cab772f74759fb9",
+      "bytes": 268113,
+      "github_path": "research/AB_ARCHIVE_20261030/packages/LARP_VISION_C04_20261029.zip"
+    },
+    "LARP_VISION_AB_C01_20261029.zip": {
+      "sha256": "2594f2c073a32251d6cd98576304b03a241d8ee710ef5815063bef697eb95f06",
+      "git_blob_sha": "1fa5332290bc0f8bea9a687de224b14d59dd6be3",
+      "bytes": 261268,
+      "github_path": "research/AB_ARCHIVE_20261030/packages/LARP_VISION_AB_C01_20261029.zip"
+    },
+    "LARP_VISION_AB_C02_20261029.zip": {
+      "sha256": "ded310f787f22352200223642b1af0328715ddafe965b0ae8143747f3f3a6cbd",
+      "git_blob_sha": "1248d9e34514fec12f797a60184790827a36d737",
+      "bytes": 195067,
+      "github_path": "research/AB_ARCHIVE_20261030/packages/LARP_VISION_AB_C02_20261029.zip"
+    }
+  },
+  "source_files": [
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_FORMAL_18_CICLOS__AUDITORIA_M01_M18.json",
+      "stage_name": "LARP_MHU_FORMAL_18_CICLOS__AUDITORIA_M01_M18.json",
+      "github_path": "research/AB_MHU_FORMAL_20261029/AUDITORIA_M01_M18.json",
+      "bytes": 2783,
+      "git_blob_sha": "ee45428047aaec9bd436558b21b5906e326d4820"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_FORMAL_18_CICLOS__CT2_TRAYECTORIAS.json",
+      "stage_name": "LARP_MHU_FORMAL_18_CICLOS__CT2_TRAYECTORIAS.json",
+      "github_path": "research/AB_MHU_FORMAL_20261029/CT2_TRAYECTORIAS.json",
+      "bytes": 679,
+      "git_blob_sha": "e206a765af69f7277b8a4082d97de2f0c5587bcc"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_FORMAL_18_CICLOS__GRAFO_O7.json",
+      "stage_name": "LARP_MHU_FORMAL_18_CICLOS__GRAFO_O7.json",
+      "github_path": "research/AB_MHU_FORMAL_20261029/GRAFO_O7.json",
+      "bytes": 6829,
+      "git_blob_sha": "e8c7f108d6a51a175c9929c211e9a07285b15ced"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_FORMAL_18_CICLOS__MANIFEST_SHA256.json",
+      "stage_name": "LARP_MHU_FORMAL_18_CICLOS__MANIFEST_SHA256.json",
+      "github_path": "research/AB_MHU_FORMAL_20261029/MANIFEST_SHA256.json",
+      "bytes": 1842,
+      "git_blob_sha": "a4ca05a84dfc707154292c49aacee0604438d7d4"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_FORMAL_18_CICLOS__build_ledger.py",
+      "stage_name": "LARP_MHU_FORMAL_18_CICLOS__build_ledger.py",
+      "github_path": "research/AB_MHU_FORMAL_20261029/build_ledger.py",
+      "bytes": 6732,
+      "git_blob_sha": "4616cbc184c51b1cbb8318ddf1301c6ff35e122b"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_HERMANAS_AB20_20261030__MANIFEST_SHA256.json",
+      "stage_name": "LARP_MHU_HERMANAS_AB20_20261030__MANIFEST_SHA256.json",
+      "github_path": "research/AB_MHU_SISTERS_20261030/MANIFEST_SHA256.json",
+      "bytes": 2522,
+      "git_blob_sha": "3b07a277bcdb9d4b8ef5212a73d181f02086f393"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_HERMANAS_AB20_20261030__SOURCES.json",
+      "stage_name": "LARP_MHU_HERMANAS_AB20_20261030__SOURCES.json",
+      "github_path": "research/AB_MHU_SISTERS_20261030/SOURCES.json",
+      "bytes": 688,
+      "git_blob_sha": "d45042b48d866b19a496e8e8f77a8b81b7502a65"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_HERMANAS_AB20_20261030__build_ledger.py",
+      "stage_name": "LARP_MHU_HERMANAS_AB20_20261030__build_ledger.py",
+      "github_path": "research/AB_MHU_SISTERS_20261030/build_ledger.py",
+      "bytes": 9013,
+      "git_blob_sha": "015d5b3765912c9cda9267ce38b86c0a335ac233"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_MHU_HERMANAS_AB20_20261030__checks_20.json",
+      "stage_name": "LARP_MHU_HERMANAS_AB20_20261030__checks_20.json",
+      "github_path": "research/AB_MHU_SISTERS_20261030/checks_20.json",
+      "bytes": 5518,
+      "git_blob_sha": "cfd745b373fabde5a84fd7b0064472ac03e4e069"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C01_20261029__CONTRASTS_CLUSTER_BOOTSTRAP.csv",
+      "stage_name": "LARP_VISION_AB_C01_20261029__CONTRASTS_CLUSTER_BOOTSTRAP.csv",
+      "github_path": "research/AB_VISION_20261029/CONTRASTS_CLUSTER_BOOTSTRAP.csv",
+      "bytes": 1922,
+      "git_blob_sha": "efbd9c333292154033ec98beb755c7f103c310bc"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C01_20261029__MSE_TEST_TABLE.csv",
+      "stage_name": "LARP_VISION_AB_C01_20261029__MSE_TEST_TABLE.csv",
+      "github_path": "research/AB_VISION_20261029/MSE_TEST_TABLE.csv",
+      "bytes": 466,
+      "git_blob_sha": "bd4233d3fe8fd73df6123219313dc56360e46e4e"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C01_20261029__audit_analysis.py",
+      "stage_name": "LARP_VISION_AB_C01_20261029__audit_analysis.py",
+      "github_path": "research/AB_VISION_20261029/audit_analysis.py",
+      "bytes": 3676,
+      "git_blob_sha": "cc0f549679f1abca58d31ec34a5b16726ff2b180"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C01_20261029__repair_poisson.py",
+      "stage_name": "LARP_VISION_AB_C01_20261029__repair_poisson.py",
+      "github_path": "research/AB_VISION_20261029/repair_poisson.py",
+      "bytes": 2857,
+      "git_blob_sha": "bcb0cc5b230da586bca824dd7008992fcb380987"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C01_20261029__results_original.json",
+      "stage_name": "LARP_VISION_AB_C01_20261029__results_original.json",
+      "github_path": "research/AB_VISION_20261029/results_original.json",
+      "bytes": 303861,
+      "git_blob_sha": "52b5f99cf87816f70ec514ec74d63533dc37c578"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C01_20261029__results_repaired.json",
+      "stage_name": "LARP_VISION_AB_C01_20261029__results_repaired.json",
+      "github_path": "research/AB_VISION_20261029/results_repaired.json",
+      "bytes": 304473,
+      "git_blob_sha": "61f3c6a7f524d4eee952d0d9af2b2caa36898033"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C01_20261029__vision_ab_c01.py",
+      "stage_name": "LARP_VISION_AB_C01_20261029__vision_ab_c01.py",
+      "github_path": "research/AB_VISION_20261029/vision_ab_c01.py",
+      "bytes": 7943,
+      "git_blob_sha": "22922a5bf4e3db6b06b885ed40fd6f928efa3905"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C02_20261029__C02_AUDIT.json",
+      "stage_name": "LARP_VISION_AB_C02_20261029__C02_AUDIT.json",
+      "github_path": "research/AB_VISION_20261029/C02_AUDIT.json",
+      "bytes": 5031,
+      "git_blob_sha": "f791c04f6f3704489d982dde6dbee6ce662f5d15"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C02_20261029__C02_MEANS.csv",
+      "stage_name": "LARP_VISION_AB_C02_20261029__C02_MEANS.csv",
+      "github_path": "research/AB_VISION_20261029/C02_MEANS.csv",
+      "bytes": 3956,
+      "git_blob_sha": "fb5e7b307cb3276c6161213cfa156bf6d5bc52f8"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C02_20261029__audit_c02.py",
+      "stage_name": "LARP_VISION_AB_C02_20261029__audit_c02.py",
+      "github_path": "research/AB_VISION_20261029/audit_c02.py",
+      "bytes": 3596,
+      "git_blob_sha": "6561dfb308c72bae7f5481ea11b8471ab2445696"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C02_20261029__results_c02.json",
+      "stage_name": "LARP_VISION_AB_C02_20261029__results_c02.json",
+      "github_path": "research/AB_VISION_20261029/results_c02.json",
+      "bytes": 147893,
+      "git_blob_sha": "358b4384f5f1ec429fca35aa8c24a86abb959b30"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_AB_C02_20261029__vision_ab_c02.py",
+      "stage_name": "LARP_VISION_AB_C02_20261029__vision_ab_c02.py",
+      "github_path": "research/AB_VISION_20261029/vision_ab_c02.py",
+      "bytes": 7733,
+      "git_blob_sha": "3705ad7f4f28590a60a44b49b4665d04f60062df"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_C04_20261029__audit_c04.py",
+      "stage_name": "LARP_VISION_C04_20261029__audit_c04.py",
+      "github_path": "research/AB_VISION_20261029/audit_c04.py",
+      "bytes": 2892,
+      "git_blob_sha": "c65c27e936612688d2e9fa055b44c1394dfe6f8e"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_C04_20261029__build_figures.py",
+      "stage_name": "LARP_VISION_C04_20261029__build_figures.py",
+      "github_path": "research/AB_VISION_20261029/build_figures.py",
+      "bytes": 1781,
+      "git_blob_sha": "690a953db81392ec77618142f074ad377bf883fe"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_C04_20261029__c04_audit.json",
+      "stage_name": "LARP_VISION_C04_20261029__c04_audit.json",
+      "github_path": "research/AB_VISION_20261029/c04_audit.json",
+      "bytes": 9139,
+      "git_blob_sha": "8a0f9db5255a06f12b8bfa353e3f847d058d4bf8"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_C04_20261029__c04_means.json",
+      "stage_name": "LARP_VISION_C04_20261029__c04_means.json",
+      "github_path": "research/AB_VISION_20261029/c04_means.json",
+      "bytes": 3315,
+      "git_blob_sha": "ecb8d5c966dbe0c7145be01fb7774d308ba0a90b"
+    },
+    {
+      "source": "/mnt/data/LARP_GITHUB_ARCHIVE_AUDIT_20261030/stage_text/LARP_VISION_C04_20261029__run_log.txt",
+      "stage_name": "LARP_VISION_C04_20261029__run_log.txt",
+      "github_path": "research/AB_VISION_20261029/run_log.txt",
+      "bytes": 232,
+      "git_blob_sha": "c2985e141c6071334d1eeeb21229b8cddbaa3b5d"
+    }
+  ],
+  "note": "source_files includes exactly-preserved code, reports, JSON, CSV, and supporting manifests; full C04 raw within ZIP only",
+  "first_pass_19_of_20": true,
+  "repair_20_of_20": true,
+  "clean_clone_remote_not_verified": true
+}
