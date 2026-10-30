@@ -1,0 +1,15 @@
+# FINAL RECEIPT — 2026-10-30, native N400 matched certificate analysis
+
+**Branch:** research/ab-r-native-certificates-20261030. **HEAD prior to receipt:** 6c4e3196c1efd4deb95556f4ecc2f7f9479ea578. **Tree audit:** twelve study files present and readable, Git blobs checked in source list; source certificate JSON blobs pinned in RESULTS_N01_N20.json. `main` was READ ONLY, last observed `dc9938463915cb71219fc4a90b117b3195213cc7` (it may move from unrelated work); this campaign did not merge, cherry-pick or trigger CI.
+
+**User grant:** 20 AB-R free, **20 distinct predeclared documentary/mathematical N01–N20 inquiry gates complete**, 0 independent experimental runs, 0 trained original N400 models, 0 authentic Wei executions, 0 N1/N2/N3 novelty upgrades. Multiple gates share the SAME three paired geometry seeds and SAME historic results, so not 20 independent scientific confirmation cycles. No unused audit gates under the current 20-gate protocol, but no additional scientific confidence accrued by quota consumption.
+
+**Freeze chronology:** prereg c7e11f3f149de346fbd23766b95bf90849be91c0; source initial faf7e63abe2b112e625a682966ba076dc8be4c10 failed syntax (NO outcomes); errata 8a7e03d0615715b2bf8875ff7d3e986cb14c98f7; corrected frozen source 4af14e7c81699217fc0d066c12af828246e49b93; outcomes f3aff4af612e807e3eeb9e6ff074a56162739623; exact replay 209538581f8c77bd6d279712b4a4ea7db6b5eda0. Historical input exposure declared: these are not blind tests.
+
+**Documentary effects:** six optimized Fourier modes union 0.0000579301 MHU full vs 0.0265973555 LOCAL; 99.782% smaller (n=3 matched seeds). R5 count variance ratio 0.67598 and R0.5 1.01696 (mixed scale). Worst nonoptimized union S ratio 1.1421 (adverse) while mean near-cutoff rebound ratio 0.71545. Voronoi area variance ratio 1.01766. Asymptotic MHU proof FALSE, anisotropy controls NOT_RUN. No causal neural performance inference.
+
+**Hard gates:** GitHub's UTF-8-only connector raises UnicodeDecodeError for original six NPZ binary geometry assets and local container DNS cannot reach Github; genuine native recomputation remains **NOT_RUN**. Original Wei multi-class blue-noise code readable and MIT-licensed, **not compiled/executed**. Real five-band independent input data **not downloaded**. `export_native_n400.py` + `EXECUTOR_WINDOWS_NATIVE_WEI.md` specify an explicit Windows/other independent executor with SHA criteria; not executed in this conversation. Source and script are deposited only in private repo; no original NPZ replaced or exposed publicly.
+
+**R5/DRIFT:** D2 pivot from trained synthetic proxies to original native archive records; STOP_LOCAL same 9 JSONs, next eligible science only after native export / true Wei and independent data. Prior CT2 math 24/100 and trained proxy 18/100 unchanged. No clean-clone verified.
+
+**Archive:** PREREG_N01_N20.md, analyze_native.js, RESULTS_N01_N20.json, LEDGER_N01_N20_AJ.json, DICTAMEN_N01_N20.md, PRIORS_DELTA.md, GRAFO_O7.json, CURRENT.md, REPLAY_RECEIPT.md, ERRATA_SYNTAX_BEFORE_OUTCOMES.md, export_native_n400.py, EXECUTOR_WINDOWS_NATIVE_WEI.md. The receipt itself is a thirteenth document, not a new AB cycle.
